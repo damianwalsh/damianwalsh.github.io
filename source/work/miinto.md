@@ -18,7 +18,7 @@ header_image: work/miinto/header-image.jpg
   <div class="container">
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/miinto/user-guide-cover.png" alt="Cover" class="grid-layout-item animated" data-animated="fadeIn">
+        <img data-src="http://damianwalsh.me/images/work/miinto/user-guide-cover.png" alt="Cover" class="resrc grid-layout-item animated" data-animated="fadeIn">
         <img src="/images/work/miinto/user-guide-intro.png" alt="Introduction" class="grid-layout-item animated" data-animated="fadeIn">
         <img src="/images/work/miinto/user-guide-photo-studio.png" alt="Photo Studio" class="grid-layout-item animated" data-animated="fadeIn">
         <img src="/images/work/miinto/user-guide-products.png" alt="Products" class="grid-layout-item animated" data-animated="fadeIn">
