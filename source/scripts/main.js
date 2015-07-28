@@ -7,6 +7,13 @@ var site = {
     site.wayPoints();
     site.skrollr();
     site.smoothScroll();
+    site.reSrc();
+  },
+
+  reSrc: function() {
+    resrc.ready(function () {
+      resrc.run();
+    });
   },
 
   addListeners: function() {
@@ -78,8 +85,7 @@ var site = {
     }
   },
 
-  smoothScroll: function()
-  {
+  smoothScroll: function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'#') || location.hostname == this.hostname) {
         var target = $(this.hash);

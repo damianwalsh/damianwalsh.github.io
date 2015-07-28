@@ -1,5 +1,6 @@
 //= require "jquery/dist/jquery.js"
-//= require "modernizr.custom.js"
+//= require "lib/modernizr.custom.js"
+//= require "lib/resrc.js"
 //= require "filament-fixed/fixedfixed.js"
 //= require "picturefill/src/picturefill.js"
 //= require "waypoints/lib/jquery.waypoints.js"
