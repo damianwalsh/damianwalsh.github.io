@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+@mixin hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+@mixin show {
+  display: block !important;
+  visibility: visible;
+}
+
+.show {
+  @include show;
+}
+
+.hide {
+  @include hide;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+.visuallyhidden,
+.hidden {
+  @include visuallyhidden;
+}
+
+
+@mixin round {
+  border-radius: 50%;
+}
+
+.round {
+  @include round;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-align {
+  @include vertical-align;
+}
+
+@mixin horizontal-align {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.horizontal-align {
+  @include horizontal-align;
+}
+
+@mixin center-align {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.center-align {
+  @include center-align;
+}
+

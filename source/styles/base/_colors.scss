@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+$black              : hsla(0.0, 0.0%, 13.3%, 1.0);
+$white              : hsla(0.0, 0.0%, 100.0%, 1.0);
+$transparent        : hsla(0.0, 0.0%, 0.0%, 0);
+$aquamarine         : hsla(198.3, 43.1%, 73.1%, 1.0);
+$scuba-blue         : hsla(187.1, 100.0%, 39.6%, 1.0);
+$lucite-green       : hsla(161.7, 46.1%, 65.1%, 1.0);
+$classic-blue       : hsla(212.8, 65.1%, 32.5%, 1.0);
+$toasted-almond     : hsla(25.7, 38.4%, 71.4%, 1.0);
+$strawberry-ice     : hsla(354.2, 62.4%, 70.8%, 1.0);
+$tangerine          : hsla(22.4, 91.0%, 65.3%, 1.0);
+$custard            : hsla(49.3, 69.3%, 73.1%, 1.0);
+$marsala            : hsla(0.9, 29.6%, 45.1%, 1.0);
+$glacier-gray       : hsla(190.0, 5.6%, 78.8%, 1.0);
+
+$palettes: (
+  black: (
+    base:     $black,
+    xxxlight: tint($black, 90%),
+    xxlight:  tint($black, 75%),
+    xlight:   tint($black, 50%),
+    light:    tint($black, 25%),
+    dark:     shade($black, 10%)
+  ),
+  aquamarine: (
+    base:     $aquamarine,
+    xxxlight: tint($aquamarine, 90%),
+    xxlight:  tint($aquamarine, 75%),
+    xlight:   tint($aquamarine, 50%),
+    light:    tint($aquamarine, 25%),
+    dark:     shade($aquamarine, 10%)
+  ),
+  scuba-blue: (
+    base:     $scuba-blue,
+    xxxlight: tint($scuba-blue, 90%),
+    xxlight:  tint($scuba-blue, 75%),
+    xlight:   tint($scuba-blue, 50%),
+    light:    tint($scuba-blue, 25%),
+    dark:     shade($scuba-blue, 10%)
+  ),
+  lucite-green: (
+    base:     $lucite-green,
+    xxxlight: tint($lucite-green, 90%),
+    xxlight:  tint($lucite-green, 75%),
+    xlight:   tint($lucite-green, 50%),
+    light:    tint($lucite-green, 25%),
+    dark:     shade($lucite-green, 10%)
+  ),
+  classic-blue: (
+    base:     $classic-blue,
+    xxxlight: tint($classic-blue, 90%),
+    xxlight:  tint($classic-blue, 75%),
+    xlight:   tint($classic-blue, 50%),
+    light:    tint($classic-blue, 25%),
+    dark:     shade($classic-blue, 10%)
+  ),
+  toasted-almond: (
+    base:     $toasted-almond,
+    xxxlight: tint($toasted-almond, 90%),
+    xxlight:  tint($toasted-almond, 75%),
+    xlight:   tint($toasted-almond, 50%),
+    light:    tint($toasted-almond, 25%),
+    dark:     shade($toasted-almond, 10%)
+  ),
+  strawberry-ice: (
+    base:     $strawberry-ice,
+    xxxlight: tint($strawberry-ice, 90%),
+    xxlight:  tint($strawberry-ice, 75%),
+    xlight:   tint($strawberry-ice, 50%),
+    light:    tint($strawberry-ice, 25%),
+    dark:     shade($strawberry-ice, 10%)
+  ),
+  tangerine: (
+    base:     $tangerine,
+    xxxlight: tint($tangerine, 90%),
+    xxlight:  tint($tangerine, 75%),
+    xlight:   tint($tangerine, 50%),
+    light:    tint($tangerine, 25%),
+    dark:     shade($tangerine, 10%)
+  ),
+  custard: (
+    base:     $custard,
+    xxxlight: tint($custard, 90%),
+    xxlight:  tint($custard, 75%),
+    xlight:   tint($custard, 50%),
+    light:    tint($custard, 25%),
+    dark:     shade($custard, 10%)
+  ),
+  marsala: (
+    base:     $marsala,
+    xxxlight: tint($marsala, 90%),
+    xxlight:  tint($marsala, 75%),
+    xlight:   tint($marsala, 50%),
+    light:    tint($marsala, 25%),
+    dark:     shade($marsala, 10%)
+  ),
+  glacier-gray: (
+    base:     $glacier-gray,
+    xxxlight: tint($glacier-gray, 90%),
+    xxlight:  tint($glacier-gray, 75%),
+    xlight:   tint($glacier-gray, 50%),
+    light:    tint($glacier-gray, 25%),
+    dark:     shade($glacier-gray, 10%)
+  )
+);
+
+/**
+ * Function to retrieve colours by name/tone. Example:
+ *
+ * color: palette(purple, light);
+ */
+
+ // Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}

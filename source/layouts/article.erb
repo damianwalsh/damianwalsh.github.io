@@ -1,0 +1,25 @@
+<% wrap_layout :layout do %>
+  <%= yield %>
+  <nav class="pagination site-main-section panel-lucite-green" role="navigation">
+    <div class="container">
+      <ul>
+        <% unless current_article.previous_article.nil? %>
+          <li class="previous">
+            <a class="btn-default" href="<%= current_article.previous_article.url %>" title="<%= current_article.previous_article.title %>">
+              <i class="icon-keyboard-arrow-left"></i>
+              <b>Previous</b>
+            </a>
+          </li>
+        <% end %>
+        <% unless current_article.next_article.nil? %>
+          <li class="next">
+            <a class="btn-default" href="<%= current_article.next_article.url %>" title="<%= current_article.next_article.title %>">
+              <i class="icon-keyboard-arrow-right"></i>
+              <b>Next</b>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+<% end %>

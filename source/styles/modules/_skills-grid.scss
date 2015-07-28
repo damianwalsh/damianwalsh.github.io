@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Skills grid
+   ========================================================================== */
+
+.skills-grid {
+  @include clearfix;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-grid-item {
+  @include clearfix;
+  display: block;
+  width: 100%;
+  @include susy-breakpoint($small-break-landscape, $small-layout) {
+    @include gallery(2 of 4, of-type);
+  }
+  @include susy-breakpoint($medium-break, $medium-layout) {
+    @include gallery(3 of 9, of-type);
+  }
+}

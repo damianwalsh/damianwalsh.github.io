@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Rules
+   ========================================================================== */
+
+hr,
+.hr {
+  @include trailer(1);
+  border: 0;
+  height: 1px;
+  background: palette(black);
+  &-light {
+    background: palette(black, light);
+  }
+  &-xlight {
+    background: palette(black, xlight);
+  }
+  &-xxlight {
+    background: palette(black, xxlight);
+  }
+  &-xxxlight {
+    background: palette(black, xxxlight);
+  }
+}

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Site banner
+   ========================================================================== */
+
+$banner-height  : 66px;
+
+.site-banner {
+  @include rhythm(0,.5,.5,0);
+  background: white;
+  z-index: index($site, banner);
+}
+
+.site-banner-brand {
+  float: left;
+  > [itemprop="image"] {
+    @include trailer(0);
+    border-radius: 50%;
+    display: inline;
+    margin-right: $grid-padding / 2;
+    transition: all .25s ease-in-out;
+  }
+  > [itemprop="name"] {
+    color: palette(lucite-green);
+    text-transform: uppercase;
+  }
+}
+
+.site-banner-nav {
+  float: right;
+  @include block-list-inline;
+  a {
+    @include rem('padding', $base-line-height / 2);
+    display: block;
+    color: palette(lucite-green);
+    #{$focus} {
+      color: palette(lucite-green, light);
+    }
+  }
+}
+
+.fixed-supported {
+  .site-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $transparent;
+    filter: opacity(1.0);
+    transition: all .25s ease-in-out;
+    transform: translateZ(0);
+    &.opaque {
+      background: white;
+    }
+  }
+  .is-hidden {
+    filter: opacity(0);
+    transform: translateY(- $banner-height);
+    .site-banner-brand,
+    .site-banner-nav {
+      filter: opacity(0);
+    }
+  }
+}

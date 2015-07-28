@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Media
+   ========================================================================== */
+
+img,
+embed,
+object,
+video {
+  @include trailer(1);
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+  vertical-align: middle;
+  float: none;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  @include trailer(1);
+}
+
+.pull-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pull-left {
+  float: left;
+  margin-right: $grid-padding;
+}
+
+.pull-right {
+  float: right;
+  margin-left: $grid-padding;
+}
+
+.resrc {
+  width : 100%
+}

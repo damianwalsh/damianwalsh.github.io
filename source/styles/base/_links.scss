@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+$link   : '&:link, &:visited';
+$focus  : '&:hover, &:focus, &:active';
+
+a {
+  #{$link} {
+    transition: .25s ease-in-out;
+    color: palette(aquamarine);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #{$focus} {
+    color: palette(aquamarine, light);
+  }
+}

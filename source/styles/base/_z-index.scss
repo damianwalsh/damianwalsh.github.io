@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Z index scale
+   ========================================================================== */
+
+/**
+ * Manage z-index context/stacking order
+ *
+ * http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+ *
+ * Example usage:
+ *
+ * z-index: index($site, banner);
+ */
+
+$site : background, main, banner;
+

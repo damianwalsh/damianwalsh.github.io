@@ -1,0 +1,97 @@
+---
+title: Damian Walsh
+description: UX/UI designer based in London, UK with over 15 years experience in agency and client side roles for FTSE listed companies across financial, publishing and retail sectors.
+header_image: header-image.jpg
+---
+
+<div class="site-main-section" id="about">
+  <div class="container">
+    <header class="pad-one-col">
+      <h2>About me</h2>
+      <p class="lede">I design user-friendly interfaces informed by research and best practices which balance user needs with business objectives.</p>
+    </header>
+    <h3>Skills</h3>
+    <div class="grid-layout-three-col">
+      <div class="grid-layout-item">
+        <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" role="img" class="icon">
+          <title>User Experience Design</title>
+          <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+            <circle stroke="#333" cx="33" cy="33" r="33" class="icon-border"/>
+            <g stroke="#333" stroke-linejoin="round" class="icon-graphic">
+              <path d="M27.855 44.5H37.5V39c0-.63-3.847-2.74-7-4v-2.5s1.24-.42 1.24-3.13c.876 0 1.26-2.522.04-2.522 0-.267.965-1.65.59-3.152-.63-2.522-6.935-2.522-7.565 0-2.655-.543-.63 2.788-.63 3.152-1.26 0-.88 2.522-.002 2.522 0 2.71 1.328 3.13 1.328 3.13V35c-3.152 1.26-7 3.37-7 4v5.5h9.355z"/>
+              <path d="M40.5 44.5h7v-5.674c0-.63-3.478-1.318-6-2.326v-2s1.587-.44 1.587-2.608c.702 0 .976-2.522 0-2.522 0-.214 1.022-1.347.63-2.522-.63-1.89-5.674-1.89-6.304 0-2.124-.434-.63 2.23-.63 2.522-1.01 0-.702 2.522 0 2.522 0 2.168 1.717 2.608 1.717 2.608V36" stroke-linecap="round"/>
+            </g>
+          </g>
+        </svg>
+        <h4>User Experience Design</h4>
+        <p>Producing wireframes and interactive prototypes, conducting user research and testing.</p>
+      </div>
+      <div class="grid-layout-item">
+        <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" role="img" class="icon">
+          <title>Visual Design</title>
+          <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+            <circle stroke="#333" cx="33" cy="33" r="33" class="icon-border"/>
+            <g stroke="#333" stroke-linecap="round" stroke-linejoin="round" class="icon-graphic">
+              <path d="M39.5 33.5H41c2.09 0 3.5 1.5 3.5 3.5s-1.41 3.5-3.5 3.5h-1.5M39.5 45c0 1.47-1.107 2.5-2.5 2.5H26c-1.393 0-2.5-1.108-2.5-2.5V31.5h16V45zM39.807 18.58c1.3 1.985-.627 3.074-1.076 4.14-.474 1.127-.012 2.208 1.117 2.683 3.657 1.542 4.745-5.664-.04-6.822zM35.959 31.5l3.54-6.354M40.775 25.618l-2.23 5.882M28.5 31.5h-4l-2-4-.5-4 3.5 2 3 6zM22.5 27.5l3-2M35.5 18.5h-6v13h6v-13zM35.5 21.5h-3M35.5 23.5h-2M35.5 25.5h-3M35.5 28.5h-2"/>
+            </g>
+          </g>
+        </svg>
+        <h4>Visual Design</h4>
+        <p>Establishing and working within existing guidelines to create consistent on-brand user interfaces.</p>
+      </div>
+      <div class="grid-layout-item">
+        <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" role="img" class="icon">
+          <title>Front-end Development</title>
+          <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+            <circle stroke="#333" cx="33" cy="33" r="33" class="icon-border"/>
+            <g stroke="#333" class="icon-graphic">
+              <path d="M24.5 45.5h18M33 42.5v3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.5 37.5h29"/>
+              <path d="M47.5 40.5c0 1.1-.9 2-2 2h-25c-1.1 0-2-.9-2-2v-19c0-1.1.9-2 2-2h25c1.1 0 2 .9 2 2v19z" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M33.5 40c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5z"/>
+            </g>
+          </g>
+        </svg>
+        <h4>Front-end Development</h4>
+        <p>Building scalable, modular, performance optimised responsive websites and applications.</p>
+      </div>
+    </div>
+    <a class="btn-primary" href="/resume.pdf">View résumé</a>
+  </div>
+</div>
+
+<div class="site-main-section panel-glacier-gray-xxlight" id="work">
+  <header class="container pad-one-col">
+    <h2>My Work</h2>
+    <p class="lede">Due to contractual obligations I'm unable to share all work online. <a href="mailto:damianwalsh@me.com">Get in touch</a> to discuss further examples.</p>
+  </header>
+  <div class="work-grid">
+    <% blog.articles[0...10].each do |article| %>
+      <div class="work-grid-item">
+        <a href="<%= article.url %>" class="card">
+          <%= image_tag article.data.cover_image, :alt => article.title, :class => 'card-image' %>
+          <div class="card-info">
+            <h3 class="card-title"><%= article.data.title %></h3>
+            <p class="card-description"><%= article.data.description %></p>
+            <p class="card-cta btn-secondary">
+              <i class="icon-keyboard-arrow-right"></i>
+              <b>More</b>
+            </p>
+          </div>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="site-main-section panel-aquamarine-light">
+  <div class="container pad-one-col">
+    <blockquote class="blockquote-fancy">
+      <p>Damian is an exceptional talent producing top notch, on-brand website design. He keeps up with front-end development trends and produces lean, efficient code.</p>
+      <footer>
+        <p><small>Darren Ferguson. Director, Moriyama</small></p>
+      </footer>
+    </blockquote>
+  </div>
+</div>
+

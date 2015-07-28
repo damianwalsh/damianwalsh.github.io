@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Work grid
+   ========================================================================== */
+
+$work-grid-small-break: 480px;
+
+.work-grid {
+  @include grid-layout;
+  &-item {
+    @include susy-breakpoint($work-grid-small-break, $medium-layout) {
+      @include gallery(2 of 4 inside, of-type);
+      padding: 0;
+    }
+    @include susy-breakpoint($medium-break, $medium-layout) {
+      @include gallery(2 of 6 inside, of-type);
+      padding: 0;
+    }
+    @include susy-breakpoint($large-break, $large-layout) {
+      @include gallery(2 of 8 inside, of-type);
+      padding: 0;
+    }
+  }
+}

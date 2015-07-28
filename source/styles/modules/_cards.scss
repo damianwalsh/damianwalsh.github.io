@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.card {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: palette(black);
+  backface-visibility: hidden;
+  &-image {
+    @include trailer(0);
+    filter: alpha(opacity=35);
+    opacity: 0.35;
+  }
+  &-info {
+    @include rem('padding', $grid-padding $grid-padding / 2);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  &-title {
+    color: white;
+  }
+  &-description {
+    color: palette(black, xxlight);
+  }
+  &-cta {
+    @include trailer(0);
+    @include rem('width', $base-line-height * 2);
+  }
+}
+
+.no-touch.cssanimations {
+  .card {
+    & * {
+      transition: .25s ease;
+      transform: translateZ(0);
+    }
+    &-image {
+      transform: scale(1.01);
+      filter: alpha(opacity=100);
+      opacity: 1.0;
+    }
+    &-info {
+      transform: translateY(-50%);
+    }
+    &-title,
+    &-description,
+    &-cta {
+      filter: alpha(opacity=0);
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    &-title {
+      transition-delay: .025s;
+    }
+    &-description {
+      transition-delay: .05s;
+    }
+    &-cta {
+      transition-delay: .1s;
+    }
+    &:hover {
+      .card-image {
+        transform: scale(1.2);
+        filter: alpha(opacity=15);
+        opacity: 0.15;
+      }
+      .card-title,
+      .card-description,
+      .card-cta {
+        filter: alpha(opacity=100);
+        opacity: 1.0;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+@mixin btn {
+  @include rem('padding', $base-line-height / 2);
+  @include rem('height', $base-line-height * 2);
+  border-radius: $base-line-height;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 0.25s ease-in-out;
+  -webkit-appearance: none;
+  > i {
+    @include rem('font-size', 18px);
+  }
+  > b {
+    @include hide;
+  }
+}
+
+.btn-default {
+  @include btn;
+  border: 1px solid palette(black);
+  color: palette(black);
+  #{$link} {
+    color: palette(black);
+  }
+  #{$focus} {
+    color: palette(black, light);
+    border: 1px solid palette(black, light);
+  }
+}
+
+.btn-primary {
+  @include btn;
+  background: palette(lucite-green);
+  #{$link} {
+    color: white;
+  }
+  #{$focus} {
+    background: palette(lucite-green, light);
+  }
+}
+
+.btn-secondary {
+  @include btn;
+  border: 1px solid palette(lucite-green);
+  color: palette(lucite-green);
+  #{$link} {
+    color: palette(lucite-green);
+  }
+  #{$focus} {
+    color: palette(lucite-green, light);
+    border: 1px solid palette(lucite-green, light);
+  }
+}
+
+.btn-reverse {
+  @include btn;
+  border: 1px solid white;
+  color: white;
+}
+
+

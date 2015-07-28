@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+$grid-background-baseline-color: rgba(black, .125);
+
+$base-font-size: 14px;
+$base-line-height: 22px;
+$rhythm-unit: 'rem';
+$grid-padding: $base-line-height;
+
+$small-break-portrait:   max-width 320px;
+$small-break-landscape:  min-width 321px;
+$medium-break:           min-width 768px;
+$large-break:            min-width 1024px;
+
+$susy: (
+  columns: 4,
+  gutters: .25,
+  container: 1280px,
+  use-custom: (
+    rem: true
+  )
+);
+
+$small-layout: (
+  columns: 4,
+);
+
+$medium-layout: (
+  columns: 8
+);
+
+$large-layout: (
+  columns: 12
+);
+
+/*
+  debug: (
+    image: show,
+    output: overlay
+  ),
+*/

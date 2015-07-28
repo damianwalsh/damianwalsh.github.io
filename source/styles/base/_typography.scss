@@ -1,0 +1,226 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+$font-display     : "Playfair Display", serif;
+$font-paragraph   : "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-monospace   : Menlo, "Courier New", monospace;
+$font-serif       : Georgia, "Times New Roman", Times, serif;
+
+%display-regular {
+  font-family: $font-display;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%display-strong {
+  font-family: $font-display;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%display-emphasis {
+  font-family: $font-display;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%paragraph-regular {
+  font-family: $font-paragraph;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%paragraph-emphasis {
+  font-family: $font-paragraph;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%paragraph-strong {
+  font-family: $font-paragraph;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%paragraph-monospace {
+  font-family: $font-monospace;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%paragraph-serif {
+  font-family: $font-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%paragraph-serif-emphasis {
+  font-family: $font-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Headings
+   ========================================================================== */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @extend %display-strong;
+  margin: 0;
+  padding: 0;
+  color: palette(black);
+}
+
+h1, .h1 {
+  @include rem('font-size', 38px);
+  @include adjust-leading-to(2, 38px);
+  @include trailer(.5, 38px);
+}
+
+h2, .h2 {
+  @include rem('font-size', 30px);
+  @include adjust-leading-to(1.5, 30px);
+  @include trailer(.5, 30px);
+}
+
+h3, .h3 {
+  @include rem('font-size', 26px);
+  @include adjust-leading-to(1.5, 26px);
+  @include trailer(.5, 26px);
+}
+
+h4, .h4 {
+  @include rem('font-size', 22px);
+  @include adjust-leading-to(1.25, 22px);
+  @include trailer(.5, 22px);
+}
+
+h5, .h5 {
+  @include rem('font-size', 18px);
+  @include adjust-leading-to(1, 18px);
+  @include trailer(.5, 18px);
+}
+
+h6, .h6 {
+  @include rem('font-size', 14px);
+  @include adjust-leading-to(1, 14px);
+  @include trailer(.5, 14px);
+}
+
+%lede {
+  @extend %display-regular;
+  @include rem('font-size', 18px);
+  @include adjust-leading-to(1.15, 18px);
+}
+
+.lede {
+  @extend %lede;
+}
+
+p, ul, ol {
+  @include rhythm(0,0,0,1);
+}
+
+strong {
+  @extend %paragraph-strong;
+}
+
+em {
+  @extend %paragraph-emphasis;
+}
+
+blockquote,
+.blockquote {
+  @include rhythm(0,0,0,1);
+  quotes: "\201C""\201D""\2018""\2019";
+  position: relative;
+  &-fancy {
+    &:before,
+    &:after {
+      @extend %display-regular;
+      font-size: 12em;
+      line-height: 0.5;
+      position: absolute;
+      filter: alpha(opacity=0.1);
+      opacity: 0.1;
+    }
+    &:before {
+      content: open-quote;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      content: close-quote;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  > p {
+    @extend %lede;
+    @include trailer(0);
+  }
+  > footer {
+    @include leader(1);
+  }
+}
+
+code, pre {
+  @extend %paragraph-monospace;
+}
+
+ul {
+  @include rem('margin-left', $grid-padding + 2px);
+  padding: 0;
+  list-style: disc;
+}
+
+ol {
+  @include rem('margin-left', $grid-padding + 6px);
+  padding: 0;
+  list-style: decimal;
+}
+
+%small {
+  @include rem('font-size', 12px);
+}
+
+small,
+.small {
+  @extend  %small;
+}
+
+figcaption,
+cite,
+.caption,
+.cite {
+  @include rem('font-size', 12px);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-reverse {
+  color: white;
+}
+
+.text-inline {
+  display: inline;
+}

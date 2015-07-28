@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Grid layouts
+   ========================================================================== */
+
+@mixin grid-layout {
+  @include clearfix;
+}
+
+.small-screen-grid {
+  @include grid-layout;
+  > .grid-layout-item {
+    @include gallery(2 of 4, of-type);
+  }
+}
+
+.grid-layout-two-col {
+  @include grid-layout;
+  > .grid-layout-item {
+    @include susy-breakpoint($medium-break, $medium-layout) {
+      @include gallery(2 of 4, of-type);
+    }
+  }
+}
+
+.grid-layout-three-col {
+  @include grid-layout;
+  > .grid-layout-item {
+    @include susy-breakpoint($medium-break, $medium-layout) {
+      @include gallery(2 of 6, of-type);
+    }
+  }
+}
+
+.grid-layout-four-col {
+  @include grid-layout;
+  > .grid-layout-item {
+    @include susy-breakpoint($medium-break, $medium-layout) {
+      @include gallery(2 of 8, of-type);
+    }
+  }
+}

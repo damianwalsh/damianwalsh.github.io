@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Root
+   ========================================================================== */
+
+@include establish-baseline;
+
+@include border-box-sizing;
+
+body {
+  @extend %paragraph-regular;
+  color: palette(black, light);
+  background: palette(glacier-gray, xxxlight);
+}
+
+.container {
+  @include container;
+  @include gutters(inside);
+  @include susy-breakpoint($medium-break, $medium-layout) {
+    @include show-grid(8);
+  }
+  @include susy-breakpoint($large-break, $large-layout) {
+    @include show-grid(12);
+  }
+}
+

@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+
+.site-footer {
+  @include rhythm(0,2,2,0);
+  background: palette(black);
+  text-align: center;
+  color: palette(black, xlight);
+}
+
+.site-footer-links {
+  @include block-list-inline;
+  > li:not(:first-child):before {
+    @include rem('margin', 0 $base-line-height);
+  }
+  > li:not(:first-child) > a {
+    @include rem('margin-left', $base-line-height / 2);
+  }
+  a {
+    @include rem('width', $base-line-height * 2);
+  }
+}

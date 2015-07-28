@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination {
+  text-align: center;
+  ul {
+    @include block-list-inline;
+  }
+  .btn-default {
+    @include rem('width', $base-line-height * 2);
+  }
+  .previous {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+

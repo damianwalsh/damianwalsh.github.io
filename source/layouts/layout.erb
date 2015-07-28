@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-skrollr">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% if current_page.data.title == data.site.title %>
+      <title><%= data.site.title + " | " + data.site.description %></title>
+    <% else %>
+      <title><%= current_page.data.title + " | " + data.site.title + " | " + data.site.description %></title>
+    <% end %>
+
+    <meta name="description" content="<%= data.site.description %>">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= data.site.url + current_page.url %>" />
+    <meta property="og:title" content="<%= data.site.title %>" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@damianwalsh" />
+    <meta name="twitter:title" content="<%= current_page.data.title %>" />
+    <meta name="twitter:description" content="<%= current_page.data.description %>" />
+
+    <%= stylesheet_link_tag "screen" %>
+
+    <!--[if lt IE 9]>
+      <%= stylesheet_link_tag "ie" %>
+      <%= javascript_include_tag  "ie" %>
+    <![endif]-->
+
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <header class="site-banner" role="banner" itemscope itemtype="http://schema.org/Person">
+      <div class="container">
+        <a href="/" class="site-banner-brand">
+          <%= image_tag 'damianwalsh.jpg', itemprop: "image", width: "44", height: "44", alt: "Damian Walsh" %>
+          <span itemprop="name">Damian Walsh</span>
+        </a>
+        <nav role="navigation">
+          <ul class="site-banner-nav">
+            <li>
+              <%= link_to 'About', '/#about' %>
+            </li>
+             <li>
+              <%= link_to 'Work', '/#work' %>
+            </li>
+            <li>
+              <%= link_to 'Contact', 'mailto:damianwalsh@me.com', :class => 'btn-secondary', :itemprop => "email" %>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main text-center" role="main">
+
+      <header class="page-header">
+        <div class="page-header-image" style="background-image: url('/images/<%= current_page.data.header_image %>');" data-0="transform[swing]: scale(1); filter[swing]: blur(0px); opacity[swing]: 0.75;" data-319="transform[swing]: scale(1.2); filter[swing]: blur(12px); opacity[swing]: 1;"
+      ></div>
+        <div class="page-header-info" data-66="transform: translate(0%,-50%); opacity[swing]:1;" data-264="transform: translate(0%, -100%); opacity[swing]:0;">
+          <div class="container pad-one-col">
+            <h1 class="title"><%= current_page.data.title %></h1>
+            <% unless current_page.data.tags.nil? %>
+              <ul class="categories">
+                <% current_page.tags.each do |tag| %>
+                  <li class="text-uppercase">
+                    <small><%= tag %></small>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
+            <p class="lede"><%= current_page.data.description %></p>
+          </div>
+        </div>
+      </header>
+
+      <%= yield %>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container pad-one-col">
+        <h2 class="text-reverse">Looking for a UX/UI designer?</h2>
+        <p>I am currently seeking a role within an established digital product development team at organisations which values user-centred design. Please view my <a href="/resume.pdf">résumé</a> and <a href="mailto:damianwalsh@me.com">get in touch</a> to find out more.</p>
+        <ul class="site-footer-links">
+          <li>
+            <a href="https://twitter.com/damianwalsh" class="btn-secondary">
+              <i class="icon-twitter"></i>
+              <b>Twitter</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://uk.linkedin.com/in/damianw" class="btn-secondary">
+              <i class="icon-linkedin"></i>
+              <b>LinkedIn</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/damianwalsh" class="btn-secondary">
+              <i class="icon-github"></i>
+              <b>GitHub</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+
+  <%= javascript_include_tag  "plugins", "main" %>
+
+  <script>
+    WebFontConfig = {
+      google: { families: [ 'Lato:400,400italic,700italic:latin', 'Playfair+Display:400,700:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65682544-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</html>

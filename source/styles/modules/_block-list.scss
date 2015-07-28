@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Block list
+   ========================================================================== */
+
+@mixin block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.block-list {
+  @include block-list;
+}
+
+@mixin block-list-inline {
+  @include block-list;
+  font-size: 0; // remove space between inline blocks
+  > li {
+    @include rem('font-size', $base-font-size); // reset font size
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.block-list-inline {
+  @include block-list-inline;
+}

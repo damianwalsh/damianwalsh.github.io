@@ -1,0 +1,7 @@
+//= require "jquery/dist/jquery.js"
+//= require "modernizr.custom.js"
+//= require "filament-fixed/fixedfixed.js"
+//= require "picturefill/src/picturefill.js"
+//= require "waypoints/lib/jquery.waypoints.js"
+//= require "waypoints/lib/shortcuts/inview.js"
+//= require "skrollr/src/skrollr.js"

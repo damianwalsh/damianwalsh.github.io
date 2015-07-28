@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+input:not([type="submit"]),
+textarea {
+  @extend %paragraph-regular;
+  border: 1px solid palette(black, light);
+  border-radius: 2px;
+  @include trailer(.5);
+  @include rem('font-size', $base-font-size);
+  background: transparent;
+  outline: none;
+  color: palette(black, light);
+  width: 100%;
+  transition: border-color 0.25s ease-in-out;
+  -webkit-appearance: none;
+  &:focus {
+    border-color: palette(black, xlight);
+    &::-webkit-input-placeholder {
+      opacity: 0;
+    }
+    &:-moz-placeholder {
+      opacity: 0;
+    }
+    &::-moz-placeholder {
+      opacity: 0;
+    }
+    &:-ms-input-placeholder {
+      opacity: 0;
+    }
+  }
+  &.error {
+    border-color: red;
+    &:focus {
+      border-color: red;
+    }
+  }
+  &::-webkit-input-placeholder {
+    @extend %paragraph-emphasis;
+    @include transition-duration(.25s);
+    color: palette(black, light);
+    opacity: 99;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @extend %paragraph-emphasis;
+    @include transition-duration(.25s);
+    color: palette(black, light);
+    opacity: 99;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @extend %paragraph-emphasis;
+    @include transition-duration(.25s);
+    color: palette(black, light);
+    opacity: 99;
+  }
+  &:-ms-input-placeholder {
+    @extend %paragraph-emphasis;
+    @include transition-duration(.25s);
+    color: palette(black, light);
+    opacity: 99;
+  }
+}
+
+select {
+  @extend %paragraph-strong;
+  @include trailer(.5);
+  @include rem('font-size', $base-font-size);
+  @include pad($base-font-size);
+  background: transparent;
+  outline: none;
+  color: palette(black, light);
+  width: 100%;
+}
+
+label {
+  position: relative;
+  display: block;
+  @extend %paragraph-strong;
+  > span {
+    display: block;
+    @include trailer(.5);
+  }
+}
+
+textarea {
+  @include rem('height', $base-line-height * 2);
+  @include rhythm(0,.0,.5,0);
+  resize: vertical;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  width: auto;
+  border: none;
+}
+
+[type="checkbox"]  {
+  -webkit-appearance: checkbox;
+  width: auto;
+  border: none;
+}
