@@ -164,10 +164,8 @@ end
 # Deployment configuration
 activate :deploy do |deploy|
   deploy.method = :git
-  # Optional Settings
-  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  # deploy.branch   = 'custom-branch' # default: gh-pages
+  deploy.remote   = 'git@github.com:damianwalsh/damianwalsh.github.io.git'
+  deploy.branch   = 'master'
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-  deploy.build_before = true # default: false
+  deploy.build_before = true
 end
