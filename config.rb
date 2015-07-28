@@ -117,13 +117,13 @@ activate :imageoptim do |options|
 
   # Compressor worker options, individual optimisers can be disabled by passing
   # false instead of a hash
-  options.advpng    = { :level => 4 }
+  options.advpng    = { :level => 2 }
   options.gifsicle  = { :interlace => false }
   options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
   options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
-  options.optipng   = { :level => 6, :interlace => false }
+  options.optipng   = { :level => 1, :interlace => false }
   options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
-  options.pngout    = { :copy_chunks => false, :strategy => 0 }
+  options.pngout    = { :copy_chunks => false, :strategy => 4 }
   options.svgo      = {}
 end
 
