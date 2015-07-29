@@ -10,12 +10,6 @@ var site = {
     site.reSrc();
   },
 
-  reSrc: function() {
-    resrc.ready(function () {
-      resrc.run();
-    });
-  },
-
   addListeners: function() {
     $('.toggle').click(function(){
       var el = $(this).data('target');
@@ -99,7 +93,21 @@ var site = {
         }
       }
     });
+  },
+
+  reSrc: function() {
+    resrc.ready(function () {
+      resrc.configure({
+        server : "trial.resrc.it"
+      });
+      $('.resrc').review({
+        callback : function () {
+          resrc.run(this);
+        }
+      });
+    });
   }
+
 };
 
 $(document).ready(site.init);
