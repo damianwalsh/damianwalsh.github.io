@@ -59,3 +59,12 @@
     }
   }
 }
+
+.touch {
+  .page-header-image {
+    transform: scale(1);
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+  }
+}
+
