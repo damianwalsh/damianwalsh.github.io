@@ -17,16 +17,16 @@ header_image: work/tesco-loves-baby-club/header-image.jpg
 <figure class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
-      <img src="/images/work/tesco-loves-baby-club/device-mockup.jpg" alt="Device mockup">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/tesco-loves-baby-club/device-mockup.jpg" alt="Device mockup" class="img-responsive">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-three-col">
-        <img src="/images/work/tesco-loves-baby-club/homepage.jpg" alt="Homepage" class="grid-layout-item">
-        <img src="/images/work/tesco-loves-baby-club/recipes-archive.jpg" alt="Recipe archive" class="grid-layout-item">
-        <img src="/images/work/tesco-loves-baby-club/recipe-page.jpg" alt="Recipe page" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/tesco-loves-baby-club/homepage.jpg" alt="Homepage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/tesco-loves-baby-club/recipes-archive.jpg" alt="Recipe archive" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/tesco-loves-baby-club/recipe-page.jpg" alt="Recipe page" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>

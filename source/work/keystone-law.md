@@ -17,29 +17,29 @@ header_image: work/keystone-law/header-image.jpg
   <div class="container pad-one-col">
     <figure>
       <div class="grid-layout-two-col small-screen-grid">
-        <img src="/images/work/keystone-law/presentation-slide-company.jpg" alt="Company info" class="grid-layout-item">
-        <img src="/images/work/keystone-law/presentation-slide-brief.jpg" alt="Brief" class="grid-layout-item">
-        <img src="/images/work/keystone-law/presentation-slide-users.jpg" alt="Users" class="grid-layout-item">
-        <img src="/images/work/keystone-law/presentation-slide-competitors.jpg" alt="Competitors" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/presentation-slide-company.jpg" alt="Company info" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/presentation-slide-brief.jpg" alt="Brief" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/presentation-slide-users.jpg" alt="Users" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/presentation-slide-competitors.jpg" alt="Competitors" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Selection of slides from pitch presentation</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/homepage-wireframe.jpg" alt="Homepage wireframe">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/homepage-wireframe.jpg" alt="Homepage wireframe" class="img-responsive">
       <figcaption>
         <p><em>Wireframes demonstrating suggested layout</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/device-mockup.jpg" alt="Device mockup">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/device-mockup.jpg" alt="Device mockup" class="img-responsive">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/homepage-desktop.jpg" alt="Homepage design">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/homepage-desktop.jpg" alt="Homepage design" class="img-responsive">
       <figcaption>
         <p><em>Homepage visual design mockup</em></p>
       </figcaption>

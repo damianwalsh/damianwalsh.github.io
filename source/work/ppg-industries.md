@@ -18,25 +18,25 @@ header_image: work/ppg-industries/header-image.jpg
   <div class="container">
     <figure class="pad-one-col">
       <div class="grid-layout-two-col small-screen-grid">
-        <img src="/images/work/ppg-industries/brand-guidelines-logo.jpg" alt="Brand Logos" class="grid-layout-item">
-        <img src="/images/work/ppg-industries/brand-guidelines-colours.jpg" alt="Brand Colours" class="grid-layout-item">
-        <img src="/images/work/ppg-industries/brand-guidelines-typography.jpg" alt="Brand Typography" class="grid-layout-item">
-        <img src="/images/work/ppg-industries/brand-guidelines-concept.jpg" alt="Brand Concept" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/brand-guidelines-logo.jpg" alt="Brand Logos" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/brand-guidelines-colours.jpg" alt="Brand Colours" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/brand-guidelines-typography.jpg" alt="Brand Typography" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/brand-guidelines-concept.jpg" alt="Brand Concept" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Examples of brand guidelines supplied by client</em></p>
       </figcaption>
     </figure>
     <figure class="pad-one-col">
-      <img src="/images/work/ppg-industries/device-mockup.jpg" alt="Device mockup">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/device-mockup.jpg" alt="Device mockup" class="img-responsive">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/ppg-industries/certified-first-homepage.jpg" alt="Homepage" class="grid-layout-item">
-        <img src="/images/work/ppg-industries/certified-first-registration.jpg" alt="Course registration" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/certified-first-homepage.jpg" alt="Homepage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/ppg-industries/certified-first-registration.jpg" alt="Course registration" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>

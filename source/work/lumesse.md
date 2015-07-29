@@ -17,32 +17,32 @@ header_image: work/lumesse/header-image.jpg
 <div class="site-main-section panel-glacier-gray-xxlight">
   <div class="container"> 
     <figure class="pad-one-col">
-      <img src="/images/work/lumesse/campaign-landing-page-user-flow.jpg" alt="Campaign user flow diagram">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/campaign-landing-page-user-flow.jpg" alt="Campaign user flow diagram" class="img-responsive">
       <figcaption>
         <p><em>New landing pages feature LinkedIn integration offering users a streamlined sign-up process.</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col small-screen-grid pad-one-col">
-        <img src="/images/work/lumesse/brand-guidelines-logo.jpg" alt="Logo usage" class="grid-layout-item">
-        <img src="/images/work/lumesse/brand-guidelines-colours.jpg" alt="Colour usage" class="grid-layout-item">
-        <img src="/images/work/lumesse/brand-guidelines-typography.jpg" alt="Typography usage" class="grid-layout-item">
-        <img src="/images/work/lumesse/brand-guidelines-photography.jpg" alt="Photography usage" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/brand-guidelines-logo.jpg" alt="Logo usage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/brand-guidelines-colours.jpg" alt="Colour usage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/brand-guidelines-typography.jpg" alt="Typography usage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/brand-guidelines-photography.jpg" alt="Photography usage" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Examples of brand guidelines supplied by client</em></p>
       </figcaption>
     </figure>
     <figure class="device-mockup pad-one-col">
-      <img src="/images/work/lumesse/device-mockup.jpg" alt="Device mockup">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/device-mockup.jpg" alt="Device mockup" class="img-responsive">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/lumesse/homepage.jpg" alt="Homepage" class="grid-layout-item">
-        <img src="/images/work/lumesse/campaign-landing-page.jpg" alt="Campaign landing page" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/homepage.jpg" alt="Homepage" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/lumesse/campaign-landing-page.jpg" alt="Campaign landing page" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive homepage and landing page</em></p>

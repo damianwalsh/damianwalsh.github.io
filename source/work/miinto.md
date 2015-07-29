@@ -18,17 +18,17 @@ header_image: work/miinto/header-image.jpg
   <div class="container">
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/miinto/user-guide-cover.jpg" alt="Cover" class="grid-layout-item">
-        <img src="/images/work/miinto/user-guide-intro.jpg" alt="Introduction" class="grid-layout-item">
-        <img src="/images/work/miinto/user-guide-photo-studio.jpg" alt="Photo Studio" class="grid-layout-item">
-        <img src="/images/work/miinto/user-guide-products.jpg" alt="Products" class="grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/miinto/user-guide-cover.jpg" alt="Cover" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/miinto/user-guide-intro.jpg" alt="Introduction" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/miinto/user-guide-photo-studio.jpg" alt="Photo Studio" class="img-responsive grid-layout-item">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/miinto/user-guide-products.jpg" alt="Products" class="img-responsive grid-layout-item">
       </div>
       <figcaption>
         <p><em>Layouts from user guide distributed as part of new customer welcome pack</em></p>
       </figcaption>
     </figure>
     <figure class="pad-two-col">
-      <img src="/images/work/miinto/aw12-b2b-email.jpg" alt="HTML email" class="grid-layout-item">
+      <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/miinto/aw12-b2b-email.jpg" alt="HTML email" class="img-responsive grid-layout-item">
       <figcaption>
         <p><em>New customer HTML email</em></p>
       </figcaption>
