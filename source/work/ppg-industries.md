@@ -49,9 +49,6 @@ header_image: work/ppg-industries/header-image.jpg
   <div class="container pad-one-col">
     <p>I built templates for key pages and documented common interface elements and patterns in a <a href="http://24ways.org/2011/front-end-style-guides/">front-end style guide</a>. Combined page weight across new templates reduced by up to 50% improving load speed and lowering hosting costs.</p>
     <p>The project was conducted remotely and lead by PPG’s European Brand Management team based in Barcelona. I attended weekly GoToMeeting conference calls throughout the project to update the client with progress and receive feedback.</p>
-    <p>
-      <a href="http://certified-first.damianwalsh.me/" class="btn-primary">Visit website <i class="icon-reply flip-horizontal"></i></a>
-    </p>
   </div>
 </div>
 
