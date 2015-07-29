@@ -19,24 +19,24 @@ header_image: work/groundteam/header-image.jpg
   <div class="container">
     <figure>
       <div class="grid-layout-three-col">
-        <img src="/images/work/groundteam/homepage-wireframe.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/groundteam/projects-archive-wireframe.jpg" alt="Services archive" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/groundteam/project-page-wireframe.jpg" alt="Project page" class="grid-layout-item animated" data-animated="fadeIn"> 
+        <img src="/images/work/groundteam/homepage-wireframe.jpg" alt="Homepage" class="grid-layout-item">
+        <img src="/images/work/groundteam/projects-archive-wireframe.jpg" alt="Services archive" class="grid-layout-item">
+        <img src="/images/work/groundteam/project-page-wireframe.jpg" alt="Project page" class="grid-layout-item"> 
       </div>
       <figcaption>
         <p><em>Wireframes demonstrating suggested layout</em></p>
       </figcaption>
     </figure>
     <figure class="pad-one-col">
-      <img src="/images/work/groundteam/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/groundteam/device-mockup.jpg" alt="Device mockup">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/groundteam/2015-homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/groundteam/2015-services-page.jpg" alt="Service page" class="grid-layout-item animated" data-animated="fadeIn"> 
+        <img src="/images/work/groundteam/2015-homepage.jpg" alt="Homepage" class="grid-layout-item">
+        <img src="/images/work/groundteam/2015-services-page.jpg" alt="Service page" class="grid-layout-item"> 
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>

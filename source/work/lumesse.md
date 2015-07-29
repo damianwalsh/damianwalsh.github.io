@@ -24,25 +24,25 @@ header_image: work/lumesse/header-image.jpg
     </figure>
     <figure>
       <div class="grid-layout-two-col small-screen-grid pad-one-col">
-        <img src="/images/work/lumesse/brand-guidelines-logo.jpg" alt="Logo usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-colours.jpg" alt="Colour usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-typography.jpg" alt="Typography usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-photography.jpg" alt="Photography usage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/brand-guidelines-logo.jpg" alt="Logo usage" class="grid-layout-item">
+        <img src="/images/work/lumesse/brand-guidelines-colours.jpg" alt="Colour usage" class="grid-layout-item">
+        <img src="/images/work/lumesse/brand-guidelines-typography.jpg" alt="Typography usage" class="grid-layout-item">
+        <img src="/images/work/lumesse/brand-guidelines-photography.jpg" alt="Photography usage" class="grid-layout-item">
       </div>
       <figcaption>
         <p><em>Examples of brand guidelines supplied by client</em></p>
       </figcaption>
     </figure>
     <figure class="device-mockup pad-one-col">
-      <img src="/images/work/lumesse/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/lumesse/device-mockup.jpg" alt="Device mockup">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/lumesse/homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/campaign-landing-page.jpg" alt="Campaign landing page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/homepage.jpg" alt="Homepage" class="grid-layout-item">
+        <img src="/images/work/lumesse/campaign-landing-page.jpg" alt="Campaign landing page" class="grid-layout-item">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive homepage and landing page</em></p>

@@ -17,29 +17,29 @@ header_image: work/keystone-law/header-image.jpg
   <div class="container pad-one-col">
     <figure>
       <div class="grid-layout-two-col small-screen-grid">
-        <img src="/images/work/keystone-law/presentation-slide-company.jpg" alt="Company info" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/keystone-law/presentation-slide-brief.jpg" alt="Brief" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/keystone-law/presentation-slide-users.jpg" alt="Users" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/keystone-law/presentation-slide-competitors.jpg" alt="Competitors" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/keystone-law/presentation-slide-company.jpg" alt="Company info" class="grid-layout-item">
+        <img src="/images/work/keystone-law/presentation-slide-brief.jpg" alt="Brief" class="grid-layout-item">
+        <img src="/images/work/keystone-law/presentation-slide-users.jpg" alt="Users" class="grid-layout-item">
+        <img src="/images/work/keystone-law/presentation-slide-competitors.jpg" alt="Competitors" class="grid-layout-item">
       </div>
       <figcaption>
         <p><em>Selection of slides from pitch presentation</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/homepage-wireframe.jpg" alt="Homepage wireframe" class="animated" data-animated="fadeIn">
+      <img src="/images/work/keystone-law/homepage-wireframe.jpg" alt="Homepage wireframe">
       <figcaption>
         <p><em>Wireframes demonstrating suggested layout</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/keystone-law/device-mockup.jpg" alt="Device mockup">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
-      <img src="/images/work/keystone-law/homepage-desktop.jpg" alt="Homepage design" class="animated" data-animated="fadeIn">
+      <img src="/images/work/keystone-law/homepage-desktop.jpg" alt="Homepage design">
       <figcaption>
         <p><em>Homepage visual design mockup</em></p>
       </figcaption>

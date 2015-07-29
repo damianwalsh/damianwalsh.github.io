@@ -17,23 +17,23 @@ header_image: work/moriyama/header-image.jpg
 <section class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
-      <img src="/images/work/moriyama/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/moriyama/device-mockup.jpg" alt="Device mockup">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-three-col">
-        <img src="/images/work/moriyama/homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/moriyama/services-archive.jpg" alt="Section archive page" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/moriyama/developer-training.jpg" alt="Content page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/moriyama/homepage.jpg" alt="Homepage" class="grid-layout-item">
+        <img src="/images/work/moriyama/services-archive.jpg" alt="Section archive page" class="grid-layout-item">
+        <img src="/images/work/moriyama/developer-training.jpg" alt="Content page" class="grid-layout-item">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>
       </figcaption>
     </figure>
     <figure class="pad-two-col">
-      <img src="/images/work/moriyama/stationery.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/moriyama/stationery.jpg" alt="Device mockup">
       <figcaption>
         <p><em>Examples of branded stationery and promotional items</em></p>
       </figcaption>
