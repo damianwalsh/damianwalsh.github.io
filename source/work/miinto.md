@@ -14,21 +14,21 @@ header_image: work/miinto/header-image.jpg
   </div>
 </div>
 
-<figure class="site-main-section panel-glacier-gray-xlight">
+<figure class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure>
       <div class="grid-layout-two-col">
-        <img data-src="http://damianwalsh.me/images/work/miinto/user-guide-cover.png" alt="Cover" class="resrc grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/miinto/user-guide-intro.png" alt="Introduction" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/miinto/user-guide-photo-studio.png" alt="Photo Studio" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/miinto/user-guide-products.png" alt="Products" class="grid-layout-item animated" data-animated="fadeIn">
+        <img data-src="https://damianwalsh.me/images/work/miinto/user-guide-cover.jpg" alt="Cover" class="grid-layout-item resrc animated" data-animated="fadeIn" />
+        <img src="https://damianwalsh.me/images/work/miinto/user-guide-intro.jpg" alt="Introduction" class="grid-layout-item resrc animated" data-animated="fadeIn" />
+        <img src="https://damianwalsh.me/images/work/miinto/user-guide-photo-studio.jpg" alt="Photo Studio" class="grid-layout-item resrc animated" data-animated="fadeIn" />
+        <img src="https://damianwalsh.me/images/work/miinto/user-guide-products.jpg" alt="Products" class="grid-layout-item resrc animated" data-animated="fadeIn" />
       </div>
       <figcaption>
         <p><em>Layouts from user guide distributed as part of new customer welcome pack</em></p>
       </figcaption>
     </figure>
     <figure class="pad-two-col">
-      <img src="/images/work/miinto/aw12-b2b-email.png" alt="HTML email" class="animated" data-animated="fadeIn">
+      <img src="https://damianwalsh.me/images/work/miinto/aw12-b2b-email.jpg" alt="HTML email" class="grid-layout-item resrc animated" data-animated="fadeIn" />
       <figcaption>
         <p><em>New customer HTML email</em></p>
       </figcaption>

@@ -14,19 +14,19 @@ header_image: work/moriyama/header-image.jpg
   </div>
 </div>
 
-<section class="site-main-section panel-glacier-gray-xlight">
+<section class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
-      <img src="/images/work/moriyama/device-mockup.png" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/moriyama/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-three-col">
-        <img src="/images/work/moriyama/homepage.png" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/moriyama/services-archive.png" alt="Section archive page" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/moriyama/developer-training.png" alt="Content page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/moriyama/homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/moriyama/services-archive.jpg" alt="Section archive page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/moriyama/developer-training.jpg" alt="Content page" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>

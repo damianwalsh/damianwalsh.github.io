@@ -14,19 +14,19 @@ header_image: work/tesco-loves-baby-club/header-image.jpg
   </div>
 </div>
 
-<figure class="site-main-section panel-glacier-gray-xlight">
+<figure class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
-      <img src="/images/work/tesco-loves-baby-club/device-mockup.png" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/tesco-loves-baby-club/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-three-col">
-        <img src="/images/work/tesco-loves-baby-club/homepage.png" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/tesco-loves-baby-club/recipes-archive.png" alt="Recipe archive" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/tesco-loves-baby-club/recipe-page.png" alt="Recipe page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/tesco-loves-baby-club/homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/tesco-loves-baby-club/recipes-archive.jpg" alt="Recipe archive" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/tesco-loves-baby-club/recipe-page.jpg" alt="Recipe page" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>

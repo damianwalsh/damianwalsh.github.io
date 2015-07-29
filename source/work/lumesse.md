@@ -14,35 +14,35 @@ header_image: work/lumesse/header-image.jpg
   </div>
 </div>
 
-<div class="site-main-section panel-glacier-gray-xlight">
+<div class="site-main-section panel-glacier-gray-xxlight">
   <div class="container"> 
     <figure class="pad-one-col">
-      <img src="/images/work/lumesse/campaign-landing-page-user-flow.png" alt="Campaign user flow diagram">
+      <img src="/images/work/lumesse/campaign-landing-page-user-flow.jpg" alt="Campaign user flow diagram">
       <figcaption>
         <p><em>New landing pages feature LinkedIn integration offering users a streamlined sign-up process.</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col small-screen-grid pad-one-col">
-        <img src="/images/work/lumesse/brand-guidelines-logo.png" alt="Logo usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-colours.png" alt="Colour usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-typography.png" alt="Typography usage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/brand-guidelines-photography.png" alt="Photography usage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/brand-guidelines-logo.jpg" alt="Logo usage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/brand-guidelines-colours.jpg" alt="Colour usage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/brand-guidelines-typography.jpg" alt="Typography usage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/brand-guidelines-photography.jpg" alt="Photography usage" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Examples of brand guidelines supplied by client</em></p>
       </figcaption>
     </figure>
     <figure class="device-mockup pad-one-col">
-      <img src="/images/work/lumesse/device-mockup.png" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/lumesse/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/lumesse/homepage.png" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/lumesse/campaign-landing-page.png" alt="Campaign landing page" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/lumesse/campaign-landing-page.jpg" alt="Campaign landing page" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive homepage and landing page</em></p>

@@ -14,29 +14,29 @@ header_image: work/ppg-industries/header-image.jpg
   </div>
 </div>
 
-<figure class="site-main-section panel-glacier-gray-xlight">
+<figure class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
       <div class="grid-layout-two-col small-screen-grid">
-        <img src="/images/work/ppg-industries/brand-guidelines-logo.png" alt="Brand Logos" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/ppg-industries/brand-guidelines-colours.png" alt="Brand Colours" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/ppg-industries/brand-guidelines-typography.png" alt="Brand Typography" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/ppg-industries/brand-guidelines-concept.png" alt="Brand Concept" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/brand-guidelines-logo.jpg" alt="Brand Logos" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/brand-guidelines-colours.jpg" alt="Brand Colours" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/brand-guidelines-typography.jpg" alt="Brand Typography" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/brand-guidelines-concept.jpg" alt="Brand Concept" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Examples of brand guidelines supplied by client</em></p>
       </figcaption>
     </figure>
     <figure class="pad-one-col">
-      <img src="/images/work/ppg-industries/device-mockup.png" alt="Device mockup" class="animated" data-animated="fadeIn">
+      <img src="/images/work/ppg-industries/device-mockup.jpg" alt="Device mockup" class="animated" data-animated="fadeIn">
       <figcaption>
         <p><em>Homepage adapting across various screen sizes</em></p>
       </figcaption>
     </figure>
     <figure>
       <div class="grid-layout-two-col">
-        <img src="/images/work/ppg-industries/certified-first-homepage.png" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
-        <img src="/images/work/ppg-industries/certified-first-registration.png" alt="Course registration" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/certified-first-homepage.jpg" alt="Homepage" class="grid-layout-item animated" data-animated="fadeIn">
+        <img src="/images/work/ppg-industries/certified-first-registration.jpg" alt="Course registration" class="grid-layout-item animated" data-animated="fadeIn">
       </div>
       <figcaption>
         <p><em>Screenshots of responsive templates</em></p>
