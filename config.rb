@@ -30,6 +30,8 @@ end
 
 page "/feed.xml", layout: false
 
+page "/sitemap.xml", layout: false
+
 ###
 # Compass
 ###
@@ -37,6 +39,7 @@ page "/feed.xml", layout: false
 # Required gems
 require 'susy'
 require 'breakpoint'
+require 'builder'
 
 # Compass configuration
 compass_config do |config|
@@ -124,7 +127,7 @@ activate :imageoptim do |options|
   options.optipng   = { :level => 1, :interlace => false }
   options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
   options.pngout    = { :copy_chunks => false, :strategy => 4 }
-  options.svgo      = {}
+  options.svgo      = false
 end
 
 # Serve compressed files
