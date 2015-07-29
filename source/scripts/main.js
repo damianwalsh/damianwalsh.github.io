@@ -7,7 +7,6 @@ var site = {
     site.wayPoints();
     site.skrollr();
     site.smoothScroll();
-    site.reSrc();
   },
 
   addListeners: function() {
@@ -92,19 +91,6 @@ var site = {
           return false;
         }
       }
-    });
-  },
-
-  reSrc: function() {
-    resrc.ready(function () {
-      resrc.configure({
-        server : "trial.resrc.it"
-      });
-      $('.resrc').review({
-        callback : function () {
-          resrc.run(this);
-        }
-      });
     });
   }
 
