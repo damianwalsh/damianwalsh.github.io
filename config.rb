@@ -122,7 +122,7 @@ activate :imageoptim do |options|
   # false instead of a hash
   options.advpng    = { :level => 2 }
   options.gifsicle  = { :interlace => false }
-  options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
+  options.jpegoptim = { :strip => ['all'], :max_quality => 50 }
   options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
   options.optipng   = { :level => 1, :interlace => false }
   options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
