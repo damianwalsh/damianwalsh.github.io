@@ -1,0 +1,17 @@
+<div class="work-grid">
+  <% blog.articles[0...10].each do |article| %>
+    <div class="work-grid-item">
+      <a href="<%= article.url %>" class="card">
+        <img src="https://wit.wurfl.io/https://damianwalsh.me/images/<%= article.data.cover_image %>" alt="<%= article.title %>" class="card-image">
+        <div class="card-info">
+          <h3 class="card-title"><%= article.data.title %></h3>
+          <p class="card-description"><%= article.data.description %></p>
+          <p class="card-cta btn-secondary">
+            <i class="icon-keyboard-arrow-right"></i>
+            <b>More</b>
+          </p>
+        </div>
+      </a>
+    </div>
+  <% end %>
+</div>
