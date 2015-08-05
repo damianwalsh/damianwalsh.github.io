@@ -27,7 +27,7 @@
 
 .page-header-info {
   @include vertical-align;
-  text-shadow: 0 0 0.75em transparentize(black, .25);
+  text-shadow: 0 0 0.75em transparentize(black, .5);
   z-index: index($site, main);
   a {
     color: white;
