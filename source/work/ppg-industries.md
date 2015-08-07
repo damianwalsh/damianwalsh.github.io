@@ -2,7 +2,7 @@
 title: PPG Industries
 date: 2014-12-16
 description: Bringing innovation to the surface
-tags: UI/UX Design,Responsive Web Design,Front-end Development
+tags: UX/UI Design,Responsive Web Design,Front-end Development
 cover_image: work/ppg-industries/cover-image.jpg
 header_image: work/ppg-industries/header-image.jpg
 ---

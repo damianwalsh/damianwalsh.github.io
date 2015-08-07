@@ -2,6 +2,7 @@
 title: Keystone Law
 date: 2014-08-15
 description: A flexible alternative to traditional law firms
+tags: UX/UI Design
 cover_image: work/keystone-law/cover-image.jpg
 header_image: work/keystone-law/header-image.jpg
 ---
