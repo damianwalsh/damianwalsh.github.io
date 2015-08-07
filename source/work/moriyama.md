@@ -14,7 +14,7 @@ header_image: work/moriyama/header-image.jpg
   </div>
 </div>
 
-<section class="site-main-section panel-glacier-gray-xxlight">
+<div class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
       <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/moriyama/device-mockup.jpg" alt="Device mockup" class="img-responsive">
@@ -39,7 +39,7 @@ header_image: work/moriyama/header-image.jpg
       </figcaption>
     </figure>
   </div>
-</section>
+</div>
 
 <div class="site-main-section">
   <div class="container pad-one-col">

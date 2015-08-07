@@ -14,7 +14,7 @@ header_image: work/tesco-loves-baby-club/header-image.jpg
   </div>
 </div>
 
-<figure class="site-main-section panel-glacier-gray-xxlight">
+<div class="site-main-section panel-glacier-gray-xxlight">
   <div class="container">
     <figure class="pad-one-col">
       <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/tesco-loves-baby-club/device-mockup.jpg" alt="Device mockup" class="img-responsive">
@@ -33,7 +33,7 @@ header_image: work/tesco-loves-baby-club/header-image.jpg
       </figcaption>
     </figure>
   </div>
-</figure>
+</div>
 
 <div class="site-main-section">
   <div class="container pad-one-col">
