@@ -30,7 +30,7 @@ header_image: work/keystone-law/header-image.jpg
     <figure>
       <img src="https://wit.wurfl.io/https://damianwalsh.me/images/work/keystone-law/homepage-wireframe.jpg" alt="Homepage wireframe" class="img-responsive">
       <figcaption>
-        <p><em>Wireframes demonstrating suggested layout</em></p>
+        <p><em>Wireframes demonstrating suggested homepage layout surfacing important content</em></p>
       </figcaption>
     </figure>
     <figure>
