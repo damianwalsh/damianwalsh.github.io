@@ -5,7 +5,6 @@ description: The original millionaire maker
 tags: UX/UI Design
 cover_image: work/the-football-pools/cover-image.jpg
 header_image: work/the-football-pools/header-image.jpg
-published: false
 ---
 
 <div class="site-main-section">
