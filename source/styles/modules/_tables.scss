@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+  width: 100%;
+  @include trailer(1);
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        @include rem('padding', $base-line-height / 2);
+        line-height: inherit;
+        vertical-align: top;
+        text-align: left;
+        border-bottom: 1px solid palette(glacier-gray);
+      }
+      > th {
+        @extend %paragraph-strong;
+      }
+    }
+  }
+  [class^=".btn-"] {
+    @include trailer(0);
+  }
+}
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background: palette(glacier-gray, xxlight);
+    }
+  }
+}
+
+.tablesaw-stack thead td,
+.tablesaw-stack thead th {
+  display: none;
+}
+
+.tablesaw-stack th .tablesaw-cell-label-top,
+.tablesaw-stack td .tablesaw-cell-label-top {
+  display: block;
+}
+
+.tablesaw-stack tbody tr {
+  border-bottom: 1px solid palette(glacier-gray);
+}
+
+.tablesaw-stack tbody td {
+  border-bottom: none;
+}
+
+.tablesaw-cell-label {
+  display: block !important;
+}
+
+@include susy-breakpoint($medium-break, $medium-layout) {
+  .tablesaw-stack tbody td,
+  .tablesaw-stack tbody th {
+    clear: left;
+  }
+  .tablesaw-stack tr {
+    display: table-row;
+  }
+  /* Show the table header rows */
+  .tablesaw-stack td,
+  .tablesaw-stack th,
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  /* Hide the labels in each cell */
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: none !important;
+  }
+}
