@@ -5,3 +5,4 @@
 //= require "waypoints/lib/jquery.waypoints.js"
 //= require "waypoints/lib/shortcuts/inview.js"
 //= require "skrollr/src/skrollr.js"
+//= require "tablesaw/dist/stackonly/tablesaw.stackonly.js"

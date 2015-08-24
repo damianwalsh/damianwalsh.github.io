@@ -23,6 +23,7 @@
     "waypoints": "~3.1.1",
     "picturefill": "~2.3.1",
     "skrollr": "~0.6.30",
-    "skrollr-ie": "~1.0.3"
+    "skrollr-ie": "~1.0.3",
+    "tablesaw": "~1.0.4"
   }
 }
