@@ -11,6 +11,7 @@
 
 .site-footer-links {
   @include block-list-inline;
+  @include trailer(1);
   > li:not(:first-child):before {
     @include rem('margin', 0 $base-line-height);
   }
