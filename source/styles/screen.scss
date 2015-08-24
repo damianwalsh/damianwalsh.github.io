@@ -8,6 +8,11 @@
 @import "susy";
 @import "breakpoint";
 
+/* Vendor
+   ========================================================================== */
+
+@import "tablesaw/dist/stackonly/tablesaw.stackonly";
+
 /* Base
    ========================================================================== */
 
@@ -39,6 +44,7 @@
 @import "modules/work-grid";
 @import "modules/padding";
 @import "modules/cards";
+@import "modules/tables";
 
 /* Layouts
    ========================================================================== */
