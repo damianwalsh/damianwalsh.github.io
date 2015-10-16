@@ -10,7 +10,7 @@ header_image: work/lumesse/header-image.jpg
 <div class="site-main-section">
   <div class="container pad-one-col">
     <p class="lede">Lumesse, a recruitment software provider approached Moriyama in January 2014 with a brief to develop lead generation landing pages and responsive website.</p>
-    <p>The objective for landing pages was reducing sign-up form abandonment rates while the website refresh project involved developing a prototype demonstrating responsive design applied to key page templates.</p>
+    <p>The objective for landing pages was reducing sign-up form abandonment rates while the website refresh project involved developing a responsive design applied to key page templates. The prototype was developed for internal review only and not used in production.</p>
   </div>
 </div>
 
@@ -44,7 +44,7 @@ header_image: work/lumesse/header-image.jpg
   <div class="container pad-one-col">
     <p>My role was developing initial concepts and working in conjunction with a Visual Designer translating corporate guidelines produced by Lumesse's internal brand management team into static front-end templates <em>(HTML/CSS/jQuery)</em> for Moriyama's developers to integrate with the Umbraco CMS, LinkedIn and Salesforce.</p>
     <p>
-      <a href="http://lumesse.damianwalsh.me/" class="btn-primary">Visit website <i class="icon-reply flip-horizontal"></i></a>
+      <a href="http://talent-management.damianwalsh.me/" class="btn-primary">Visit website <i class="icon-reply flip-horizontal"></i></a>
     </p>
   </div>
 </div>
