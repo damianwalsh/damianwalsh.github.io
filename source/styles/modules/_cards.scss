@@ -12,6 +12,7 @@
     @include trailer(0);
     filter: alpha(opacity=35);
     opacity: 0.35;
+    width: 100%;
   }
   &-info {
     @include rem('padding', $grid-padding $grid-padding / 2);
