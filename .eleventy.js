@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
   // Passthrough
   eleventyConfig.addPassthroughCopy({ "src/static": "." });
   eleventyConfig.addPassthroughCopy({ "src/scripts": "." });
+  eleventyConfig.addPassthroughCopy({ "src/styles": "." });
   eleventyConfig.addPassthroughCopy({ "src/images" : "images" });
 
   // Watch targets
