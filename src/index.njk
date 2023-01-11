@@ -2,8 +2,9 @@
 layout: default
 ---
 <header class="bg-slate-100 pb-14 md:pb-16 dark:bg-slate-800">
-  <div class="container">
-
+  <div class="container flex">
+    <img class="inline-flex rounded mr-4 w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20" src="{{ '/images/logo.svg' | url }}" alt="">
+      <div>
         <h1 class="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-50 md:text-3xl lg:text-4xl">
           {{ metadata.name }}
         </h1>
@@ -13,7 +14,7 @@ layout: default
         <p class="pt-1 text-xs uppercase font-semibold tracking-wide md:text-sm lg:text-base">
           {{ metadata.location }}
         </p>
-
+      </div>
   </div>
 </header>
 <div class="container">

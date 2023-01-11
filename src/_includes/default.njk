@@ -83,8 +83,9 @@
       <div class="container flex items-center justify-end h-10">
         
         {%- if currentUrl != '/' -%}
-        <div class="grow">
-          <a href="/" class="text-xs uppercase font-semibold tracking-wide md:text-sm lg:text-base">Damian Walsh</a> 
+        <div class="flex grow"> 
+          <a href="/" class="text-xs uppercase font-semibold tracking-wide md:text-sm lg:text-base">
+            <img class="inline-flex mr-2 w-7 h-7 rounded-sm" src="{{ '/images/logo.svg' | url }}" alt="">Damian Walsh</a> 
         </div>
         {%- endif -%}
 
