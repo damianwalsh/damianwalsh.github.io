@@ -6,10 +6,10 @@ layout: default
     <div>
       {%- for post in collections.work -%}
       <p class="text-lg font-semibold md:text-xl lg:text-2xl">
-        {{ post.data.brand }}
+        {{ post.data.title }}
       </p>
       <h1 class="text-2xl font-bold text-slate-800 dark:text-slate-50 md:text-3xl lg:text-4xl">
-        {{ post.data.title }}
+        {{ post.data.description }}
       </h1>
       {%- endfor -%}
     </div>
