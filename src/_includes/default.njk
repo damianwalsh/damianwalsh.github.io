@@ -31,12 +31,15 @@
 
     {%- if currentUrl == '/' -%}
       {{ metadata.name }} | {{ metadata.description }} 
-    {%- endif -%}
-    
-    {%- if currentUrl != '/' -%}
+
+    {%- elif tags == 'work' -%}
       {%- for post in collections.work -%}
-        {{ post.data.brand }} {{ post.data.title }}
+        {{ post.data.title }} | {{ post.data.description }} 
       {%- endfor -%}
+    
+    {%- else -%}
+      {{ title }} | {{ description }}
+
     {%- endif -%}
 
     </title>
