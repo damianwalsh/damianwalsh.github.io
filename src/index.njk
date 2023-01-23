@@ -3,18 +3,18 @@ layout: default
 ---
 <header class="bg-slate-100 pb-14 md:pb-16 dark:bg-slate-800">
   <div class="container flex">
-    <img class="inline-flex rounded mr-4 w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20" src="{{ '/images/logo.svg' | url }}" alt="">
-      <div>
-        <h1 class="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-50 md:text-3xl lg:text-4xl">
-          {{ metadata.name }}
-        </h1>
-        <h2 class="text-xl font-semibold md:text-2xl lg:text-3xl">
-          {{ metadata.title }}
-        </h2>
-        <p class="pt-1 text-xs uppercase font-semibold tracking-wide md:text-sm lg:text-base">
-          {{ metadata.location }}
-        </p>
-      </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="inline-flex fill-transparent mr-4 w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20" viewBox="0 0 80 80"><mask id="a" width="30" height="80" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path class="fill-white" d="M0 0h30v80H0z"/></mask><g class="stroke-violet-500 dark:stroke-violet-300" mask="url(#a)"><path stroke-linecap="round" stroke-linejoin="round" d="M10 80 90 0M15 80 95 0M20 80l80-80M25 80l80-80M30 80l80-80M5 80 85 0M0 80 80 0M-5 80 75 0M-10 80 70 0M-15 80 65 0M-20 80 60 0M-25 80 55 0M-30 80 50 0M-35 80 45 0M-40 80 40 0M-45 80 35 0M-50 80 30 0M-55 80 25 0M-60 80 20 0M-65 80 15 0M-70 80 10 0M-75 80 5 0M-80 80 0 0"/><path class="stroke-[3px]" d="M1.5 1.5h27v77h-27z"/></g><mask id="b" width="38" height="80" x="42" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path class="fill-white" d="M80 40c0 22.091-17.013 40-38 40V0c20.987 0 38 17.909 38 40Z"/></mask><g class="stroke-violet-500 dark:stroke-violet-300" mask="url(#b)"><path stroke-linecap="round" stroke-linejoin="round" d="M10 80 90 0M15 80 95 0M20 80l80-80M25 80l80-80M30 80l80-80M35 80l80-80M40 80l80-80M45 80l80-80M50 80l80-80M55 80l80-80M60 80l80-80M65 80l80-80M70 80l80-80M75 80l80-80M5 80 85 0M0 80 80 0M-5 80 75 0M-10 80 70 0M-15 80 65 0M-20 80 60 0M-25 80 55 0M-30 80 50 0M-35 80 45 0M80 80l80-80"/><path class="stroke-[3px]" d="M78.5 40c0 20.803-15.602 37.639-35 38.468V1.532c19.398.83 35 17.665 35 38.468Z"/></g></svg>
+    <div>
+      <h1 class="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-50 md:text-3xl lg:text-4xl">
+        {{ metadata.name }}
+      </h1>
+      <h2 class="text-xl font-semibold md:text-2xl lg:text-3xl">
+        {{ metadata.title }}
+      </h2>
+      <p class="pt-1 text-xs uppercase font-semibold tracking-wide md:text-sm lg:text-base">
+        {{ metadata.location }}
+      </p>
+    </div>
   </div>
 </header>
 <div class="container">
@@ -29,9 +29,6 @@ layout: default
     <h2 class="pb-1 text-xs uppercase font-semibold tracking-wide text-violet-500 dark:text-violet-300 md:text-sm lg:text-base">Skills</h2>
     <h3 class="text-2xl font-semibold pb-2 text-slate-800 lg:text-3xl dark:text-slate-50">Areas of expertise</h3>
     <p class="pb-6">I can help develop new products or improve existing digital experiences by sharing knowledge and applying abilities including:</p>
-
-   
-
     <div class="grid md:grid-cols-3 gap-4">
       <div class="flex gap-4 md:flex-col border-2 border-slate-300 rounded p-4 dark:border-slate-500">
         <div class="md:text-center">
