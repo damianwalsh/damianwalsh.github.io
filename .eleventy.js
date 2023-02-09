@@ -1,7 +1,6 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 
-
 module.exports = function(eleventyConfig) {
 
   if (process.env.ELEVENTY_PRODUCTION) {
@@ -30,6 +29,7 @@ module.exports = function(eleventyConfig) {
     },
     pathPrefix
   }
+  
 };
 
 function browserSyncReady(err, bs) {
