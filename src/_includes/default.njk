@@ -31,15 +31,9 @@
 
     {%- if currentUrl == '/' -%}
       {{ metadata.name }} | {{ metadata.description }} 
-
-    {%- elif tags == 'work' -%}
-      {%- for post in collections.work -%}
-        {{ post.data.title }} | {{ post.data.description }} 
-      {%- endfor -%}
     
     {%- else -%}
-      {{ title }} | {{ description }}
-
+      {{ metadata.name }} | {{ description or title }}
     {%- endif -%}
 
     </title>
