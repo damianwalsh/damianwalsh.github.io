@@ -32,23 +32,3 @@
 html[data-theme='dark'] .flickity-page-dots .dot {
   background: #f8fafc;
 }
-
-.bg-grid {
-  background-image: linear-gradient(#f1f5f9 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #f1f5f9 calc(100% - 0.5px)), linear-gradient(90deg, #f1f5f9 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #f1f5f9 calc(100% - 0.5px));
-  background-size: 24px 24px;
-  background-position: -12px -12px;
-}
-
-html[data-theme='light'] .bg-grid {
-  background-image: linear-gradient(#f1f5f9 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #f1f5f9 calc(100% - 0.5px)), linear-gradient(90deg, #f1f5f9 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #f1f5f9 calc(100% - 0.5px));
-}
-
-
-html[data-theme='dark'] .bg-grid {
-  background-image: linear-gradient(#475569 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #475569 calc(100% - 0.5px)), linear-gradient(90deg, #475569 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #475569 calc(100% - 0.5px));
-}
-
-.bg-linear-gradient-mask {
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient (black, transparent);
-}
