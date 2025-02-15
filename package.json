@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "sass public/css:public/css --watch --no-source-map",
     "eleventy:dev": "eleventy --serve",
-    "dev": "npm-run-all --parallel sass eleventy:dev"
+    "dev": "npm-run-all --parallel sass eleventy:dev",
+    "build": "npx @11ty/eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
