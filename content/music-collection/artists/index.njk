@@ -1,0 +1,45 @@
+---
+eleventyNavigation:
+  key: Artists
+  parent: Music Collection
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music-collection/artists/index.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{% set groupedItems = collections.artists | sort(attribute='artist') | groupItems('artist') %}
+
+<nav aria-label="alphabetical">
+  <ul role="list">
+    {% for group in groupedItems %}
+      <li><a href="#{{ group[0] | lower }}">{{ group[0] }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% for group in groupedItems %}
+<section>
+  <header>
+    <h2 id="{{ group[0] | lower }}" class="title">{{ group[0] }}</h2>
+  </header>
+  <ul role="list" class="index__list">
+    {% for artist in group[1] %}
+    <li>
+      <a href="/music-collection/artists/{{ artist.artist | slugify }}.html" class="index__item surface">
+        <div class="index__details">
+          <h3 class="title">{{ artist.artist }}</h3>
+          <p class="meta"><span class="counter">{{ artist.releases.length }}</span> release{{ 's' if artist.releases.length !== 1 }}</p>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

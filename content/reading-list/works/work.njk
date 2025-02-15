@@ -1,0 +1,112 @@
+---
+eleventyNavigation:
+  key: "{{ book.title }}"
+  parent: Works
+eleventyComputed:
+  title: "{{ book.title }} - {{ book.author }} | Reading List"
+pagination:
+  data: collections.books
+  size: 1
+  alias: book
+permalink: "/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ book.title }}</h1>
+</header>
+
+<div class="surface detail">
+  <img
+    loading="eager"
+    src="../img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+    sizes="(min-width: 1720px) 403px, (min-width: 1380px) calc(26.56vw - 49px), (min-width: 780px) calc(30.69vw - 15px), calc(86.09vw - 14px)"
+    alt="{{ book.title }}"
+    class="detail__image">
+
+  <dl class="detail__meta">
+    <dt>Author</dt>
+    <dd><a href="/reading-list/authors/{{ book.author | slugify }}.html">{{ book.author }}</a></dd>
+    {% if book.first_publish_date %}
+    <dt>First published</dt>
+    <dd>{{ book.first_publish_date | readableDate }}</dd>
+    {% endif %}
+    {% if book.subjects and book.subjects.length > 0 %}
+    <dt>Subjects</dt>
+    <dd>
+    {% set displayed_subjects = book.subjects | slice(0, 3) %}
+    {{ displayed_subjects | join(", ") }}{% if book.subjects.length > 3 %}...{% endif %}
+    </dd>
+    {% endif %}
+    {% if book.date_read %}
+    <dt>Date read</dt>
+    <dd><a href="/reading-list/years/{{ book.date_read | extractYear }}.html">{{ book.date_read | readableDate("LLL yyyy") }}</a></dd>
+    {% endif %}
+  </dl>
+  <div class="detail__footer">
+    {% if book.favourite %}
+    <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-heart"></use>
+    </svg> Favourite</div>
+    {% endif %}
+    <a href="https://openlibrary.org/works/{{ book.openlibrary_key }}" class="detail__action"><small>View on Open Library</small></a>
+  </div>
+</div>
+
+{% if book.description %}
+<details class="surface">
+  <summary>
+    <h2 class="title">Synopsis</h2>
+  </summary>
+  <p>{{ book.description }}</p>
+</details>
+{% endif %}
+
+{% set otherBooks = collections.books | otherItemsByCreator(book, "author", "title") %}
+{% if otherBooks.length > 0 %}
+<section>
+  <header>
+    <h2 class="title">Other books by <a href="/reading-list/authors/{{ book.author | slugify }}.html">{{ book.author }}</a> I've read</h2>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% for otherBook in otherBooks %}
+    <li>
+      <a href="/reading-list/works/{{ otherBook.title | slugify }}-{{ otherBook.author | slugify }}.html" class="collection__item surface">
+        <img
+          src="../img/{{ otherBook.title | slugify }}-{{ otherBook.author | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
+          alt="{{ otherBook.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h3 class="title">{{ otherBook.title }}</h3>
+          {% if otherBook.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<nav aria-label="pagination">
+  {% if pagination.href.previous %}
+  {% set previousBook = collections.books[pagination.pageNumber - 1] %}
+  <a href="{{ pagination.href.previous }}" class="icon-link prev"><svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+    <use xlink:href="#icon-chevron-left"></use>
+  </svg><span class="visually-hidden">Previous:</span> {{ previousBook.title }} by {{ previousBook.author }}</a>
+  {% endif %}
+  {% if pagination.href.next %}
+  {% set nextBook = collections.books[pagination.pageNumber + 1] %}
+  <a href="{{ pagination.href.next }}" class="icon-link next"><span class="visually-hidden">Next:</span> {{ nextBook.title }} by {{ nextBook.author }} <svg width="36" height="36" viewBox="-6 -6 36 36"
+    class="action icon-stroke" aria-hidden="true">
+    <use xlink:href="#icon-chevron-right"></use>
+  </svg></a>
+  {% endif %}
+</nav>
+

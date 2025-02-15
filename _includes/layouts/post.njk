@@ -1,0 +1,101 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: "{{ post.title | stringify }}"
+  parent: Posts
+---
+{% css %}
+{% include "public/css/prism-okaidia.css" %}
+{% include "public/css/prism-diff.css" %}
+{% include "public/css/posts.css" %}
+{% endcss %}
+
+<article>
+  <header class="main-header">
+    {% include "partials/breadcrumb.njk" %}
+    <h1>{{ title }}</h1>
+    {% if description %}
+    <p class="standfirst">{{ description }}</p>
+    {% endif %}
+    <div class="main-header__meta">
+      <p class="meta">
+        <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+        {% if updated %} (Updated <time datetime="{{ updated | htmlDateString }}">{{ updated | readableDate }})</time>{% endif %}
+      </p>
+      {% set tagList = tags | filterTagList %}
+      {% if tagList.length > 0 and tags != "posts" %}
+      <ul role="list" class="tags__list">
+        {%- for tag in tagList %}
+          {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+          <li><a href="{{ tagUrl }}">{{ tag }}</a></li>
+        {%- endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </header>
+  <div class="prose">
+  {{ content | safe }}
+  </div>
+
+  {%- set monthlyBooks = collections.booksByMonth.getMonthlyBooks(date) %}
+
+  {% if monthlyBooks.length > 0 %}
+  <aside>
+    <section class="sticky surface">
+      <header>
+        <h2 class="title">Read in {{ date | readableDate("MMM yyyy") }}</h2>
+      </header>
+      <ul role="list" class="aside__list">
+        {%- for book in monthlyBooks %}
+        <li>
+          <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="aside__item ">
+            <img
+              src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+              alt="{{ book.title }}"
+              sizes="60px"
+              class="aside__image">
+            <div class="aside__details">
+              <h3 class="title">{{ book.title }}</h3>
+              <p class="meta">{{ book.author }}</p>
+              {% if book.favourite %}
+              <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg> Favourite</div>
+              {% endif %}
+            </div>
+            <svg width="36" height="36" viewBox="-6 -6 36 36" class="aside__action action icon-stroke" aria-hidden="true">
+              <use xlink:href="#icon-chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+  </aside>
+  {% endif %}
+</article>
+
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<nav aria-label="pagination">
+  {%- if previousPost %}
+  <a href="{{ previousPost.url }}" class="icon-link prev">
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-left"></use>
+    </svg>
+    <span class="visually-hidden">Previous:</span> {{ previousPost.data.title }}
+  </a>
+  {% endif %}
+  {%- if nextPost %}
+  <a href="{{ nextPost.url }}" class="icon-link next">
+    <span class="visually-hidden">Next:</span> {{ nextPost.data.title }}
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-right"></use>
+    </svg>
+  </a>
+  {% endif %}
+</nav>
+{%- endif %}
+{%- endif %}

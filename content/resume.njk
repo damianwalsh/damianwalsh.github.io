@@ -1,0 +1,125 @@
+---
+eleventyNavigation:
+  key: Résumé
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }}"
+  bodyClass: "print"
+permalink: resume.html
+eleventyExcludeFromCollections: posts
+---
+{% css %}
+{% include "public/css/resume.css" %}
+{% endcss %}
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<section class="masthead print-only">
+  <header>
+    <h2 class="name">{{ resume.basics.name }}</h2>
+    <p class="title">{{ resume.basics.label }} based in {{ resume.basics.location.region }}, {{ resume.basics.location.countryCode }}</p>
+  </header>
+  <dl class="links">
+    <dt>Website</dt>
+    <dd><a href="{{ resume.basics.url }}">{{ resume.basics.url }}</a></dd>
+    <dt>Email</dt>
+    <dd><a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a></dd>
+  </dl>
+</section>
+
+<section>
+  <header>
+    <h2 class="title">Summary</h2>
+  </header>
+  <p>{{ resume.basics.summary }}</p>
+</section>
+
+<section>
+  <header>
+    <h2 class="title">Experience</h2>
+  </header>
+  {% for job in resume.work %}
+  <article class="resume__item">
+    <header>
+      <h3 class="title">{{ job.position }}</h3>
+      {% if job.name %}
+      <p class="name">
+        {% if job.url %}
+          <a href="{{ job.url }}">{{ job.name }}</a>
+        {% else %}
+          {{ job.name }}
+        {% endif %}
+      </p>
+      {% endif %}
+      <p class="date"><time datetime="{{ job.startDate | isoDateString }}">{{ job.startDate | readableDate("MMM yyyy") }}</time> - {% if job.endDate %}<time datetime="{{ job.endDate | isoDateString }}">{{ job.endDate | readableDate("MMM yyyy") }}</time>{% else %}Present{% endif %}</p>
+    </header>
+    <div class="details">
+      <p>{{ job.summary }}</p>
+      {% if job.highlights.length > 0 %}
+      <ul>
+        {% for highlight in job.highlights %}
+        <li>{{ highlight }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <header>
+    <h2 class="title">Volunteering</h2>
+  </header>
+  {% for role in resume.volunteer %}
+  <article class="resume__item">
+    <header>
+      <h3 class="title">{{ role.position }}</h3>
+      <p class="name">{% if role.url %}<a href="{{ role.url }}">{{ role.organization }}</a>{% else %}{{ role.organization }}{% endif %}</p>
+      <p class="date"><time datetime="{{ role.startDate | isoDateString }}">{{ role.startDate | readableDate("MMM yyyy") }}</time> - {% if role.endDate %}<time datetime="{{ role.endDate | isoDateString }}">{{ role.endDate | readableDate("MMM yyyy") }}</time>{% else %}Present{% endif %}</p>
+    </header>
+    <p class="details">{{ role.summary }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <header>
+    <h2 class="title">Education</h2>
+  </header>
+  {% for edu in resume.education %}
+  <article class="resume__item">
+    <header>
+      <h3 class="title">{{ edu.studyType }}, {{ edu.area }}</h3>
+      <p class="name">{% if edu.url %}<a href="{{ edu.url }}">{{ edu.institution }}</a>{% else %}{{ edu.institution }}{% endif %}</p>
+      <p class="date"><time datetime="{{ edu.startDate | isoDateString }}">{{ edu.startDate | readableDate("yyyy") }}</time> - {% if edu.endDate %}<time datetime="{{ edu.endDate | isoDateString }}">{{ edu.endDate | readableDate("yyyy") }}</time>{% else %}Present{% endif %}</p>
+    </header>
+    <p class="details">{{ edu.courses }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <header>
+    <h2 class="title">Certifications</h2>
+  </header>
+  {% for cert in resume.certificates %}
+  <article class="resume__item">
+    <header>
+      <h3 class="title">{{ cert.name }}</h3>
+      <p class="name">{% if cert.url %}<a href="{{ cert.url }}">{{ cert.issuer }}</a>{% else %}{{ cert.issuer }}{% endif %}</p>
+      <p class="date"><time datetime="{{ cert.startDate | isoDateString }}">{{ cert.startDate | readableDate("yyyy") }}</time> - {% if cert.endDate %}<time datetime="{{ cert.endDate | isoDateString }}">{{ cert.endDate | readableDate("yyyy") }}</time>{% else %}Present{% endif %}</p>
+    </header>
+  </article>
+  {% endfor %}
+</section>
+
+<a href="resume.pdf" class="icon-button screen-only" download><svg viewBox="0 0 24 24" width="24" height="24"
+    class="icon-stroke" aria-hidden="true">
+    <use xlink:href="#icon-download"></use>
+  </svg> Download PDF</a>
+
+
+

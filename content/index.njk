@@ -1,0 +1,112 @@
+---
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{% css %}
+{% include "public/css/collections.css" %}
+{% include "public/css/posts.css" %}
+{% endcss %}
+<header class="main-header">
+  <h1>Hi there</h1>
+  <p class="standfirst">I'm Damian, a designer based in Manchester, UK. I specialise in visual design, interaction design, prototyping, and design systems.</p>
+</header>
+
+<hr>
+
+{%- set posts = collections.posts | reverse -%}
+<section>
+  <header class="row">
+    <h2 class="title">Posts</h2>
+    <p class="meta"><span class="counter">{{ collections.posts.length }}</span> post{{ 's' if collections.posts.length !== 1 }}</p>
+  </header>
+  <ol role="list" class="post__list">
+    {% for post in posts | slice(0, 4) %}
+    <li>
+      <a href="{{ post.url }}" class="post__item surface">
+        <div class="post__details">
+          <h3 class="title">{{ post.data.title }}</h3>
+          {% if post.data.description %}
+          <p class="description">{{ post.data.description }}</p>
+          {% endif %}
+          <time datetime="{{ post.date | isoDateString }}" class="meta">{{ post.date | readableDate }}</time>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="post__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+  <p><a href="/posts/">View all posts</a></p>
+</section>
+
+<hr>
+
+<section>
+  <header class="row">
+    <h2 class="title">Music Collection</h2>
+    <p class="meta"><span class="counter">{{ collections.releases.length }}</span> release{{ 's' if collections.releases.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+  {% for release in collections.releases | slice(0, 4) %}
+    <li>
+      <a href="/music-collection/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}.html" class="collection__item surface">
+        <img
+          src="/music-collection/img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          alt="{{ release.title }}"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
+          class="collection__image">
+        <div class="collection__details">
+          <h3 class="title">{{ release.title }}</h3>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="/music-collection/">View all releases</a></p>
+</section>
+
+<hr>
+
+<section>
+  <header class="row">
+    <h2 class="title">Reading List</h2>
+    <p class="meta"><span class="counter">{{ collections.books.length }}</span> book{{ 's' if collections.books.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+  {% for book in collections.books | slice(0, 4) %}
+    <li>
+      <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="collection__item surface">
+        <img
+          src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+          alt="{{ book.title }}"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
+          class="collection__image">
+        <div class="collection__details">
+          <h3 class="title">{{ book.title }}</h3>
+          <p class="meta">{{ book.author }}</p>
+          {% if book.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="/reading-list/">View all works</a></p>
+</section>

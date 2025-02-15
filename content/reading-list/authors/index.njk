@@ -1,0 +1,45 @@
+---
+eleventyNavigation:
+  key: Authors
+  parent: Reading List
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/reading-list/authors/index.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{% set groupedItems = collections.authors | sort(attribute='author') | groupItems('author') %}
+
+<nav aria-label="alphabetical">
+  <ul role="list">
+    {% for group in groupedItems %}
+      <li><a href="#{{ group[0] | lower }}">{{ group[0] }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% for group in groupedItems %}
+<section>
+  <header>
+    <h2 id="{{ group[0] | lower }}" class="title">{{ group[0] }}</h2>
+  </header>
+  <ul role="list" class="index__list">
+    {% for author in group[1] %}
+    <li>
+      <a href="/reading-list/authors/{{ author.author | slugify }}.html" class="index__item surface">
+        <div class="index__details">
+          <h3 class="title">{{ author.author }}</h3>
+          <p class="meta"><span class="counter">{{ author.books.length }}</span> book{{ 's' if author.books.length !== 1 }}</p>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

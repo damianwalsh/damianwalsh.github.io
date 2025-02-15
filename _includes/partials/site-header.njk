@@ -1,0 +1,74 @@
+<a href="#main" class="visually-hidden">Skip to main content</a>
+
+<header class="site-header surface">
+  <img src="/img/avatar.webp" alt="{{ metadata.title }}" class="logo" eleventy:ignore>
+
+  <div class="site-header__actions">
+    <button class="toggle action" aria-expanded="false" aria-controls="theme" data-target="theme"><svg width="36" height="36" viewBox="-8 -8 40 40"
+        class="icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-settings"></use>
+      </svg><span class="visually-hidden">Theme settings</span></button>
+    <button class="toggle action" aria-expanded="false" aria-controls="main-nav" data-target="main-nav"><svg width="36"
+        height="36" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+      </svg><span class="visually-hidden">Menu</span></button>
+  </div>
+
+  <nav id="main-nav" aria-label="main" class="hidden">
+    <ul role="list">
+      {%- for entry in collections.all | eleventyNavigation %}
+      {% if entry.key not in ["Résumé", "Tags", "Uses", "Colophon"] %}
+      <li>
+        <a href="{{ entry.url }}"
+          {% if entry.url == page.url %}
+          aria-current="page"
+          {% endif %}
+          {% if entry.url != '/' and entry.url != page.url and page.url.startsWith(entry.url) %}
+          class="active"
+          {% endif %}
+        >{{ entry.title }}</a>
+      </li>
+      {% endif %}
+      {%- endfor %}
+    </ul>
+  </nav>
+
+  <form id="theme" class="hidden">
+    <fieldset>
+      <legend>Theme settings</legend>
+      <label for="hueSlider">
+        Base Hue
+        <input
+          type="range"
+          id="hueSlider"
+          name="hue"
+          min="0"
+          max="360"
+          value="180"
+          aria-valuemin="0"
+          aria-valuemax="360"
+          aria-valuenow="180"
+          aria-valuetext="180 degrees"
+        >
+        <output for="hueSlider" id="hueValue" class="hue-counter">180</output>
+      </label>
+      <div role="radiogroup" aria-labelledby="theme-selection">
+        <label>
+          <input type="radio" name="theme" value="auto" checked
+                 aria-checked="true" role="radio">
+          Auto
+        </label>
+        <label>
+          <input type="radio" name="theme" value="light"
+                 aria-checked="false" role="radio">
+          Light
+        </label>
+        <label>
+          <input type="radio" name="theme" value="dark"
+                 aria-checked="false" role="radio">
+          Dark
+        </label>
+      </div>
+    </fieldset>
+  </form>
+</header>

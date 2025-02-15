@@ -1,0 +1,50 @@
+---
+eleventyNavigation:
+  key: "{{ genreData.genre }}"
+  parent: Genres
+eleventyComputed:
+  title: "{{ genreData.genre }} | Music Collection"
+pagination:
+  data: collections.genres
+  size: 1
+  alias: genreData
+permalink: "/music-collection/genres/{{ genreData.genre | slugify }}.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ genreData.genre }}</h1>
+</header>
+<section>
+  <header>
+    <h2 class="title">{{ genreData.releases.length }} release{{ 's' if genreData.releases.length !== 1 }}</h2>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% set sortedReleases = genreData.releases | sort(attribute='artist') %}
+    {% for release in sortedReleases %}
+    <li>
+      <a href="/music-collection/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}.html"
+        class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <=4 }}
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), (min-width: 380px) calc(23.33vw - 13px), calc(6.67vw + 47px)"
+          alt="{{ release.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }} <span class="format">({{ release.format }})</span></h2>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

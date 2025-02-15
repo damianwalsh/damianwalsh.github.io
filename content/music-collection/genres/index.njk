@@ -1,0 +1,30 @@
+---
+eleventyNavigation:
+  key: Genres
+  parent: Music Collection
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music-collection/genres/index.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% set sortedGenres = collections.genres | sort(attribute='releases.length') | reverse %}
+  {% for genre in sortedGenres %}
+  <li>
+    <a href="/music-collection/genres/{{ genre.genre | slugify }}.html" class="index__item surface">
+      <div class="index__details">
+        <h2 class="title">{{ genre.genre }}</h2>
+        <p class="meta"><span class="counter">{{ genre.releases.length }}</span> release{{ 's' if genre.releases.length !== 1 }}</p>
+      </div>
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke"
+        aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

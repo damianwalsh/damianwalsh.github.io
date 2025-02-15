@@ -1,0 +1,30 @@
+---
+title: Tags
+eleventyNavigation:
+  key: Tags
+permalink: tags.html
+eleventyExcludeFromCollections: posts
+---
+{% css %}
+{% include "public/css/collections.css" %}
+{% endcss %}
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% for tag in collections.blogTags %}
+  {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+  <li>
+    <a href="{{ tagUrl }}" class="index__item surface">
+      <div class="index__details">
+        <h2 class="title">{{ tag }}</h2>
+        <p class="meta"><span class="counter">{{ collections[tag].length }}</span> post{{ 's' if collections[tag].length !== 1 }}</p>
+      </div>
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke" aria-hidden="true"><use xlink:href="#icon-chevron-right"></use></svg>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

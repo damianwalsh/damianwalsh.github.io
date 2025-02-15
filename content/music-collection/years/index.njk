@@ -1,0 +1,32 @@
+---
+eleventyNavigation:
+  key: music-years
+  title: By Release Year
+  parent: Music Collection
+eleventyComputed:
+  title: "{{ eleventyNavigation.title }} | {{ eleventyNavigation.parent }}"
+permalink: "/music-collection/years/index.html"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.title }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% for year in collections.releaseYears | sort(false, false, 'year') | reverse %}
+  {% if year.year and year.releases %}
+  <li>
+    <a href="/music-collection/years/{{ year.year }}.html" class="index__item surface">
+      <div class="index__details">
+        <h2 class="title">{{ year.year }}</h2>
+        <p class="meta"><span class="counter">{{ year.releases.length }}</span> release{{ 's' if year.releases.length !== 1 }}</p>
+      </div>
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+

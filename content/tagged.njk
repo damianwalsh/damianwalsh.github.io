@@ -1,0 +1,43 @@
+---
+eleventyComputed:
+  title: "{{ tag }}"
+pagination:
+  data: collections.blogTags
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag | slugify }}.html"
+eleventyNavigation:
+  parent: Tags
+  key: "{{ tag }}"
+  title: "{{ tag }}"
+eleventyExcludeFromCollections: posts
+---
+{% css %}
+{% include "public/css/posts.css" %}
+{% endcss %}
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ tag }}</h1>
+</header>
+
+<div>
+  <ul role="list" class="post__list">
+  {% set taglist = collections[tag] | reverse %}
+  {% for post in taglist %}
+    <li>
+      <a href="{{ post.url }}" class="post__item surface">
+        <div class="post__details">
+          <h2 class="title">{{ post.data.title }}</h2>
+          {% if post.data.description %}
+          <p class="description">{{ post.data.description }}</p>
+          {% endif %}
+          <time datetime="{{ post.date | isoDateString }}" class="meta">{{ post.date | readableDate }}</time>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="post__action action icon-stroke" aria-hidden="true"><use xlink:href="#icon-chevron-right"></use></svg>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="/tags/">View all {{ collections.blogTags.length }} tag{{ 's' if collections.blogTags.length !== 1 }}</a></p>
+</div>

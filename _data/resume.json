@@ -1,0 +1,397 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Damian Walsh",
+    "label": "Designer (Interaction/UX/UI)",
+    "email": "damianwalsh@me.com",
+    "url": "https://damianwalsh.co.uk",
+    "summary": "I approach problem-solving methodically, developing practical solutions by understanding user needs and behaviours, as well as business objectives and technology. I believe in the value of craftsmanship that goes into creating best-in-class digital experiences and am happiest working as an individual contributor. My areas of expertise include visual design, interaction design, prototyping, and design systems.",
+    "location": {
+      "countryCode": "UK",
+      "region": "Manchester"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "damianw",
+        "url": "https://www.linkedin.com/in/damianw"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Freelance",
+      "position": "Designer",
+      "startDate": "2023-07-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "As an independent design consultant, I help organisations including Made Tech improve their digital products. Completed projects include research, design and specification of new features, optimisation of existing web and mobile experiences, and supporting broader marketing initiatives.",
+      "url": ""
+    },
+    {
+      "name": "Made Tech",
+      "position": "Senior Designer",
+      "startDate": "2023-05-31",
+      "endDate": "2023-07-31",
+      "highlights": [
+        "Championed design systems and helped the team transition from Sketch to Figma.",
+        "Established the foundations of a themeable design system for apps."
+      ],
+      "summary": "As a senior-level individual contributor at the Met Office, I worked in a cross-functional agile team developing native iOS and Android weather apps adhering to Government Digital Service (GDS) standards. The team's goal was improving weather forecast features, helping users make better decisions to stay safe and thrive.",
+      "url": "https://www.madetech.com",
+      "location": "Manchester, United Kingdom"
+    },
+    {
+      "position": "Career break",
+      "startDate": "2021-03-31",
+      "endDate": "2023-05-31",
+      "summary": "Time spent pursuing personal goals and prioritising health and well-being."
+    },
+    {
+      "name": "Booking.com",
+      "position": "Lead Designer",
+      "startDate": "2016-09-30",
+      "endDate": "2021-03-31",
+      "highlights": [
+        "Researched, designed and tested features including an improved product detail page offering customers clearer information.",
+        "Contributed to improving team culture by facilitating co-design activities, securing sponsorship, and coordinating events.",
+        "Developed a tool to help teams conduct user research and successfully made a case to extend licensing agreements of research tooling.",
+        "Increased consistency and reuse of components across the customer journey and created documentation reducing compliance risk and time to onboard contributors."
+      ],
+      "summary": "Responsible for design across the Peace of Mind product group. My role involved influencing, communicating and delivering design efforts aligned with the group's mission to provide customers and partners with clear and simple insurance alongside involvement in wider design team initiatives.",
+      "url": "https://www.booking.com",
+      "location": "Manchester, United Kingdom"
+    },
+    {
+      "name": "Booking.com",
+      "position": "Senior Designer",
+      "startDate": "2015-11-30",
+      "endDate": "2016-09-30",
+      "highlights": [
+        "Designed new Help Centre and Live Chat features and improved transparency of information through the booking funnel, achieving reductions in contact and cancellation.",
+        "Gained certification from Scrum Alliance and served as interim Product Owner/Manager to cover recruitment gaps across teams."
+      ],
+      "summary": "Senior-level individual contributor across several Customer Service product teams, focused on delivering an effortless self-serve experience to customers.",
+      "url": "https://www.booking.com",
+      "location": "Manchester, United Kingdom"
+    },
+    {
+      "name": "Freelance",
+      "position": "Designer",
+      "startDate": "2008-12-31",
+      "endDate": "2015-11-30",
+      "highlights": [],
+      "summary": "Independent freelance and contract design for various brands including BBC, Channel 4 and Tesco. Engagements ranged from developing prototypes and conducting user research to UI design and front-end development of responsive websites.",
+      "url": "",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "IG",
+      "position": "Head of Design",
+      "startDate": "2005-03-31",
+      "endDate": "2008-12-31",
+      "highlights": [],
+      "summary": "Managed team responsible for UI and interaction design of award-winning online trading platforms. Established consistent visual design across a range of brands and products.",
+      "url": "https://www.ig.com",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "IG",
+      "position": "Senior Designer",
+      "startDate": "2003-12-31",
+      "endDate": "2005-03-31",
+      "highlights": [],
+      "summary": "Assembled a cross-functional design team during rapid company growth, delivering localised marketing websites and campaign assets to drive international expansion.",
+      "url": "https://www.ig.com",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "IG",
+      "position": "Web Designer",
+      "startDate": "2001-12-31",
+      "endDate": "2003-12-31",
+      "highlights": [],
+      "summary": "Delivered financial and sports spread betting products as part of the web team during the company's transition to online transactions.",
+      "url": "https://www.ig.com",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "Tactical Marketing Group",
+      "position": "Web Designer",
+      "startDate": "2001-08-31",
+      "endDate": "2001-12-31",
+      "highlights": [],
+      "summary": "Designed marketing campaign websites and interactive games for clients including GlaxoSmithKline and Virgin Atlantic.",
+      "url": "",
+      "location": "Woking, United Kingdom"
+    },
+    {
+      "name": "Future plc",
+      "position": "Online Editor",
+      "startDate": "2000-06-30",
+      "endDate": "2001-08-31",
+      "highlights": [],
+      "summary": "Responsible for developing website features, creating/sourcing content and engaging with audiences through online channels.",
+      "url": "https://futureplc.com",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "Auto Trader UK",
+      "position": "Web Designer",
+      "startDate": "1998-11-30",
+      "endDate": "2000-06-30",
+      "highlights": [],
+      "summary": "Website and online marketing campaign design and production at UK and Ireland's largest digital automotive marketplace.",
+      "url": "https://www.autotrader.co.uk",
+      "location": "London, United Kingdom"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Northern User Experience",
+      "position": "Organising committee member",
+      "startDate": "2015-11-30",
+      "endDate": "2021-03-31",
+      "summary": "A not-for-profit organisation run by volunteers organising regular events across Northern England, attracting high-profile international speakers and audiences of up to 600 delegates.",
+      "highlights": [],
+      "url": "https://nuxuk.org"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Plymouth",
+      "url": "https://www.plymouth.ac.uk",
+      "area": "Communication and Media Studies",
+      "studyType": "BA (Hons) Media Arts",
+      "startDate": "1995-12-31",
+      "endDate": "1998-12-31",
+      "score": "",
+      "courses": [
+        "Developed critical thinking and practical skills across digital, moving images and photography."
+      ]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Certified Scrum Product Owner",
+      "issuer": "Scrum Alliance",
+      "startDate": "2016-12-31",
+      "url": "https://www.scrumalliance.org/certifications/practitioners/cspo-certification"
+    },
+    {
+      "name": "Umbraco Certified Level 1 Developer",
+      "issuer": "Umbraco HQ",
+      "startDate": "2014-09-30",
+      "url": "http://umbraco.com"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Visual Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Prototyping",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User-centered Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Email Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile ",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience (UX)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "A/B Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Research",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "WordPress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Multivariate Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Systems",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Remote User Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Responsive Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Digital Transformation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Figma",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Creative Suite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Interaction Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Management",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

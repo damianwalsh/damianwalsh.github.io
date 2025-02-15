@@ -1,0 +1,52 @@
+---
+title: Posts
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Posts
+  order: 2
+permalink: "/posts/index.html"
+eleventyExcludeFromCollections: posts
+---
+{% css %}
+{% include "public/css/posts.css" %}
+.post__counter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-space);
+}
+{% endcss %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{%- set posts = collections.posts | reverse -%}
+{%- set groupedPosts = posts | postsByYear -%}
+<div class="post__counter">
+  {% for year, yearPosts in groupedPosts %}
+  <section>
+    <header class="row">
+      <h2 id="{{ year }}" class="title">{{ year }}</h2>
+      <p class="meta"><span class="counter">{{ yearPosts.length }}</span> post{{ 's' if yearPosts.length !== 1 }}</p>
+    </header>
+    <ol role="list" class="post__list">
+      {% for post in yearPosts %}
+      <li>
+        <a href="{{ post.url }}" class="post__item surface">
+          <div class="post__details">
+            <h3 class="title">{{ post.data.title }}</h3>
+            {% if post.data.description %}
+            <p class="description">{{ post.data.description }}</p>
+            <time datetime="{{ post.date | isoDateString }}" class="meta">{{ post.date | readableDate }}</time>
+            {% endif %}
+          </div>
+          <svg width="36" height="36" viewBox="-6 -6 36 36" class="post__action action icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</div>
