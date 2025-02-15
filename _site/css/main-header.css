@@ -1,0 +1,91 @@
+/**
+ * MAIN HEADER
+ */
+
+.main-header {
+  h1 {
+    margin-block-start: 0;
+    text-decoration: underline var(--quaternary-2) .75ex;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -.5ex;
+  }
+  p {
+    margin-block-start: 0;
+  }
+}
+
+[data-theme='dark'] .main-header h1 {
+  text-decoration: underline var(--quaternary-8) .75ex;
+}
+
+.main-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--space-3xs);
+  column-gap: var(--space-xs);
+  align-items: baseline;
+}
+
+.tags__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-2xs);
+  row-gap: var(--space-3xs);
+  li {
+    align-items: center;
+    display: flex;
+    &:before {
+      content: "#";
+      font-size: var(--text-size--1);
+      font-variation-settings: "wght" 500;
+      color: var(--primary-4);
+      margin-right: var(--space-3xs);
+    }
+  }
+  a {
+    color: var(--text-colour-2);
+    font-size: var(--text-size--1);
+    font-variation-settings: "wght" 700;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    &:hover {
+      color: var(--text-colour-1);
+    }
+  }
+}
+
+[aria-label=breadcrumb] {
+  [role=list] {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3xs);
+    flex-wrap: wrap;
+  }
+  li:not(:last-of-type) {
+    display: flex;
+    align-items: center;
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-left: var(--space-3xs);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpolyline points='9 18 15 12 9 6' stroke='%23000000' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3C/polyline%3E%3C/svg%3E");
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      background-color: var(--primary-4);
+    }
+  }
+  a {
+    font-size: var(--text-size--1);
+    font-variation-settings: "wght" 700;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
