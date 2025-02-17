@@ -38,7 +38,9 @@ eleventyNavigation:
     </li>
     {% endfor %}
   </ol>
+  {% if collections.posts.length > 4 %}
   <p><a href="/posts/">View all posts</a></p>
+  {% endif %}
 </section>
 
 <hr>
