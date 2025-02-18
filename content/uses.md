@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: posts
 
 ## Hardware
 - [MacBook Air (M1)](https://www.apple.com/uk/macbook-air)
-- [Dell UltraSharp 27 4K Monitor (U2720Q)](https://www.amazon.co.uk/Dell-UltraSharp-3840x2160-DisplayPort-Warranty/dp/B084KX3HQ8)
+- [Dell UltraSharp 4K Monitor (U2720Q)](https://www.amazon.co.uk/Dell-UltraSharp-3840x2160-DisplayPort-Warranty/dp/B084KX3HQ8)
 - [Logitech MX Keys Keyboard](https://www.logitech.com/en-gb/products/keyboards/mx-keys-s)
 - [Logitech MX Anywhere 3S Mouse](https://www.logitech.com/en-gb/products/mice/mx-anywhere-3s-for-mac)
 
