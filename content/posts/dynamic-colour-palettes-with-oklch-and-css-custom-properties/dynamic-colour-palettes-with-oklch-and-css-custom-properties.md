@@ -116,4 +116,4 @@ While vanilla CSS could achieve the same results, I built this system with SASS,
 - SASS loops, variables, and lists reduce repetition and enable dynamic value generation, making the code easier to update and maintain.
 - Since most calculations happen during compilation, browsers have less work to do at runtime.
 
-During research, I found inspiration in Adam Argyle's [related explorations on CodePen](https://codepen.io/argyleink), which helped inform my approach.
+During research, I found inspiration in Adam Argyle's [related explorations on CodePen](https://codepen.io/argyleink), which helped inform my approach to implementation.
