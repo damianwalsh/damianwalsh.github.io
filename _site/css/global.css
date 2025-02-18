@@ -122,6 +122,17 @@ ol:not([role="list"]) {
   }
 }
 
+dt {
+  font-variation-settings: "wght" 600;
+}
+
+dd {
+  margin-inline-start: 0;
+  &:not(:last-of-type) {
+    margin-block-end: var(--space-3xs-2xs);
+  }
+}
+
 table {
   text-align: left;
   border-collapse: collapse;

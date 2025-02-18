@@ -79,6 +79,7 @@ aside {
 
   .prose {
     flex: 2;
+    min-width: 0;
   }
 
   aside {

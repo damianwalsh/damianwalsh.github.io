@@ -7,6 +7,7 @@
  * @link https://utopia.fyi/space/calculator?c=326,18,1.2,1364,22,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|xs-l|xs-m&g=xs,l,xl,12
  */
 
+// Import the SASS list module for array manipulation
 @use "sass:list";
 
 :root {
@@ -62,12 +63,12 @@
 
   /* Colours */
 
-  // Base values
+  // Define increments for lightness and chroma and set base hue value
   $lightness-step: 10.75%;
   $chroma-step: 0.025;
   $hue: 180;
 
-  // Generate scales
+  // Create two arrays that store nine steps each: lightness increases by 10.75% each step, chroma increases by 0.025 each step
   $lightness-scale: ();
   $chroma-scale: ();
 
@@ -76,14 +77,14 @@
     $chroma-scale: list.append($chroma-scale, $chroma-step * $i);
   }
 
-  // Base variables
+  // Establish CSS custom properties for base values, making them accessible in CSS
   --lightness: 0;
   --lightness-step: #{$lightness-step};
   --chroma: 0.25;
   --chroma-step: #{$chroma-step};
   --hue: #{$hue};
 
-  // Generate lightness steps
+  // Create nine incremental lightness values, each building upon the previous value
   @for $i from 1 through 9 {
     @if $i == 1 {
       --lightness-#{$i}: var(--lightness-step);
@@ -92,7 +93,7 @@
     }
   }
 
-  // Generate chroma steps
+  // Similarly create nine incremental chroma values
   @for $i from 1 through 9 {
     @if $i == 1 {
       --chroma-#{$i}: var(--chroma-step);
@@ -101,13 +102,7 @@
     }
   }
 
-  // Generate hue steps
-  --hue-1: var(--hue);
-  --hue-2: calc(var(--hue) + 60);
-  --hue-3: calc(var(--hue) + 180);
-  --hue-4: calc(var(--hue) + 240);
-
-  // Generate color variables
+  // Combine all the previous calculations to generate 9 shades for each color variation plus a greyscale version with no chroma (saturation)
   @for $i from 1 through 9 {
     $index: 10 - $i;
     $lightness: list.nth($lightness-scale, $index);
