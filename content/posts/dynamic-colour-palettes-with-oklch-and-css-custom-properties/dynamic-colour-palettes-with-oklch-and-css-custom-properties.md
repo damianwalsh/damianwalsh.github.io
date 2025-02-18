@@ -111,7 +111,7 @@ Having established the foundations of using colour theory as basic parameters, t
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-While vanilla CSS could achieve the same results, I built this system with SASS, which offers several advantages
+While vanilla CSS could achieve the same results, I built this system with SASS, which offers several advantages:
 
 - SASS loops, variables, and lists reduce repetition and enable dynamic value generation, making the code easier to update and maintain.
 - Since most calculations happen during compilation, browsers have less work to do at runtime.
