@@ -5,9 +5,13 @@
 .main-header {
   h1 {
     margin-block-start: 0;
-    text-decoration: underline var(--quaternary-2) .75ex;
+    text-decoration-line: underline;
+    text-decoration-color: var(--quaternary-2);
     text-decoration-skip-ink: none;
     text-underline-offset: -.5ex;
+    text-decoration-thickness: .75ex;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: var(--quaternary-2);
   }
   p {
     margin-block-start: 0;
@@ -15,7 +19,8 @@
 }
 
 [data-theme='dark'] .main-header h1 {
-  text-decoration: underline var(--quaternary-8) .75ex;
+  text-decoration-color: var(--quaternary-8);
+  -webkit-text-decoration-color: var(--quaternary-8);
 }
 
 .main-header__meta {
