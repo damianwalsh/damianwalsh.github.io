@@ -12,7 +12,6 @@
     text-decoration-thickness: .75ex;
     -webkit-text-decoration-line: underline;
     -webkit-text-decoration-color: var(--quaternary-2);
-
   }
   p {
     margin-block-start: 0;
