@@ -8,6 +8,12 @@ layout: layouts/prose.njk
 permalink: colophon.html
 eleventyExcludeFromCollections: posts
 ---
+{% css %}
+.prose {
+  max-width: 65ch;
+}
+{% endcss %}
+
 <header class="main-header">
   <h1>{{ eleventyNavigation.key }}</h1>
 </header>
