@@ -144,19 +144,19 @@ table {
     text-align: start;
     font-variation-settings: "wght" 500;
   }
-  td {
-    text-align: end;
-  }
-  tr > :not(:first-child) {
-    text-align: end;
-  }
   th,
   td {
-    border-top: 1px solid var(--surface-mid);
-    padding: var(--space-2xs) 0;
+    padding: var(--space-2xs);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
   }
-  th[scope="row"] {
-    padding-right: var(--space-2xs);
+  td {
+    border-top: 1px solid var(--surface-mid);
+    vertical-align: top;
   }
 }
 

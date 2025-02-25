@@ -252,16 +252,29 @@
     font-variation-settings: "wght" 600, "wdth" 75;
     padding: 0;
   }
+  td {
+    text-align: end;
+  }
+  tr > :not(:first-child) {
+    text-align: end;
+  }
   th,
   td {
     font-size: var(--text-size--1);
     height: calc(var(--size) + var(--space-2xs) * 2);
+    padding: var(--space-2xs) 0;
   }
   thead th {
-    color: var(--text-colour-2);
+    color: var(--text-colour-);
     font-size: var(--text-size--1);
     text-transform: uppercase;
     font-variation-settings: "wght" 700;
     letter-spacing: .025em;
+  }
+  th {
+    border-top: 1px solid var(--surface-mid);
+    &[scope="row"] {
+      padding-right: var(--space-2xs);
+    }
   }
 }
