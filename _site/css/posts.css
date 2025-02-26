@@ -30,6 +30,7 @@
     font-variation-settings: "wght" 300, "wdth" 75;
     font-size: var(--text-size-1);
     color: var(--text-colour-2);
+    line-height: 1.2;
   }
   &:hover .action {
     background: var(--primary-6);
