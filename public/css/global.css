@@ -348,6 +348,7 @@ figcaption {
   font-size: var(--text-size-3);
   font-variation-settings: "wght" 300, "wdth" 75;
   text-wrap: balance;
+  line-height: 1.25;
 }
 
 .prose {
