@@ -46,6 +46,13 @@ The rest of this document outlines my approach, decisions made along the way, ch
 
 So, in summary, here's where I stood at the outset: Spotify Wrapped galvanised me into action and Bush's Memex concept signposted the direction I wanted to move in.
 
+<figure>
+  <div class="screenshots">
+    <img src="./music-collection-physical.jpg" alt="A photograph of the authors CDs and vinyl records in storage boxes." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">My music collection</figcaption>
+</figure>
+
 __Things I know:__
 - I have approximately 500 records—CDs from 1991–2015 and vinyl from 2017–present—that I want to organise meaningfully. I don't have purchase dates for most of the collection.
 - I want to build my own system, incorporating automation using tools and services that align with [my values](https://damianwalsh.co.uk/colophon), learning something through the process.
@@ -59,8 +66,8 @@ Libraries employ [classification systems](https://en.wikipedia.org/wiki/Library_
 
 <figure>
   <div class="screenshots">
-    <img src="./card-catalogue.jpg" alt=" A card catalogue in the University of Graz Library. Source: https://www.newworldencyclopedia.org/" sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
-    <img src="./record-shop.jpg" alt=" Vinyl records, CDs, and cassette tapes displayed in a record shop. Source: https://unsplash.com/" sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./card-catalogue.jpg" alt=" A card catalogue in the University of Graz Library. Source: https://www.newworldencyclopedia.org/" sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), 70.87vw">
+    <img src="./record-shop.jpg" alt=" Vinyl records, CDs, and cassette tapes displayed in a record shop. Source: https://unsplash.com/" sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), 70.87vw">
   </div>
   <figcaption class="meta">Library classification systems</figcaption>
 </figure>
@@ -124,7 +131,7 @@ The API returns a wealth of information in JSON format. From this data, I can ch
 ```
 
 ### Release dates
-Release dates are a bit of a minefield. While they reliably follow the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (YYYY-MM-DD), entries can contain partial dates (YYYY or YYYY-MM), and release dates vary between regions like the US and UK. Since my vinyl collection consists mainly of reissues, the dates returned by the API reflect when the reissue was published rather than original release dates. Some degree of imprecision doesn't bother me—this isn't meant to be an encyclopedia. What matters most is having at least the original release year—it allows me to access personal memories by consulting my index and playing records from specific years.
+Release dates are a bit of a minefield. While they reliably follow the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (YYYY-MM-DD), entries can contain partial dates (YYYY or YYYY-MM), and release dates vary between regions like the US and UK. Since my vinyl collection consists mainly of reissues, the dates returned by the API reflect when the reissue was published rather than original release dates. Some degree of imprecision doesn't bother me—this isn't meant to be an encyclopedia. What matters most is having at least the _original_ release year—it allows me to access personal memories by consulting my index and playing records from specific years.
 
 ### Global Data Files
 Before the internet, online databases, and standardised cataloguing protocols, libraries relied on a physical [library catalogue](https://en.wikipedia.org/wiki/Library_catalog) system. This used [index cards](https://en.wikipedia.org/wiki/Index_card) to record key details about each item, making it easy to find and retrieve materials. Following this principle, I use a [Global Data File](https://www.11ty.dev/docs/data-global/) to organise my collection—each entry functions like an index card, with the release ID serving as its call number.
@@ -373,7 +380,7 @@ In Eleventy, data from multiple sources merges through a process called the [Dat
 
 <figure>
   <div class="screenshots">
-    <img src="./music-collection.png" alt="A montage of screenshots showcasing the digital music collection optimised for small screens in a grid layout." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./music-collection-digital.png" alt="A montage of screenshots showcasing the digital music collection optimised for small screens in a grid layout." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
 </figure>
