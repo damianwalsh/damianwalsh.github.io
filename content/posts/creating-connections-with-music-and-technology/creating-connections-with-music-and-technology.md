@@ -131,7 +131,7 @@ The API returns a wealth of information in JSON format. From this data, I can ch
 ```
 
 ### Release dates
-Release dates are a bit of a minefield. While they reliably follow the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (YYYY-MM-DD), entries can contain partial dates (YYYY or YYYY-MM), and release dates vary between regions like the US and UK. Since my vinyl collection consists mainly of reissues, the dates returned by the API reflect when the reissue was published rather than original release dates. Some degree of imprecision doesn't bother me—this isn't meant to be an encyclopedia. What matters most is having at least the _original_ release year—it allows me to access personal memories by consulting my index and playing records from specific years.
+Release dates are a bit of a minefield. While they reliably follow the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (YYYY-MM-DD), entries can contain partial dates (YYYY or YYYY-MM), and release dates vary between regions like the US and UK. Since my vinyl collection consists mainly of reissues, the dates returned by the API reflect when the reissue was published rather than original release dates. Some degree of imprecision doesn't bother me—this isn't meant to be an encyclopedia. What matters most is having at least the _original_ release year—it allows me to access personal memories by consulting my library and playing records from specific years.
 
 ### Global Data Files
 Before the internet, online databases, and standardised cataloguing protocols, libraries relied on a physical [library catalogue](https://en.wikipedia.org/wiki/Library_catalog) system. This used [index cards](https://en.wikipedia.org/wiki/Index_card) to record key details about each item, making it easy to find and retrieve materials. Following this principle, I use a [Global Data File](https://www.11ty.dev/docs/data-global/) to organise my collection—each entry functions like an index card, with the release ID serving as its call number.
@@ -410,7 +410,7 @@ Looking back at my original motivation—dissatisfaction with streaming services
 </figure>
 
 ### Acknowledgements
-Several members of the Eleventy community have published helpful resources that helped me get started:
+Several members of the Eleventy community have published valuable resources that helped me get started:
 
 <dl>
   <dt><a href="https://bell.bz/">Andy Bell</a></dt>
