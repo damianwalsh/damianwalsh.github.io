@@ -25,6 +25,13 @@ table {
 
 Back in December 2024, while I was doing the usual end-of-year contemplation, [Spotify's annual Wrapped](https://newsroom.spotify.com/2024-wrapped/) feature arrived, ringing a bell in my mind. I realised my scattershot listening habits on Spotify and the snapshot Wrapped presents failed to capture my changing tastes over time or evoke feelings and memories in the same way as a tangible music collection. Music is a fundamental part of my life—I've always been a fan. My earliest memories are rooted in music, exploring my parents' vinyl collection and watching [Top of the Pops](https://en.wikipedia.org/wiki/Top_of_the_Pops), fascinated by the sounds and imagery. And later, making the rounds of record shops, building my collection, and plastering my teenage bedroom walls with band artwork, portraits, and memorabilia. In a funny sort of way, music was my gateway into design.
 
+<figure>
+  <div class="screenshots">
+    <img src="./always-on-my-mind.jpg" alt="An image from the music video; song lyrics relate to the article's theme." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta"><a href="https://www.youtube.com/watch?v=bDMCwSP5nf0">Always on My Mind</a> by Pet Shop Boys</figcaption>
+</figure>
+
 At the same time I was thinking about this, I was also feeling generally uninspired about the tech industry’s current direction and its impact on the world—especially compared to earlier visions of the internet. I want to direct my online thinking and doing toward something *I believe in.* My music collection seemed to be one of the areas I could meaningfully apply technology to connect with something I'm passionate about and learn something new in the process. I've previously written about [cultivating a digital garden](https://damianwalsh.co.uk/posts/cultivating-a-digital-garden/) to achieve these aims. One of the concepts I came across while researching the idea was the [Memex](https://en.wikipedia.org/wiki/Memex), proposed by [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush) in his 1945 article [As We May Think](https://archive.org/details/as-we-may-think).
 
 <figure>
