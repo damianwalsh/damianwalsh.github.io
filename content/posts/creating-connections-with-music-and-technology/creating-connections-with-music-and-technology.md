@@ -400,7 +400,7 @@ The proof of concept has triggered new ideas that provide momentum to continue d
 - Refining image processing workflows
 - Adding search functionality
 
-Looking back at my original motivation—dissatisfaction with streaming services and the tech industry's current trajectory—and comparing it to my experiences with this project brings to mind diving. Given the choice between diving into a stream or an ocean, who wouldn't choose the ocean?
+Looking back at my original motivation—disenchantment with streaming services and the tech industry's current trajectory—and comparing it to my experiences with this project brings to mind diving. Given the choice between diving into a stream or an ocean, who wouldn't choose the ocean?
 
 <figure>
   <div class="screenshots">
