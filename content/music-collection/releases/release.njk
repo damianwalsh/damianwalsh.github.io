@@ -12,6 +12,7 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
 ---
 {% css %}
 {% include "public/css/music-collection.css" %}
+{% include "public/css/memories.css" %}
 {% endcss %}
 
 <header class="main-header">
@@ -105,6 +106,94 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
   </summary>
   <p>{{ release.notes }}</p>
 </details>
+{% endif %}
+
+{% if release.memories %}
+<section class="surface">
+  <header>
+    <h2 class="title">Memories</h2>
+  </header>
+
+  {% if release.memories.people %}
+  <div class="memories__grid">
+    <div class="memories people">
+      <h3 class="title">People</h3>
+      <dl class="people__list">
+        {% for personId in release.memories.people %}
+        {% set personData = people[personId] %}
+        {% if personData %}
+        {% set personSlug = personData.name | slugify %}
+        <div class="people__wrapper">
+          <dt class="people__item" id="{{ personSlug }}" tabindex="0" aria-describedby="{{ personSlug }}-tooltip">
+            {{ personData.name }}
+          </dt>
+          <dd class="people__tooltip" id="{{ personSlug }}-tooltip" role="tooltip">
+            <strong>{{ personData.relationship }}</strong>
+            {% if personData.association %}
+            <div class="meta">
+              {{ personData.association.start | readableDate }}
+              {% if personData.association.end %}
+              to {{ personData.association.end | readableDate }}
+              {% else %}
+              to present
+              {% endif %}
+            </div>
+            {% endif %}
+          </dd>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </dl>
+    </div>
+    {% endif %}
+
+    {% if release.memories.places %}
+    <div class="memories places">
+      <h3 class="title">Places &amp; Events</h3>
+      <dl class="places__list">
+        {% for placeId in release.memories.places %}
+        {% set placeData = places[placeId] %}
+        {% if placeData %}
+        <div class="places__item">
+          <dt><strong>{{ placeData.location }}</strong></dt>
+          {% if placeData.association %}
+          <dd class="meta">{{ placeData.association.start | readableDate }}{% if placeData.association.end %} to {{
+            placeData.association.end | readableDate }}{% else %} to present{% endif %}</dd>
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </dl>
+    </div>
+    {% endif %}
+
+    {% set memoryRelatedReleases = collections.releases | releasesWithMemoryConnections(release) %}
+    {% if memoryRelatedReleases.length > 0 %}
+    <div class="memories connections">
+      <h3 class="title">Connected releases</h3>
+      <ul role="list" class="connections__list">
+        {% for relatedRelease in memoryRelatedReleases %}
+        <li>
+          <a href="/music-collection/releases/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}-{{ relatedRelease.format | slugify }}.html"
+          class="connections__item surface">
+            <img
+              src="../img/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}.jpg"
+              sizes="80px"
+              alt="{{ relatedRelease.title }}"
+              class="connections__image">
+            <div class="connections__details">
+              <h3 class="title">{{ relatedRelease.title }}</h3>
+              <p class="meta">{{ relatedRelease.artist }}</p>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
 {% endif %}
 
 {% set otherReleases = collections.releases | otherItemsByCreator(release, "artist", "title") %}

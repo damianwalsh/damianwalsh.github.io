@@ -1,4 +1,6 @@
 import { DateTime } from "luxon";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 export default function (eleventyConfig) {
 
@@ -198,4 +200,53 @@ export default function (eleventyConfig) {
         return a.localeCompare(b);
       });
   });
+
+  eleventyConfig.addFilter("releasesWithMemoryConnections", function(allReleases, currentRelease) {
+    const peopleData = require('../_data/people.json');
+    const placesData = require('../_data/places.json');
+
+    // Skip if no memories
+    if (!currentRelease.memories) return [];
+
+    const relatedIds = new Set();
+
+    // Process people connections
+    if (currentRelease.memories.people) {
+      currentRelease.memories.people.forEach(personId => {
+        if (peopleData[personId] && peopleData[personId].releases) {
+          peopleData[personId].releases.forEach(releaseInfo => {
+            if (releaseInfo.releaseId !== currentRelease.release_id.toString()) {
+              relatedIds.add(releaseInfo.releaseId);
+            }
+          });
+        }
+      });
+    }
+
+    // Process place connections
+    if (currentRelease.memories.places) {
+      currentRelease.memories.places.forEach(placeId => {
+        if (placesData[placeId] && placesData[placeId].releases) {
+          placesData[placeId].releases.forEach(releaseInfo => {
+            if (releaseInfo.releaseId !== currentRelease.release_id.toString()) {
+              relatedIds.add(releaseInfo.releaseId);
+            }
+          });
+        }
+      });
+    }
+
+    // Return related releases, but exclude the current release
+    return allReleases.filter(release => {
+      // Convert the numeric release_id to a string for comparison
+      const releaseIdStr = release.release_id.toString();
+
+      // Only return releases that:
+      // 1. Are in our set of related IDs
+      // 2. Are NOT the current release we're viewing
+      return relatedIds.has(releaseIdStr) &&
+             release.release_id !== currentRelease.release_id;
+    });
+  });
+
 }

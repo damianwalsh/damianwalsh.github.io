@@ -339,7 +339,11 @@
     "format": "Vinyl",
     "release_id": 9748215,
     "first_released": "1995-05-15",
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["steve-snasdell"],
+      "places": ["university"]
+    }
   },
   {
     "artist": "U2",
@@ -2695,7 +2699,11 @@
     "title": "Leisure",
     "format": "CD",
     "release_id": 387046,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["alastair-jennings"],
+      "places": ["university"]
+    }
   },
   {
     "artist": "Hole",
@@ -2798,7 +2806,14 @@
     "title": "I Should Coco",
     "format": "CD",
     "release_id": 4147466,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": [
+        "steve-snasdell",
+        "alastair-jennings"
+      ],
+      "places": ["university"]
+    }
   },
   {
     "artist": "Grandaddy",

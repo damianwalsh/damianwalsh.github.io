@@ -11,6 +11,8 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import pluginFilters from "./_config/filters.js";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 export default async function (eleventyConfig) {
 
@@ -193,6 +195,40 @@ export default async function (eleventyConfig) {
         });
       }
     };
+  });
+
+  // People collection
+  const peopleData = require('./_data/people.json');
+  eleventyConfig.addGlobalData("people", () => peopleData);
+
+  eleventyConfig.addCollection("people", function(collectionApi) {
+    const peopleData = require("./_data/people.json");
+
+    return Object.entries(peopleData).map(([key, person]) => {
+      return {
+        key: key,
+        name: person.name,
+        relationship: person.relationship,
+        association: person.association,
+        releases: person.releases
+      };
+    });
+  });
+
+  // Places collection
+  const placesData = require('./_data/places.json');
+  eleventyConfig.addGlobalData("places", () => placesData);
+
+  eleventyConfig.addCollection("places", function(collectionApi) {
+    const placesData = require("./_data/places.json");
+    return Object.entries(placesData).map(([key, place]) => {
+      return {
+        key: key,
+        location: place.location,
+        releases: place.releases,
+        coordinates: place.coordinates
+      };
+    });
   });
 
   // Plugins

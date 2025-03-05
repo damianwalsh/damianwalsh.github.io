@@ -1,0 +1,34 @@
+{
+  "steve-snasdell": {
+    "name": "Steve",
+    "relationship": "University friend",
+    "association": {
+      "start": "1995-09",
+      "end": null
+    },
+    "releases": [
+      {
+        "releaseId": "9748215"
+      },
+      {
+        "releaseId": "4147466"
+      }
+    ]
+  },
+  "alastair-jennings": {
+    "name": "Alastair",
+    "relationship": "University friend",
+    "association": {
+      "start": "1995-09",
+      "end": null
+    },
+    "releases": [
+      {
+        "releaseId": "4147466"
+      },
+      {
+        "releaseId": "387046"
+      }
+    ]
+  }
+}

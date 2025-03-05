@@ -1,0 +1,46 @@
+{
+  "university": {
+    "location": "University of Plymouth (Exeter College of Art and Design)",
+    "coordinates": {
+      "lat": 50.7099,
+      "lng": -3.5135
+    },
+    "association": {
+      "start": "1995-09",
+      "end": "1998-06"
+    },
+    "releases": [
+      {
+        "releaseId": "9748215"
+      },
+      {
+        "releaseId": "4147466"
+      },
+      {
+        "releaseId": "387046"
+      }
+    ]
+  },
+  "college": {
+    "location": "Cadbury College",
+    "coordinates": {
+      "lat": 52.4030,
+      "lng": 1.9305
+    },
+    "association": {
+      "start": "1993-09",
+      "end": "1995-06"
+    }
+  },
+  "high-school": {
+    "location": "South Bromsgrove High School",
+    "coordinates": {
+      "lat": 52.3249,
+      "lng": 2.0612
+    },
+    "association": {
+      "start": "1993-09",
+      "end": "1990-06"
+    }
+  }
+}
