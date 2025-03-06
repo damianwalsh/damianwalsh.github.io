@@ -153,14 +153,17 @@
 .connections__image {
   border-radius: var(--border-radius-s);
   flex-shrink: 0;
-  max-width: 80px;
+  max-width: 60px;
 }
 
 .connections__details {
-  flex-grow: 1;
   .title {
+    font-size: var(--text-size--1);
     text-transform: initial;
     letter-spacing: initial;
+  }
+  .meta {
+    margin-block-start: 0;
   }
 }
 
