@@ -29,7 +29,10 @@ eleventyNavigation:
           {% if post.data.description %}
           <p class="description">{{ post.data.description }}</p>
           {% endif %}
-          <time datetime="{{ post.date | isoDateString }}" class="meta">{{ post.date | readableDate }}</time>
+          <p class="meta">
+            <time datetime="{{ post.date | isoDateString }}">{{ post.date | readableDate }}</time>
+            {% if post.data.updated %}&nbsp;<span class="updated">(Updated <time datetime="{{ post.data.updated | htmlDateString }}">{{ post.data.updated | readableDate }}</time>)</span>{% endif %}
+          </p>
         </div>
         <svg width="36" height="36" viewBox="-6 -6 36 36" class="post__action action icon-stroke" aria-hidden="true">
           <use xlink:href="#icon-chevron-right"></use>

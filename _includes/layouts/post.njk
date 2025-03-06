@@ -18,9 +18,9 @@ eleventyNavigation:
     <p class="standfirst">{{ description }}</p>
     {% endif %}
     <div class="main-header__meta">
-      <p class="meta">
+      <p class="meta label">
         <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-        {% if updated %} (Updated <time datetime="{{ updated | htmlDateString }}">{{ updated | readableDate }})</time>{% endif %}
+        {% if updated %}&nbsp;<span class="updated">(Updated <time datetime="{{ updated | htmlDateString }}">{{ updated | readableDate }}</time>)</span>{% endif %}
       </p>
       {% set tagList = tags | filterTagList %}
       {% if tagList.length > 0 and tags != "posts" %}
