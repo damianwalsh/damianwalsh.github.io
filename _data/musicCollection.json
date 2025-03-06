@@ -573,7 +573,12 @@
     "format": "Vinyl",
     "release_id": 25341079,
     "first_released": "1992-07-06",
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+
+    }
   },
   {
     "artist": "Autechre",
@@ -581,7 +586,11 @@
     "format": "Vinyl",
     "release_id": 9326781,
     "first_released": "1994-11-07",
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Boards Of Canada",
@@ -905,7 +914,11 @@
     "title": "Ginger",
     "format": "CD",
     "release_id": 8104972,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Various",
@@ -1082,7 +1095,11 @@
     "title": "Selected Ambient Works 85-92",
     "format": "CD",
     "release_id": 1545313,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Bright Eyes",
@@ -1368,7 +1385,11 @@
     "title": "Ambient Dub Volume 4 (Jellyfish)",
     "format": "CD",
     "release_id": 628,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Disclosure",
@@ -1559,7 +1580,11 @@
     "format": "CD",
     "release_id": 1541792,
     "first_released": "1994-05-30",
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Teenage Fanclub",
@@ -1629,7 +1654,11 @@
     "title": "Dream Injection 2",
     "format": "CD",
     "release_id": 33099,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": ["andrew-dale"],
+      "places": ["college"]
+    }
   },
   {
     "artist": "Hope Of The States",

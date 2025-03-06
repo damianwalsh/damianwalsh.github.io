@@ -30,5 +30,36 @@
         "releaseId": "387046"
       }
     ]
+  },
+  "andrew-dale": {
+    "name": "Dale",
+    "relationship": "College friend",
+    "association": {
+      "start": "1994-09",
+      "end": "2002"
+    },
+    "releases": [
+      {
+        "releaseId": "9326781"
+      },
+      {
+        "releaseId": "25341079"
+      },
+      {
+        "releaseId": "1541792"
+      },
+      {
+        "releaseId": "33099"
+      },
+      {
+        "releaseId": "1545313"
+      },
+      {
+        "releaseId": "628"
+      },
+      {
+        "releaseId": "8104972"
+      }
+    ]
   }
 }

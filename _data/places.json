@@ -30,7 +30,30 @@
     "association": {
       "start": "1993-09",
       "end": "1995-06"
-    }
+    },
+    "releases": [
+      {
+        "releaseId": "9326781"
+      },
+      {
+        "releaseId": "25341079"
+      },
+      {
+        "releaseId": "1541792"
+      },
+      {
+        "releaseId": "33099"
+      },
+      {
+        "releaseId": "1545313"
+      },
+      {
+        "releaseId": "628"
+      },
+      {
+        "releaseId": "8104972"
+      }
+    ]
   },
   "high-school": {
     "location": "South Bromsgrove High School",
