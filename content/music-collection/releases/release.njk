@@ -114,8 +114,8 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
     <h2 class="title">Memories</h2>
   </header>
 
-  {% if release.memories.people %}
   <div class="memories__grid">
+    {% if release.memories.people %}
     <div class="memories people">
       <h3 class="title">People</h3>
       <dl class="people__list">
@@ -178,7 +178,7 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
           class="connections__item surface">
             <img
               src="../img/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}.jpg"
-              sizes="80px"
+              sizes="60px"
               alt="{{ relatedRelease.title }}"
               class="connections__image">
             <div class="connections__details">
