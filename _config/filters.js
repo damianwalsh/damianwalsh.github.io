@@ -1,8 +1,17 @@
+
+import { IdAttributePlugin } from "@11ty/eleventy";
 import { DateTime } from "luxon";
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 export default function (eleventyConfig) {
+
+  // Filters
+	eleventyConfig.addPlugin(IdAttributePlugin, {
+		// by default we use Eleventy’s built-in `slugify` filter:
+		// slugify: eleventyConfig.getFilter("slugify"),
+		// selector: "h1,h2,h3,h4,h5,h6", // default
+	});
 
   eleventyConfig.addFilter("findVideoByTrack", function(videos, trackTitle) {
     return videos?.find(video => video.title.includes(trackTitle));
@@ -143,10 +152,16 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("otherItemsByCreator", function(items, currentItem, creatorKey, titleKey, formatKey) {
-    return items.filter(item => {
-      return item[creatorKey] === currentItem[creatorKey] &&
-        (item[titleKey] !== currentItem[titleKey] || item[formatKey] !== currentItem[formatKey]);
-    });
+    return items
+      .filter(item => {
+        return item[creatorKey] === currentItem[creatorKey] &&
+          (item[titleKey] !== currentItem[titleKey] || item[formatKey] !== currentItem[formatKey]);
+      })
+      .sort((a, b) => {
+        const titleA = String(a[titleKey] || '');
+        const titleB = String(b[titleKey] || '');
+        return titleA.localeCompare(titleB);
+      });
   });
 
   eleventyConfig.addFilter('postsByYear', function(posts) {
@@ -201,43 +216,44 @@ export default function (eleventyConfig) {
       });
   });
 
-  eleventyConfig.addFilter("releasesWithMemoryConnections", function (allReleases, currentRelease) {
-    const peopleData = require('../_data/people.json');
-    const placesData = require('../_data/places.json');
-
+  eleventyConfig.addFilter("releasesWithMemoryConnections", function(allReleases, currentRelease) {
     if (!currentRelease.memories) return [];
 
-    const relatedIds = new Set();
+    // Get the current release's memory identifiers
+    const currentPeople = new Set(currentRelease.memories.people || []);
+    const currentPlaces = new Set(currentRelease.memories.places || []);
 
-    if (currentRelease.memories.people) {
-      currentRelease.memories.people.forEach(personId => {
-        if (peopleData[personId] && peopleData[personId].releases) {
-          peopleData[personId].releases.forEach(releaseInfo => {
-            if (releaseInfo.releaseId !== currentRelease.release_id.toString()) {
-              relatedIds.add(releaseInfo.releaseId);
-            }
-          });
-        }
-      });
-    }
+    // Filter releases that share people or places, excluding the current release
+    const relatedReleases = allReleases.filter(release => {
+      if (release.release_id === currentRelease.release_id) return false;
+      if (!release.memories) return false;
 
-    if (currentRelease.memories.places) {
-      currentRelease.memories.places.forEach(placeId => {
-        if (placesData[placeId] && placesData[placeId].releases) {
-          placesData[placeId].releases.forEach(releaseInfo => {
-            if (releaseInfo.releaseId !== currentRelease.release_id.toString()) {
-              relatedIds.add(releaseInfo.releaseId);
-            }
-          });
-        }
-      });
-    }
+      // Check for shared people
+      const sharedPeople = release.memories.people?.some(person =>
+        currentPeople.has(person)
+      );
 
-    return allReleases.filter(release => {
-      const releaseIdStr = release.release_id.toString();
+      // Check for shared places
+      const sharedPlaces = release.memories.places?.some(place =>
+        currentPlaces.has(place)
+      );
 
-      return relatedIds.has(releaseIdStr) &&
-        release.release_id !== currentRelease.release_id;
+      return sharedPeople || sharedPlaces;
+    });
+
+    // Sort by artist, then title
+    return relatedReleases.sort((a, b) => {
+      const artistCompare = a.artist.localeCompare(b.artist);
+      if (artistCompare !== 0) return artistCompare;
+      return a.title.localeCompare(b.title);
+    });
+  });
+
+  eleventyConfig.addFilter("sortByName", function(items, lookupObject) {
+    return items.sort((a, b) => {
+      const nameA = lookupObject[a].name || lookupObject[a].location;
+      const nameB = lookupObject[b].name || lookupObject[b].location;
+      return nameA.localeCompare(nameB);
     });
   });
 
