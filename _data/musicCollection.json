@@ -341,8 +341,12 @@
     "first_released": "1995-05-15",
     "favourite": false,
     "memories": {
-      "people": ["steve-snasdell"],
-      "places": ["university"]
+      "people": [
+        "steve-snasdell"
+      ],
+      "places": [
+        "university"
+      ]
     }
   },
   {
@@ -575,9 +579,16 @@
     "first_released": "1992-07-06",
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
-
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -588,8 +599,16 @@
     "first_released": "1994-11-07",
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -916,8 +935,16 @@
     "release_id": 8104972,
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -1097,8 +1124,16 @@
     "release_id": 1545313,
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -1387,8 +1422,16 @@
     "release_id": 628,
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -1582,8 +1625,16 @@
     "first_released": "1994-05-30",
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -1656,8 +1707,16 @@
     "release_id": 33099,
     "favourite": false,
     "memories": {
-      "people": ["andrew-dale"],
-      "places": ["college"]
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
     }
   },
   {
@@ -2730,8 +2789,12 @@
     "release_id": 387046,
     "favourite": false,
     "memories": {
-      "people": ["alastair-jennings"],
-      "places": ["university"]
+      "people": [
+        "alastair-jennings"
+      ],
+      "places": [
+        "university"
+      ]
     }
   },
   {
@@ -2841,7 +2904,9 @@
         "steve-snasdell",
         "alastair-jennings"
       ],
-      "places": ["university"]
+      "places": [
+        "university"
+      ]
     }
   },
   {
@@ -3293,7 +3358,7 @@
   },
   {
     "artist": "Blur",
-    "title": 13,
+    "title": "13",
     "format": "CD",
     "release_id": 380176,
     "favourite": false
@@ -3576,7 +3641,19 @@
     "format": "CD",
     "release_id": 865,
     "first_released": "1993-05-24",
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
+    }
   },
   {
     "artist": "Nirvana",

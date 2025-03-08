@@ -4,66 +4,41 @@
     "coordinates": {
       "lat": 50.7099,
       "lng": -3.5135
-    },
-    "association": {
-      "start": "1995-09",
-      "end": "1998-06"
-    },
-    "releases": [
-      {
-        "releaseId": "9748215"
-      },
-      {
-        "releaseId": "4147466"
-      },
-      {
-        "releaseId": "387046"
-      }
-    ]
+    }
+  },
+  "que-club": {
+    "location": "Que Club",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    }
+  },
+  "moseley-dance-centre": {
+    "location": "Moseley Dance Centre",
+    "coordinates": {
+      "lat": 52.4541,
+      "lng": -1.8960
+    }
   },
   "college": {
     "location": "Cadbury College",
     "coordinates": {
       "lat": 52.4030,
-      "lng": 1.9305
-    },
-    "association": {
-      "start": "1993-09",
-      "end": "1995-06"
-    },
-    "releases": [
-      {
-        "releaseId": "9326781"
-      },
-      {
-        "releaseId": "25341079"
-      },
-      {
-        "releaseId": "1541792"
-      },
-      {
-        "releaseId": "33099"
-      },
-      {
-        "releaseId": "1545313"
-      },
-      {
-        "releaseId": "628"
-      },
-      {
-        "releaseId": "8104972"
-      }
-    ]
+      "lng": -1.9305
+    }
   },
   "high-school": {
     "location": "South Bromsgrove High School",
     "coordinates": {
       "lat": 52.3249,
-      "lng": 2.0612
-    },
-    "association": {
-      "start": "1993-09",
-      "end": "1990-06"
+      "lng": -2.0612
+    }
+  },
+  "alvechurch": {
+    "location": "Alvechurch",
+    "coordinates": {
+      "lat": 52.3519,
+      "lng": -1.9603
     }
   }
 }

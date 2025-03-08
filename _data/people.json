@@ -1,65 +1,22 @@
 {
   "steve-snasdell": {
     "name": "Steve",
-    "relationship": "University friend",
-    "association": {
-      "start": "1995-09",
-      "end": null
-    },
-    "releases": [
-      {
-        "releaseId": "9748215"
-      },
-      {
-        "releaseId": "4147466"
-      }
-    ]
+    "relationship": "University friend"
   },
   "alastair-jennings": {
     "name": "Alastair",
-    "relationship": "University friend",
-    "association": {
-      "start": "1995-09",
-      "end": null
-    },
-    "releases": [
-      {
-        "releaseId": "4147466"
-      },
-      {
-        "releaseId": "387046"
-      }
-    ]
+    "relationship": "University friend"
   },
   "andrew-dale": {
     "name": "Dale",
-    "relationship": "College friend",
-    "association": {
-      "start": "1994-09",
-      "end": "2002"
-    },
-    "releases": [
-      {
-        "releaseId": "9326781"
-      },
-      {
-        "releaseId": "25341079"
-      },
-      {
-        "releaseId": "1541792"
-      },
-      {
-        "releaseId": "33099"
-      },
-      {
-        "releaseId": "1545313"
-      },
-      {
-        "releaseId": "628"
-      },
-      {
-        "releaseId": "8104972"
-      }
-    ]
+    "relationship": "College friend"
+  },
+  "shirley-harvey": {
+    "name": "Shirley",
+    "relationship": "College friend"
+  },
+  "mark-coyle": {
+    "name": "Mark",
+    "relationship": "Childhood friend"
   }
 }
