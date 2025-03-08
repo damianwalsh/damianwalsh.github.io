@@ -33,8 +33,9 @@ eleventyNavigation:
       {% endif %}
     </div>
   </header>
+
   <div class="prose">
-  {{ content | safe }}
+    {{ content | safe }}
   </div>
 
   {%- set monthlyBooks = collections.booksByMonth.getMonthlyBooks(date) %}
