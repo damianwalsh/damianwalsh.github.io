@@ -119,29 +119,25 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
     <div class="memories people">
       <h3 class="title">People</h3>
       <dl class="people__list">
-        {% for personId in release.memories.people %}
-        {% set personData = people[personId] %}
-        {% if personData %}
-        {% set personSlug = personData.name | slugify %}
-        <div class="people__wrapper">
-          <dt class="people__item" id="{{ personSlug }}" tabindex="0" aria-describedby="{{ personSlug }}-tooltip">
-            {{ personData.name }}
-          </dt>
-          <dd class="people__tooltip" id="{{ personSlug }}-tooltip" role="tooltip">
-            <strong>{{ personData.relationship }}</strong>
-            {% if personData.association %}
-            <div class="meta">
-              {{ personData.association.start | readableDate }}
-              {% if personData.association.end %}
-              to {{ personData.association.end | readableDate }}
-              {% else %}
-              to present
-              {% endif %}
+        {% for personId in (release.memories.people | sortByName(people)) %}
+          {% set personData = people[personId] %}
+          {% if personData %}
+            {% set personSlug = personData.name | slugify %}
+            <div class="people__wrapper">
+              <dt class="people__item toggle"
+                  id="{{ personSlug }}"
+                  tabindex="0"
+                  aria-expanded="false"
+                  data-target="{{ personSlug }}-tooltip">
+                {{ personData.name }}
+              </dt>
+              <dd class="people__tooltip hidden"
+                  id="{{ personSlug }}-tooltip"
+                  role="tooltip">
+                <strong>{{ personData.relationship }}</strong>
+              </dd>
             </div>
-            {% endif %}
-          </dd>
-        </div>
-        {% endif %}
+          {% endif %}
         {% endfor %}
       </dl>
     </div>
@@ -149,21 +145,29 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
 
     {% if release.memories.places %}
     <div class="memories places">
-      <h3 class="title">Places &amp; Events</h3>
-      <dl class="places__list">
-        {% for placeId in release.memories.places %}
-        {% set placeData = places[placeId] %}
-        {% if placeData %}
-        <div class="places__item">
-          <dt><strong>{{ placeData.location }}</strong></dt>
-          {% if placeData.association %}
-          <dd class="meta">{{ placeData.association.start | readableDate }}{% if placeData.association.end %} to {{
-            placeData.association.end | readableDate }}{% else %} to present{% endif %}</dd>
-          {% endif %}
-        </div>
+      <h3 class="title">Places & Events</h3>
+      {% set placesData = [] %}
+      {% for placeId in release.memories.places %}
+        {% if places[placeId] %}
+          {% set placesData = (placesData.push(places[placeId]), placesData) %}
         {% endif %}
+      {% endfor %}
+
+      {% set sortedPlacesData = placesData | sort(false, false, 'location') %}
+      {% memoryMap sortedPlacesData %}
+
+      <ul class="places__list" role="list">
+        {% for place in sortedPlacesData %}
+        <li>
+          <a href="https://www.openstreetmap.org/?mlat={{ place.coordinates.lat }}&mlon={{ place.coordinates.lng }}&zoom=15" rel="noopener" class="places__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="places__icon icon-stroke" aria-hidden="true">
+              <use xlink:href="#icon-map-pin"></use>
+            </svg>
+            <strong>{{ place.location }}</strong>
+          </a>
+        </li>
         {% endfor %}
-      </dl>
+      </ul>
     </div>
     {% endif %}
 
@@ -171,24 +175,23 @@ permalink: "/music-collection/releases/{{ release.title | slugify }}-{{ release.
     {% if memoryRelatedReleases.length > 0 %}
     <div class="memories connections">
       <h3 class="title">Connected releases</h3>
-      <ul role="list" class="connections__list">
-        {% for relatedRelease in memoryRelatedReleases %}
-        <li>
-          <a href="/music-collection/releases/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}-{{ relatedRelease.format | slugify }}.html"
-          class="connections__item surface">
-            <img
-              src="../img/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}.jpg"
-              sizes="60px"
-              alt="{{ relatedRelease.title }}"
-              class="connections__image">
-            <div class="connections__details">
-              <h3 class="title">{{ relatedRelease.title }}</h3>
-              <p class="meta">{{ relatedRelease.artist }}</p>
-            </div>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="connections__wrapper" role="region" aria-label="Connected releases" tabindex="0">
+        <ul class="connections__list" role="list">
+          {% for relatedRelease in memoryRelatedReleases %}
+          <li>
+            <a href="/music-collection/releases/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}-{{ relatedRelease.format | slugify }}.html"
+              class="connections__item surface">
+              <img src="../img/{{ relatedRelease.title | slugify }}-{{ relatedRelease.artist | slugify }}.jpg" sizes="60px"
+                alt="{{ relatedRelease.title }}" class="connections__image">
+              <div class="connections__details">
+                <h3 class="title">{{ relatedRelease.title }}</h3>
+                <p class="meta">{{ relatedRelease.artist }}</p>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     {% endif %}
 
