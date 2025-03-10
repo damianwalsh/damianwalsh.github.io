@@ -1390,7 +1390,19 @@
     "title": "Amber",
     "format": "CD",
     "release_id": 2494,
-    "favourite": false
+    "favourite": false,
+    "memories": {
+      "people": [
+        "andrew-dale",
+        "shirley-harvey",
+        "mark-coyle"
+      ],
+      "places": [
+        "college",
+        "que-club",
+        "moseley-dance-centre"
+      ]
+    }
   },
   {
     "artist": "Run The Jewels",
@@ -3651,7 +3663,8 @@
       "places": [
         "college",
         "que-club",
-        "moseley-dance-centre"
+        "moseley-dance-centre",
+        "glastonbury-festival"
       ]
     }
   },

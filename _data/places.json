@@ -40,5 +40,12 @@
       "lat": 52.3519,
       "lng": -1.9603
     }
+  },
+  "glastonbury-festival": {
+    "location": "Glastonbury Festival",
+    "coordinates": {
+      "lat": 51.2800,
+      "lng": -2.6800
+    }
   }
 }
