@@ -5,15 +5,17 @@
 .memories__grid {
   display: grid;
   gap: var(--space-xs);
+  > * {
+    min-width: 0;
+  }
 }
 
 @media (width <=768px) {
   .memories__grid {
     grid-template-columns: 1fr;
-  }
-
-  .memories__grid > * {
-    grid-column: 1 / -1;
+    > * {
+      grid-column: 1 / -1;
+    }
   }
 }
 
@@ -83,28 +85,20 @@
   height: var(--badge-size);
   padding: 0 var(--space-2xs);
   touch-action: manipulation;
-  &:hover ~ .people__tooltip,
-  &:focus ~ .people__tooltip {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 .people__tooltip {
   position: absolute;
   left: 0;
   top: calc(var(--badge-size) + var(--space-2xs));
-  opacity: 0;
-  visibility: hidden;
   font-size: var(--text-size--1);
   border-radius: var(--border-radius-s);
   padding: var(--space-3xs) var(--space-2xs);
-  transition: opacity .15s ease, visibility .15s ease;
   z-index: 1;
   white-space: nowrap;
   margin-block-end: 0;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: calc(var(--space-3xs) * -1);
     left: var(--space-2xs);
@@ -114,6 +108,8 @@
 }
 
 .places__list {
+  margin-block-end: 0;
+  padding-inline-start: 0 !important;
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
@@ -122,32 +118,73 @@
 .places__item {
   color: currentColor;
   font-size: var(--text-size--1);
-  padding: var(--space-3xs) var(--space-2xs);
+  margin-block-end: 0 !important;
+  padding: var(--space-3xs);
+  border-radius: var(--border-radius-s);
+  display: flex;
+  gap: var(--space-3xs);
+  text-decoration: none;
+}
+
+.places__icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.places__map {
   border-radius: var(--border-radius-s);
 }
 
+.connections__wrapper {
+  position: relative;
+  &:has(.connections__list > li:nth-child(2))::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: var(--space-s-m);
+    pointer-events: none;
+    z-index: 1;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 .connections__list {
+  --outline-width: 0.5ex;
   margin-block-end: 0;
   padding-inline-start: 0;
   display: grid;
-  gap: var(--flow-space);
-  grid-template-columns: 1fr;
+  gap: calc( var(--flow-space) - var(--outline-width)) ;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: currentColor transparent;
+
   @media (width >= 769px) {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(100% / 3)), 1fr));
+    grid-auto-columns: calc((100% - var(--flow-space)) / 2);
+    &:has(li:nth-child(3)) {
+      grid-auto-columns: calc((100% - var(--flow-space) * 2) / 3);
+    }
+  }
+  > li {
+    margin: var(--outline-width);
   }
 }
 
 .connections__item {
   display: flex;
   height: 100%;
+  gap: var(--flow-space);
   padding: var(--space-2xs);
   border-radius: var(--border-radius-s);
   text-decoration: none;
-  gap: var(--flow-space);
-  &:focus {
-    outline: 1.75px solid var(--tertiary-4);
-    outline-offset: 2.25px;
-  }
+  scroll-snap-align: start;
 }
 
 .connections__image {
@@ -181,6 +218,9 @@
       background: var(--tertiary-3);
       color: var(--tertiary-7);
     }
+    .connections__wrapper:has(.connections__list > li:nth-child(2))::after {
+      background: linear-gradient(to right, transparent, var(--tertiary-3));
+    }
     .people__item,
     .people__tooltip {
       background: var(--primary-1);
@@ -210,6 +250,9 @@
     &.connections {
       background: var(--tertiary-5);
       color: var(--tertiary-9);
+    }
+    .connections__wrapper:has(.connections__list > li:nth-child(2))::after {
+      background: linear-gradient(to right, transparent, var(--tertiary-5));
     }
     .people__item,
     .people__tooltip {
