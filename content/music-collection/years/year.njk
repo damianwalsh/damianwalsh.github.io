@@ -21,7 +21,7 @@ permalink: "/music-collection/years/{{ yearData.year }}.html"
     <h2 class="title">{{ yearData.releases.length }} release{{ 's' if yearData.releases.length !== 1 }}</h2>
   </header>
   <ul role="list" class="collection__grid">
-  {% for release in yearData.releases %}
+  {% for release in yearData.releases | sortReleasesByArtist %}
     <li>
       <a href="/music-collection/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}.html" class="collection__item surface">
         <img
