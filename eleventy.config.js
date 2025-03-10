@@ -11,7 +11,9 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import pluginFilters from "./_config/filters.js";
+import { generateStaticMap } from './_data/maps.js';
 import { createRequire } from 'module';
+import { createHash } from 'node:crypto';
 const require = createRequire(import.meta.url);
 
 export default async function (eleventyConfig) {
@@ -197,38 +199,59 @@ export default async function (eleventyConfig) {
     };
   });
 
-  // People collection
+  // People data
   const peopleData = require('./_data/people.json');
   eleventyConfig.addGlobalData("people", () => peopleData);
 
-  eleventyConfig.addCollection("people", function(collectionApi) {
-    const peopleData = require("./_data/people.json");
-
-    return Object.entries(peopleData).map(([key, person]) => {
-      return {
-        key: key,
-        name: person.name,
-        relationship: person.relationship,
-        association: person.association,
-        releases: person.releases
-      };
-    });
-  });
-
-  // Places collection
+  // Places data
   const placesData = require('./_data/places.json');
   eleventyConfig.addGlobalData("places", () => placesData);
 
-  eleventyConfig.addCollection("places", function(collectionApi) {
-    const placesData = require("./_data/places.json");
-    return Object.entries(placesData).map(([key, place]) => {
-      return {
-        key: key,
-        location: place.location,
-        releases: place.releases,
-        coordinates: place.coordinates
-      };
-    });
+  // Memory map
+  eleventyConfig.addShortcode("memoryMap", async function(places) {
+    const mapboxToken = process.env.MAPBOX_TOKEN;
+    if (!mapboxToken) {
+      console.warn("No Mapbox token found");
+      return "";
+    }
+
+    const mapData = await generateStaticMap(places, mapboxToken);
+    if (!mapData) {
+      return "";
+    }
+
+    // Return map HTML with base64 encoded image
+    const base64Image = mapData.imageBuffer.toString('base64');
+    return `<img src="data:image/png;base64,${base64Image}"
+           alt="Map showing memory locations"
+           width="660" height="330" class="places__map">`;
+  });
+
+  // Social images
+  eleventyConfig.addShortcode("socialImage", function(pageData) {
+    if (!pageData) return '';
+
+    const title = pageData.title || pageData.metadata?.title || '';
+    const description = pageData.description || pageData.metadata?.description || '';
+    const url = (pageData.metadata?.url || '').replace('https://', '');
+
+    const safeTitle = encodeURIComponent(encodeURIComponent(title));
+    const safeDescription = encodeURIComponent(encodeURIComponent(description));
+    const safeUrl = encodeURIComponent(encodeURIComponent(url.toUpperCase()));
+
+    // Create transformation string
+    const transformation = `w_1200,h_630,c_fill/l_text:BricolageGrotesqueExtraBold.ttf_72_line_spacing_1:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:BricolageGrotesqueLight.ttf_36_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:BricolageGrotesqueBold.ttf_32_letter_spacing_0.4:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
+
+    // Generate URL-safe base64 signature and take first 8 characters
+    const toSign = transformation + process.env.CLOUDINARY_API_SECRET;
+    const hash = createHash('sha1')
+      .update(toSign)
+      .digest('base64')
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_');
+    const signature = hash.substring(0, 8);
+
+    return `https://res.cloudinary.com/damianwalsh/image/upload/s--${signature}--/${transformation}`;
   });
 
   // Plugins
@@ -287,7 +310,7 @@ export default async function (eleventyConfig) {
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if(outputPath?.endsWith("resume.html")) {
-      const fontPath = path.resolve('./public/fonts/BricolageGrotesqueVariable.woff2');
+      const fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
       const fontExists = fs.existsSync(fontPath);
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
