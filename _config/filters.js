@@ -257,4 +257,10 @@ export default function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("sortReleasesByArtist", function(releases) {
+    return releases.sort((a, b) => {
+      return a.artist.localeCompare(b.artist);
+    });
+  });
+
 }
