@@ -416,7 +416,7 @@ Looking back at my original motivation—disenchantment with streaming services 
   <figcaption class="meta">Image from inside cover of <a href="https://damianwalsh.co.uk/music-collection/releases/wish-you-were-here-pink-floyd-vinyl">Wish You Were Here</a> <br>© Pink Floyd Music</figcaption>
 </figure>
 
-### Acknowledgements
+## Acknowledgements
 Several members of the Eleventy community have published valuable resources that helped me get started:
 
 <dl>
@@ -432,5 +432,5 @@ Several members of the Eleventy community have published valuable resources that
   <dd><em>Author of <a href="ttps://11tybundle.dev/">The 11ty Bundle</a> website and newsletter.</em></dd>
 </dl>
 
-### Footnote
+## Footnote
 If you've read this far and found it useful, that makes me happy. If you'd like to offer advice on how I could improve my approach, please feel free—you can figure out how to get in touch with me easily enough. ↘
