@@ -26,8 +26,7 @@
 .main-header__meta {
   display: flex;
   flex-wrap: wrap;
-  row-gap: var(--space-3xs);
-  column-gap: var(--space-xs);
+  gap: var(--space-xs);
   align-items: baseline;
 }
 
