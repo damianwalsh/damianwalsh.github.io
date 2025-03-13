@@ -2,6 +2,7 @@
 title: Creating connections with music and technology
 description: Building a personal digital music library with Eleventy and APIs
 date: 2025-02-25
+updated: 2025-03-13
 tags:
   - Eleventy
   - Digital Gardening
@@ -415,6 +416,243 @@ Looking back at my original motivation—disenchantment with streaming services 
   </div>
   <figcaption class="meta">Image from inside cover of <a href="https://damianwalsh.co.uk/music-collection/releases/wish-you-were-here-pink-floyd-vinyl">Wish You Were Here</a> <br>© Pink Floyd Music</figcaption>
 </figure>
+
+
+## Version 2: Memory boxes
+<time class="meta" datetime="2025-02">February 2025</time>
+
+After reflecting on ideas generated during the proof-of-concept development, I faced a choice: pursue the idea of enhancing views with data visualisations—an appealing design direction—or focus on something more personally meaningful. I was already well aware of music's connection to memory, but was still surprised by the cascade of memories and feelings that emerged when I organised my collection chronologically. Instead of adopting streaming platforms' one-size-fits-all organisational approach, I want to create personal pathways linking music to memory. I chose to follow the trail of ideas leading from enriching API data with memories connected to specific times, places, people, and events. This direction seemed more aligned with Bush's vision: creating a personal memory extension that, in this context, connects music to life experiences.
+
+<figure>
+  <div class="screenshots">
+    <img src="./photos.jpg" alt="A montage of personal photographs connected to specific times, places, people, and events arranged in a grid." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">Building connections between music, memory and emotion</figcaption>
+</figure>
+
+**Things I know:**
+
+My initial assumptions about APIs and Eleventy—that they could provide the data and create the automated connections needed for a personalised library system—have now been confirmed.
+
+**Assumptions:**
+
+Building on lessons learned developing the proof of concept, I can create trails of reference that link my music collection with memories.
+
+### The working model of memory
+The [Working Memory Model](https://en.wikipedia.org/wiki/Baddeley%27s_model_of_working_memory), first proposed by Baddeley and Hitch in 1974 and updated in 2001, describes how the brain processes visual and auditory information. In this model, different compartments—the phonological loop, visuo-spatial sketchpad, episodic buffer, and central executive—each handle different aspects of processing. New information is initially stored in short-term memory before being related to long-term memory. Understanding this model (at a _basic_ level) casts light on how visual and spatial cues might be used alongside music to unlock memories and feelings—triggering the episodic buffer, which integrates sounds, visuals, and long-term memories into brief, temporal experiences.
+
+<figure>
+  <div class="screenshots">
+    <img src="./working-memory-model.png" alt="Flowchart diagram showing how working memory processes information through interconnected components." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">The Working Memory Model. Baddeley and Hitch (1974, 2001)</figcaption>
+</figure>
+
+### Zettelkasten
+One of the concepts I came across while researching how to practically apply this idea to connect my music collection with people, places, and events was [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten)—which, in addition to being a word that sounds good enough to eat—is a method of [note-taking](https://en.wikipedia.org/wiki/Note-taking) and [personal knowledge management](https://en.wikipedia.org/wiki/Personal_knowledge_management) used for research, study, and writing. This system was also the original inspiration for the [invention of wikis](https://en.wikipedia.org/wiki/History_of_wikis).
+
+<figure>
+  <div class="screenshots">
+    <img src="./zettelkasten.png" alt="Schematic diagram illustrating how knowledge can be interconnected in a flexible information management system." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">Zettelkasten knowledge management system. <br>Image by David B. Clear, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></figcaption>
+</figure>
+
+I use this method to extend my music collection's data structure by creating additional [Global Data Files](https://www.11ty.dev/docs/data-global/) to include people, places, and events.
+
+**people.json**
+
+```json
+ "steve-snasdell": {
+    "name": "Steve",
+    "relationship": "University friend"
+  }
+```
+
+**places.json**
+
+```json
+"university": {
+    "location": "University of Plymouth (Exeter College of Art and Design)",
+    "coordinates": {
+      "lat": 50.7099,
+      "lng": -3.5135
+    }
+  }
+```
+
+**musicCollection.json**
+
+```json
+ {
+    "artist": "Supergrass",
+    "title": "I Should Coco",
+    "format": "CD",
+    "release_id": 4147466,
+    "favourite": false,
+    "memories": {
+      "people": [
+        "steve-snasdell",
+        "alastair-jennings"
+      ],
+      "places": [
+        "university"
+      ]
+    }
+  },
+```
+
+This structure prevents duplicating person and place data across multiple entries in the main data file. Instead, it allows any number of people, places, or events to be linked using ID arrays, while making all the data accessible to templates through the [Configuration](https://www.11ty.dev/docs/config/) file in the root directory.
+
+```js
+export default async function (eleventyConfig) {
+
+  const peopleData = require('./_data/people.json');
+  eleventyConfig.addGlobalData("people", () => peopleData);
+
+  const placesData = require('./_data/places.json');
+  eleventyConfig.addGlobalData("places", () => placesData);
+}
+```
+
+With this basic setup, I can display people, places, and events connected to specific releases on templates. As I discovered earlier, [Filters](https://www.11ty.dev/docs/filters/) can handle simple transformations like alphabetic and date sorting, but more interestingly, they can also be used to create pathways to other releases that share the same people, places, and events.
+
+```js
+eleventyConfig.addFilter("releasesWithMemoryConnections", function(allReleases, currentRelease) {
+  if (!currentRelease.memories) return [];
+
+  // Get the release's memories
+  const currentPeople = new Set(currentRelease.memories.people || []);
+  const currentPlaces = new Set(currentRelease.memories.places || []);
+
+  // Filter releases that share people or places, excluding the current release
+  const relatedReleases = allReleases.filter(release => {
+    if (release.release_id === currentRelease.release_id) return false;
+    if (!release.memories) return false;
+
+    // Check for shared people
+    const sharedPeople = release.memories.people?.some(person =>
+      currentPeople.has(person)
+    );
+
+    // Check for shared places
+    const sharedPlaces = release.memories.places?.some(place =>
+      currentPlaces.has(place)
+    );
+
+    return sharedPeople || sharedPlaces;
+  });
+
+  // Sort by artist, then title
+  return relatedReleases.sort((a, b) => {
+    const artistCompare = a.artist.localeCompare(b.artist);
+    if (artistCompare !== 0) return artistCompare;
+    return a.title.localeCompare(b.title);
+  });
+});
+```
+
+### Maps
+[Spatial memory](https://en.wikipedia.org/wiki/Spatial_memory), the visuo-spatial sketchpad in Baddeley and Hitch's model, plays a role in how we process and recall experiences. [Cognitive maps](https://en.wikipedia.org/wiki/Cognitive_map)—complex networks of spatial relationships between landmarks, paths, and distances—help us navigate both physical spaces and through memory. I wanted to harness this natural connection between location and memory by incorporating maps into the memory box feature.
+
+I evaluated several map providers that offer programmatic access, comparing their benefits and drawbacks against my requirements and values:
+
+| **Provider** | **Pros** | **Cons** |
+| --- | --- | --- |
+| [Leaflet](https://leafletjs.com/) + [OpenStreetMap](https://www.openstreetmap.org/) | Full interactivity possible, open source | More complex setup - managing tile servers etc. |
+| [Mapbox](https://www.mapbox.com/) | Simple implementation, generous free tier (50,000 map loads/month) | Credit card details required to access API key |
+
+Although Leaflet appeared to offer more customisation options and is fully open source, I chose Mapbox because it seemed easier for me to implement and suits my current needs for static maps with location markers while leaving the door open for adding interactive features later.
+
+First, I configure the [Fetch plugin](https://www.11ty.dev/docs/plugins/fetch/) in a separate [Global Data File](https://www.11ty.dev/docs/data-global/) to manage requests for static map graphics from the [Mapbox API](https://docs.mapbox.com/api/overview/). The code places markers at specified coordinates and creates map URLs for both single and multiple locations. By caching the map images, I avoid unnecessary API requests and minimise potential costs—though exceeding the free tier limits is unlikely given my collection size and map requirements.
+
+```js
+import EleventyFetch from "@11ty/eleventy-fetch";
+
+export async function generateStaticMap(places, mapboxToken) {
+  // Filter out places without coordinates
+  const markers = places.filter(place => place.coordinates);
+  if (markers.length === 0) return null;
+
+  const width = 800;
+  const height = 400;
+
+  // Create marker overlay string
+  const markerString = markers
+    .map(place => `pin-s+FF0000(${place.coordinates.lng},${place.coordinates.lat})`)
+    .join(',');
+
+  let mapUrl;
+  if (markers.length === 1) {
+    // Single marker - use center and zoom
+    const marker = markers[0];
+    mapUrl = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${markerString}/${marker.coordinates.lng},${marker.coordinates.lat},12/${width}x${height}?access_token=${mapboxToken}`;
+  } else {
+    // Multiple markers - use auto
+    mapUrl = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${markerString}/auto/${width}x${height}?padding=50&access_token=${mapboxToken}`;
+  }
+
+  try {
+    const imageBuffer = await EleventyFetch(mapUrl, {
+      duration: "1d",
+      type: "buffer"
+    });
+    return { imageBuffer, width, height };
+  } catch (error) {
+    console.error("Error generating map:", error);
+    return null;
+  }
+}
+```
+
+Then, a [Shortcode](https://www.11ty.dev/docs/shortcodes/) in my configuration makes the function available in templates to generate a map for the places associated with the release.
+
+```js
+import { generateStaticMap } from './_data/maps.js';
+
+export default async function (eleventyConfig) {
+  eleventyConfig.addShortcode("memoryMap", async function (places) {
+    const mapboxToken = process.env.MAPBOX_TOKEN;
+    if (!mapboxToken) {
+      console.warn("No Mapbox token found");
+      return "";
+    }
+
+    const mapData = await generateStaticMap(places, mapboxToken);
+    if (!mapData) {
+      return "";
+    }
+
+    // Return map HTML with base64 encoded image
+    const base64Image = mapData.imageBuffer.toString('base64');
+    return `<img src="data:image/png;base64,${base64Image}"
+           alt="Map showing memory locations"
+           width="660" height="330" class="places__map">`;
+  });
+};
+```
+### Release template
+Finally, on the actual release pages, the visual design used to window-dress everything happening in the background draws inspiration from various diagrams illustrating both Baddeley and Hitch's Working Memory Model and the Zettelkasten concept discovered during research. Layouts adapt to variations in screen size and the type and number of memories displayed.
+
+Examples of release pages with memory box feature:
+
+- [Orbital - Orbital](https://damianwalsh.co.uk/music-collection/releases/orbital-orbital-cd.html)
+- [Stanley Road - Paul Weller](https://damianwalsh.co.uk/music-collection/releases/stanley-road-paul-weller-vinyl.html)
+- [I Should Coco - Supergrass](https://damianwalsh.co.uk/music-collection/releases/i-should-coco-supergrass-cd.html)
+
+<figure>
+  <div class="screenshots">
+    <img src="./memory-boxes.png" alt="Screenshots showing memory box layouts at mobile and desktop screen sizes." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">Templates rendered by Eleventy</figcaption>
+</figure>
+
+### Retrospective
+I've only mapped a couple of releases so far, and completing the process will take time. That's perfectly fine—like listening to music, I want to move at my own pace taking time to reflect and enjoy this project. Some of my working practices might be considered "agile" but this isn't a sprint, and there's no quarterly product review looming on the horizon. I view this as an enabling release that lays the foundation for future development, which might include:
+
+- Creating an admin interface that writes to data files, making it easier to establish bi-directional links and using collections to categorise releases by people, places, and events—similar to the existing system for artists, genres, and years.
+- Incorporating personal photographs by leveraging the existing people, place, and year data structures.
+- Enhancing the map functionality to create an interactive narrative showing the connections between music, people, and places.
 
 ## Acknowledgements
 Several members of the Eleventy community have published valuable resources that helped me get started:
