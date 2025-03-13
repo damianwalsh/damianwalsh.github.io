@@ -38,6 +38,7 @@
 }
 
 .memories {
+  --outline-width: 0.5ex;
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
@@ -59,6 +60,9 @@
     color: currentColor;
     font-size: var(--text-size--2);
   }
+}
+.connections {
+  gap: calc(var(--space-2xs) - var(--outline-width));
 }
 
 .people {
@@ -154,7 +158,6 @@
 }
 
 .connections__list {
-  --outline-width: 0.5ex;
   margin-block-end: 0;
   padding-inline-start: 0;
   display: grid;
