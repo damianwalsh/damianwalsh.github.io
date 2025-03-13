@@ -1,17 +1,8 @@
-
-import { IdAttributePlugin } from "@11ty/eleventy";
 import { DateTime } from "luxon";
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 export default function (eleventyConfig) {
-
-  // Filters
-	eleventyConfig.addPlugin(IdAttributePlugin, {
-		// by default we use Eleventy’s built-in `slugify` filter:
-		// slugify: eleventyConfig.getFilter("slugify"),
-		// selector: "h1,h2,h3,h4,h5,h6", // default
-	});
 
   eleventyConfig.addFilter("findVideoByTrack", function(videos, trackTitle) {
     return videos?.find(video => video.title.includes(trackTitle));
