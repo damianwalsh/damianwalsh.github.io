@@ -9,11 +9,23 @@ eleventyNavigation:
 {% include "public/css/prism-diff.css" %}
 {% include "public/css/posts.css" %}
 {% endcss %}
+{% js %}
+function toggleDetails() {
+  const details = document.querySelector('details');
+  if (window.innerWidth >= 820) {
+    details.setAttribute('open', '');
+  } else {
+    details.removeAttribute('open');
+  }
+}
 
+window.addEventListener('load', toggleDetails);
+window.addEventListener('resize', toggleDetails);
+{% endjs %}
 <article>
   <header class="main-header">
     {% include "partials/breadcrumb.njk" %}
-    <h1>{{ title }}</h1>
+    <h1 id="{{ title | slugify }}">{{ title }}</h1>
     {% if description %}
     <p class="standfirst">{{ description }}</p>
     {% endif %}
@@ -34,44 +46,54 @@ eleventyNavigation:
     </div>
   </header>
 
+  {% if content | toc %}
+  <details>
+    <summary>
+      <h2 class="title">On this page</h2>
+    </summary>
+    {% set tocContent %}
+    <h1 id="{{ title | slugify }}">{{ title }}</h1>
+    {{ content | safe }}
+    {% endset %}
+    {{ tocContent | toc | safe }}
+  </details>
+  {% endif %}
+
   <div class="prose">
     {{ content | safe }}
   </div>
 
   {%- set monthlyBooks = collections.booksByMonth.getMonthlyBooks(date) %}
-
   {% if monthlyBooks.length > 0 %}
   <aside>
-    <section class="sticky surface">
-      <header>
-        <h2 class="title">Read in {{ date | readableDate("MMM yyyy") }}</h2>
-      </header>
-      <ul role="list" class="aside__list">
-        {%- for book in monthlyBooks %}
-        <li>
-          <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="aside__item ">
-            <img
-              src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
-              alt="{{ book.title }}"
-              sizes="60px"
-              class="aside__image">
-            <div class="aside__details">
-              <h3 class="title">{{ book.title }}</h3>
-              <p class="meta">{{ book.author }}</p>
-              {% if book.favourite %}
-              <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg> Favourite</div>
-              {% endif %}
-            </div>
-            <svg width="36" height="36" viewBox="-6 -6 36 36" class="aside__action action icon-stroke" aria-hidden="true">
-              <use xlink:href="#icon-chevron-right"></use>
-            </svg>
-          </a>
-        </li>
-        {%- endfor %}
-      </ul>
-    </section>
+    <header>
+      <h2 class="title">Read in {{ date | readableDate("MMM yyyy") }}</h2>
+    </header>
+    <ul role="list" class="aside__list">
+      {%- for book in monthlyBooks %}
+      <li>
+        <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="aside__item ">
+          <img
+            src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+            alt="{{ book.title }}"
+            sizes="60px"
+            class="aside__image">
+          <div class="aside__details">
+            <h3 class="title">{{ book.title }}</h3>
+            <p class="meta">{{ book.author }}</p>
+            {% if book.favourite %}
+            <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+              <use xlink:href="#icon-heart"></use>
+            </svg> Favourite</div>
+            {% endif %}
+          </div>
+          <svg width="36" height="36" viewBox="-6 -6 36 36" class="aside__action action icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
   </aside>
   {% endif %}
 </article>
