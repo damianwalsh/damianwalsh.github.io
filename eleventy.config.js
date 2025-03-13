@@ -2,6 +2,8 @@ import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginTOC from 'eleventy-plugin-toc';
+import markdownIt from "markdown-it";
 import he from 'he';
 import postcss from "postcss";
 import cssnanoPlugin from "cssnano";
@@ -25,6 +27,30 @@ export default async function (eleventyConfig) {
 
   // Watch content images for the image pipeline.
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+
+  // Configure Markdown library
+  const mdOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+    anchor: {
+      permalink: true,
+      permalinkClass: 'anchor-link',
+      permalinkSymbol: '#'
+    }
+  };
+
+  // Add markdown-it-anchor plugin
+  const markdownLib = markdownIt(mdOptions).use(require('markdown-it-anchor'));
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h1','h2'],
+    wrapper: 'nav',
+    wrapperLabel: 'toc',
+    ul: true,
+    flat: true
+  });
 
   // Tags collection (for blog posts)
   const excludedTags = ["posts", "releases", "artists", "genres", "formats", "releasesWithRelated", "books", "authors", "years"];
@@ -228,33 +254,6 @@ export default async function (eleventyConfig) {
   });
 
   // Social images - auth
-  // eleventyConfig.addShortcode("socialImage", function(pageData) {
-  //   if (!pageData) return '';
-
-  //   const title = pageData.title || pageData.metadata?.title || '';
-  //   const description = pageData.description || pageData.metadata?.description || '';
-  //   const url = (pageData.metadata?.url || '').replace('https://', '');
-
-  //   const safeTitle = encodeURIComponent(encodeURIComponent(title));
-  //   const safeDescription = encodeURIComponent(encodeURIComponent(description));
-  //   const safeUrl = encodeURIComponent(encodeURIComponent(url.toUpperCase()));
-
-  //   // Create transformation string
-  //   const transformation = `w_1200,h_630,c_fill/l_text:BricolageGrotesqueExtraBold.ttf_72_line_spacing_1:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:BricolageGrotesqueLight.ttf_36_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:BricolageGrotesqueBold.ttf_32_letter_spacing_0.4:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
-
-  //   // Generate URL-safe base64 signature and take first 8 characters
-  //   const toSign = transformation + process.env.CLOUDINARY_API_SECRET;
-  //   const hash = createHash('sha1')
-  //     .update(toSign)
-  //     .digest('base64')
-  //     .replace(/\+/g, '-')
-  //     .replace(/\//g, '_');
-  //   const signature = hash.substring(0, 8);
-
-  //   return `https://res.cloudinary.com/damianwalsh/image/upload/s--${signature}--/${transformation}`;
-  // });
-
-  // Social images - no auth
   eleventyConfig.addShortcode("socialImage", function(pageData) {
     if (!pageData) return '';
 
@@ -266,8 +265,35 @@ export default async function (eleventyConfig) {
     const safeDescription = encodeURIComponent(encodeURIComponent(description));
     const safeUrl = encodeURIComponent(encodeURIComponent(url.toUpperCase()));
 
-    return `https://res.cloudinary.com/damianwalsh/image/upload/w_1200,h_630,c_fill/l_text:open%20sans_72_bold_line_spacing_-5:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:open%20sans_36_regular_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:open%20sans_32_bold:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
+    // Create transformation string
+    const transformation = `w_1200,h_630,c_fill/l_text:BricolageGrotesqueExtraBold.ttf_72_line_spacing_1:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:BricolageGrotesqueLight.ttf_36_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:BricolageGrotesqueBold.ttf_32_letter_spacing_0.4:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
+
+    // Generate URL-safe base64 signature and take first 8 characters
+    const toSign = transformation + process.env.CLOUDINARY_API_SECRET;
+    const hash = createHash('sha1')
+      .update(toSign)
+      .digest('base64')
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_');
+    const signature = hash.substring(0, 8);
+
+    return `https://res.cloudinary.com/damianwalsh/image/upload/s--${signature}--/${transformation}`;
   });
+
+  // Social images - no auth
+  // eleventyConfig.addShortcode("socialImage", function(pageData) {
+  //   if (!pageData) return '';
+
+  //   const title = pageData.title || pageData.metadata?.title || '';
+  //   const description = pageData.description || pageData.metadata?.description || '';
+  //   const url = (pageData.metadata?.url || '').replace('https://', '');
+
+  //   const safeTitle = encodeURIComponent(encodeURIComponent(title));
+  //   const safeDescription = encodeURIComponent(encodeURIComponent(description));
+  //   const safeUrl = encodeURIComponent(encodeURIComponent(url.toUpperCase()));
+
+  //   return `https://res.cloudinary.com/damianwalsh/image/upload/w_1200,h_630,c_fill/l_text:open%20sans_72_bold_line_spacing_-10:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:open%20sans_36_regular_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:open%20sans_32_bold:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
+  // });
 
   // Plugins
   eleventyConfig.addPlugin(pluginNavigation);
