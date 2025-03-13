@@ -2,6 +2,10 @@
  * GLOBAL
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-display);
   font-size: var(--text-size-0);
@@ -22,6 +26,9 @@ h6 {
   font-variation-settings: "wght" 600, "wdth" 75;
   color: var(--secondary-5);
   line-height: 1.1;
+  &:focus {
+    outline: none;
+  }
 }
 
 h1 {
@@ -474,7 +481,3 @@ figcaption {
   }
 }
 
-.sticky {
-  position: sticky;
-  top: var(--gutter);
-}
