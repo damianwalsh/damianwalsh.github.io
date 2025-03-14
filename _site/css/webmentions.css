@@ -1,0 +1,52 @@
+/**
+ * RESUME
+ */
+
+ .webmentions {
+  --avatar-size: 60px;
+  border-radius: var(--border-radius-l);
+  padding: var(--flow-space);
+ }
+
+ .webmentions__list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+ }
+
+ .webmentions__item {
+  position: relative;
+  height: var(--avatar-size);
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+
+ }
+
+ .webmentions__author {
+  border-radius: calc(var(--avatar-size) / 2);
+  display: block;
+ }
+
+ .webmentions__avatar {
+  border-radius: calc(var(--avatar-size) / 2);
+ }
+
+ .webmentions__action {
+  height: calc(var(--avatar-size) / 2);
+  aspect-ratio: 1/1;
+  border-radius: calc(var(--avatar-size) / 4);
+  display: block;
+  position: absolute;
+  bottom: calc(var(--space-2xs) / -2);
+  right: calc(var(--space-2xs) / -2);
+  background: var(--primary-3);
+  color: var(--primary-6);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: var(--primary-6);
+    color: var(--primary-3);
+  }
+ }
