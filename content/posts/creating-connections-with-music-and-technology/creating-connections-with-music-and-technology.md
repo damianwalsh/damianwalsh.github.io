@@ -421,7 +421,7 @@ Looking back at my original motivation—disenchantment with streaming services 
 ## Version 2: Memory boxes
 <time class="meta" datetime="2025-02">February 2025</time>
 
-After reflecting on ideas generated during the proof-of-concept development, I faced a choice: pursue the idea of enhancing views with data visualisations—an appealing design direction—or focus on something more personally meaningful. I was already well aware of music's connection to memory, but was still surprised by the cascade of memories and feelings that emerged when I organised my collection chronologically. Instead of adopting streaming platforms' one-size-fits-all organisational approach, I want to create personal pathways linking music to memory. I chose to follow the trail of ideas leading from enriching API data with memories connected to specific times, places, people, and events. This direction seemed more aligned with Bush's vision: creating a personal memory extension that, in this context, connects music to life experiences.
+After reflecting on ideas generated during the proof-of-concept development, I faced a choice: pursue the idea of enhancing views with data visualisations—an appealing design direction—or focus on something more personally meaningful. I was already well aware of music's connection to memory, but was still surprised by the wave of memories and feelings that emerged when I organised my collection chronologically. Instead of adopting streaming platforms' one-size-fits-all organisational approach, I want to create personal pathways linking music to memory. I chose to follow the trail of ideas leading from enriching API data with memories connected to specific times, places, people, and events. This direction seemed more aligned with Bush's vision: creating a personal memory extension that, in this context, connects music to life experiences.
 
 <figure>
   <div class="screenshots">
@@ -564,7 +564,7 @@ I evaluated several map providers that offer programmatic access, comparing thei
 
 Although Leaflet appeared to offer more customisation options and is fully open source, I chose Mapbox because it seemed easier for me to implement and suits my current needs for static maps with location markers while leaving the door open for adding interactive features later.
 
-First, I configure the [Fetch plugin](https://www.11ty.dev/docs/plugins/fetch/) in a separate [Global Data File](https://www.11ty.dev/docs/data-global/) to manage requests for static map graphics from the [Mapbox API](https://docs.mapbox.com/api/overview/). The code places markers at specified coordinates and creates map URLs for both single and multiple locations. By caching the map images, I avoid unnecessary API requests and minimise potential costs—though exceeding the free tier limits is unlikely given my collection size and map requirements.
+First, I configure the [Fetch plugin](https://www.11ty.dev/docs/plugins/fetch/) in a separate [Global Data File](https://www.11ty.dev/docs/data-global/) to manage requests for static map graphics from the [Mapbox API](https://docs.mapbox.com/api/overview/). The code places markers at specified coordinates and creates map URLs for both single and multiple locations. By caching the map images, I avoid unnecessary API requests and minimise potential costs—though exceeding the free tier limit is unlikely given my collection size and map requirements.
 
 ```js
 import EleventyFetch from "@11ty/eleventy-fetch";
@@ -632,7 +632,7 @@ export default async function (eleventyConfig) {
 };
 ```
 ### Release template
-Finally, on the actual release pages, the visual design used to window-dress everything happening in the background draws inspiration from various diagrams illustrating both Baddeley and Hitch's Working Memory Model and the Zettelkasten concept discovered during research. Layouts adapt to variations in screen size and the type and number of memories displayed.
+Finally, on the actual release pages, the visual design draws inspiration from diagrams of both Baddeley and Hitch's Working Memory Model and the Zettelkasten concept. The layouts flexibly adapt to different screen sizes and memory content. When I browse my library now, each release page functions as a personalized record sleeve, offering cues that help trigger memories as I play the music.
 
 Examples of release pages with memory box feature:
 
