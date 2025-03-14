@@ -463,7 +463,7 @@ I use this method to extend my music collection's data structure by creating add
 **people.json**
 
 ```json
- "steve-snasdell": {
+ "steve-s": {
     "name": "Steve",
     "relationship": "University friend"
   }
@@ -492,8 +492,8 @@ I use this method to extend my music collection's data structure by creating add
     "favourite": false,
     "memories": {
       "people": [
-        "steve-snasdell",
-        "alastair-jennings"
+        "steve-s",
+        "alastair-j"
       ],
       "places": [
         "university"
