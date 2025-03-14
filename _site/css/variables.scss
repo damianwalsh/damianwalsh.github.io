@@ -51,6 +51,8 @@
   --space-xs-l: clamp(0.875rem, 0.2861rem + 2.8902vw, 2.75rem);
   --space-xs-m: clamp(0.875rem, 0.502rem + 1.8304vw, 2.0625rem);
 
+  --fluid: clamp(3.3594rem, 2.3553rem + 4.9277vw, 6.5563rem);
+
   /* Wrapper */
   --wrapper-max-width: 85.25rem;
   --gutter: var(--space-xs-l, clamp(0.875rem, 0.2861rem + 2.8902vw, 2.75rem));
