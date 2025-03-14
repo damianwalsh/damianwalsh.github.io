@@ -8,6 +8,7 @@ eleventyNavigation:
 {% include "public/css/prism-okaidia.css" %}
 {% include "public/css/prism-diff.css" %}
 {% include "public/css/posts.css" %}
+{% include "public/css/webmentions.css" %}
 {% endcss %}
 {% js %}
 function toggleDetails() {
@@ -61,6 +62,7 @@ window.addEventListener('resize', toggleDetails);
 
   <div class="prose">
     {{ content | safe }}
+    {% include "partials/webmentions.njk" %}
   </div>
 
   {%- set monthlyBooks = collections.booksByMonth.getMonthlyBooks(date) %}
