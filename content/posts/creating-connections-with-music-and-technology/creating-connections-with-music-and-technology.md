@@ -632,7 +632,7 @@ export default async function (eleventyConfig) {
 };
 ```
 ### Release template
-Finally, on the actual release pages, the visual design draws inspiration from diagrams of both Baddeley and Hitch's Working Memory Model and the Zettelkasten concept. The layouts flexibly adapt to different screen sizes and memory content. When I browse my library now, each release page functions as a personalized record sleeve, offering cues that help trigger memories as I play the music.
+Finally, on the actual release pages, the visual design draws inspiration from diagrams of both Baddeley and Hitch's Working Memory Model and the Zettelkasten concept. The layouts flexibly adapt to different screen sizes and memory content. When I browse my library now, each release page functions as a personalised record sleeve, offering cues that help trigger memories as I play the music.
 
 Examples of release pages with memory box feature:
 
