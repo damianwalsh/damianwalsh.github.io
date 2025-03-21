@@ -1,47 +1,40 @@
 {% set currentUrl = metadata.url + page.url %}
 {% set pageWebmentions = webmentions[currentUrl] %}
-{% if pageWebmentions.length %}
-  <section class="webmentions surface">
-    <header>
-      <h2 class="title">Webmentions</h2>
-    </header>
-    <ul role="list" class="webmentions__list">
-    {% for mention in pageWebmentions %}
-      <li class="webmentions__item">
-        {% if mention.author %}
-          <a href="{{ mention.author.url }}" class="webmentions__author">
-            {% if mention.author.photo %}
-              <img src="{{ mention.author.photo }}" alt="{{ mention.author.name }}" class="webmentions__avatar">
-            {% endif %}
-          </a>
-        {% endif %}
-        <a href="{{ mention.url }}" class="webmentions__action">
-          {% if mention["wm-property"] == "like-of" %}
-            <svg width="30" height="30" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
-              <use xlink:href="#icon-heart"></use>
-            </svg>
-          {% elif mention["wm-property"] == "repost-of" %}
-            <svg width="30" height="30" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
-              <use xlink:href="#icon-repost"></use>
-            </svg>
-          {% elif mention["wm-property"] == "in-reply-to" %}
-            <svg width="30" height="30" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
-              <use xlink:href="#icon-reply"></use>
-            </svg>
-          {% endif %}
-          <span class="visually-hidden">
-            {% if mention["wm-property"] == "like-of" %}
-              Liked this post
-            {% elif mention["wm-property"] == "repost-of" %}
-              Reposted this
-            {% elif mention["wm-property"] == "in-reply-to" %}
-              Replied
-            {% endif %}
-          </span>
-        </a>
+{% set likes = (pageWebmentions | filterByProperty("wm-property", "like-of") | length) %}
+{% set reposts = (pageWebmentions | filterByProperty("wm-property", "repost-of") | length) %}
+{% set replies = (pageWebmentions | filterByProperty("wm-property", "in-reply-to") | length) %}
 
-      </li>
-    {% endfor %}
+{% if likes > 0 or reposts > 0 or replies > 0 %}
+  <section class="webmentions meta">
+    <h2 class="title">Webmentions</h2>
+    <ul class="webmentions__list" role="list">
+      {% if likes > 0 %}
+        <li class="webmentions__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" class="webmentions__icon icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg>
+          <span class="visually-hidden">{{ likes }} Like{% if likes != 1 %}s{% endif %}</span>
+          <span aria-hidden="true">{{ likes }}</span>
+        </li>
+      {% endif %}
+      {% if reposts > 0 %}
+        <li class="webmentions__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" class="webmentions__icon icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-repost"></use>
+          </svg>
+          <span class="visually-hidden">{{ reposts }} Repost{% if reposts != 1 %}s{% endif %}</span>
+          <span aria-hidden="true">{{ reposts }}</span>
+        </li>
+      {% endif %}
+      {% if replies > 0 %}
+        <li class="webmentions__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" class="webmentions__icon icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-reply"></use>
+          </svg>
+          <span class="visually-hidden">{{ replies }} Repl{% if replies == 1 %}y{% else %}ies{% endif %}</span>
+          <span aria-hidden="true">{{ replies }}</span>
+        </li>
+      {% endif %}
     </ul>
   </section>
 {% endif %}
