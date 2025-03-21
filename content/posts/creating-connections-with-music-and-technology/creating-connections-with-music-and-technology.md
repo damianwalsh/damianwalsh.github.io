@@ -27,10 +27,19 @@ table {
 Back in December 2024, while I was doing the usual end-of-year contemplation, [Spotify's annual Wrapped](https://newsroom.spotify.com/2024-wrapped/) feature arrived, ringing a bell in my mind. I realised my scattershot listening habits on Spotify and the snapshot Wrapped presents failed to capture my changing tastes over time or evoke feelings and memories in the same way as a tangible music collection. Music is a fundamental part of my life—I've always been a fan. My earliest memories are rooted in music, exploring my parents' vinyl collection and watching [Top of the Pops](https://en.wikipedia.org/wiki/Top_of_the_Pops), fascinated by the sounds and imagery. And later, making the rounds of record shops, building my collection, and plastering my teenage bedroom walls with band artwork, portraits, and memorabilia. In a funny sort of way, music was my gateway into design.
 
 <figure>
-  <div class="screenshots">
-    <img src="./always-on-my-mind.jpg" alt="An image from the music video; song lyrics relate to the article's theme." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  <div class="screenshots video__wrapper">
+    <img class="video__placeholder" src="./always-on-my-mind.jpg" alt="An image from the music video; song lyrics relate to the article's theme." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <iframe
+      class="youtube__player "
+      src="https://www.youtube.com/embed/bDMCwSP5nf0?enablejsapi=1&autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+    ></iframe>
+    <button class="video__play action" aria-label="Play video"><svg viewBox="-6 -6 36 36" width="36" height="36"
+    class="icon-stroke" aria-hidden="true"><use xlink:href="#icon-play"></use></svg></button>
   </div>
-  <figcaption class="meta"><a href="https://www.youtube.com/watch?v=bDMCwSP5nf0">Always on My Mind</a> by Pet Shop Boys</figcaption>
+  <figcaption class="meta">Always on My Mind by Pet Shop Boys</figcaption>
 </figure>
 
 At the same time I was thinking about this, I was also feeling generally uninspired about the tech industry’s current direction and its impact on the world—especially compared to earlier visions of the internet. I want to direct my online thinking and doing toward something *I believe in.* My music collection seemed to be one of the areas I could meaningfully apply technology to connect with something I'm passionate about and learn something new in the process. I've previously written about [cultivating a digital garden](https://damianwalsh.co.uk/posts/cultivating-a-digital-garden/) to achieve these aims. One of the concepts I came across while researching the idea was the [Memex](https://en.wikipedia.org/wiki/Memex), proposed by [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush) in his 1945 article [As We May Think](https://archive.org/details/as-we-may-think).
@@ -417,11 +426,10 @@ Looking back at my original motivation—disenchantment with streaming services 
   <figcaption class="meta">Image from inside cover of <a href="https://damianwalsh.co.uk/music-collection/releases/wish-you-were-here-pink-floyd-vinyl">Wish You Were Here</a> <br>© Pink Floyd Music</figcaption>
 </figure>
 
-
 ## Version 2: Memory boxes
 <time class="meta" datetime="2025-02">February 2025</time>
 
-After reflecting on ideas generated during the proof-of-concept development, I faced a choice: pursue the idea of enhancing views with data visualisations—an appealing design direction—or focus on something more personally meaningful. I was already well aware of music's connection to memory, but was still surprised by the wave of memories and feelings that emerged when I organised my collection chronologically. Instead of adopting streaming platforms' one-size-fits-all organisational approach, I want to create personal pathways linking music to memory. I chose to follow the trail of ideas leading from enriching API data with memories connected to specific times, places, people, and events. This direction seemed more aligned with Bush's vision: creating a personal memory extension that, in this context, connects music to life experiences.
+After reflecting on ideas generated during the [proof-of-concept](#version-1%3A-proof-of-concept) development, I faced a choice: pursue the idea of enhancing views with data visualisations—an appealing design direction—or focus on something more personally meaningful. I was already well aware of music's connection to memory, but was still surprised by the wave of memories and feelings that emerged when I organised my collection chronologically. Instead of adopting streaming platforms' one-size-fits-all organisational approach, I want to create personal pathways linking music to memory. I chose to follow the trail of ideas leading from enriching API data with memories connected to specific times, places, people, and events. This direction seemed more aligned with Bush's vision: creating a personal memory extension that, in this context, connects music to life experiences.
 
 <figure>
   <div class="screenshots">
@@ -515,7 +523,7 @@ export default async function (eleventyConfig) {
 }
 ```
 
-With this basic setup, I can display people, places, and events connected to specific releases on templates. As I discovered earlier, [Filters](https://www.11ty.dev/docs/filters/) can handle simple transformations like alphabetic and date sorting, but more interestingly, they can also be used to create pathways to other releases that share the same people, places, and events.
+With this basic setup, I can display people, places, and events connected to specific releases on templates. As I discovered earlier, [Filters](#filters) can handle simple transformations, but more interestingly, they can also be used to create pathways to other releases that share the same people, places, and events.
 
 ```js
 eleventyConfig.addFilter("releasesWithMemoryConnections", function(allReleases, currentRelease) {
@@ -672,3 +680,8 @@ Several members of the Eleventy community have published valuable resources that
 
 ## Footnote
 If you've read this far and found it useful, that makes me happy. If you'd like to offer advice on how I could improve my approach, please feel free—you can figure out how to get in touch with me easily enough. ↘
+
+<script src="https://www.youtube.com/iframe_api"></script>
+{% js %}
+{% include "public/js/youtube.js" %}
+{% endjs %}
