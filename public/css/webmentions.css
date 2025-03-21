@@ -1,11 +1,19 @@
 /**
- * RESUME
+ * WEBMENTIONS
  */
 
  .webmentions {
-  --avatar-size: 60px;
-  border-radius: var(--border-radius-l);
-  padding: var(--flow-space);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  align-items: center;
+  .title {
+    color: var(--text-colour-2);
+    font-size: var(--text-size--1);
+    font-variation-settings: "wght" 700;
+    letter-spacing: .025em;
+    margin-block-start: 0;
+  }
  }
 
  .webmentions__list {
@@ -18,35 +26,11 @@
  }
 
  .webmentions__item {
-  position: relative;
-  height: var(--avatar-size);
-  aspect-ratio: 1/1;
-  flex-shrink: 0;
-
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
  }
 
- .webmentions__author {
-  border-radius: calc(var(--avatar-size) / 2);
-  display: block;
- }
-
- .webmentions__avatar {
-  border-radius: calc(var(--avatar-size) / 2);
- }
-
- .webmentions__action {
-  height: calc(var(--avatar-size) / 2);
-  aspect-ratio: 1/1;
-  border-radius: calc(var(--avatar-size) / 4);
-  display: block;
-  position: absolute;
-  bottom: calc(var(--space-2xs) / -2);
-  right: calc(var(--space-2xs) / -2);
-  background: var(--primary-3);
-  color: var(--primary-6);
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    background: var(--primary-6);
-    color: var(--primary-3);
-  }
+ .webmentions__icon {
+  color: var(--primary-4);
  }
