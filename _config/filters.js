@@ -254,4 +254,7 @@ export default function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("filterByProperty", function(array, property, value) {
+    return array.filter(item => item["wm-property"] === value);
+  });
 }
