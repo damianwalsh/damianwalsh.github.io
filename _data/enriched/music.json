@@ -9797,7 +9797,19 @@
           "title": "Loving You Live",
           "duration": "4:00"
         }
-      ]
+      ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      }
     },
     {
       "artist": "Autechre",
@@ -25832,7 +25844,16 @@
           "title": "Closet Romantic",
           "duration": "3:08"
         }
-      ]
+      ],
+      "chapters": {
+        "1996-1998": {
+          "people": [],
+          "places": [
+            "university-of-plymouth"
+          ],
+          "events": []
+        }
+      }
     },
     {
       "artist": "Laura Marling",
@@ -27555,7 +27576,19 @@
           "title": "Triangle",
           "duration": "10:03"
         }
-      ]
+      ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      }
     },
     {
       "artist": "Disclosure",
@@ -32675,7 +32708,19 @@
           "title": "Start As You Mean To Go On",
           "duration": "6:03"
         }
-      ]
+      ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      }
     },
     {
       "artist": "Hope Of The States",
@@ -48415,7 +48460,19 @@
           "title": "North Country Boy",
           "duration": "4:02"
         }
-      ]
+      ],
+      "chapters": {
+        "1996-1998": {
+          "people": [
+            "steve-s",
+            "alastair-j"
+          ],
+          "places": [
+            "university-of-plymouth"
+          ],
+          "events": []
+        }
+      }
     },
     {
       "artist": "Super Furry Animals",

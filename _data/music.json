@@ -1150,7 +1150,19 @@
     "favourite": false,
     "favourite_tracks": [
       3
-    ]
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [
+          "andrew-d",
+          "shirley-h"
+        ],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
   },
   {
     "artist": "Autechre",
@@ -2199,7 +2211,16 @@
     "favourite": false,
     "favourite_tracks": [
       13
-    ]
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
   },
   {
     "artist": "Laura Marling",
@@ -2316,7 +2337,19 @@
     "favourite": false,
     "favourite_tracks": [
       7
-    ]
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [
+          "andrew-d",
+          "shirley-h"
+        ],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
   },
   {
     "artist": "Disclosure",
@@ -2682,7 +2715,19 @@
     "favourite": false,
     "favourite_tracks": [
       1
-    ]
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [
+          "andrew-d",
+          "shirley-h"
+        ],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
   },
   {
     "artist": "Hope Of The States",
@@ -3816,7 +3861,19 @@
     "favourite": false,
     "favourite_tracks": [
       1
-    ]
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
   },
   {
     "artist": "Super Furry Animals",
