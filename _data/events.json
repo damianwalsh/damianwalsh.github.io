@@ -1377,5 +1377,17 @@
     "related_releases": [
       5311497
     ]
+  },
+  "smashing-pumpkins-reading-2007-08-26": {
+    "name": "Smashing Pumpkins",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "13d61105",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
   }
 }

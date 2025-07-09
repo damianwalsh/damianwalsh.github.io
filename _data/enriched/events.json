@@ -3191,5 +3191,41 @@
       }
     ],
     "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2018/manchester-academy-3-university-of-manchester-students-union-manchester-england-63964e0f.html"
+  },
+  "smashing-pumpkins-reading-2007-08-26": {
+    "name": "Smashing Pumpkins",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "13d61105",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Suspiria",
+          "Superchrist",
+          "Doomsday Clock",
+          "Today",
+          "Tarantula",
+          "Drown",
+          "Stand Inside Your Love",
+          "Zero",
+          "United States",
+          "Bullet With Butterfly Wings",
+          "Glass and the Ghost Children",
+          "1979",
+          "Death From Above",
+          "Tonight, Tonight",
+          "That's the Way (My Love Is)",
+          "Heavy Metal Machine",
+          "Cherub Rock"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-smashing-pumpkins/2007/little-johns-farm-reading-england-13d61105.html"
   }
 }

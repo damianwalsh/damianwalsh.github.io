@@ -160,38 +160,6 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
     {% endif %}
 
     <div class="memories__connections">
-      {% if allPeopleIds.length %}
-      <div class="memories__people">
-        <h3 class="meta">People</h3>
-        <ul class="nav-pills" role="list">
-          {% for personId in allPeopleIds %}
-          {% set person = collections.peopleCollection | getById(personId) %}
-          {% if person %}
-          <li>
-            <a href="/music/people/{{ person.name | slugify }}" title="{{ person.relationship }}">{{ person.name }}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-
-      {% if sortedLocations.length %}
-      <div class="memories__places">
-        <h3 class="meta">Places</h3>
-        <ul class="nav-pills" role="list">
-          {% for loc in sortedLocations %}
-            <li>
-              <a href="https://www.openstreetmap.org/?mlat={{ loc.coordinates.lat }}&mlon={{ loc.coordinates.lng }}&zoom=15"
-                rel="noopener">
-                {{ loc.location }}{% if loc.night %} ({{ loc.night }}){% endif %}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-
       <div class="memories__chapters">
         <h3 class="meta">Chapters</h3>
         <ul class="nav-pills" role="list">
@@ -207,6 +175,36 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
           {% endfor %}
         </ul>
       </div>
+      {% if allPeopleIds.length %}
+      <div class="memories__people">
+        <h3 class="meta">People</h3>
+        <ul class="nav-pills" role="list">
+          {% for personId in allPeopleIds %}
+          {% set person = collections.peopleCollection | getById(personId) %}
+          {% if person %}
+          <li>
+            <a href="/music/people/{{ person.name | slugify }}" title="{{ person.relationship }}">{{ person.name }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if sortedLocations.length %}
+      <div class="memories__places">
+        <h3 class="meta">Places</h3>
+        <ul class="nav-pills" role="list">
+          {% for loc in sortedLocations %}
+            <li>
+              <a href="https://www.openstreetmap.org/?mlat={{ loc.coordinates.lat }}&mlon={{ loc.coordinates.lng }}&zoom=15"
+                rel="noopener">
+                {{ loc.location }}{% if loc.night %} ({{ loc.night }}){% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>
