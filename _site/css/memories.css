@@ -1,0 +1,35 @@
+/**
+ * MEMORIES
+ */
+
+.memories__grid {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "locations"
+    "connections";
+  @media screen and (width >=601px) {
+    grid-template-columns: 1fr minmax(auto, 220px);
+    grid-template-areas:
+    "connections locations"
+    "connections locations";
+  }
+  .memories__connections {
+    grid-area: connections;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  .map__image {
+    grid-area: locations;
+  }
+}
+
+.memories__people,
+.memories__places,
+.memories__chapters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}

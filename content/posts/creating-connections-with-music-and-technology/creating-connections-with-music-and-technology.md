@@ -2,7 +2,7 @@
 title: Creating connections with music and technology
 description: Building a personal digital music library with Eleventy and APIs
 date: 2025-02-25
-updated: 2025-03-13
+updated: 2025-07-09
 tags:
   - Eleventy
   - Digital Gardening
@@ -16,6 +16,9 @@ tags:
   padding-inline: calc((100% - 75%) / 2);
   @media screen and (width >= 769px) {
     flex-direction: row;
+  }
+  &.no-pad {
+    padding-inline: 0;
   }
 }
 table {
@@ -658,9 +661,9 @@ I've only mapped a couple of releases so far, and completing the process will ta
 
 The [previous iteration](#version-2%3A-memory-boxes) showed I could apply Baddeley and Hitch's Working Memory Model and the Zettelkasten method to create memory-based connections in my music collection. But—there's always a but, isn't there?—limitations emerged as I mapped more releases. Each addition triggered new memories and connections, revealing gaps in how the existing setup functioned as an aide-mémoire. Filtering one-way connections from the main data file to people, places, and events restricted how I could arrange content to match my way of thinking.
 
-Organising and finding releases like a record shop works well in this respect when there's a clear, singular connection between release date and memory. A record like [Definitely Maybe](https://damianwalsh.co.uk/music/releases/definitely-maybe-oasis-vinyl) had a big impact on me when it was released. Listening to it now transports me back, evoking memories from that particular moment in life—nothing more, nothing less.
+Organising and finding releases like a record shop works well in this respect when there's a clear, singular connection between release date and memory. A record like [Definitely Maybe](https://damianwalsh.co.uk/music/releases/definitely-maybe-oasis-vinyl/) had a big impact on me when it was released. Listening to it now transports me back, evoking memories from that particular moment in life—nothing more, nothing less.
 
-Things become complicated when records lack this straightforward type of connection. The Beatles are a perfect example: their records were released before I was born, and I didn't start adding them to my own collection until they were rereleased in the 2000s. Their songs evoke both childhood and more recent memories as I revisit these records later in life. Albums like [Bandwagonesque](https://damianwalsh.co.uk/music/releases/bandwagonesque-teenage-fanclub-vinyl) or [Fuzzy Logic](https://damianwalsh.co.uk/music/releases/fuzzy-logic-super-furry-animals-vinyl), which I bought around the time they were originally released, now recall various periods in my life, different people and places, and a mix of feelings and emotions: friendship and loneliness, happiness and sadness. So the goal became how to organise and create pathways through my collection that help me find releases that summon memories from specific periods of my life or people, places, and events—quite different from the classifications used in streaming platforms.
+Things become complicated when records lack this straightforward type of connection. The Beatles are a perfect example: their records were released before I was born, and I didn't start adding them to my own collection until they were rereleased in the 2000s. Their songs evoke both childhood and more recent memories as I revisit these records later in life. Albums like [Bandwagonesque](https://damianwalsh.co.uk/music/releases/bandwagonesque-teenage-fanclub-vinyl/) or [Fuzzy Logic](https://damianwalsh.co.uk/music/releases/fuzzy-logic-super-furry-animals-vinyl/), which I bought around the time they were originally released, now recall various periods in my life, different people and places, and a mix of feelings and emotions: friendship and loneliness, happiness and sadness. So the goal became how to organise and create pathways through my collection that help me find releases that summon memories from specific periods of my life or people, places, and events—quite different from the classifications used in streaming platforms.
 
 <figure>
   <div class="screenshots">
@@ -684,7 +687,7 @@ Listening to records and making these connections not only brought me closer to 
 ### Automating connections
 I began by manually adding a few bi-directional links to test the idea. This experience underlined the benefit of automation, and my first thought was to create a typical CMS-style admin interface. A brief exchange on Mastodon with [Spencer Harston](https://mastodon.social/@sphars) led me to his blog post about [managing data for his books page](https://www.spencerharston.com/posts/2025/managing-my-books-data/), helpfully guiding me towards using Node scripts.
 
-**musicCLI.js**
+**[musicCLI.js]()**
 
 This command-line tool built using [Commander](https://www.npmjs.com/package/commander) and [Inquirer](https://www.npmjs.com/package/inquirer) provides an interface to manage my music collection data.
 
@@ -697,17 +700,22 @@ This command-line tool built using [Commander](https://www.npmjs.com/package/com
 
 The CLI takes care of:
 
-- Adding new releases and tagging favourite tracks
+- Adding new releases, chapters, people, places, and events
 - Automatically processing cover artwork
-- Creating associations between releases and chapters, people, places, and events
+- Creating bi-directional links between data files
 - Enriching data with information from APIs
 
-The entire workflow is simplified to a single command—`npm run music` followed by various interactive prompts—eliminating the need to manually edit JSON files and run separate scripts for artwork processing, creating associations and data enrichment.
+The entire workflow is simplified to a single command—`npm run music` followed by various interactive prompts—eliminating the need to manually edit JSON files and run separate scripts for processing images, creating associations and data enrichment.
 
 ### Navigating through memories
-Instead of my original approach, using global data and Filter functions for memory connections on release pages, I now use Collections for chapters, people, places, and events—creating multiple dimensions to explore. This approach enables me to generate different types of pages, opening up new ways to navigate my music collection via meaningful personal connections—essentially creating playlists that allow me to travel through time by linking releases to life periods, people, places, and events.
+Instead of my original approach, using global data and Filter functions for memory connections on release pages, I now use Collections—creating multiple dimensions to explore. This approach enables me to generate different types of pages, opening up new ways to navigate my [music collection](https://damianwalsh.co.uk/music/) via meaningful personal connections—essentially creating playlists that let me travel through time by linking releases to [life periods](https://damianwalsh.co.uk/music/chapters/), [people](https://damianwalsh.co.uk/music/people/), places and [events](https://damianwalsh.co.uk/music/events/).
 
-SCREENSHOTS
+<figure>
+  <div class="screenshots no-pad">
+    <img src="./chapters.png" alt="A screenshot of chapters linking releases to life periods." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+  </div>
+  <figcaption class="meta">Templates rendered by Eleventy</figcaption>
+</figure>
 
 As always, there is room for improvement. In some ways, this version is little more than a walking skeleton, and my aspirations stretch beyond what is now ready for release. But the foundations are established and can be built upon.
 
