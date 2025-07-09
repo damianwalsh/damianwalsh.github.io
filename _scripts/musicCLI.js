@@ -92,7 +92,7 @@ async function addRelease() {
       name: 'first_released',
       message: 'First released date (YYYY-MM-DD):',
       validate: input => {
-        if (!input) return true; // Optional
+        if (!input) return true;
         const datePattern = /^\d{4}-\d{2}-\d{2}$/;
         return datePattern.test(input) || 'Please use format YYYY-MM-DD';
       }
@@ -102,7 +102,7 @@ async function addRelease() {
       name: 'favourite_tracks',
       message: 'Favourite tracks (comma-separated track numbers, e.g. 1,3,5):',
       validate: input => {
-        if (!input) return true; // Optional
+        if (!input) return true;
         const trackPattern = /^\d+(,\d+)*$/;
         return trackPattern.test(input) || 'Please enter track numbers separated by commas';
       },
@@ -135,7 +135,6 @@ async function addRelease() {
     favourite: answers.favourite
   };
 
-  // Add optional fields if provided
   if (answers.first_released) {
     newRelease.first_released = answers.first_released;
   }
@@ -149,7 +148,6 @@ async function addRelease() {
     await processImage(answers.coverImagePath, answers.title, answers.artist);
   }
 
-  // Add chapter memories if requested
   const shouldAddChapters = await prompt({
     type: 'confirm',
     name: 'addChapters',
@@ -193,7 +191,6 @@ async function addRelease() {
   collection.unshift(newRelease);
   await saveMusicCollection(collection);
 
-  // Update bidirectional links if chapters were added
   if (newRelease.chapters) {
     console.log('Updating bidirectional links...');
     await updateBidirectionalLinks();
@@ -207,10 +204,8 @@ async function addRelease() {
   console.log('✓ Release added successfully');
 }
 
-// Helper function to update bidirectional links
 async function updateBidirectionalLinks() {
   try {
-    // Import the musicManager script dynamically to avoid circular dependencies
     const { updateBidirectionalLinks } = await import('./musicManager.js');
     await updateBidirectionalLinks();
     console.log('✓ Bidirectional links updated successfully');
@@ -219,11 +214,9 @@ async function updateBidirectionalLinks() {
   }
 }
 
-// Helper function to add people, places, and events to chapters
 async function addChapterDetails(chapterId) {
   const chapterMemories = { people: [], places: [], events: [] };
   try {
-    // Load data files
     const peopleData = await fs.readFile('_data/people.json', 'utf8');
     const placesData = await fs.readFile('_data/places.json', 'utf8');
     const eventsData = await fs.readFile('_data/events.json', 'utf8');
@@ -231,25 +224,21 @@ async function addChapterDetails(chapterId) {
     const places = JSON.parse(placesData);
     const events = JSON.parse(eventsData);
 
-    // Format choices for people - REMOVE the selected property
     const peopleChoices = Object.entries(people).map(([id, person]) => ({
       name: id,
       message: person.name
     }));
 
-    // Format choices for places - REMOVE the selected property
     const placesChoices = Object.entries(places).map(([id, place]) => ({
       name: id,
       message: place.location
     }));
 
-    // Format choices for events - REMOVE the selected property AND use name instead of title
     const eventsChoices = Object.entries(events).map(([id, event]) => ({
       name: id,
       message: event.name || id
     }));
 
-    // Prompt for people
     if (peopleChoices.length > 0) {
       const peopleAnswer = await prompt({
         type: 'multiselect',
@@ -260,7 +249,6 @@ async function addChapterDetails(chapterId) {
       chapterMemories.people = peopleAnswer.selectedPeople;
     }
 
-    // Prompt for places
     if (placesChoices.length > 0) {
       const placesAnswer = await prompt({
         type: 'multiselect',
@@ -271,7 +259,6 @@ async function addChapterDetails(chapterId) {
       chapterMemories.places = placesAnswer.selectedPlaces;
     }
 
-    // Prompt for events
     if (eventsChoices.length > 0) {
       const eventsAnswer = await prompt({
         type: 'multiselect',
@@ -294,7 +281,6 @@ async function addChaptersToRelease() {
     return;
   }
 
-  // Format choices for releases
   const releaseChoices = collection
     .map((release, index) => ({
       index,
@@ -304,7 +290,6 @@ async function addChaptersToRelease() {
     }))
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
-  // Prompt for release selection
   const releaseAnswer = await prompt({
     type: 'select',
     name: 'selectedRelease',
@@ -316,7 +301,6 @@ async function addChaptersToRelease() {
   const release = collection[releaseIndex];
   console.log(`Adding chapters to: ${release.artist} - ${release.title}`);
 
-  // Load chapters data
   try {
     const chaptersData = await fs.readFile('_data/chapters.json', 'utf8');
     const chapters = JSON.parse(chaptersData);
@@ -324,11 +308,9 @@ async function addChaptersToRelease() {
     const chapterChoices = Object.entries(chapters).map(([id, chapter]) => ({
       name: id,
       message: chapter.title,
-      // Indicate if this chapter is already associated
       disabled: release.chapters && release.chapters[id] ? '(already added)' : false
     }));
 
-    // Filter out already-associated chapters
     const availableChapters = chapterChoices.filter(choice => !choice.disabled);
 
     if (availableChapters.length === 0) {
@@ -344,7 +326,6 @@ async function addChaptersToRelease() {
     });
 
     if (chapterAnswer.selectedChapters.length > 0) {
-      // Initialize chapters object if it doesn't exist
       if (!release.chapters) {
         release.chapters = {};
       }
@@ -374,7 +355,6 @@ async function editChapterDetails() {
     return;
   }
 
-  // Format choices for releases
   const releaseChoices = collection
     .map((release, index) => ({
       index,
@@ -384,7 +364,6 @@ async function editChapterDetails() {
     }))
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
-  // Prompt for release selection
   const releaseAnswer = await prompt({
     type: 'select',
     name: 'selectedRelease',
@@ -401,7 +380,6 @@ async function editChapterDetails() {
     return;
   }
 
-  // Load chapters data
   try {
     const chaptersData = await fs.readFile('_data/chapters.json', 'utf8');
     const chapters = JSON.parse(chaptersData);
@@ -411,7 +389,6 @@ async function editChapterDetails() {
       message: chapters[chapterId]?.title || chapterId
     }));
 
-    // Prompt for chapter selection
     const chapterAnswer = await prompt({
       type: 'select',
       name: 'selectedChapter',
@@ -421,10 +398,8 @@ async function editChapterDetails() {
 
     const chapterId = chapterAnswer.selectedChapter;
 
-    // Get current chapter memories
     const currentMemories = release.chapters[chapterId] || { people: [], places: [], events: [] };
 
-    // Load data files
     const peopleData = await fs.readFile('_data/people.json', 'utf8');
     const placesData = await fs.readFile('_data/places.json', 'utf8');
     const eventsData = await fs.readFile('_data/events.json', 'utf8');
@@ -432,34 +407,26 @@ async function editChapterDetails() {
     const places = JSON.parse(placesData);
     const events = JSON.parse(eventsData);
 
-    // Format choices for people
     const peopleChoices = Object.entries(people).map(([id, person]) => ({
       name: id,
       message: person.name,
-      // Mark already selected people
       selected: currentMemories.people.includes(id)
     }));
 
-    // Format choices for places
     const placesChoices = Object.entries(places).map(([id, place]) => ({
       name: id,
       message: place.location,
-      // Mark already selected places
       selected: currentMemories.places.includes(id)
     }));
 
-    // Format choices for events
     const eventsChoices = Object.entries(events).map(([id, event]) => ({
       name: id,
       message: event.name || id,
-      // Mark already selected events
       selected: currentMemories.events.includes(id)
     }));
 
-    // Prompt for updated selections
     const updatedMemories = { people: [], places: [], events: [] };
 
-    // Prompt for people
     if (peopleChoices.length > 0) {
       const peopleAnswer = await prompt({
         type: 'multiselect',
@@ -470,7 +437,6 @@ async function editChapterDetails() {
       updatedMemories.people = peopleAnswer.selectedPeople;
     }
 
-    // Prompt for places
     if (placesChoices.length > 0) {
       const placesAnswer = await prompt({
         type: 'multiselect',
@@ -481,7 +447,6 @@ async function editChapterDetails() {
       updatedMemories.places = placesAnswer.selectedPlaces;
     }
 
-    // Prompt for events
     if (eventsChoices.length > 0) {
       const eventsAnswer = await prompt({
         type: 'multiselect',
@@ -492,7 +457,6 @@ async function editChapterDetails() {
       updatedMemories.events = eventsAnswer.selectedEvents;
     }
 
-    // Update the chapter details
     release.chapters[chapterId] = updatedMemories;
     await saveMusicCollection(collection);
 
@@ -652,7 +616,7 @@ async function addEvent() {
         name: 'date',
         message: 'Date (YYYY-MM-DD):',
         validate: input => {
-          if (!input) return true; // Optional
+          if (!input) return true;
           const datePattern = /^\d{4}-\d{2}-\d{2}$/;
           return datePattern.test(input) || 'Please use format YYYY-MM-DD';
         }
@@ -702,7 +666,7 @@ async function addEvent() {
       related_releases: []
     };
     await fs.writeFile('_data/events.json', JSON.stringify(events, null, 2) + '\n');
-    // Ask to enrich the event if it has a setlist.fm ID
+
     if (answers.setlistfm_id) {
       const shouldEnrich = await prompt({
         type: 'confirm',
@@ -730,7 +694,6 @@ async function editRelease() {
     return;
   }
 
-  // Format choices for releases - WITH SORTING
   const releaseChoices = collection
     .map((release, index) => ({
       index,
@@ -740,7 +703,6 @@ async function editRelease() {
     }))
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
-  // Prompt for release selection
   const releaseAnswer = await prompt({
     type: 'select',
     name: 'selectedRelease',
@@ -753,11 +715,9 @@ async function editRelease() {
 
   console.log(`Editing: ${release.artist} - ${release.title}`);
 
-  // Get current values
   const currentFavourite = release.favourite || false;
   const currentFavouriteTracks = release.favourite_tracks || [];
 
-  // Prompt for updates
   const answers = await prompt([
     {
       type: 'confirm',
@@ -771,7 +731,7 @@ async function editRelease() {
       message: 'Favourite tracks (comma-separated track numbers, e.g. 1,3,5):',
       initial: currentFavouriteTracks.join(','),
       validate: input => {
-        if (!input) return true; // Optional
+        if (!input) return true;
         const trackPattern = /^\d+(,\d+)*$/;
         return trackPattern.test(input) || 'Please enter track numbers separated by commas';
       },
@@ -779,26 +739,21 @@ async function editRelease() {
     }
   ]);
 
-  // Update the release
   release.favourite = answers.favourite;
   release.favourite_tracks = answers.favourite_tracks;
 
   await saveMusicCollection(collection);
 
-  // Update the enriched data too
   try {
     const enrichedDataPath = path.join(process.cwd(), '_data/enriched/music.json');
     const enrichedData = JSON.parse(await fs.readFile(enrichedDataPath, 'utf8'));
 
-    // Find the matching release in the enriched data
     const enrichedRelease = enrichedData.releases.find(r => r.release_id === release.release_id);
 
     if (enrichedRelease) {
-      // Update the favourite and favourite_tracks fields
       enrichedRelease.favourite = release.favourite;
       enrichedRelease.favourite_tracks = release.favourite_tracks;
 
-      // Save the updated enriched data
       await fs.writeFile(enrichedDataPath, JSON.stringify(enrichedData, null, 2));
       console.log('✓ Enriched music data updated successfully');
     } else {
@@ -811,6 +766,88 @@ async function editRelease() {
   console.log('✓ Release updated successfully');
 }
 
+async function addChapter() {
+  try {
+    let chapters = {};
+    try {
+      const chaptersData = await fs.readFile('_data/chapters.json', 'utf8');
+      chapters = JSON.parse(chaptersData);
+    } catch (error) {
+      console.log('Creating new chapters.json file');
+    }
+
+    const answers = await prompt([
+      {
+        type: 'input',
+        name: 'id',
+        message: 'Chapter ID (e.g., "1990-1992"):',
+        validate: input => {
+          if (input.trim() === '') return 'ID is required';
+          if (chapters[input]) return 'This chapter ID already exists';
+          return true;
+        }
+      },
+      {
+        type: 'input',
+        name: 'start',
+        message: 'Start year:',
+        validate: input => {
+          if (input.trim() === '') return 'Start year is required';
+          if (!/^\d{4}$/.test(input)) return 'Please enter a valid year (YYYY)';
+          return true;
+        }
+      },
+      {
+        type: 'input',
+        name: 'end',
+        message: 'End year:',
+        validate: input => {
+          if (input.trim() === '') return 'End year is required';
+          if (!/^\d{4}$/.test(input)) return 'Please enter a valid year (YYYY)';
+          return true;
+        }
+      },
+      {
+        type: 'input',
+        name: 'haiku',
+        message: 'Haiku (use \\n for line breaks):',
+        validate: input => input.trim() !== '' || 'Haiku is required'
+      },
+      {
+        type: 'input',
+        name: 'photoPath',
+        message: 'Photo path (relative to /img/chapters/):',
+        initial: ''
+      },
+      {
+        type: 'input',
+        name: 'texturePath',
+        message: 'Texture path (relative to /img/chapters/):',
+        initial: ''
+      }
+    ]);
+
+    const formattedHaiku = answers.haiku.replace(/\\n/g, '\n');
+
+    chapters[answers.id] = {
+      start: answers.start,
+      end: answers.end,
+      haiku: formattedHaiku,
+      images: {
+        photo: answers.photoPath ? `/img/chapters/${answers.photoPath}` : '',
+        texture: answers.texturePath ? `/img/chapters/${answers.texturePath}` : ''
+      }
+    };
+
+    await fs.mkdir('_data', { recursive: true });
+
+    await fs.writeFile('_data/chapters.json', JSON.stringify(chapters, null, 2) + '\n');
+    console.log(`✓ Chapter "${answers.id}" added successfully`);
+  } catch (error) {
+    console.error('Error adding chapter:', error);
+  }
+}
+
 program
   .name('music-cli')
   .description('CLI to manage music collection')
@@ -820,16 +857,6 @@ program
   .command('add-release')
   .description('Add new release')
   .action(addRelease);
-
-program
-  .command('add-chapters')
-  .description('Add chapters to an existing release')
-  .action(addChaptersToRelease);
-
-program
-  .command('edit-chapter')
-  .description('Edit chapter details for an existing release')
-  .action(editChapterDetails);
 
 program
   .command('add-person')
@@ -845,6 +872,21 @@ program
   .command('add-event')
   .description('Add new event')
   .action(addEvent);
+
+program
+  .command('add-chapter')
+  .description('Add new chapter')
+  .action(addChapter);
+
+program
+  .command('add-chapters')
+  .description('Add chapters to an existing release')
+  .action(addChaptersToRelease);
+
+program
+  .command('edit-chapter')
+  .description('Edit chapter details for an existing release')
+  .action(editChapterDetails);
 
 program
   .command('edit-release')
