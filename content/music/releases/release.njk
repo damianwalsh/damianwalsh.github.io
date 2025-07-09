@@ -113,40 +113,24 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
   <header>
     <h2 class="title">Memories</h2>
   </header>
-  <div class="">
+  <div class="memories__grid">
     {% set allPeopleIds = [] %}
     {% set allPlaceIds = [] %}
+    {% set allEventIds = [] %}
+
     {% for chapterId, chapterMemories in release.chapters %}
       {% for personId in chapterMemories.people %}
         {% if not allPeopleIds.includes(personId) %}
           {% set allPeopleIds = (allPeopleIds.push(personId), allPeopleIds) %}
         {% endif %}
       {% endfor %}
+
       {% for placeId in chapterMemories.places %}
         {% if not allPlaceIds.includes(placeId) %}
           {% set allPlaceIds = (allPlaceIds.push(placeId), allPlaceIds) %}
         {% endif %}
       {% endfor %}
-    {% endfor %}
 
-    {% if allPeopleIds.length %}
-    <div class="people">
-      <h3 class="meta">People</h3>
-      <ul class="nav-pills" role="list">
-        {% for personId in allPeopleIds %}
-        {% set person = collections.peopleCollection | getById(personId) %}
-        {% if person %}
-        <li>
-          <a href="/music/people/{{ person.name | slugify }}" title="{{ person.relationship }}">{{ person.name }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    {% set allEventIds = [] %}
-    {% for chapterId, chapterMemories in release.chapters %}
       {% for eventId in chapterMemories.events %}
         {% if not allEventIds.includes(eventId) %}
           {% set allEventIds = (allEventIds.push(eventId), allEventIds) %}
@@ -156,6 +140,7 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
 
     {% set allLocationIds = (allPlaceIds or []).concat(allEventIds or []) %}
     {% set locationsData = [] %}
+
     {% for locationId in allLocationIds %}
       {% set place = collections.placesCollection | getById(locationId) %}
       {% if place %}
@@ -167,49 +152,62 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
         {% endif %}
       {% endif %}
     {% endfor %}
+
     {% set sortedLocations = locationsData | dedupeByCoords | sort(false, false, 'location') %}
 
     {% if sortedLocations.length %}
-    <div class="places">
-      <h3 class="meta">Places</h3>
-
-      <ul ul class="nav-pills" role="list">
-        {% for loc in sortedLocations %}
-          <li>
-            <a href="https://www.openstreetmap.org/?mlat={{ loc.coordinates.lat }}&mlon={{ loc.coordinates.lng }}&zoom=15"
-              rel="noopener">
-              <svg width="18" height="24" viewBox="0 0 24 24" class="places__icon icon-stroke" aria-hidden="true">
-                <use xlink:href="#icon-map-pin"></use>
-              </svg>
-              <strong>
-                {{ loc.location }}{% if loc.night %} ({{ loc.night }}){% endif %}
-              </strong>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+      {% memoryMap sortedLocations %}
     {% endif %}
 
-    <div class="chapters">
-      <h3 class="meta">Chapters</h3>
-      <ul class="nav-pills" role="list">
-        {% set chapterItems = [] %}
-        {% for chapterId, chapterMemories in release.chapters %}
-          {% set _ = chapterItems.push({ id: chapterId, startYear: chapterId.split('-')[0] | int }) %}
-        {% endfor %}
-
-        {% set sortedChapters = chapterItems | sort(false, false, 'startYear') %}
-
-        {% for chapter in sortedChapters %}
+    <div class="memories__connections">
+      {% if allPeopleIds.length %}
+      <div class="memories__people">
+        <h3 class="meta">People</h3>
+        <ul class="nav-pills" role="list">
+          {% for personId in allPeopleIds %}
+          {% set person = collections.peopleCollection | getById(personId) %}
+          {% if person %}
           <li>
-            <a href="/music/chapters/{{ chapter.id }}">{{ chapter.id }}</a>
+            <a href="/music/people/{{ person.name | slugify }}" title="{{ person.relationship }}">{{ person.name }}</a>
           </li>
-        {% endfor %}
-      </ul>
-    </div>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
 
-    {% memoryMap sortedLocations %}
+      {% if sortedLocations.length %}
+      <div class="memories__places">
+        <h3 class="meta">Places</h3>
+        <ul class="nav-pills" role="list">
+          {% for loc in sortedLocations %}
+            <li>
+              <a href="https://www.openstreetmap.org/?mlat={{ loc.coordinates.lat }}&mlon={{ loc.coordinates.lng }}&zoom=15"
+                rel="noopener">
+                {{ loc.location }}{% if loc.night %} ({{ loc.night }}){% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="memories__chapters">
+        <h3 class="meta">Chapters</h3>
+        <ul class="nav-pills" role="list">
+          {% set chapterItems = [] %}
+          {% for chapterId, chapterMemories in release.chapters %}
+            {% set _ = chapterItems.push({ id: chapterId, startYear: chapterId.split('-')[0] | int }) %}
+          {% endfor %}
+          {% set sortedChapters = chapterItems | sort(false, false, 'startYear') %}
+          {% for chapter in sortedChapters %}
+            <li>
+              <a href="/music/chapters/{{ chapter.id }}">{{ chapter.id }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 {% endif %}
