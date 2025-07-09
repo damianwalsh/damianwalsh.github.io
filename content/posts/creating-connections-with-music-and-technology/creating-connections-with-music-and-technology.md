@@ -687,7 +687,7 @@ Listening to records and making these connections not only brought me closer to 
 ### Automating connections
 I began by manually adding a few bi-directional links to test the idea. This experience underlined the benefit of automation, and my first thought was to create a typical CMS-style admin interface. A brief exchange on Mastodon with [Spencer Harston](https://mastodon.social/@sphars) led me to his blog post about [managing data for his books page](https://www.spencerharston.com/posts/2025/managing-my-books-data/), helpfully guiding me towards using Node scripts.
 
-**[musicCLI.js]()**
+**[musicCLI.js](https://github.com/damianwalsh/damianwalsh.github.io/blob/master/_scripts/musicCLI.js)**
 
 This command-line tool built using [Commander](https://www.npmjs.com/package/commander) and [Inquirer](https://www.npmjs.com/package/inquirer) provides an interface to manage my music collection data.
 
