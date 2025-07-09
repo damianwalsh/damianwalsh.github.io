@@ -4,7 +4,7 @@
 
 .main-header {
   h1 {
-    font-size: var(--fluid);
+    font-size: clamp(3.3594rem, 2.3553rem + 4.9277vw, 6.5563rem);
     margin-block-start: 0;
     text-decoration-line: underline;
     text-decoration-color: var(--quaternary-2);

@@ -33,7 +33,7 @@
     line-height: 1.2;
   }
   &:hover .action {
-    background: var(--primary-6);
+    background: var(--primary-7);
     color: var(--primary-3);
   }
 }

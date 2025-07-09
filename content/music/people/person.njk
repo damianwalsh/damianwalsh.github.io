@@ -1,0 +1,73 @@
+---
+eleventyNavigation:
+  key: "{{ person.name }}"
+  parent: People
+eleventyComputed:
+  title: "{{ person.name }} | People | Music Collection"
+pagination:
+  data: collections.peopleCollection
+  size: 1
+  alias: person
+permalink: "/music/people/{{ person.name | lower }}/"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ person.name }}</h1>
+</header>
+{% if person.releases.length > 0 %}
+<section>
+  <header class="row">
+    <h2 class="title">Related releases</h2>
+    <p class="meta"><span class="counter">{{ person.releases.length }}</span> release{{ 's' if person.releases.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% for release in person.releases %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
+        class="collection__item surface">
+        <img {{ 'loading=eager' if loop.index <=4 }}
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ release.title }}" class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }}</h2>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+              <use xlink:href="#icon-heart"></use>
+            </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% set allPeople = collections.peopleCollection %}
+{% set currentIndex = pagination.pageNumber %}
+{% set previousPerson = allPeople[currentIndex - 1] %}
+{% set nextPerson = allPeople[currentIndex + 1] %}
+<nav aria-label="pagination">
+{% if previousPerson %}
+  <a href="/music/people/{{ previousPerson.name | lower }}/" class="icon-link prev">
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-left"></use>
+    </svg>
+    <span class="visually-hidden">Previous:</span> {{ previousPerson.name }}
+  </a>
+{% endif %}
+{% if nextPerson %}
+  <a href="/music/people/{{ nextPerson.name | lower }}/" class="icon-link next">
+    <span class="visually-hidden">Next:</span> {{ nextPerson.name }}
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-right"></use>
+    </svg>
+  </a>
+{% endif %}
+</nav>

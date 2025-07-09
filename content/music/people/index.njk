@@ -1,0 +1,37 @@
+---
+eleventyNavigation:
+  key: People
+  parent: Music
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music/people/"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% for person in collections.peopleCollection %}
+  <li>
+    <a href="/music/people/{{ person.name | lower }}" class="index__item index__item--vertical surface">
+      <h2 class="title">{{ person.name }}</h2>
+      <div class="preview__grid">
+        {% for release in person.releases | slice(0, 4) %}
+        <img
+        src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+        alt="{{ release.title }}"
+        loading="lazy"
+        sizes="(min-width: 1720px) 130px, (min-width: 1460px) calc(9.17vw - 26px), (min-width: 1380px) calc(18.33vw - 112px), (min-width: 1180px) calc(11.11vw - 22px), (min-width: 880px) calc(15.36vw - 24px), (min-width: 580px) calc(22.86vw - 21px), calc(46.54vw - 19px)"
+        class="preview__image preview__image--square">
+        {% endfor %}
+      </div>
+      <p class="meta"><span class="counter">{{ person.releases.length }}</span> release{{ 's' if person.releases.length !== 1 }}</p>
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke"
+        aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

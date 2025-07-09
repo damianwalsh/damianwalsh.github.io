@@ -1,0 +1,213 @@
+---
+eleventyNavigation:
+  key: "{{ chapter.id }}"
+  parent: Chapters
+eleventyComputed:
+  title: "{{ chapter.id }} | Music"
+pagination:
+  data: collections.chapterCollection
+  size: 1
+  alias: chapter
+permalink: "/music/chapters/{{ chapter.id }}/"
+---
+{% css %}
+{% include "public/css/chapters.css" %}
+{% include "public/css/events.css" %}
+{% include "public/css/music.css" %}
+{% endcss %}
+{% js %}
+{% include "public/js/dialog.js" %}
+{% endjs %}
+
+{% set idx = 0 %}
+{% for c in collections.chapterCollection %}
+  {% if c.id == chapter.id %}
+    {% set idx = loop.index0 %}
+  {% endif %}
+{% endfor %}
+{% set colorClass = ['primary', 'secondary', 'tertiary', 'quaternary'][idx % 4] %}
+
+{% set chapterPeople = [] %}
+{% set chapterPlaces = [] %}
+{% set chapterEvents = [] %}
+{% for release in chapter.releases %}
+  {% set chMem = release.chapters[chapter.id] %}
+  {% if chMem %}
+    {% for p in chMem.people or [] %}
+      {% if not chapterPeople.includes(p) %}
+        {% set _ = chapterPeople.push(p) %}
+      {% endif %}
+    {% endfor %}
+    {% for pl in chMem.places or [] %}
+      {% if not chapterPlaces.includes(pl) %}
+        {% set _ = chapterPlaces.push(pl) %}
+      {% endif %}
+    {% endfor %}
+    {% for ev in chMem.events or [] %}
+      {% if not chapterEvents.includes(ev) %}
+        {% set _ = chapterEvents.push(ev) %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% set peopleForChapter = collections.peopleCollection | filterByIds(chapterPeople) %}
+{% set placesForChapter = collections.placesCollection | filterByIds(chapterPlaces) %}
+{% set eventsForChapter = collections.eventsCollection | filterByIds(chapterEvents) %}
+{% set relatedLocations = placesForChapter.concat(eventsForChapter) | dedupeByCoords | sort(false, false, 'location') %}
+
+<header class="chapter__main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <div class="chapter__item chapter__item--{{ colorClass }}">
+    <div class="chapter__photo" style="background-image: url('{{ chapter.images.photo }}')"></div>
+    <div class="chapter__texture" style="background-image: url('{{ chapter.images.texture }}')"></div>
+    <div class="chapter__header">
+      <h1 class="period">
+        <time class="start" datetime="{{ chapter.start | extractYear }}">{{ chapter.start }}</time>
+        <span class="visually-hidden">-</span>
+        <time class="end" datetime="{{ chapter.end | extractYear }}">{{ chapter.end }}</time>
+      </h1>
+      <blockquote class="recollection">{{ chapter.haiku | haiku | safe }}</blockquote>
+    </div>
+    {% memoryMap relatedLocations %}
+    {% if peopleForChapter.length %}
+    <div class="chapter__people">
+      <h2 class="meta">People</h2>
+      <ul class="nav-pills" role="list">
+        {% for person in peopleForChapter %}
+          <li>
+            <a href="/music/people/{{ person.name | lower }}">{{ person.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</header>
+
+{% if chapter.releases.length %}
+<section>
+  <header class="row">
+    <h2 class="title">Related releases</h2>
+    <p class="meta"><span class="counter">{{ chapter.releases.length }}</span> release{{ 's' if chapter.releases.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% set sortedReleases = chapter.releases | sort(attribute='artist') %}
+    {% for release in sortedReleases %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
+        class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <= 4 }}
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), (min-width: 380px) calc(23.33vw - 13px), calc(6.67vw + 47px)"
+          alt="{{ release.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }} <span class="format">({{ release.format }})</span></h2>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+            aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% set sortedChapterEvents = eventsForChapter | sort(attribute='date') | reverse %}
+{% if sortedChapterEvents.length %}
+<section>
+  <header class="row">
+    <h2 class="title">Related events</h2>
+    <p class="meta"><span class="counter">{{ sortedChapterEvents.length }}</span> event{% if sortedChapterEvents.length != 1 %}s{% endif %}</p>
+  </header>
+  <ul role="list" class="event__list">
+    {% for event in sortedChapterEvents %}
+      <li class="event__item surface">
+        <h3 class="title">
+          {{ event.name }}
+          <span class="event__type badge">{{ event.type }}</span>
+        </h3>
+        {% set eventLocation = [event] %}
+        {% if event.coordinates %}
+          <div class="event__location">
+            {% memoryMap eventLocation, 'eager' if loop.index <= 4 else 'lazy' %}
+          </div>
+        {% endif %}
+        <dl class="event__detail">
+          <dt>Date</dt>
+          <dd><time datetime="{{ event.date }}">{{ event.date | readableDate }}</time></dd>
+          <dt>Location</dt>
+          <dd>
+            <a href="<https://www.openstreetmap.org/?mlat=>{{ event.coordinates.lat }}&mlon={{ event.coordinates.lng }}&zoom=15"
+               rel="noopener" class="event__link">
+              <svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+                <use xlink:href="#icon-map-pin"></use>
+              </svg>
+              {{ event.location }}{% if event.night %} ({{ event.night }}){% endif %}
+            </a>
+          </dd>
+        </dl>
+        {% set allSongs = event.setlist | flattenSetlistSongs %}
+        {% if allSongs.length %}
+          <button type="button" class="icon-button" data-dialog-trigger="setlist-{{ event.setlistfm_id }}">
+            View Setlist
+          </button>
+          <dialog id="setlist-{{ event.setlistfm_id }}" class="setlist-dialog">
+            <form method="dialog">
+              <button type="submit" class="action">
+                <svg viewBox="-6 -6 36 36" width="36" height="36" class="icon-stroke" aria-hidden="true">
+                  <use xlink:href="#icon-x"></use>
+                </svg>
+                <span class="visually-hidden">Close</span>
+              </button>
+            </form>
+            <div class="setlist">
+              <h4>Setlist</h4>
+              <ol role="list" class="tracklist">
+                {% for song in allSongs %}
+                  <li class="tracklist__item"><span class="tracklist__title">{{ song }}</span></li>
+                {% endfor %}
+              </ol>
+              {% if event.setlistUrl %}
+                <a href="{{ event.setlistUrl }}"><small>View on setlist.fm</small></a>
+              {% endif %}
+            </div>
+          </dialog>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+
+<nav aria-label="pagination">
+  {% if pagination.href.previous %}
+  {% set previousChapter = collections.chapterCollection[pagination.pageNumber - 1] %}
+  <a href="{{ pagination.href.previous }}" class="icon-link prev">
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-left"></use>
+    </svg>
+    <span class="visually-hidden">Previous:</span> {{ previousChapter.id }}
+  </a>
+  {% endif %}
+  {% if pagination.href.next %}
+  {% set nextChapter = collections.chapterCollection[pagination.pageNumber + 1] %}
+  <a href="{{ pagination.href.next }}" class="icon-link next">
+    <span class="visually-hidden">Next:</span> {{ nextChapter.id }}
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-right"></use>
+    </svg>
+  </a>
+  {% endif %}
+</nav>

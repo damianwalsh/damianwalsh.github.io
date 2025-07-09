@@ -1,0 +1,99 @@
+---
+eleventyNavigation:
+  key: Favourites
+  parent: Music
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music/favourites/"
+---
+{% css %}
+{% include "public/css/favourites.css" %}
+{% endcss %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{% set favourites = [] %}
+{% for release in collections.releases %}
+  {% if release.favourite %}
+    {% set favourites = (favourites.push(release), favourites) %}
+  {% endif %}
+{% endfor %}
+{% set sortedfavourites = favourites | sortReleasesByArtist %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Releases</h2>
+    <p class="meta"><span class="counter">{{ sortedfavourites | length }}</span> release{{ 's' if (sortedfavourites | length) !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% for release in sortedfavourites %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
+        class="collection__item surface">
+        <img {{ 'loading=eager' if loop.index <=4 }}
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ release.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }}</h2>
+          <p class="meta">{{ release.artist }}</p>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<hr>
+
+{% set favouriteTracksList = [] %}
+{% for release in collections.releases %}
+  {% if release.favourite_tracks and release.tracklist %}
+    {% for trackIndex in release.favourite_tracks %}
+      {% set track = release.tracklist[trackIndex - 1] %}
+      {% if track %}
+        {% set favouriteTracksList = (favouriteTracksList.push(track), favouriteTracksList) %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Tracks</h2>
+    <p class="meta"><span class="counter">{{ favouriteTracksList | length }}</span> track{{ 's' if (favouriteTracksList |
+      length) !== 1 }}</p>
+  </header>
+
+  <ul class="favourites__list surface" role="list">
+  {% for release in collections.releases | sortReleasesByArtist %}
+    {% if release.favourite_tracks and release.tracklist %}
+      {% for trackIndex in release.favourite_tracks %}
+        {% set track = release.tracklist[trackIndex - 1] %}
+        {% if track %}
+        <li>
+          <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="favourites__item">
+            <dl class="favourites__detail">
+              <dt class="visually-hidden">Title</dt>
+              <dd class="title">{{ track.title }}</dd>
+              <dt class="visually-hidden">Artist</dt>
+              <dd class="meta">{{ release.artist }}</dd>
+            </dl>
+            <svg width="36" height="36" viewBox="-6 -6 36 36" class="favourites__action action icon-stroke" aria-hidden="true">
+              <use xlink:href="#icon-chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>

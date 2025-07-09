@@ -50,15 +50,15 @@ eleventyNavigation:
 
 <section>
   <header class="row">
-    <h2 class="title">Music Collection</h2>
+    <h2 class="title">Music</h2>
     <p class="meta"><span class="counter">{{ collections.releases.length }}</span> release{{ 's' if collections.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
   {% for release in collections.releases | slice(0, 4) %}
     <li>
-      <a href="/music-collection/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}.html" class="collection__item surface">
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
         <img
-          src="/music-collection/img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          src="/music/img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
           alt="{{ release.title }}"
           sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
           class="collection__image">
@@ -78,22 +78,22 @@ eleventyNavigation:
     </li>
   {% endfor %}
   </ul>
-  <p><a href="/music-collection/">View all releases</a></p>
+  <p><a href="/music/">View all music</a></p>
 </section>
 
 <hr>
 
 <section>
   <header class="row">
-    <h2 class="title">Reading List</h2>
+    <h2 class="title">Reading</h2>
     <p class="meta"><span class="counter">{{ collections.books.length }}</span> book{{ 's' if collections.books.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
   {% for book in collections.books | slice(0, 4) %}
     <li>
-      <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="collection__item surface">
+      <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
         <img
-          src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+          src="/reading/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
           alt="{{ book.title }}"
           sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
           class="collection__image">
@@ -113,5 +113,5 @@ eleventyNavigation:
     </li>
   {% endfor %}
   </ul>
-  <p><a href="/reading-list/">View all books</a></p>
+  <p><a href="/reading/">View all reading</a></p>
 </section>

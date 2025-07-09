@@ -53,8 +53,10 @@
   {% include "partials/site-footer.njk" %}
   {% include "partials/icons.njk" %}
   {% js %}
+  {% include "public/js/anchors.js" %}
   {% include "public/js/theme.js" %}
   {% include "public/js/toggle.js" %}
+  {% include "public/js/details.js" %}
   {% endjs %}
   <script type="module" src="{% getBundleFileUrl "js" %}"></script>
   <!--

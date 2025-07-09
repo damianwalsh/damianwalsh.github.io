@@ -1,22 +1,180 @@
 {
   "steve-s": {
     "name": "Steve",
-    "relationship": "University friend"
+    "relationship": "University friend",
+    "related_releases": [
+      9250776,
+      9748215,
+      3377856,
+      9057753,
+      8664384,
+      612084,
+      828663,
+      1316702,
+      6657573,
+      856937,
+      6568498,
+      789108,
+      4567815,
+      10839151,
+      1108690,
+      4147466,
+      14432639,
+      7040450,
+      391946,
+      8057163
+    ]
   },
   "alastair-j": {
     "name": "Alastair",
-    "relationship": "University friend"
+    "relationship": "University friend",
+    "related_releases": [
+      9057753,
+      8664384,
+      4567815,
+      10839151,
+      387046,
+      4147466
+    ]
+  },
+  "claire-p": {
+    "name": "Claire",
+    "relationship": "University friend",
+    "related_releases": [
+      9302863,
+      9429675,
+      9250776,
+      13697174,
+      9057753,
+      8048187,
+      1316702,
+      1735854,
+      11893547,
+      4567815,
+      10839151,
+      1108690,
+      1108690,
+      441439,
+      1128171,
+      376332,
+      7040450,
+      1820430,
+      1820430,
+      865,
+      8057163
+    ]
   },
   "andrew-d": {
     "name": "Dale",
-    "relationship": "College friend"
+    "relationship": "College friend",
+    "related_releases": [
+      1541792,
+      865
+    ]
   },
   "shirley-h": {
     "name": "Shirley",
-    "relationship": "College friend"
+    "relationship": "College friend",
+    "related_releases": [
+      1541792,
+      865
+    ]
   },
   "mark-c": {
     "name": "Mark",
-    "relationship": "Childhood friend"
+    "relationship": "Childhood friend",
+    "related_releases": [
+      1541792,
+      865
+    ]
+  },
+  "snorre-m": {
+    "name": "Snorre",
+    "relationship": "Work friend",
+    "related_releases": [
+      3388468,
+      381229,
+      13547971,
+      6568498,
+      789108,
+      355287,
+      5923509
+    ]
+  },
+  "andy-m": {
+    "name": "Andy",
+    "relationship": "Work friend",
+    "related_releases": [
+      6657573,
+      789108,
+      367882
+    ]
+  },
+  "adrian-c": {
+    "name": "Adrian",
+    "relationship": "Work friend",
+    "related_releases": [
+      1316702
+    ]
+  },
+  "jon-b": {
+    "name": "Jon",
+    "relationship": "Work friend",
+    "related_releases": [
+      13697174,
+      1735854,
+      4170983
+    ]
+  },
+  "liz-c": {
+    "name": "Liz",
+    "relationship": "Partner",
+    "related_releases": [
+      12770560,
+      12364199,
+      10615529,
+      9302863,
+      9429675,
+      10986338,
+      11977353,
+      13697174,
+      10395824,
+      12298689,
+      3377856,
+      11597112,
+      9810399,
+      9810328,
+      8162088,
+      9187140,
+      16035846,
+      12372525,
+      10660927,
+      11176407,
+      22040284,
+      8664384,
+      5438116,
+      1629028,
+      1735854,
+      5311497,
+      5875210,
+      1159480,
+      6657573,
+      789108,
+      15784682,
+      1108690,
+      18510322,
+      7443942,
+      3504290,
+      13457732,
+      355287,
+      367882,
+      428380,
+      3967721,
+      13032942,
+      10653892,
+      4170983,
+      865,
+      14321778
+    ]
   }
 }

@@ -10,19 +10,6 @@ eleventyNavigation:
 {% include "public/css/posts.css" %}
 {% include "public/css/webmentions.css" %}
 {% endcss %}
-{% js %}
-function toggleDetails() {
-  const details = document.querySelector('details');
-  if (window.innerWidth >= 820) {
-    details.setAttribute('open', '');
-  } else {
-    details.removeAttribute('open');
-  }
-}
-
-window.addEventListener('load', toggleDetails);
-window.addEventListener('resize', toggleDetails);
-{% endjs %}
 <article>
   <header class="main-header">
     {% include "partials/breadcrumb.njk" %}
@@ -62,6 +49,7 @@ window.addEventListener('resize', toggleDetails);
 
   <div class="prose">
     {{ content | safe }}
+    <p><small>Except where noted, all content is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.</small></p>
     {% include "partials/webmentions.njk" %}
   </div>
 
@@ -74,9 +62,9 @@ window.addEventListener('resize', toggleDetails);
     <ul role="list" class="aside__list">
       {%- for book in monthlyBooks %}
       <li>
-        <a href="/reading-list/works/{{ book.title | slugify }}-{{ book.author | slugify }}.html" class="aside__item ">
+        <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="aside__item ">
           <img
-            src="/reading-list/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+            src="/reading/img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
             alt="{{ book.title }}"
             sizes="60px"
             class="aside__image">
@@ -101,26 +89,26 @@ window.addEventListener('resize', toggleDetails);
 </article>
 
 {%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<nav aria-label="pagination">
-  {%- if previousPost %}
-  <a href="{{ previousPost.url }}" class="icon-link prev">
-    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
-      <use xlink:href="#icon-chevron-left"></use>
-    </svg>
-    <span class="visually-hidden">Previous:</span> {{ previousPost.data.title }}
-  </a>
-  {% endif %}
-  {%- if nextPost %}
-  <a href="{{ nextPost.url }}" class="icon-link next">
-    <span class="visually-hidden">Next:</span> {{ nextPost.data.title }}
-    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
-      <use xlink:href="#icon-chevron-right"></use>
-    </svg>
-  </a>
-  {% endif %}
-</nav>
-{%- endif %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+  {%- set nextPost = collections.posts | getNextCollectionItem %}
+  {%- if previousPost or nextPost %}
+    <nav aria-label="pagination">
+      {%- if previousPost %}
+        <a href="{{ previousPost.url }}" class="icon-link prev">
+          <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-chevron-left"></use>
+          </svg>
+          <span class="visually-hidden">Previous:</span> {{ previousPost.data.title }}
+        </a>
+      {%- endif %}
+      {%- if nextPost %}
+        <a href="{{ nextPost.url }}" class="icon-link next">
+          <span class="visually-hidden">Next:</span> {{ nextPost.data.title }}
+          <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
+      {%- endif %}
+    </nav>
+  {%- endif %}
 {%- endif %}

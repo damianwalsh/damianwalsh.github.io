@@ -1,0 +1,70 @@
+---
+eleventyNavigation:
+  key: "music-year-{{ yearData.year }}"
+  title: "{{ yearData.year }}"
+  parent: music-years
+eleventyComputed:
+  title: "Released in {{ yearData.year }} | Music"
+pagination:
+  data: collections.releaseYears
+  size: 1
+  alias: yearData
+permalink: "/music/years/{{ yearData.year }}/"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ yearData.year }}</h1>
+</header>
+
+<section>
+  <header>
+    <h2 class="title">{{ yearData.releases.length }} release{{ 's' if yearData.releases.length !== 1 }}</h2>
+  </header>
+  <ul role="list" class="collection__grid">
+  {% for release in yearData.releases | sortReleasesByArtist %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
+        <img
+          loading="eager"
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
+          alt="{{ release.title }}"
+          class="detail__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }} <span class="format">({{ release.format }})</span></h2>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+        aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+<nav aria-label="pagination">
+  {% if pagination.href.previous %}
+  {% set previousYear = collections.releaseYears[pagination.pageNumber - 1] %}
+  <a href="{{ pagination.href.previous }}" class="icon-link prev">
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-left"></use>
+    </svg>
+    <span class="visually-hidden">Previous year:</span> {{ previousYear.year }}
+  </a>
+  {% endif %}
+  {% if pagination.href.next %}
+  {% set nextYear = collections.releaseYears[pagination.pageNumber + 1] %}
+  <a href="{{ pagination.href.next }}" class="icon-link next">
+    <span class="visually-hidden">Next year:</span> {{ nextYear.year }}
+    <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+      <use xlink:href="#icon-chevron-right"></use>
+    </svg>
+  </a>
+  {% endif %}
+</nav>

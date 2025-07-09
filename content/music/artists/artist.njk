@@ -1,0 +1,206 @@
+---
+eleventyNavigation:
+  key: "{{ artistData.artist }}"
+  parent: Artists
+eleventyComputed:
+  title: "{{ artistData.artist }} | Music"
+pagination:
+  data: collections.artists
+  size: 1
+  alias: artistData
+permalink: "/music/artists/{{ artistData.artist | slugify }}/"
+---
+{% css %}
+{% include "public/css/music.css" %}
+{% include "public/css/favourites.css" %}
+{% include "public/css/events.css" %}
+{% endcss %}
+{% js %}
+{% include "public/js/dialog.js" %}
+{% endjs %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ artistData.artist }}</h1>
+  {% if artistData.artist_id %}
+  {% set artistProfile = artists[artistData.artist_id | string] %}
+  {% if artistProfile and artistProfile.profile | cleanProfile %}
+  <p class="standfirst">{{ artistProfile.profile | cleanProfile }}</p>
+  {% endif %}
+  {% endif %}
+</header>
+
+{% set formats = artistData.releases | groupby("format") %}
+{% for format, releases in formats %}
+<section>
+  <header class="row">
+    <h2 class="title">{{ format }}</h2>
+    <p class="meta"><span class="counter">{{ releases.length }}</span> release{{ 's' if releases.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% set sortedReleases = releases | sort(attribute='title') %}
+    {% for release in sortedReleases %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <= 4 }}
+          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 305px, (min-width: 1380px) calc(18.82vw - 19px), (min-width: 380px) calc(23.27vw - 12px), calc(6.67vw + 47px)"
+          alt="{{ release.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }}</h2>
+          {% if release.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+{% set favouriteTracksList = [] %}
+{% for release in artistData.releases %}
+  {% if release.favourite_tracks and release.tracklist %}
+    {% for trackIndex in release.favourite_tracks %}
+      {% set track = release.tracklist[trackIndex - 1] %}
+      {% if track %}
+        {% set favouriteTracksList = (favouriteTracksList.push(track), favouriteTracksList) %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% if favouriteTracksList.length > 0 %}
+<section>
+  <header class="row">
+    <h2 class="title">Favourite tracks</h2>
+    <p class="meta"><span class="counter">{{ favouriteTracksList.length }}</span> track{{ 's' if favouriteTracksList.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="favourites__list surface">
+    {% for release in artistData.releases | sort(attribute='title') %}
+      {% if release.favourite_tracks and release.tracklist %}
+        {% for trackIndex in release.favourite_tracks %}
+          {% set track = release.tracklist[trackIndex - 1] %}
+          {% if track %}
+          <li>
+            <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="favourites__item">
+            <img src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+                  sizes="80px"
+                  alt="{{ relatedRelease.title }}"
+                  class="favourites__image">
+             <dl class="favourites__detail">
+              <dt class="visually-hidden">Title</dt>
+              <dd class="title">{{ track.title }}</dd>
+              <dt class="visually-hidden">Release</dt>
+              <dd class="meta">{{ release.title }} <span class="format">({{ release.format }})</span></dd>
+            </dl>
+            <svg width="36" height="36" viewBox="-6 -6 36 36" class="favourites__action action icon-stroke" aria-hidden="true"><use xlink:href="#icon-chevron-right"></use></svg>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% set artistEvents = collections.eventsCollection | eventsForArtist(artistData.artist) %}
+{% set sortedArtistEvents = artistEvents | sort(attribute='date') | reverse %}
+
+{% if sortedArtistEvents.length %}
+<section>
+  <header class="row">
+    <h2 class="title">Events</h2>
+    <p class="meta"><span class="counter">{{ sortedArtistEvents.length }}</span> event{% if sortedArtistEvents.length != 1 %}s{% endif %}</p>
+  </header>
+  <ul role="list" class="event__list">
+    {% for event in sortedArtistEvents %}
+      <li class="event__item surface">
+        <h3 class="title">
+          {{ event.name }}
+          <span class="event__type badge">{{ event.type }}</span>
+        </h3>
+        {% set eventLocation = [event] %}
+        {% if event.coordinates %}
+          <div class="event__location">
+            {% memoryMap eventLocation, 'eager' if loop.index <= 4 else 'lazy' %}
+          </div>
+        {% endif %}
+        <dl class="event__detail">
+          <dt>Date</dt>
+          <dd><time datetime="{{ event.date }}">{{ event.date | readableDate }}</time></dd>
+          <dt>Location</dt>
+          <dd>
+            <a href="https://www.openstreetmap.org/?mlat={{ event.coordinates.lat }}&mlon={{ event.coordinates.lng }}&zoom=15"
+               rel="noopener" class="event__link">
+              <svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+                <use xlink:href="#icon-map-pin"></use>
+              </svg>
+              {{ event.location }}{% if event.night %} ({{ event.night }}){% endif %}
+            </a>
+          </dd>
+        </dl>
+        {% set allSongs = event.setlist | flattenSetlistSongs %}
+        {% if allSongs.length %}
+          <button type="button" class="icon-button" data-dialog-trigger="setlist-{{ event.setlistfm_id }}">
+            View Setlist
+          </button>
+          <dialog id="setlist-{{ event.setlistfm_id }}" class="setlist-dialog">
+            <form method="dialog">
+              <button type="submit" class="action">
+                <svg viewBox="-6 -6 36 36" width="36" height="36" class="icon-stroke" aria-hidden="true">
+                  <use xlink:href="#icon-x"></use>
+                </svg>
+                <span class="visually-hidden">Close</span>
+              </button>
+            </form>
+            <div class="setlist">
+              <h4>Setlist</h4>
+              <ol role="list" class="tracklist">
+                {% for song in allSongs %}
+                  <li class="tracklist__item"><span class="tracklist__title">{{ song }}</span></li>
+                {% endfor %}
+              </ol>
+              {% if event.setlistUrl %}
+                <a href="{{ event.setlistUrl }}"><small>View on setlist.fm</small></a>
+              {% endif %}
+            </div>
+          </dialog>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% set allArtists = collections.artists %}
+{% set currentIndex = pagination.pageNumber %}
+{% set previousArtist = allArtists[currentIndex - 1] %}
+{% set nextArtist = allArtists[currentIndex + 1] %}
+<nav aria-label="pagination">
+  {% if previousArtist %}
+    <a href="/music/artists/{{ previousArtist.artist | slugify }}/" class="icon-link prev">
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-left"></use>
+      </svg>
+      <span class="visually-hidden">Previous:</span> {{ previousArtist.artist }}
+    </a>
+  {% endif %}
+  {% if nextArtist %}
+    <a href="/music/artists/{{ nextArtist.artist | slugify }}/" class="icon-link next">
+      <span class="visually-hidden">Next:</span> {{ nextArtist.artist }}
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  {% endif %}
+</nav>

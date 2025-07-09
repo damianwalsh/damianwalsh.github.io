@@ -1,51 +1,133 @@
 {
-  "university": {
-    "location": "University of Plymouth (Exeter College of Art and Design)",
+  "university-of-plymouth": {
+    "location": "University of Plymouth",
     "coordinates": {
       "lat": 50.7099,
       "lng": -3.5135
-    }
+    },
+    "related_releases": [
+      9302863,
+      9748215,
+      9057753,
+      8664384,
+      828663,
+      4567815,
+      10839151,
+      387046,
+      4147466,
+      1820430
+    ]
   },
-  "que-club": {
-    "location": "Que Club",
-    "coordinates": {
-      "lat": 52.4834,
-      "lng": -1.8888
-    }
-  },
-  "moseley-dance-centre": {
-    "location": "Moseley Dance Centre",
-    "coordinates": {
-      "lat": 52.4541,
-      "lng": -1.8960
-    }
-  },
-  "college": {
+  "cadbury-college": {
     "location": "Cadbury College",
     "coordinates": {
-      "lat": 52.4030,
+      "lat": 52.403,
       "lng": -1.9305
-    }
+    },
+    "related_releases": [
+      12864584,
+      8640693,
+      13708521,
+      3255473,
+      23449382,
+      380817,
+      1541792,
+      4643403,
+      865,
+      23211086
+    ]
   },
-  "high-school": {
+  "south-bromsgrove-high-school": {
     "location": "South Bromsgrove High School",
     "coordinates": {
       "lat": 52.3249,
       "lng": -2.0612
-    }
+    },
+    "related_releases": [
+      569026,
+      7097051,
+      12298689,
+      3377856,
+      579374,
+      13529841,
+      17773057
+    ]
   },
   "alvechurch": {
     "location": "Alvechurch",
     "coordinates": {
       "lat": 52.3519,
       "lng": -1.9603
-    }
+    },
+    "related_releases": [
+      2109418,
+      9359884,
+      9057753,
+      19043320
+    ]
   },
-  "glastonbury-festival": {
-    "location": "Glastonbury Festival",
+  "altrincham": {
+    "location": "Altrincham",
     "coordinates": {
-      "lat": 51.2800,
-      "lng": -2.6800
-    }
+      "lat": 53.3938,
+      "lng": -2.3317
+    },
+    "related_releases": [
+      12770560,
+      12364199,
+      9429675,
+      11977353,
+      10395824,
+      12298689,
+      11597112,
+      9810399,
+      9810328,
+      9187140,
+      16035846,
+      10660927,
+      11176407,
+      22040284
+    ]
+  },
+  "parsons-green": {
+    "location": "Parsons Green",
+    "coordinates": {
+      "lat": 51.4729,
+      "lng": -0.1982
+    },
+    "related_releases": [
+      8048187,
+      380176,
+      7040450
+    ]
+  },
+  "crystal-palace": {
+    "location": "Crystal Palace",
+    "coordinates": {
+      "lat": 51.4261,
+      "lng": -0.1061
+    },
+    "related_releases": [
+      10986338,
+      8162088,
+      5438116,
+      18510322,
+      3504290,
+      13457732,
+      428380,
+      13032942,
+      10653892
+    ]
+  },
+  "kilburn": {
+    "location": "Kilburn",
+    "coordinates": {
+      "lat": 51.5528,
+      "lng": -0.2119
+    },
+    "related_releases": [
+      9429675,
+      376332
+    ]
   }
 }

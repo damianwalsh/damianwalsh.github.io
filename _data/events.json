@@ -1,0 +1,1381 @@
+{
+  "wonder-stuff-aston-villa-1990-08-14": {
+    "name": "The Wonder Stuff",
+    "location": "Aston Villa Leisure Centre",
+    "type": "Concert",
+    "date": "1990-08-14",
+    "setlistfm_id": "23b37c73",
+    "coordinates": {
+      "lat": 52.5068,
+      "lng": -1.8791
+    },
+    "related_releases": [
+      419160
+    ]
+  },
+  "carter-usm-hummingbird-1991-11-06": {
+    "name": "Carter USM",
+    "location": "The Hummingbird",
+    "type": "Concert",
+    "date": "1991-11-06",
+    "setlistfm_id": "43d33f57",
+    "coordinates": {
+      "lat": 52.4811,
+      "lng": -1.8936
+    },
+    "related_releases": []
+  },
+  "frank-and-walters-wulfrun-1992-02-24": {
+    "name": "The Frank and Walters",
+    "location": "Wulfrun Hall",
+    "type": "Concert",
+    "date": "1992-02-24",
+    "setlistfm_id": "1bb71520",
+    "coordinates": {
+      "lat": 52.5866,
+      "lng": -2.1314
+    },
+    "related_releases": []
+  },
+  "sonic-youth-phoenix-1993-07-16": {
+    "name": "Sonic Youth",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-16",
+    "setlistfm_id": "bd3c542",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      370547
+    ]
+  },
+  "family-cat-phoenix-1993-07-16": {
+    "name": "The Family Cat",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-16",
+    "setlistfm_id": "23c2f0b7",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "faith-no-more-phoenix-1993-07-17": {
+    "name": "Faith No More",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "3d7bdb3",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      3581285
+    ]
+  },
+  "house-of-pain-phoenix-1993-07-17": {
+    "name": "House of Pain",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "2bc2f0a2",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "new-fads-phoenix-1993-07-17": {
+    "name": "New Fast Automatic Daffodils",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "2bc2f09a",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "black-crowes-phoenix-1993-07-18": {
+    "name": "The Black Crowes",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "33d4a00d",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "pwei-phoenix-1993-07-18": {
+    "name": "Pop Will Eat Itself",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "23c2f087",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "manics-phoenix-1993-07-18": {
+    "name": "Manic Street Preachers",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "3bd74448",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      4170983
+    ]
+  },
+  "kinky-machine-phoenix-1993-07-18": {
+    "name": "Kinky Machine",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "4bc2f376",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "cornershop-phoenix-1993-07-18": {
+    "name": "Cornershop",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "53c2f361",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": []
+  },
+  "a-positive-life-moseley-1995-01-13": {
+    "name": "A Positive Life",
+    "location": "Moseley Dance Centre",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-01-13",
+    "coordinates": {
+      "lat": 52.4541,
+      "lng": -1.896
+    },
+    "related_releases": []
+  },
+  "deep-space-network-moseley-1995-03-31": {
+    "name": "Deep Space Network",
+    "location": "Moseley Dance Centre",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-03-31",
+    "coordinates": {
+      "lat": 52.4541,
+      "lng": -1.896
+    },
+    "related_releases": []
+  },
+  "autechre-que-club-1995-02-04": {
+    "name": "Autechre",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-02-04",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": [
+      9326781
+    ]
+  },
+  "hia-que-club-1995-05-13": {
+    "name": "Higher Intelligence Agency",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-05-13",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "plaid-que-club-1995-05-13": {
+    "name": "Plaid",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-05-13",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "richie-hawtin-que-club-1995-08-19": {
+    "name": "Richie Hawtin",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1995-08-19",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "sven-vath-que-club-1996-03-16": {
+    "name": "Sven Väth",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1996-03-16",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "stereolab-lemon-grove-1996-02-29": {
+    "name": "Stereolab",
+    "location": "Lemon Grove",
+    "type": "Concert",
+    "date": "1996-02-29",
+    "setlistfm_id": "1bf25938",
+    "coordinates": {
+      "lat": 50.7348,
+      "lng": -3.5297
+    },
+    "related_releases": []
+  },
+  "pulp-v-festival-1996-08-18": {
+    "name": "Pulp",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "33d7bc5d",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": [
+      302172
+    ]
+  },
+  "supergrass-v-festival-1996-08-18": {
+    "name": "Supergrass",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "53dc0725",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": [
+      4147466
+    ]
+  },
+  "cast-v-festival-1996-08-18": {
+    "name": "Cast",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "33d9a045",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": []
+  },
+  "dave-clark-que-club-1997-08-30": {
+    "name": "Dave Clark",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1997-08-30",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "chemical-brothers-glastonbury-2000-06-23": {
+    "name": "The Chemical Brothers",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-23",
+    "setlistfm_id": "3bd3d4ec",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      9250776
+    ]
+  },
+  "travis-glastonbury-2000-06-24": {
+    "name": "Travis",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-24",
+    "setlistfm_id": "7bd2b638",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "bowie-glastonbury-2000-06-25": {
+    "name": "David Bowie",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-25",
+    "setlistfm_id": "1bd40158",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      8057163
+    ]
+  },
+  "embrace-brixton-2000-11-10": {
+    "name": "Embrace",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2000-11-10",
+    "setlistfm_id": "6bf9c60a",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      1735854
+    ]
+  },
+  "miles-hunt-club-borderline-2002-01-28": {
+    "name": "The Miles Hunt Club",
+    "location": "The Borderline",
+    "type": "Concert",
+    "date": "2002-01-28",
+    "setlistfm_id": "33a344bd",
+    "coordinates": {
+      "lat": 51.5148,
+      "lng": -0.1303
+    },
+    "related_releases": []
+  },
+  "new-order-finsbury-park-2002-06-09": {
+    "name": "New Order",
+    "location": "Finsbury Park",
+    "type": "Concert",
+    "date": "2002-06-09",
+    "setlistfm_id": "1bd78154",
+    "coordinates": {
+      "lat": 51.5689,
+      "lng": -0.1158
+    },
+    "related_releases": [
+      10069749
+    ]
+  },
+  "coldplay-glastonbury-2002-06-28": {
+    "name": "Coldplay",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "73d65ebd",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "ash-glastonbury-2002-06-28": {
+    "name": "Ash",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "2bc74872",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1108690
+    ]
+  },
+  "doves-glastonbury-2002-06-28": {
+    "name": "Doves",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "13dc7579",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      13697174
+    ]
+  },
+  "ed-harcourt-glastonbury-2002-06-28": {
+    "name": "Ed Harcourt",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "43cbbbf7",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "orbital-glastonbury-2002-06-29": {
+    "name": "Orbital",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "5bd02f48",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      865
+    ]
+  },
+  "electric-soft-parade-glastonbury-2002-06-29": {
+    "name": "Electric Soft Parade",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "2baaf80e",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "coral-glastonbury-2002-06-29": {
+    "name": "The Coral",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "7bc6d654",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      11893547
+    ]
+  },
+  "white-stripes-glastonbury-2002-06-29": {
+    "name": "The White Stripes",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "33f4947d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1316702
+    ]
+  },
+  "manu-chao-glastonbury-2002-06-30": {
+    "name": "Manu Chao",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "73d03a9d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "brmc-glastonbury-2002-06-30": {
+    "name": "Black Rebel Motorcycle Club",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "2bdeb80a",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1128171
+    ]
+  },
+  "belle-and-sebastian-glastonbury-2002-06-30": {
+    "name": "Belle and Sebastian",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "6bc6d65e",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      441439
+    ]
+  },
+  "groove-armada-glastonbury-2002-06-30": {
+    "name": "Groove Armada",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "73c6d65d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": []
+  },
+  "air-glastonbury-2002-06-30": {
+    "name": "Air",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "2bd5443a",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1820430
+    ]
+  },
+  "oasis-finsbury-park-2002-07-07": {
+    "name": "Oasis",
+    "location": "Finsbury Park",
+    "type": "Concert",
+    "date": "2002-07-07",
+    "setlistfm_id": "7bd4ce48",
+    "coordinates": {
+      "lat": 51.5689,
+      "lng": -0.1158
+    },
+    "related_releases": [
+      828663
+    ]
+  },
+  "strokes-reading-2002-08-23": {
+    "name": "The Strokes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "7bd4ce5c",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      14432639
+    ]
+  },
+  "vines-reading-2002-08-23": {
+    "name": "The Vines",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "6bda22fe",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      612084
+    ]
+  },
+  "white-stripes-reading-2002-08-23": {
+    "name": "The White Stripes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "73d2aec9",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      1316702
+    ]
+  },
+  "interpol-reading-2002-08-23": {
+    "name": "Interpol",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "6bd7def6",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6657573
+    ]
+  },
+  "foo-fighters-reading-2002-08-24": {
+    "name": "Foo Fighters",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-24",
+    "setlistfm_id": "5bd617b4",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      391946
+    ]
+  },
+  "hives-reading-2002-08-24": {
+    "name": "The Hives",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-24",
+    "setlistfm_id": "1bd16960",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6568498
+    ]
+  },
+  "qotsa-kentish-town-2002-10-27": {
+    "name": "Queens of the Stone Age",
+    "location": "Kentish Town Forum",
+    "type": "Concert",
+    "date": "2002-10-27",
+    "setlistfm_id": "53d5fb5d",
+    "coordinates": {
+      "lat": 51.5522,
+      "lng": -0.1468
+    },
+    "related_releases": [
+      856937
+    ]
+  },
+  "teenage-fanclub-astoria-2003-02-18": {
+    "name": "Teenage Fanclub",
+    "location": "London Astoria",
+    "type": "Concert",
+    "date": "2003-02-18",
+    "setlistfm_id": "3b8ac088",
+    "coordinates": {
+      "lat": 51.5153,
+      "lng": -0.1301
+    },
+    "related_releases": [
+      3377856
+    ]
+  },
+  "kings-of-leon-astoria-2003-06-11": {
+    "name": "Kings Of Leon",
+    "location": "London Astoria",
+    "type": "Concert",
+    "date": "2003-06-11",
+    "setlistfm_id": "2bd7903e",
+    "coordinates": {
+      "lat": 51.5153,
+      "lng": -0.1301
+    },
+    "related_releases": [
+      789108
+    ]
+  },
+  "hexstatic-big-chill-2003-08-01": {
+    "name": "Hexstatic",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "239a4ce7",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "ralph-myerz-big-chill-2003-08-01": {
+    "name": "Ralph Myerz and the Jack Herren Band",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "2b9a4ce2",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "ulrich-schnauss-big-chill-2003-08-01": {
+    "name": "Ulrich Schnauss",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "339a4ce1",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "dj-derek-big-chill-2003-08-02": {
+    "name": "DJ Derek",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "2b9a4cda",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "talvin-singh-big-chill-2003-08-02": {
+    "name": "Talvin Singh",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "339a4cd9",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "bays-big-chill-2003-08-02": {
+    "name": "The Bays",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "3b9a4ce4",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": []
+  },
+  "darkness-hammersmith-apollo-2003-10-22": {
+    "name": "The Darkness",
+    "location": "Hammersmith Apollo",
+    "type": "Concert",
+    "date": "2003-10-22",
+    "setlistfm_id": "13d339ed",
+    "coordinates": {
+      "lat": 51.4909,
+      "lng": -0.2246
+    },
+    "related_releases": []
+  },
+  "nerd-roskilde-2004-07-02": {
+    "name": "N*E*R*D",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "53c02381",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": []
+  },
+  "pixies-roskilde-2004-07-02": {
+    "name": "Pixies",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "5bdf27bc",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      5923509
+    ]
+  },
+  "graham-coxon-roskilde-2004-07-02": {
+    "name": "Graham Coxon",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "63df022f",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      13547971
+    ]
+  },
+  "hives-roskilde-2004-07-02": {
+    "name": "The Hives",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "53c3ffbd",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      6568498
+    ]
+  },
+  "fatboy-slim-roskilde-2004-07-03": {
+    "name": "Fatboy Slim",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "53c3ffb5",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": []
+  },
+  "kings-of-leon-roskilde-2004-07-03": {
+    "name": "Kings Of Leon",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "33d4f419",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      789108
+    ]
+  },
+  "morrissey-roskilde-2004-07-03": {
+    "name": "Morrissey",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "33d4f419",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": []
+  },
+  "basement-jaxx-roskilde-2004-07-03": {
+    "name": "Basement Jaxx",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "43c02387",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      3388468
+    ]
+  },
+  "muse-roskilde-2004-07-04": {
+    "name": "Muse",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "bd7a1e6",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      381229
+    ]
+  },
+  "franz-ferdinand-roskilde-2004-07-04": {
+    "name": "Franz Ferdinand",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "2bd4f41e",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      355287
+    ]
+  },
+  "ralph-myerz-roskilde-2004-07-04": {
+    "name": "Ralph Myerz and the Jack Herren Band",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "23c18873",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": []
+  },
+  "franz-ferdinand-brixton-2004-10-30": {
+    "name": "Franz Ferdinand",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2004-10-30",
+    "setlistfm_id": "4bdeffb2",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      355287
+    ]
+  },
+  "embrace-hammersmith-palais-2004-11-22": {
+    "name": "Embrace",
+    "location": "Hammersmith Palais",
+    "type": "Concert",
+    "date": "2004-11-22",
+    "setlistfm_id": "4b9cdfea",
+    "coordinates": {
+      "lat": 51.4906,
+      "lng": -0.2211
+    },
+    "related_releases": [
+      1735854
+    ]
+  },
+  "white-stripes-hammersmith-apollo-2005-11-05": {
+    "name": "The White Stripes",
+    "location": "Hammersmith Apollo",
+    "type": "Concert",
+    "date": "2005-11-05",
+    "setlistfm_id": "53d4975d",
+    "coordinates": {
+      "lat": 51.4909,
+      "lng": -0.2246
+    },
+    "related_releases": [
+      1316702
+    ]
+  },
+  "lemonheads-somerset-house-2006-07-16": {
+    "name": "The Lemonheads",
+    "location": "Somerset House",
+    "type": "Concert",
+    "date": "2006-07-16",
+    "setlistfm_id": "2bda40d6",
+    "coordinates": {
+      "lat": 51.511,
+      "lng": -0.122
+    },
+    "related_releases": [
+      5875210
+    ]
+  },
+  "raconteurs-brixton-2006-10-20": {
+    "name": "The Raconteurs",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2006-10-20",
+    "setlistfm_id": "53d5eb6d",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": []
+  },
+  "ash-ulu-2007-03-09": {
+    "name": "Ash",
+    "location": "ULU",
+    "type": "Concert",
+    "date": "2007-03-09",
+    "setlistfm_id": "43d0c32f",
+    "coordinates": {
+      "lat": 51.5226,
+      "lng": -0.1311
+    },
+    "related_releases": [
+      1108690
+    ]
+  },
+  "kasabian-somerset-house-2007-07-13": {
+    "name": "Kasabian",
+    "location": "Somerset House",
+    "type": "Concert",
+    "date": "2007-07-13",
+    "setlistfm_id": "2bd574e6",
+    "coordinates": {
+      "lat": 51.511,
+      "lng": -0.122
+    },
+    "related_releases": []
+  },
+  "razorlight-reading-2007-08-24": {
+    "name": "Razorlight",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "bd78dd2",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "kings-of-leon-reading-2007-08-24": {
+    "name": "Kings Of Leon",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "1bd79d80",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      789108
+    ]
+  },
+  "interpol-reading-2007-08-24": {
+    "name": "Interpol",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "5bd7b3dc",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6657573
+    ]
+  },
+  "gossip-reading-2007-08-24": {
+    "name": "Gossip",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "43d1c3ff",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "long-blondes-reading-2007-08-24": {
+    "name": "The Long Blondes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "5bd8bf50",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "rhcp-reading-2007-08-25": {
+    "name": "Red Hot Chili Peppers",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "5bd38f38",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      367882
+    ]
+  },
+  "unkle-reading-2007-08-25": {
+    "name": "UNKLE",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "53d8bf3d",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      15784682
+    ]
+  },
+  "bloc-party-reading-2007-08-25": {
+    "name": "Bloc Party",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "5bd7b3d0",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "cold-war-kids-reading-2007-08-26": {
+    "name": "Cold War Kids",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "4bd7b3ce",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "css-reading-2007-08-26": {
+    "name": "CSS",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "53d8bf05",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": []
+  },
+  "radiohead-victoria-park-2008-06-24": {
+    "name": "Radiohead",
+    "location": "Victoria Park",
+    "type": "Concert",
+    "date": "2008-06-24",
+    "setlistfm_id": "3d6bdc7",
+    "coordinates": {
+      "lat": 51.5367,
+      "lng": -0.1086
+    },
+    "related_releases": [
+      8664384
+    ]
+  },
+  "doves-festival-hall-2008-09-12": {
+    "name": "Doves",
+    "location": "Royal Festival Hall",
+    "type": "Concert",
+    "date": "2008-09-12",
+    "setlistfm_id": "bd33946",
+    "coordinates": {
+      "lat": 51.5058,
+      "lng": -0.1166
+    },
+    "related_releases": [
+      13697174
+    ]
+  },
+  "manics-festival-hall-2008-09-12": {
+    "name": "Manic Street Preachers",
+    "location": "Royal Festival Hall",
+    "type": "Concert",
+    "date": "2008-09-12",
+    "setlistfm_id": "23d47057",
+    "coordinates": {
+      "lat": 51.5058,
+      "lng": -0.1166
+    },
+    "related_releases": [
+      4170983
+    ]
+  },
+  "hot-chip-brixton-2010-02-26": {
+    "name": "Hot Chip",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-02-26",
+    "setlistfm_id": "53d74749",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": []
+  },
+  "lcd-soundsystem-brixton-2010-04-24": {
+    "name": "LCD Soundsystem",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-04-24",
+    "setlistfm_id": "3d54d23",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      1629028
+    ]
+  },
+  "groove-armada-brixton-2010-10-16": {
+    "name": "Groove Armada",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-10-16",
+    "setlistfm_id": "23d51433",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": []
+  },
+  "hot-chip-brixton-2012-10-18": {
+    "name": "Hot Chip",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2012-10-18",
+    "setlistfm_id": "43dd0357",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": []
+  },
+  "teenage-fanclub-manchester-academy-2016-11-18": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2016-11-18",
+    "setlistfm_id": "2bfa5886",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      3377856
+    ]
+  },
+  "sfa-institute-2016-12-10": {
+    "name": "Super Furry Animals",
+    "location": "Birmingham Institute",
+    "type": "Concert",
+    "date": "2016-12-10",
+    "setlistfm_id": "3fbddeb",
+    "coordinates": {
+      "lat": 52.4784,
+      "lng": -1.9059
+    },
+    "related_releases": [
+      10615529,
+      9302863
+    ]
+  },
+  "arcade-fire-castlefield-2017-07-06": {
+    "name": "Arcade Fire",
+    "location": "Castlefield Bowl",
+    "type": "Concert",
+    "date": "2017-07-06",
+    "setlistfm_id": "5be41f5c",
+    "coordinates": {
+      "lat": 53.476,
+      "lng": -2.2611
+    },
+    "related_releases": [
+      14321778
+    ]
+  },
+  "orbital-manchester-apollo-2017-12-01": {
+    "name": "Orbital",
+    "location": "Apollo Manchester",
+    "type": "Concert",
+    "date": "2017-12-01",
+    "setlistfm_id": "43e0032f",
+    "coordinates": {
+      "lat": 53.4695,
+      "lng": -2.2247
+    },
+    "related_releases": [
+      865
+    ]
+  },
+  "arcade-fire-manchester-arena-2018-04-08": {
+    "name": "Arcade Fire",
+    "location": "Manchester Arena",
+    "type": "Concert",
+    "date": "2018-04-08",
+    "setlistfm_id": "4bec9ff2",
+    "coordinates": {
+      "lat": 53.4881,
+      "lng": -2.2462
+    },
+    "related_releases": [
+      14321778
+    ]
+  },
+  "breeders-ritz-manchester-2018-07-13": {
+    "name": "The Breeders",
+    "location": "Ritz Manchester",
+    "type": "Concert",
+    "date": "2018-07-13",
+    "setlistfm_id": "63eb9a53",
+    "coordinates": {
+      "lat": 53.4743,
+      "lng": -2.2429
+    },
+    "related_releases": [
+      7443942
+    ]
+  },
+  "teenage-fanclub-manchester-academy-2018-11-05": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-05",
+    "setlistfm_id": "7b964e14",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      3377856,
+      3967721
+    ]
+  },
+  "teenage-fanclub-manchester-academy-2018-11-06": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-06",
+    "setlistfm_id": "73964e09",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      12372525,
+      1159480
+    ]
+  },
+  "teenage-fanclub-manchester-academy-2018-11-07": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-07",
+    "setlistfm_id": "63964e0f",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      5311497
+    ]
+  }
+}

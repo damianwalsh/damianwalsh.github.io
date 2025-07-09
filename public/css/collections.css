@@ -17,11 +17,11 @@
   border-radius: var(--border-radius);
   display: grid;
   gap: var(--space-2xs);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns:  minmax(0, 80px) 1fr 1fr auto;
   grid-template-areas:
     "img details details action";
   &:hover .action {
-    background: var(--primary-6);
+    background: var(--primary-7);
     color: var(--primary-3);
   }
 
@@ -191,7 +191,7 @@
     font-variation-settings: "wght" 400;
   }
   &:hover .action {
-    background: var(--primary-6);
+    background: var(--primary-7);
     color: var(--primary-3);
   }
   &:where([class*="--horizontal"]) {
@@ -210,6 +210,10 @@
 
     .title {
       grid-area: title;
+    }
+
+    .map__image {
+      grid-area: preview;
     }
 
     .preview__grid {
@@ -256,20 +260,18 @@
   padding: var(--flow-space);
 }
 
-[aria-label=alphabetical] {
-  [role=list] {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3xs) var(--space-xs);
+.anchor-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-xs);
 
-    a {
-      font-size: var(--text-size--1);
-      font-variation-settings: "wght" 700;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
+  a {
+    font-size: var(--text-size--1);
+    font-variation-settings: "wght" 700;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 }
 

@@ -1,0 +1,5591 @@
+[
+  {
+    "artist": "Bibio",
+    "title": "Ambivalence Avenue",
+    "format": "Vinyl",
+    "release_id": 7687778,
+    "first_released": "2009-06-22",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Pixies",
+    "title": "Surfer Rosa",
+    "format": "Vinyl",
+    "release_id": 2109418,
+    "first_released": "1988-03-21",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "alvechurch"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Rolling Stones",
+    "title": "Hot Rocks 1964-1971",
+    "format": "Vinyl",
+    "release_id": 879358,
+    "first_released": "1971-12-20",
+    "favourite": false,
+    "favourite_tracks": [
+      13
+    ]
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Alive 1997",
+    "format": "Vinyl",
+    "release_id": 23052887,
+    "first_released": "2001-10-01",
+    "favourite": false
+  },
+  {
+    "artist": "The Beatles",
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "format": "Vinyl",
+    "release_id": 11281055,
+    "first_released": "1967-05-26",
+    "favourite": false,
+    "favourite_tracks": [
+      13
+    ]
+  },
+  {
+    "artist": "The Beatles",
+    "title": "The Beatles",
+    "format": "Vinyl",
+    "release_id": 12770560,
+    "first_released": "1968-11-22",
+    "favourite": true,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Beta Band",
+    "title": "The Three E.P.'s",
+    "format": "Vinyl",
+    "release_id": 12647429,
+    "first_released": "1998-09-28",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Mark Lanegan Band",
+    "title": "Bubblegum",
+    "format": "Vinyl",
+    "release_id": 3601873,
+    "first_released": "2004-08-10",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "The Fall",
+    "title": "458489 A Sides",
+    "format": "Vinyl",
+    "release_id": 12364199,
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Oasis",
+    "title": "Definitely Maybe",
+    "format": "Vinyl",
+    "release_id": 12864584,
+    "first_released": "1994-08-29",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Metallica",
+    "title": "Ride The Lightning",
+    "format": "Vinyl",
+    "release_id": 26218865,
+    "first_released": "1984-07-27",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Metallica",
+    "title": "...And Justice For All",
+    "format": "Vinyl",
+    "release_id": 26664548,
+    "first_released": "1988-08-25",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Metallica",
+    "title": "Metallica",
+    "format": "Vinyl",
+    "release_id": 20138908,
+    "first_released": "1991-08-12",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Metallica",
+    "title": "Load",
+    "format": "Vinyl",
+    "release_id": 6094405,
+    "first_released": "1996-06-04",
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ]
+  },
+  {
+    "artist": "Metallica",
+    "title": "Kill 'Em All",
+    "format": "Vinyl",
+    "release_id": 8385679,
+    "first_released": "1983-07-25",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Metallica",
+    "title": "Master Of Puppets",
+    "format": "Vinyl",
+    "release_id": 11129661,
+    "first_released": "1986-03-03",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Super Furry Animals",
+    "title": "Radiator",
+    "format": "Vinyl",
+    "release_id": 10615529,
+    "first_released": "1997-08-25",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "sfa-institute-2016-12-10"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Super Furry Animals",
+    "title": "Fuzzy Logic",
+    "format": "Vinyl",
+    "release_id": 9302863,
+    "first_released": "1996-05-20",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "sfa-institute-2016-12-10"
+        ]
+      },
+      "1996-1998": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Paul's Boutique",
+    "format": "Vinyl",
+    "release_id": 1651542,
+    "first_released": "1989-07-25",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "The Beach Boys",
+    "title": "Pet Sounds",
+    "format": "Vinyl",
+    "release_id": 8645720,
+    "first_released": "1966-05-16",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Simon & Garfunkel",
+    "title": "Bookends",
+    "format": "Vinyl",
+    "release_id": 5057482,
+    "first_released": "1968-04-03",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Felt",
+    "title": "Forever Breathes The Lonely Word",
+    "format": "Vinyl",
+    "release_id": 12545382,
+    "first_released": "1986-09-00",
+    "favourite": false
+  },
+  {
+    "artist": "The Clash",
+    "title": "London Calling",
+    "format": "Vinyl",
+    "release_id": 7407271,
+    "first_released": "1979-12-14",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "R.E.M.",
+    "title": "Out Of Time",
+    "format": "Vinyl",
+    "release_id": 9359884,
+    "first_released": "1991-03-12",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "alvechurch"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Ride",
+    "title": "Going Blank Again",
+    "format": "Vinyl",
+    "release_id": 569026,
+    "first_released": "1992-03-09",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Beck",
+    "title": "Sea Change",
+    "format": "Vinyl",
+    "release_id": 9429675,
+    "first_released": "2002-09-24",
+    "favourite": true,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [
+          "kilburn"
+        ],
+        "events": []
+      },
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Nirvana",
+    "title": "Nevermind",
+    "format": "Vinyl",
+    "release_id": 7097051,
+    "first_released": "1991-09-24",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Various",
+    "title": "The Phil Spector Christmas Album (A Christmas Gift For You)",
+    "format": "Vinyl",
+    "release_id": 10986338,
+    "first_released": "1963-11-22",
+    "favourite": false,
+    "chapters": {
+      "2008-2012": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Pavement",
+    "title": "Crooked Rain Crooked Rain",
+    "format": "Vinyl",
+    "release_id": 2765979,
+    "first_released": "1994-02-14",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Arctic Monkeys",
+    "title": "Tranquility Base Hotel + Casino",
+    "format": "Vinyl",
+    "release_id": 11977353,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Joy Division",
+    "title": "Closer",
+    "format": "Vinyl",
+    "release_id": 7132429,
+    "first_released": "1980-07-18",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Cure",
+    "title": "Disintegration",
+    "format": "Vinyl",
+    "release_id": 13247155,
+    "first_released": "1989-05-02",
+    "favourite": true,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "Parklife",
+    "format": "Vinyl",
+    "release_id": 8640693,
+    "first_released": "1994-04-25",
+    "favourite": false,
+    "favourite_tracks": [
+      15
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Blur",
+    "title": "Modern Life Is Rubbish",
+    "format": "Vinyl",
+    "release_id": 12657649,
+    "first_released": "1993-05-10",
+    "favourite": false,
+    "favourite_tracks": [
+      12
+    ]
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "title": "Dig Your Own Hole",
+    "format": "Vinyl",
+    "release_id": 9250776,
+    "first_released": "1997-04-07",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "steve-s",
+          "claire-p"
+        ],
+        "events": [
+          "chemical-brothers-glastonbury-2000-06-23"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Portishead",
+    "title": "Roseland NYC Live",
+    "format": "Vinyl",
+    "release_id": 3586054,
+    "first_released": "1998-11-02",
+    "favourite": true,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Doves",
+    "title": "Lost Souls",
+    "format": "Vinyl",
+    "release_id": 13701462,
+    "first_released": "2000-03-03",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Doves",
+    "title": "The Last Broadcast",
+    "format": "Vinyl",
+    "release_id": 13697174,
+    "first_released": "2002-04-29",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "doves-glastonbury-2002-06-28"
+        ]
+      },
+      "2008-2012": {
+        "people": [
+          "liz-c",
+          "jon-b"
+        ],
+        "events": [
+          "doves-festival-hall-2008-09-12"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "U2",
+    "title": "The Joshua Tree",
+    "format": "Vinyl",
+    "release_id": 10395824,
+    "first_released": "1987-03-09",
+    "favourite": true,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "Rid Of Me",
+    "format": "Vinyl",
+    "release_id": 15792475,
+    "first_released": "1993-04-26",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "Stories From The City, Stories From The Sea",
+    "format": "Vinyl",
+    "release_id": 17545360,
+    "first_released": "2000-10-23",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Paul Weller",
+    "title": "Wild Wood",
+    "format": "Vinyl",
+    "release_id": 9681759,
+    "first_released": "1993-09-06",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Paul Weller",
+    "title": "Stanley Road",
+    "format": "Vinyl",
+    "release_id": 9748215,
+    "first_released": "1995-05-15",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "U2",
+    "title": "Achtung Baby",
+    "format": "Vinyl",
+    "release_id": 12298689,
+    "first_released": "1991-11-18",
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      },
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Neutral Milk Hotel",
+    "title": "In The Aeroplane Over The Sea",
+    "format": "Vinyl",
+    "release_id": 2173833,
+    "first_released": "1998-02-10",
+    "favourite": false
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Bandwagonesque",
+    "format": "Vinyl",
+    "release_id": 3377856,
+    "first_released": "1991-11-19",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "teenage-fanclub-astoria-2003-02-18"
+        ]
+      },
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "teenage-fanclub-manchester-academy-2016-11-18",
+          "teenage-fanclub-manchester-academy-2018-11-05"
+        ]
+      },
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Depeche Mode",
+    "title": "Violator",
+    "format": "Vinyl",
+    "release_id": 9947433,
+    "first_released": "1990-03-19",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Low",
+    "format": "Vinyl",
+    "release_id": 11597112,
+    "first_released": "1977-01-14",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Beatles",
+    "title": "Revolver",
+    "format": "Vinyl",
+    "release_id": 4453244,
+    "first_released": "1966-08-05",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Live Nassau Coliseum '76",
+    "format": "Vinyl",
+    "release_id": 9810399,
+    "first_released": "2010-09-20",
+    "favourite": true,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Station To Station",
+    "format": "Vinyl",
+    "release_id": 9810328,
+    "first_released": "1976-01-23",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "David Bowie",
+    "title": "ChangesOneBowie",
+    "format": "Vinyl",
+    "release_id": 8527561,
+    "first_released": "1976-05-21",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Hunky Dory",
+    "format": "Vinyl",
+    "release_id": 8162088,
+    "first_released": "1971-12-17",
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ],
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Electronic",
+    "title": "Electronic",
+    "format": "Vinyl",
+    "release_id": 14686331,
+    "first_released": "1991-05-27",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "The Dark Side Of The Moon",
+    "format": "Vinyl",
+    "release_id": 28614196,
+    "first_released": "1973-03-01",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Wish You Were Here",
+    "format": "Vinyl",
+    "release_id": 9187140,
+    "first_released": "1975-09-12",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Rolling Stones",
+    "title": "Exile On Main St",
+    "format": "Vinyl",
+    "release_id": 16035846,
+    "first_released": "1972-05-12",
+    "favourite": true,
+    "favourite_tracks": [
+      10
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Stone Roses",
+    "title": "The Stone Roses",
+    "format": "Vinyl",
+    "release_id": 13708521,
+    "first_released": "1989-03-13",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Kelly Lee Owens",
+    "title": "Inner Song",
+    "format": "Vinyl",
+    "release_id": 15244456,
+    "favourite": false
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "format": "Vinyl",
+    "release_id": 30919365,
+    "first_released": "1997-01-20",
+    "favourite": false,
+    "favourite_tracks": [
+      15
+    ]
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Grand Prix",
+    "format": "Vinyl",
+    "release_id": 12372525,
+    "first_released": "1995-05-29",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "teenage-fanclub-manchester-academy-2018-11-06"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Mark Lanegan",
+    "title": "Field Songs",
+    "format": "Vinyl",
+    "release_id": 7795979,
+    "first_released": "2001-05-08",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Nine Inch Nails",
+    "title": "Pretty Hate Machine",
+    "format": "Vinyl",
+    "release_id": 9154868,
+    "first_released": "1989-10-20",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "Greatest Hits",
+    "format": "Vinyl",
+    "release_id": 16291048,
+    "favourite": false
+  },
+  {
+    "artist": "The La's",
+    "title": "BBC In Session",
+    "format": "Vinyl",
+    "release_id": 13697821,
+    "first_released": "2006-09-18",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "title": "Siamese Dream",
+    "format": "Vinyl",
+    "release_id": 3255473,
+    "first_released": "1993-07-27",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Brian Eno",
+    "title": "Here Come The Warm Jets",
+    "format": "Vinyl",
+    "release_id": 10660927,
+    "first_released": "1973-11-00",
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Brian Eno",
+    "title": "Another Green World",
+    "format": "Vinyl",
+    "release_id": 11176407,
+    "first_released": "1975-11-14",
+    "favourite": true,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Verve",
+    "title": "Urban Hymns",
+    "format": "Vinyl",
+    "release_id": 9057753,
+    "first_released": "1997-09-29",
+    "favourite": false,
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j",
+          "claire-p"
+        ],
+        "places": [
+          "university-of-plymouth",
+          "alvechurch"
+        ],
+        "events": []
+      }
+    },
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Rumours",
+    "format": "Vinyl",
+    "release_id": 22040284,
+    "first_released": "1977-02-04",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2021-2025": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "altrincham"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Aphex Twin",
+    "title": "Richard D. James Album",
+    "format": "Vinyl",
+    "release_id": 3979643,
+    "first_released": "1996-11-04",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "Artificial Intelligence",
+    "format": "Vinyl",
+    "release_id": 25341079,
+    "first_released": "1992-07-06",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Autechre",
+    "title": "Amber",
+    "format": "Vinyl",
+    "release_id": 9326781,
+    "first_released": "1994-11-07",
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ],
+    "chapters": {
+      "1993-1995": {
+        "events": [
+          "autechre-que-club-1995-02-04"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Boards Of Canada",
+    "title": "Music Has The Right To Children",
+    "format": "Vinyl",
+    "release_id": 5006908,
+    "first_released": "1998-04-20",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Blue Lines",
+    "format": "Vinyl",
+    "release_id": 9442778,
+    "first_released": "1991-04-08",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Badly Drawn Boy",
+    "title": "The Hour Of Bewilderbeast",
+    "format": "Vinyl",
+    "release_id": 8048187,
+    "first_released": "2000-06-26",
+    "favourite": false,
+    "favourite_tracks": [
+      16
+    ],
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [
+          "parsons-green"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Avalanches",
+    "title": "Since I Left You",
+    "format": "Vinyl",
+    "release_id": 8827979,
+    "first_released": "2000-11-27",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Radiohead",
+    "title": "The Bends",
+    "format": "Vinyl",
+    "release_id": 23449382,
+    "first_released": "1995-03-13",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Radiohead",
+    "title": "OK Computer",
+    "format": "Vinyl",
+    "release_id": 8664384,
+    "first_released": "1997-05-21",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ],
+    "chapters": {
+      "2008-2012": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "radiohead-victoria-park-2008-06-24"
+        ]
+      },
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "James Blake",
+    "title": "Overgrown",
+    "format": "CD",
+    "release_id": 4468927,
+    "favourite": false
+  },
+  {
+    "artist": "Badly Drawn Boy",
+    "title": "Have You Fed The Fish?",
+    "format": "CD",
+    "release_id": 547948,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "The Strokes",
+    "title": "Room On Fire",
+    "format": "CD",
+    "release_id": 25682668,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "The Vines",
+    "title": "Highly Evolved",
+    "format": "CD",
+    "release_id": 612084,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "vines-reading-2002-08-23"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Beatles",
+    "title": "Magical Mystery Tour",
+    "format": "CD",
+    "release_id": 1514876,
+    "first_released": "1967-11-27",
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Brendan Benson",
+    "title": "The Alternative To Love",
+    "format": "CD",
+    "release_id": 11257510,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Stephen Malkmus",
+    "title": "Stephen Malkmus",
+    "format": "CD",
+    "release_id": 797691,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "The Hives",
+    "title": "Tyrannosaurus Hives",
+    "format": "CD",
+    "release_id": 1104503,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "The Boo Radleys",
+    "title": "Giant Steps",
+    "format": "CD",
+    "release_id": 380817,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Photek",
+    "title": "Modus Operandi",
+    "format": "CD",
+    "release_id": 3643613,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "What Hits!?",
+    "format": "CD",
+    "release_id": 4967412,
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Metric",
+    "title": "Old World Underground, Where Are You Now?",
+    "format": "CD",
+    "release_id": 367389,
+    "first_released": "2003-07-29",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Cannibal Ox",
+    "title": "The Cold Vein - Deluxe Edition",
+    "format": "CD",
+    "release_id": 5277536,
+    "first_released": "2001-12-15",
+    "favourite": false
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Echoes (The Best Of Pink Floyd)",
+    "format": "CD",
+    "release_id": 3454162,
+    "first_released": "2001-11-05",
+    "favourite": false,
+    "favourite_tracks": [
+      21
+    ]
+  },
+  {
+    "artist": "The Future Sound Of London",
+    "title": "Lifeforms",
+    "format": "CD",
+    "release_id": 307790,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Damon Albarn",
+    "title": "Everyday Robots",
+    "format": "CD",
+    "release_id": 5641168,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Graham Coxon",
+    "title": "The Golden D",
+    "format": "CD",
+    "release_id": 562107,
+    "favourite": false
+  },
+  {
+    "artist": "Basement Jaxx",
+    "title": "Remedy",
+    "format": "CD",
+    "release_id": 3388468,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "snorre-m"
+        ],
+        "events": [
+          "basement-jaxx-roskilde-2004-07-03"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Lemonheads",
+    "title": "Come On Feel The Lemonheads",
+    "format": "CD",
+    "release_id": 1270316,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Jesus And Mary Chain",
+    "title": "Stoned & Dethroned",
+    "format": "CD",
+    "release_id": 374318,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Pavement",
+    "title": "Crooked Rain Crooked Rain - L.A.'s Desert Origins",
+    "format": "CD",
+    "release_id": 567475,
+    "favourite": false
+  },
+  {
+    "artist": "Temples",
+    "title": "Sun Structures",
+    "format": "CD",
+    "release_id": 5387692,
+    "favourite": false
+  },
+  {
+    "artist": "Lykke Li",
+    "title": "Wounded Rhymes",
+    "format": "CD",
+    "release_id": 2738146,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "The Wonder Stuff",
+    "title": "Hup",
+    "format": "CD",
+    "release_id": 419160,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1990-1992": {
+        "events": [
+          "wonder-stuff-aston-villa-1990-08-14"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Mac DeMarco",
+    "title": "Salad Days",
+    "format": "CD",
+    "release_id": 5552351,
+    "favourite": false
+  },
+  {
+    "artist": "The La's",
+    "title": "The La's",
+    "format": "CD",
+    "release_id": 10155916,
+    "first_released": "1990-10-01",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "St. Vincent",
+    "title": "St. Vincent",
+    "format": "CD",
+    "release_id": 5448155,
+    "favourite": false
+  },
+  {
+    "artist": "Elliott Smith",
+    "title": "Figure 8",
+    "format": "CD",
+    "release_id": 10023412,
+    "first_released": "2000-04-18",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Mr. Scruff",
+    "title": "Keep It Unreal",
+    "format": "CD",
+    "release_id": 5680041,
+    "favourite": false
+  },
+  {
+    "artist": "Django Django",
+    "title": "Django Django",
+    "format": "CD",
+    "release_id": 3400870,
+    "favourite": false
+  },
+  {
+    "artist": "Oasis",
+    "title": "(What's The Story) Morning Glory?",
+    "format": "CD",
+    "release_id": 828663,
+    "first_released": "1995-10-02",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "oasis-finsbury-park-2002-07-07"
+        ]
+      },
+      "1996-1998": {
+        "people": [],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Stone Roses",
+    "title": "Turns Into Stone",
+    "format": "CD",
+    "release_id": 7734349,
+    "first_released": "1992-07-20",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Grand Prix",
+    "format": "CD",
+    "release_id": 624823,
+    "favourite": false
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Anthology: The Sounds Of Science",
+    "format": "CD",
+    "release_id": 9724789,
+    "first_released": "1999-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Stereolab",
+    "title": "Jenny Ondioline",
+    "format": "CD",
+    "release_id": 239722,
+    "favourite": false
+  },
+  {
+    "artist": "Royal Blood",
+    "title": "Royal Blood",
+    "format": "CD",
+    "release_id": 6007167,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The Libertines",
+    "title": "The Libertines",
+    "format": "CD",
+    "release_id": 8356778,
+    "first_released": "2004-08-30",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Speedy J",
+    "title": "Ginger",
+    "format": "CD",
+    "release_id": 8104972,
+    "favourite": false,
+    "favourite_tracks": [
+      12
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "Young Guns Go For It - Heroes Of The 80's",
+    "format": "CD",
+    "release_id": 2857765,
+    "favourite": false,
+    "favourite_tracks": [
+      13
+    ]
+  },
+  {
+    "artist": "The Libertines",
+    "title": "Up The Bracket",
+    "format": "CD",
+    "release_id": 794286,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Idlewild",
+    "title": "Hope Is Important",
+    "format": "CD",
+    "release_id": 7585963,
+    "favourite": false
+  },
+  {
+    "artist": "Nuyorican Soul",
+    "title": "Nuyorican Soul",
+    "format": "CD",
+    "release_id": 6656991,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Futureheads",
+    "title": "The Futureheads",
+    "format": "CD",
+    "release_id": 875640,
+    "favourite": false,
+    "favourite_tracks": [
+      14
+    ]
+  },
+  {
+    "artist": "The Flaming Lips",
+    "title": "The Soft Bulletin",
+    "format": "CD",
+    "release_id": 224275,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The Wonder Stuff",
+    "title": "The Eight Legged Groove Machine",
+    "format": "CD",
+    "release_id": 401105,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Spiritualized",
+    "title": "Ladies And Gentlemen We Are Floating In Space",
+    "format": "CD",
+    "release_id": 14231496,
+    "favourite": false
+  },
+  {
+    "artist": "The Stone Roses",
+    "title": "The Stone Roses",
+    "format": "CD",
+    "release_id": 6371866,
+    "favourite": false
+  },
+  {
+    "artist": "Turin Brakes",
+    "title": "The Optimist LP",
+    "format": "CD",
+    "release_id": 40977,
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ]
+  },
+  {
+    "artist": "Bonnie \"Prince\" Billy",
+    "title": "Master And Everyone",
+    "format": "CD",
+    "release_id": 4901285,
+    "favourite": false
+  },
+  {
+    "artist": "Laura Marling",
+    "title": "I Speak Because I Can",
+    "format": "CD",
+    "release_id": 13223758,
+    "favourite": false
+  },
+  {
+    "artist": "D'Angelo And The Vanguard",
+    "title": "Black Messiah",
+    "format": "CD",
+    "release_id": 6420216,
+    "favourite": false
+  },
+  {
+    "artist": "The Sabres Of Paradise",
+    "title": "Haunted Dancehall",
+    "format": "CD",
+    "release_id": 629,
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "Think Tank",
+    "format": "CD",
+    "release_id": 1147482,
+    "first_released": "2003-05-05",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Embrace",
+    "title": "Drawn From Memory",
+    "format": "CD",
+    "release_id": 6598912,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Bandwagonesque",
+    "format": "CD",
+    "release_id": 554569,
+    "favourite": false
+  },
+  {
+    "artist": "The Beatles",
+    "title": "Revolver",
+    "format": "CD",
+    "release_id": 5767256,
+    "first_released": "1966-08-05",
+    "favourite": false
+  },
+  {
+    "artist": "The Cure",
+    "title": "Disintegration",
+    "format": "CD",
+    "release_id": 2943806,
+    "favourite": false
+  },
+  {
+    "artist": "The Glimmers",
+    "title": "DJ-Kicks",
+    "format": "CD",
+    "release_id": 432934,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Miles Kane",
+    "title": "Colour Of The Trap",
+    "format": "CD",
+    "release_id": 9467166,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Roni Size / Reprazent",
+    "title": "New Forms",
+    "format": "CD",
+    "release_id": 65475,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "The Best Of",
+    "format": "CD",
+    "release_id": 4290245,
+    "favourite": false
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "White Blood Cells",
+    "format": "CD",
+    "release_id": 1316702,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s",
+          "claire-p"
+        ],
+        "events": [
+          "white-stripes-glastonbury-2002-06-29",
+          "white-stripes-reading-2002-08-23"
+        ]
+      },
+      "2005-2007": {
+        "people": [
+          "adrian-c"
+        ],
+        "events": [
+          "white-stripes-hammersmith-apollo-2005-11-05"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Aphex Twin",
+    "title": "Selected Ambient Works 85-92",
+    "format": "CD",
+    "release_id": 1545313,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Bright Eyes",
+    "title": "Lifted Or The Story Is In The Soil, Keep Your Ear To The Ground",
+    "format": "CD",
+    "release_id": 386144,
+    "favourite": false
+  },
+  {
+    "artist": "Radiohead",
+    "title": "OK Computer",
+    "format": "CD",
+    "release_id": 10559709,
+    "first_released": "1997-05-21",
+    "favourite": false
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Evil Heat",
+    "format": "CD",
+    "release_id": 142031,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Alvvays",
+    "title": "Alvvays",
+    "format": "CD",
+    "release_id": 5920629,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Beck",
+    "title": "Morning Phase",
+    "format": "CD",
+    "release_id": 5438116,
+    "favourite": false,
+    "favourite_tracks": [
+      13
+    ],
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Experience",
+    "format": "CD",
+    "release_id": 660,
+    "first_released": "1992-09-28",
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Stephen Malkmus",
+    "title": "Face The Truth",
+    "format": "CD",
+    "release_id": 496353,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Jon Hopkins",
+    "title": "Immunity",
+    "format": "CD",
+    "release_id": 11454343,
+    "favourite": false
+  },
+  {
+    "artist": "The Glimmers",
+    "title": "The Glimmers ®",
+    "format": "CD",
+    "release_id": 353135,
+    "favourite": false
+  },
+  {
+    "artist": "Black Rebel Motorcycle Club",
+    "title": "Take Them On, On Your Own",
+    "format": "CD",
+    "release_id": 616415,
+    "favourite": false
+  },
+  {
+    "artist": "Frank Black",
+    "title": "Frank Black",
+    "format": "CD",
+    "release_id": 400276,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Death In Vegas",
+    "title": "Dead Elvis",
+    "format": "CD",
+    "release_id": 6368,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "A Christmas Gift For You From Phil Spector",
+    "format": "CD",
+    "release_id": 1610138,
+    "first_released": "1963-11-22",
+    "favourite": false
+  },
+  {
+    "artist": "David Bowie",
+    "title": "Hunky Dory",
+    "format": "CD",
+    "release_id": 6382613,
+    "first_released": "1971-12-17",
+    "favourite": false
+  },
+  {
+    "artist": "Ride",
+    "title": "Carnival Of Light",
+    "format": "CD",
+    "release_id": 7646639,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Radiohead",
+    "title": "Hail To The Thief",
+    "format": "CD",
+    "release_id": 15378881,
+    "first_released": "2003-06-09",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Evan Dando",
+    "title": "Baby I'm Bored",
+    "format": "CD",
+    "release_id": 1213690,
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Leftfield",
+    "title": "Rhythm And Stealth",
+    "format": "CD",
+    "release_id": 5135304,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "The White Stripes",
+    "format": "CD",
+    "release_id": 1619293,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "title": "Dig Your Own Hole",
+    "format": "CD",
+    "release_id": 12724060,
+    "first_released": "1997-04-07",
+    "favourite": false
+  },
+  {
+    "artist": "Muse",
+    "title": "Origin Of Symmetry",
+    "format": "CD",
+    "release_id": 381229,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "snorre-m"
+        ],
+        "events": [
+          "muse-roskilde-2004-07-04"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Âme",
+    "title": "... Mixing",
+    "format": "CD",
+    "release_id": 790956,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "Ninja Cuts: Flexistentialism",
+    "format": "CD",
+    "release_id": 9268274,
+    "first_released": "1996-03-24",
+    "favourite": false
+  },
+  {
+    "artist": "Brian Eno",
+    "title": "Here Come The Warm Jets",
+    "format": "CD",
+    "release_id": 10935339,
+    "first_released": "1973-11-00",
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "Pulp Fiction (Music From The Motion Picture)",
+    "format": "CD",
+    "release_id": 1870822,
+    "favourite": false
+  },
+  {
+    "artist": "Beck",
+    "title": "Sea Change",
+    "format": "CD",
+    "release_id": 14561422,
+    "first_released": "2002-09-24",
+    "favourite": false
+  },
+  {
+    "artist": "LCD Soundsystem",
+    "title": "45:33",
+    "format": "CD",
+    "release_id": 1629028,
+    "first_released": "2007-11-12",
+    "favourite": false,
+    "chapters": {
+      "2008-2012": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "lcd-soundsystem-brixton-2010-04-24"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Various",
+    "title": "Trainspotting (Music From The Motion Picture)",
+    "format": "CD",
+    "release_id": 1817122,
+    "favourite": false,
+    "favourite_tracks": [
+      13
+    ]
+  },
+  {
+    "artist": "Laura Marling",
+    "title": "A Creature I Don't Know",
+    "format": "CD",
+    "release_id": 5093664,
+    "favourite": false
+  },
+  {
+    "artist": "Embrace",
+    "title": "The Good Will Out",
+    "format": "CD",
+    "release_id": 1735854,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "embrace-brixton-2000-11-10"
+        ]
+      },
+      "2002-2004": {
+        "people": [
+          "liz-c",
+          "jon-b"
+        ],
+        "events": [
+          "embrace-hammersmith-palais-2004-11-22"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Plan B",
+    "title": "The Defamation Of Strickland Banks",
+    "format": "CD",
+    "release_id": 2333872,
+    "favourite": false
+  },
+  {
+    "artist": "The Orb",
+    "title": "U.F.Orb",
+    "format": "CD",
+    "release_id": 1943043,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Robert Plant | Alison Krauss",
+    "title": "Raising Sand",
+    "format": "CD",
+    "release_id": 2699882,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Radiohead",
+    "title": "The Bends",
+    "format": "CD",
+    "release_id": 12131382,
+    "first_released": "1995-03-13",
+    "favourite": false
+  },
+  {
+    "artist": "Autechre",
+    "title": "Amber",
+    "format": "CD",
+    "release_id": 2494,
+    "favourite": false
+  },
+  {
+    "artist": "Run The Jewels",
+    "title": "Run The Jewels 2",
+    "format": "CD",
+    "release_id": 6093955,
+    "favourite": false
+  },
+  {
+    "artist": "The Black Keys",
+    "title": "Brothers",
+    "format": "CD",
+    "release_id": 20204353,
+    "first_released": "2010-05-18",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Susumu Yokota",
+    "title": "Sakura",
+    "format": "CD",
+    "release_id": 13628400,
+    "first_released": "2000-09-11",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "Ambient Dub Volume 4 (Jellyfish)",
+    "format": "CD",
+    "release_id": 628,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Disclosure",
+    "title": "Settle",
+    "format": "CD",
+    "release_id": 4653505,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "title": "Surrender",
+    "format": "CD",
+    "release_id": 6655428,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "The Beatles",
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "format": "CD",
+    "release_id": 1812184,
+    "first_released": "1967-05-26",
+    "favourite": false
+  },
+  {
+    "artist": "Oasis",
+    "title": "Definitely Maybe",
+    "format": "CD",
+    "release_id": 5073915,
+    "favourite": false
+  },
+  {
+    "artist": "Cat's Eyes",
+    "title": "Cat's Eyes",
+    "format": "CD",
+    "release_id": 2824183,
+    "favourite": false
+  },
+  {
+    "artist": "Haim",
+    "title": "Days Are Gone",
+    "format": "CD",
+    "release_id": 4950732,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Death In Vegas",
+    "title": "Scorpio Rising",
+    "format": "CD",
+    "release_id": 864380,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "Bentley Rhythm Ace",
+    "title": "Bentley Rhythm Ace",
+    "format": "CD",
+    "release_id": 163363,
+    "favourite": false
+  },
+  {
+    "artist": "Those Dancing Days",
+    "title": "Run Run",
+    "format": "CD",
+    "release_id": 1660646,
+    "favourite": false
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "title": "Singles 93-03",
+    "format": "CD",
+    "release_id": 192702,
+    "favourite": false
+  },
+  {
+    "artist": "Orbital",
+    "title": "In Sides",
+    "format": "CD",
+    "release_id": 155457,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Embrace",
+    "title": "If You've Never Been",
+    "format": "CD",
+    "release_id": 4598755,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Ian Brown",
+    "title": "Unfinished Monkey Business",
+    "format": "CD",
+    "release_id": 209517,
+    "favourite": false
+  },
+  {
+    "artist": "Steve Mason",
+    "title": "Boys Outside (Special Bonus Edition Album)",
+    "format": "CD",
+    "release_id": 3693337,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "The Desert Sessions",
+    "title": "9 & 10 (I See You Hearin Me / I Heart Disco)",
+    "format": "CD",
+    "release_id": 2187565,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "title": "To Pimp A Butterfly",
+    "format": "CD",
+    "release_id": 6784584,
+    "favourite": false
+  },
+  {
+    "artist": "Darkside",
+    "title": "Psychic",
+    "format": "CD",
+    "release_id": 4968837,
+    "favourite": false
+  },
+  {
+    "artist": "Broken Bells",
+    "title": "After The Disco",
+    "format": "CD",
+    "release_id": 5400138,
+    "favourite": false
+  },
+  {
+    "artist": "Paul Weller",
+    "title": "Stanley Road",
+    "format": "CD",
+    "release_id": 7157789,
+    "favourite": false
+  },
+  {
+    "artist": "Badly Drawn Boy",
+    "title": "The Hour Of Bewilderbeast",
+    "format": "CD",
+    "release_id": 123415,
+    "favourite": false
+  },
+  {
+    "artist": "Blur",
+    "title": "Modern Life Is Rubbish",
+    "format": "CD",
+    "release_id": 1993944,
+    "favourite": false
+  },
+  {
+    "artist": "The Beta Band",
+    "title": "The Three E.P.'s",
+    "format": "CD",
+    "release_id": 13538213,
+    "favourite": false
+  },
+  {
+    "artist": "Brendan Benson",
+    "title": "Lapalco",
+    "format": "CD",
+    "release_id": 469888,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Future Islands",
+    "title": "Singles",
+    "format": "CD",
+    "release_id": 17189626,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Caribou",
+    "title": "Our Love",
+    "format": "CD",
+    "release_id": 6153276,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Otis Redding",
+    "title": "The Definitive Soul Collection",
+    "format": "CD",
+    "release_id": 1229248,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "Artificial Intelligence II",
+    "format": "CD",
+    "release_id": 1541792,
+    "first_released": "1994-05-30",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [
+          "andrew-d",
+          "shirley-h",
+          "mark-c"
+        ],
+        "places": [
+          "cadbury-college"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Four Thousand Seven Hundred And Sixty-Six Seconds - A Short Cut To Teenage Fanclub",
+    "format": "CD",
+    "release_id": 5311497,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "teenage-fanclub-manchester-academy-2018-11-07"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Jenny Lewis",
+    "title": "The Voyager",
+    "format": "CD",
+    "release_id": 6868914,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "The Lemonheads",
+    "title": "It's A Shame About Ray",
+    "format": "CD",
+    "release_id": 5875210,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2005-2007": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "lemonheads-somerset-house-2006-07-16"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Zwan",
+    "title": "Mary Star Of The Sea",
+    "format": "CD",
+    "release_id": 2733154,
+    "favourite": false
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Hello Nasty",
+    "format": "CD",
+    "release_id": 3527852,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Sigur Rós",
+    "title": "Ágætis Byrjun",
+    "format": "CD",
+    "release_id": 14373724,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Graham Coxon",
+    "title": "Happiness In Magazines",
+    "format": "CD",
+    "release_id": 13547971,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "snorre-m"
+        ],
+        "events": [
+          "graham-coxon-roskilde-2004-07-02"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Stone Roses",
+    "title": "Second Coming",
+    "format": "CD",
+    "release_id": 386264,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Bees",
+    "title": "Sunshine Hit Me",
+    "format": "CD",
+    "release_id": 96900,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "Dream Injection 2",
+    "format": "CD",
+    "release_id": 33099,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Hope Of The States",
+    "title": "The Lost Riots",
+    "format": "CD",
+    "release_id": 539555,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "LoneLady",
+    "title": "Hinterland",
+    "format": "CD",
+    "release_id": 6802296,
+    "favourite": false
+  },
+  {
+    "artist": "Blur",
+    "title": "Chemical World",
+    "format": "CD",
+    "release_id": 752153,
+    "favourite": false
+  },
+  {
+    "artist": "The Jesus And Mary Chain",
+    "title": "Sound Of Speed E.P.",
+    "format": "CD",
+    "release_id": 639896,
+    "favourite": false
+  },
+  {
+    "artist": "Dr. Octagon",
+    "title": "Blue Flowers",
+    "format": "CD",
+    "release_id": 59307,
+    "favourite": false
+  },
+  {
+    "artist": "The Juan MacLean",
+    "title": "In A Dream",
+    "format": "CD",
+    "release_id": 6130267,
+    "favourite": false
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Songs From Northern Britain",
+    "format": "CD",
+    "release_id": 1159480,
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "teenage-fanclub-manchester-academy-2018-11-06"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Doves",
+    "title": "Lost Souls",
+    "format": "CD",
+    "release_id": 28141528,
+    "favourite": false
+  },
+  {
+    "artist": "The Doors",
+    "title": "L.A. Woman",
+    "format": "CD",
+    "release_id": 368697,
+    "first_released": "1971-04-19",
+    "favourite": false
+  },
+  {
+    "artist": "Sébastien Tellier",
+    "title": "Sexuality",
+    "format": "CD",
+    "release_id": 1261740,
+    "favourite": false
+  },
+  {
+    "artist": "Boards Of Canada",
+    "title": "Tomorrow's Harvest",
+    "format": "CD",
+    "release_id": 4647244,
+    "favourite": false
+  },
+  {
+    "artist": "Interpol",
+    "title": "Antics",
+    "format": "CD",
+    "release_id": 6657573,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "interpol-reading-2002-08-23"
+        ]
+      },
+      "2005-2007": {
+        "people": [
+          "liz-c",
+          "andy-m"
+        ],
+        "events": [
+          "interpol-reading-2007-08-24"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "title": "Yeah Yeah Yeahs",
+    "format": "CD",
+    "release_id": 15703988,
+    "favourite": false
+  },
+  {
+    "artist": "The Black Keys",
+    "title": "Attack & Release",
+    "format": "CD",
+    "release_id": 1328187,
+    "favourite": false
+  },
+  {
+    "artist": "Violent Femmes",
+    "title": "Violent Femmes",
+    "format": "CD",
+    "release_id": 670705,
+    "first_released": "1983-04-13",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Brendan Benson And The Wellfed Boys",
+    "title": "Metarie",
+    "format": "CD",
+    "release_id": 3637407,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "Parklife",
+    "format": "CD",
+    "release_id": 11693166,
+    "favourite": false
+  },
+  {
+    "artist": "R.E.M.",
+    "title": "Automatic For The People",
+    "format": "CD",
+    "release_id": 369889,
+    "first_released": "1992-10-05",
+    "favourite": false
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Check Your Head",
+    "format": "CD",
+    "release_id": 2327765,
+    "favourite": false
+  },
+  {
+    "artist": "The War On Drugs",
+    "title": "Lost In The Dream",
+    "format": "CD",
+    "release_id": 19284997,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "The Wonder Stuff",
+    "title": "Never Loved Elvis",
+    "format": "CD",
+    "release_id": 579374,
+    "favourite": false,
+    "favourite_tracks": [
+      12
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Divine Comedy",
+    "title": "Casanova",
+    "format": "CD",
+    "release_id": 15572644,
+    "first_released": "1996-04-29",
+    "favourite": false
+  },
+  {
+    "artist": "Chvrches",
+    "title": "The Bones Of What You Believe",
+    "format": "CD",
+    "release_id": 4935979,
+    "favourite": false
+  },
+  {
+    "artist": "Lemon Jelly",
+    "title": "Lost Horizons",
+    "format": "CD",
+    "release_id": 60340,
+    "favourite": false
+  },
+  {
+    "artist": "Joanna Newsom",
+    "title": "Ys",
+    "format": "CD",
+    "release_id": 9045536,
+    "favourite": false
+  },
+  {
+    "artist": "The Coral",
+    "title": "The Coral",
+    "format": "CD",
+    "release_id": 11893547,
+    "first_released": "2002-07-29",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "coral-glastonbury-2002-06-29"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Various",
+    "title": "The Northern Soul Story Vol. 4: Wigan Casino",
+    "format": "CD",
+    "release_id": 1828895,
+    "favourite": false
+  },
+  {
+    "artist": "Johnny Cash",
+    "title": "Ring Of Fire",
+    "format": "CD",
+    "release_id": 689299,
+    "favourite": false
+  },
+  {
+    "artist": "The Yardbirds",
+    "title": "Roger The Engineer",
+    "format": "CD",
+    "release_id": 2178864,
+    "first_released": "1966-07-15",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "My Bloody Valentine",
+    "title": "Loveless",
+    "format": "CD",
+    "release_id": 1084479,
+    "first_released": "1991-11-04",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "The Northern Soul Story Vol. 3: Blackpool Mecca",
+    "format": "CD",
+    "release_id": 1828882,
+    "favourite": false
+  },
+  {
+    "artist": "Grinderman",
+    "title": "Grinderman 2",
+    "format": "CD",
+    "release_id": 11869560,
+    "favourite": false
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "The Dark Side Of The Moon",
+    "format": "CD",
+    "release_id": 12058001,
+    "first_released": "1973-03-01",
+    "favourite": false
+  },
+  {
+    "artist": "Queens Of The Stone Age",
+    "title": "Songs For The Deaf",
+    "format": "CD",
+    "release_id": 856937,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "qotsa-kentish-town-2002-10-27"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Neil Young",
+    "title": "Harvest Moon",
+    "format": "CD",
+    "release_id": 386988,
+    "favourite": false
+  },
+  {
+    "artist": "The Flaming Lips",
+    "title": "Yoshimi Battles The Pink Robots",
+    "format": "CD",
+    "release_id": 15054641,
+    "first_released": "2002-07-16",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Mazzy Star",
+    "title": "So Tonight That I Might See",
+    "format": "CD",
+    "release_id": 10074157,
+    "first_released": "1993-09-27",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The Doors",
+    "title": "The Doors",
+    "format": "CD",
+    "release_id": 5277642,
+    "first_released": "1967-01-04",
+    "favourite": false
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "title": "Fever To Tell",
+    "format": "CD",
+    "release_id": 6506961,
+    "first_released": "2003-04-29",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "The Rolling Stones",
+    "title": "Exile On Main St",
+    "format": "CD",
+    "release_id": 12748638,
+    "first_released": "1972-05-12",
+    "favourite": false
+  },
+  {
+    "artist": "John Mayall & The Bluesbreakers",
+    "title": "A Hard Road",
+    "format": "CD",
+    "release_id": 1750652,
+    "first_released": "1967-02-17",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Lou Reed",
+    "title": "Transformer",
+    "format": "CD",
+    "release_id": 376296,
+    "first_released": "1972-11-08",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Gomez",
+    "title": "Bring It On",
+    "format": "CD",
+    "release_id": 392001,
+    "favourite": false
+  },
+  {
+    "artist": "Talk Talk",
+    "title": "The Colour Of Spring",
+    "format": "CD",
+    "release_id": 6230646,
+    "first_released": "1986-02-17",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The Jesus And Mary Chain",
+    "title": "Psychocandy",
+    "format": "CD",
+    "release_id": 368367,
+    "first_released": "1985-11-18",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Pixies",
+    "title": "Bossanova",
+    "format": "CD",
+    "release_id": 778266,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Iggy Pop",
+    "title": "Lust For Life / The Idiot",
+    "format": "CD",
+    "release_id": 9562268,
+    "favourite": false,
+    "favourite_tracks": [
+      5,
+      16
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "Blur",
+    "format": "CD",
+    "release_id": 11676897,
+    "first_released": "1997-01-29",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Neil Young",
+    "title": "Harvest",
+    "format": "CD",
+    "release_id": 14636771,
+    "first_released": "1972-02-01",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Burt Bacharach",
+    "title": "The Look Of Love (The Burt Bacharach Collection)",
+    "format": "CD",
+    "release_id": 4234575,
+    "favourite": false
+  },
+  {
+    "artist": "Bill Hicks",
+    "title": "Shock And Awe: Live At Oxford Playhouse 11 November 1992",
+    "format": "CD",
+    "release_id": 605401,
+    "favourite": false
+  },
+  {
+    "artist": "The Boo Radleys",
+    "title": "C'Mon Kids",
+    "format": "CD",
+    "release_id": 380951,
+    "favourite": false
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "Elephant",
+    "format": "CD",
+    "release_id": 5848693,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Orbital",
+    "title": "Snivilisation",
+    "format": "CD",
+    "release_id": 868,
+    "first_released": "1994-08-04",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "De Stijl",
+    "format": "CD",
+    "release_id": 367185,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "The Private Press",
+    "format": "CD",
+    "release_id": 2217251,
+    "favourite": false
+  },
+  {
+    "artist": "DJ Shadow / DJ Krush",
+    "title": "Lost & Found (S.F.L.) / Kemuri",
+    "format": "CD",
+    "release_id": 60077,
+    "first_released": "1994-09-12",
+    "favourite": false
+  },
+  {
+    "artist": "Electric Six",
+    "title": "Danger! High Voltage",
+    "format": "CD",
+    "release_id": 100789,
+    "favourite": false
+  },
+  {
+    "artist": "The Hives",
+    "title": "Your New Favourite Band",
+    "format": "CD",
+    "release_id": 6568498,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s",
+          "snorre-m"
+        ],
+        "events": [
+          "hives-reading-2002-08-24",
+          "hives-roskilde-2004-07-02"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Bob Dylan / The Band",
+    "title": "Before The Flood",
+    "format": "CD",
+    "release_id": 4030434,
+    "first_released": "1974-06-20",
+    "favourite": false,
+    "favourite_tracks": [
+      17
+    ]
+  },
+  {
+    "artist": "The Who",
+    "title": "Quadrophenia",
+    "format": "CD",
+    "release_id": 12976198,
+    "first_released": "1973-10-26",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Kings Of Leon",
+    "title": "Youth & Young Manhood",
+    "format": "CD",
+    "release_id": 789108,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s",
+          "snorre-m"
+        ],
+        "events": [
+          "kings-of-leon-astoria-2003-06-11",
+          "kings-of-leon-roskilde-2004-07-03"
+        ]
+      },
+      "2005-2007": {
+        "people": [
+          "liz-c",
+          "andy-m"
+        ],
+        "events": [
+          "kings-of-leon-reading-2007-08-24"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Music For The Jilted Generation",
+    "format": "CD",
+    "release_id": 2719,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Tears For Fears",
+    "title": "Songs From The Big Chair",
+    "format": "CD",
+    "release_id": 5019859,
+    "first_released": "1985-02-25",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Portishead",
+    "title": "Dummy",
+    "format": "CD",
+    "release_id": 4567815,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j",
+          "claire-p"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Protection",
+    "format": "CD",
+    "release_id": 10839151,
+    "first_released": "1994-09-26",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j",
+          "claire-p"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Smiths",
+    "title": "The Queen Is Dead",
+    "format": "CD",
+    "release_id": 8415088,
+    "first_released": "1986-06-16",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "Bob Dylan",
+    "title": "Blonde On Blonde",
+    "format": "CD",
+    "release_id": 15678099,
+    "first_released": "1966-06-20",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "The Zutons",
+    "title": "Who Killed...... The Zutons",
+    "format": "CD",
+    "release_id": 6618584,
+    "favourite": false
+  },
+  {
+    "artist": "Faith No More",
+    "title": "Angel Dust",
+    "format": "CD",
+    "release_id": 3581285,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "1993-1995": {
+        "events": [
+          "faith-no-more-phoenix-1993-07-17"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "UNKLE",
+    "title": "Psyence Fiction",
+    "format": "CD",
+    "release_id": 15784682,
+    "favourite": false,
+    "chapters": {
+      "2005-2007": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "unkle-reading-2007-08-25"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Whitey",
+    "title": "The Light At The End Of The Tunnel Is A Train",
+    "format": "CD",
+    "release_id": 572328,
+    "favourite": false
+  },
+  {
+    "artist": "LTJ Bukem",
+    "title": "Earth Volume One",
+    "format": "CD",
+    "release_id": 10296989,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Run The Jewels",
+    "title": "Run The Jewels",
+    "format": "CD",
+    "release_id": 5444215,
+    "favourite": false
+  },
+  {
+    "artist": "Queens Of The Stone Age",
+    "title": "R",
+    "format": "CD",
+    "release_id": 1053498,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Money Mark",
+    "title": "Third Version E.P.",
+    "format": "CD",
+    "release_id": 26298,
+    "favourite": false
+  },
+  {
+    "artist": "The Black Dog",
+    "title": "Spanners",
+    "format": "CD",
+    "release_id": 625,
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "Brendan Benson",
+    "title": "One Mississippi",
+    "format": "CD",
+    "release_id": 947120,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "Stories From The City, Stories From The Sea",
+    "format": "CD",
+    "release_id": 8384040,
+    "favourite": false
+  },
+  {
+    "artist": "Mondo Generator",
+    "title": "A Drug Problem That Never Existed",
+    "format": "CD",
+    "release_id": 482202,
+    "favourite": false
+  },
+  {
+    "artist": "The Horrors",
+    "title": "Luminous",
+    "format": "CD",
+    "release_id": 5652282,
+    "favourite": false
+  },
+  {
+    "artist": "Senseless Things",
+    "title": "The First Of Too Many",
+    "format": "CD",
+    "release_id": 607822,
+    "favourite": false
+  },
+  {
+    "artist": "OutKast",
+    "title": "Speakerboxxx / The Love Below",
+    "format": "CD",
+    "release_id": 233863,
+    "favourite": false
+  },
+  {
+    "artist": "Kate Bush",
+    "title": "Hounds Of Love",
+    "format": "CD",
+    "release_id": 18476518,
+    "first_released": "1985-09-16",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Ash",
+    "title": "Intergalactic Sonic 7\"s",
+    "format": "CD",
+    "release_id": 1108690,
+    "favourite": false,
+    "favourite_tracks": [
+      12
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "ash-glastonbury-2002-06-28"
+        ]
+      },
+      "2005-2007": {
+        "people": [
+          "liz-c",
+          "steve-s"
+        ],
+        "events": [
+          "ash-ulu-2007-03-09"
+        ]
+      },
+      "1996-1998": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Pulp",
+    "title": "This Is Hardcore",
+    "format": "CD",
+    "release_id": 9068895,
+    "first_released": "1998-03-30",
+    "favourite": false
+  },
+  {
+    "artist": "Patti Smith Group",
+    "title": "Easter",
+    "format": "CD",
+    "release_id": 7728671,
+    "first_released": "1978-03-03",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Crowded House",
+    "title": "Woodface",
+    "format": "CD",
+    "release_id": 19043320,
+    "first_released": "1991-07-01",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "alvechurch"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Nirvana",
+    "title": "Nevermind",
+    "format": "CD",
+    "release_id": 7662722,
+    "first_released": "1991-09-24",
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "Jackie Brown (Music From The Miramax Motion Picture)",
+    "format": "CD",
+    "release_id": 505215,
+    "favourite": false
+  },
+  {
+    "artist": "Beth Orton",
+    "title": "Central Reservation",
+    "format": "CD",
+    "release_id": 10436044,
+    "first_released": "1999-03-09",
+    "favourite": false
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Licensed To Ill",
+    "format": "CD",
+    "release_id": 11083427,
+    "first_released": "1986-11-15",
+    "favourite": false
+  },
+  {
+    "artist": "Joy Division",
+    "title": "Closer",
+    "format": "CD",
+    "release_id": 220373,
+    "first_released": "1980-07-18",
+    "favourite": false
+  },
+  {
+    "artist": "Stevie Wonder",
+    "title": "Innervisions",
+    "format": "CD",
+    "release_id": 7721683,
+    "first_released": "1973-08-03",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Peter Green's Fleetwood Mac",
+    "format": "CD",
+    "release_id": 18510322,
+    "first_released": "1968-02-24",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Ash",
+    "title": "Trailer",
+    "format": "CD",
+    "release_id": 29151901,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Dusty Springfield",
+    "title": "Dusty In Memphis",
+    "format": "CD",
+    "release_id": 5372962,
+    "first_released": "1969-03-31",
+    "favourite": false
+  },
+  {
+    "artist": "Marvin Gaye",
+    "title": "What's Going On",
+    "format": "CD",
+    "release_id": 13825432,
+    "first_released": "1971-05-21",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Pulp",
+    "title": "His 'N' Hers",
+    "format": "CD",
+    "release_id": 302172,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "1996-1998": {
+        "events": [
+          "pulp-v-festival-1996-08-18"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Mezzanine",
+    "format": "CD",
+    "release_id": 104147,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Bob Dylan",
+    "title": "The Freewheelin' Bob Dylan",
+    "format": "CD",
+    "release_id": 1825485,
+    "first_released": "1963-05-27",
+    "favourite": false
+  },
+  {
+    "artist": "Scott Walker",
+    "title": "14 Original Recordings",
+    "format": "CD",
+    "release_id": 2594609,
+    "favourite": false
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "The Peel Sessions 1991 - 2004",
+    "format": "CD",
+    "release_id": 7991692,
+    "favourite": false
+  },
+  {
+    "artist": "Echo & The Bunnymen",
+    "title": "Ballyhoo - The Best Of Echo & The Bunnymen",
+    "format": "CD",
+    "release_id": 432580,
+    "favourite": false,
+    "favourite_tracks": [
+      17
+    ]
+  },
+  {
+    "artist": "Neil Young",
+    "title": "Decade",
+    "format": "CD",
+    "release_id": 1138723,
+    "first_released": "1977-10-28",
+    "favourite": false
+  },
+  {
+    "artist": "Grandaddy",
+    "title": "Under The Western Freeway",
+    "format": "CD",
+    "release_id": 4106253,
+    "favourite": false
+  },
+  {
+    "artist": "The Charlatans",
+    "title": "Melting Pot",
+    "format": "CD",
+    "release_id": 549356,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Super Furry Animals",
+    "title": "Hometown Unicorn",
+    "format": "CD",
+    "release_id": 2209609,
+    "favourite": false
+  },
+  {
+    "artist": "Nick Cave & The Bad Seeds",
+    "title": "The Best Of Nick Cave & The Bad Seeds",
+    "format": "CD",
+    "release_id": 25847062,
+    "first_released": "1998-05-11",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Joy Division",
+    "title": "Unknown Pleasures",
+    "format": "CD",
+    "release_id": 12376467,
+    "first_released": "1979-06-15",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Pavement",
+    "title": "Terror Twilight",
+    "format": "CD",
+    "release_id": 10978387,
+    "first_released": "1999-05-24",
+    "favourite": false
+  },
+  {
+    "artist": "T. Rex",
+    "title": "Electric Warrior",
+    "format": "CD",
+    "release_id": 6547479,
+    "first_released": "1971-09-24",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Nirvana",
+    "title": "MTV Unplugged",
+    "format": "CD",
+    "release_id": 17148451,
+    "favourite": false
+  },
+  {
+    "artist": "The Breeders",
+    "title": "Last Splash",
+    "format": "CD",
+    "release_id": 7443942,
+    "first_released": "1993-08-30",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "breeders-ritz-manchester-2018-07-13"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Jesus And Mary Chain",
+    "title": "21 Singles",
+    "format": "CD",
+    "release_id": 426646,
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Flying Lotus",
+    "title": "You're Dead!",
+    "format": "CD",
+    "release_id": 6151948,
+    "favourite": false
+  },
+  {
+    "artist": "Luke Slater",
+    "title": "Freek Funk",
+    "format": "CD",
+    "release_id": 13745,
+    "favourite": false
+  },
+  {
+    "artist": "Aphex Twin",
+    "title": "Syro",
+    "format": "CD",
+    "release_id": 6112678,
+    "favourite": false
+  },
+  {
+    "artist": "Orbital",
+    "title": "The Middle Of Nowhere",
+    "format": "CD",
+    "release_id": 3648,
+    "favourite": false
+  },
+  {
+    "artist": "Graham Coxon",
+    "title": "The Kiss Of Morning",
+    "format": "CD",
+    "release_id": 562116,
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "Doves",
+    "title": "The Last Broadcast",
+    "format": "CD",
+    "release_id": 1367661,
+    "favourite": false
+  },
+  {
+    "artist": "The Waterboys",
+    "title": "Fisherman's Blues",
+    "format": "CD",
+    "release_id": 1798131,
+    "first_released": "1988-10-17",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Joy Division",
+    "title": "Permanent: Joy Division 1995",
+    "format": "CD",
+    "release_id": 529367,
+    "first_released": "1995-05-08",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Vanishing Point",
+    "format": "CD",
+    "release_id": 3815668,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Public Enemy",
+    "title": "Fear Of A Black Planet",
+    "format": "CD",
+    "release_id": 13478282,
+    "first_released": "1990-04-10",
+    "favourite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "title": "Experimental Jet Set, Trash And No Star",
+    "format": "CD",
+    "release_id": 370547,
+    "favourite": false,
+    "chapters": {
+      "1993-1995": {
+        "events": [
+          "sonic-youth-phoenix-1993-07-16"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "title": "Mellon Collie And The Infinite Sadness",
+    "format": "CD",
+    "release_id": 11415438,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "The Kills",
+    "title": "Keep On Your Mean Side",
+    "format": "CD",
+    "release_id": 10147386,
+    "favourite": false
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Discovery",
+    "format": "CD",
+    "release_id": 7148042,
+    "first_released": "2001-03-12",
+    "favourite": false,
+    "favourite_tracks": [
+      11
+    ]
+  },
+  {
+    "artist": "Free",
+    "title": "Tons Of Sobs",
+    "format": "CD",
+    "release_id": 6591772,
+    "first_released": "1969-03-14",
+    "favourite": false
+  },
+  {
+    "artist": "The Sleepy Jackson",
+    "title": "Lovers",
+    "format": "CD",
+    "release_id": 909113,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Wish You Were Here",
+    "format": "CD",
+    "release_id": 20024248,
+    "first_released": "1975-09-12",
+    "favourite": false
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "title": "Further",
+    "format": "CD",
+    "release_id": 9282486,
+    "first_released": "2010-06-14",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "The Orb",
+    "title": "Live 93",
+    "format": "CD",
+    "release_id": 4356151,
+    "first_released": "1993-11-22",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "The Smiths",
+    "title": "Hatful Of Hollow",
+    "format": "CD",
+    "release_id": 7994656,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Johnny Cash",
+    "title": "American IV: The Man Comes Around",
+    "format": "CD",
+    "release_id": 8447350,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Bernard Butler",
+    "title": "People Move On",
+    "format": "CD",
+    "release_id": 1737055,
+    "favourite": false
+  },
+  {
+    "artist": "Beck",
+    "title": "Mellow Gold",
+    "format": "CD",
+    "release_id": 451883,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Tusk",
+    "format": "CD",
+    "release_id": 12074227,
+    "first_released": "1979-10-12",
+    "favourite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "title": "Sugar Kane",
+    "format": "CD",
+    "release_id": 686992,
+    "favourite": false
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Screamadelica",
+    "format": "CD",
+    "release_id": 4643403,
+    "favourite": false,
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Doors",
+    "title": "The Best Of The Doors",
+    "format": "CD",
+    "release_id": 371381,
+    "favourite": false
+  },
+  {
+    "artist": "Mercury Rev",
+    "title": "Deserter's Songs",
+    "format": "CD",
+    "release_id": 374585,
+    "favourite": false
+  },
+  {
+    "artist": "The Kinks",
+    "title": "The Best Of The Kinks - You Really Got Me",
+    "format": "CD",
+    "release_id": 415202,
+    "favourite": false
+  },
+  {
+    "artist": "Blur",
+    "title": "Leisure",
+    "format": "CD",
+    "release_id": 387046,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "alastair-j"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Hole",
+    "title": "Live Through This",
+    "format": "CD",
+    "release_id": 6569348,
+    "first_released": "1994-04-12",
+    "favourite": false
+  },
+  {
+    "artist": "Belle & Sebastian",
+    "title": "Dear Catastrophe Waitress",
+    "format": "CD",
+    "release_id": 441439,
+    "favourite": false,
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "belle-and-sebastian-glastonbury-2002-06-30"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Pulp",
+    "title": "Hits",
+    "format": "CD",
+    "release_id": 567219,
+    "favourite": false
+  },
+  {
+    "artist": "Hole",
+    "title": "Celebrity Skin",
+    "format": "CD",
+    "release_id": 3544201,
+    "favourite": false
+  },
+  {
+    "artist": "Pulp",
+    "title": "We Love Life",
+    "format": "CD",
+    "release_id": 11978885,
+    "first_released": "2001-10-22",
+    "favourite": false
+  },
+  {
+    "artist": "New Order",
+    "title": "Substance",
+    "format": "CD",
+    "release_id": 10069749,
+    "first_released": "1987-08-17",
+    "favourite": false,
+    "chapters": {
+      "2002-2004": {
+        "events": [
+          "new-order-finsbury-park-2002-06-09"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Super Furry Animals",
+    "title": "God! Show Me Magic",
+    "format": "CD",
+    "release_id": 25413,
+    "favourite": false
+  },
+  {
+    "artist": "Arab Strap",
+    "title": "Elephant Shoe",
+    "format": "CD",
+    "release_id": 83667,
+    "favourite": false
+  },
+  {
+    "artist": "Scott Walker",
+    "title": "Scott 4",
+    "format": "CD",
+    "release_id": 1788077,
+    "first_released": "1969-11-01",
+    "favourite": false
+  },
+  {
+    "artist": "Nirvana",
+    "title": "In Utero",
+    "format": "CD",
+    "release_id": 4023898,
+    "favourite": false
+  },
+  {
+    "artist": "The Velvet Underground & Nico",
+    "title": "The Velvet Underground & Nico",
+    "format": "CD",
+    "release_id": 936940,
+    "favourite": false
+  },
+  {
+    "artist": "Jeff Beck",
+    "title": "Truth",
+    "format": "CD",
+    "release_id": 9027858,
+    "first_released": "1968-07-29",
+    "favourite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "title": "Goo",
+    "format": "CD",
+    "release_id": 499522,
+    "favourite": false
+  },
+  {
+    "artist": "Supergrass",
+    "title": "I Should Coco",
+    "format": "CD",
+    "release_id": 4147466,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "1996-1998": {
+        "people": [
+          "steve-s",
+          "alastair-j"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": [
+          "supergrass-v-festival-1996-08-18"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Grandaddy",
+    "title": "The Broken Down Comforter Collection",
+    "format": "CD",
+    "release_id": 538423,
+    "favourite": false
+  },
+  {
+    "artist": "Belle & Sebastian",
+    "title": "Tigermilk",
+    "format": "CD",
+    "release_id": 368727,
+    "first_released": "1996-06-06",
+    "favourite": false
+  },
+  {
+    "artist": "The Cure",
+    "title": "Wish",
+    "format": "CD",
+    "release_id": 13529841,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "1990-1992": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Derek & The Dominos",
+    "title": "Layla And Other Assorted Love Songs",
+    "format": "CD",
+    "release_id": 3504290,
+    "first_released": "1970-11-09",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ],
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Velvet Underground",
+    "title": "The Velvet Underground",
+    "format": "CD",
+    "release_id": 15999085,
+    "first_released": "1969-03-00",
+    "favourite": false
+  },
+  {
+    "artist": "Television",
+    "title": "Marquee Moon",
+    "format": "CD",
+    "release_id": 380264,
+    "first_released": "1977-02-08",
+    "favourite": false
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Exterminator (XTRMNTR)",
+    "format": "CD",
+    "release_id": 93684,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "The Smiths",
+    "title": "...Best II",
+    "format": "CD",
+    "release_id": 382589,
+    "favourite": false
+  },
+  {
+    "artist": "The Strokes",
+    "title": "Hard To Explain",
+    "format": "CD",
+    "release_id": 1291037,
+    "favourite": false
+  },
+  {
+    "artist": "The Verve",
+    "title": "A Northern Soul",
+    "format": "CD",
+    "release_id": 3306410,
+    "favourite": false,
+    "favourite_tracks": [
+      8
+    ]
+  },
+  {
+    "artist": "Suede",
+    "title": "Dog Man Star",
+    "format": "CD",
+    "release_id": 386087,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Arcade Fire",
+    "title": "Reflektor",
+    "format": "CD",
+    "release_id": 15422362,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Pulp",
+    "title": "Mis-Shapes & Sorted For E's & Wizz",
+    "format": "CD",
+    "release_id": 489189,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "T. Rex",
+    "title": "The Slider",
+    "format": "CD",
+    "release_id": 2536549,
+    "first_released": "1972-07-21",
+    "favourite": false
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "4-Track Demos",
+    "format": "CD",
+    "release_id": 501431,
+    "favourite": false
+  },
+  {
+    "artist": "Tindersticks",
+    "title": "Tindersticks",
+    "format": "CD",
+    "release_id": 1510729,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "De La Soul",
+    "title": "3 Feet High And Rising",
+    "format": "CD",
+    "release_id": 15953303,
+    "favourite": false
+  },
+  {
+    "artist": "George Harrison",
+    "title": "All Things Must Pass",
+    "format": "CD",
+    "release_id": 13457732,
+    "first_released": "1970-11-27",
+    "favourite": false,
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "AC/DC",
+    "title": "If You Want Blood You've Got It",
+    "format": "CD",
+    "release_id": 16216033,
+    "first_released": "1978-10-13",
+    "favourite": false
+  },
+  {
+    "artist": "The Smiths",
+    "title": "Singles",
+    "format": "CD",
+    "release_id": 2836667,
+    "favourite": false
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Fleetwood Mac",
+    "format": "CD",
+    "release_id": 6664614,
+    "first_released": "1975-07-11",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ]
+  },
+  {
+    "artist": "The Clash",
+    "title": "The Clash",
+    "format": "CD",
+    "release_id": 7699425,
+    "first_released": "1977-04-08",
+    "favourite": false
+  },
+  {
+    "artist": "Tom Petty And The Heartbreakers",
+    "title": "Damn The Torpedoes",
+    "format": "CD",
+    "release_id": 4592429,
+    "first_released": "1979-10-19",
+    "favourite": false
+  },
+  {
+    "artist": "Portishead",
+    "title": "Portishead",
+    "format": "CD",
+    "release_id": 764953,
+    "favourite": false
+  },
+  {
+    "artist": "The Strokes",
+    "title": "Is This It",
+    "format": "CD",
+    "release_id": 14432639,
+    "first_released": "2001-07-30",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "strokes-reading-2002-08-23"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Happy Mondays",
+    "title": "Pills 'N' Thrills And Bellyaches",
+    "format": "CD",
+    "release_id": 939594,
+    "first_released": "1990-11-05",
+    "favourite": false
+  },
+  {
+    "artist": "Curtis Mayfield",
+    "title": "Curtis",
+    "format": "CD",
+    "release_id": 15175398,
+    "first_released": "1970-09-00",
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "The Northern Soul Story Vol. 2: The Golden Torch",
+    "format": "CD",
+    "release_id": 1828861,
+    "favourite": false
+  },
+  {
+    "artist": "Jimi Hendrix",
+    "title": "Experience Hendrix - The Best Of Jimi Hendrix",
+    "format": "CD",
+    "release_id": 5177754,
+    "first_released": "1997-09-16",
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "Franz Ferdinand",
+    "title": "Franz Ferdinand",
+    "format": "CD",
+    "release_id": 355287,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "snorre-m",
+          "liz-c"
+        ],
+        "events": [
+          "franz-ferdinand-roskilde-2004-07-04",
+          "franz-ferdinand-brixton-2004-10-30"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Neil Young + Crazy Horse",
+    "title": "Ragged Glory",
+    "format": "CD",
+    "release_id": 11454451,
+    "favourite": false
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "format": "CD",
+    "release_id": 10374962,
+    "first_released": "1997-01-20",
+    "favourite": false
+  },
+  {
+    "artist": "Primal Scream",
+    "title": "Give Out But Don't Give Up",
+    "format": "CD",
+    "release_id": 339112,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Julian Cope",
+    "title": "The Collection",
+    "format": "CD",
+    "release_id": 1982359,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "The Who",
+    "title": "Tommy",
+    "format": "CD",
+    "release_id": 11604865,
+    "first_released": "1969-05-19",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ]
+  },
+  {
+    "artist": "Black Rebel Motorcycle Club",
+    "title": "B.R.M.C.",
+    "format": "CD",
+    "release_id": 1128171,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "brmc-glastonbury-2002-06-30"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Charlatans",
+    "title": "Forever. The Singles.",
+    "format": "CD",
+    "release_id": 1493323,
+    "favourite": false
+  },
+  {
+    "artist": "The Fall",
+    "title": "The Wonderful And Frightening World Of... The Fall",
+    "format": "CD",
+    "release_id": 8765,
+    "first_released": "1984-10-12",
+    "favourite": false
+  },
+  {
+    "artist": "Grandaddy",
+    "title": "The Sophtware Slump",
+    "format": "CD",
+    "release_id": 6670142,
+    "favourite": false
+  },
+  {
+    "artist": "Blur",
+    "title": "The Great Escape",
+    "format": "CD",
+    "release_id": 7145819,
+    "first_released": "1995-09-11",
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Mark Lanegan Band",
+    "title": "Bubblegum",
+    "format": "CD",
+    "release_id": 389427,
+    "favourite": false
+  },
+  {
+    "artist": "The Coral",
+    "title": "Magic And Medicine",
+    "format": "CD",
+    "release_id": 418059,
+    "favourite": false
+  },
+  {
+    "artist": "Jeff Buckley",
+    "title": "Grace",
+    "format": "CD",
+    "release_id": 376332,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ],
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [
+          "kilburn"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Sugar",
+    "title": "Copper Blue",
+    "format": "CD",
+    "release_id": 770862,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ]
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Blood Sugar Sex Magik",
+    "format": "CD",
+    "release_id": 367882,
+    "favourite": false,
+    "chapters": {
+      "2005-2007": {
+        "people": [
+          "liz-c",
+          "andy-m"
+        ],
+        "events": [
+          "rhcp-reading-2007-08-25"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "The Boo Radleys",
+    "title": "Everything's Alright Forever",
+    "format": "CD",
+    "release_id": 380812,
+    "favourite": false
+  },
+  {
+    "artist": "Spiritualized",
+    "title": "Pure Phase",
+    "format": "CD",
+    "release_id": 2793758,
+    "favourite": false
+  },
+  {
+    "artist": "Janelle Monáe",
+    "title": "The Electric Lady",
+    "format": "CD",
+    "release_id": 4897334,
+    "favourite": false
+  },
+  {
+    "artist": "Cream",
+    "title": "Disraeli Gears",
+    "format": "CD",
+    "release_id": 428380,
+    "first_released": "1967-11-02",
+    "favourite": false,
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Teenage Fanclub",
+    "title": "Thirteen",
+    "format": "CD",
+    "release_id": 3967721,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "teenage-fanclub-manchester-academy-2018-11-05"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "Enter The Wu-Tang (36 Chambers)",
+    "format": "CD",
+    "release_id": 6269551,
+    "first_released": "1993-11-09",
+    "favourite": false
+  },
+  {
+    "artist": "Love",
+    "title": "Forever Changes",
+    "format": "CD",
+    "release_id": 498668,
+    "first_released": "1967-11-01",
+    "favourite": false
+  },
+  {
+    "artist": "Joy Division",
+    "title": "Substance",
+    "format": "CD",
+    "release_id": 4853390,
+    "first_released": "1988-07-11",
+    "favourite": false
+  },
+  {
+    "artist": "The Walker Brothers",
+    "title": "After The Lights Go Out - The Best Of 1965-1967",
+    "format": "CD",
+    "release_id": 3768340,
+    "favourite": false
+  },
+  {
+    "artist": "Richard Hell & The Voidoids",
+    "title": "Blank Generation",
+    "format": "CD",
+    "release_id": 4883238,
+    "first_released": "1977-09-00",
+    "favourite": false
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "title": "Siamese Dream",
+    "format": "CD",
+    "release_id": 367864,
+    "favourite": false
+  },
+  {
+    "artist": "John Mayall With Eric Clapton",
+    "title": "Blues Breakers",
+    "format": "CD",
+    "release_id": 13032942,
+    "first_released": "1966-07-22",
+    "favourite": false,
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Stooges",
+    "title": "Raw Power",
+    "format": "CD",
+    "release_id": 8587163,
+    "first_released": "1973-02-07",
+    "favourite": false
+  },
+  {
+    "artist": "Ramones",
+    "title": "Ramones",
+    "format": "CD",
+    "release_id": 10759730,
+    "first_released": "1976-04-23",
+    "favourite": false
+  },
+  {
+    "artist": "Buzzcocks",
+    "title": "Love Bites",
+    "format": "CD",
+    "release_id": 2302525,
+    "first_released": "1978-09-22",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Blur",
+    "title": "13",
+    "format": "CD",
+    "release_id": 380176,
+    "favourite": false,
+    "favourite_tracks": [
+      12
+    ],
+    "chapters": {
+      "1999-2001": {
+        "people": [],
+        "places": [
+          "parsons-green"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Smiths",
+    "title": "Strangeways, Here We Come",
+    "format": "CD",
+    "release_id": 10038222,
+    "first_released": "1987-09-28",
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ]
+  },
+  {
+    "artist": "Nick Cave & The Bad Seeds",
+    "title": "The Lyre Of Orpheus",
+    "format": "CD",
+    "release_id": 11332503,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "The Northern Soul Story Vol. 1: The Twisted Wheel",
+    "format": "CD",
+    "release_id": 1828837,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "Wigan Casino 40 Northern Soul",
+    "format": "CD",
+    "release_id": 10653892,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ],
+    "chapters": {
+      "2013-2015": {
+        "people": [
+          "liz-c"
+        ],
+        "places": [
+          "crystal-palace"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Elbow",
+    "title": "Asleep In The Back",
+    "format": "CD",
+    "release_id": 421557,
+    "favourite": false
+  },
+  {
+    "artist": "Talking Heads",
+    "title": "The Best Of Talking Heads",
+    "format": "CD",
+    "release_id": 12787326,
+    "first_released": "2004-08-17",
+    "favourite": false
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "Get Behind Me Satan",
+    "format": "CD",
+    "release_id": 7151374,
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "Manic Street Preachers",
+    "title": "Generation Terrorists",
+    "format": "CD",
+    "release_id": 4170983,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "1993-1995": {
+        "events": [
+          "manics-phoenix-1993-07-18"
+        ]
+      },
+      "2008-2012": {
+        "people": [
+          "liz-c",
+          "jon-b"
+        ],
+        "events": [
+          "manics-festival-hall-2008-09-12"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Van Morrison",
+    "title": "Astral Weeks",
+    "format": "CD",
+    "release_id": 3356041,
+    "first_released": "1968-11-29",
+    "favourite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "title": "Dirty",
+    "format": "CD",
+    "release_id": 13313379,
+    "first_released": "1992-07-21",
+    "favourite": false
+  },
+  {
+    "artist": "David Holmes",
+    "title": "Lets Get Killed",
+    "format": "CD",
+    "release_id": 3297,
+    "favourite": false
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Get It Together / Sabotage",
+    "format": "CD",
+    "release_id": 1043718,
+    "favourite": false
+  },
+  {
+    "artist": "DJ Krush / DJ Shadow",
+    "title": "A Whim / 89.9 Megamix / Yeah",
+    "format": "CD",
+    "release_id": 18667,
+    "favourite": false
+  },
+  {
+    "artist": "Various",
+    "title": "After Dark",
+    "format": "CD",
+    "release_id": 995078,
+    "favourite": false
+  },
+  {
+    "artist": "Kings Of Leon",
+    "title": "Holy Roller Novocaine",
+    "format": "CD",
+    "release_id": 1867845,
+    "favourite": false
+  },
+  {
+    "artist": "Pixies",
+    "title": "Death To The Pixies",
+    "format": "CD",
+    "release_id": 447112,
+    "favourite": false
+  },
+  {
+    "artist": "Pixies",
+    "title": "Trompe Le Monde",
+    "format": "CD",
+    "release_id": 369383,
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Pavement",
+    "title": "Wowee Zowee",
+    "format": "CD",
+    "release_id": 389734,
+    "favourite": false
+  },
+  {
+    "artist": "Beck",
+    "title": "Odelay",
+    "format": "CD",
+    "release_id": 11590562,
+    "favourite": false
+  },
+  {
+    "artist": "Supergrass",
+    "title": "Caught By The Fuzz",
+    "format": "CD",
+    "release_id": 6457447,
+    "favourite": false
+  },
+  {
+    "artist": "Oasis",
+    "title": "Shakermaker",
+    "format": "CD",
+    "release_id": 749279,
+    "favourite": false
+  },
+  {
+    "artist": "The Strokes",
+    "title": "The Modern Age",
+    "format": "CD",
+    "release_id": 1291065,
+    "favourite": false
+  },
+  {
+    "artist": "The Breeders",
+    "title": "Cannonball",
+    "format": "CD",
+    "release_id": 1307276,
+    "favourite": false
+  },
+  {
+    "artist": "Beck",
+    "title": "Midnite Vultures",
+    "format": "CD",
+    "release_id": 7040450,
+    "first_released": "1999-11-23",
+    "favourite": false,
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "steve-s",
+          "claire-p"
+        ],
+        "places": [
+          "parsons-green"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Pavement",
+    "title": "Brighten The Corners",
+    "format": "CD",
+    "release_id": 6066123,
+    "favourite": false
+  },
+  {
+    "artist": "Super Furry Animals",
+    "title": "The Man Don't Give A Fuck",
+    "format": "CD",
+    "release_id": 779463,
+    "favourite": false
+  },
+  {
+    "artist": "Black Sabbath",
+    "title": "Paranoid",
+    "format": "CD",
+    "release_id": 2272448,
+    "first_released": "1970-09-18",
+    "favourite": false,
+    "favourite_tracks": [
+      2
+    ]
+  },
+  {
+    "artist": "Various",
+    "title": "Northern Soul (The Collection)",
+    "format": "CD",
+    "release_id": 5003748,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Pixies",
+    "title": "Surfer Rosa",
+    "format": "CD",
+    "release_id": 4115919,
+    "first_released": "1988-03-21",
+    "favourite": false
+  },
+  {
+    "artist": "Suede",
+    "title": "Suede",
+    "format": "CD",
+    "release_id": 17773057,
+    "first_released": "1993-03-29",
+    "favourite": false,
+    "favourite_tracks": [
+      9
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "south-bromsgrove-high-school"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "The Beach Boys",
+    "title": "The Very Best Of The Beach Boys",
+    "format": "CD",
+    "release_id": 8492038,
+    "first_released": "2001-07-24",
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "AIR",
+    "title": "Moon Safari",
+    "format": "CD",
+    "release_id": 1820430,
+    "favourite": false,
+    "favourite_tracks": [
+      4
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "air-glastonbury-2002-06-30"
+        ]
+      },
+      "1996-1998": {
+        "people": [
+          "claire-p"
+        ],
+        "places": [
+          "university-of-plymouth"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "Pixies",
+    "title": "Doolittle",
+    "format": "CD",
+    "release_id": 5923509,
+    "first_released": "1989-04-17",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "snorre-m"
+        ],
+        "events": [
+          "pixies-roskilde-2004-07-02"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Prince And The Revolution",
+    "title": "Purple Rain",
+    "format": "CD",
+    "release_id": 16304232,
+    "first_released": "1984-07-27",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ]
+  },
+  {
+    "artist": "Björk",
+    "title": "Debut",
+    "format": "CD",
+    "release_id": 1059533,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
+    "artist": "The Stooges",
+    "title": "The Stooges",
+    "format": "CD",
+    "release_id": 505192,
+    "first_released": "1969-07-05",
+    "favourite": false
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Rumours",
+    "format": "CD",
+    "release_id": 4269850,
+    "first_released": "1977-02-04",
+    "favourite": false
+  },
+  {
+    "artist": "Orbital",
+    "title": "Orbital",
+    "format": "CD",
+    "release_id": 865,
+    "first_released": "1993-05-24",
+    "favourite": false,
+    "favourite_tracks": [
+      5
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [
+          "andrew-d",
+          "shirley-h",
+          "mark-c"
+        ],
+        "places": [
+          "cadbury-college"
+        ]
+      },
+      "2002-2004": {
+        "people": [
+          "claire-p"
+        ],
+        "events": [
+          "orbital-glastonbury-2002-06-29"
+        ]
+      },
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "orbital-manchester-apollo-2017-12-01"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Nirvana",
+    "title": "Bleach",
+    "format": "CD",
+    "release_id": 371253,
+    "first_released": "1989-06-15",
+    "favourite": false,
+    "favourite_tracks": [
+      3
+    ]
+  },
+  {
+    "artist": "The Charlatans",
+    "title": "The Charlatans",
+    "format": "CD",
+    "release_id": 2752157,
+    "favourite": false
+  },
+  {
+    "artist": "Janelle Monáe",
+    "title": "The ArchAndroid",
+    "format": "CD",
+    "release_id": 2358638,
+    "favourite": false
+  },
+  {
+    "artist": "The Beatles",
+    "title": 1,
+    "format": "CD",
+    "release_id": 380213,
+    "favourite": false
+  },
+  {
+    "artist": "The Rolling Stones",
+    "title": "Forty Licks",
+    "format": "CD",
+    "release_id": 27864702,
+    "favourite": false
+  },
+  {
+    "artist": "The Beach Boys",
+    "title": "Pet Sounds",
+    "format": "CD",
+    "release_id": 8095403,
+    "first_released": "1966-05-16",
+    "favourite": false
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "The Colour And The Shape",
+    "format": "CD",
+    "release_id": 391946,
+    "favourite": false,
+    "favourite_tracks": [
+      7
+    ],
+    "chapters": {
+      "2002-2004": {
+        "people": [
+          "steve-s"
+        ],
+        "events": [
+          "foo-fighters-reading-2002-08-24"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Scott Walker",
+    "title": "Boy Child: 67-70",
+    "format": "CD",
+    "release_id": 452402,
+    "first_released": "1990-06-05",
+    "favourite": false,
+    "favourite_tracks": [
+      15
+    ]
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "Greatest Hits",
+    "format": "CD",
+    "release_id": 1470884,
+    "favourite": false
+  },
+  {
+    "artist": "R.E.M.",
+    "title": "In Time: The Best Of R.E.M. 1988-2003",
+    "format": "CD",
+    "release_id": 14226708,
+    "first_released": "2003-10-27",
+    "favourite": false
+  },
+  {
+    "artist": "David Bowie",
+    "title": "The Platinum Collection",
+    "format": "CD",
+    "release_id": 8057163,
+    "first_released": "2005-11-07",
+    "favourite": false,
+    "chapters": {
+      "1999-2001": {
+        "people": [
+          "steve-s",
+          "claire-p"
+        ],
+        "events": [
+          "bowie-glastonbury-2000-06-25"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Ill Communication",
+    "format": "CD",
+    "release_id": 23211086,
+    "first_released": "1994-05-31",
+    "favourite": false,
+    "favourite_tracks": [
+      6
+    ],
+    "chapters": {
+      "1993-1995": {
+        "people": [],
+        "places": [
+          "cadbury-college"
+        ],
+        "events": []
+      }
+    }
+  },
+  {
+    "artist": "PJ Harvey",
+    "title": "Rid Of Me",
+    "format": "CD",
+    "release_id": 5727668,
+    "favourite": false
+  },
+  {
+    "artist": "The Cure",
+    "title": "Staring At The Sea - The Singles",
+    "format": "CD",
+    "release_id": 10957012,
+    "favourite": false,
+    "favourite_tracks": [
+      15
+    ]
+  },
+  {
+    "artist": "Arcade Fire",
+    "title": "The Suburbs",
+    "format": "CD",
+    "release_id": 14321778,
+    "favourite": false,
+    "favourite_tracks": [
+      15
+    ],
+    "chapters": {
+      "2016-2020": {
+        "people": [
+          "liz-c"
+        ],
+        "events": [
+          "arcade-fire-castlefield-2017-07-06",
+          "arcade-fire-manchester-arena-2018-04-08"
+        ]
+      }
+    }
+  },
+  {
+    "artist": "Beck",
+    "title": "Mutations",
+    "format": "CD",
+    "release_id": 2436821,
+    "favourite": false,
+    "favourite_tracks": [
+      1
+    ]
+  },
+  {
+    "artist": "Leftfield",
+    "title": "Leftism",
+    "format": "CD",
+    "release_id": 3305369,
+    "favourite": false,
+    "favourite_tracks": [
+      10
+    ]
+  }
+]

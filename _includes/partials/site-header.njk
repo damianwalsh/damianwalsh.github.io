@@ -15,22 +15,28 @@
   </div>
 
   <nav id="main-nav" aria-label="main" class="hidden">
+    {% set navIndex = 1 %}
     <ul role="list">
       {%- for entry in collections.all | eleventyNavigation %}
-      {% if entry.key not in ["Résumé", "Tags", "Uses", "Colophon"] %}
+      {% if entry.key not in ["Résumé", "Tags", "Uses", "Colophon", "People"] %}
       <li>
+        {% set entryUrlLength = entry.url | length %}
+        {% set pageUrlStart = page.url | slice(0, entryUrlLength) %}
         <a href="{{ entry.url }}"
+          style="anchor-name: --nav-{{ navIndex }};"
           {% if entry.url == page.url %}
-          aria-current="page"
-          {% endif %}
-          {% if entry.url != '/' and entry.url != page.url and page.url.startsWith(entry.url) %}
-          class="active"
+            aria-current="page"
+            class="active"
+          {% elif entry.url != '/' and pageUrlStart == entry.url %}
+            class="active"
           {% endif %}
         >{{ entry.title }}</a>
       </li>
+      {% set navIndex = navIndex + 1 %}
       {% endif %}
       {%- endfor %}
     </ul>
+    <div class="nav-indicator"></div>
   </nav>
 
   <form id="theme" class="hidden">
@@ -54,18 +60,15 @@
       </label>
       <div role="radiogroup" aria-labelledby="theme-selection">
         <label>
-          <input type="radio" name="theme" value="auto" checked
-                 aria-checked="true" role="radio">
+          <input type="radio" name="theme" value="auto" checked>
           Auto
         </label>
         <label>
-          <input type="radio" name="theme" value="light"
-                 aria-checked="false" role="radio">
+          <input type="radio" name="theme" value="light">
           Light
         </label>
         <label>
-          <input type="radio" name="theme" value="dark"
-                 aria-checked="false" role="radio">
+          <input type="radio" name="theme" value="dark">
           Dark
         </label>
       </div>

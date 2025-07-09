@@ -1,0 +1,111 @@
+---
+eleventyNavigation:
+  key: "year-{{ yearData.year }}"
+  title: "{{ yearData.year }}"
+  parent: Events
+eleventyComputed:
+  title: "{{ yearData.year }} | {{ eleventyNavigation.parent }}"
+pagination:
+  data: collections.eventsByYear
+  size: 1
+  alias: yearData
+permalink: "/music/events/{{ yearData.year }}/"
+---
+{% css %}
+{% include "public/css/events.css" %}
+{% include "public/css/music.css" %}
+{% endcss %}
+{% js %}
+{% include "public/js/dialog.js" %}
+{% endjs %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ yearData.year }}</h1>
+</header>
+
+<section>
+  <header>
+    <h2 class="title">{{ yearData.events | length }}</span>
+      event{% if yearData.events.length != 1 %}s{% endif %}</h2>
+  </header>
+  <ul role="list" class="event__list">
+    {% for event in yearData.events | sort(attribute='date') | reverse %}
+      <li class="event__item surface">
+        <h3 class="title">
+          {{ event.name }}
+          <span class="event__type badge">{{ event.type }}</span>
+        </h3>
+        {% set eventLocation = [event] %}
+        {% if event.coordinates %}
+          <div class="event__location">
+            {% memoryMap eventLocation, 'eager' if loop.index <= 4 else 'lazy' %}
+          </div>
+        {% endif %}
+        <dl class="event__detail">
+          <dt>Date</dt>
+          <dd><time datetime="{{ event.date }}">{{ event.date | readableDate }}</time></dd>
+          <dt>Location</dt>
+          <dd>
+            <a href="https://www.openstreetmap.org/?mlat={{ event.coordinates.lat }}&mlon={{ event.coordinates.lng }}&zoom=15"
+              rel="noopener" class="event__link">
+              <svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+                <use xlink:href="#icon-map-pin"></use>
+              </svg>
+              {{ event.location }}{% if event.night %} ({{ event.night }}){% endif %}
+            </a>
+          </dd>
+        </dl>
+        {% set allSongs = event.setlist | flattenSetlistSongs %}
+        {% if allSongs.length %}
+          <button type="button" class="icon-button" data-dialog-trigger="setlist-{{ event.setlistfm_id }}">
+            View Setlist
+          </button>
+          <dialog id="setlist-{{ event.setlistfm_id }}" class="setlist-dialog">
+            <form method="dialog">
+              <button type="submit" class="action">
+                <svg viewBox="-6 -6 36 36" width="36" height="36" class="icon-stroke" aria-hidden="true">
+                  <use xlink:href="#icon-x"></use>
+                </svg>
+                <span class="visually-hidden">Close</span>
+              </button>
+            </form>
+            <div class="setlist">
+              <h4>Setlist</h4>
+              <ol role="list" class="tracklist">
+                {% for song in allSongs %}
+                  <li class="tracklist__item"><span class="tracklist__title">{{ song }}</span></li>
+                {% endfor %}
+              </ol>
+              {% if event.setlistUrl %}
+                <a href="{{ event.setlistUrl }}"><small>View on setlist.fm</small></a>
+              {% endif %}
+            </div>
+          </dialog>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% set allYears = collections.eventsByYear %}
+{% set currentIndex = pagination.pageNumber %}
+{% set previousYear = allYears[currentIndex + 1] %}
+{% set nextYear = allYears[currentIndex - 1] %}
+<nav aria-label="pagination">
+  {% if previousYear %}
+    <a href="/music/events/{{ previousYear.year }}/" class="icon-link prev">
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-left"></use>
+      </svg>
+      <span class="visually-hidden">Previous:</span> {{ previousYear.year }}
+    </a>
+  {% endif %}
+  {% if nextYear %}
+    <a href="/music/events/{{ nextYear.year }}/" class="icon-link next">
+      <span class="visually-hidden">Next:</span> {{ nextYear.year }}
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  {% endif %}
+</nav>

@@ -1,0 +1,78 @@
+---
+eleventyNavigation:
+  key: Chapters
+  parent: Music
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music/chapters/"
+---
+{% css %}
+{% include "public/css/chapters.css" %}
+{% endcss %}
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<ul role="list" class="chapter__grid">
+  {% for chapter in collections.chapterCollection %}
+  <li>
+    <a href="/music/chapters/{{ chapter.id }}"
+       class="chapter__item chapter__item--{{ ['primary', 'secondary', 'tertiary', 'quaternary'][loop.index0 % 4] }}">
+      <div class="chapter__photo" style="background-image: url('{{ chapter.images.photo }}')"></div>
+      <div class="chapter__texture" style="background-image: url('{{ chapter.images.texture }}')"></div>
+      <div class="chapter__header">
+        <h2 class="period">
+          <time class="start" datetime="{{ chapter.start | extractYear }}">{{ chapter.start }}</time>
+          <span class="visually-hidden">-</span>
+          <time class="end" datetime="{{ chapter.end | extractYear }}">{{ chapter.end }}</time>
+        </h2>
+        <blockquote class="recollection">{{ chapter.haiku | haiku | safe }}</blockquote>
+      </div>
+      <div class="chapter__main">
+        {% if chapter.releases.length > 0 %}
+        <div class="preview__grid">
+          {% for release in (chapter.releases | sort(attribute='artist') | slice(0, 4)) %}
+          <img src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+               alt="{{ release.title }}"
+               loading="lazy"
+               sizes="(min-width: 1720px) 130px, (min-width: 1460px) calc(9.17vw - 26px), (min-width: 1380px) calc(18.33vw - 112px), (min-width: 1180px) calc(11.11vw - 22px), (min-width: 880px) calc(15.36vw - 24px), (min-width: 580px) calc(22.86vw - 21px), calc(46.54vw - 19px)"
+               class="preview__image preview__image--square">
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% set placeIds = [] %}
+        {% set eventIds = [] %}
+        {% for release in chapter.releases %}
+          {% set chMem = release.chapters[chapter.id] %}
+          {% if chMem %}
+            {% for id in chMem.places or [] %}
+              {% if not placeIds.includes(id) %}{% set _ = placeIds.push(id) %}{% endif %}
+            {% endfor %}
+            {% for id in chMem.events or [] %}
+              {% if not eventIds.includes(id) %}{% set _ = eventIds.push(id) %}{% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {% set placesForChapter = collections.placesCollection | filterByIds(placeIds) %}
+        {% set eventsForChapter = collections.eventsCollection | filterByIds(eventIds) %}
+        {% set locations = placesForChapter.concat(eventsForChapter) | dedupeByCoords | sort(false, false, 'location') %}
+
+        {% if locations.length %}
+          {% memoryMap locations %}
+        {% endif %}
+      </div>
+      <div class="chapter__footer">
+        <p class="meta">
+          <span class="counter">{{ chapter.releases.length }}</span> release{{ 's' if chapter.releases.length !== 1 }}
+        </p>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="chapter__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

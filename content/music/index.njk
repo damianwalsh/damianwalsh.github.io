@@ -1,0 +1,320 @@
+---
+eleventyNavigation:
+  key: Music
+  order: 3
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }}"
+permalink: "/music/"
+---
+{% css %}
+{% include "public/css/chapters.css" %}
+{% include "public/css/events.css" %}
+{% endcss %}
+{% js %}
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const scrollContainer = document.querySelector(".chapter__scroll");
+  const wrapper = document.querySelector(".chapter__wrapper");
+  const chapters = gsap.utils.toArray('.chapter__item');
+
+  ScrollTrigger.create({
+    scroller: scrollContainer,
+    horizontal: true,
+    start: 0,
+    end: () => scrollContainer.scrollWidth - scrollContainer.clientWidth,
+    onUpdate: self => {
+      const atEnd = self.progress >= 0.999;
+      wrapper.classList.toggle("at-end", atEnd);
+    }
+  });
+
+  const containerRect = scrollContainer.getBoundingClientRect();
+  const hiddenChapters = chapters.filter(chapter => {
+    const rect = chapter.getBoundingClientRect();
+    const fullyVisible = rect.left >= containerRect.left && rect.right <= containerRect.right;
+    return !fullyVisible;
+  });
+
+  hiddenChapters.forEach(chapter => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        scroller: scrollContainer,
+        trigger: chapter,
+        horizontal: true,
+        start: "left 85%",
+        once: true
+      }
+    });
+    tl.from([
+      chapter.querySelector('.chapter__photo'),
+      chapter.querySelector('.chapter__texture')
+    ], {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 0.75
+    })
+      .from(chapter.querySelector('.chapter__photo'), {
+        scale: 1.5,
+        duration: 0.75
+      }, "<")
+      .from([
+        chapter.querySelector('.chapter__header'),
+        chapter.querySelector('.chapter__footer')
+      ], {
+        opacity: 0,
+        duration: 0.25,
+      }, "-=0.15")
+      .from(chapter.querySelector('.chapter__header'), {
+        x: 20,
+        duration: 0.25
+      }, "<");
+  });
+
+});
+{% endjs %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<section>
+  <header class="row">
+    <h2 class="title">Chapters</h2>
+  </header>
+  <div class="chapter__wrapper">
+    <ul role="list" class="chapter__scroll">
+      {% for chapter in collections.chapterCollection %}
+        <li>
+          <a href="/music/chapters/{{ chapter.id }}"
+            class="chapter__item chapter__item--{{ ['primary', 'secondary', 'tertiary', 'quaternary'][loop.index0 % 4] }}">
+            <div class="chapter__photo" style="background-image: url('{{ chapter.images.photo }}')"></div>
+            <div class="chapter__texture" style="background-image: url('{{ chapter.images.texture }}')"></div>
+            <div class="chapter__header">
+              <h2 class="period">
+                <time class="start" datetime="{{ chapter.start | extractYear }}">{{ chapter.start }}</time>
+                <span class="visually-hidden">-</span>
+                <time class="end" datetime="{{ chapter.end | extractYear }}">{{ chapter.end }}</time>
+              </h2>
+              <blockquote class="recollection">{{ chapter.haiku | haiku | safe }}</blockquote>
+            </div>
+            <div class="chapter__footer">
+              <p class="meta">
+                <span class="counter">{{ chapter.releases.length }}</span> release{{ 's' if chapter.releases.length !== 1 }}
+              </p>
+              <svg width="36" height="36" viewBox="-6 -6 36 36" class="chapter__action action icon-stroke" aria-hidden="true">
+                <use xlink:href="#icon-chevron-right"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<hr>
+
+{% set favorites = [] %}
+{% for release in collections.releases %}
+  {% if release.favourite %}
+    {% set favorites = (favorites.push(release), favorites) %}
+  {% endif %}
+{% endfor %}
+
+{% set favoritesCount = favorites | length %}
+{% set sortedFavorites = favorites | sortReleasesByArtist | slice(0, 4) %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Favourites</h2>
+    <p class="meta"><span class="counter">{{ favoritesCount }}</span> release{{ 's' if favoritesCount !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% for release in sortedFavorites %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
+        class="collection__item surface">
+        <img {{ 'loading=eager' if loop.index <=4 }}
+          src="img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ release.title }}" class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }}</h2>
+          <p class="meta">{{ release.artist }}</p>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if favoritesCount > 4 %}
+  <p><a href="/music/favourites">View all favourites</a></p>
+  {% endif %}
+</section>
+
+<hr>
+
+{% set sortedFormats = collections.formats | sort(true, false, attribute='releases.length') | slice(0, 2) %}
+{% for formatData in sortedFormats %}
+<section>
+  <header class="row">
+    <h2 class="title">{{ formatData.format }}</h2>
+    <p class="meta"><span class="counter">{{ formatData.releases.length }}</span> release{{ 's' if formatData.releases.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+    {% set sortedReleases = formatData.releases | sort(attribute='artist') %}
+    {% for release in sortedReleases | slice(0, 4) %}
+    <li>
+      <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
+        class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <= 4 }}
+          src="img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ release.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ release.title }}</h2>
+          <p class="meta">{{ release.artist }}</p>
+          {% if release.favourite %}
+          <div class="badge"><svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if formatData.releases.length > 4 %}
+  <p><a href="/music/formats/{{ formatData.format | slugify }}">View all {{ formatData.format }} releases</a></p>
+  {% endif %}
+</section>
+
+<hr>
+{% endfor %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Events</h2>
+    <p class="meta"><span class="counter">{{ events | length }}</span> event{% if events.length != 1 %}s{% endif %}</p>
+  </header>
+  <ul role="list" class="event__grid">
+  {% set sortedEvents = collections.eventsCollection | sort(attribute='date') | reverse %}
+  {% for event in sortedEvents | slice(0, 4) %}
+  <li class="event__item surface">
+    <h3 class="title">{{ event.name }}</h3>
+    {% set eventLocation = [event] %}
+    {% if event.coordinates %}
+    <div class="event__location">
+      {% memoryMap eventLocation, 'eager' %}
+    </div>
+    {% endif %}
+    <dl class="event__detail">
+      <dt>Date</dt>
+      <dd><time datetime="{{ event.date }}">{{ event.date | readableDate }}</time></dd>
+      <dt>Location</dt>
+      <dd><a href="https://www.openstreetmap.org/?mlat={{ event.coordinates.lat }}&mlon={{ event.coordinates.lng }}&zoom=15"
+      rel="noopener" class="event__link">
+      <svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-map-pin"></use>
+      </svg> {{ event.location }}{% if event.night %} ({{ event.night }}){% endif %}</a></dd>
+      <dt class="visually-hidden">Type</dt>
+      <dd class="badge">{{ event.type }}</dd>
+    </dl>
+  </li>
+  {% endfor %}
+  </ul>
+  <p><a href="/music/events">View all events</a></p>
+</section>
+
+<hr>
+
+<details open>
+  <summary>
+    <h2 class="title">Track Record</h2>
+  </summary>
+  <div class="stats__grid">
+
+    {% set sortedArtists = collections.artists | sort(true, false, attribute='releases.length') | slice(0, 3) %}
+    <table class="stats__table">
+      <caption>Top 3 Artists</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Artist</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for artistData in sortedArtists %}
+        <tr>
+          <th scope="row"><a href="/music/artists/{{ artistData.artist | slugify }}">{{ artistData.artist }}</a></th>
+          <td><span class="counter">{{ artistData.releases.length }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% set genreCounts = {} %}
+    {% for genreItem in collections.genres %}
+    {% set genreCounts = genreCounts | setAttribute(genreItem.genre, genreItem.releases.length) %}
+    {% endfor %}
+    {% set sortedGenres = genreCounts | dictsort | sort(true, false, attribute='1') | slice(0, 3) %}
+    <table class="stats__table">
+      <caption>Top 3 Genres</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Genre</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for genre, count in sortedGenres %}
+        <tr>
+          <th scope="row"><a href="/music/genres/{{ genre | slugify }}">{{ genre }}</a></th>
+          <td><span class="counter">{{ count }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% set sortedYears = collections.releaseYears | sort(true, false, attribute='releases.length') | slice(0, 3) %}
+    <table class="stats__table">
+      <caption>Top 3 Years</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Year</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for yearData in sortedYears %}
+        <tr>
+          <th scope="row"><a href="/music/years/{{ yearData.year }}">{{ yearData.year }}</a></th>
+          <td><span class="counter">{{ yearData.releases.length }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</details>
+
+<hr>
+
+<section>
+  <header>
+    <h2 class="title">About this collection</h2>
+  </header>
+  <p>This archive doesn't include any music I have owned on Cassette or MiniDisc (sadly now lost) or listened to on streaming services. I collected CDs from 1991 to 2015, often buying music having only heard a few tracks on the radio in the pre-streaming days. In 2017, I bought a turntable with the (lofty) aim of building a canonical music collection that only included releases I really cared about. Events I've attended are based on memory and verified using online sources like <a href="https://www.setlist.fm/">setlist.fm</a>.</p>
+</section>
+
+<script src="/js/gsap.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>

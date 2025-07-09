@@ -1,26 +1,31 @@
 {
   "type": "module",
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "scripts": {
     "sass": "sass public/css:public/css --watch --no-source-map",
     "eleventy:dev": "eleventy --serve",
+    "reading": "node _scripts/readingCLI.js",
+    "music": "node _scripts/musicCLI.js",
     "dev": "npm-run-all --parallel sass eleventy:dev",
     "build": "npx @11ty/eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.0",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "commander": "^14.0.0",
     "cssnano": "^6.1.2",
     "dotenv": "^16.4.5",
     "eleventy-plugin-toc": "^1.1.5",
+    "enquirer": "^2.4.1",
+    "gsap": "^3.13.0",
     "he": "^1.2.0",
     "html-minifier": "^4.0.0",
+    "inquirer": "^12.7.0",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
@@ -28,6 +33,7 @@
     "postcss": "^8.4.49",
     "puppeteer": "^24.0.0",
     "sass": "^1.83.0",
+    "sbd": "^1.0.19",
     "terser": "^5.37.0"
   }
 }

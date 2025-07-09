@@ -115,7 +115,7 @@
 
 #main-nav {
   grid-area: nav;
-  z-index: var(--mid);
+
   @media (769px <= width <= 1365px) {
     display: block;
   }
@@ -126,26 +126,21 @@
   }
 
   ul {
+    position: relative;
     display: flex;
     flex-direction: column;
+    gap: var(--space-2xs);
     margin: 0;
     padding: 0;
-    gap: var(--space-2xs);
-
-    @media (width <= 768px) {
-      li:not(:first-of-type) {
-        border-top: 1px solid var(--surface-mid);
-        padding-top: var(--space-2xs);
-      }
-    }
+    z-index: var(--fore);
 
     @media (769px <= width <= 1365px) {
       flex-direction: row;
-      gap: var(--space-s);
     }
   }
 
   a {
+    display: block;
     font-size: var(--text-size--1);
     color: var(--text-colour-2);
     font-variation-settings: "wght" 700;
@@ -153,12 +148,40 @@
     letter-spacing: .025em;
     text-decoration: none;
     white-space: nowrap;
-    &[aria-current=page],
-    &.active,
-    &:hover {
+    border-radius: 9999px;
+    padding: var(--space-2xs) var(--space-xs);
+    @supports not (anchor-name: --test) {
+      &.active,
+      &:focus,
+      &:focus {
+        background: var(--surface-back);
+        border-radius: 9999px;
+        transition: background 0.25s;
+      }
+    }
+    &.active {
       color: var(--text-colour-1);
     }
   }
+
+  .nav-indicator {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: anchor(var(--active-anchor) left);
+    top: anchor(var(--active-anchor) top);
+    width: anchor-size(var(--active-anchor) width);
+    height: anchor-size(var(--active-anchor) height);
+    background: var(--surface-back);
+    border-radius: 9999px;
+    transition: all 0.25s;
+    z-index: var(--mid);
+  }
+}
+
+:root[style*="--active-anchor"] #main-nav .nav-indicator {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #theme {

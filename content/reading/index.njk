@@ -1,0 +1,152 @@
+---
+eleventyNavigation:
+  key: Reading
+  order: 4
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }}"
+permalink: "/reading/"
+---
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{% set favoriteCount = 0 %}
+{% for book in collections.books %}
+  {% if book.favourite %}
+    {% set favoriteCount = favoriteCount + 1 %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Favourite Books</h2>
+    <p class="meta"><span class="counter">{{ favoriteCount }}</span> book{{ 's' if favoriteCount !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+  {% for book in collections.books %}
+    {% if book.favourite %}
+    <li>
+      <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <= 4 }}
+          src="img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ book.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ book.title }}</h2>
+          <p class="meta">{{ book.author }}</p>
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <header class="row">
+    <h2 class="title">Recently Read Books</h2>
+    {% set recentBooks = collections.books | sort(true) | slice(0, 10) %}
+    <p class="meta"><span class="counter">{{ recentBooks.length }}</span> book{{ 's' if recentBooks.length !== 1 }}</p>
+  </header>
+  <ul role="list" class="collection__grid">
+  {% for book in recentBooks %}
+    <li>
+      <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
+        <img
+          {{ 'loading=eager' if loop.index <= 4 }}
+          src="img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          alt="{{ book.title }}"
+          class="collection__image">
+        <div class="collection__details">
+          <h2 class="title">{{ book.title }}</h2>
+          <p class="meta">{{ book.author }}</p>
+          {% if book.favourite %}
+          <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-heart"></use>
+          </svg> Favourite</div>
+          {% endif %}
+        </div>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="collection__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="/reading/years">View books by year read</a></p>
+</section>
+
+<hr>
+
+<details open>
+  <summary>
+    <h2 class="title">Bookshelf Breakdown</h2>
+  </summary>
+  <div class="stats__grid">
+    {% set authorCounts = {} %}
+    {% for book in collections.books %}
+      {% set authorCounts = authorCounts | setAttribute(book.author, (authorCounts[book.author] | default(0)) + 1) %}
+    {% endfor %}
+    {% set sortedAuthors = authorCounts | dictsort | sort(true, false, attribute='1') | slice(0, 3) %}
+
+    <table class="stats__table">
+      <caption>Top 3 Authors</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Author</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for author, count in sortedAuthors %}
+        <tr>
+          <th scope="row"><a href="/reading/authors/{{ author | slugify }}">{{ author }}</a></th>
+          <td><span class="counter">{{ count }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <table class="stats__table">
+      <caption>Most Active Reading Years</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Year</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for year in collections.years | sort(true, false, attribute='books.length') | slice(0, 3) %}
+        {% if year.year and year.books %}
+        <tr>
+          <th scope="row"><a href="/reading/years/{{ year.year }}">{{ year.year }}</a></th>
+          <td><span class="counter">{{ year.books.length }}</span></td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</details>
+
+<hr>
+
+<section>
+  <header>
+    <h2 class="title">About this collection</h2>
+  </header>
+  <p>Pre-2025 data is sourced from Amazon purchase history and does not include books bought from shops, received as gifts, or borrowed.</p>
+</section>
+

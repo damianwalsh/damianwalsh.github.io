@@ -5,7 +5,7 @@ eleventyNavigation:
 eleventyComputed:
   title: "{{ eleventyNavigation.key }}"
 layout: layouts/prose.njk
-permalink: uses.html
+permalink: uses/
 eleventyExcludeFromCollections: posts
 ---
 <header class="main-header">

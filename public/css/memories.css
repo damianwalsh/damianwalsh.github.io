@@ -136,10 +136,6 @@
   flex-shrink: 0;
 }
 
-.places__map {
-  border-radius: var(--border-radius-s);
-}
-
 .connections__wrapper {
   position: relative;
   &:has(.connections__list > li:nth-child(2))::after {

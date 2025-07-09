@@ -1,0 +1,43 @@
+---
+eleventyNavigation:
+  key: Events
+  parent: Music
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music/events/"
+---
+{% css %}
+{% include "public/css/events.css" %}
+{% include "public/css/music.css" %}
+{% endcss %}
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% for group in collections.eventsByYear %}
+    {% set eventLocations = group.events | dedupeByCoords %}
+    <li>
+      <a href="/music/events/{{ group.year }}/" class="index__item index__item--vertical surface">
+        <h2 class="title">{{ group.year }}</h2>
+        {% if eventLocations.length %}
+          {% if loop.index0 < 4 %}
+            {% set loadingStrategy = 'eager' %}
+          {% else %}
+            {% set loadingStrategy = 'lazy' %}
+          {% endif %}
+          {% memoryMap eventLocations, loadingStrategy %}
+        {% endif %}
+        <p class="meta">
+          <span class="counter">{{ group.events.length }}</span>
+          event{% if group.events.length != 1 %}s{% endif %}
+        </p>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke" aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -5,7 +5,7 @@ eleventyNavigation:
 eleventyComputed:
   title: "{{ eleventyNavigation.key }}"
 layout: layouts/prose.njk
-permalink: colophon.html
+permalink: colophon/
 eleventyExcludeFromCollections: posts
 ---
 {% css %}

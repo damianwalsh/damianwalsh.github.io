@@ -1,0 +1,300 @@
+/**
+ * CHAPTERS
+ */
+
+.chapter__main-header {
+  .chapter__header {
+    grid-area: header;
+    gap: var(--space-xs);
+  }
+  .chapter__item {
+    display: grid;
+    gap: var(--space-xs);
+    padding: var(--space-xs);
+    gap: var(--space-xs);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header"
+      "location"
+      "people";
+    @media screen and (width >=601px) {
+      grid-template-columns: 1fr minmax(auto, 220px);
+      grid-template-areas:
+      "header location"
+      "people location";
+    }
+    .period {
+      font-size: clamp(2.3325rem, 1.7472rem + 2.8728vw, 4.1963rem);
+    }
+    .recollection {
+      font-size: clamp(1.125rem, 0.8035rem + 1.578vw, 2.1488rem);
+      padding-inline-start: var(--space-xs);
+    }
+    .chapter__people {
+      grid-area: people;
+      align-self: self-end;
+    }
+    .map__image {
+      grid-area: location;
+    }
+  }
+}
+
+.chapter__grid {
+  display: grid;
+  gap: var(--flow-space);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+.chapter__item {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  padding: var(--space-2xs);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  background: var(--surface-fore);
+  will-change: transform, opacity;
+  .period {
+    display: flex;
+    flex-direction: column;
+    font-variation-settings: "wght" 800, "wdth" 100;
+    font-size: var(--text-size-3);
+    line-height: 1.1;
+  }
+
+  .recollection {
+    font-size: var(--text-size-0);
+    font-variation-settings: "wght" 400, "wdth" 80;
+    padding-inline-start: var(--space-2xs);
+  }
+
+  .meta,
+  .period,
+  .recollection {
+    color: var(--white);
+    margin-block-start: 0;
+  }
+
+  &[class*="--primary"] .chapter__photo,
+  &[class*="--primary"] .chapter__texture {
+    background-color: var(--primary-5);
+  }
+
+  &[class*="--primary"] .recollection {
+    border-color: var(--primary-3);
+  }
+
+  &[class*="--primary"] .counter {
+    background: var(--primary-3);
+    color: var(--primary-7);
+  }
+
+  &[class*="--primary"] .nav-pills a,
+  &[class*="--primary"] .chapter__action {
+    background: var(--primary-3);
+    color: var(--primary-7);
+    &:hover {
+      background: var(--primary-7);
+      color: var(--primary-3);
+    }
+  }
+
+  &[class*="--primary"]:hover .chapter__action {
+    background: var(--primary-7);
+    color: var(--primary-3);
+  }
+
+  &[class*="--secondary"] .chapter__photo,
+  &[class*="--secondary"] .chapter__texture {
+    background-color: var(--secondary-5);
+  }
+
+  &[class*="--secondary"] .recollection {
+    border-color: var(--secondary-3);
+  }
+
+  &[class*="--secondary"] .counter {
+    background: var(--secondary-3);
+    color: var(--secondary-7);
+  }
+
+  &[class*="--secondary"] .nav-pills a,
+  &[class*="--secondary"] .chapter__action {
+    background: var(--secondary-3);
+    color: var(--secondary-7);
+    &:hover {
+      background: var(--secondary-7);
+      color: var(--secondary-3);
+    }
+  }
+
+  &[class*="--secondary"]:hover .chapter__action {
+    background: var(--secondary-7);
+    color: var(--secondary-3);
+  }
+
+  &[class*="--tertiary"] .chapter__photo,
+  &[class*="--tertiary"] .chapter__texture {
+    background-color: var(--tertiary-5);
+  }
+
+  &[class*="--tertiary"] .recollection {
+    border-color: var(--tertiary-3);
+  }
+
+  &[class*="--tertiary"] .counter {
+    background: var(--tertiary-3);
+    color: var(--tertiary-7);
+  }
+
+  &[class*="--tertiary"] .nav-pills a,
+  &[class*="--tertiary"] .chapter__action {
+    background: var(--tertiary-3);
+    color: var(--tertiary-7);
+    &:hover {
+      background: var(--tertiary-7);
+      color: var(--tertiary-3);
+    }
+  }
+
+  &[class*="--tertiary"]:hover .chapter__action {
+    background: var(--tertiary-7);
+    color: var(--tertiary-3);
+  }
+
+  &[class*="--quaternary"] .chapter__photo,
+  &[class*="--quaternary"] .chapter__texture {
+    background-color: var(--quaternary-5);
+  }
+
+  &[class*="--quaternary"] .recollection {
+    border-color: var(--quaternary-3);
+  }
+
+  &[class*="--quaternary"] .counter {
+    background: var(--quaternary-3);
+    color: var(--quaternary-7);
+  }
+
+  &[class*="--quaternary"] .nav-pills a,
+  &[class*="--quaternary"] .chapter__action {
+    background: var(--quaternary-3);
+    color: var(--quaternary-7);
+    &:hover {
+      background: var(--quaternary-7);
+      color: var(--quaternary-3);
+    }
+  }
+
+  &[class*="--quaternary"]:hover .chapter__action {
+    background: var(--quaternary-7);
+    color: var(--quaternary-3);
+  }
+}
+
+.chapter__photo,
+.chapter__texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chapter__photo {
+  background-blend-mode: multiply;
+  z-index: -2;
+}
+
+.chapter__texture {
+  background-blend-mode: overlay;
+  opacity: .25;
+  z-index: -1;
+}
+
+.chapter__header {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: var(--space-2xs);
+}
+
+.chapter__people {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.chapter__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xs);
+}
+
+.chapter__footer {
+  flex-grow: 1;
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: var(--space-2xs);
+}
+
+.places__map {
+  border-radius: var(--border-radius-s);
+}
+
+.chapter__action {
+  justify-self: end;
+}
+
+.chapter__wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: var(--flow-space);
+    background: linear-gradient(to left, var(--surface-back), transparent);
+    z-index: 1;
+    opacity: 1;
+  }
+  &.at-end::after {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s;
+  }
+}
+
+.chapter__scroll {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--flow-space);
+  overflow-x: auto;
+  overscroll-behavior: contain;
+  padding-inline-start: 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--surface-mid) transparent;
+  scrollbar-width: thin;
+  grid-auto-columns: calc(100% - var(--gutter) * 2);
+  position: relative;
+
+  > li {
+    scroll-snap-align: start;
+    padding: calc(2.25px + 1.75px);
+  }
+
+  @media screen and (width >=769px) {
+    grid-auto-columns: calc(50% - var(--gutter) * 2);
+  }
+}

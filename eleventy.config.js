@@ -13,9 +13,11 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import pluginFilters from "./_config/filters.js";
-import { generateStaticMap } from './_data/maps.js';
+import { generateStaticMap } from './_scripts/maps.js';
 import { createRequire } from 'module';
 import { createHash } from 'node:crypto';
+import "dotenv/config";
+
 const require = createRequire(import.meta.url);
 
 export default async function (eleventyConfig) {
@@ -67,38 +69,46 @@ export default async function (eleventyConfig) {
     return Array.from(tags);
   });
 
-  // Music collection
   eleventyConfig.addCollection("releases", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid");
       return [];
     }
-    return musicData.releases;
+    return [...releases];
   });
 
   eleventyConfig.addCollection("artists", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid for artists collection");
       return [];
     }
-    const releases = musicData.releases;
-    const artists = [...new Set(releases.map(release => release.artist))];
-    const result = artists.map(artist => ({
-      artist,
-      releases: releases.filter(r => r.artist === artist)
-    }));
-    return result;
+    const artistsMap = new Map();
+    for (const release of releases) {
+      if (!artistsMap.has(release.artist)) {
+        artistsMap.set(release.artist, {
+          artist: release.artist,
+          artist_id: release.artist_id || null,
+          releases: []
+        });
+      }
+      artistsMap.get(release.artist).releases.push(release);
+    }
+    return Array.from(artistsMap.values()).sort((a, b) =>
+      a.artist.localeCompare(b.artist, "en", { sensitivity: "base" })
+    );
   });
 
   eleventyConfig.addCollection("genres", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid for genres collection");
       return [];
     }
-    const releases = musicData.releases;
     const genres = [...new Set(releases.flatMap(release => release.genres || []))];
     return genres.map(genre => ({
       genre,
@@ -107,12 +117,12 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("formats", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid for formats collection");
       return [];
     }
-    const releases = musicData.releases;
     const formats = [...new Set(releases.flatMap(release =>
       release.formats?.map(f => f.name) || []
     ))];
@@ -125,17 +135,16 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("releasesWithRelated", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid");
       return [];
     }
-
-    return musicData.releases.map(release => ({
+    return releases.map(release => ({
       ...release,
-      relatedReleases: musicData.releases.filter(r =>
-        r.artist === release.artist &&
-        r.title !== release.title
+      relatedReleases: releases.filter(r =>
+        r.artist === release.artist && r.title !== release.title
       )
     }));
   });
@@ -157,44 +166,153 @@ export default async function (eleventyConfig) {
   };
 
   eleventyConfig.addCollection("releaseYears", function (collectionApi) {
-    const musicData = collectionApi.getAll()[0]?.data?.music;
-    if (!musicData || !musicData.releases) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    if (!releases.length) {
       console.warn("Music data not found or invalid");
       return [];
     }
-
-    const years = [...new Set(musicData.releases
+    const parseDate = dateStr => {
+      if (!dateStr) return null;
+      const parts = dateStr.split('-');
+      if (parts.length === 1) return new Date(parts[0], 0, 1);
+      if (parts.length === 2) return new Date(parts[0], parts[1] - 1, 1);
+      return new Date(parts[0], parts[1] - 1, parts[2]);
+    };
+    const years = [...new Set(releases
       .map(release => {
-        // Prefer first_released if available, otherwise use released
         const date = parseDate(release.first_released) || parseDate(release.released);
         return date ? date.getFullYear() : null;
       })
       .filter(year => year !== null)
     )].sort((a, b) => a - b);
-
     return years.map(year => ({
       year,
-      releases: musicData.releases.filter(r => {
-        // Prefer first_released if available, otherwise use released
+      releases: releases.filter(r => {
         const date = parseDate(r.first_released) || parseDate(r.released);
         return date && date.getFullYear() === year;
       })
     }));
   });
 
+  eleventyConfig.addCollection("peopleCollection", function (collectionApi) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    const people = require("./_data/people.json");
+    const peopleArray = Object.entries(people).map(([personId, person]) => {
+      const relatedReleases = releases.filter(release =>
+        Object.values(release.chapters || {}).some(chapterMemories =>
+          chapterMemories.people?.includes(personId)
+        )
+      );
+      return {
+        id: personId,
+        ...person,
+        releases: relatedReleases
+      };
+    });
+
+    peopleArray.sort((a, b) => a.name.localeCompare(b.name));
+    return peopleArray;
+  });
+
+  eleventyConfig.addCollection("placesCollection", function (collectionApi) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    const places = require("./_data/places.json");
+    return Object.entries(places).map(([placeId, place]) => {
+      const relatedReleases = releases.filter(release =>
+        Object.values(release.chapters || {}).some(chapterMemories =>
+          chapterMemories.places?.includes(placeId)
+        )
+      );
+      return {
+        id: placeId,
+        ...place,
+        releases: relatedReleases
+      };
+    });
+  });
+
+  eleventyConfig.addCollection("eventsCollection", function (collectionApi) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    const events = require("./_data/enriched/events.json");
+    return Object.entries(events).map(([eventId, event]) => {
+      const relatedReleases = releases.filter(release =>
+        Object.values(release.chapters || {}).some(chapterMemories =>
+          chapterMemories.events?.includes(eventId)
+        )
+      );
+      return {
+        id: eventId,
+        ...event,
+        releases: relatedReleases
+      };
+    });
+  });
+
+  eleventyConfig.addCollection("eventsByYear", function () {
+    const events = Object.entries(require('./_data/enriched/events.json')).map(([id, event]) => ({ id, ...event }));
+
+    const years = {};
+    events.forEach(event => {
+      if (!event.date) return;
+      const year = event.date.split('-')[0];
+      if (!years[year]) years[year] = [];
+      years[year].push(event);
+    });
+
+    return Object.entries(years)
+      .sort(([a], [b]) => b - a)
+      .map(([year, events]) => ({ year, events }));
+  });
+
+  eleventyConfig.addCollection("chapterCollection", function (collectionApi) {
+    const musicData = require("./_data/enriched/music.json");
+    const releases = musicData?.releases || [];
+    const chapters = require("./_data/chapters.json");
+    return Object.entries(chapters).map(([chapterId, chapter]) => {
+      const relatedReleases = releases.filter(release =>
+        release.chapters && release.chapters[chapterId]
+      );
+      return {
+        id: chapterId,
+        ...chapter,
+        releases: relatedReleases
+      };
+    });
+  });
+
   // Reading list
   eleventyConfig.addCollection("books", function (collectionApi) {
-    return collectionApi.getAll()[0].data.reading.current;
+    const readingData = require("./_data/enriched/reading.json");
+    return readingData.current;
   });
 
   eleventyConfig.addCollection("authors", function (collectionApi) {
-    const books = collectionApi.getAll()[0].data.reading.current;
+    const readingData = require("./_data/enriched/reading.json");
+  const books = readingData.current;
     const authors = [...new Set(books.map(book => book.author))];
-    return authors.map(author => ({ author, books: books.filter(b => b.author === author) }));
+    return authors.map(author => {
+      const parts = author.trim().split(" ");
+      const surname = parts[parts.length - 1];
+      return {
+        author,
+        surname,
+        books: books.filter(b => b.author === author)
+      };
+    }).sort((a, b) => {
+      if (a.surname.toLowerCase() === b.surname.toLowerCase()) {
+        return a.author.localeCompare(b.author);
+      }
+      return a.surname.toLowerCase().localeCompare(b.surname.toLowerCase());
+    });
   });
 
   eleventyConfig.addCollection("years", function (collectionApi) {
-    const books = collectionApi.getAll()[0].data.reading.current;
+    const readingData = require("./_data/enriched/reading.json");
+  const books = readingData.current;
     const parseDate = (dateStr) => {
       const [year, month, day] = dateStr.split('-');
       return new Date(year, month - 1, day);
@@ -206,11 +324,12 @@ export default async function (eleventyConfig) {
     }));
   });
 
-  eleventyConfig.addCollection("booksByMonth", function(collectionApi) {
-    const books = collectionApi.getAll()[0].data.reading.current;
+  eleventyConfig.addCollection("booksByMonth", function (collectionApi) {
+    const readingData = require("./_data/enriched/reading.json");
+    const books = readingData.current;
 
     return {
-      getMonthlyBooks: function(date) {
+      getMonthlyBooks: function (date) {
         if (!date) return [];
 
         const postDate = new Date(date);
@@ -225,32 +344,23 @@ export default async function (eleventyConfig) {
     };
   });
 
-  // People data
-  const peopleData = require('./_data/people.json');
-  eleventyConfig.addGlobalData("people", () => peopleData);
-
-  // Places data
-  const placesData = require('./_data/places.json');
-  eleventyConfig.addGlobalData("places", () => placesData);
-
-  // Memory map
-  eleventyConfig.addShortcode("memoryMap", async function(places) {
+  eleventyConfig.addShortcode("memoryMap", async function (places, loadingStrategy = 'lazy') {
     const mapboxToken = process.env.MAPBOX_TOKEN;
     if (!mapboxToken) {
       console.warn("No Mapbox token found");
       return "";
     }
-
     const mapData = await generateStaticMap(places, mapboxToken);
     if (!mapData) {
       return "";
     }
-
-    // Return map HTML with base64 encoded image
     const base64Image = mapData.imageBuffer.toString('base64');
     return `<img src="data:image/png;base64,${base64Image}"
-           alt="Map showing memory locations"
-           width="660" height="330" class="places__map">`;
+           loading="${loadingStrategy}"
+           decoding="async"
+           alt="Location map"
+           width="600" height="600"
+           class="map__image">`;
   });
 
   // Social images - auth
@@ -338,6 +448,7 @@ export default async function (eleventyConfig) {
     toFileDirectory: "dist",
   });
 
+
   // Handle HTML entities in page titles
   eleventyConfig.addTransform('decodeHtmlEntities', (content, outputPath) => {
     if (outputPath && outputPath.endsWith('.html')) {
@@ -350,7 +461,7 @@ export default async function (eleventyConfig) {
 
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
-    if(outputPath?.endsWith("resume.html")) {
+    if (outputPath?.endsWith("resume/index.html")) {
       const fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
       const fontExists = fs.existsSync(fontPath);
       const browser = await puppeteer.launch();
@@ -364,18 +475,17 @@ export default async function (eleventyConfig) {
       if (fontExists) {
         const fontData = fs.readFileSync(fontPath);
         const base64Font = fontData.toString('base64');
-
         await page.addStyleTag({
           content: `
-            @font-face {
-              font-family: 'Bricolage Grotesque Variable';
-              src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
-              font-style: normal;
-              font-stretch: 75% 100%;
-              font-weight: 200 800;
-              font-display: block;
-            }
-          `
+          @font-face {
+            font-family: 'Bricolage Grotesque Variable';
+            src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
+            font-style: normal;
+            font-stretch: 75% 100%;
+            font-weight: 200 800;
+            font-display: block;
+          }
+        `
         });
       }
 
@@ -392,8 +502,12 @@ export default async function (eleventyConfig) {
         });
       }
 
+      // Ensure directory exists before writing PDF
+      const pdfPath = outputPath.replace("index.html", "resume.pdf");
+      fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
+
       await page.pdf({
-        path: outputPath.replace(".html", ".pdf"),
+        path: pdfPath,
         format: "A4"
       });
 
@@ -449,7 +563,7 @@ export const config = {
     "njk",
     "html",
     "liquid",
-    "11ty.js",
+    "11ty.js"
   ],
 
   // Pre-process *.md files with: (default: `liquid`)

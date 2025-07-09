@@ -1,0 +1,3195 @@
+{
+  "wonder-stuff-aston-villa-1990-08-14": {
+    "name": "The Wonder Stuff",
+    "location": "Aston Villa Leisure Centre",
+    "type": "Concert",
+    "date": "1990-08-14",
+    "setlistfm_id": "23b37c73",
+    "coordinates": {
+      "lat": 52.5068,
+      "lng": -1.8791
+    },
+    "related_releases": [
+      419160
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Golden Green",
+          "Radio Ass Kiss",
+          "No, for the 13th Time",
+          "Let's Be Other People",
+          "Caught in My Shadow",
+          "Donation",
+          "Play",
+          "Circlesquare",
+          "Cartoon Boyfriend",
+          "Don't Let Me Down, Gently",
+          "It's Yer Money I'm After, Baby",
+          "Gimme Some Truth",
+          "Room 410",
+          "Ten Trenches Deep",
+          "Can't Shape Up",
+          "30 Years in the Bathroom",
+          "The Takin' Is Easy",
+          "Give, Give, Give Me More, More, More",
+          "Unbearable",
+          "38 Line Poem",
+          "Good Night Though"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-wonder-stuff/1990/aston-villa-leisure-centre-birmingham-england-23b37c73.html"
+  },
+  "carter-usm-hummingbird-1991-11-06": {
+    "name": "Carter USM",
+    "location": "The Hummingbird",
+    "type": "Concert",
+    "date": "1991-11-06",
+    "setlistfm_id": "43d33f57",
+    "coordinates": {
+      "lat": 52.4811,
+      "lng": -1.8936
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/carter-the-unstoppable-sex-machine/1991/the-hummingbird-birmingham-england-43d33f57.html"
+  },
+  "frank-and-walters-wulfrun-1992-02-24": {
+    "name": "The Frank and Walters",
+    "location": "Wulfrun Hall",
+    "type": "Concert",
+    "date": "1992-02-24",
+    "setlistfm_id": "1bb71520",
+    "coordinates": {
+      "lat": 52.5866,
+      "lng": -2.1314
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-frank-and-walters/1992/wulfrun-hall-wolverhampton-england-1bb71520.html"
+  },
+  "sonic-youth-phoenix-1993-07-16": {
+    "name": "Sonic Youth",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-16",
+    "setlistfm_id": "bd3c542",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      370547
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Kotton Krown",
+          "Bull in the Heather",
+          "In the Mind of the Bourgeois Reader",
+          "Pacific Coast Highway",
+          "100%",
+          "Skink",
+          "Starfield Road",
+          "Candle",
+          "Stereo Sanctity",
+          "Self-Obsessed and Sexxee",
+          "Secret Girl",
+          "Flower",
+          "Drunken Butterfly",
+          "Theresa's Sound-World",
+          "Sugar Kane"
+        ]
+      },
+      {
+        "songNames": [
+          "Total Trash",
+          "Tokyo Eye"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/sonic-youth/1993/long-marston-airfield-stratford-upon-avon-england-bd3c542.html"
+  },
+  "family-cat-phoenix-1993-07-16": {
+    "name": "The Family Cat",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-16",
+    "setlistfm_id": "23c2f0b7",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Going Nowhere",
+          "Final Mistake",
+          "Tom Verlaine",
+          "Springing the Atom",
+          "Colour Me Grey",
+          "River of Diamonds",
+          "Airplane Gardens",
+          "Atmospheric Road",
+          "Steamroller"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-family-cat/1993/long-marston-airfield-stratford-upon-avon-england-23c2f0b7.html"
+  },
+  "faith-no-more-phoenix-1993-07-17": {
+    "name": "Faith No More",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "3d7bdb3",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      3581285
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Caffeine",
+          "Be Aggressive",
+          "As the Worm Turns",
+          "The Crab Song",
+          "Midlife Crisis",
+          "RV",
+          "Land of Sunshine",
+          "We Care a Lot",
+          "Chinese Arithmetic",
+          "A Small Victory",
+          "Edge of the World",
+          "Falling to Pieces",
+          "Surprise! You're Dead!",
+          "Woodpecker From Mars",
+          "Jizzlobber",
+          "Zombie Eaters",
+          "Let's Lynch the Landlord",
+          "Easy"
+        ]
+      },
+      {
+        "songNames": [
+          "Introduce Yourself",
+          "Mark Bowen",
+          "Epic"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/faith-no-more/1993/long-marston-airfield-stratford-upon-avon-england-3d7bdb3.html"
+  },
+  "house-of-pain-phoenix-1993-07-17": {
+    "name": "House of Pain",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "2bc2f0a2",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Feel It",
+          "Put Your Head Out",
+          "House and the Rising Son",
+          "Danny Boy, Danny Boy",
+          "Guess Who's Back",
+          "Put on Your Shit Kickers",
+          "Who's the Man?",
+          "It Ain't a Crime",
+          "House of Pain Anthem",
+          "Jump Around",
+          "Shamrocks and Shenanigans",
+          "Top o' the Morning to Ya"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/house-of-pain/1993/long-marston-airfield-stratford-upon-avon-england-2bc2f0a2.html"
+  },
+  "new-fads-phoenix-1993-07-17": {
+    "name": "New Fast Automatic Daffodils",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-17",
+    "setlistfm_id": "2bc2f09a",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/new-fast-automatic-daffodils/1993/long-marston-airfield-stratford-upon-avon-england-2bc2f09a.html"
+  },
+  "black-crowes-phoenix-1993-07-18": {
+    "name": "The Black Crowes",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "33d4a00d",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "No Speak No Slave",
+          "Hotel Illness",
+          "Sting Me",
+          "Bitter Bitter You",
+          "Jam",
+          "Thorn in My Pride",
+          "Bewildered",
+          "Sometimes Salvation",
+          "Tied Up and Swallowed",
+          "My Morning Song",
+          "Paris Song (Cursed Diamond Jam)",
+          "Remedy"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-black-crowes/1993/long-marston-airfield-stratford-upon-avon-england-33d4a00d.html"
+  },
+  "pwei-phoenix-1993-07-18": {
+    "name": "Pop Will Eat Itself",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "23c2f087",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/pop-will-eat-itself/1993/long-marston-airfield-stratford-upon-avon-england-23c2f087.html"
+  },
+  "manics-phoenix-1993-07-18": {
+    "name": "Manic Street Preachers",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "3bd74448",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [
+      4170983
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "From Despair to Where",
+          "La tristesse durera (Scream to a Sigh)",
+          "Slash 'n' Burn",
+          "Motorcycle Emptiness",
+          "Drug Drug Druggy",
+          "Repeat (UK)",
+          "Stay Beautiful",
+          "Roses in the Hospital",
+          "Motown Junk",
+          "You Love Us"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/manic-street-preachers/1993/long-marston-airfield-stratford-upon-avon-england-3bd74448.html"
+  },
+  "kinky-machine-phoenix-1993-07-18": {
+    "name": "Kinky Machine",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "4bc2f376",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/kinky-machine/1993/long-marston-airfield-stratford-upon-avon-england-4bc2f376.html"
+  },
+  "cornershop-phoenix-1993-07-18": {
+    "name": "Cornershop",
+    "location": "Phoenix Festival",
+    "type": "Festival",
+    "date": "1993-07-18",
+    "setlistfm_id": "53c2f361",
+    "coordinates": {
+      "lat": 52.1345,
+      "lng": -1.748
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/cornershop/1993/long-marston-airfield-stratford-upon-avon-england-53c2f361.html"
+  },
+  "a-positive-life-moseley-1995-01-13": {
+    "name": "A Positive Life",
+    "location": "Moseley Dance Centre",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-01-13",
+    "coordinates": {
+      "lat": 52.4541,
+      "lng": -1.896
+    },
+    "related_releases": []
+  },
+  "deep-space-network-moseley-1995-03-31": {
+    "name": "Deep Space Network",
+    "location": "Moseley Dance Centre",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-03-31",
+    "coordinates": {
+      "lat": 52.4541,
+      "lng": -1.896
+    },
+    "related_releases": []
+  },
+  "autechre-que-club-1995-02-04": {
+    "name": "Autechre",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-02-04",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": [
+      9326781
+    ]
+  },
+  "hia-que-club-1995-05-13": {
+    "name": "Higher Intelligence Agency",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-05-13",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "plaid-que-club-1995-05-13": {
+    "name": "Plaid",
+    "location": "Que Club",
+    "night": "Oscillate",
+    "type": "Club",
+    "date": "1995-05-13",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "richie-hawtin-que-club-1995-08-19": {
+    "name": "Richie Hawtin",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1995-08-19",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "sven-vath-que-club-1996-03-16": {
+    "name": "Sven Väth",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1996-03-16",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "stereolab-lemon-grove-1996-02-29": {
+    "name": "Stereolab",
+    "location": "Lemon Grove",
+    "type": "Concert",
+    "date": "1996-02-29",
+    "setlistfm_id": "1bf25938",
+    "coordinates": {
+      "lat": 50.7348,
+      "lng": -3.5297
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/stereolab/1996/lemon-grove-exeter-england-1bf25938.html"
+  },
+  "pulp-v-festival-1996-08-18": {
+    "name": "Pulp",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "33d7bc5d",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": [
+      302172
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "",
+          "Mis-Shapes",
+          "Do You Remember the First Time?",
+          "Monday Morning",
+          "I Spy",
+          "Mile End",
+          "Live Bed Show",
+          "Something Changed",
+          "Help the Aged",
+          "Sorted for E's & Wizz",
+          "Pencil Skirt",
+          "F.E.E.L.I.N.G.C.A.L.L.E.D.L.O.V.E.",
+          "Underwear",
+          "Common People",
+          "Disco 2000",
+          "Babies"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/pulp/1996/victoria-park-warrington-england-33d7bc5d.html"
+  },
+  "supergrass-v-festival-1996-08-18": {
+    "name": "Supergrass",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "53dc0725",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": [
+      4147466
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Going Out",
+          "Caught by the Fuzz",
+          "Mansize Rooster",
+          "Alright",
+          "Richard III",
+          "Lenny",
+          "Strange Ones"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/supergrass/1996/victoria-park-warrington-england-53dc0725.html"
+  },
+  "cast-v-festival-1996-08-18": {
+    "name": "Cast",
+    "location": "V Festival",
+    "type": "Festival",
+    "date": "1996-08-18",
+    "setlistfm_id": "33d9a045",
+    "coordinates": {
+      "lat": 53.3832,
+      "lng": -2.5777
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Back of My Mind",
+          "History",
+          "Flying",
+          "Sandstorm",
+          "Finetime",
+          "Reflections",
+          "Walkaway",
+          "Alright"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/cast/1996/victoria-park-warrington-england-33d9a045.html"
+  },
+  "dave-clark-que-club-1997-08-30": {
+    "name": "Dave Clark",
+    "location": "Que Club",
+    "night": "Atomic Jam",
+    "type": "Club",
+    "date": "1997-08-30",
+    "coordinates": {
+      "lat": 52.4834,
+      "lng": -1.8888
+    },
+    "related_releases": []
+  },
+  "chemical-brothers-glastonbury-2000-06-23": {
+    "name": "The Chemical Brothers",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-23",
+    "setlistfm_id": "3bd3d4ec",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      9250776
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Tomorrow Never Knows",
+          "Hey Boy Hey Girl",
+          "Music: Response",
+          "Block Rockin' Beats",
+          "Song to the Siren / Jailbird / Voodoo People",
+          "Under the Influence",
+          "It Doesn't Matter",
+          "Out of Control / Elektrobank",
+          "Got Glint? / Dig Your Own Hole",
+          "The Sunshine Underground",
+          "Don't Stop the Rock / Setting Sun",
+          "Chemical Beats"
+        ]
+      },
+      {
+        "songNames": [
+          "Leave Home",
+          "The Private Psychedelic Reel"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-chemical-brothers/2000/worthy-farm-pilton-england-3bd3d4ec.html"
+  },
+  "travis-glastonbury-2000-06-24": {
+    "name": "Travis",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-24",
+    "setlistfm_id": "7bd2b638",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "The Man Who Sold the World",
+          "All I Want to Do Is Rock",
+          "Good Feeling",
+          "Writing to Reach You",
+          "As You Are",
+          "Driftwood",
+          "The Fear",
+          "Good Day to Die",
+          "Why Does It Always Rain on Me?",
+          "Turn",
+          "Safe",
+          "Coming Around",
+          "Slide Show",
+          "Blue Flashing Light"
+        ]
+      },
+      {
+        "songNames": [
+          "20",
+          "...Baby One More Time",
+          "The Weight",
+          "Happy"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/travis/2000/worthy-farm-pilton-england-7bd2b638.html"
+  },
+  "bowie-glastonbury-2000-06-25": {
+    "name": "David Bowie",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2000-06-25",
+    "setlistfm_id": "1bd40158",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      8057163
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Greensleeves",
+          "Wild Is the Wind",
+          "China Girl",
+          "Changes",
+          "Stay",
+          "Life on Mars?",
+          "Absolute Beginners",
+          "Ashes to Ashes",
+          "Rebel Rebel",
+          "Little Wonder",
+          "Golden Years",
+          "Fame",
+          "All the Young Dudes",
+          "The Man Who Sold the World",
+          "Station to Station",
+          "Starman",
+          "Hallo Spaceboy",
+          "Under Pressure"
+        ]
+      },
+      {
+        "songNames": [
+          "Ziggy Stardust",
+          "\"Heroes\"",
+          "Let's Dance",
+          "I'm Afraid of Americans"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/david-bowie/2000/worthy-farm-pilton-england-1bd40158.html"
+  },
+  "embrace-brixton-2000-11-10": {
+    "name": "Embrace",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2000-11-10",
+    "setlistfm_id": "6bf9c60a",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      1735854
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "One Big Family",
+          "You're Not Alone",
+          "My Weakness Is None of Your Business",
+          "Higher Sights",
+          "Come Back to What You Know",
+          "Drawn from Memory",
+          "Dry Kids",
+          "I've Been Running",
+          "All You Good Good People",
+          "Hooligan",
+          "The Last Gas",
+          "That's All Changed Forever",
+          "New Adam New Eve",
+          "Save Me",
+          "Don't Turn Your Back on Love",
+          "Retread",
+          "Now You're Nobody",
+          "I Wouldn't Wanna Happen to You",
+          "The Good Will Out"
+        ]
+      },
+      {
+        "songNames": [
+          "Three Is a Magic Number",
+          "Fireworks",
+          "I Had a Time"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/embrace/2000/brixton-academy-london-england-6bf9c60a.html"
+  },
+  "miles-hunt-club-borderline-2002-01-28": {
+    "name": "The Miles Hunt Club",
+    "location": "The Borderline",
+    "type": "Concert",
+    "date": "2002-01-28",
+    "setlistfm_id": "33a344bd",
+    "coordinates": {
+      "lat": 51.5148,
+      "lng": -0.1303
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-miles-hunt-club/2002/the-borderline-london-england-33a344bd.html"
+  },
+  "new-order-finsbury-park-2002-06-09": {
+    "name": "New Order",
+    "location": "Finsbury Park",
+    "type": "Concert",
+    "date": "2002-06-09",
+    "setlistfm_id": "1bd78154",
+    "coordinates": {
+      "lat": 51.5689,
+      "lng": -0.1158
+    },
+    "related_releases": [
+      10069749
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Crystal",
+          "Transmission",
+          "Regret",
+          "Ceremony",
+          "60 Miles an Hour",
+          "Atmosphere",
+          "Brutal",
+          "Close Range",
+          "She's Lost Control",
+          "Bizarre Love Triangle",
+          "True Faith",
+          "Temptation",
+          "Love Will Tear Us Apart"
+        ]
+      },
+      {
+        "songNames": [
+          "Digital",
+          "Blue Monday",
+          "World in Motion",
+          "Your Silent Face"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/new-order/2002/finsbury-park-london-england-1bd78154.html"
+  },
+  "coldplay-glastonbury-2002-06-28": {
+    "name": "Coldplay",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "73d65ebd",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Politik",
+          "Shiver",
+          "Spies",
+          "Daylight",
+          "Trouble",
+          "One I Love",
+          "Don't Panic",
+          "Everything's Not Lost",
+          "See You Soon",
+          "God Put a Smile Upon Your Face",
+          "Yellow",
+          "The Scientist"
+        ]
+      },
+      {
+        "songNames": [
+          "Clocks",
+          "In My Place",
+          "Life Is for Living"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/coldplay/2002/worthy-farm-pilton-england-73d65ebd.html"
+  },
+  "ash-glastonbury-2002-06-28": {
+    "name": "Ash",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "2bc74872",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1108690
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Lose Control",
+          "Girl From Mars",
+          "Jesus Says",
+          "Shining Light",
+          "Goldfinger",
+          "Cherry Bomb",
+          "Envy",
+          "Oh Yeah",
+          "Walking Barefoot",
+          "A Life Less Ordinary",
+          "Kung Fu",
+          "Sometimes",
+          "Burn Baby Burn",
+          "Petrol",
+          "Numbskull"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/ash/2002/worthy-farm-pilton-england-2bc74872.html"
+  },
+  "doves-glastonbury-2002-06-28": {
+    "name": "Doves",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "13dc7579",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      13697174
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "There Goes the Fear",
+          "Sea Song",
+          "Words",
+          "N.Y.",
+          "Satellites",
+          "Pounding",
+          "Here It Comes",
+          "The Cedar Room"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/doves/2002/worthy-farm-pilton-england-13dc7579.html"
+  },
+  "ed-harcourt-glastonbury-2002-06-28": {
+    "name": "Ed Harcourt",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-28",
+    "setlistfm_id": "43cbbbf7",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/ed-harcourt/2002/worthy-farm-pilton-england-43cbbbf7.html"
+  },
+  "orbital-glastonbury-2002-06-29": {
+    "name": "Orbital",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "5bd02f48",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      865
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Remind",
+          "The Girl With the Sun in Her Head",
+          "Funny Break (Weekend Ravers)",
+          "Belfast",
+          "Technologicque Park",
+          "The Box",
+          "Satan",
+          "Halcyon",
+          "Frenetic"
+        ]
+      },
+      {
+        "songNames": [
+          "Impact (The Earth Is Burning)",
+          "Doctor?",
+          "Chime"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/orbital/2002/worthy-farm-pilton-england-5bd02f48.html"
+  },
+  "electric-soft-parade-glastonbury-2002-06-29": {
+    "name": "Electric Soft Parade",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "2baaf80e",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-electric-soft-parade/2002/worthy-farm-pilton-england-2baaf80e.html"
+  },
+  "coral-glastonbury-2002-06-29": {
+    "name": "The Coral",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "7bc6d654",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      11893547
+    ],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-coral/2002/worthy-farm-pilton-england-7bc6d654.html"
+  },
+  "white-stripes-glastonbury-2002-06-29": {
+    "name": "The White Stripes",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-29",
+    "setlistfm_id": "33f4947d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1316702
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Little Room",
+          "Dead Leaves and the Dirty Ground",
+          "I Think I Smell a Rat",
+          "When I Hear My Name",
+          "Jolene",
+          "Hotel Yorba",
+          "Ball and Biscuit",
+          "Apple Blossom",
+          "Death Letter",
+          "Mother's Children Have a Hard Time",
+          "Love Sick",
+          "Astro",
+          "Jack the Ripper",
+          "We're Going to Be Friends",
+          "Jimmy the Exploder",
+          "Rated \"X\"",
+          "The Union Forever",
+          "Cannon",
+          "Pick a Bale of Cotton",
+          "Baby Blue",
+          "Boll Weevil"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-white-stripes/2002/worthy-farm-pilton-england-33f4947d.html"
+  },
+  "manu-chao-glastonbury-2002-06-30": {
+    "name": "Manu Chao",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "73d03a9d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Tumba",
+          "Por el suelo",
+          "Día luna... día pena",
+          "Sound System",
+          "El hoyo",
+          "Peligro",
+          "Welcome to Tijuana",
+          "El viento",
+          "Radio Bemba",
+          "EZLN… para todos todo…",
+          "Clandestino",
+          "Rumba de Barcelona",
+          "La despedida",
+          "Me gustas tú",
+          "La primavera",
+          "Hamburger Fields",
+          "Merry Blues",
+          "Mi vida",
+          "Radio Bemba",
+          "Eldorado 1997"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/manu-chao/2002/worthy-farm-pilton-england-73d03a9d.html"
+  },
+  "brmc-glastonbury-2002-06-30": {
+    "name": "Black Rebel Motorcycle Club",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "2bdeb80a",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1128171
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Red Eyes and Tears",
+          "U.S. Government",
+          "Spread Your Love",
+          "Love Burns",
+          "Rifles",
+          "White Palms",
+          "Fail-Safe",
+          "Stop",
+          "Whatever Happened to My Rock 'n' Roll (Punk Song)",
+          "Salvation",
+          "Heart + Soul"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/black-rebel-motorcycle-club/2002/worthy-farm-pilton-england-2bdeb80a.html"
+  },
+  "belle-and-sebastian-glastonbury-2002-06-30": {
+    "name": "Belle and Sebastian",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "6bc6d65e",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      441439
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "The State I Am In",
+          "Wandering Alone",
+          "The Boy With the Arab Strap",
+          "Me and the Major",
+          "The Boys Are Back in Town",
+          "Lazy Line Painter Jane",
+          "The Wrong Girl",
+          "Legal Man"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/belle-and-sebastian/2002/worthy-farm-pilton-england-6bc6d65e.html"
+  },
+  "groove-armada-glastonbury-2002-06-30": {
+    "name": "Groove Armada",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "73c6d65d",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Chicago",
+          "I See You Baby",
+          "Drifted",
+          "My Friend",
+          "Fogma",
+          "Lazy Moon",
+          "Tuning In",
+          "If Everybody Looked The Same",
+          "At the River",
+          "Superstylin'"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/groove-armada/2002/worthy-farm-pilton-england-73c6d65d.html"
+  },
+  "air-glastonbury-2002-06-30": {
+    "name": "Air",
+    "location": "Glastonbury Festival",
+    "type": "Festival",
+    "date": "2002-06-30",
+    "setlistfm_id": "2bd5443a",
+    "coordinates": {
+      "lat": 51.159,
+      "lng": -2.5883
+    },
+    "related_releases": [
+      1820430
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Electronic Performers",
+          "Talisman",
+          "People in the City",
+          "New Star in the Sky (Chanson pour Solal)",
+          "J'ai dormi sous l'eau",
+          "Playground Love",
+          "Sex Born Poison",
+          "Radian",
+          "Don't Be Light",
+          "Clouds Up",
+          "Sexy Boy",
+          "La femme d'argent"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/air/2002/worthy-farm-pilton-england-2bd5443a.html"
+  },
+  "oasis-finsbury-park-2002-07-07": {
+    "name": "Oasis",
+    "location": "Finsbury Park",
+    "type": "Concert",
+    "date": "2002-07-07",
+    "setlistfm_id": "7bd4ce48",
+    "coordinates": {
+      "lat": 51.5689,
+      "lng": -0.1158
+    },
+    "related_releases": [
+      828663
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Fuckin' in the Bushes",
+          "Hello",
+          "The Hindu Times",
+          "Hung in a Bad Place",
+          "Go Let It Out",
+          "Columbia",
+          "Morning Glory",
+          "Stop Crying Your Heart Out",
+          "Little by Little",
+          "D'You Know What I Mean?",
+          "Cigarettes & Alcohol",
+          "Live Forever",
+          "Better Man",
+          "She's Electric",
+          "Born on a Different Cloud",
+          "Acquiesce"
+        ]
+      },
+      {
+        "songNames": [
+          "Force of Nature",
+          "Don't Look Back in Anger",
+          "Some Might Say",
+          "My Generation",
+          "Wonderwall"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/oasis/2002/finsbury-park-london-england-7bd4ce48.html"
+  },
+  "strokes-reading-2002-08-23": {
+    "name": "The Strokes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "7bd4ce5c",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      14432639
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Back to the Lake",
+          "The Way It Is",
+          "Someday",
+          "Soma",
+          "Meet Me in the Bathroom",
+          "The Modern Age",
+          "Hard to Explain",
+          "Is This It",
+          "Take It or Leave It",
+          "Between Love & Hate",
+          "Trying Your Luck",
+          "Last Nite",
+          "Alone, Together",
+          "You Talk Way Too Much",
+          "Barely Legal",
+          "New York City Cops"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-strokes/2002/little-johns-farm-reading-england-7bd4ce5c.html"
+  },
+  "vines-reading-2002-08-23": {
+    "name": "The Vines",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "6bda22fe",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      612084
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Outtathaway!",
+          "Autumn Shade",
+          "Highly Evolved",
+          "Drown the Baptists",
+          "Ain't No Room",
+          "Mary Jane",
+          "Get Free",
+          "Ms. Jackson",
+          "In the Jungle",
+          "Homesick",
+          "F.T.W."
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-vines/2002/little-johns-farm-reading-england-6bda22fe.html"
+  },
+  "white-stripes-reading-2002-08-23": {
+    "name": "The White Stripes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "73d2aec9",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      1316702
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Dead Leaves and the Dirty Ground",
+          "When I Hear My Name",
+          "I Think I Smell a Rat",
+          "Jolene",
+          "Hotel Yorba",
+          "Apple Blossom",
+          "Jimmy the Exploder",
+          "The Wayfaring Stranger",
+          "Cannon",
+          "For the Love of Ivy",
+          "Death Letter",
+          "Mother's Children Have a Hard Time",
+          "Love Sick",
+          "Screwdriver",
+          "Peggy Sue"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-white-stripes/2002/little-johns-farm-reading-england-73d2aec9.html"
+  },
+  "interpol-reading-2002-08-23": {
+    "name": "Interpol",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-23",
+    "setlistfm_id": "6bd7def6",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6657573
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Untitled",
+          "Obstacle 1",
+          "Stella Was a Diver and She Was Always Down",
+          "Roland",
+          "NYC",
+          "PDA",
+          "Obstacle 2"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/interpol/2002/little-johns-farm-reading-england-6bd7def6.html"
+  },
+  "foo-fighters-reading-2002-08-24": {
+    "name": "Foo Fighters",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-24",
+    "setlistfm_id": "5bd617b4",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      391946
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "All My Life",
+          "Breakout",
+          "This Is a Call",
+          "My Hero",
+          "Generator",
+          "Learn to Fly",
+          "Disenchanted Lullaby",
+          "I'll Stick Around",
+          "Stacked Actors",
+          "Times Like These",
+          "For All the Cows",
+          "Hey, Johnny Park!",
+          "Low",
+          "Monkey Wrench",
+          "Tired of You",
+          "Everlong"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/foo-fighters/2002/little-johns-farm-reading-england-5bd617b4.html"
+  },
+  "hives-reading-2002-08-24": {
+    "name": "The Hives",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2002-08-24",
+    "setlistfm_id": "1bd16960",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6568498
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "The Hives Declare Guerre Nucleaire",
+          "Outsmarted",
+          "Hail Hail Spit n' Drool",
+          "Main Offender",
+          "A Get Together to Tear It Apart",
+          "Die, All Right!",
+          "Statecontrol",
+          "Hate to Say I Told You So",
+          "Mad Man",
+          "Supply and Demand",
+          "Stop & Think It Over",
+          "A.K.A. I-D-I-O-T"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-hives/2002/little-johns-farm-reading-england-1bd16960.html"
+  },
+  "qotsa-kentish-town-2002-10-27": {
+    "name": "Queens of the Stone Age",
+    "location": "Kentish Town Forum",
+    "type": "Concert",
+    "date": "2002-10-27",
+    "setlistfm_id": "53d5fb5d",
+    "coordinates": {
+      "lat": 51.5522,
+      "lng": -0.1468
+    },
+    "related_releases": [
+      856937
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Spiders and Vinegaroons",
+          "You Think I Ain't Worth a Dollar, but I Feel Like a Millionaire",
+          "Avon",
+          "Quick and to the Pointless",
+          "You Would Know",
+          "Monsters in the Parasol",
+          "The Sky Is Fallin'",
+          "Gonna Leave You",
+          "Hangin' Tree",
+          "Auto Pilot",
+          "A Song for the Dead",
+          "No One Knows",
+          "Go With the Flow",
+          "Tension Head",
+          "A Song for the Deaf",
+          "The Lost Art of Keeping a Secret"
+        ]
+      },
+      {
+        "songNames": [
+          "Mosquito Song",
+          "Feel Good Hit of the Summer",
+          "Ode to Clarissa",
+          "Regular John"
+        ]
+      },
+      {
+        "songNames": [
+          "Do It Again"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/queens-of-the-stone-age/2002/the-forum-london-england-53d5fb5d.html"
+  },
+  "teenage-fanclub-astoria-2003-02-18": {
+    "name": "Teenage Fanclub",
+    "location": "London Astoria",
+    "type": "Concert",
+    "date": "2003-02-18",
+    "setlistfm_id": "3b8ac088",
+    "coordinates": {
+      "lat": 51.5153,
+      "lng": -0.1301
+    },
+    "related_releases": [
+      3377856
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "The Concept"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2003/london-astoria-london-england-3b8ac088.html"
+  },
+  "kings-of-leon-astoria-2003-06-11": {
+    "name": "Kings Of Leon",
+    "location": "London Astoria",
+    "type": "Concert",
+    "date": "2003-06-11",
+    "setlistfm_id": "2bd7903e",
+    "coordinates": {
+      "lat": 51.5153,
+      "lng": -0.1301
+    },
+    "related_releases": [
+      789108
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Molly's Chambers",
+          "Wasted Time",
+          "Spiral Staircase",
+          "Joe's Head",
+          "Wicker Chair",
+          "Holy Roller Novocaine",
+          "Red Morning Light",
+          "Genius",
+          "Dusty",
+          "California Waiting"
+        ]
+      },
+      {
+        "songNames": [
+          "Happy Alone",
+          "Trani"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/kings-of-leon/2003/london-astoria-london-england-2bd7903e.html"
+  },
+  "hexstatic-big-chill-2003-08-01": {
+    "name": "Hexstatic",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "239a4ce7",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/hexstatic/2003/eastnor-castle-eastnor-england-239a4ce7.html"
+  },
+  "ralph-myerz-big-chill-2003-08-01": {
+    "name": "Ralph Myerz and the Jack Herren Band",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "2b9a4ce2",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/ralph-myerz-and-the-jack-herren-band/2003/eastnor-castle-eastnor-england-2b9a4ce2.html"
+  },
+  "ulrich-schnauss-big-chill-2003-08-01": {
+    "name": "Ulrich Schnauss",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-01",
+    "setlistfm_id": "339a4ce1",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/ulrich-schnauss/2003/eastnor-castle-eastnor-england-339a4ce1.html"
+  },
+  "dj-derek-big-chill-2003-08-02": {
+    "name": "DJ Derek",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "2b9a4cda",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/dj-derek/2003/eastnor-castle-eastnor-england-2b9a4cda.html"
+  },
+  "talvin-singh-big-chill-2003-08-02": {
+    "name": "Talvin Singh",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "339a4cd9",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/talvin-singh/2003/eastnor-castle-eastnor-england-339a4cd9.html"
+  },
+  "bays-big-chill-2003-08-02": {
+    "name": "The Bays",
+    "location": "The Big Chill",
+    "type": "Festival",
+    "date": "2003-08-02",
+    "setlistfm_id": "3b9a4ce4",
+    "coordinates": {
+      "lat": 52.0298,
+      "lng": -2.39
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-bays/2003/eastnor-castle-eastnor-england-3b9a4ce4.html"
+  },
+  "darkness-hammersmith-apollo-2003-10-22": {
+    "name": "The Darkness",
+    "location": "Hammersmith Apollo",
+    "type": "Concert",
+    "date": "2003-10-22",
+    "setlistfm_id": "13d339ed",
+    "coordinates": {
+      "lat": 51.4909,
+      "lng": -0.2246
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Bareback",
+          "Growing on Me",
+          "The Best of Me",
+          "Love Is Only a Feeling",
+          "Get Your Hands Off My Woman",
+          "Street Spirit (Fade Out)",
+          "I Believe in a Thing Called Love",
+          "Love on the Rocks With No Ice"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-darkness/2003/carling-apollo-hammersmith-london-england-13d339ed.html"
+  },
+  "nerd-roskilde-2004-07-02": {
+    "name": "N*E*R*D",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "53c02381",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/nerd/2004/dyrskuepladsen-roskilde-denmark-53c02381.html"
+  },
+  "pixies-roskilde-2004-07-02": {
+    "name": "Pixies",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "5bdf27bc",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      5923509
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Bone Machine",
+          "Blown Away",
+          "U-Mass",
+          "Broken Face",
+          "Monkey Gone to Heaven",
+          "No. 13 Baby",
+          "Dead",
+          "Cactus",
+          "Velouria",
+          "In Heaven (Lady in the Radiator Song)",
+          "Where Is My Mind?",
+          "The Holiday Song",
+          "Nimrod's Son",
+          "Here Comes Your Man",
+          "Vamos",
+          "Hey",
+          "Gigantic",
+          "Wave of Mutilation",
+          "Debaser",
+          "Gouge Away",
+          "Tame",
+          "Caribou"
+        ]
+      },
+      {
+        "songNames": [
+          "Planet of Sound"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/pixies/2004/dyrskuepladsen-roskilde-denmark-5bdf27bc.html"
+  },
+  "graham-coxon-roskilde-2004-07-02": {
+    "name": "Graham Coxon",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "63df022f",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      13547971
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Escape Song",
+          "Spectacular",
+          "No Good Time",
+          "It Ain't No Lie",
+          "I Wish",
+          "Bottom Bunk",
+          "Bittersweet Bundle of Misery",
+          "Girl Done Gone",
+          "Hopeless Friend",
+          "All Over Me",
+          "Life It Sucks",
+          "Right to Pop!",
+          "That's When I Reach for My Revolver",
+          "Fags and Failure",
+          "Freakin' Out",
+          "People of the Earth"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/graham-coxon/2004/dyrskuepladsen-roskilde-denmark-63df022f.html"
+  },
+  "hives-roskilde-2004-07-02": {
+    "name": "The Hives",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-02",
+    "setlistfm_id": "53c3ffbd",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      6568498
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Abra Cadaver",
+          "Walk Idiot Walk",
+          "Missing Link",
+          "Die, All Right!",
+          "Hail Hail Spit n' Drool",
+          "No Pun Intended",
+          "Main Offender",
+          "The Hives Declare Guerre Nucleaire",
+          "A Little More for Little You",
+          "Outsmarted",
+          "Hate to Say I Told You So",
+          "Two-Timing Touch and Broken Bones",
+          "Supply and Demand",
+          "A Get Together to Tear It Apart",
+          "Antidote",
+          "B Is for Brutus",
+          "A.K.A. I-D-I-O-T"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-hives/2004/dyrskuepladsen-roskilde-denmark-53c3ffbd.html"
+  },
+  "fatboy-slim-roskilde-2004-07-03": {
+    "name": "Fatboy Slim",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "53c3ffb5",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/fatboy-slim/2004/dyrskuepladsen-roskilde-denmark-53c3ffb5.html"
+  },
+  "kings-of-leon-roskilde-2004-07-03": {
+    "name": "Kings Of Leon",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "33d4f419",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      789108
+    ],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/kings-of-leon/2004/dyrskuepladsen-roskilde-denmark-33d4f419.html"
+  },
+  "morrissey-roskilde-2004-07-03": {
+    "name": "Morrissey",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "33d4f419",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/kings-of-leon/2004/dyrskuepladsen-roskilde-denmark-33d4f419.html"
+  },
+  "basement-jaxx-roskilde-2004-07-03": {
+    "name": "Basement Jaxx",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-03",
+    "setlistfm_id": "43c02387",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      3388468
+    ],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/basement-jaxx/2004/dyrskuepladsen-roskilde-denmark-43c02387.html"
+  },
+  "muse-roskilde-2004-07-04": {
+    "name": "Muse",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "bd7a1e6",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      381229
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Hysteria",
+          "New Born",
+          "Sing for Absolution",
+          "Citizen Erased",
+          "Sunburn",
+          "Ruled by Secrecy",
+          "Intro",
+          "Apocalypse Please",
+          "Muscle Museum",
+          "Butterflies & Hurricanes",
+          "Bliss",
+          "Time Is Running Out",
+          "Plug In Baby"
+        ]
+      },
+      {
+        "songNames": [
+          "Blackout",
+          "Stockholm Syndrome"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/muse/2004/dyrskuepladsen-roskilde-denmark-bd7a1e6.html"
+  },
+  "franz-ferdinand-roskilde-2004-07-04": {
+    "name": "Franz Ferdinand",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "2bd4f41e",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [
+      355287
+    ],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/franz-ferdinand/2004/dyrskuepladsen-roskilde-denmark-2bd4f41e.html"
+  },
+  "ralph-myerz-roskilde-2004-07-04": {
+    "name": "Ralph Myerz and the Jack Herren Band",
+    "location": "Roskilde Festival",
+    "type": "Festival",
+    "date": "2004-07-04",
+    "setlistfm_id": "23c18873",
+    "coordinates": {
+      "lat": 55.6415,
+      "lng": 12.0803
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/ralph-myerz-and-the-jack-herren-band/2004/dyrskuepladsen-roskilde-denmark-23c18873.html"
+  },
+  "franz-ferdinand-brixton-2004-10-30": {
+    "name": "Franz Ferdinand",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2004-10-30",
+    "setlistfm_id": "4bdeffb2",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      355287
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Michael",
+          "Tell Her Tonight",
+          "Auf Achse",
+          "This Boy",
+          "Take Me Out",
+          "Jacqueline",
+          "I'm Your Villain",
+          "Van Tango",
+          "The Dark of the Matinée",
+          "Come On Home",
+          "40'",
+          "Darts of Pleasure",
+          "Love and Destroy",
+          "Cheating on You",
+          "Your Diary",
+          "This Fire"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/franz-ferdinand/2004/carling-academy-brixton-london-england-4bdeffb2.html"
+  },
+  "embrace-hammersmith-palais-2004-11-22": {
+    "name": "Embrace",
+    "location": "Hammersmith Palais",
+    "type": "Concert",
+    "date": "2004-11-22",
+    "setlistfm_id": "4b9cdfea",
+    "coordinates": {
+      "lat": 51.4906,
+      "lng": -0.2211
+    },
+    "related_releases": [
+      1735854
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Ashes",
+          "All You Good Good People",
+          "My Weakness Is None of Your Business",
+          "Someday",
+          "Gravity",
+          "Wish 'Em All Away",
+          "Blind",
+          "New Adam New Eve",
+          "Retread",
+          "Spell It Out",
+          "Come Back to What You Know",
+          "Save Me",
+          "Looking As You Are",
+          "Out of Nothing"
+        ]
+      },
+      {
+        "songNames": [
+          "One Big Family",
+          "Make It Last",
+          "A Glorious Day",
+          "Wonder",
+          "The Good Will Out"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/embrace/2004/hammersmith-palais-london-england-4b9cdfea.html"
+  },
+  "white-stripes-hammersmith-apollo-2005-11-05": {
+    "name": "The White Stripes",
+    "location": "Hammersmith Apollo",
+    "type": "Concert",
+    "date": "2005-11-05",
+    "setlistfm_id": "53d4975d",
+    "coordinates": {
+      "lat": 51.4909,
+      "lng": -0.2246
+    },
+    "related_releases": [
+      1316702
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Blue Orchid",
+          "Black Math",
+          "Dead Leaves and the Dirty Ground",
+          "Passive Manipulation",
+          "When I Hear My Name",
+          "My Doorbell",
+          "Jolene",
+          "Cannon",
+          "Till There Was You",
+          "",
+          "I Think I Smell a Rat",
+          "Passive Manipulation",
+          "Forever for Her (Is Over for Me)",
+          "Hotel Yorba",
+          "Death Letter",
+          "Aluminum",
+          "Offend in Every Way",
+          "Screwdriver",
+          "The Nurse",
+          "The Denial Twist",
+          "Screwdriver",
+          "Ball and Biscuit"
+        ]
+      },
+      {
+        "songNames": [
+          "I'm Lonely (But I Ain't That Lonely Yet)",
+          "I Just Don't Know What to Do With Myself",
+          "The Hardest Button to Button",
+          "We're Going to Be Friends",
+          "Red Rain",
+          "The Denial Twist",
+          "Little Ghost",
+          "Seven Nation Army",
+          "Boll Weevil"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-white-stripes/2005/carling-apollo-hammersmith-london-england-53d4975d.html"
+  },
+  "lemonheads-somerset-house-2006-07-16": {
+    "name": "The Lemonheads",
+    "location": "Somerset House",
+    "type": "Concert",
+    "date": "2006-07-16",
+    "setlistfm_id": "2bda40d6",
+    "coordinates": {
+      "lat": 51.511,
+      "lng": -0.122
+    },
+    "related_releases": [
+      5875210
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "The Great Big No",
+          "Confetti",
+          "Down About It",
+          "Hannah & Gabi",
+          "Into Your Arms",
+          "Hospital",
+          "It's a Shame About Ray",
+          "Big Gay Heart",
+          "Tenderfoot",
+          "My Drug Buddy",
+          "Style"
+        ]
+      },
+      {
+        "songNames": [
+          "The Outdoor Type",
+          "Being Around",
+          "Different Drum",
+          "Skulls",
+          "Why Do You Do This to Yourself?",
+          "The Turnpike Down",
+          "Stove",
+          "Frank Mills"
+        ]
+      },
+      {
+        "songNames": [
+          "No Backbone",
+          "Powderfinger",
+          "If I Could Talk I'd Tell You",
+          "Rudderless"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-lemonheads/2006/somerset-house-london-england-2bda40d6.html"
+  },
+  "raconteurs-brixton-2006-10-20": {
+    "name": "The Raconteurs",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2006-10-20",
+    "setlistfm_id": "53d5eb6d",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Intimate Secretary",
+          "Level",
+          "Five on the Five",
+          "Together",
+          "It Ain't Easy",
+          "Store Bought Bones",
+          "Bang Bang (My Baby Shot Me Down)",
+          "Broken Boy Soldier"
+        ]
+      },
+      {
+        "songNames": [
+          "Headin' for the Texas Border",
+          "Steady, as She Goes",
+          "Yellow Sun",
+          "Blue Veins",
+          "Hands"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-raconteurs/2006/carling-academy-brixton-london-england-53d5eb6d.html"
+  },
+  "ash-ulu-2007-03-09": {
+    "name": "Ash",
+    "location": "ULU",
+    "type": "Concert",
+    "date": "2007-03-09",
+    "setlistfm_id": "43d0c32f",
+    "coordinates": {
+      "lat": 51.5226,
+      "lng": -0.1311
+    },
+    "related_releases": [
+      1108690
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Lose Control",
+          "Burn Baby Burn",
+          "Angel Interceptor",
+          "You Can't Have It All",
+          "Orpheus",
+          "Goldfinger",
+          "Ritual",
+          "Renegade Cavalcade",
+          "Walking Barefoot",
+          "Polaris",
+          "A Life Less Ordinary",
+          "Oh Yeah",
+          "Girl From Mars",
+          "Twilight of the Innocents"
+        ]
+      },
+      {
+        "songNames": [
+          "Petrol",
+          "I Started a Fire",
+          "Vampire Love",
+          "Kung Fu"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/ash/2007/ulu-london-england-43d0c32f.html"
+  },
+  "kasabian-somerset-house-2007-07-13": {
+    "name": "Kasabian",
+    "location": "Somerset House",
+    "type": "Concert",
+    "date": "2007-07-13",
+    "setlistfm_id": "2bd574e6",
+    "coordinates": {
+      "lat": 51.511,
+      "lng": -0.122
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Stay Away From the Brown Acid (Part 1)",
+          "Shoot the Runner",
+          "Reason Is Treason",
+          "Sun/Rise/Light/Flies",
+          "Cutt Off",
+          "Me Plus One",
+          "By My Side",
+          "Empire",
+          "I.D.",
+          "Seek & Destroy",
+          "British Legion",
+          "Processed Beats",
+          "Last Trip (in Flight)",
+          "The Doberman"
+        ]
+      },
+      {
+        "songNames": [
+          "Apnoea",
+          "Club Foot",
+          "Stuntman",
+          "L.S.F. (Lost Souls Forever)"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/kasabian/2007/somerset-house-london-england-2bd574e6.html"
+  },
+  "razorlight-reading-2007-08-24": {
+    "name": "Razorlight",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "bd78dd2",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "In the Morning",
+          "Hold On",
+          "Golden Touch",
+          "Back to the Start",
+          "Don't Go Back to Dalston",
+          "Before I Fall to Pieces",
+          "Pop Song 2006",
+          "I Can't Stop This Feeling I've Got",
+          "Los Angeles Waltz",
+          "Leave Me Alone",
+          "Rock 'n' Roll Lies",
+          "Vice",
+          "America",
+          "Rip It Up",
+          "Who Needs Love?",
+          "In the City",
+          "Fall, Fall, Fall",
+          "Funeral Blues",
+          "Stumble and Fall",
+          "Somewhere Else"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/razorlight/2007/little-johns-farm-reading-england-bd78dd2.html"
+  },
+  "kings-of-leon-reading-2007-08-24": {
+    "name": "Kings Of Leon",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "1bd79d80",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      789108
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Black Thumbnail",
+          "Taper Jean Girl",
+          "King of the Rodeo",
+          "Razz",
+          "My Party",
+          "Soft",
+          "Molly's Chambers",
+          "The Bucket",
+          "Milk",
+          "Four Kicks",
+          "On Call",
+          "Fans",
+          "Spiral Staircase",
+          "McFearless",
+          "Knocked Up",
+          "Charmer",
+          "Slow Night, So Long"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/kings-of-leon/2007/little-johns-farm-reading-england-1bd79d80.html"
+  },
+  "interpol-reading-2007-08-24": {
+    "name": "Interpol",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "5bd7b3dc",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      6657573
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Pioneer to the Falls",
+          "Obstacle 1",
+          "Narc",
+          "Slow Hands",
+          "Rest My Chemistry",
+          "Mammoth",
+          "Evil",
+          "No I in Threesome",
+          "The Heinrich Maneuver",
+          "Not Even Jail",
+          "PDA"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/interpol/2007/little-johns-farm-reading-england-5bd7b3dc.html"
+  },
+  "gossip-reading-2007-08-24": {
+    "name": "Gossip",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "43d1c3ff",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Fire/Sign",
+          "Yr Mangled Heart",
+          "Jason's Basement",
+          "Listen Up!",
+          "Yesterday's News",
+          "Jealous Girls",
+          "Standing in the Way of Control"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/gossip/2007/little-johns-farm-reading-england-43d1c3ff.html"
+  },
+  "long-blondes-reading-2007-08-24": {
+    "name": "The Long Blondes",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-24",
+    "setlistfm_id": "5bd8bf50",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Lust in the Movies",
+          "Weekend Without Makeup",
+          "Guilt",
+          "Swallow Tattoo",
+          "Here Comes the Serious Bit",
+          "Only Lovers Left Alive",
+          "You Could Have Both",
+          "Giddy Stratospheres",
+          "Once and Never Again"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-long-blondes/2007/little-johns-farm-reading-england-5bd8bf50.html"
+  },
+  "rhcp-reading-2007-08-25": {
+    "name": "Red Hot Chili Peppers",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "5bd38f38",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      367882
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Intro Jam",
+          "Can't Stop",
+          "Dani California",
+          "Scar Tissue",
+          "21st Century",
+          "Parallel Universe",
+          "Snow ((Hey Oh))",
+          "Songbird",
+          "This Velvet Glove",
+          "Wet Sand",
+          "Emit Remmus",
+          "Don't Forget Me",
+          "Warlocks",
+          "She's Only 18",
+          "Californication",
+          "By the Way"
+        ]
+      },
+      {
+        "songNames": [
+          "C'mon Girl",
+          "Give It Away",
+          "Final Jam"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/red-hot-chili-peppers/2007/little-johns-farm-reading-england-5bd38f38.html"
+  },
+  "unkle-reading-2007-08-25": {
+    "name": "UNKLE",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "53d8bf3d",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [
+      15784682
+    ],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/unkle/2007/little-johns-farm-reading-england-53d8bf3d.html"
+  },
+  "bloc-party-reading-2007-08-25": {
+    "name": "Bloc Party",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-25",
+    "setlistfm_id": "5bd7b3d0",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Song for Clay (Disappear Here)",
+          "Positive Tension",
+          "Hunting for Witches",
+          "Waiting for the 7.18",
+          "Banquet",
+          "This Modern Love",
+          "The Prayer",
+          "So Here We Are",
+          "Like Eating Glass",
+          "She's Hearing Voices",
+          "Helicopter"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/bloc-party/2007/little-johns-farm-reading-england-5bd7b3d0.html"
+  },
+  "cold-war-kids-reading-2007-08-26": {
+    "name": "Cold War Kids",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "4bd7b3ce",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "We Used to Vacation",
+          "Hang Me Up to Dry"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/cold-war-kids/2007/little-johns-farm-reading-england-4bd7b3ce.html"
+  },
+  "css-reading-2007-08-26": {
+    "name": "CSS",
+    "location": "Reading Festival",
+    "type": "Festival",
+    "date": "2007-08-26",
+    "setlistfm_id": "53d8bf05",
+    "coordinates": {
+      "lat": 51.4643,
+      "lng": -0.9875
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Jager Yoga",
+          "Alala",
+          "Beautiful Song",
+          "Patins",
+          "Pretend We're Dead",
+          "Off the Hook",
+          "I Wanna Be Your J.Lo",
+          "Let's Make Love and Listen to Death From Above"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/css/2007/little-johns-farm-reading-england-53d8bf05.html"
+  },
+  "radiohead-victoria-park-2008-06-24": {
+    "name": "Radiohead",
+    "location": "Victoria Park",
+    "type": "Concert",
+    "date": "2008-06-24",
+    "setlistfm_id": "3d6bdc7",
+    "coordinates": {
+      "lat": 51.5367,
+      "lng": -0.1086
+    },
+    "related_releases": [
+      8664384
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "15 Step",
+          "Bodysnatchers",
+          "All I Need",
+          "The National Anthem",
+          "Pyramid Song",
+          "Nude",
+          "Weird Fishes/Arpeggi",
+          "The Gloaming",
+          "Dollars and Cents",
+          "Faust Arp",
+          "There There",
+          "Just",
+          "Climbing Up the Walls",
+          "Reckoner",
+          "Everything in Its Right Place",
+          "How to Disappear Completely",
+          "Jigsaw Falling Into Place"
+        ]
+      },
+      {
+        "songNames": [
+          "Videotape",
+          "Airbag",
+          "Bangers + Mash",
+          "Planet Telex",
+          "The Tourist"
+        ]
+      },
+      {
+        "songNames": [
+          "Cymbal Rush",
+          "You and Whose Army?",
+          "Idioteque"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/radiohead/2008/victoria-park-london-england-3d6bdc7.html"
+  },
+  "doves-festival-hall-2008-09-12": {
+    "name": "Doves",
+    "location": "Royal Festival Hall",
+    "type": "Concert",
+    "date": "2008-09-12",
+    "setlistfm_id": "bd33946",
+    "coordinates": {
+      "lat": 51.5058,
+      "lng": -0.1166
+    },
+    "related_releases": [
+      13697174
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Firesuite",
+          "Snowden",
+          "Winter Hill",
+          "Almost Forgot Myself",
+          "Pounding",
+          "Sea Song",
+          "Jetstream",
+          "Rise",
+          "Break Me Gently",
+          "Kingdom of Rust",
+          "Ambition",
+          "The Outsiders",
+          "Caught by the River",
+          "There Goes the Fear"
+        ]
+      },
+      {
+        "songNames": [
+          "Northenden",
+          "Black and White Town",
+          "The Cedar Room"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/doves/2008/royal-festival-hall-london-england-bd33946.html"
+  },
+  "manics-festival-hall-2008-09-12": {
+    "name": "Manic Street Preachers",
+    "location": "Royal Festival Hall",
+    "type": "Concert",
+    "date": "2008-09-12",
+    "setlistfm_id": "23d47057",
+    "coordinates": {
+      "lat": 51.5058,
+      "lng": -0.1166
+    },
+    "related_releases": [
+      4170983
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Motown Junk",
+          "Sorrow 16",
+          "We Her Majesty's Prisoners",
+          "Starlover",
+          "Spectators of Suicide",
+          "You Love Us"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/manic-street-preachers/2008/royal-festival-hall-london-england-23d47057.html"
+  },
+  "hot-chip-brixton-2010-02-26": {
+    "name": "Hot Chip",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-02-26",
+    "setlistfm_id": "53d74749",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "And I Was a Boy From School",
+          "Hand Me Down Your Love",
+          "One Pure Thought",
+          "Thieves in the Night",
+          "Brothers",
+          "One Life Stand",
+          "Over and Over",
+          "Alley Cats",
+          "Take It In",
+          "We Have Love",
+          "Hold On",
+          "No Fit State"
+        ]
+      },
+      {
+        "songNames": [
+          "I Feel Better",
+          "Slush",
+          "Ready for the Floor"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/hot-chip/2010/o2-academy-brixton-london-england-53d74749.html"
+  },
+  "lcd-soundsystem-brixton-2010-04-24": {
+    "name": "LCD Soundsystem",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-04-24",
+    "setlistfm_id": "3d54d23",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [
+      1629028
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Get Innocuous!",
+          "Us v Them",
+          "Drunk Girls",
+          "Yr City's a Sucker",
+          "Pow Pow",
+          "Daft Punk Is Playing at My House",
+          "All My Friends",
+          "I Can Change",
+          "Tribulations",
+          "Movement",
+          "Yeah"
+        ]
+      },
+      {
+        "songNames": [
+          "Someone Great",
+          "Losing My Edge",
+          "All I Want",
+          "New York, I Love You but You're Bringing Me Down"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/lcd-soundsystem/2010/o2-academy-brixton-london-england-3d54d23.html"
+  },
+  "groove-armada-brixton-2010-10-16": {
+    "name": "Groove Armada",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2010-10-16",
+    "setlistfm_id": "23d51433",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [],
+    "setlist": [],
+    "setlistUrl": "https://www.setlist.fm/setlist/groove-armada/2010/o2-academy-brixton-london-england-23d51433.html"
+  },
+  "hot-chip-brixton-2012-10-18": {
+    "name": "Hot Chip",
+    "location": "Brixton Academy",
+    "type": "Concert",
+    "date": "2012-10-18",
+    "setlistfm_id": "43dd0357",
+    "coordinates": {
+      "lat": 51.4651,
+      "lng": -0.1175
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Shake a Fist",
+          "And I Was a Boy From School",
+          "Don't Deny Your Heart",
+          "One Life Stand",
+          "Night & Day",
+          "Flutes",
+          "Over and Over",
+          "Brothers",
+          "Look at Where We Are",
+          "How Do You Do?",
+          "Ready for the Floor",
+          "Everywhere",
+          "Hold On"
+        ]
+      },
+      {
+        "songNames": [
+          "Motion Sickness",
+          "Gabriel",
+          "I Feel Better",
+          "Let Me Be Him"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/hot-chip/2012/o2-academy-brixton-london-england-43dd0357.html"
+  },
+  "teenage-fanclub-manchester-academy-2016-11-18": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2016-11-18",
+    "setlistfm_id": "2bfa5886",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      3377856
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Start Again",
+          "Sometimes I Don't Need to Believe in Anything",
+          "Hold On",
+          "I Don't Want Control of You",
+          "Thin Air",
+          "Verisimilitude",
+          "Don't Look Back",
+          "It's All in My Mind",
+          "My Uptight Life",
+          "I Have Nothing More to Say",
+          "About You",
+          "The Darkest Part of the Night",
+          "I Need Direction",
+          "Did I Say",
+          "Your Love Is the Place Where I Come From",
+          "Take the Long Way Round",
+          "I'm in Love",
+          "Sparky's Dream",
+          "The Concept"
+        ]
+      },
+      {
+        "songNames": [
+          "With You",
+          "Radio",
+          "Everything Flows"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2016/manchester-academy-2-university-of-manchester-students-union-manchester-england-2bfa5886.html"
+  },
+  "sfa-institute-2016-12-10": {
+    "name": "Super Furry Animals",
+    "location": "Birmingham Institute",
+    "type": "Concert",
+    "date": "2016-12-10",
+    "setlistfm_id": "3fbddeb",
+    "coordinates": {
+      "lat": 52.4784,
+      "lng": -1.9059
+    },
+    "related_releases": [
+      10615529,
+      9302863
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "God! Show Me Magic",
+          "Fuzzy Birds",
+          "Something 4 the Weekend",
+          "Frisbee",
+          "Hometown Unicorn",
+          "Gathering Moss",
+          "If You Don't Want Me to Destroy You",
+          "Bad Behaviour",
+          "Mario Man",
+          "Hangin' With Howard Marks",
+          "Long Gone",
+          "For Now and Ever"
+        ]
+      },
+      {
+        "songNames": [
+          "Furryvision™",
+          "The Placid Casual",
+          "The International Language of Screaming",
+          "Demons",
+          "Short Painkiller",
+          "She's Got Spies",
+          "Play It Cool",
+          "Hermann ♥'s Pauline",
+          "Chupacabras",
+          "Torra Fy Ngwallt yn Hir",
+          "Bass Tuned to D.E.A.D.",
+          "Down a Different River",
+          "Download",
+          "Mountain People"
+        ]
+      },
+      {
+        "songNames": [
+          "The Man Don't Give a Fuck"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/super-furry-animals/2016/o2-institute-birmingham-england-3fbddeb.html"
+  },
+  "arcade-fire-castlefield-2017-07-06": {
+    "name": "Arcade Fire",
+    "location": "Castlefield Bowl",
+    "type": "Concert",
+    "date": "2017-07-06",
+    "setlistfm_id": "5be41f5c",
+    "coordinates": {
+      "lat": 53.476,
+      "lng": -2.2611
+    },
+    "related_releases": [
+      14321778
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Everything Now (Continued)",
+          "Everything Now",
+          "Rebellion (Lies)",
+          "Here Comes the Night Time",
+          "Signs of Life",
+          "No Cars Go",
+          "Intervention",
+          "The Suburbs",
+          "The Suburbs (Continued)",
+          "Ready to Start",
+          "Neighborhood #1 (Tunnels)",
+          "Sprawl II (Mountains Beyond Mountains)",
+          "Reflektor",
+          "Afterlife",
+          "Creature Comfort",
+          "Neighborhood #3 (Power Out)"
+        ]
+      },
+      {
+        "songNames": [
+          "We Exist",
+          "Wake Up"
+        ]
+      },
+      {
+        "songNames": [
+          "Neon Bible"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/arcade-fire/2017/castlefield-bowl-manchester-england-5be41f5c.html"
+  },
+  "orbital-manchester-apollo-2017-12-01": {
+    "name": "Orbital",
+    "location": "Apollo Manchester",
+    "type": "Concert",
+    "date": "2017-12-01",
+    "setlistfm_id": "43e0032f",
+    "coordinates": {
+      "lat": 53.4695,
+      "lng": -2.2247
+    },
+    "related_releases": [
+      865
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "Lush 3",
+          "Impact (The Earth Is Burning)",
+          "Copenhagen",
+          "Wonky",
+          "P.H.U.K.",
+          "Forever",
+          "The Girl With the Sun in Her Head",
+          "Satan",
+          "Tiny Foldable Cities",
+          "Halcyon",
+          "Belfast"
+        ]
+      },
+      {
+        "songNames": [
+          "The Box",
+          "Chime",
+          "Where Is It Going?"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/orbital/2017/o2-apollo-manchester-manchester-england-43e0032f.html"
+  },
+  "arcade-fire-manchester-arena-2018-04-08": {
+    "name": "Arcade Fire",
+    "location": "Manchester Arena",
+    "type": "Concert",
+    "date": "2018-04-08",
+    "setlistfm_id": "4bec9ff2",
+    "coordinates": {
+      "lat": 53.4881,
+      "lng": -2.2462
+    },
+    "related_releases": [
+      14321778
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "A Fifth of Beethoven",
+          "Everything Now (Continued)",
+          "Everything Now",
+          "Rebellion (Lies)",
+          "Here Comes the Night Time",
+          "No Cars Go",
+          "Electric Blue",
+          "Put Your Money on Me",
+          "Suburban War",
+          "Vampire/Forest Fire",
+          "Keep the Car Running",
+          "Neighborhood #1 (Tunnels)",
+          "The Suburbs",
+          "The Suburbs (Continued)",
+          "Ready to Start",
+          "Sprawl II (Mountains Beyond Mountains)",
+          "Reflektor",
+          "Afterlife",
+          "Creature Comfort",
+          "Neighborhood #3 (Power Out)"
+        ]
+      },
+      {
+        "songNames": [
+          "We Don't Deserve Love",
+          "Everything Now (Continued)",
+          "Wake Up"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/arcade-fire/2018/manchester-arena-manchester-england-4bec9ff2.html"
+  },
+  "breeders-ritz-manchester-2018-07-13": {
+    "name": "The Breeders",
+    "location": "Ritz Manchester",
+    "type": "Concert",
+    "date": "2018-07-13",
+    "setlistfm_id": "63eb9a53",
+    "coordinates": {
+      "lat": 53.4743,
+      "lng": -2.2429
+    },
+    "related_releases": [
+      7443942
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "New Year",
+          "Wait in the Car",
+          "No Aloha",
+          "Divine Hammer",
+          "All Nerve",
+          "Huffer",
+          "Howl at the Summit",
+          "Glorious",
+          "Spacewoman",
+          "Safari",
+          "Drivin' on 9",
+          "Walking with a Killer",
+          "Nervous Mary",
+          "S.O.S.",
+          "Off You",
+          "I Just Wanna Get Along",
+          "Cannonball",
+          "Skinhead #2",
+          "MetaGoth",
+          "Gigantic",
+          "Do You Love Me Now?",
+          "Lime House",
+          "Saints"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-breeders/2018/o2-ritz-manchester-england-63eb9a53.html"
+  },
+  "teenage-fanclub-manchester-academy-2018-11-05": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-05",
+    "setlistfm_id": "7b964e14",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      3377856,
+      3967721
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "The Concept",
+          "Satan",
+          "December",
+          "What You Do to Me",
+          "I Don't Know",
+          "Star Sign",
+          "Metal Baby",
+          "Pet Rock",
+          "Sidewinder",
+          "Alcoholiday",
+          "Guiding Star",
+          "Is This Music?"
+        ]
+      },
+      {
+        "songNames": [
+          "Hang On",
+          "The Cabbage",
+          "Radio",
+          "Norman 3",
+          "Song to the Cynic",
+          "120 Mins",
+          "Escher",
+          "Commercial Alternative",
+          "Fear of Flying",
+          "Tears Are Cool",
+          "Ret Liv Dead",
+          "Get Funky",
+          "Gene Clark"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2018/manchester-academy-3-university-of-manchester-students-union-manchester-england-7b964e14.html"
+  },
+  "teenage-fanclub-manchester-academy-2018-11-06": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-06",
+    "setlistfm_id": "73964e09",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      12372525,
+      1159480
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "About You",
+          "Sparky's Dream",
+          "Mellow Doubt",
+          "Don't Look Back",
+          "Verisimilitude",
+          "Neil Jung",
+          "Tears",
+          "Discolite",
+          "Say No",
+          "Going Places",
+          "I'll Make It Clear",
+          "I Gotta Know",
+          "Hardcore / Ballad"
+        ]
+      },
+      {
+        "songNames": [
+          "Start Again",
+          "Ain't That Enough",
+          "Can't Feel My Soul",
+          "I Don't Want Control of You",
+          "Planets",
+          "It's a Bad World",
+          "Take the Long Way Round",
+          "Winter",
+          "I Don't Care",
+          "Mount Everest",
+          "Your Love Is the Place Where I Come From",
+          "Speed of Light"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2018/manchester-academy-3-university-of-manchester-students-union-manchester-england-73964e09.html"
+  },
+  "teenage-fanclub-manchester-academy-2018-11-07": {
+    "name": "Teenage Fanclub",
+    "location": "Manchester Academy",
+    "type": "Concert",
+    "date": "2018-11-07",
+    "setlistfm_id": "63964e0f",
+    "coordinates": {
+      "lat": 53.4637,
+      "lng": -2.234
+    },
+    "related_releases": [
+      5311497
+    ],
+    "setlist": [
+      {
+        "songNames": [
+          "I Need Direction",
+          "I Can't Find My Way Home",
+          "Accidental Life",
+          "Near You",
+          "Happiness",
+          "Dumb Dumb Dumb",
+          "The Town & the City",
+          "The Sun Shines From You",
+          "Straight & Narrow",
+          "Cul de sac",
+          "My Uptight Life",
+          "If I Never See You Again"
+        ]
+      },
+      {
+        "songNames": [
+          "Thaw Me",
+          "One Thousand Lights",
+          "Did I Say",
+          "My Life",
+          "The Shadows",
+          "Every Step Is a Way Through",
+          "The Count",
+          "Long Hair",
+          "Some People Try to Fuck With You",
+          "Getting Real",
+          "He'd Be a Diamond",
+          "Broken",
+          "Take the Skinheads Bowling"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/teenage-fanclub/2018/manchester-academy-3-university-of-manchester-students-union-manchester-england-63964e0f.html"
+  }
+}
