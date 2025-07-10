@@ -9,7 +9,8 @@
     "reading": "node _scripts/readingCLI.js",
     "music": "node _scripts/musicCLI.js",
     "dev": "npm-run-all --parallel sass eleventy:dev",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "deploy": "npm run build && git add . && git commit -m \"site build\" && git push"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.0",
