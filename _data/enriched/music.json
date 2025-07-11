@@ -51576,7 +51576,16 @@
           "title": "Farewell And Goodnight",
           "duration": "4:21"
         }
-      ]
+      ],
+      "chapters": {
+        "2005-2007": {
+          "people": [],
+          "places": [],
+          "events": [
+            "smashing-pumpkins-reading-2007-08-26"
+          ]
+        }
+      }
     },
     {
       "artist": "The Kills",
