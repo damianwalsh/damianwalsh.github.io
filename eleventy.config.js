@@ -102,6 +102,10 @@ export default async function (eleventyConfig) {
     );
   });
 
+  // Load the enriched artists data
+  const artistsData = require('./_data/enriched/artists.json');
+  eleventyConfig.addGlobalData("artists", () => artistsData);
+
   eleventyConfig.addCollection("genres", function (collectionApi) {
     const musicData = require("./_data/enriched/music.json");
     const releases = musicData?.releases || [];
