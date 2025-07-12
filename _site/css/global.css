@@ -553,3 +553,7 @@ dialog {
     }
   }
 }
+
+.desaturate {
+  filter: saturate(0);
+}
