@@ -7,27 +7,18 @@ import { enrichMusicCollection } from './enrichMusic.js';
 import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import slugify from '@sindresorhus/slugify';
 
 const execAsync = promisify(exec);
 const RAW_DATA_PATH = path.join(process.cwd(), '_data/music.json');
 const IMAGE_PATH = path.join(process.cwd(), 'content/music/img');
-
-function slugify(text) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
-}
 
 async function processImage(imagePath, title, artist) {
   const slugTitle = slugify(title);
   const slugAuthor = slugify(artist);
   const outputFilename = `${slugTitle}-${slugAuthor}.jpg`;
   const outputPath = path.join(IMAGE_PATH, outputFilename);
+
   try {
     await fs.mkdir(IMAGE_PATH, { recursive: true });
     const cleanPath = imagePath.replace(/['"]/g, '');

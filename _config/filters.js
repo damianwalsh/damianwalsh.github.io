@@ -1,7 +1,10 @@
 import { DateTime } from "luxon";
 import { createRequire } from 'module';
+import { promises as fs } from "fs";
+import path from "path";
 const require = createRequire(import.meta.url);
 const sbd = require('sbd');
+import slugify from '@sindresorhus/slugify';
 
 function cleanProfile(profile) {
     // Strip numbered parenthesis like (2)
@@ -30,6 +33,27 @@ function cleanProfile(profile) {
 export default function (eleventyConfig) {
 
   eleventyConfig.addFilter('cleanProfile', cleanProfile);
+
+  eleventyConfig.addFilter('eleventy_slugify', function(str) {
+    if (!str) {
+      return "";
+    }
+    return slugify(str);
+  });
+
+  eleventyConfig.addAsyncFilter('imageExists', async function(artistName) {
+    if (!artistName) return false;
+
+    const slugArtist = slugify(artistName);
+    const imagePath = path.join(process.cwd(), 'content/music/img', `${slugArtist}.jpg`);
+
+    try {
+      await fs.access(imagePath);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  });
 
   eleventyConfig.addFilter("findVideoByTrack", function (videos, trackTitle) {
     return videos?.find(video => video.title.includes(trackTitle));
