@@ -30,6 +30,12 @@ permalink: "/music/artists/"
     {% for artist in group[1] %}
     <li>
       <a href="/music/artists/{{ artist.artist | slugify }}" class="index__item surface">
+        {% if artist.artist | imageExists %}
+        <img src="/music/img/{{ artist.artist | eleventy_slugify }}.jpg"
+            alt="{{ artist.artist }}"
+            {{ 'loading=eager' if loop.index <=4 }}
+            class="index__image desaturate">
+        {% endif %}
         <div class="index__details">
           <h3 class="title">{{ artist.artist }}</h3>
           <p class="meta"><span class="counter">{{ artist.releases.length }}</span> release{{ 's' if artist.releases.length !== 1 }}</p>
