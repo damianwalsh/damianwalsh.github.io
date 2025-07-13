@@ -43,7 +43,7 @@ permalink: "/music/artists/{{ artistData.artist | slugify }}/"
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
         <img
           {{ 'loading=eager' if loop.index <= 4 }}
-          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
           sizes="(min-width: 1740px) 305px, (min-width: 1380px) calc(18.82vw - 19px), (min-width: 380px) calc(23.27vw - 12px), calc(6.67vw + 47px)"
           alt="{{ release.title }}"
           class="collection__image">
@@ -92,7 +92,7 @@ permalink: "/music/artists/{{ artistData.artist | slugify }}/"
           {% if track %}
           <li>
             <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="favourites__item">
-            <img src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+            <img src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
                   sizes="80px"
                   alt="{{ relatedRelease.title }}"
                   class="favourites__image">

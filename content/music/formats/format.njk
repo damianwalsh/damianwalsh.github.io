@@ -26,7 +26,7 @@ permalink: "/music/formats/{{ formatData.format | slugify }}/"
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
         class="collection__item surface">
         <img {{ 'loading=eager' if loop.index <=4 }}
-          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg" alt="{{ release.title }}"
+          src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg" alt="{{ release.title }}"
           class="collection__image">
         <div class="collection__details">
           <h2 class="title">{{ release.title }}</h2>

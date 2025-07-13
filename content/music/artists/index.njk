@@ -31,7 +31,7 @@ permalink: "/music/artists/"
     <li>
       <a href="/music/artists/{{ artist.artist | slugify }}" class="index__item surface">
         {% if artist.artist | imageExists %}
-        <img src="/music/img/{{ artist.artist | eleventy_slugify }}.jpg"
+        <img src="/music/img/artists/{{ artist.artist | slugify }}.jpg"
             alt="{{ artist.artist }}"
             {{ 'loading=eager' if loop.index <=4 }}
             class="index__image desaturate">

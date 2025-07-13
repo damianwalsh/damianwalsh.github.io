@@ -26,7 +26,7 @@ permalink: "/music/genres/{{ genreData.genre | slugify }}/"
         class="collection__item surface">
         <img
           {{ 'loading=eager' if loop.index <=4 }}
-          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
           sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), (min-width: 380px) calc(23.33vw - 13px), calc(6.67vw + 47px)"
           alt="{{ release.title }}"
           class="collection__image">
