@@ -316,12 +316,12 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addCollection("years", function (collectionApi) {
     const readingData = require("./_data/enriched/reading.json");
-  const books = readingData.current;
+    const books = readingData.current;
     const parseDate = (dateStr) => {
       const [year, month, day] = dateStr.split('-');
       return new Date(year, month - 1, day);
     };
-    const years = [...new Set(books.map(book => parseDate(book.date_read).getFullYear()))];
+    const years = [...new Set(books.map(book => parseDate(book.date_read).getFullYear()))].sort((a, b) => a - b);
     return years.map(year => ({
       year,
       books: books.filter(b => parseDate(b.date_read).getFullYear() === year)
