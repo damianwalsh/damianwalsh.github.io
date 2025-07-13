@@ -14,8 +14,8 @@ const RAW_DATA_PATH = path.join(process.cwd(), '_data/reading.json');
 const IMAGE_PATH = path.join(process.cwd(), 'content/reading/img');
 
 async function processImage(imagePath, title, author) {
-  const slugTitle = slugify(title);
-  const slugAuthor = slugify(author);
+  const slugTitle = slugify(title.trim(), { decamelize: false });
+  const slugAuthor = slugify(author.trim(), { decamelize: false });
   const outputFilename = `${slugTitle}-${slugAuthor}.jpg`;
   const outputPath = path.join(IMAGE_PATH, outputFilename);
 

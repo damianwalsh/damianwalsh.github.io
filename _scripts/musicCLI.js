@@ -11,12 +11,12 @@ import slugify from '@sindresorhus/slugify';
 
 const execAsync = promisify(exec);
 const RAW_DATA_PATH = path.join(process.cwd(), '_data/music.json');
-const IMAGE_PATH = path.join(process.cwd(), 'content/music/img');
+const IMAGE_PATH = path.join(process.cwd(), 'content/music/img/covers');
 
 async function processImage(imagePath, title, artist) {
-  const slugTitle = slugify(title);
-  const slugAuthor = slugify(artist);
-  const outputFilename = `${slugTitle}-${slugAuthor}.jpg`;
+  const slugTitle = slugify(title.trim(), { decamelize: false });
+  const slugArtist = slugify(artist.trim(), { decamelize: false });
+  const outputFilename = `${slugTitle}-${slugArtist}.jpg`;
   const outputPath = path.join(IMAGE_PATH, outputFilename);
 
   try {

@@ -9,7 +9,7 @@ import slugify from '@sindresorhus/slugify';
 const execAsync = promisify(exec);
 const DISCOGS_TOKEN = process.env.DISCOGS_TOKEN;
 const DISCOGS_USER_AGENT = process.env.USER_AGENT;
-const IMAGE_PATH = path.join(process.cwd(), 'content/music/img');
+const IMAGE_PATH = path.join(process.cwd(), 'content/music/img/artists');
 
 async function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -31,9 +31,9 @@ async function fetchWithRateLimit(url) {
 }
 
 async function downloadImage(imageUrl, artistName) {
-  const slugArtist = slugify(artistName);
+  const slugArtist = slugify(artistName.trim(), { decamelize: false });
   const outputFilename = `${slugArtist}.jpg`;
-  const outputPath = path.join(IMAGE_PATH, outputFilename); // Add this line
+  const outputPath = path.join(IMAGE_PATH, outputFilename);
 
   try {
     // Create directory if it doesn't exist

@@ -34,19 +34,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter('cleanProfile', cleanProfile);
 
-  eleventyConfig.addFilter('eleventy_slugify', function(str) {
-    if (!str) {
-      return "";
-    }
-    return slugify(str);
-  });
-
-  eleventyConfig.addAsyncFilter('imageExists', async function(artistName) {
+  eleventyConfig.addAsyncFilter('imageExists', async function (artistName) {
     if (!artistName) return false;
-
-    const slugArtist = slugify(artistName);
-    const imagePath = path.join(process.cwd(), 'content/music/img', `${slugArtist}.jpg`);
-
+    const slugArtist = slugify(artistName.trim(), { decamelize: false });
+    const imagePath = path.join(process.cwd(), 'content/music/img/artists/', `${slugArtist}.jpg`);
     try {
       await fs.access(imagePath);
       return true;
