@@ -22,7 +22,7 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
 <div class="surface detail">
   <img
     loading="eager"
-    src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+    src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
     sizes="(min-width: 1720px) 403px, (min-width: 1380px) calc(26.56vw - 49px), (min-width: 780px) calc(30.69vw - 15px), (min-width: 400px) 83.61vw, calc(26.25vw + 220px)"
     alt="{{ release.title }}"
     class="detail__image">
@@ -223,7 +223,7 @@ permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | sl
       <a href="/music/releases/{{ otherRelease.title | slugify }}-{{ otherRelease.artist | slugify }}-{{ otherRelease.format | slugify }}"
         class="collection__item surface">
         <img
-          src="../img/{{ otherRelease.title | slugify }}-{{ otherRelease.artist | slugify }}.jpg"
+          src="../img/covers/{{ otherRelease.title | slugify }}-{{ otherRelease.artist | slugify }}.jpg"
           sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), (min-width: 400px) calc(23.13vw - 12px), calc(7.5vw + 48px)"
           alt="{{ otherRelease.title }}"
           class="collection__image">

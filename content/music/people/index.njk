@@ -19,7 +19,7 @@ permalink: "/music/people/"
       <div class="preview__grid">
         {% for release in person.releases | slice(0, 4) %}
         <img
-        src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+        src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
         alt="{{ release.title }}"
         loading="lazy"
         sizes="(min-width: 1720px) 130px, (min-width: 1460px) calc(9.17vw - 26px), (min-width: 1380px) calc(18.33vw - 112px), (min-width: 1180px) calc(11.11vw - 22px), (min-width: 880px) calc(15.36vw - 24px), (min-width: 580px) calc(22.86vw - 21px), calc(46.54vw - 19px)"

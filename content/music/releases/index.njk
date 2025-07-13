@@ -32,7 +32,7 @@ permalink: "/music/releases/"
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="index__item surface">
         <img
           {{ 'loading=eager' if loop.index <=4 }}
-          src="../img/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
+          src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
           sizes="120px"
           alt="{{ release.title }}"
           class="index__image">
