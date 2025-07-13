@@ -7,21 +7,11 @@ import { enrichReadingList } from './enrichReading.js';
 import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import slugify from '@sindresorhus/slugify';
 
 const execAsync = promisify(exec);
 const RAW_DATA_PATH = path.join(process.cwd(), '_data/reading.json');
 const IMAGE_PATH = path.join(process.cwd(), 'content/reading/img');
-
-function slugify(text) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
-}
 
 async function processImage(imagePath, title, author) {
   const slugTitle = slugify(title);
