@@ -119,6 +119,29 @@ permalink: "/reading/"
       </tbody>
     </table>
 
+    {% set genreCounts = {} %}
+    {% for genreItem in collections.booksByGenre %}
+      {% set genreCounts = genreCounts | setAttribute(genreItem.genre, genreItem.books.length) %}
+    {% endfor %}
+    {% set sortedGenres = genreCounts | dictsort | sort(true, false, attribute='1') | slice(0, 3) %}
+    <table class="stats__table">
+      <caption>Top 3 Genres</caption>
+      <thead class="visually-hidden">
+        <tr>
+          <th scope="col">Genre</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for genre, count in sortedGenres %}
+        <tr>
+          <th scope="row"><a href="/reading/genres/{{ genre | slugify }}">{{ genre }}</a></th>
+          <td><span class="counter">{{ count }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
     <table class="stats__table">
       <caption>Most Active Reading Years</caption>
       <thead class="visually-hidden">
