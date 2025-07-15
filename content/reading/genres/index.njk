@@ -1,0 +1,39 @@
+---
+eleventyNavigation:
+  key: reading-genres
+  title: Genres
+  parent: Reading
+eleventyComputed:
+  title: "{{ eleventyNavigation.title }} | {{ eleventyNavigation.parent }}"
+permalink: "/reading/genres/"
+---
+
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.title }}</h1>
+</header>
+
+<ul role="list" class="index__grid">
+  {% for genre in collections.booksByGenre %}
+    <li>
+      <a href="/reading/genres/{{ genre.genre | slugify }}" class="index__item index__item--vertical surface">
+        <h2 class="title">{{ genre.genre }}</h2>
+        <div class="preview__grid">
+          {% for book in genre.books | slice(0, 4) %}
+          <img
+            src="../img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
+            alt="{{ book.title }}"
+            loading="lazy"
+            sizes="(min-width: 1720px) 130px, (min-width: 1460px) calc(9.17vw - 26px), (min-width: 1380px) calc(18.33vw - 112px), (min-width: 1180px) calc(11.11vw - 22px), (min-width: 880px) calc(15.36vw - 24px), (min-width: 580px) calc(22.86vw - 21px), calc(46.54vw - 19px)"
+            class="preview__image preview__image--rect">
+          {% endfor %}
+        </div>
+        <p class="meta"><span class="counter">{{ genre.books.length }}</span> book{{ 's' if genre.books.length !== 1 }}</p>
+        <svg width="36" height="36" viewBox="-6 -6 36 36" class="index__action action icon-stroke"
+          aria-hidden="true">
+          <use xlink:href="#icon-chevron-right"></use>
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
