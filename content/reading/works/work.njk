@@ -30,11 +30,11 @@ permalink: "/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }
     <dt>First published</dt>
     <dd>{{ book.first_publish_date | readableDate }}</dd>
     {% endif %}
-    {% if book.subjects and book.subjects.length > 0 %}
-    <dt>Subjects</dt>
-    <dd>
-    {% set displayed_subjects = book.subjects | slice(0, 3) %}
-    {{ displayed_subjects | join(", ") }}{% if book.subjects.length > 3 %}...{% endif %}
+    {% if book.genres %}
+    <dt>Genres</dt>
+    <dd>{% for genre in book.genres %}
+    <a href="/reading/genres/{{ genre | slugify }}">{{ genre }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
     </dd>
     {% endif %}
     {% if book.date_read %}
