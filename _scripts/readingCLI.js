@@ -13,6 +13,44 @@ const execAsync = promisify(exec);
 const RAW_DATA_PATH = path.join(process.cwd(), '_data/reading.json');
 const IMAGE_PATH = path.join(process.cwd(), 'content/reading/img');
 
+const GENRES = [
+  'Art & Design',
+  'Biography',
+  'Business & Management',
+  'Comics',
+  'Crime',
+  'Essays',
+  'Fantasy',
+  'Fiction',
+  'Food Writing',
+  'Gardening',
+  'Graphic Novel',
+  'Health',
+  'Historical Fiction',
+  'History',
+  'Horror',
+  'Japan',
+  'Memoir',
+  'Music',
+  'Mystery',
+  'Non-Fiction',
+  'Philosophy',
+  'Photography',
+  'Poetry',
+  'Politics',
+  'Programming',
+  'Psychedelics',
+  'Psychology',
+  'Reference',
+  'Romance',
+  'Science',
+  'Science Fiction',
+  'Self-Help',
+  'Spirituality',
+  'Thriller',
+  'Travel'
+];
+
 async function processImage(imagePath, title, author) {
   const slugTitle = slugify(title.trim(), { decamelize: false });
   const slugAuthor = slugify(author.trim(), { decamelize: false });
@@ -21,7 +59,7 @@ async function processImage(imagePath, title, author) {
 
   try {
     await fs.mkdir(IMAGE_PATH, { recursive: true });
-    const cleanPath = imagePath.replace(/['"]/g, '');
+    const cleanPath = imagePath.replace(/['"]/g, '').trim();
     const command = `magick "${cleanPath}" -resize "670x>" "${outputPath}"`;
     await execAsync(command);
 
@@ -92,6 +130,12 @@ async function addBook() {
       initial: false
     },
     {
+      type: 'multiselect',
+      name: 'genres',
+      message: 'Select genres (use space to select, enter to confirm):',
+      choices: GENRES
+    },
+    {
       type: 'input',
       name: 'coverImagePath',
       message: 'Path to cover image (leave empty to skip):',
@@ -109,7 +153,8 @@ async function addBook() {
     author: answers.author,
     openlibrary_key: answers.openlibrary_key,
     date_read: answers.date_read,
-    favourite: answers.favourite
+    favourite: answers.favourite,
+    genres: answers.genres
   };
 
   if (answers.coverImagePath && answers.coverImagePath.trim() !== '') {
@@ -128,6 +173,83 @@ async function addBook() {
   console.log('✓ Book added successfully');
 }
 
+async function editBookGenres() {
+  const books = await loadReadingList();
+
+  if (books.length === 0) {
+    console.log('No books in your reading list.');
+    return;
+  }
+
+  const bookChoices = books
+    .map((book, index) => ({
+      index,
+      name: `${index}`,
+      message: `${book.author} - ${book.title} (${book.date_read || 'No date'})`,
+      sortKey: `${book.author} - ${book.title}`.toLowerCase()
+    }))
+    .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
+
+  const { bookIndex } = await prompt({
+    type: 'select',
+    name: 'bookIndex',
+    message: 'Select a book to edit genres:',
+    choices: bookChoices
+  });
+
+  const selectedChoice = bookChoices.find(choice => choice.name === bookIndex);
+
+  if (!selectedChoice) {
+    console.error('Error: Could not find selected book');
+    return;
+  }
+
+  const originalIndex = selectedChoice.index;
+  const selectedBook = books[originalIndex];
+  const currentGenres = selectedBook.genres || [];
+
+  console.log(`\nCurrent genres for "${selectedBook.title}": ${currentGenres.length ? currentGenres.join(', ') : 'None'}\n`);
+
+  const genreChoices = GENRES.map(genre => ({
+    name: genre,
+    message: genre,
+    selected: currentGenres.includes(genre)
+  }));
+
+  const { genres } = await prompt({
+    type: 'multiselect',
+    name: 'genres',
+    message: 'Select genres (use space to select/unselect, enter to confirm):',
+    choices: genreChoices
+  });
+
+  books[originalIndex].genres = genres;
+  await saveReadingList(books);
+
+  try {
+    const enrichedDataPath = path.join(process.cwd(), '_data/enriched/reading.json');
+    const enrichedData = JSON.parse(await fs.readFile(enrichedDataPath, 'utf8'));
+
+    const enrichedBook = enrichedData.current.find(b =>
+      b.openlibrary_key === selectedBook.openlibrary_key &&
+      b.title === selectedBook.title
+    );
+
+    if (enrichedBook) {
+      enrichedBook.genres = genres;
+      await fs.writeFile(enrichedDataPath, JSON.stringify(enrichedData, null, 2));
+      console.log('✓ Enriched reading data updated successfully');
+    } else {
+      console.warn(`Book "${selectedBook.title}" not found in enriched data`);
+    }
+  } catch (error) {
+    console.error('Error updating enriched reading data:', error);
+  }
+
+  console.log(`✓ Genres updated for "${selectedBook.title}" by ${selectedBook.author}`);
+}
+
+
 program
   .name('reading-cli')
   .description('CLI to manage reading list')
@@ -137,6 +259,11 @@ program
   .command('add')
   .description('Add new book to reading list')
   .action(addBook);
+
+program
+  .command('edit-genres')
+  .description('Edit genres for book in reading list')
+  .action(editBookGenres);
 
 program.parse(process.argv);
 
