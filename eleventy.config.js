@@ -348,6 +348,40 @@ export default async function (eleventyConfig) {
     };
   });
 
+  eleventyConfig.addCollection("booksByGenre", function (collectionApi) {
+    const enrichedReading = require("./_data/enriched/reading.json");
+    const books = enrichedReading.current;
+    const genres = [];
+    const booksByGenre = {};
+
+    books.forEach(book => {
+      if (book.genres && book.genres.length > 0) {
+        book.genres.forEach(genre => {
+          if (!booksByGenre[genre]) {
+            booksByGenre[genre] = [];
+          }
+          booksByGenre[genre].push(book);
+        });
+      } else {
+        if (!booksByGenre["Uncategorized"]) {
+          booksByGenre["Uncategorized"] = [];
+        }
+        booksByGenre["Uncategorized"].push(book);
+      }
+    });
+
+    Object.keys(booksByGenre)
+      .sort()
+      .forEach(genre => {
+        genres.push({
+          genre: genre,
+          books: booksByGenre[genre]
+        });
+      });
+
+    return genres;
+  });
+
   eleventyConfig.addShortcode("memoryMap", async function (places, loadingStrategy = 'lazy') {
     const mapboxToken = process.env.MAPBOX_TOKEN;
     if (!mapboxToken) {
