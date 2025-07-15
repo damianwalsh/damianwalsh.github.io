@@ -30,7 +30,6 @@ async function fetchBookDetails(book) {
     await delay(1000);
     return {
       ...book,
-      subjects: bookDetails.subjects || [],
       first_publish_date: bookDetails.first_publish_date,
       description:
         typeof bookDetails.description === "object"
