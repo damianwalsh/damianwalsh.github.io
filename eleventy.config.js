@@ -363,10 +363,10 @@ export default async function (eleventyConfig) {
           booksByGenre[genre].push(book);
         });
       } else {
-        if (!booksByGenre["Uncategorized"]) {
-          booksByGenre["Uncategorized"] = [];
+        if (!booksByGenre["Uncategorised"]) {
+          booksByGenre["Uncategorised"] = [];
         }
-        booksByGenre["Uncategorized"].push(book);
+        booksByGenre["Uncategorised"].push(book);
       }
     });
 
