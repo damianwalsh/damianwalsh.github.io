@@ -16,6 +16,9 @@ tags:
   @media screen and (width >= 769px) {
     flex-direction: row;
   }
+  &.no-pad {
+    padding-inline: 0;
+  }
 }
 {% endcss %}
 Building on my experience creating a [digital music library with Eleventy and APIs](https://damianwalsh.co.uk/posts/creating-connections-with-music-and-technology/), I wanted to apply similar principles and lessons learned to organise my book collection. Creating a digital bookshelf with a static site generator isn't particularly new or original. Many similar projects and write-ups already exist. This one simply documents my personal approach.
@@ -207,10 +210,10 @@ The entire workflow is simplified to a single command—`npm run reading` follow
 </figure>
 
 ## Digital bookshelf
-Now I can browse my website to find [books I've read](https://damianwalsh.co.uk/reading/) in one place—rather than searching across various platforms or digging through stacks of printed books. I can sort my collection by [author](https://damianwalsh.co.uk/reading/authors/), [genre](https://damianwalsh.co.uk/reading/genres/), or [year read](https://damianwalsh.co.uk/reading/years/), and easily identify my favourites.
+Now I can browse my website to find [books I've read](https://damianwalsh.co.uk/reading/) in one place—rather than searching across various platforms or digging through stacks of printed books. I can sort my collection by [author](https://damianwalsh.co.uk/reading/authors/), [genre](https://damianwalsh.co.uk/reading/genres/), or [year read](https://damianwalsh.co.uk/reading/years/), and easily identify my [favourites](https://damianwalsh.co.uk/reading/favourites/).
 
 <figure>
-  <div class="screenshots">
+  <div class="screenshots no-pad">
     <img src="./reading-list.png" alt="A montage of screenshots showcasing the digital reading list optimised for small screens in a grid layout." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
