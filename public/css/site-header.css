@@ -141,7 +141,9 @@
   }
 
   a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
     font-size: var(--text-size--1);
     color: var(--text-colour-2);
     font-variation-settings: "wght" 700;
