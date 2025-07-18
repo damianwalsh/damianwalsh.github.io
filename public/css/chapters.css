@@ -279,22 +279,37 @@
   margin-block-end: 0;
   display: grid;
   grid-auto-flow: column;
-  gap: var(--flow-space);
+  gap: calc(var(--flow-space) - 8px);
   overflow-x: auto;
   overscroll-behavior: contain;
   padding-inline-start: 0;
   scroll-snap-type: x mandatory;
-  scrollbar-color: var(--surface-mid) transparent;
-  scrollbar-width: thin;
+
   grid-auto-columns: calc(100% - var(--gutter) * 2);
   position: relative;
 
   > li {
     scroll-snap-align: start;
-    padding: calc(2.25px + 1.75px);
+    padding: 4px;
   }
 
   @media screen and (width >=769px) {
     grid-auto-columns: calc(50% - var(--gutter) * 2);
+  }
+
+  @supports (scrollbar-color: auto) {
+    scrollbar-color: var(--surface-mid) transparent;
+    scrollbar-width: thin;
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    &::-webkit-scrollbar {
+      background: transparent;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--surface-mid);
+      border-radius: 3px;
+    }
   }
 }
