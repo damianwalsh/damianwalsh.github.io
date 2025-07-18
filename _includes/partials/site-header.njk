@@ -30,7 +30,14 @@
           {% elif entry.url != '/' and pageUrlStart == entry.url %}
             class="active"
           {% endif %}
-        >{{ entry.title }}</a>
+        >
+          {% if entry.icon %}
+          <svg width="16" height="16" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#{{ entry.icon }}"></use>
+          </svg>
+          {% endif %}
+          {{ entry.title }}
+        </a>
       </li>
       {% set navIndex = navIndex + 1 %}
       {% endif %}
