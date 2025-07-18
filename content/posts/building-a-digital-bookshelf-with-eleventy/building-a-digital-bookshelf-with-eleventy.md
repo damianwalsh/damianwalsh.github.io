@@ -28,9 +28,9 @@ OpenLibrary organises books in two main ways: Editions and Works. When you consi
 
 Both Work and Edition pages on OpenLibrary can be accessed as JSON by simply changing the page URL. To illustrate the difference in data returned by the API, I'll use one of my favourite books as an example: [The Secret History by Donna Tartt](https://damianwalsh.co.uk/reading/works/the-secret-history-donna-tartt/).
 
-**Edition:** https://openlibrary.org/books/OL38246222M.json
+**Edition:** [openlibrary.org/books/OL38246222M.json](https://openlibrary.org/books/OL38246222M.json)
 
-**Work:** https://openlibrary.org/works/OL4321141W.json
+**Work:** [openlibrary.org/works/OL4321141W.json](https://openlibrary.org/works/OL4321141W.json)
 
 Using the Work ID instead of the Edition ID can occasionally produce unexpected results—such as returning a description in a language other than English. Despite this, I prefer using the Work ID to retrieve information and linking to this record on OpenLibrary. This way, if a visitor to my website discovers a book they want to read, they can more easily find an edition that suits their needs—whether that's format (audiobook, ebook, print), language, or how they get hold of it. I appreciate that OpenLibrary provides links to find libraries where a book can be borrowed or shops selling used books. It's more inclusive—this benefit outweighs any potential drawbacks.
 
@@ -188,7 +188,7 @@ To simplify the process of adding and editing book data, I built a simple [comma
 - Record date read
 - Mark if the book is a favourite
 - Assign genres from a predefined list via a multi-select interface
-- Resize images using ImageMagick and create filenames with URL slugs that match those used in templates (e.g., `the-secret-history-donna-tartt.jpg`)
+- Resize images using [ImageMagick](https://imagemagick.org/) and create filenames with [URL slugs](https://www.npmjs.com/package/@sindresorhus/slugify) that match those used in templates (e.g., `the-secret-history-donna-tartt.jpg`)
 - Enrich with additional data from the OpenLibrary API
 
 **Editing genres for existing books**
