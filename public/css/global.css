@@ -78,7 +78,6 @@ a {
 :focus {
   outline: 1.75px solid var(--primary-4);
   outline-offset: 2.25px;
-
 }
 
 ::selection {
