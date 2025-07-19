@@ -4,14 +4,20 @@
   <img src="/img/avatar.webp" alt="{{ metadata.title }}" class="logo" width="132" height="132" eleventy:ignore>
 
   <div class="site-header__actions">
-    <button class="toggle action" aria-expanded="false" aria-controls="theme" data-target="theme"><svg width="36" height="36" viewBox="-8 -8 40 40"
-        class="icon-stroke" aria-hidden="true">
+    <button class="toggle action" aria-expanded="false" aria-controls="theme" data-target="theme"
+      aria-label="Theme settings">
+      <svg width="36" height="36" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
         <use xlink:href="#icon-settings"></use>
-      </svg><span class="visually-hidden">Theme settings</span></button>
-    <button class="toggle action" aria-expanded="false" aria-controls="main-nav" data-target="main-nav"><svg width="36"
-        height="36" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
+      </svg>
+      <span class="visually-hidden">Theme settings</span>
+    </button>
+
+    <button class="toggle action" aria-expanded="false" aria-controls="main-nav" data-target="main-nav" aria-label="Menu">
+      <svg width="36" height="36" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
         <use xlink:href="#icon-menu"></use>
-      </svg><span class="visually-hidden">Menu</span></button>
+      </svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
   </div>
 
   <nav id="main-nav" aria-label="main" class="hidden">
