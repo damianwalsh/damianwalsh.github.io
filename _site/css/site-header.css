@@ -15,7 +15,6 @@
   column-gap: var(--gutter);
   row-gap: 0;
   margin-block-end: 0;
-  grid-template-areas: "actions";
 
   &:after {
     content: "";
@@ -196,8 +195,14 @@
   z-index: var(--mid);
 
   fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
     border: none;
     padding-block: 0 var(--space-xs);
+    @media (769px <= width <= 1365px) {
+      flex-direction: row;
+    }
   }
   legend {
     color: var(--text-colour-2);
@@ -217,15 +222,11 @@
       margin-bottom: var(--space-2xs);
     }
   }
-
-  @media (769px <= width <= 1365px) {
-    fieldset {
-      flex-direction: row;
-    }
-  }
-
-  @media screen and (width >=1366px) {
-    [for=hueSlider] {
+  [for=hueSlider] {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-2xs);
+    @media screen and (width >=1366px) {
       flex-direction: column;
       &:not(.hue-counter) {
         align-items: flex-start;
