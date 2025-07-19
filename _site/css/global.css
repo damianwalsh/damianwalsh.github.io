@@ -78,7 +78,6 @@ a {
 :focus {
   outline: 1.75px solid var(--primary-4);
   outline-offset: 2.25px;
-
 }
 
 ::selection {
@@ -195,8 +194,21 @@ input {
   padding: 0;
   &[type="range"] {
     width: 100%;
+
     @supports (accent-color: var(--primary-3)) {
       accent-color: var(--primary-3);
+    }
+
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      background: transparent;
+      height: 6px;
+      background: var(--primary-3);
+      border-radius: 3px;
+    }
+
+    &::-webkit-slider-thumb {
+      margin-top: -5px;
     }
   }
 }
