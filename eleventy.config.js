@@ -2,6 +2,7 @@ import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginTOC from 'eleventy-plugin-toc';
 import markdownIt from "markdown-it";
 import he from 'he';
@@ -17,6 +18,7 @@ import { generateStaticMap } from './_scripts/maps.js';
 import { createRequire } from 'module';
 import { createHash } from 'node:crypto';
 import "dotenv/config";
+import metadata from "./_data/metadata.js";
 
 const require = createRequire(import.meta.url);
 
@@ -41,6 +43,26 @@ export default async function (eleventyConfig) {
       permalinkSymbol: '#'
     }
   };
+
+  // RSS plugin
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "posts",
+      limit: 10,
+    },
+    metadata: {
+      language: metadata.language,
+      title: metadata.title,
+      subtitle: metadata.description,
+      base: metadata.url,
+      author: {
+        name: metadata.author.name,
+        email: metadata.author.email
+      }
+    }
+  });
 
   // Add markdown-it-anchor plugin
   const markdownLib = markdownIt(mdOptions).use(require('markdown-it-anchor'));
