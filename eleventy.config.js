@@ -522,21 +522,24 @@ export default async function (eleventyConfig) {
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if (outputPath?.endsWith("resume/index.html")) {
-      // Try to find font in both possible locations
-      let fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
-      let fontExists = fs.existsSync(fontPath);
+      // Try both possible locations with absolute paths
+      const publicFontPath = path.resolve('/opt/build/repo/public/fonts/BricolageGrotesque.ttfVariable.woff2');
+      const outputFontPath = path.resolve('/opt/build/repo/fonts/BricolageGrotesque.ttfVariable.woff2');
 
-      // If not found in public dir, try direct in output structure
-      if (!fontExists) {
-        const altFontPath = path.resolve('./fonts/BricolageGrotesque.ttfVariable.woff2');
-        if (fs.existsSync(altFontPath)) {
-          fontPath = altFontPath;
-          fontExists = true;
-          console.log('Found font in output directory:', altFontPath);
-        } else {
-          console.log('Font not found in either location:',
-            { publicPath: fontPath, outputPath: altFontPath });
-        }
+      // Check which one exists
+      let fontPath;
+      let fontExists = false;
+
+      if (fs.existsSync(publicFontPath)) {
+        fontPath = publicFontPath;
+        fontExists = true;
+        console.log('Using font from public directory');
+      } else if (fs.existsSync(outputFontPath)) {
+        fontPath = outputFontPath;
+        fontExists = true;
+        console.log('Using font from output directory');
+      } else {
+        console.log('Font not found in either location');
       }
 
       const browser = await puppeteer.launch();
@@ -563,7 +566,7 @@ export default async function (eleventyConfig) {
         });
       }
 
-      // Also need to check CSS paths similarly
+      // Do the same for CSS files
       for (const cssFile of [
         "variables.css",
         "reset.css",
@@ -572,13 +575,13 @@ export default async function (eleventyConfig) {
         "global.css",
         "resume.css"
       ]) {
-        const cssPath = `./public/css/${cssFile}`;
-        const altCssPath = `./css/${cssFile}`;
+        const publicCssPath = path.resolve(`/opt/build/repo/public/css/${cssFile}`);
+        const outputCssPath = path.resolve(`/opt/build/repo/css/${cssFile}`);
 
-        if (fs.existsSync(cssPath)) {
-          await page.addStyleTag({ path: cssPath });
-        } else if (fs.existsSync(altCssPath)) {
-          await page.addStyleTag({ path: altCssPath });
+        if (fs.existsSync(publicCssPath)) {
+          await page.addStyleTag({ path: publicCssPath });
+        } else if (fs.existsSync(outputCssPath)) {
+          await page.addStyleTag({ path: outputCssPath });
         } else {
           console.log(`CSS file not found: ${cssFile}`);
         }
@@ -597,6 +600,7 @@ export default async function (eleventyConfig) {
     }
     return content;
   });
+
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
