@@ -553,7 +553,7 @@ export default async function (eleventyConfig) {
         });
       }
 
-      await page.waitForTimeout(2000);
+      await new Promise(resolve => setTimeout(resolve, 2000));
 
       for (const cssFile of [
         "variables.css",
