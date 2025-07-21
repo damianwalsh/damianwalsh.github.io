@@ -522,11 +522,25 @@ export default async function (eleventyConfig) {
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if (outputPath?.endsWith("resume/index.html")) {
-      const fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
-      const fontExists = fs.existsSync(fontPath);
+      // Try to find font in both possible locations
+      let fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
+      let fontExists = fs.existsSync(fontPath);
+
+      // If not found in public dir, try direct in output structure
+      if (!fontExists) {
+        const altFontPath = path.resolve('./fonts/BricolageGrotesque.ttfVariable.woff2');
+        if (fs.existsSync(altFontPath)) {
+          fontPath = altFontPath;
+          fontExists = true;
+          console.log('Found font in output directory:', altFontPath);
+        } else {
+          console.log('Font not found in either location:',
+            { publicPath: fontPath, outputPath: altFontPath });
+        }
+      }
+
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
-
       await page.setContent(content, {
         waitUntil: ["networkidle0", "domcontentloaded", "load"],
         timeout: 30000
@@ -549,6 +563,7 @@ export default async function (eleventyConfig) {
         });
       }
 
+      // Also need to check CSS paths similarly
       for (const cssFile of [
         "variables.css",
         "reset.css",
@@ -557,21 +572,27 @@ export default async function (eleventyConfig) {
         "global.css",
         "resume.css"
       ]) {
-        await page.addStyleTag({
-          path: `./public/css/${cssFile}`
-        });
+        const cssPath = `./public/css/${cssFile}`;
+        const altCssPath = `./css/${cssFile}`;
+
+        if (fs.existsSync(cssPath)) {
+          await page.addStyleTag({ path: cssPath });
+        } else if (fs.existsSync(altCssPath)) {
+          await page.addStyleTag({ path: altCssPath });
+        } else {
+          console.log(`CSS file not found: ${cssFile}`);
+        }
       }
+
       await page.screenshot({ type: 'jpeg' });
 
       // Ensure directory exists before writing PDF
       const pdfPath = outputPath.replace("index.html", "resume.pdf");
       fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
-
       await page.pdf({
         path: pdfPath,
         format: "A4"
       });
-
       await browser.close();
     }
     return content;
