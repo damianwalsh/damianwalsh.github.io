@@ -561,6 +561,7 @@ export default async function (eleventyConfig) {
           path: `./public/css/${cssFile}`
         });
       }
+      await page.screenshot({ type: 'jpeg' });
 
       // Ensure directory exists before writing PDF
       const pdfPath = outputPath.replace("index.html", "resume.pdf");
