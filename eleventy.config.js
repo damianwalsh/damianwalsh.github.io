@@ -522,48 +522,14 @@ export default async function (eleventyConfig) {
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if (outputPath?.endsWith("resume/index.html")) {
-      // Add debugging to find where files are located
-      console.log('Current directory:', process.cwd());
-      console.log('Directory listing:', fs.readdirSync(process.cwd()));
+      // Use the correct filename
+      const fontPath = path.resolve('/opt/build/repo/public/fonts/BricolageGrotesqueVariable.woff2');
+      const fontExists = fs.existsSync(fontPath);
 
-      try {
-        console.log('Public directory exists:', fs.existsSync('./public'));
-        if (fs.existsSync('./public')) {
-          console.log('Public directory contents:', fs.readdirSync('./public'));
-        }
+      console.log('Checking font path:', fontPath);
+      console.log('Font exists:', fontExists);
 
-        console.log('Fonts directory exists:', fs.existsSync('./public/fonts'));
-        if (fs.existsSync('./public/fonts')) {
-          console.log('Fonts directory contents:', fs.readdirSync('./public/fonts'));
-        }
-      } catch (e) {
-        console.log('Error checking directories:', e.message);
-      }
-
-      // Try both possible locations with absolute paths
-      const publicFontPath = path.resolve('/opt/build/repo/public/fonts/BricolageGrotesque.ttfVariable.woff2');
-      const outputFontPath = path.resolve('/opt/build/repo/fonts/BricolageGrotesque.ttfVariable.woff2');
-
-      // Check which one exists
-      let fontPath;
-      let fontExists = false;
-
-      if (fs.existsSync(publicFontPath)) {
-        fontPath = publicFontPath;
-        fontExists = true;
-        console.log('Using font from public directory');
-      } else if (fs.existsSync(outputFontPath)) {
-        fontPath = outputFontPath;
-        fontExists = true;
-        console.log('Using font from output directory');
-      } else {
-        console.log('Font not found in either location');
-      }
-
-      const browser = await puppeteer.launch({
-        args: ['--font-render-hinting=none', '--disable-gpu']
-      });
-
+      const browser = await puppeteer.launch();
       const page = await browser.newPage();
       await page.setContent(content, {
         waitUntil: ["networkidle0", "domcontentloaded", "load"],
@@ -587,7 +553,7 @@ export default async function (eleventyConfig) {
         });
       }
 
-      // Do the same for CSS files with added debugging
+      // Do the same for CSS files
       for (const cssFile of [
         "variables.css",
         "reset.css",
@@ -599,10 +565,6 @@ export default async function (eleventyConfig) {
         const publicCssPath = path.resolve(`/opt/build/repo/public/css/${cssFile}`);
         const outputCssPath = path.resolve(`/opt/build/repo/css/${cssFile}`);
 
-        console.log(`Checking CSS file ${cssFile}:`);
-        console.log(`  Public path exists: ${fs.existsSync(publicCssPath)}`);
-        console.log(`  Output path exists: ${fs.existsSync(outputCssPath)}`);
-
         if (fs.existsSync(publicCssPath)) {
           await page.addStyleTag({ path: publicCssPath });
         } else if (fs.existsSync(outputCssPath)) {
@@ -612,7 +574,6 @@ export default async function (eleventyConfig) {
         }
       }
 
-      // Force rendering with a screenshot
       await page.screenshot({ type: 'jpeg' });
 
       // Ensure directory exists before writing PDF
@@ -626,8 +587,6 @@ export default async function (eleventyConfig) {
     }
     return content;
   });
-
-
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
