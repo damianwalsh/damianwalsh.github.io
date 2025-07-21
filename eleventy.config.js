@@ -522,6 +522,24 @@ export default async function (eleventyConfig) {
   // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if (outputPath?.endsWith("resume/index.html")) {
+      // Add debugging to find where files are located
+      console.log('Current directory:', process.cwd());
+      console.log('Directory listing:', fs.readdirSync(process.cwd()));
+
+      try {
+        console.log('Public directory exists:', fs.existsSync('./public'));
+        if (fs.existsSync('./public')) {
+          console.log('Public directory contents:', fs.readdirSync('./public'));
+        }
+
+        console.log('Fonts directory exists:', fs.existsSync('./public/fonts'));
+        if (fs.existsSync('./public/fonts')) {
+          console.log('Fonts directory contents:', fs.readdirSync('./public/fonts'));
+        }
+      } catch (e) {
+        console.log('Error checking directories:', e.message);
+      }
+
       // Try both possible locations with absolute paths
       const publicFontPath = path.resolve('/opt/build/repo/public/fonts/BricolageGrotesque.ttfVariable.woff2');
       const outputFontPath = path.resolve('/opt/build/repo/fonts/BricolageGrotesque.ttfVariable.woff2');
@@ -542,7 +560,10 @@ export default async function (eleventyConfig) {
         console.log('Font not found in either location');
       }
 
-      const browser = await puppeteer.launch();
+      const browser = await puppeteer.launch({
+        args: ['--font-render-hinting=none', '--disable-gpu']
+      });
+
       const page = await browser.newPage();
       await page.setContent(content, {
         waitUntil: ["networkidle0", "domcontentloaded", "load"],
@@ -554,19 +575,19 @@ export default async function (eleventyConfig) {
         const base64Font = fontData.toString('base64');
         await page.addStyleTag({
           content: `
-          @font-face {
-            font-family: 'Bricolage Grotesque Variable';
-            src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
-            font-style: normal;
-            font-stretch: 75% 100%;
-            font-weight: 200 800;
-            font-display: block;
-          }
+        @font-face {
+          font-family: 'Bricolage Grotesque Variable';
+          src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
+          font-style: normal;
+          font-stretch: 75% 100%;
+          font-weight: 200 800;
+          font-display: block;
+        }
         `
         });
       }
 
-      // Do the same for CSS files
+      // Do the same for CSS files with added debugging
       for (const cssFile of [
         "variables.css",
         "reset.css",
@@ -578,6 +599,10 @@ export default async function (eleventyConfig) {
         const publicCssPath = path.resolve(`/opt/build/repo/public/css/${cssFile}`);
         const outputCssPath = path.resolve(`/opt/build/repo/css/${cssFile}`);
 
+        console.log(`Checking CSS file ${cssFile}:`);
+        console.log(`  Public path exists: ${fs.existsSync(publicCssPath)}`);
+        console.log(`  Output path exists: ${fs.existsSync(outputCssPath)}`);
+
         if (fs.existsSync(publicCssPath)) {
           await page.addStyleTag({ path: publicCssPath });
         } else if (fs.existsSync(outputCssPath)) {
@@ -587,6 +612,7 @@ export default async function (eleventyConfig) {
         }
       }
 
+      // Force rendering with a screenshot
       await page.screenshot({ type: 'jpeg' });
 
       // Ensure directory exists before writing PDF
@@ -600,6 +626,7 @@ export default async function (eleventyConfig) {
     }
     return content;
   });
+
 
 
   // Minify HTML
