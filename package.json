@@ -9,6 +9,7 @@
     "reading": "node _scripts/readingCLI.js",
     "music": "node _scripts/musicCLI.js",
     "dev": "npm-run-all --parallel sass eleventy:dev",
+    "prebuild": "npx puppeteer browsers install chrome",
     "build": "npx @11ty/eleventy",
     "deploy": "npm run build && git add . && git commit -m \"site build\" && git push"
   },
