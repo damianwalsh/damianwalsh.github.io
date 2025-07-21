@@ -525,10 +525,8 @@ export default async function (eleventyConfig) {
       const fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
       const fontExists = fs.existsSync(fontPath);
       const browser = await puppeteer.launch({
-        headless: "new",
-        args: ['--font-render-hinting=medium', '--disable-gpu']
+        executablePath: process.env.CHROME_PATH || null
       });
-
       const page = await browser.newPage();
 
       await page.setContent(content, {
@@ -543,7 +541,7 @@ export default async function (eleventyConfig) {
           content: `
           @font-face {
             font-family: 'Bricolage Grotesque Variable';
-            src: url(data:font/woff2;base64,${base64Font}) format('woff2');
+            src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
             font-style: normal;
             font-stretch: 75% 100%;
             font-weight: 200 800;
@@ -552,8 +550,6 @@ export default async function (eleventyConfig) {
         `
         });
       }
-
-      await new Promise(resolve => setTimeout(resolve, 2000));
 
       for (const cssFile of [
         "variables.css",
