@@ -524,9 +524,7 @@ export default async function (eleventyConfig) {
     if (outputPath?.endsWith("resume/index.html")) {
       const fontPath = path.resolve('./public/fonts/BricolageGrotesque.ttfVariable.woff2');
       const fontExists = fs.existsSync(fontPath);
-      const browser = await puppeteer.launch({
-        executablePath: process.env.CHROME_PATH || null
-      });
+      const browser = await puppeteer.launch();
       const page = await browser.newPage();
 
       await page.setContent(content, {
