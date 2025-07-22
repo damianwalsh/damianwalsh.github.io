@@ -21,13 +21,30 @@ permalink: "/music/artists/{{ artistData.artist | slugify }}/"
 <header class="main-header">
   {% include "partials/breadcrumb.njk" %}
   <h1>{{ artistData.artist }}</h1>
-  {% if artistData.artist_id %}
+</header>
+
+{% if artistData.artist_id %}
   {% set artistProfile = artists[artistData.artist_id | string] %}
   {% if artistProfile and artistProfile.profile | cleanProfile %}
-  <p class="standfirst">{{ artistProfile.profile | cleanProfile }}</p>
+  <div class="surface detail">
+    {% if artistData.artist | slugify | imageExists %}
+    <img
+      loading="eager"
+      src="/music/img/artists/{{ artistData.artist | slugify }}.jpg"
+      alt="{{ artistData.artist }}"
+      class="detail__image desaturate"
+      sizes="(min-width: 1720px) 403px, (min-width: 1380px) calc(26.56vw - 49px), (min-width: 780px) calc(30.69vw - 15px), (min-width: 400px) 83.61vw, calc(26.25vw + 220px)"
+    >
+    {% endif %}
+    <p class="detail__meta standfirst">{{ artistProfile.profile | cleanProfile }}</p>
+    <div class="detail__footer">
+      {% if artistProfile.uri %}
+      <a href="{{ artistProfile.uri }}"><small>View on Discogs</small></a>
+      {% endif %}
+    </div>
+  </div>
   {% endif %}
-  {% endif %}
-</header>
+{% endif %}
 
 {% set formats = artistData.releases | groupby("format") %}
 {% for format, releases in formats %}
