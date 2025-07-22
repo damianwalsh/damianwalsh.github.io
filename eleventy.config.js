@@ -510,24 +510,17 @@ export default async function (eleventyConfig) {
 
 
   // Handle HTML entities in page titles
-  eleventyConfig.addTransform('decodeHtmlEntities', (content, outputPath) => {
-    if (outputPath && outputPath.endsWith('.html')) {
-      return content.replace(/<title>(.*?)<\/title>/g, (match, p1) => {
-        return `<title>${he.decode(p1)}</title>`;
-      });
-    }
-    return content;
-  });
-
-  // Generate PDF
   eleventyConfig.addTransform("pdf", async (content, outputPath) => {
     if (outputPath?.endsWith("resume/index.html")) {
-      // Use the correct filename
-      const fontPath = path.resolve('/opt/build/repo/public/fonts/BricolageGrotesqueVariable.woff2');
-      const fontExists = fs.existsSync(fontPath);
+      // Detect environment and use appropriate paths
+      const isNetlify = process.env.NETLIFY === 'true';
 
-      console.log('Checking font path:', fontPath);
-      console.log('Font exists:', fontExists);
+      // Choose the correct font path based on environment
+      const fontPath = isNetlify
+        ? path.resolve('/opt/build/repo/public/fonts/BricolageGrotesqueVariable.woff2')
+        : path.resolve('./public/fonts/BricolageGrotesqueVariable.woff2');
+
+      const fontExists = fs.existsSync(fontPath);
 
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
@@ -553,7 +546,7 @@ export default async function (eleventyConfig) {
         });
       }
 
-      // Do the same for CSS files
+      // Use the appropriate CSS path based on environment
       for (const cssFile of [
         "variables.css",
         "reset.css",
@@ -562,20 +555,16 @@ export default async function (eleventyConfig) {
         "global.css",
         "resume.css"
       ]) {
-        const publicCssPath = path.resolve(`/opt/build/repo/public/css/${cssFile}`);
-        const outputCssPath = path.resolve(`/opt/build/repo/css/${cssFile}`);
+        const cssPath = isNetlify
+          ? path.resolve(`/opt/build/repo/public/css/${cssFile}`)
+          : `./public/css/${cssFile}`;
 
-        if (fs.existsSync(publicCssPath)) {
-          await page.addStyleTag({ path: publicCssPath });
-        } else if (fs.existsSync(outputCssPath)) {
-          await page.addStyleTag({ path: outputCssPath });
-        } else {
-          console.log(`CSS file not found: ${cssFile}`);
-        }
+        try {
+          await page.addStyleTag({ path: cssPath });
+        } catch (error) { }
       }
 
       await page.screenshot({ type: 'jpeg' });
-
       // Ensure directory exists before writing PDF
       const pdfPath = outputPath.replace("index.html", "resume.pdf");
       fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
