@@ -14,7 +14,7 @@ jobs:
       - name: Trigger Netlify Build
         id: netlify-build
         run: |
-          RESPONSE=$(curl -s -o response.txt -w "%{http_code}" -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }})
+          RESPONSE=$(curl -k -s -o response.txt -w "%{http_code}" -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }})
           if [ "$RESPONSE" -eq 200 ] || [ "$RESPONSE" -eq 201 ]; then
             echo "build_status=success" >> $GITHUB_OUTPUT
             echo "Netlify build triggered successfully"
@@ -41,7 +41,7 @@ jobs:
             Time: ${{ format(github.event.repository.pushed_at, 'dddd, MMMM Do YYYY, h:mm:ss a') }}
             Repository: ${{ github.repository }}
 
-            View build status:
+            View build status in Netlify dashboard:
             https://app.netlify.com/sites/rad-wisp-0f954e/deploys
           to: ${{ secrets.EMAIL_USERNAME }}
           from: GitHub Actions
