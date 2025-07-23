@@ -31,7 +31,7 @@ jobs:
         with:
           server_address: smtp.mail.me.com
           server_port: 587
-          secure: true
+          secure: false
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: Netlify Scheduled Build ${{ steps.netlify-build.outputs.build_status == 'success' && 'Started' || 'Failed' }}
