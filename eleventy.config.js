@@ -608,7 +608,11 @@ export default async function (eleventyConfig) {
       sizes: "100vw",
     },
     urlPath: "/img/cache/",
-    outputDir: "./_site/img/cache/"
+    outputDir: "./_site/img/cache/",
+    cacheOptions: {
+      directory: "./_site/img/cache",
+      duration: "1y"
+    }
   });
 
   eleventyConfig.addShortcode("currentBuildDate", () => {
