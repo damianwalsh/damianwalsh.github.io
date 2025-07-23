@@ -610,7 +610,7 @@ export default async function (eleventyConfig) {
     urlPath: "/img/cache/",
     outputDir: "./_site/img/cache/",
     cacheOptions: {
-      directory: "./_site/img/cache",
+      directory: ".cache/img",
       duration: "1y"
     }
   });
