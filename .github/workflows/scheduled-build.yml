@@ -1,0 +1,47 @@
+name: Scheduled Netlify Build
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  # Optional: Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Build
+        id: netlify-build
+        run: |
+          RESPONSE=$(curl -s -o response.txt -w "%{http_code}" -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }})
+          if [ "$RESPONSE" -eq 200 ] || [ "$RESPONSE" -eq 201 ]; then
+            echo "build_status=success" >> $GITHUB_OUTPUT
+            echo "Netlify build triggered successfully"
+          else
+            echo "build_status=failure" >> $GITHUB_OUTPUT
+            echo "Failed to trigger Netlify build. Response code: $RESPONSE"
+            cat response.txt
+            exit 1
+          fi
+
+      - name: Send email notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.mail.me.com
+          server_port: 587
+          secure: true
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: Netlify Scheduled Build ${{ steps.netlify-build.outputs.build_status == 'success' && 'Started' || 'Failed' }}
+          body: |
+            The scheduled Netlify build was ${{ steps.netlify-build.outputs.build_status == 'success' && 'triggered successfully' || 'failed to trigger' }}.
+
+            Time: ${{ format(github.event.repository.pushed_at, 'dddd, MMMM Do YYYY, h:mm:ss a') }}
+            Repository: ${{ github.repository }}
+
+            View build status:
+            https://app.netlify.com/sites/rad-wisp-0f954e/deploys
+          to: ${{ secrets.EMAIL_USERNAME }}
+          from: GitHub Actions
