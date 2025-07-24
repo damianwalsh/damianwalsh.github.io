@@ -508,74 +508,68 @@ export default async function (eleventyConfig) {
     toFileDirectory: "dist",
   });
 
+  // Generate PDF
+  eleventyConfig.addTransform("pdf", async (content, outputPath) => {
+    // Only run this transform in local development, not on Netlify
+    if (!process.env.NETLIFY && outputPath?.endsWith("resume/index.html")) {
+      const fontPath = path.resolve('./public/fonts/BricolageGrotesqueVariable.woff2');
+      const fontExists = fs.existsSync(fontPath);
 
-  // Handle HTML entities in page titles
-  // eleventyConfig.addTransform("pdf", async (content, outputPath) => {
-  //   if (outputPath?.endsWith("resume/index.html")) {
-  //     // Detect environment and use appropriate paths
-  //     const isNetlify = process.env.NETLIFY === 'true';
+      const browser = await puppeteer.launch();
+      const page = await browser.newPage();
+      await page.setContent(content, {
+        waitUntil: ["networkidle0", "domcontentloaded", "load"],
+        timeout: 30000
+      });
 
-  //     // Choose the correct font path based on environment
-  //     const fontPath = isNetlify
-  //       ? path.resolve('/opt/build/repo/public/fonts/BricolageGrotesqueVariable.woff2')
-  //       : path.resolve('./public/fonts/BricolageGrotesqueVariable.woff2');
+      if (fontExists) {
+        const fontData = fs.readFileSync(fontPath);
+        const base64Font = fontData.toString('base64');
+        await page.addStyleTag({
+          content: `
+          @font-face {
+            font-family: 'Bricolage Grotesque Variable';
+            src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
+            font-style: normal;
+            font-stretch: 75% 100%;
+            font-weight: 200 800;
+            font-display: block;
+          }
+        `
+        });
+      }
 
-  //     const fontExists = fs.existsSync(fontPath);
+      // Simplified CSS path - only need the local version now
+      for (const cssFile of [
+        "variables.css",
+        "reset.css",
+        "utilities.css",
+        "site-main.css",
+        "global.css",
+        "resume.css"
+      ]) {
+        const cssPath = `./public/css/${cssFile}`;
+        try {
+          await page.addStyleTag({ path: cssPath });
+        } catch (error) { }
+      }
 
-  //     const browser = await puppeteer.launch();
-  //     const page = await browser.newPage();
-  //     await page.setContent(content, {
-  //       waitUntil: ["networkidle0", "domcontentloaded", "load"],
-  //       timeout: 30000
-  //     });
+      // Generate the PDF directly in public/docs
+      const pdfPath = "./public/docs/resume.pdf";
+      fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
+      await page.pdf({
+        path: pdfPath,
+        format: "A4"
+      });
 
-  //     if (fontExists) {
-  //       const fontData = fs.readFileSync(fontPath);
-  //       const base64Font = fontData.toString('base64');
-  //       await page.addStyleTag({
-  //         content: `
-  //       @font-face {
-  //         font-family: 'Bricolage Grotesque Variable';
-  //         src: url(data:font/woff2;base64,${base64Font}) format('woff2-variations');
-  //         font-style: normal;
-  //         font-stretch: 75% 100%;
-  //         font-weight: 200 800;
-  //         font-display: block;
-  //       }
-  //       `
-  //       });
-  //     }
+      await browser.close();
+    }
 
-  //     // Use the appropriate CSS path based on environment
-  //     for (const cssFile of [
-  //       "variables.css",
-  //       "reset.css",
-  //       "utilities.css",
-  //       "site-main.css",
-  //       "global.css",
-  //       "resume.css"
-  //     ]) {
-  //       const cssPath = isNetlify
-  //         ? path.resolve(`/opt/build/repo/public/css/${cssFile}`)
-  //         : `./public/css/${cssFile}`;
+    return content;
+  });
 
-  //       try {
-  //         await page.addStyleTag({ path: cssPath });
-  //       } catch (error) { }
-  //     }
-
-  //     await page.screenshot({ type: 'jpeg' });
-  //     // Ensure directory exists before writing PDF
-  //     const pdfPath = outputPath.replace("index.html", "resume.pdf");
-  //     fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
-  //     await page.pdf({
-  //       path: pdfPath,
-  //       format: "A4"
-  //     });
-  //     await browser.close();
-  //   }
-  //   return content;
-  // });
+  // Prevent generated PDF triggering rebuild
+  eleventyConfig.watchIgnores.add("./public/docs/resume.pdf");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
