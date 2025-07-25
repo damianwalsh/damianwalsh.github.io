@@ -1,5 +1,9 @@
 {% set currentUrl = metadata.url + page.url %}
-{% set pageWebmentions = webmentions[currentUrl] or [] %}
+{% set currentUrlNoSlash = currentUrl | removeTrailingSlash %}
+{% set currentUrlWithSlash = currentUrlNoSlash + "/" %}
+
+{% set pageWebmentions = webmentions[currentUrl] or webmentions[currentUrlNoSlash] or webmentions[currentUrlWithSlash] or [] %}
+
 {% set likes = (pageWebmentions | filterByProperty("wm-property", "like-of") | length) %}
 {% set reposts = (pageWebmentions | filterByProperty("wm-property", "repost-of") | length) %}
 {% set replies = (pageWebmentions | filterByProperty("wm-property", "in-reply-to") | length) %}

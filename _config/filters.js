@@ -32,6 +32,10 @@ function cleanProfile(profile) {
 
 export default function (eleventyConfig) {
 
+  eleventyConfig.addFilter("removeTrailingSlash", function (str) {
+    return str.endsWith("/") ? str.slice(0, -1) : str;
+  });
+
   eleventyConfig.addFilter('cleanProfile', cleanProfile);
 
   eleventyConfig.addAsyncFilter('imageExists', async function (artistName) {

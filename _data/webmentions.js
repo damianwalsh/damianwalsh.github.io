@@ -1,7 +1,7 @@
 import EleventyFetch from "@11ty/eleventy-fetch";
 import metadata from '../_data/metadata.js';
 
-export default async function() {
+export default async function () {
   const WEBMENTION_TOKEN = process.env.WEBMENTION_IO_TOKEN;
   const DOMAIN = metadata.url.replace('https://', '');
   const PER_PAGE = 1000;
@@ -34,4 +34,5 @@ export default async function() {
   });
 
   return webmentions;
+
 }
