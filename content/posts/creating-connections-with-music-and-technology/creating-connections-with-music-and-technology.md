@@ -5,6 +5,7 @@ date: 2025-02-25
 updated: 2025-07-09
 tags:
   - Eleventy
+  - Discogs API
   - Digital Gardening
   - Journalling
 ---

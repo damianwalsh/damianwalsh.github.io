@@ -6,6 +6,7 @@ tags:
   - Eleventy
   - Digital Gardening
   - Journalling
+  - OpenLibrary API
 ---
 {% css %}
 .screenshots {
