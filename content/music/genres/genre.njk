@@ -9,6 +9,7 @@ pagination:
   size: 1
   alias: genreData
 permalink: "/music/genres/{{ genreData.genre | slugify }}/"
+excludeFromSitemap: true
 ---
 <header class="main-header">
   {% include "partials/breadcrumb.njk" %}

@@ -618,7 +618,8 @@ export const config = {
     "njk",
     "html",
     "liquid",
-    "11ty.js"
+    "11ty.js",
+    "xml"
   ],
 
   // Pre-process *.md files with: (default: `liquid`)

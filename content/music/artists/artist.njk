@@ -9,6 +9,7 @@ pagination:
   size: 1
   alias: artistData
 permalink: "/music/artists/{{ artistData.artist | slugify }}/"
+excludeFromSitemap: true
 ---
 {% css %}
 {% include "public/css/music.css" %}

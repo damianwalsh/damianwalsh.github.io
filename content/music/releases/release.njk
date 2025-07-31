@@ -9,6 +9,7 @@ pagination:
   size: 1
   alias: release
 permalink: "/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}/"
+excludeFromSitemap: true
 ---
 {% css %}
 {% include "public/css/music.css" %}

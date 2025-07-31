@@ -9,6 +9,7 @@ pagination:
   size: 1
   alias: book
 permalink: "/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}/"
+excludeFromSitemap: true
 ---
 <header class="main-header">
   {% include "partials/breadcrumb.njk" %}
