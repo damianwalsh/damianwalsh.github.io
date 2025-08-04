@@ -589,20 +589,25 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // File extensions to process in _site folder
     extensions: "html",
-
     // Output formats for each image.
     formats: ["webp", "auto"],
-
     widths: [160, 320, 480, 640, 960, 1280],
-
     defaultAttributes: {
-      // e.g. <img loading decoding> assigned on the HTML tag will override these values.
       loading: "lazy",
       decoding: "async",
       sizes: "100vw",
     },
     urlPath: "/img/cache/",
-    outputDir: "./_site/img/cache/",
+    outputDir: ".cache/@11ty/img/", // Change to temporary cache location
+  });
+
+  // Copy the cached images to the output directory after build
+  eleventyConfig.on("eleventy.after", function () {
+    if (process.env.ELEVENTY_RUN_MODE === "build") {
+      fs.cpSync(".cache/@11ty/img/", path.join(eleventyConfig.directories.output, "img/cache/"), {
+        recursive: true
+      });
+    }
   });
 
   eleventyConfig.addShortcode("currentBuildDate", () => {
