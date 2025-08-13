@@ -4,6 +4,7 @@ eleventyNavigation:
   parent: Releases
 eleventyComputed:
   title: "{{ release.title }} - {{ release.artist }} | Music"
+  description: "{% if release.released %}{% if release.first_released and release.first_released !== release.released %}Released {{ release.released | readableDate }} (first released: {{ release.first_released | readableDate }}){% else %}Released {{ release.released | readableDate }}{% endif %}{% else %}Released {{ release.first_released | readableDate }}{% endif %}"
 pagination:
   data: collections.releases
   size: 1
