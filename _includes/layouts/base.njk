@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if page.url === "/" %}
-  <title>{{ metadata.title }} | {{ metadata.description }}</title>
-  <meta name="description" content="{{ metadata.description }}">
+  <title>{{ metadata.title }} | {{ metadata.description | safe }}</title>
+  <meta name="description" content="{{ metadata.description | safe }}">
   {% else %}
-  <title>{{ title }} | {{ metadata.title }}</title>
+  <title>{{ title | safe }} | {{ metadata.title | safe }}</title>
   {% if description %}
-  <meta name="description" content="{{ description }}">
+  <meta name="description" content="{{ description | safe }}">
   {% endif %}
   {% endif %}
   <meta name="generator" content="{{ eleventy.generator }}">
-  <meta property="og:title" content="{{ title or metadata.title }}">
-  <meta property="og:description" content="{{ description or metadata.description }}">
+  <meta property="og:title" content="{{ (title or metadata.title) | safe }}">
+  <meta property="og:description" content="{{ (description or metadata.description) | safe }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
   <meta property="og:image" content="{% socialImage {
@@ -27,7 +27,7 @@
   <script type="application/ld+json">{{ metadata.schemaorg | stringify | safe }}</script>
   <link rel="icon" href="/img/favicon.ico">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="alternate" href="https://damianwalsh.co.uk/feed.xml"  type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="alternate" href="https://damianwalsh.co.uk/feed.xml" type="application/atom+xml" title="{{ metadata.title | safe }}">
   <link rel="webmention" href="https://webmention.io/damianwalsh.co.uk/webmention" />
   <link rel="pingback" href="https://webmention.io/damianwalsh.co.uk/xmlrpc" />
   {% css %}
