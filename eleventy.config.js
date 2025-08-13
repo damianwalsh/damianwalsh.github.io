@@ -424,21 +424,24 @@ export default async function (eleventyConfig) {
   });
 
   // Social images - auth
-  eleventyConfig.addShortcode("socialImage", function(pageData) {
+  eleventyConfig.addShortcode("socialImage", function (pageData) {
     if (!pageData) return '';
 
-    const title = pageData.title || pageData.metadata?.title || '';
-    const description = pageData.description || pageData.metadata?.description || '';
+    const he = require('he');
+
+    let title = pageData.title || pageData.metadata?.title || '';
+    title = he.decode(title);
+    title = title.split(" | ")[0].trim();
+
+    const description = he.decode(pageData.description || pageData.metadata?.description || '');
     const url = (pageData.metadata?.url || '').replace('https://', '');
 
     const safeTitle = encodeURIComponent(encodeURIComponent(title));
     const safeDescription = encodeURIComponent(encodeURIComponent(description));
     const safeUrl = encodeURIComponent(encodeURIComponent(url.toUpperCase()));
 
-    // Create transformation string
     const transformation = `w_1200,h_630,c_fill/l_text:BricolageGrotesqueExtraBold.ttf_72_line_spacing_1:${safeTitle},co_rgb:ffffff,g_south_west,x_72,y_327,c_fit,w_960/l_text:BricolageGrotesqueLight.ttf_36_line_spacing_1.5:${safeDescription},co_rgb:afafaf,g_north_west,x_72,y_327,c_fit,w_720/l_text:BricolageGrotesqueBold.ttf_32_letter_spacing_0.4:${safeUrl},co_rgb:afafaf,g_south_west,x_72,y_96/og-background.jpg`;
 
-    // Generate URL-safe base64 signature and take first 8 characters
     const toSign = transformation + process.env.CLOUDINARY_API_SECRET;
     const hash = createHash('sha1')
       .update(toSign)
