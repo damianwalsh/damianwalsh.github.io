@@ -6,7 +6,8 @@ export default {
   author: {
     name: "Damian Walsh",
     email: "damianwalsh@me.com",
-    url: "https://damianwalsh.co.uk"
+    url: "https://damianwalsh.co.uk",
+    fedi: "@damianwalsh@mastodon.social"
   },
   schemaorg: {
     "@context": "https://schema.org",
