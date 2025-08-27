@@ -1,6 +1,61 @@
 {
   "current": [
     {
+      "title": "Fugitive Telemetry: The Murderbot Diaries",
+      "author": "Martha Wells",
+      "openlibrary_key": "OL20805971W",
+      "date_read": "2025-08-27",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "description": ""
+    },
+    {
+      "title": "Network Effect: A Murderbot Novel",
+      "author": "Martha Wells",
+      "openlibrary_key": "OL20735675W",
+      "date_read": "2025-08-27",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "description": "**Murderbot returns in its highly-anticipated, first, full-length standalone novel.**\r\n\r\nYou know that feeling when you’re at work, and you’ve had enough of people, and then the boss walks in with yet another job that needs to be done right this second or the world will end, but all you want to do is go home and binge your favorite shows? And you're a sentient murder machine programmed for destruction? Congratulations, you're Murderbot.\r\n\r\nCome for the pew-pew space battles, stay for the most relatable A.I. you’ll read this century."
+    },
+    {
+      "title": "Exit Strategy: The Murderbot Diaries",
+      "author": "Martha Wells",
+      "openlibrary_key": "OL19763338W",
+      "date_read": "2025-08-27",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "description": "\"Martha Wells's Hugo, Nebula, Alex, and Locus Award-winning, New York Times and USA Today bestselling series, The Murderbot Diaries, comes to a thrilling conclusion in Exit Strategy. Murderbot wasn't programmed to care. So, its decision to help the only human who ever showed it respect must be a system glitch, right? Having traveled the width of the galaxy to unearth details of its own murderous transgressions, as well as those of the GrayCris Corporation, Murderbot is heading home to help Dr. Mensah--its former owner (protector? friend?)--submit evidence that could prevent GrayCris from destroying more colonists in its never-ending quest for profit. But who's going to believe a SecUnit gone rogue? And what will become of it when it's caught?\"--provided by publisher."
+    },
+    {
+      "title": "Rogue Protocol: The Murderbot Diaries",
+      "author": "Martha Wells",
+      "openlibrary_key": "OL19753589W",
+      "date_read": "2025-08-26",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "description": "\"Sci-Fi's favorite antisocial AI is back on a mission.  The case against the too-big-to-fail GrayChris Corporation is floundering, and more importantly, authorities are beginning to ask more questions about where Dr. Mensah's SecUnit is.  And Murderbot would rather those questions went away.  For good.\""
+    },
+    {
+      "title": "Artificial Condition: The Murderbot Diaries",
+      "author": "Martha Wells",
+      "openlibrary_key": "OL19747311W",
+      "date_read": "2025-08-26",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "description": "It has a dark past - one in which a number of humans were killed. A past that caused it to christen itself Murderbot. But it has only vague memories of the massacre that spawned that title, and it wants to know more. Teaming up with a research transport vessal named ART (you don't want to know what the A stands for), Murderbot heads to the mining facility where it went rogue. What it discovers will forever change the way it thinks..."
+    },
+    {
       "title": "All Systems Red: The Murderbot Diaries",
       "author": "Martha Wells",
       "openlibrary_key": "OL17914663W",
