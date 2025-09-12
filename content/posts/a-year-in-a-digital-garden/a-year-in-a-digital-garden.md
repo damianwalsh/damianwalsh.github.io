@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 {% endjs %}
-At the end of 2024, a period of reflection on my professional life and relationship with technology—from both sides of the glass: as a user and sometime worker in the industry—led me to start this <a href="https://damianwalsh.co.uk/posts/cultivating-a-digital-garden/">digital garden project</a> as a way to reconnect with work I find meaningful and engaging, helping me reset my professional identity based on my own interests. As summer gives way to autumn, a natural time for planning ahead in any garden, I want to reflect on what I've accomplished in my garden so far.
+At the end of 2024, a period of reflection on my professional life and relationship with technology—from both sides of the glass: as a user and sometime worker in the industry—led me to start this <a href="https://damianwalsh.co.uk/posts/cultivating-a-digital-garden/">digital garden project</a> as a way to reconnect with work I find meaningful and engaging, helping me reset my professional identity based on my own interests. As summer gives way to autumn, a natural time for planning ahead in any garden, I want to reflect on what I've accomplished so far.
 
 ## Things I have learnt
 My original motivation was simple, but the project has led me in some unexpected directions—as creative endeavours inevitably will. Pursuing ideas all the way through to completion, then documenting and sharing my discoveries, created a ladder I could use to climb out of despondency and taught me new things about technology and, to some extent, myself that I hadn't anticipated in the process.
