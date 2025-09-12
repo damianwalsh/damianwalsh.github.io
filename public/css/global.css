@@ -108,6 +108,7 @@ button {
   padding: 0;
   cursor: pointer;
   border: none;
+  line-height: inherit;
 }
 
 ul:not([role="list"]),
@@ -548,7 +549,8 @@ dialog {
   gap: var(--space-2xs);
   margin: 0;
   padding: 0;
-  a {
+  a,
+  button {
     --pill-size: 32px;
     display: flex;
     font-size: var(--text-size--1);
