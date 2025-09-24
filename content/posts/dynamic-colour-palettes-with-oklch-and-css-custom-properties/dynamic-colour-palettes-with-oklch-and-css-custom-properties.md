@@ -44,7 +44,7 @@ When I set out to design the latest version of this website, I knew selecting co
   <figcaption class="meta">Theme picker on <a href="https://mxb.dev/">Max Böck's website</a></figcaption>
 </figure>
 
-While I was thinking about my colour dilemma, I was reading Brian Eno's 1995 diary [A Year with Swollen Appendices](https://damianwalsh.co.uk/reading-list/works/a-year-with-swollen-appendices-brian-eno.html), where he quotes cybernetician Stafford Beer while discussing his approach to producing generative music.
+While I was thinking about my colour dilemma, I was reading Brian Eno's 1995 diary [A Year with Swollen Appendices](https://damianwalsh.co.uk/reading/works/a-year-with-swollen-appendices-brian-eno/), where he quotes cybernetician Stafford Beer while discussing his approach to producing generative music.
 
 <figure>
   <blockquote>
