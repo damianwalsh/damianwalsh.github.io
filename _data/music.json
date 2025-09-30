@@ -1,5 +1,16 @@
 [
   {
+    "artist": "Doves",
+    "title": "Constellations For The Lonely",
+    "release_id": 33271554,
+    "format": "Vinyl",
+    "favourite": false,
+    "first_released": "2025-02-28",
+    "favourite_tracks": [
+      10
+    ]
+  },
+  {
     "artist": "Bibio",
     "title": "Ambivalence Avenue",
     "format": "Vinyl",

@@ -1,6 +1,89 @@
 {
   "releases": [
     {
+      "artist": "Doves",
+      "title": "Constellations For The Lonely",
+      "release_id": 33271554,
+      "format": "Vinyl",
+      "favourite": false,
+      "first_released": "2025-02-28",
+      "favourite_tracks": [
+        10
+      ],
+      "artist_id": 3855,
+      "label": "EMI North",
+      "year": 2025,
+      "notes": "Gatefold sleeve\n\n℗&© 2025 Doves Music Limited under exclusive licence to Universal Music Operations Limited.\n\nSleeve: Made in the E.U.\nSticker: Made in Germany",
+      "released": "2025-02-28",
+      "genres": [
+        "Rock"
+      ],
+      "uri": "https://www.discogs.com/release/33271554-Doves-Constellations-For-The-Lonely",
+      "videos": [],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Renegade",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Cold Dreaming",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "In The Butterfly House",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Strange Weather",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "A Drop In The Ocean",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Last Year's Man",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Stupid Schemes",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Saint Teresa",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Orlando",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Southern Bell",
+          "duration": ""
+        }
+      ]
+    },
+    {
       "artist": "Bibio",
       "title": "Ambivalence Avenue",
       "format": "Vinyl",
@@ -166,6 +249,15 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "alvechurch"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 231577,
       "label": "4AD",
       "year": 2004,
@@ -263,16 +355,7 @@
           "title": "Brick Is Red",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "alvechurch"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Rolling Stones",
@@ -574,6 +657,17 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 82730,
       "label": "Apple Records",
       "year": 2018,
@@ -748,18 +842,7 @@
           "title": "Good Night",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Beta Band",
@@ -1181,6 +1264,17 @@
       "favourite_tracks": [
         9
       ],
+      "chapters": {
+        "2016-2020": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 2228,
       "label": "Beggars Banquet",
       "year": 2018,
@@ -1298,18 +1392,7 @@
           "title": "Dead Beat Descendant",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2016-2020": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Oasis",
@@ -1321,6 +1404,15 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 140140,
       "label": "Big Brother",
       "year": 2014,
@@ -1403,16 +1495,7 @@
           "title": "Married With Children",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Metallica",
@@ -2889,6 +2972,15 @@
       "favourite_tracks": [
         5
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "alvechurch"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 74500,
       "label": "Concord Bicycle Music",
       "year": 2016,
@@ -2982,16 +3074,7 @@
           "title": "Me In Honey",
           "duration": "4:06"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "alvechurch"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Ride",
@@ -3003,6 +3086,15 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10138,
       "label": "Creation Records",
       "year": 1992,
@@ -3145,16 +3237,7 @@
           "title": "OX4",
           "duration": "7:05"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Beck",
@@ -3166,6 +3249,26 @@
       "favourite_tracks": [
         4
       ],
+      "chapters": {
+        "2002-2004": {
+          "people": [
+            "claire-p"
+          ],
+          "places": [
+            "kilburn"
+          ],
+          "events": []
+        },
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 3928,
       "label": "DGC",
       "year": 2016,
@@ -3254,27 +3357,7 @@
           "title": "Side Of The Road",
           "duration": "3:23"
         }
-      ],
-      "chapters": {
-        "2002-2004": {
-          "people": [
-            "claire-p"
-          ],
-          "places": [
-            "kilburn"
-          ],
-          "events": []
-        },
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Nirvana",
@@ -3286,6 +3369,15 @@
       "favourite_tracks": [
         5
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 125246,
       "label": "DGC",
       "year": 2015,
@@ -3389,16 +3481,7 @@
           "title": "Something In The Way",
           "duration": "3:43"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Various",
@@ -3407,6 +3490,17 @@
       "release_id": 10986338,
       "first_released": "1963-11-22",
       "favourite": false,
+      "chapters": {
+        "2008-2012": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "DOL",
       "year": 2017,
@@ -3584,18 +3678,7 @@
           "title": "Silent Night",
           "duration": "2:14"
         }
-      ],
-      "chapters": {
-        "2008-2012": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Pavement",
@@ -3759,6 +3842,17 @@
       "favourite_tracks": [
         4
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 391170,
       "label": "Domino",
       "year": 2018,
@@ -3890,18 +3984,7 @@
           "title": "The Ultracheese",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Joy Division",
@@ -4150,6 +4233,15 @@
       "favourite_tracks": [
         15
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 7551,
       "label": "Food",
       "year": 2015,
@@ -4314,16 +4406,7 @@
           "title": "Lot 105",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Blur",
@@ -5063,6 +5146,17 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 6520,
       "label": "Interscope Records",
       "year": 2017,
@@ -5181,18 +5275,7 @@
           "title": "Mothers Of The Disappeared",
           "duration": "5:14"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "PJ Harvey",
@@ -5746,6 +5829,24 @@
       "favourite_tracks": [
         8
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        },
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 6520,
       "label": "Island Records",
       "year": 2018,
@@ -5850,25 +5951,7 @@
           "title": "Love Is Blindness",
           "duration": "4:23"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        },
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Neutral Milk Hotel",
@@ -6277,6 +6360,17 @@
       "favourite_tracks": [
         4
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10263,
       "label": "Parlophone",
       "year": 2018,
@@ -6361,18 +6455,7 @@
           "title": "Subterraneans",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Beatles",
@@ -6492,6 +6575,17 @@
       "favourite_tracks": [
         6
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10263,
       "label": "Parlophone",
       "year": 2017,
@@ -6588,18 +6682,7 @@
           "title": "The Jean Genie",
           "duration": "7:28"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "David Bowie",
@@ -6611,6 +6694,17 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10263,
       "label": "Parlophone",
       "year": 2017,
@@ -6676,18 +6770,7 @@
           "title": "Wild Is The Wind",
           "duration": "6:06"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "David Bowie",
@@ -6789,6 +6872,17 @@
       "favourite_tracks": [
         8
       ],
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10263,
       "label": "Parlophone",
       "year": 2016,
@@ -6868,18 +6962,7 @@
           "title": "The Bewlay Brothers",
           "duration": "5:21"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Electronic",
@@ -7209,6 +7292,17 @@
       "favourite_tracks": [
         4
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 45467,
       "label": "Pink Floyd Records",
       "year": 2016,
@@ -7257,18 +7351,7 @@
           "title": "Shine On You Crazy Diamond (Parts 6-9)",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Rolling Stones",
@@ -7280,6 +7363,17 @@
       "favourite_tracks": [
         10
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 20991,
       "label": "Rolling Stones Records",
       "year": 2020,
@@ -7393,18 +7487,7 @@
           "title": "Soul Survivor",
           "duration": "3:50"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Stone Roses",
@@ -7416,6 +7499,15 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 7298,
       "label": "Silvertone Records",
       "year": 2018,
@@ -7504,16 +7596,7 @@
           "title": "I Am The Resurrection",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Kelly Lee Owens",
@@ -8790,6 +8873,15 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": null,
       "label": "Virgin",
       "year": 2011,
@@ -8898,16 +8990,7 @@
           "title": "Luna",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Brian Eno",
@@ -8919,6 +9002,17 @@
       "favourite_tracks": [
         8
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 634,
       "label": "Virgin EMI Records",
       "year": 2017,
@@ -9038,18 +9132,7 @@
           "title": "Here Come The Warm Jets",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Brian Eno",
@@ -9061,6 +9144,17 @@
       "favourite_tracks": [
         5
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 634,
       "label": "Virgin EMI Records",
       "year": 2017,
@@ -9249,18 +9343,7 @@
           "title": "Spirits Drifting",
           "duration": "2:39"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Verve",
@@ -9269,6 +9352,23 @@
       "release_id": 9057753,
       "first_released": "1997-09-29",
       "favourite": false,
+      "chapters": {
+        "1996-1998": {
+          "people": [
+            "steve-s",
+            "alastair-j",
+            "claire-p"
+          ],
+          "places": [
+            "university-of-plymouth",
+            "alvechurch"
+          ],
+          "events": []
+        }
+      },
+      "favourite_tracks": [
+        2
+      ],
       "artist_id": 10359,
       "label": "Virgin EMI Records",
       "year": 2016,
@@ -9383,23 +9483,6 @@
           "title": "Come On",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1996-1998": {
-          "people": [
-            "steve-s",
-            "alastair-j",
-            "claire-p"
-          ],
-          "places": [
-            "university-of-plymouth",
-            "alvechurch"
-          ],
-          "events": []
-        }
-      },
-      "favourite_tracks": [
-        2
       ]
     },
     {
@@ -9412,6 +9495,17 @@
       "favourite_tracks": [
         5
       ],
+      "chapters": {
+        "2021-2025": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "altrincham"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 47333,
       "label": "Warner Records",
       "year": 2021,
@@ -9547,18 +9641,7 @@
           "title": "Gold Dust Woman",
           "duration": "5:13"
         }
-      ],
-      "chapters": {
-        "2021-2025": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "altrincham"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Aphex Twin",
@@ -9674,6 +9757,18 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "Warp Records",
       "year": 2022,
@@ -9797,19 +9892,7 @@
           "title": "Loving You Live",
           "duration": "4:00"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [
-            "andrew-d",
-            "shirley-h"
-          ],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Autechre",
@@ -10242,6 +10325,17 @@
       "favourite_tracks": [
         16
       ],
+      "chapters": {
+        "1999-2001": {
+          "people": [
+            "claire-p"
+          ],
+          "places": [
+            "parsons-green"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 4851,
       "label": "XL Recordings",
       "year": 2016,
@@ -10395,18 +10489,7 @@
           "title": "Epitaph",
           "duration": ""
         }
-      ],
-      "chapters": {
-        "1999-2001": {
-          "people": [
-            "claire-p"
-          ],
-          "places": [
-            "parsons-green"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Avalanches",
@@ -10689,6 +10772,15 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 3840,
       "label": "XL Recordings",
       "year": 2022,
@@ -10770,16 +10862,7 @@
           "title": "Street Spirit (Fade Out)",
           "duration": "4:13"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Radiohead",
@@ -12077,6 +12160,15 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 7579,
       "label": "Creation Records",
       "year": 1993,
@@ -12352,16 +12444,7 @@
           "title": "The White Noise Revisited",
           "duration": "5:02"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Photek",
@@ -22388,6 +22471,17 @@
       "favourite_tracks": [
         13
       ],
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 3928,
       "label": "Capitol Records",
       "year": 2014,
@@ -22555,18 +22649,7 @@
           "title": "Waking Light",
           "duration": "5:00"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Prodigy",
@@ -25671,6 +25754,15 @@
       "favourite_tracks": [
         13
       ],
+      "chapters": {
+        "1996-1998": {
+          "people": [],
+          "places": [
+            "university-of-plymouth"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "EMI Premier",
       "year": 1996,
@@ -25844,16 +25936,7 @@
           "title": "Closet Romantic",
           "duration": "3:08"
         }
-      ],
-      "chapters": {
-        "1996-1998": {
-          "people": [],
-          "places": [
-            "university-of-plymouth"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Laura Marling",
@@ -27380,6 +27463,18 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "Beyond",
       "year": 1995,
@@ -27576,19 +27671,7 @@
           "title": "Triangle",
           "duration": "10:03"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [
-            "andrew-d",
-            "shirley-h"
-          ],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Disclosure",
@@ -32563,6 +32646,18 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [
+            "andrew-d",
+            "shirley-h"
+          ],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "Sub Terranean",
       "year": 1996,
@@ -32708,19 +32803,7 @@
           "title": "Start As You Mean To Go On",
           "duration": "6:03"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [
-            "andrew-d",
-            "shirley-h"
-          ],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Hope Of The States",
@@ -35499,6 +35582,15 @@
       "favourite_tracks": [
         12
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 74501,
       "label": "Polydor",
       "year": 1991,
@@ -35619,16 +35711,7 @@
           "title": "38 Line Poem",
           "duration": "5:26"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Divine Comedy",
@@ -42147,6 +42230,19 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1996-1998": {
+          "people": [
+            "steve-s",
+            "alastair-j",
+            "claire-p"
+          ],
+          "places": [
+            "university-of-plymouth"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 2774,
       "label": "Go! Beat",
       "year": 1994,
@@ -42307,6 +42403,17 @@
           "title": "Glory Box",
           "duration": "5:06"
         }
+      ]
+    },
+    {
+      "artist": "Massive Attack",
+      "title": "Protection",
+      "format": "CD",
+      "release_id": 10839151,
+      "first_released": "1994-09-26",
+      "favourite": false,
+      "favourite_tracks": [
+        1
       ],
       "chapters": {
         "1996-1998": {
@@ -42320,18 +42427,7 @@
           ],
           "events": []
         }
-      }
-    },
-    {
-      "artist": "Massive Attack",
-      "title": "Protection",
-      "format": "CD",
-      "release_id": 10839151,
-      "first_released": "1994-09-26",
-      "favourite": false,
-      "favourite_tracks": [
-        1
-      ],
+      },
       "artist_id": 4480,
       "label": "Wild Bunch Records",
       "year": 0,
@@ -42417,20 +42513,7 @@
           "title": "Light My Fire (Live)",
           "duration": "3:15"
         }
-      ],
-      "chapters": {
-        "1996-1998": {
-          "people": [
-            "steve-s",
-            "alastair-j",
-            "claire-p"
-          ],
-          "places": [
-            "university-of-plymouth"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Smiths",
@@ -45518,6 +45601,15 @@
       "favourite_tracks": [
         5
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "alvechurch"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 257793,
       "label": "Capitol Records",
       "year": 0,
@@ -45707,16 +45799,7 @@
           "title": "How Will You Go",
           "duration": "4:46"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "alvechurch"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Nirvana",
@@ -46751,6 +46834,17 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 47333,
       "label": "Blue Horizon",
       "year": 0,
@@ -46895,18 +46989,7 @@
           "title": "I'm Coming Home To Stay",
           "duration": "2:27"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Ash",
@@ -48291,6 +48374,18 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "1996-1998": {
+          "people": [
+            "steve-s",
+            "alastair-j"
+          ],
+          "places": [
+            "university-of-plymouth"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 49023,
       "label": "Beggars Banquet",
       "year": 1998,
@@ -48460,19 +48555,7 @@
           "title": "North Country Boy",
           "duration": "4:02"
         }
-      ],
-      "chapters": {
-        "1996-1998": {
-          "people": [
-            "steve-s",
-            "alastair-j"
-          ],
-          "places": [
-            "university-of-plymouth"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Super Furry Animals",
@@ -51407,6 +51490,15 @@
       "favourite_tracks": [
         3
       ],
+      "chapters": {
+        "2005-2007": {
+          "people": [],
+          "places": [],
+          "events": [
+            "smashing-pumpkins-reading-2007-08-26"
+          ]
+        }
+      },
       "artist_id": 28970,
       "label": "Virgin",
       "year": 1995,
@@ -51576,16 +51668,7 @@
           "title": "Farewell And Goodnight",
           "duration": "4:21"
         }
-      ],
-      "chapters": {
-        "2005-2007": {
-          "people": [],
-          "places": [],
-          "events": [
-            "smashing-pumpkins-reading-2007-08-26"
-          ]
-        }
-      }
+      ]
     },
     {
       "artist": "The Kills",
@@ -53332,6 +53415,15 @@
       "format": "CD",
       "release_id": 4643403,
       "favourite": false,
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 3852,
       "label": "Creation Records",
       "year": 1991,
@@ -53463,16 +53555,7 @@
           "title": "Shine Like Stars",
           "duration": "3:45"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Doors",
@@ -56157,6 +56240,15 @@
       "favourite_tracks": [
         7
       ],
+      "chapters": {
+        "1990-1992": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 28972,
       "label": "Fiction Records",
       "year": 1992,
@@ -56237,16 +56329,7 @@
           "title": "End",
           "duration": "6:45"
         }
-      ],
-      "chapters": {
-        "1990-1992": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Derek & The Dominos",
@@ -56258,6 +56341,17 @@
       "favourite_tracks": [
         9
       ],
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 110252,
       "label": "Polydor",
       "year": 2011,
@@ -56356,18 +56450,7 @@
           "title": "Thorn Tree In The Garden",
           "duration": "2:51"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Velvet Underground",
@@ -58221,6 +58304,17 @@
       "release_id": 13457732,
       "first_released": "1970-11-27",
       "favourite": false,
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 243955,
       "label": "Parlophone",
       "year": 2001,
@@ -58386,18 +58480,7 @@
           "title": "Out Of The Blue",
           "duration": "11:13"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "AC/DC",
@@ -61808,6 +61891,17 @@
       "favourite_tracks": [
         2
       ],
+      "chapters": {
+        "1999-2001": {
+          "people": [
+            "claire-p"
+          ],
+          "places": [
+            "kilburn"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 159169,
       "label": "Columbia",
       "year": 1994,
@@ -61933,18 +62027,7 @@
           "title": "Dream Brother",
           "duration": "5:25"
         }
-      ],
-      "chapters": {
-        "1999-2001": {
-          "people": [
-            "claire-p"
-          ],
-          "places": [
-            "kilburn"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Sugar",
@@ -62720,6 +62803,17 @@
       "release_id": 428380,
       "first_released": "1967-11-02",
       "favourite": false,
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 229621,
       "label": "Polydor",
       "year": 1997,
@@ -62987,18 +63081,7 @@
           "title": "Mother's Lament",
           "duration": "1:47"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Teenage Fanclub",
@@ -64165,6 +64248,17 @@
       "release_id": 13032942,
       "first_released": "1966-07-22",
       "favourite": false,
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 291340,
       "label": "Deram",
       "year": 0,
@@ -64379,18 +64473,7 @@
           "title": "It Ain't Right",
           "duration": "2:40"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Stooges",
@@ -64811,6 +64894,15 @@
       "favourite_tracks": [
         12
       ],
+      "chapters": {
+        "1999-2001": {
+          "people": [],
+          "places": [
+            "parsons-green"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 7551,
       "label": "Food",
       "year": 1999,
@@ -64916,16 +65008,7 @@
           "title": "Optigan 1",
           "duration": "2:34"
         }
-      ],
-      "chapters": {
-        "1999-2001": {
-          "people": [],
-          "places": [
-            "parsons-green"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Smiths",
@@ -65341,6 +65424,17 @@
       "favourite_tracks": [
         1
       ],
+      "chapters": {
+        "2013-2015": {
+          "people": [
+            "liz-c"
+          ],
+          "places": [
+            "crystal-palace"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 194,
       "label": "Spectrum Music (2)",
       "year": 2013,
@@ -65566,18 +65660,7 @@
           "title": "Long After Tonight Is All Over (",
           "duration": "2:38"
         }
-      ],
-      "chapters": {
-        "2013-2015": {
-          "people": [
-            "liz-c"
-          ],
-          "places": [
-            "crystal-palace"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Elbow",
@@ -67875,6 +67958,18 @@
       "release_id": 7040450,
       "first_released": "1999-11-23",
       "favourite": false,
+      "chapters": {
+        "1999-2001": {
+          "people": [
+            "steve-s",
+            "claire-p"
+          ],
+          "places": [
+            "parsons-green"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 3928,
       "label": "Geffen Records",
       "year": 0,
@@ -67960,19 +68055,7 @@
           "title": "Debra",
           "duration": "13:45"
         }
-      ],
-      "chapters": {
-        "1999-2001": {
-          "people": [
-            "steve-s",
-            "claire-p"
-          ],
-          "places": [
-            "parsons-green"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "Pavement",
@@ -68765,6 +68848,15 @@
       "favourite_tracks": [
         9
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "south-bromsgrove-high-school"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 92564,
       "label": "Nude Records",
       "year": 0,
@@ -68865,16 +68957,7 @@
           "title": "The Next Life",
           "duration": "3:42"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "south-bromsgrove-high-school"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "The Beach Boys",
@@ -71991,6 +72074,15 @@
       "favourite_tracks": [
         6
       ],
+      "chapters": {
+        "1993-1995": {
+          "people": [],
+          "places": [
+            "cadbury-college"
+          ],
+          "events": []
+        }
+      },
       "artist_id": 10783,
       "label": "Capitol Records",
       "year": 0,
@@ -72212,16 +72304,7 @@
           "title": "Transitions",
           "duration": "2:31"
         }
-      ],
-      "chapters": {
-        "1993-1995": {
-          "people": [],
-          "places": [
-            "cadbury-college"
-          ],
-          "events": []
-        }
-      }
+      ]
     },
     {
       "artist": "PJ Harvey",
