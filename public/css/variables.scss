@@ -61,6 +61,11 @@
   --border-radius-s: calc(var(--border-radius) / 2);
   --border-radius-l: calc(var(--border-radius) * 2);
 
+  /* Z-index */
+  --fore: 3;
+  --mid: 2;
+  --back: 1;
+
   /* Colours */
   // Sass variables for calculations
   $lightness-step: 10.75%;

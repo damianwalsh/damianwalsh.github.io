@@ -50,6 +50,10 @@
   --border-radius: 8px;
   --border-radius-s: calc(var(--border-radius) / 2);
   --border-radius-l: calc(var(--border-radius) * 2);
+  /* Z-index */
+  --fore: 3;
+  --mid: 2;
+  --back: 1;
   /* Colours */
   --hue: 180;
   --primary-1: oklch(96.75% 0.025 var(--hue));

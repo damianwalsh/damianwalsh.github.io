@@ -3,9 +3,6 @@
  */
 
  .site-header {
-  --fore: 3;
-  --mid: 2;
-  --back: 1;
   position: relative;
   height: 100%;
   max-width: var(--wrapper-max-width);
