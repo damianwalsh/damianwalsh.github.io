@@ -1,6 +1,18 @@
 {
   "current": [
     {
+      "title": "Hyperion",
+      "author": "Dan Simmons",
+      "openlibrary_key": "OL1963268W",
+      "date_read": "2025-12-15",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "first_publish_date": "1991",
+      "description": "In the 29th century, the Hegemony of Man comprises hundreds of planets connected by farcaster portals. The Hegemony maintains an uneasy alliance with the TechnoCore, a civilisation of AIs. Modified humans known as Ousters live in space stations between stars and are engaged in conflict with the Hegemony.\r\n\r\nNumerous \"Outback\" planets have no farcasters and cannot be accessed without incurring significant time dilation. One of these planets is Hyperion, home to structures known as the Time Tombs, which are moving backwards in time and guarded by a legendary creature known as the Shrike. On the eve of an Ouster invasion of Hyperion, a final pilgrimage to the Time Tombs has been organized. The pilgrims decide that they will each tell their tale of how they were chosen for the pilgrimage."
+    },
+    {
       "title": "Galactic North",
       "author": "Alastair Reynolds",
       "openlibrary_key": "OL5724843W",
