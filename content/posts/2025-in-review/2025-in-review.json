@@ -1,0 +1,116 @@
+{
+  "tvShows": [
+    {
+      "title": "De Dag",
+      "titleEn": "The Day",
+      "lang": "nl",
+      "language": "Dutch",
+      "years": "2018",
+      "imdb": "https://www.imdb.com/title/tt6144672/"
+    },
+    {
+      "title": "Astrid et Raphaëlle",
+      "titleEn": "Astrid: Murder in Paris",
+      "lang": "fr",
+      "language": "French",
+      "years": "2019-",
+      "imdb": "https://www.imdb.com/title/tt11950864/"
+    },
+    {
+      "title": "Badehotellet",
+      "titleEn": "Seaside Hotel",
+      "lang": "da",
+      "language": "Danish",
+      "years": "2013-",
+      "imdb": "https://www.imdb.com/title/tt2960144/"
+    },
+    {
+      "title": "Il metodo Fenoglio - L'estate fredda",
+      "titleEn": "Cold Summer",
+      "lang": "it",
+      "language": "Italian",
+      "years": "2023",
+      "imdb": "https://www.imdb.com/title/tt30632074/"
+    },
+    {
+      "title": "Sorjonen",
+      "titleEn": "Bordertown",
+      "lang": "fi",
+      "language": "Finnish",
+      "years": "2016-2020",
+      "imdb": "https://www.imdb.com/title/tt4937942/"
+    },
+    {
+      "title": "Ivalo",
+      "titleEn": "Arctic Circle",
+      "lang": "fi",
+      "language": "Finnish",
+      "years": "2018",
+      "imdb": "https://www.imdb.com/title/tt6800294/"
+    },
+    {
+      "title": "Top Dog",
+      "titleEn": "",
+      "lang": "sv",
+      "language": "Swedish",
+      "years": "2020-2023",
+      "imdb": "https://www.imdb.com/title/tt11542694/"
+    },
+    {
+      "title": "Hierro",
+      "titleEn": "",
+      "lang": "es",
+      "language": "Spanish",
+      "years": "2019-2022",
+      "imdb": "https://www.imdb.com/title/tt8337662/"
+    },
+    {
+      "title": "Harjunpää",
+      "titleEn": "Helsinki Crimes",
+      "lang": "fi",
+      "language": "Finnish",
+      "years": "2022-",
+      "imdb": "https://www.imdb.com/title/tt17605198/"
+    },
+    {
+      "title": "De Kraak",
+      "titleEn": "The Bank Hacker",
+      "lang": "nl",
+      "language": "Dutch",
+      "years": "2021",
+      "imdb": "https://www.imdb.com/title/tt14735612/"
+    },
+    {
+      "title": "1985",
+      "titleEn": "",
+      "lang": "nl",
+      "language": "Dutch",
+      "years": "2023",
+      "imdb": "https://www.imdb.com/title/tt14909772/"
+    },
+    {
+      "title": "R.I.P. Henry",
+      "titleEn": "",
+      "lang": "no",
+      "language": "Norwegian",
+      "years": "2023",
+      "imdb": "https://www.imdb.com/title/tt22182258/"
+    },
+    {
+      "title": "Faking Hitler",
+      "titleEn": "",
+      "lang": "de",
+      "language": "German",
+      "years": "2021",
+      "imdb": "https://www.imdb.com/title/tt14418368/"
+    },
+    {
+      "title": "Sløborn",
+      "titleEn": "",
+      "lang": "de",
+      "language": "German",
+      "years": "2020-2024",
+      "imdb": "https://www.imdb.com/title/tt10384106/"
+    }
+  ]
+}
