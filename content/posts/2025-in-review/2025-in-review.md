@@ -372,6 +372,11 @@ In the course of thinking about and writing this post over the holiday period, a
 
 <ul role="list" class="reading-list">
   <li>
+    <h3><a href="https://colly.com/journal/twenty-twentyfive-in-music">2025 in music</a></h3>
+    <p class="meta">Simon Collison</p>
+    <img src="simon-collison.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://hidde.blog/2025-review/">My 2025 review</a></h3>
     <p class="meta">Hidde de Vries</p>
     <img src="hidde-de-vries.png" alt="" width="180" height="180">
