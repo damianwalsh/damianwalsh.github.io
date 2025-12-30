@@ -45,6 +45,19 @@ tags:
   blockquote {
     font-size: var(--text-size-0);
     text-wrap: balance;
+    border-left: unset;
+    padding-inline-start: unset;
+  }
+}
+
+@container (min-width: 50ch) {
+  .crucial-tracks {
+    .illustrated-content {
+      grid-template-columns: 200px 1fr;
+    }
+    blockquote {
+      order: 2;
+    }
   }
 }
 
@@ -265,7 +278,10 @@ The trend of not going to gigs continues. Crippling anxiety and panic attacks in
 
 <div class="crucial-tracks surface">
   <h3 class="meta">27 Oct 2025: What song best captures your current phase of life?</h3>
+  <div class="illustrated-content">
+  <img src="./stanley-road-paul-weller.jpg" alt="A Norfolk Terrier enjoying the sun in a garden" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
   <blockquote>From time to time, <a href="https://damianwalsh.co.uk/music/releases/stanley-road-paul-weller-vinyl/">The Changingman</a> by Paul Weller resonates with me. Thinking about where I am and how I'm feeling right now—in truth, perhaps over the last couple of years—I might need to pay heed to the song's message: when you're stuck in a rut, you need to shake things up.</blockquote>
+  </div>
 </div>
 
 It's been a fruitful exercise, and I hope to maintain the practice and find ways to weave [these scribbles](https://app.crucialtracks.org/profile/damianwalsh) back into my music collection. Some might question its purpose or utility, or argue about what it is and how to categorise it, but for me, the difference lies in ownership—it's built to my preferences and specifications, and ultimately benefits me first and foremost.
