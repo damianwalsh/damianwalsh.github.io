@@ -427,6 +427,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <p class="meta">Christopher Kirk-Nielsen</p>
     <img src="christopher-kirk-nielsen.png" alt="" width="180" height="180">
   </li>
+  <li>
+    <h3><a href="https://aubreysambor.com/2025-year-in-review/">2025 year in review</a></h3>
+    <p class="meta">Aubrey Sambor</p>
+    <img src="aubrey-sambor.png" alt="" width="180" height="180">
+  </li>
 </ul>
 
 I've noticed that all these posts and their authors, to varying degrees, look and sound a little like me. I'd really like to have linked to a more diverse range of voices. I'm happy to update the links in this post [on request](https://mastodon.social/@damianwalsh), with the proviso that I reserve the right to choose whom I link to.
