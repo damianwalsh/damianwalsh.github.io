@@ -279,7 +279,7 @@ The trend of not going to gigs continues. Crippling anxiety and panic attacks in
 <div class="crucial-tracks surface">
   <h3 class="meta">27 Oct 2025: What song best captures your current phase of life?</h3>
   <div class="illustrated-content">
-  <img src="./stanley-road-paul-weller.jpg" alt="Stanley Road by Paul Weller—album artwork featuring a colourful collage of British cultural imagery created by the artist Peter Blake" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
+  <img src="./stanley-road-paul-weller.jpg" alt="Stanley Road by Paul Weller—album artwork by Peter Blake" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
   <blockquote>From time to time, <a href="https://damianwalsh.co.uk/music/releases/stanley-road-paul-weller-vinyl/">The Changingman</a> by Paul Weller resonates with me. Thinking about where I am and how I'm feeling right now—in truth, perhaps over the last couple of years—I might need to pay heed to the song's message: when you're stuck in a rut, you need to shake things up.</blockquote>
   </div>
 </div>
@@ -388,6 +388,16 @@ In the course of thinking about and writing this post over the holiday period, a
 
 <ul role="list" class="reading-list">
   <li>
+    <h3><a href="https://bell.bz/wrapping-up-2025-sort-of/">Wrapping up 2025 (sort of)</a></h3>
+    <p class="meta">Andy Bell</p>
+    <img src="andy-bell.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://dbushell.com/2025/12/18/year-in-review/">I Survived 2025</a></h3>
+    <p class="meta">David Bushell</p>
+    <img src="david-bushell.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://colly.com/journal/twenty-twentyfive-in-music">2025 in music</a></h3>
     <p class="meta">Simon Collison</p>
     <img src="simon-collison.png" alt="" width="180" height="180">
@@ -401,6 +411,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <h3><a href="https://www.coryd.dev/posts/2025/2025-in-review">2025 in review</a></h3>
     <p class="meta">Cory Dransfeldt</p>
     <img src="cory-dransfeldt.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://pawelgrzybek.com/a-look-back-at-2025">Look Back at 2025</a></h3>
+    <p class="meta">Paweł Grzybek</p>
+    <img src="pawel-grzybek.png" alt="" width="180" height="180">
   </li>
   <li>
     <h3><a href="https://nazhamid.com/journal/music-in-2025">Music In 2025</a></h3>
