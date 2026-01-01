@@ -394,7 +394,7 @@ In the course of thinking about and writing this post over the holiday period, a
   </li>
   <li>
     <h3><a href="https://joshcollinsworth.com/blog/2025">2025 Year in Review</a></h3>
-    <p class="meta">Josh Collingsworth</p>
+    <p class="meta">Josh Collinsworth</p>
     <img src="josh-collingsworth.png" alt="" width="180" height="180">
   </li>
   <li>
