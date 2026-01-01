@@ -394,11 +394,6 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="andy-bell.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://joshcollinsworth.com/blog/2025">2025 Year in Review</a></h3>
-    <p class="meta">Josh Collinsworth</p>
-    <img src="josh-collingsworth.png" alt="" width="180" height="180">
-  </li>
-  <li>
     <h3><a href="https://dbushell.com/2025/12/18/year-in-review/">I Survived 2025</a></h3>
     <p class="meta">David Bushell</p>
     <img src="david-bushell.png" alt="" width="180" height="180">
@@ -414,19 +409,19 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="simon-collison.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025/">Books I Read in 2025</a></h3>
-    <p class="meta">Flamed Fury</p>
-    <img src="flamed-fury.png" alt="" width="180" height="180">
-  </li>
-  <li>
-    <h3><a href="https://hidde.blog/2025-review/">My 2025 review</a></h3>
-    <p class="meta">Hidde de Vries</p>
-    <img src="hidde-de-vries.png" alt="" width="180" height="180">
+    <h3><a href="https://joshcollinsworth.com/blog/2025">2025 Year in Review</a></h3>
+    <p class="meta">Josh Collinsworth</p>
+    <img src="josh-collingsworth.png" alt="" width="180" height="180">
   </li>
   <li>
     <h3><a href="https://www.coryd.dev/posts/2025/2025-in-review">2025 in review</a></h3>
     <p class="meta">Cory Dransfeldt</p>
     <img src="cory-dransfeldt.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025/">Books I Read in 2025</a></h3>
+    <p class="meta">Flamed Fury</p>
+    <img src="flamed-fury.png" alt="" width="180" height="180">
   </li>
   <li>
     <h3><a href="https://pawelgrzybek.com/a-look-back-at-2025">Look Back at 2025</a></h3>
@@ -457,6 +452,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <h3><a href="https://aubreysambor.com/2025-year-in-review/">2025 year in review</a></h3>
     <p class="meta">Aubrey Sambor</p>
     <img src="aubrey-sambor.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://hidde.blog/2025-review/">My 2025 review</a></h3>
+    <p class="meta">Hidde de Vries</p>
+    <img src="hidde-de-vries.png" alt="" width="180" height="180">
   </li>
 </ul>
 
