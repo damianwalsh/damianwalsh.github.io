@@ -237,6 +237,7 @@ tags:
     height: 100%;
     aspect-ratio: 1;
     object-fit: contain;
+    border-radius: var(--border-radius-s);
   }
 }
 
