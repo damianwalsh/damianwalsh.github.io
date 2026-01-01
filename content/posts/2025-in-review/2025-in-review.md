@@ -393,14 +393,29 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="andy-bell.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://joshcollinsworth.com/blog/2025">2025 Year in Review</a></h3>
+    <p class="meta">Josh Collingsworth</p>
+    <img src="josh-collingsworth.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://dbushell.com/2025/12/18/year-in-review/">I Survived 2025</a></h3>
     <p class="meta">David Bushell</p>
     <img src="david-bushell.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://vale.rocks/pulse/2025">Feeling The Pulse of Twenty Twenty-Five</a></h3>
+    <p class="meta">Declan Chidlow</p>
+    <img src="declan-chudlow.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://colly.com/journal/twenty-twentyfive-in-music">2025 in music</a></h3>
     <p class="meta">Simon Collison</p>
     <img src="simon-collison.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025/">Books I Read in 2025</a></h3>
+    <p class="meta">Flamed Fury</p>
+    <img src="flamed-fury.png" alt="" width="180" height="180">
   </li>
   <li>
     <h3><a href="https://hidde.blog/2025-review/">My 2025 review</a></h3>
@@ -426,6 +441,16 @@ In the course of thinking about and writing this post over the holiday period, a
     <h3><a href="https://chriskirknielsen.com/blog/yearnotes-2025">Yearnotes 2025</a></h3>
     <p class="meta">Christopher Kirk-Nielsen</p>
     <img src="christopher-kirk-nielsen.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://loige.co/2025-a-year-in-review/">2025 - A year in Review</a></h3>
+    <p class="meta">Luciano Mammino</p>
+    <img src="luciano-mammino.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://ethanmarcotte.com/wrote/our-frail-thoughts/">Our frail thoughts</a></h3>
+    <p class="meta">Ethan Marcotte</p>
+    <img src="ethan-marcotte.png" alt="" width="180" height="180">
   </li>
   <li>
     <h3><a href="https://aubreysambor.com/2025-year-in-review/">2025 year in review</a></h3>
