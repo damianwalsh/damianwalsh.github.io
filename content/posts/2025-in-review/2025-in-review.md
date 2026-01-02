@@ -449,6 +449,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="ethan-marcotte.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://daverupert.com/2026/01/twenty-twenty-five/">Twenty Twenty-Five</a></h3>
+    <p class="meta">Dave Rupert</p>
+    <img src="dave-rupert.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://aubreysambor.com/2025-year-in-review/">2025 year in review</a></h3>
     <p class="meta">Aubrey Sambor</p>
     <img src="aubrey-sambor.png" alt="" width="180" height="180">
