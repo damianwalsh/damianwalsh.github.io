@@ -439,6 +439,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="christopher-kirk-nielsen.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://cassey.dev/2025-in-review/">Looking Back on 2025</a></h3>
+    <p class="meta">Cassey Lottman</p>
+    <img src="cassey-lottman.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://loige.co/2025-a-year-in-review/">2025 - A year in Review</a></h3>
     <p class="meta">Luciano Mammino</p>
     <img src="luciano-mammino.png" alt="" width="180" height="180">
@@ -465,7 +470,7 @@ In the course of thinking about and writing this post over the holiday period, a
   </li>
 </ul>
 
-I've noticed that all these posts and their authors, to varying degrees, look and sound a little like me. I'd really like to have linked to a more diverse range of voices. I'm happy to update the links in this post [on request](https://mastodon.social/@damianwalsh), with the proviso that I reserve the right to choose whom I link to.
+I've noticed that <s>all</s> most of these posts and their authors, to varying degrees, look and sound a little like me. I'd really like to have linked to a more diverse range of voices. I'm happy to update the links in this post [on request](https://mastodon.social/@damianwalsh), with the proviso that I reserve the right to choose whom I link to.
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
 
