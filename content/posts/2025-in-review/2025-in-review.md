@@ -404,6 +404,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="declan-chudlow.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://www.nicchan.me/blog/2025-recap/">2025 Recap</a></h3>
+    <p class="meta">Nic Chan</p>
+    <img src="nic-chan.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://colly.com/journal/twenty-twentyfive-in-music">2025 in music</a></h3>
     <p class="meta">Simon Collison</p>
     <img src="simon-collison.png" alt="" width="180" height="180">
