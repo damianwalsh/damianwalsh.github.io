@@ -459,6 +459,11 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="ethan-marcotte.png" alt="" width="180" height="180">
   </li>
   <li>
+    <h3><a href="https://ohhelloana.blog/2025-no-sleep/">2025 was the year of no sleep and pushing through</a></h3>
+    <p class="meta">Ana Rodrigues</p>
+    <img src="ana-rodrigues.png" alt="" width="180" height="180">
+  </li>
+  <li>
     <h3><a href="https://daverupert.com/2026/01/twenty-twenty-five/">Twenty Twenty-Five</a></h3>
     <p class="meta">Dave Rupert</p>
     <img src="dave-rupert.png" alt="" width="180" height="180">
