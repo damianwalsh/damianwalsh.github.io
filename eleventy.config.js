@@ -576,7 +576,8 @@ export default async function (eleventyConfig) {
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
-    if (outputPath?.endsWith(".html")) {
+    // Only minify HTML in production builds
+    if (process.env.ELEVENTY_RUN_MODE === "build" && outputPath?.endsWith(".html")) {
       return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: false,
@@ -590,11 +591,13 @@ export default async function (eleventyConfig) {
 
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // Optimise when the browser requests them, not during the build
+    transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
     // File extensions to process in _site folder
     extensions: "html",
     // Output formats for each image.
     formats: ["webp", "auto"],
-    widths: [160, 320, 480, 640, 960, 1280],
+    widths: [160, 320, 640, 1280],
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
