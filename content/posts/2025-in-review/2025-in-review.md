@@ -210,6 +210,7 @@ tags:
     column-gap: var(--space-xs);
     row-gap: var(--space-3xs);
     align-items: start;
+    align-content: start;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
     grid-template-areas:
