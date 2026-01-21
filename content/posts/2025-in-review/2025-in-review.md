@@ -390,12 +390,12 @@ In the course of thinking about and writing this post over the holiday period, a
 
 <ul role="list" class="reading-list">
   <li>
-    <h3><a href="https://bell.bz/wrapping-up-2025-sort-of/">Wrapping up 2025 (sort of)</a></h3>
+    <h3><a href="https://bell.bz/wrapping-up-2025-sort-of">Wrapping up 2025 (sort of)</a></h3>
     <p class="meta">Andy Bell</p>
     <img src="andy-bell.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://dbushell.com/2025/12/18/year-in-review/">I Survived 2025</a></h3>
+    <h3><a href="https://dbushell.com/2025/12/18/year-in-review">I Survived 2025</a></h3>
     <p class="meta">David Bushell</p>
     <img src="david-bushell.png" alt="" width="180" height="180">
   </li>
@@ -405,7 +405,7 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="declan-chudlow.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://www.nicchan.me/blog/2025-recap/">2025 Recap</a></h3>
+    <h3><a href="https://www.nicchan.me/blog/2025-recap">2025 Recap</a></h3>
     <p class="meta">Nic Chan</p>
     <img src="nic-chan.png" alt="" width="180" height="180">
   </li>
@@ -425,7 +425,7 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="cory-dransfeldt.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025/">Books I Read in 2025</a></h3>
+    <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025">Books I Read in 2025</a></h3>
     <p class="meta">Flamed Fury</p>
     <img src="flamed-fury.png" alt="" width="180" height="180">
   </li>
@@ -445,39 +445,54 @@ In the course of thinking about and writing this post over the holiday period, a
     <img src="christopher-kirk-nielsen.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://cassey.dev/2025-in-review/">Looking Back on 2025</a></h3>
+    <h3><a href="https://axel.leroy.sh/blog/retrospective-2025">Looking back on 2025</a></h3>
+    <p class="meta">Axel Leroy</p>
+    <img src="axel-leroy.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://cassey.dev/2025-in-review">Looking Back on 2025</a></h3>
     <p class="meta">Cassey Lottman</p>
     <img src="cassey-lottman.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://loige.co/2025-a-year-in-review/">2025 - A year in Review</a></h3>
+    <h3><a href="https://loige.co/2025-a-year-in-review">2025 - A year in Review</a></h3>
     <p class="meta">Luciano Mammino</p>
     <img src="luciano-mammino.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://ethanmarcotte.com/wrote/our-frail-thoughts/">Our frail thoughts</a></h3>
+    <h3><a href="https://ethanmarcotte.com/wrote/our-frail-thoughts">Our frail thoughts</a></h3>
     <p class="meta">Ethan Marcotte</p>
     <img src="ethan-marcotte.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://ohhelloana.blog/2025-no-sleep/">2025 was the year of no sleep and pushing through</a></h3>
+    <h3><a href="https://melanie-richards.com/blog/2025-highlights">2025 Highlights</a></h3>
+    <p class="meta">Melanie Richards</p>
+    <img src="melanie-richards.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://ohhelloana.blog/2025-no-sleep">2025 was the year of no sleep and pushing through</a></h3>
     <p class="meta">Ana Rodrigues</p>
     <img src="ana-rodrigues.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://daverupert.com/2026/01/twenty-twenty-five/">Twenty Twenty-Five</a></h3>
+    <h3><a href="https://daverupert.com/2026/01/twenty-twenty-five">Twenty Twenty-Five</a></h3>
     <p class="meta">Dave Rupert</p>
     <img src="dave-rupert.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://aubreysambor.com/2025-year-in-review/">2025 year in review</a></h3>
+    <h3><a href="https://aubreysambor.com/2025-year-in-review">2025 year in review</a></h3>
     <p class="meta">Aubrey Sambor</p>
     <img src="aubrey-sambor.png" alt="" width="180" height="180">
   </li>
   <li>
-    <h3><a href="https://hidde.blog/2025-review/">My 2025 review</a></h3>
+    <h3><a href="https://hidde.blog/2025-review">My 2025 review</a></h3>
     <p class="meta">Hidde de Vries</p>
     <img src="hidde-de-vries.png" alt="" width="180" height="180">
+  </li>
+  <li>
+    <h3><a href="https://jasonwhite.us/journal/2025/12/28/favorite-music-2025">Favorite Music of 2025</a></h3>
+    <p class="meta">Jason White</p>
+    <img src="jason-white.png" alt="" width="180" height="180">
   </li>
 </ul>
 
