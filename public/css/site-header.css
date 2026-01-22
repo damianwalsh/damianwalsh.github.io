@@ -211,6 +211,31 @@
     padding-inline: 0;
     padding-bottom: var(--space-2xs);
   }
+  .slider {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-2xs);
+    align-items: center;
+    @media screen and (width >=1366px) {
+      row-gap: unset;
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+      "label label"
+      "input output";
+
+      [for=hueSlider] {
+        grid-area: label;
+      }
+
+      input {
+        grid-area: input;
+      }
+
+      .hue-counter {
+        grid-area: output;
+      }
+    }
+  }
   [role=radiogroup] {
     display: flex;
     gap: var(--space-2xs);
@@ -218,17 +243,6 @@
     @media screen and (width >=1366px) {
       flex-direction: column;
       margin-bottom: var(--space-2xs);
-    }
-  }
-  [for=hueSlider] {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-2xs);
-    @media screen and (width >=1366px) {
-      flex-direction: column;
-      &:not(.hue-counter) {
-        align-items: flex-start;
-      }
     }
   }
 }
