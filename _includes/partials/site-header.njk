@@ -54,23 +54,12 @@
   <form id="theme" class="hidden">
     <fieldset>
       <legend>Theme settings</legend>
-      <label for="hueSlider">
-        Base Hue
-        <input
-          type="range"
-          id="hueSlider"
-          name="hue"
-          min="0"
-          max="360"
-          value="180"
-          aria-valuemin="0"
-          aria-valuemax="360"
-          aria-valuenow="180"
-          aria-valuetext="180 degrees"
-        >
+      <div class="slider">
+        <label for="hueSlider">Base Hue</label>
+        <input type="range" id="hueSlider" name="hue" min="0" max="360" value="180">
         <output for="hueSlider" id="hueValue" class="hue-counter">180</output>
-      </label>
-      <div role="radiogroup" aria-labelledby="theme-selection">
+      </div>
+      <div role="radiogroup" aria-label="Theme selection">
         <label>
           <input type="radio" name="theme" value="auto" checked>
           Auto
