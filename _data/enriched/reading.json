@@ -1,6 +1,18 @@
 {
   "current": [
     {
+      "title": "Endymion",
+      "author": "Dan Simmons",
+      "openlibrary_key": "OL1963279W",
+      "date_read": "2026-02-02",
+      "favourite": false,
+      "genres": [
+        "Science Fiction"
+      ],
+      "first_publish_date": "December 14, 1998",
+      "description": "Dan Simmons's Hyperion was an immediate sensation on its first publication in 1989.  This staggering multifaceted tale of the far future heralded the conquest of the science fiction field by a man who had already won the World Fantasy Award for his first novel (Song of Kali) and had also published one of the most well-received horror novels in the field, Carrion Comfort.  Hyperion went on to win the Hugo Award as Best Novel, and it and its companion volume, The Fall of Hyperion, took their rightful places in the science fiction pantheon of new classics.\r\n\r\nNow, six years later, Simmons returns to this richly imagined world of technological achievement, excitement, wonder and fear.  Endymion is a story about love and memory, triumph and terror--an instant candidate for the field's highest honors."
+    },
+    {
       "title": "The Fall of Hyperion",
       "author": "Dan Simmons",
       "openlibrary_key": "OL1963251W",
