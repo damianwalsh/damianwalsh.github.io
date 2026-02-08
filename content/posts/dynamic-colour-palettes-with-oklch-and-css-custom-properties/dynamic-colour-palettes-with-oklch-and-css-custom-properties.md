@@ -2,7 +2,7 @@
 title: Dynamic colour palettes with OKLCH and CSS custom properties
 description: Using colour theory and modern CSS to generate colour systems
 date: 2025-02-17
-updated: 2026-02-09
+updated: 2026-02-08
 tags:
   - CSS
   - Colour theory
