@@ -11,19 +11,28 @@
 }
 
 .site-footer__inner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "links"
+    "social"
+    "meta";
   gap: var(--flow-space);
-  flex-wrap: wrap;
   @media screen and (width >=769px) {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "links social"
+      "meta social";
     align-items: center;
+  }
+  .meta {
+    grid-area: meta;
+    margin-block-start: unset;
   }
 }
 
 
 .social-links {
+  grid-area: social;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -40,6 +49,7 @@
 }
 
 .footer-links {
+  grid-area: links;
   display: flex;
   flex-direction: row;
   margin: 0;
