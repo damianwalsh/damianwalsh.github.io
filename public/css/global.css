@@ -533,6 +533,7 @@ dialog {
   color: var(--primary-7);
   text-decoration: none;
   font-variation-settings: "wght" 700;
+  white-space: nowrap;
   font-size: var(--text-size--1);
   transition: all .15s ease-in-out;
   &:hover {
