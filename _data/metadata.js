@@ -2,7 +2,7 @@ export default {
   title: "Damian Walsh",
   url: "https://damianwalsh.co.uk",
   language: "en",
-  description: "Designer (Interaction/UX/UI) based in Manchester, UK",
+  description: "Designer (Interaction/UX/UI) based in Manchester, England",
   author: {
     name: "Damian Walsh",
     email: "damianwalsh@me.com",
@@ -16,7 +16,7 @@ export default {
         "@type": "WebSite",
         "@id": "https://damianwalsh.co.uk#website",
         "name": "Damian Walsh",
-        "description": "Designer (Interaction/UX/UI) based in Manchester, UK",
+        "description": "Designer (Interaction/UX/UI) based in Manchester, England",
         "url": "https://damianwalsh.co.uk",
         "publisher": {
           "@type": "Person",
