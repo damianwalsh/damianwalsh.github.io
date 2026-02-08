@@ -211,6 +211,49 @@ aside {
   letter-spacing: -.015em;
 }
 
+.support-cta {
+  container-type: inline-size;
+  background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box, linear-gradient(90deg, var(--primary-5), var(--secondary-5), var(--tertiary-5), var(--quaternary-5), var(--primary-5)) border-box;
+  background-size: 300% 100%;
+  border: var(--space-3xs) solid transparent;
+  border-radius: var(--border-radius);
+  padding: var(--flow-space);
+  transform-origin: center top;
+  will-change: transform;
+  animation: gradient-shift 2s linear infinite alternate;
+  display: grid;
+  align-items: start;
+  grid-template-columns: auto 1fr;
+  gap: var(--flow-space);
+  grid-template-areas:
+    "img text"
+    "img button";
+
+  img {
+    grid-area: img;
+    width: var(--space-xl-2xl);
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+  }
+
+  p {
+    grid-area: text;
+    margin-block-start: unset;
+  }
+  a {
+    grid-area: button;
+    justify-self: end;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
 
 .video__wrapper {
   position: relative;
