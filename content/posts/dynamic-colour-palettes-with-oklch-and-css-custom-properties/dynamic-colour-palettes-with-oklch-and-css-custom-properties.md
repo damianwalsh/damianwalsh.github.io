@@ -2,6 +2,7 @@
 title: Dynamic colour palettes with OKLCH and CSS custom properties
 description: Using colour theory and modern CSS to generate colour systems
 date: 2025-02-17
+updated: 2026-02-09
 tags:
   - CSS
   - Colour theory
@@ -19,7 +20,8 @@ tags:
   }
 }
 
-.scheme-definitions {
+.scheme-definitions,
+.easing-equations {
   container-type: inline-size;
   margin-block-start: 0 !important;
   @container (min-width: 50ch) {
@@ -29,8 +31,36 @@ tags:
       column-gap: var(--gutter);
     }
   }
+  code {
+    display: block;
+  }
 }
 
+.chart,
+.lookup-table {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-space);
+  padding: var(--flow-space);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: var(--text-size--1);
+  td, th {
+    padding: var(--space-3xs);
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+    }
+  }
+}
 {% endcss %}
 Designers often seem to face extremes when selecting and using colours. At one end of the spectrum, brand guidelines limit you to a few colours chosen for specific applications, with additional colours added later—sometimes purely for aesthetics or where the reasons are unclear. Some of the colours might have tints and shades while others don't, and where variations exist, there could be inconsistent saturation and lightness levels across the palette. This makes it challenging to create colour-dependent components like buttons and form elements and their various states. At the other end lies complete creative freedom, which sounds ideal until you're paralysed by the range of possibilities. Consider standard colour picker interfaces: they offer a world of colour to explore but provide no map for navigation.
 
@@ -109,11 +139,257 @@ Having established the foundations of using colour theory as basic parameters, t
   Dynamic colour palettes with OKLCH and CSS custom properties</a> by Damian Walsh (<a href="https://codepen.io/damianwalsh">@damianwalsh</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 While vanilla CSS could achieve the same results, I built this system with SASS, which offers several advantages:
 
 - SASS loops and variables reduce repetition and enable dynamic value generation, making the code easier to update and maintain.
 - Since most calculations happen during compilation, browsers have less work to do at runtime.
 
-During research, I found inspiration in Adam Argyle's [related explorations on CodePen](https://codepen.io/argyleink), which helped inform my approach to implementation.
+## Limitations of linear colour ramps
+When applying this approach to a recent project, I discovered a limitation in the original implementation.
+
+### Linear interpolation
+The original system used equally spaced steps in lightness and chroma (saturation), which didn't match the desired visual effect in application.
+
+<div class="chart surface">
+  <h3 class="meta">Profiles with equally spaced steps</h3>
+  <canvas id="linearChart"></canvas>
+</div>
+
+What I wanted was more tightly spaced steps at either end, particularly between light tints, to achieve a more subtle effect on backgrounds with more dramatic shifts appearing in the middle range.
+
+### Perceptual calibration
+My first attempt at finding a solution involved creating a [lookup table](https://en.wikipedia.org/wiki/Lookup_table) and hand-tuning the values to achieve the desired result.
+
+
+<div class="lookup-table surface">
+  <h3 class="meta">Manual lookup table</h3>
+  <table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Lightness</th>
+      <th>Chroma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>96</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>91</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>85</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>71</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>52</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>42</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>34</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>24</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>18</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+While this approach creates a perceptually calibrated colour ramp, it has one major drawback: adding or removing steps, or changing any values, requires manually recalculating everything.
+
+Out of curiosity, I plotted these values on a chart and was mildly surprised to see an S-curve appear.
+
+<div class="chart surface">
+  <h3 class="meta">Profiles created manually</h3>
+  <canvas id="manualChart"></canvas>
+</div>
+
+This got me thinking about animation and how easing equations can be used to control the rate at which values change to create a more natural effect.
+
+### Easing equations
+Easing equations describe how values change over time. The most common curves are:
+
+<div class="easing-equations">
+  <dl>
+    <dt>Ease-In</dt>
+    <dd>Starts slow, ends fast. <code>f(t) = t²</code></dd>
+    <dt>Ease-In-Out</dt>
+    <dd>Starts slow, accelerates in the middle, ends slow (an S-curve). <code>f(t) = t² (3 - 2t)</code></dd>
+    <dt>Ease-Out</dt>
+    <dd>Starts fast, ends slow. <code>f(t) = t (2 - t)</code></dd>
+    <dt>Linear</dt>
+    <dd>Constant speed, no acceleration. <code>f(t) = t</code></dd>
+  </dl>
+</div>
+
+These mathematical functions can replace the manual lookup table entirely. Instead of defining fixed step increments, the system now works like this:
+
+- Define number of steps and start and end points for lightness and chroma ranges
+- For each step calculate a progress value from 0 to 1 and pass this through an easing function
+- Use the eased value to interpolate between start and end points
+
+The `ease-in-out` function produces an S-curve that closely matches the hand-tuned values in the lookup table, but with the added benefit of being precise and easily adjustable. Changing the curve requires only swapping one function name. Adjusting the range and number of steps means updating variables instead of recalculating all the values individually.
+
+<div class="chart surface">
+  <h3 class="meta">Profiles created with easing equation</h3>
+  <canvas id="easingChart"></canvas>
+</div>
+
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ZYOMLpZ" data-pen-title="Dynamic colour palettes with OKLCH and CSS custom properties" data-user="damianwalsh" data-token="d21285accbc454d0d1632c2b555ec0e8" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/damianwalsh/pen/ZYOMLpZ/d21285accbc454d0d1632c2b555ec0e8">
+  Dynamic colour palettes with OKLCH and CSS custom properties</a> by Damian Walsh (<a href="https://codepen.io/damianwalsh">@damianwalsh</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+## Aknowledgements
+The original implementation drew inspiration from [Adam Argyle's](https://codepen.io/argyleink) related explorations on CodePen. The easing functions in the revised version were adapted from Robert Penner's [easing equations](https://robertpenner.com/easing/).
+
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+
+{% js %}
+document.addEventListener('DOMContentLoaded', () => {
+  // Global Chart.js settings
+  Chart.defaults.font.size = 14;
+  Chart.defaults.font.family = "Bricolage Grotesque Variable, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif";
+
+  const axisStyles = {
+    grid: { color: 'oklch(53.75% 0 0 / 40%)' },
+    border: { color: 'oklch(53.75% 0 0 / 40%)' },
+    ticks: { color: 'oklch(53.75% 0 0)' }
+  };
+
+  const colorPalette = [
+    'oklch(53.75% 0.125 180)',
+    'oklch(53.75% 0.125 240)'
+  ];
+
+  const linearData = {
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    lightness: [96.75, 86, 75.25, 64.5, 53.75, 43, 32.25, 21.5, 10.75],
+    chroma: [0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225]
+  };
+
+  const manualData = {
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    lightness: [96, 91, 85, 71, 52, 42, 34, 24, 18],
+    chroma: [0.02, 0.03, 0.04, 0.09, 0.13, 0.16, 0.18, 0.19, 0.2]
+  };
+
+  const easingData = {
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    lightness: [96, 92.65, 83.81, 71.32, 57, 42.68, 30.19, 21.35, 18],
+    chroma: [0.02, 0.03, 0.05, 0.08, 0.11, 0.14, 0.17, 0.19, 0.2]
+  };
+
+  const chartConfig = (data, title) => ({
+    type: 'line',
+    data: {
+      labels: data.steps,
+      datasets: [
+        {
+          label: 'Lightness',
+          data: data.lightness,
+          borderColor: colorPalette[0],
+          backgroundColor: colorPalette[0],
+          tension: 0.5,
+          pointRadius: 4,
+          pointStyle: 'circle',
+          yAxisID: 'y'
+        },
+        {
+          label: 'Chroma',
+          data: data.chroma,
+          borderColor: colorPalette[1],
+          backgroundColor: colorPalette[1],
+          tension: 0.5,
+          pointRadius: 4,
+          pointStyle: 'circle',
+          yAxisID: 'y1'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: 2,
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      scales: {
+        x: {
+          ...axisStyles,
+          title: {
+            display: true,
+            text: 'Step'
+          }
+        },
+        y: {
+          ...axisStyles,
+          type: 'linear',
+          display: true,
+          position: 'left',
+          title: {
+            display: true,
+            text: 'Lightness'
+          },
+          min: 0,
+          max: 100
+        },
+        y1: {
+          ...axisStyles,
+          type: 'linear',
+          display: true,
+          position: 'right',
+          title: {
+            display: true,
+            text: 'Chroma'
+          },
+          min: 0,
+          max: 0.25,
+          grid: {
+            drawOnChartArea: false
+          }
+        }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('linearChart'),
+    chartConfig(linearData, 'Linear Interpolation'));
+
+  new Chart(document.getElementById('manualChart'),
+    chartConfig(manualData, 'Manual Calibration: Lightness & Chroma'));
+
+  new Chart(document.getElementById('easingChart'),
+    chartConfig(easingData, 'Easing Equation: Lightness & Chroma'));
+});
+{% endjs %}
