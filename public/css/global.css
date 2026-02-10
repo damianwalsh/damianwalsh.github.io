@@ -80,7 +80,10 @@ a {
   outline-offset: 2.25px;
 }
 
-::selection {
+mark,
+::selection,
+::target-text,
+::search-text {
   background: var(--primary-4);
   color: var(--text-colour-1);
 }
