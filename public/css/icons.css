@@ -4,8 +4,10 @@
 
 .icon-fill {
   fill: currentColor;
+  stroke: none;
 }
 
 .icon-stroke {
   stroke: currentColor;
+  fill: none;
 }
