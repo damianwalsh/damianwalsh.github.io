@@ -52,25 +52,35 @@
   </nav>
 
   <form id="theme" class="hidden">
+    <button class="toggle action" type="button" aria-controls="theme" data-target="theme">
+      <svg width="36" height="36" viewBox="-8 -8 40 40" class="icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-x"></use>
+      </svg>
+      <span class="visually-hidden">Close</span>
+    </button>
     <fieldset>
       <legend>Theme settings</legend>
-      <div class="slider">
-        <label for="hueSlider">Base Hue</label>
+      <label class="slider">Base Hue
         <input type="range" id="hueSlider" name="hue" min="0" max="360" value="180">
-        <output for="hueSlider" id="hueValue" class="hue-counter">180</output>
-      </div>
+      </label>
       <div role="radiogroup" aria-label="Theme selection">
         <label>
           <input type="radio" name="theme" value="auto" checked>
-          Auto
+          <svg width="20" height="20" viewBox="0 0 24 24" class="icon-fill" aria-hidden="true">
+            <use xlink:href="#icon-circle-half"></use>
+          </svg> Auto
         </label>
         <label>
           <input type="radio" name="theme" value="light">
-          Light
+          <svg width="20" height="20" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-sun"></use>
+          </svg> Light
         </label>
         <label>
           <input type="radio" name="theme" value="dark">
-          Dark
+          <svg width="20" height="20" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-moon"></use>
+          </svg> Dark
         </label>
       </div>
     </fieldset>
