@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeForm = document.getElementById('theme');
   const themeRadios = themeForm.querySelectorAll('input[type="radio"]');
   const hueSlider = document.getElementById('hueSlider');
-  const hueValueOutput = document.getElementById('hueValue');
 
   function updateTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateHue() {
     const hueValue = hueSlider.value;
     document.documentElement.style.setProperty('--hue', hueValue);
-    hueValueOutput.textContent = hueValue;
     localStorage.setItem('hue', hueValue);
     hueSlider.setAttribute('aria-valuenow', hueValue);
     hueSlider.setAttribute('aria-valuetext', `${hueValue} degrees`);
