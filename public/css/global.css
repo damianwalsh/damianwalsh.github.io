@@ -189,7 +189,6 @@ label {
   display: flex;
   align-items: center;
   gap: var(--space-3xs);
-  width: fit-content;
   text-wrap: nowrap;
 }
 
@@ -198,6 +197,8 @@ input {
   padding: 0;
 
   &[type="range"] {
+    --thumbSize: 16px;
+    --trackSize: 6px;
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
@@ -213,15 +214,15 @@ input {
     }
 
     &::-webkit-slider-runnable-track {
-      height: 6px;
+      height: var(--trackSize);
       background: var(--primary-3);
-      border-radius: 3px;
+      border-radius: calc(var(--trackSize) / 2);
     }
 
     &::-moz-range-track {
-      height: 6px;
+      height: var(--trackSize);
       background: var(--primary-3);
-      border-radius: 3px;
+      border-radius: calc(var(--trackSize) / 2);
     }
 
     &::-webkit-slider-thumb {
@@ -230,9 +231,10 @@ input {
       margin-top: -5px;
       background: var(--primary-3);
       border: none;
-      border-radius: 8px;
-      height: 16px;
-      width: 16px;
+      border-radius: calc(var(--thumbSize) / 2);
+      box-shadow: 0 0 0 2px var(--surface-fore);
+      height: var(--thumbSize);
+      width: var(--thumbSize);
     }
 
     &::-moz-range-thumb {
@@ -240,19 +242,20 @@ input {
       margin-top: -5px;
       background: var(--primary-3);
       border: none;
-      border-radius: 8px;
-      height: 16px;
-      width: 16px;
+      border-radius: calc(var(--thumbSize) / 2);
+      box-shadow: 0 0 0 2px var(--surface-fore);
+      height: var(--thumbSize);
+      width: var(--thumbSize);
     }
 
     &:focus::-webkit-slider-thumb {
       outline: 1.75px solid var(--primary-4);
-      outline-offset: 2.25px;
+      outline-offset: 2px;
     }
 
     &:focus::-moz-range-thumb {
       outline: 1.75px solid var(--primary-4);
-      outline-offset: 2.25px;
+      outline-offset: 2px;
     }
   }
 }
@@ -545,8 +548,7 @@ dialog {
   }
 }
 
-.counter,
-.hue-counter {
+.counter {
   --counter-size: 36px;
   display: inline-flex;
   flex-shrink: 0;
@@ -557,16 +559,8 @@ dialog {
   height: var(--counter-size);
   font-size: var(--text-size--1);
   font-variation-settings: "wght" 700, "wdth" 75;
-}
-
-.counter {
   background: var(--quaternary-3);
   color: var(--quaternary-7);
-}
-
-.hue-counter {
-  background: var(--primary-3);
-  color: var(--primary-7);
 }
 
 .meta {
