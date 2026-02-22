@@ -43,14 +43,14 @@
   }
 
   @media (width <= 768px) {
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
       "actions"
       "nav"
       "theme";
   }
 
-  @media (width >= 769px) {
+  @media (width >= 768px) {
     & > .visible {
       grid-column: unset;
     }
@@ -59,9 +59,9 @@
     }
   }
 
-  @media (769px <= width <= 1365px) {
+  @media (768px <= width <= 1366px) {
     grid-template-columns: auto 1fr;
-    grid-template-rows: min-content auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "actions nav"
       "theme theme";
@@ -84,6 +84,10 @@
       width: var(--space-3xs);
       height: 100%;
       background: linear-gradient(to bottom, var(--primary-5), var(--secondary-5), var(--tertiary-5), var(--quaternary-5));
+    }
+
+    & > .visible {
+      margin-top: 0;
     }
   }
 }
@@ -114,12 +118,12 @@
 #main-nav {
   grid-area: nav;
 
-  @media (769px <= width <= 1365px) {
-    display: block;
+  @media (768px <= width <= 1366px) {
+    display: flex;
   }
 
   @media screen and (width >= 1366px) {
-    display: block;
+    display: flex;
     align-self: start;
   }
 
@@ -132,7 +136,7 @@
     padding: 0;
     z-index: var(--mid);
 
-    @media (769px <= width <= 1365px) {
+    @media (768px <= width <= 1366px) {
       flex-direction: row;
     }
   }
@@ -186,22 +190,30 @@
 
 #theme {
   grid-area: theme;
+  position: relative;
   background: var(--surface-back);
   font-size: var(--text-size--1);
   border-radius: var(--border-radius);
-  padding-top: var(--space-xs);
+  padding: var(--flow-space);
   z-index: var(--mid);
+
+  button {
+    position: absolute;
+    top: var(--flow-space);
+    right: var(--flow-space);
+  }
 
   fieldset {
     display: flex;
     flex-direction: column;
     gap: var(--space-2xs);
-    border: none;
-    padding-block: 0 var(--space-xs);
-    @media (769px <= width <= 1365px) {
+    border: unset;
+    padding: unset;
+    @media (769px <= width <= 1366px) {
       flex-direction: row;
     }
   }
+
   legend {
     color: var(--text-colour-2);
     font-variation-settings: "wght" 700;
@@ -209,40 +221,56 @@
     text-decoration: none;
     text-transform: uppercase;
     padding-inline: 0;
-    padding-bottom: var(--space-2xs);
+    padding-bottom: var(--space-s);
   }
-  .slider {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: var(--space-2xs);
-    align-items: center;
-    @media screen and (width >=1366px) {
-      row-gap: unset;
-      grid-template-columns: 1fr auto;
-      grid-template-areas:
-      "label label"
-      "input output";
 
-      [for=hueSlider] {
-        grid-area: label;
-      }
-
-      input {
-        grid-area: input;
-      }
-
-      .hue-counter {
-        grid-area: output;
-      }
-    }
-  }
+  .slider,
   [role=radiogroup] {
     display: flex;
     gap: var(--space-2xs);
-    flex-wrap: wrap;
-    @media screen and (width >=1366px) {
+    align-items: center;
+    @media (width >= 1366px) {
       flex-direction: column;
-      margin-bottom: var(--space-2xs);
+      align-items: stretch;
     }
+  }
+
+  .slider {
+    input {
+      background: var(--surface-fore);
+      padding: var(--space-2xs);
+      border-radius: 999px;
+      min-height: 42px;
+    }
+  }
+
+  [role=radiogroup] {
+    flex-wrap: wrap;
+
+    label {
+      background: var(--surface-fore);
+      padding: var(--space-2xs);
+      border-radius: 999px;
+      cursor: pointer;
+      &:has(input:focus){
+        outline: 1.75px solid var(--primary-4);
+        outline-offset: 2.25px;
+      }
+
+      svg {
+        color: var(--primary-5);
+        transition: color .15s ease-in-out;
+      }
+      &:is(:hover, :has(input:checked)) svg {
+		    color: var(--primary-3);
+	    }
+    }
+  }
+
+  [type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
