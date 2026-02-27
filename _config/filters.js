@@ -5,6 +5,7 @@ import path from "path";
 const require = createRequire(import.meta.url);
 const sbd = require('sbd');
 import slugify from '@sindresorhus/slugify';
+import markdownIt from "markdown-it";
 
 function cleanProfile(profile) {
     // Strip numbered parenthesis like (2)
@@ -117,15 +118,35 @@ export default function (eleventyConfig) {
     const defaultFormat = "dd LLL yyyy";
     if (!dateInput) return "";
 
+    const tz = zone || "utc";
+
+    // Ensure we always have something safe to return in the catch
+    const fallbackStr = () => {
+      try {
+        return dateInput?.toString?.() || "";
+      } catch {
+        return "";
+      }
+    };
+
     try {
       // If dateInput is already a Date object (like blog post dates)
       if (dateInput instanceof Date) {
-        return DateTime.fromJSDate(dateInput, { zone: zone || "utc" })
-          .toFormat(format || defaultFormat);
+        return DateTime.fromJSDate(dateInput, { zone: tz }).toFormat(
+          format || defaultFormat
+        );
       }
 
       // Otherwise proceed with string parsing
       const dateStr = dateInput.toString();
+
+      // Handle full ISO format
+      if (dateStr.includes("T")) {
+        const isoDateTime = DateTime.fromISO(dateStr, { zone: tz });
+        if (isoDateTime.isValid) {
+          return isoDateTime.toFormat(format || defaultFormat);
+        }
+      }
 
       // Handle plain year format (YYYY)
       if (/^\d{4}$/.test(dateStr)) {
@@ -134,8 +155,9 @@ export default function (eleventyConfig) {
 
       // Handle YYYY-MM format
       if (/^\d{4}-\d{2}$/.test(dateStr)) {
-        return DateTime.fromFormat(dateStr, "yyyy-MM", { zone: zone || "utc" })
-          .toFormat("LLL yyyy");
+        return DateTime.fromFormat(dateStr, "yyyy-MM", { zone: tz }).toFormat(
+          "LLL yyyy"
+        );
       }
 
       // Handle YYYY-00-00 format (year only)
@@ -145,31 +167,35 @@ export default function (eleventyConfig) {
 
       // Handle YYYY-MM-00 format (year and month)
       if (/^\d{4}-\d{2}-00$/.test(dateStr)) {
-        return DateTime.fromFormat(dateStr.slice(0, 7), "yyyy-MM", { zone: zone || "utc" })
-          .toFormat("LLL yyyy");
+        return DateTime.fromFormat(dateStr.slice(0, 7), "yyyy-MM", {
+          zone: tz,
+        }).toFormat("LLL yyyy");
       }
 
       // Handle complete dates (YYYY-MM-DD)
       if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
-        return DateTime.fromFormat(dateStr, "yyyy-MM-dd", { zone: zone || "utc" })
-          .toFormat(format || defaultFormat);
+        return DateTime.fromFormat(dateStr, "yyyy-MM-dd", { zone: tz }).toFormat(
+          format || defaultFormat
+        );
       }
 
       // Try parsing as "Month DD, YYYY"
-      const fullDate = DateTime.fromFormat(dateStr, "LLLL d, yyyy", { zone: zone || "utc" });
+      const fullDate = DateTime.fromFormat(dateStr, "LLLL d, yyyy", { zone: tz });
       if (fullDate.isValid) {
         return fullDate.toFormat(format || defaultFormat);
       }
 
       // Try parsing as "Month YYYY"
-      const monthYearDate = DateTime.fromFormat(dateStr, "LLLL yyyy", { zone: zone || "utc" });
+      const monthYearDate = DateTime.fromFormat(dateStr, "LLLL yyyy", {
+        zone: tz,
+      });
       if (monthYearDate.isValid) {
         return monthYearDate.toFormat(format || "LLL yyyy");
       }
 
-      return dateStr; // Return original string if no parsing succeeds
+      return dateStr;
     } catch (e) {
-      return dateStr; // Return original string on error
+      return fallbackStr();
     }
   });
 
@@ -348,6 +374,14 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("eventsForArtist", (events, artistName) => {
     return events.filter(event => event.name === artistName);
+  });
+
+  eleventyConfig.addFilter("markdownify", (value = "") => {
+    const md = markdownIt({
+      breaks: true
+    });
+
+    return md.render(String(value));
   });
 
 }
