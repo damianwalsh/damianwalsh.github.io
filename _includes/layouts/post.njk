@@ -53,10 +53,16 @@ eleventyNavigation:
       <img src="/img/profile-88.webp"
   srcset="/img/profile-88.webp 1x, /img/profile-176.webp 2x" width="88" height="88" alt="" eleventy:ignore>
       <p>Found this useful? Consider supporting my work.</p>
-      <a href="https://ko-fi.com/damianwalsh" class="icon-button">Buy me a coffee <svg viewBox="0 0 24 24" width="24"
-          height="24" class="icon-stroke" aria-hidden="true">
-          <use xlink:href="#icon-external-link"></use>
-        </svg></a>
+      <div class="actions">
+        <a href="https://ko-fi.com/damianwalsh" class="icon-button">Buy me a coffee <svg viewBox="0 0 24 24" width="24"
+            height="24" class="icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-external-link"></use>
+          </svg></a>
+          <a href="https://share.joinmastodon.org/#text={{ title }}: {{ description }}" class="icon-button" target="_blank" rel="noopener">Share on Mastodon <svg viewBox="0 0 24 24" width="24"
+            height="24" class="icon-fill" aria-hidden="true">
+            <use xlink:href="#icon-mastodon"></use>
+          </svg></a>
+        </div>
     </div>
     <p><small>Except where noted, all content is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.</small></p>
     {% include "partials/webmentions.njk" %}

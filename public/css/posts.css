@@ -196,7 +196,6 @@ aside {
 }
 
 .support-cta {
-  container-type: inline-size;
   background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box, linear-gradient(90deg, var(--primary-5), var(--secondary-5), var(--tertiary-5), var(--quaternary-5), var(--primary-5)) border-box;
   background-size: 300% 100%;
   border: var(--space-3xs) solid transparent;
@@ -207,15 +206,14 @@ aside {
   animation: gradient-shift 2s linear infinite alternate;
   display: grid;
   align-items: start;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: var(--space-xl-2xl) 1fr;
   gap: var(--flow-space);
   grid-template-areas:
     "img text"
-    "img button";
+    "img actions";
 
   img {
     grid-area: img;
-    width: var(--space-xl-2xl);
     aspect-ratio: 1;
     border-radius: var(--border-radius-s);
   }
@@ -224,9 +222,12 @@ aside {
     grid-area: text;
     margin-block-start: unset;
   }
-  a {
-    grid-area: button;
+  .actions {
+    grid-area: actions;
     justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--flow-space);
   }
 }
 
