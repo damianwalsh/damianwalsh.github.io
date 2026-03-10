@@ -10,68 +10,29 @@ permalink: "/music/"
 {% css %}
 {% include "public/css/chapters.css" %}
 {% include "public/css/events.css" %}
+{% include "public/css/liner-notes.css" %}
 {% endcss %}
 {% js %}
+{% include "public/js/audio-player.js" %}
+
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 
-  const scrollContainer = document.querySelector(".chapter__scroll");
-  const wrapper = document.querySelector(".chapter__wrapper");
-  const chapters = gsap.utils.toArray('.chapter__item');
+	const scrollContainer = document.querySelector(".chapter__scroll");
+	const wrapper = document.querySelector(".chapter__wrapper");
 
-  ScrollTrigger.create({
-    scroller: scrollContainer,
-    horizontal: true,
-    start: 0,
-    end: () => scrollContainer.scrollWidth - scrollContainer.clientWidth,
-    onUpdate: self => {
-      const atEnd = self.progress >= 0.999;
-      wrapper.classList.toggle("at-end", atEnd);
-    }
-  });
+	if (!scrollContainer || !wrapper) return;
 
-  const containerRect = scrollContainer.getBoundingClientRect();
-  const hiddenChapters = chapters.filter(chapter => {
-    const rect = chapter.getBoundingClientRect();
-    const fullyVisible = rect.left >= containerRect.left && rect.right <= containerRect.right;
-    return !fullyVisible;
-  });
-
-  hiddenChapters.forEach(chapter => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        scroller: scrollContainer,
-        trigger: chapter,
-        horizontal: true,
-        start: "left 85%",
-        once: true
-      }
-    });
-    tl.from([
-      chapter.querySelector('.chapter__photo'),
-      chapter.querySelector('.chapter__texture')
-    ], {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 0.75
-    })
-      .from(chapter.querySelector('.chapter__photo'), {
-        scale: 1.5,
-        duration: 0.75
-      }, "<")
-      .from([
-        chapter.querySelector('.chapter__header'),
-        chapter.querySelector('.chapter__footer')
-      ], {
-        opacity: 0,
-        duration: 0.25,
-      }, "-=0.15")
-      .from(chapter.querySelector('.chapter__header'), {
-        x: 20,
-        duration: 0.25
-      }, "<");
-  });
-
+	ScrollTrigger.create({
+		scroller: scrollContainer,
+		horizontal: true,
+		start: 0,
+		end: () => scrollContainer.scrollWidth - scrollContainer.clientWidth,
+		onUpdate: (self) => {
+			const atEnd = self.progress >= 0.999;
+			wrapper.classList.toggle("at-end", atEnd);
+		},
+	});
 });
 {% endjs %}
 <header class="main-header">
@@ -112,6 +73,43 @@ document.addEventListener("DOMContentLoaded", () => {
       {% endfor %}
     </ul>
   </div>
+</section>
+
+<hr>
+
+{% set totalNotes = crucialTracks.notes.length %}
+{% set note = crucialTracks.notes | first %}
+
+<section>
+  <header class="row">
+    <h2 class="title">Liner Notes</h2>
+    <p class="meta"><span class="counter">{{ totalNotes }}</span> note{% if totalNotes != 1 %}s{% endif %}</p>
+  </header>
+
+  <div class="liner-notes__container">
+    <div class="note">
+      <time datetime="{{ note.published }}" class="calendar">
+        <span class="calendar__month">{{ note.published | readableDate("LLL") }}</span>
+        <span class="calendar__day">{{ note.published | readableDate("d") }}</span>
+      </time>
+      <a href="/music/liner-notes/{{ note.date | readableDate('dd-LLL-yyyy') | lower }}/" class="prompt"><em>{{ note.prompt }}</em></a>
+      <div class="content">
+        {{ note.content | markdownify | safe }}
+        {% if note.entryImageUrl %}
+        <img src="{{ note.entryImageUrl }}" alt="">
+        {% endif %}
+      </div>
+      <figure class="preview">
+        <figcaption>
+          <p class="song">{{ note.song }}</p>
+          <p class="artist meta">{{ note.artist }}</p>
+        </figcaption>
+        <img src="{{ note.artworkUrl }}" alt="">
+        <audio-player src="{{ note.previewUrl }}"></audio-player>
+      </figure>
+    </div>
+  </div>
+  <p><a href="/music/liner-notes">View all Liner Notes</a></p>
 </section>
 
 <hr>
@@ -234,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </li>
   {% endfor %}
   </ul>
-  <p><a href="/music/events">View all events</a></p>
+  <p><a href="/music/events">View all Events</a></p>
 </section>
 
 <hr>
@@ -307,8 +305,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </table>
   </div>
 </details>
-
-<hr>
 
 <section>
   <header>
