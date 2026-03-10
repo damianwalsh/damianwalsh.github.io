@@ -1,0 +1,74 @@
+---
+eleventyNavigation:
+  key: "{{ note.date | readableDate('dd-LLL-yyyy') | lower }}"
+  parent: Liner Notes
+eleventyComputed:
+  title: "{{ note.date | readableDate('dd LLL yyyy') }} | Liner Notes"
+pagination:
+  data: crucialTracks.notes
+  size: 1
+  alias: note
+permalink: "/music/liner-notes/{{ note.date | readableDate('dd-LLL-yyyy') | lower }}/"
+excludeFromSitemap: true
+---
+{% css %}
+{% include "public/css/liner-notes.css" %}
+{% endcss %}
+{% js %}
+{% include "public/js/audio-player.js" %}
+{% endjs %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ note.prompt }}</h1>
+  <time datetime="{{ note.published }}" class="meta label">{{ note.published | readableDate }}</time>
+</header>
+
+<div class="liner-notes__container">
+  <div class="note">
+    <div class="content">
+      {{ note.content | markdownify | safe }}
+      {% if note.entryImageUrl %}
+        <img src="{{ note.entryImageUrl }}" alt="">
+      {% endif %}
+      <p><a href="{{ note.entryUrl }}"><small>View on Crucial Tracks</small></a></p>
+    </div>
+
+    <figure class="preview">
+      <figcaption>
+        <p class="song">{{ note.song }}</p>
+        <p class="artist meta">{{ note.artist }}</p>
+      </figcaption>
+      <img src="{{ note.artworkUrl }}" alt="">
+      <audio-player src="{{ note.previewUrl }}"></audio-player>
+    </figure>
+  </div>
+</div>
+
+<nav aria-label="pagination">
+  {% set allNotes = pagination.pages %}
+  {% set i = pagination.pageNumber %}
+
+  {# newest-first array #}
+  {% set previousNote = allNotes[i + 1] %} {# older #}
+  {% set nextNote = allNotes[i - 1] %}     {# newer #}
+
+  {% if previousNote and pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="icon-link prev">
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-left"></use>
+      </svg>
+      <span class="visually-hidden">Previous:</span>
+      {{ previousNote.date | readableDate('dd LLL yyyy') }}
+    </a>
+  {% endif %}
+
+  {% if nextNote and pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="icon-link next">
+      <span class="visually-hidden">Next:</span>
+      {{ nextNote.date | readableDate('dd LLL yyyy') }}
+      <svg width="36" height="36" viewBox="-6 -6 36 36" class="action icon-stroke" aria-hidden="true">
+        <use xlink:href="#icon-chevron-right"></use>
+      </svg>
+    </a>
+  {% endif %}
+</nav>
