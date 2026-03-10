@@ -47,10 +47,8 @@ excludeFromSitemap: true
 <nav aria-label="pagination">
   {% set allNotes = pagination.pages %}
   {% set i = pagination.pageNumber %}
-
-  {# newest-first array #}
-  {% set previousNote = allNotes[i + 1] %} {# older #}
-  {% set nextNote = allNotes[i - 1] %}     {# newer #}
+  {% set previousNote = allNotes[i + 1] %}
+  {% set nextNote = allNotes[i - 1] %}
 
   {% if previousNote and pagination.href.next %}
     <a href="{{ pagination.href.next }}" class="icon-link prev">
