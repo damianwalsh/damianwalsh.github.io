@@ -1,0 +1,53 @@
+---
+eleventyNavigation:
+  key: Liner Notes
+  parent: Music
+eleventyComputed:
+  title: "{{ eleventyNavigation.key }} | {{ eleventyNavigation.parent }}"
+permalink: "/music/liner-notes/"
+---
+{% css %}
+{% include "public/css/liner-notes.css" %}
+{% endcss %}
+{% js %}
+{% include "public/js/audio-player.js" %}
+{% endjs %}
+<header class="main-header">
+  {% include "partials/breadcrumb.njk" %}
+  <h1>{{ eleventyNavigation.key }}</h1>
+</header>
+
+{% for group in crucialTracks.groups %}
+<details {% if loop.first %} open{% endif %}>
+  <summary>
+    <h2>{{ group.year }}</h2>
+  </summary>
+  <div class="liner-notes__container">
+    <ol role="list" class="liner-notes__list">
+      {% for note in group.notes %}
+      <li class="note">
+        <time datetime="{{ note.published }}" class="calendar">
+          <span class="calendar__month">{{ note.published | readableDate("LLL") }}</span>
+          <span class="calendar__day">{{ note.published | readableDate("d") }}</span>
+        </time>
+        <a href="/music/liner-notes/{{ note.date | readableDate('dd-LLL-yyyy') | lower }}/" class="prompt"><em>{{ note.prompt }}</em></a>
+        <div class="content">
+          {{ note.content | markdownify | safe }}
+          {% if note.entryImageUrl %}
+          <img src="{{ note.entryImageUrl }}" alt="">
+          {% endif %}
+        </div>
+        <figure class="preview">
+          <figcaption>
+            <p class="song">{{ note.song }}</p>
+            <p class="artist meta">{{ note.artist }}</p>
+          </figcaption>
+          <img src="{{ note.artworkUrl }}" alt="">
+          <audio-player src="{{ note.previewUrl }}"></audio-player>
+        </figure>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</details>
+{% endfor %}
