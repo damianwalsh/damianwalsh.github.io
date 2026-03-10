@@ -15,7 +15,38 @@ excludeFromSitemap: true
 {% css %}
 {% include "public/css/music.css" %}
 {% include "public/css/memories.css" %}
+{% include "public/css/liner-notes.css" %}
+
+.liner-notes__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-space);
+  > .note + .note {
+    padding-block-start: var(--flow-space);
+    border-top: 1px solid var(--surface-mid);
+  }
+}
+
+.preview {
+  background: var(--surface-back);
+  audio-player {
+    background: var(--surface-fore);
+
+    input[type="range"] {
+      &::-webkit-slider-thumb {
+        box-shadow: 0 0 0 2px var(--surface-fore);
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: 0 0 0 2px var(--surface-fore);
+      }
+    }
+  }
+}
 {% endcss %}
+{% js %}
+{% include "public/js/audio-player.js" %}
+{% endjs %}
 
 <header class="main-header">
   {% include "partials/breadcrumb.njk" %}
@@ -208,6 +239,46 @@ excludeFromSitemap: true
       </div>
       {% endif %}
     </div>
+  </div>
+</section>
+{% endif %}
+
+{% set entryUrls = linernotes[release.release_id] or [] %}
+
+{% set releaseNotes = [] %}
+{% for entryUrl in entryUrls %}
+  {% set note = crucialTracks.byId[entryUrl] %}
+  {% if note %}
+    {% set releaseNotes = (releaseNotes.push(note), releaseNotes) %}
+  {% endif %}
+{% endfor %}
+
+{% if releaseNotes.length %}
+<section class="surface">
+  <header>
+    <h2 class="title">Liner notes</h2>
+  </header>
+  <div class="liner-notes__container">
+    {% for note in releaseNotes %}
+    <div class="note">
+      <a href="/music/liner-notes/{{ note.date | readableDate('dd-LLL-yyyy') | lower }}/" class="prompt"><em>{{ note.prompt }}</em></a>
+      <div class="content">
+        {{ note.content | markdownify | safe }}
+        {% if note.entryImageUrl %}
+          <img src="{{ note.entryImageUrl }}" alt="">
+        {% endif %}
+        <p><a href="{{ note.entryUrl }}"><small>View on Crucial Tracks</small></a></p>
+      </div>
+      <figure class="preview">
+        <figcaption>
+          <p class="song">{{ note.song }}</p>
+          <p class="artist meta">{{ note.artist }}</p>
+        </figcaption>
+        <img src="{{ note.artworkUrl }}" alt="">
+        <audio-player src="{{ note.previewUrl }}"></audio-player>
+      </figure>
+    </div>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
