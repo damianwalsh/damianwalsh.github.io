@@ -18,7 +18,7 @@ permalink: "/music/liner-notes/"
 </header>
 
 {% for group in crucialTracks.groups %}
-<details data-toggle {% if loop.first %} open{% endif %}>
+<details {% if loop.first %} open{% endif %}>
   <summary>
     <h2>{{ group.year }}</h2>
   </summary>
