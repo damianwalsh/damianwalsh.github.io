@@ -15,7 +15,7 @@
   gap: var(--flow-space);
   margin: 0;
   padding: 0;
-  @media screen and (width >= 769px) {
+  @media screen and (width >= 768px) {
     grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
   }
   .event__detail {
@@ -42,7 +42,7 @@
     "detail"
     "action";
 
-  @media screen and (width >=426px) {
+  @media screen and (width >=425px) {
     grid-template-columns: 1fr minmax(auto, 180px);
     grid-template-areas:
       "title location"
@@ -80,7 +80,7 @@
     margin-block-end: var(--space-2xs);
   }
 
-  @media screen and (width >=769px) {
+  @media screen and (width >=768px) {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto 1fr;
