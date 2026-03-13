@@ -31,7 +31,7 @@ async function fetchAllFeedItems() {
 
   while (nextUrl) {
     const feed = await EleventyFetch(nextUrl, {
-      duration: "1d",
+      duration: "0s",
       type: "json",
     });
 
