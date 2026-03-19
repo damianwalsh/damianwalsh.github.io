@@ -42,7 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <section>
   <header class="row">
-    <h2 class="title">Chapters</h2>
+    <h2 class="title">Chapters <button popovertarget="--chapters" class="action action--small tooltip__trigger">
+  <svg width="32" height="32" viewBox="-2 -2 28 28" class="icon-stroke" aria-label="Info" focusable="false">
+    <use href="#icon-info"></use>
+  </svg>
+</button></h2>
+    <div id="--chapters" class="tooltip" popover>Chapters group records in my collection into distinct periods marked by significant life events, linking them to related people, places, and events.</div>
   </header>
   <div class="chapter__wrapper">
     <ul role="list" class="chapter__scroll">
@@ -82,8 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <section>
   <header class="row">
-    <h2 class="title">Liner Notes</h2>
+    <h2 class="title">Liner Notes <button popovertarget="--linerNotes" class="action action--small tooltip__trigger">
+  <svg width="32" height="32" viewBox="-2 -2 28 28" class="icon-stroke" aria-label="Info" focusable="false">
+    <use href="#icon-info"></use>
+  </svg>
+</button></h2>
     <p class="meta"><span class="counter">{{ totalNotes }}</span> note{% if totalNotes != 1 %}s{% endif %}</p>
+    <div id="--linerNotes" class="tooltip" popover>These notes were originally written in response to prompts on Crucial Tracks, reflecting on songs that have personal meaning to me.</div>
   </header>
 
   <div class="liner-notes__container">
