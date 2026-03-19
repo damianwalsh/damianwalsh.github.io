@@ -486,12 +486,21 @@ export default async function (eleventyConfig) {
   eleventyConfig.addBundle("css", {
     transforms: [
       async function (content) {
-        let { type, page } = this;
-        let result = await postcss([cssnanoPlugin]).process(content, { from: page.inputPath, to: null });
+        // Only minify during build
+        if (process.env.ELEVENTY_RUN_MODE !== "build") {
+          return content;
+        }
+
+        let { page } = this;
+        let result = await postcss([cssnanoPlugin]).process(content, {
+          from: page.inputPath,
+          to: null,
+        });
+
         return result.css;
-      }
+      },
     ],
-    toFileDirectory: "dist"
+    toFileDirectory: "dist",
   });
 
   // Adds the {% js %} paired shortcode
