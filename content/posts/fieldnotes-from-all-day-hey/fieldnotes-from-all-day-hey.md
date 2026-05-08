@@ -7,7 +7,7 @@ tags:
   - Community
 ---
 {% css %}
-span {
+span:not(.webmentions span) {
   display: inline-flex;
   gap: var(--space-3xs);
   align-items: center;
