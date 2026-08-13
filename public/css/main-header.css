@@ -11,10 +11,8 @@
     text-underline-offset: -.5ex;
     text-decoration-thickness: .75ex;
     -webkit-text-decoration-line: underline;
-    [data-theme="light"] & {
-      text-decoration-color: var(--quaternary-2);
-      -webkit-text-decoration-color: var(--quaternary-2);
-    }
+    text-decoration-color: var(--quaternary-2);
+    -webkit-text-decoration-color: var(--quaternary-2);
 
     [data-theme="dark"] & {
       text-decoration-color: var(--quaternary-8);

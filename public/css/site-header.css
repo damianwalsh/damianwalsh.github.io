@@ -65,6 +65,13 @@
     grid-template-areas:
       "actions nav"
       "theme theme";
+
+      html:not(.js) & {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "nav";
+    }
   }
 
   @media screen and (width >= 1366px) {
@@ -104,9 +111,13 @@
 
 .site-header__actions {
   grid-area: actions;
-  display: flex;
+  display: none;
   gap: var(--space-xs);
   z-index: var(--fore);
+
+  .js & {
+    display: flex;
+  }
 
   @media (width >= 768px) {
     [data-target="main-nav"] {
@@ -117,6 +128,10 @@
 
 #main-nav {
   grid-area: nav;
+
+  html:not(.js) & {
+    display: flex;
+  }
 
   @media (768px <= width <= 1366px) {
     display: flex;
