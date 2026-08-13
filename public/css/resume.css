@@ -93,7 +93,7 @@
         flex-grow: 1;
       }
       .name {
-        color: var(--text-colour-2);
+        color: var(--print-text-colour);
         margin-block-start: 0;
         font-size: 18pt;
         font-variation-settings: "wght" 800, "wdth" 85;
@@ -116,7 +116,7 @@
       margin: 0;
     }
     .title {
-      color: var(--text-colour-2);
+      color: var(--print-text-colour);
       font-variation-settings: "wght" 700, "wdth" 100;
       font-size: 8pt;
       text-transform: uppercase;
