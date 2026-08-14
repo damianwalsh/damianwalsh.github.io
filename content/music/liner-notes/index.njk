@@ -44,7 +44,9 @@ permalink: "/music/liner-notes/"
             <p class="artist meta">{{ note.artist }}</p>
           </figcaption>
           <img src="{{ note.artworkUrl }}" alt="">
-          <audio-player src="{{ note.previewUrl }}"></audio-player>
+          <audio-player>
+            <audio controls preload="none" src="{{ note.previewUrl }}"></audio>
+          </audio-player>
         </figure>
       </li>
       {% endfor %}

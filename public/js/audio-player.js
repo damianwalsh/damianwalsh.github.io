@@ -3,15 +3,14 @@ let currentlyPlaying = null;
 customElements.define("audio-player", class extends HTMLElement {
   connectedCallback() {
     if (this.dataset.ready) return;
-    this.dataset.ready = "true";
 
-    const src = this.getAttribute("src") || "";
+    const audio = this.querySelector("audio");
 
-    this.innerHTML = `
-      <audio preload="none">
-        <source src="${src}" type="audio/mp4">
-      </audio>
+    if (!audio) return;
 
+    audio.removeAttribute("controls");
+
+    this.insertAdjacentHTML("beforeend", `
       <button type="button" class="action action--small" data-play aria-label="Play">
         <svg width="32" height="32" viewBox="-10 -8 40 40" class="icon-stroke" aria-hidden="true" focusable="false"
           data-icon-play>
@@ -31,9 +30,11 @@ customElements.define("audio-player", class extends HTMLElement {
         <span>/</span>
         <span data-duration>0:00</span>
       </p>
-    `;
+    `);
 
-    this.audio = this.querySelector("audio");
+    this.dataset.ready = "true";
+
+    this.audio = audio;
     this.btn = this.querySelector("[data-play]");
     this.playIcon = this.querySelector("[data-icon-play]");
     this.pauseIcon = this.querySelector("[data-icon-pause]");
@@ -43,13 +44,16 @@ customElements.define("audio-player", class extends HTMLElement {
 
     const formatTime = (seconds) => {
       if (!Number.isFinite(seconds) || seconds <= 0) return "0:00";
+
       const s = Math.floor(seconds);
       const m = Math.floor(s / 60);
+
       return `${m}:${String(s % 60).padStart(2, "0")}`;
     };
 
     const syncIcons = () => {
       const paused = this.audio.paused;
+
       this.btn.setAttribute("aria-label", paused ? "Play" : "Pause");
       this.playIcon.toggleAttribute("hidden", !paused);
       this.pauseIcon.toggleAttribute("hidden", paused);
@@ -66,12 +70,18 @@ customElements.define("audio-player", class extends HTMLElement {
         if (currentlyPlaying && currentlyPlaying !== this.audio) {
           currentlyPlaying.pause();
         }
+
         currentlyPlaying = this.audio;
 
-        try { await this.audio.play(); } catch { }
+        try {
+          await this.audio.play();
+        } catch { }
       } else {
         this.audio.pause();
-        if (currentlyPlaying === this.audio) currentlyPlaying = null;
+
+        if (currentlyPlaying === this.audio) {
+          currentlyPlaying = null;
+        }
       }
 
       syncIcons();
@@ -94,17 +104,24 @@ customElements.define("audio-player", class extends HTMLElement {
       if (currentlyPlaying && currentlyPlaying !== this.audio) {
         currentlyPlaying.pause();
       }
+
       currentlyPlaying = this.audio;
       syncIcons();
     });
 
     this.audio.addEventListener("pause", () => {
-      if (currentlyPlaying === this.audio) currentlyPlaying = null;
+      if (currentlyPlaying === this.audio) {
+        currentlyPlaying = null;
+      }
+
       syncIcons();
     });
 
     this.audio.addEventListener("ended", () => {
-      if (currentlyPlaying === this.audio) currentlyPlaying = null;
+      if (currentlyPlaying === this.audio) {
+        currentlyPlaying = null;
+      }
+
       this.seek.value = "0";
       syncIcons();
       syncSeekAndTime();

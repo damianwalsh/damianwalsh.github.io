@@ -200,15 +200,27 @@ details {
 
   audio-player {
     grid-area: audio;
-    display: flex;
-    gap: var(--space-2xs);
-    align-items: center;
-    background: var(--surface-back);
-    padding: var(--space-2xs);
-    border-radius: 999px;
+    display: block;
 
-    audio,
+    audio {
+      display: block;
+      inline-size: 100%;
+    }
+
     [hidden] {
+      display: none;
+    }
+
+    &[data-ready="true"] {
+      display: flex;
+      gap: var(--space-2xs);
+      align-items: center;
+      background: var(--surface-back);
+      padding: var(--space-2xs);
+      border-radius: 999px;
+    }
+
+    &[data-ready="true"] audio {
       display: none;
     }
 
