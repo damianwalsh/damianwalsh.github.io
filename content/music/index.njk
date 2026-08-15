@@ -15,25 +15,26 @@ permalink: "/music/"
 {% js %}
 {% include "public/js/audio-player.js" %}
 
-document.addEventListener("DOMContentLoaded", () => {
-	gsap.registerPlugin(ScrollTrigger);
+function setupChapterScrollState() {
+  const scrollContainer = document.querySelector(".chapter__scroll");
+  const wrapper = document.querySelector(".chapter__wrapper");
 
-	const scrollContainer = document.querySelector(".chapter__scroll");
-	const wrapper = document.querySelector(".chapter__wrapper");
+  if (!scrollContainer || !wrapper) return;
 
-	if (!scrollContainer || !wrapper) return;
+  function updateScrollState() {
+    const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    const atEnd = scrollContainer.scrollLeft >= maxScrollLeft - 1;
 
-	ScrollTrigger.create({
-		scroller: scrollContainer,
-		horizontal: true,
-		start: 0,
-		end: () => scrollContainer.scrollWidth - scrollContainer.clientWidth,
-		onUpdate: (self) => {
-			const atEnd = self.progress >= 0.999;
-			wrapper.classList.toggle("at-end", atEnd);
-		},
-	});
-});
+    wrapper.classList.toggle("at-end", atEnd);
+	}
+
+  scrollContainer.addEventListener("scroll", updateScrollState, { passive: true });
+  window.addEventListener("resize", updateScrollState);
+
+  updateScrollState();
+}
+
+document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 {% endjs %}
 <header class="main-header">
   {% include "partials/breadcrumb.njk" %}
@@ -324,6 +325,3 @@ document.addEventListener("DOMContentLoaded", () => {
   </header>
   <p>This archive doesn't include any music I have owned on Cassette or MiniDisc (sadly now lost) or listened to on streaming services. I collected CDs from 1991 to 2015, often buying music having only heard a few tracks on the radio in the pre-streaming days. In 2017, I bought a turntable with the (lofty) aim of building a canonical music collection that only included releases I really cared about. Events I've attended are based on memory and verified using online sources like <a href="https://www.setlist.fm/">setlist.fm</a>.</p>
 </section>
-
-<script src="/js/gsap.min.js"></script>
-<script src="/js/ScrollTrigger.min.js"></script>
