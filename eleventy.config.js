@@ -492,7 +492,17 @@ export default async function (eleventyConfig) {
         }
 
         let { page } = this;
-        let result = await postcss([cssnanoPlugin]).process(content, {
+
+        let result = await postcss([
+          cssnano({
+            preset: [
+              "default",
+              {
+                convertValues: false,
+              },
+            ],
+          }),
+        ]).process(content, {
           from: page.inputPath,
           to: null,
         });
