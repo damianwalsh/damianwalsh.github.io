@@ -11,33 +11,32 @@
 }
 
 .site-footer__inner {
-  display: grid;
-  grid-template-areas:
-    "links"
-    "social"
-    "meta";
+  display: flex;
+  flex-direction: column;
   gap: var(--flow-space);
-  @media screen and (width >=769px) {
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      "links social"
-      "meta social";
-  }
+
   .meta {
-    grid-area: meta;
     margin-block-start: unset;
   }
 }
 
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: var(--space-s);
+  a {
+    font-variation-settings: "wght" 700;
+  }
+}
 
 .social-links {
-  grid-area: social;
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
   gap: var(--space-2xs);
-  align-self: end;
   a {
     display: flex;
     color: var(--primary-3);
@@ -48,14 +47,83 @@
   }
 }
 
-.footer-links {
-  grid-area: links;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  gap: var(--space-s);
+@property --scroll-progress {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.back-to-top {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: var(--fore);
+  display: grid;
+  grid-template-columns: 1fr;
+  pointer-events: none;
+
   a {
-    font-variation-settings: "wght" 700;
+    grid-column: 1;
+    justify-self: end;
+    margin: var(--gutter);
+    pointer-events: auto;
+  }
+
+  @media screen and (width >= 1366px) {
+    grid-template-columns:
+      calc(var(--wrapper-max-width) / 5) minmax(0, var(--wrapper-max-width)) 1fr;
+
+    a {
+      grid-column: 2;
+    }
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  .back-to-top .action {
+    --scroll-progress: 0%;
+    --size: 44px;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    box-sizing: border-box;
+
+    border: 4px solid transparent;
+    border-radius: 50%;
+
+    background:
+      linear-gradient(var(--primary-3), var(--primary-3)) padding-box,
+      conic-gradient(
+        from 0deg,
+        currentColor var(--scroll-progress),
+        var(--primary-4) 0
+      ) border-box;
+
+    opacity: 0;
+    translate: 0 calc(var(--size) / 2);
+    pointer-events: none;
+
+    animation:
+      fill-border linear both,
+      reveal-back-to-top linear both;
+    animation-timeline:
+      scroll(root),
+      scroll(root);
+    animation-range:
+      0% 100%,
+      0 var(--size);
+  }
+}
+
+@keyframes fill-border {
+  to {
+    --scroll-progress: 100%;
+  }
+}
+
+@keyframes reveal-back-to-top {
+  to {
+    opacity: 1;
+    translate: 0 0;
+    pointer-events: auto;
   }
 }
