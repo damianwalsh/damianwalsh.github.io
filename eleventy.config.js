@@ -483,7 +483,7 @@ export default async function (eleventyConfig) {
 
   // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
   // Adds the {% css %} paired shortcode
-  eleventyConfig.addBundle("css", {
+    eleventyConfig.addBundle("css", {
     transforms: [
       async function (content) {
         // Only minify during build
@@ -494,7 +494,7 @@ export default async function (eleventyConfig) {
         let { page } = this;
 
         let result = await postcss([
-          cssnano({
+          cssnanoPlugin({
             preset: [
               "default",
               {
