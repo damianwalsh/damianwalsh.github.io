@@ -6,7 +6,7 @@
   --duration: 150ms;
   --stagger: 100ms;
 
-  clip-path: inset(0);
+  clip-path: inset(-4px);
 
   @media (prefers-reduced-motion: no-preference) {
     > * {
