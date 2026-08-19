@@ -25,7 +25,7 @@ permalink: "/music/favourites/"
 <section>
   <header class="row">
     <h2 class="title">Releases</h2>
-    <p class="meta"><span class="counter">{{ sortedfavourites | length }}</span> release{{ 's' if (sortedfavourites | length) !== 1 }}</p>
+    <p class="meta">{{ sortedfavourites | length }} release{{ 's' if (sortedfavourites | length) !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% for release in sortedfavourites %}
@@ -68,7 +68,7 @@ permalink: "/music/favourites/"
 <section>
   <header class="row">
     <h2 class="title">Tracks</h2>
-    <p class="meta"><span class="counter">{{ favouriteTracksList | length }}</span> track{{ 's' if (favouriteTracksList |
+    <p class="meta">{{ favouriteTracksList | length }} track{{ 's' if (favouriteTracksList |
       length) !== 1 }}</p>
   </header>
 
