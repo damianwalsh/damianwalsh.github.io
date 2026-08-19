@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
     <use href="#icon-info"></use>
   </svg>
 </button></h2>
-    <p class="meta"><span class="counter">{{ totalNotes }}</span> note{% if totalNotes != 1 %}s{% endif %}</p>
+    <p class="meta">{{ totalNotes }} note{% if totalNotes != 1 %}s{% endif %}</p>
     <div id="--linerNotes" class="tooltip" popover>These notes were originally written in response to prompts on Crucial Tracks, reflecting on songs that have personal meaning to me.</div>
   </header>
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 <section>
   <header class="row">
     <h2 class="title">Favourites</h2>
-    <p class="meta"><span class="counter">{{ favoritesCount }}</span> release{{ 's' if favoritesCount !== 1 }}</p>
+    <p class="meta">{{ favoritesCount }} release{{ 's' if favoritesCount !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% for release in sortedFavorites %}
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 <section>
   <header class="row">
     <h2 class="title">{{ formatData.format }}</h2>
-    <p class="meta"><span class="counter">{{ formatData.releases.length }}</span> release{{ 's' if formatData.releases.length !== 1 }}</p>
+    <p class="meta">{{ formatData.releases.length }} release{{ 's' if formatData.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% set sortedReleases = formatData.releases | sort(attribute='artist') %}
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 <section>
   <header class="row">
     <h2 class="title">Events</h2>
-    <p class="meta"><span class="counter">{{ events | length }}</span> event{% if events.length != 1 %}s{% endif %}</p>
+    <p class="meta">{{ events | length }} event{% if events.length != 1 %}s{% endif %}</p>
   </header>
   <ul role="list" class="event__grid">
   {% set sortedEvents = collections.eventsCollection | sort(attribute='date') | reverse %}

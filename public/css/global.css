@@ -292,6 +292,12 @@ header {
 
 section > header {
   margin-block-end: var(--flow-space);
+  .meta {
+    background: var(--surface-fore);
+    border-radius: 999px;
+    padding-block: var(--space-3xs);
+    padding-inline: var(--space-2xs);
+  }
 }
 
 summary {

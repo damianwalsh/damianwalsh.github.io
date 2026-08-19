@@ -28,7 +28,7 @@ eleventyExcludeFromCollections: posts
   <section>
     <header class="row">
       <h2 id="{{ year }}" class="title">{{ year }}</h2>
-      <p class="meta"><span class="counter">{{ yearPosts.length }}</span> post{{ 's' if yearPosts.length !== 1 }}</p>
+      <p class="meta">{{ yearPosts.length }} post{{ 's' if yearPosts.length !== 1 }}</p>
     </header>
     <ol role="list" class="post__list">
       {% for post in yearPosts %}
