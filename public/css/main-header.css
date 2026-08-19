@@ -3,6 +3,43 @@
  */
 
 .main-header {
+  --duration: 150ms;
+  --stagger: 100ms;
+
+  clip-path: inset(0);
+
+  @media (prefers-reduced-motion: no-preference) {
+    > * {
+      animation: enter var(--duration) ease-in-out both;
+    }
+
+    > :nth-child(1) {
+      animation-delay: calc(var(--stagger) * 1);
+    }
+
+    > :nth-child(2) {
+      animation-delay: calc(var(--stagger) * 2);
+    }
+
+    > :nth-child(3) {
+      animation-delay: calc(var(--stagger) * 3);
+    }
+
+    > :nth-child(4) {
+      animation-delay: calc(var(--stagger) * 4);
+    }
+
+    > :nth-child(5) {
+      animation-delay: calc(var(--stagger) * 5);
+    }
+
+    @supports (animation-delay: calc(sibling-index() * 1ms)) {
+      .main-header > * {
+        animation-delay: calc(sibling-index() * var(--stagger));
+      }
+    }
+  }
+
   h1 {
     font-size: clamp(3.3594rem, 2.3553rem + 4.9277vw, 6.5563rem);
     margin-block-start: 0;
@@ -23,6 +60,19 @@
     margin-block-start: 0;
   }
 }
+
+ @keyframes enter {
+   from {
+     opacity: 0;
+     transform: translateY(var(--flow-space));
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
 
 .main-header__meta {
   display: flex;
