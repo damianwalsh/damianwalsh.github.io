@@ -215,6 +215,7 @@ aside {
 }
 
 .support-cta {
+  container-type: inline-size;
   background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box, linear-gradient(90deg, var(--primary-5), var(--secondary-5), var(--tertiary-5), var(--quaternary-5), var(--primary-5)) border-box;
   background-size: 300% 100%;
   border: var(--space-3xs) solid transparent;
@@ -229,7 +230,7 @@ aside {
   gap: var(--flow-space);
   grid-template-areas:
     "img text"
-    "img actions";
+    "actions actions";
 
   img {
     grid-area: img;
@@ -243,10 +244,25 @@ aside {
   }
   .actions {
     grid-area: actions;
-    justify-self: end;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: var(--flow-space);
+
+    > .icon-button {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @container (min-width: 425px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      > .icon-button {
+        width: fit-content;
+        justify-content: flex-start;
+      }
+    }
   }
 }
 
