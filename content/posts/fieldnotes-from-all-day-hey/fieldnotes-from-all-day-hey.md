@@ -35,20 +35,10 @@ span:not(.webmentions span) {
   }
   img {
     border-radius: var(--border-radius-s);
-    animation: fadeIn linear;
-    animation-timeline: view();
-    animation-range: entry;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 {% endcss %}
 This morning I shook off a bit of low-level anxiety and broke a stubborn habit by going to an in-person conference in Leeds. A lovely city in the North of England I don’t get to often enough. On the train home, experiencing that peculiar mix of elation and exhaustion that arrives when the music stops and the party ends, I’m reflecting on what made it a brilliant day and why I’ve let opportunities like this pass me by recently. I’ve never been part of the crowd that somehow manages to attend every conference going, but there was a time I made it to at least one a year.
 
