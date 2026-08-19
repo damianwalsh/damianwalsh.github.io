@@ -132,6 +132,25 @@ header .title {
   &> :first-child {
     margin-block-start: 0;
   }
+
+  picture > img {
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation: fadeIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 75%;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 aside {
