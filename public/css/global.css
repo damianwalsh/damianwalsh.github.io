@@ -297,6 +297,7 @@ section > header {
     border-radius: 999px;
     padding-block: var(--space-3xs);
     padding-inline: var(--space-2xs);
+    white-space: nowrap;
   }
 }
 
