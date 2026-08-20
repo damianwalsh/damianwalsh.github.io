@@ -52,7 +52,7 @@ excludeFromSitemap: true
 <section>
   <header class="row">
     <h2 class="title">{{ format }}</h2>
-    <p class="meta">{{ releases.length }} release{{ 's' if releases.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ releases.length }}</span> release{{ 's' if releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% set sortedReleases = releases | sort(attribute='title') %}
@@ -100,7 +100,7 @@ excludeFromSitemap: true
 <section>
   <header class="row">
     <h2 class="title">Favourite tracks</h2>
-    <p class="meta">{{ favouriteTracksList.length }} track{{ 's' if favouriteTracksList.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ favouriteTracksList.length }}</span> track{{ 's' if favouriteTracksList.length !== 1 }}</p>
   </header>
   <ul role="list" class="favourites__list surface">
     {% for release in artistData.releases | sort(attribute='title') %}

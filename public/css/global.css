@@ -292,13 +292,6 @@ header {
 
 section > header {
   margin-block-end: var(--flow-space);
-  .meta {
-    background: var(--surface-fore);
-    border-radius: 999px;
-    padding-block: var(--space-3xs);
-    padding-inline: var(--space-2xs);
-    white-space: nowrap;
-  }
 }
 
 summary {
@@ -621,16 +614,39 @@ dialog {
 }
 
 .meta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
   font-size: var(--text-size--1);
   color: var(--text-colour-2);
   font-variation-settings: "wght" 700;
   text-transform: uppercase;
   letter-spacing: .025em;
 
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  width: fit-content;
+  background: var(--surface-fore);
+  border-radius: 999px;
+  padding: var(--space-2xs);
+
   &:has(.counter) {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-3xs);
+    padding: var(--space-3xs) var(--space-2xs) var(--space-3xs) var(--space-3xs);
+  }
+  > .counter {
+    width: auto;
+    height: auto;
+    padding-inline: var(--space-3xs);
+    border-radius: 999px;
+    font: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    min-inline-size: 1lh;
   }
 }
 

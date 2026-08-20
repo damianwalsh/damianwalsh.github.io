@@ -19,7 +19,7 @@ eleventyNavigation:
 <section>
   <header class="row">
     <h2 class="title">Posts</h2>
-    <p class="meta">{{ collections.posts.length }} post{{ 's' if collections.posts.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ collections.posts.length }}</span> post{{ 's' if collections.posts.length !== 1 }}</p>
   </header>
   <ol role="list" class="post__list">
     {% for post in posts | slice(0, 4) %}
@@ -52,7 +52,7 @@ eleventyNavigation:
 <section>
   <header class="row">
     <h2 class="title">Music</h2>
-    <p class="meta">{{ collections.releases.length }} release{{ 's' if collections.releases.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ collections.releases.length }}</span> release{{ 's' if collections.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
   {% for release in collections.releases | slice(0, 4) %}
@@ -87,7 +87,7 @@ eleventyNavigation:
 <section>
   <header class="row">
     <h2 class="title">Reading</h2>
-    <p class="meta">{{ collections.books.length }} book{{ 's' if collections.books.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ collections.books.length }}</span> book{{ 's' if collections.books.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
   {% for book in collections.books | slice(0, 4) %}

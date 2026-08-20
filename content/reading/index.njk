@@ -25,7 +25,7 @@ permalink: "/reading/"
 <section>
   <header class="row">
     <h2 class="title">Favourite Books</h2>
-    <p class="meta">{{ favoritesCount }} book{{ 's' if favoritesCount !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ favoritesCount }}</span> book{{ 's' if favoritesCount !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% for book in sortedFavorites %}
@@ -59,7 +59,7 @@ permalink: "/reading/"
   <header class="row">
     <h2 class="title">Recently Read Books</h2>
     {% set recentBooks = collections.books | sort(true) | slice(0, 10) %}
-    <p class="meta">{{ recentBooks.length }} book{{ 's' if recentBooks.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ recentBooks.length }}</span> book{{ 's' if recentBooks.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
   {% for book in recentBooks %}

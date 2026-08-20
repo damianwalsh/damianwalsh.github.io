@@ -90,7 +90,7 @@ excludeFromSitemap: true
 <section>
   <header class="row">
     <h2 class="title">Related releases</h2>
-    <p class="meta">{{ chapter.releases.length }} release{{ 's' if chapter.releases.length !== 1 }}</p>
+    <p class="pill meta"><span class="counter">{{ chapter.releases.length }}</span> release{{ 's' if chapter.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
     {% set sortedReleases = chapter.releases | sort(attribute='artist') %}
@@ -129,7 +129,7 @@ excludeFromSitemap: true
 <section>
   <header class="row">
     <h2 class="title">Related events</h2>
-    <p class="meta">{{ sortedChapterEvents.length }} event{% if sortedChapterEvents.length != 1 %}s{% endif %}</p>
+    <p class="pill meta"><span class="counter">{{ sortedChapterEvents.length }}</span> event{% if sortedChapterEvents.length != 1 %}s{% endif %}</p>
   </header>
   <ul role="list" class="event__list">
     {% for event in sortedChapterEvents %}
