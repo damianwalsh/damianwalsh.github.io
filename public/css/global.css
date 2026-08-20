@@ -545,6 +545,12 @@ dialog {
   height: var(--action-size);
 }
 
+.action--xsmall {
+  --action-size: 28px;
+  width: var(--action-size);
+  height: var(--action-size);
+}
+
 .badge {
   --badge-size: 28px;
   height: var(--badge-size);
