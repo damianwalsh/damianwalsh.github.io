@@ -216,13 +216,21 @@ aside {
 
 .support-cta {
   container-type: inline-size;
-  background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box, linear-gradient(90deg, var(--primary-5), var(--secondary-5), var(--tertiary-5), var(--quaternary-5), var(--primary-5)) border-box;
+  background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box,
+    linear-gradient(
+      90deg,
+      var(--primary-5),
+      var(--secondary-5),
+      var(--tertiary-5),
+      var(--quaternary-5),
+      var(--primary-5)
+    ) border-box;
   background-size: 300% 100%;
   border: var(--space-3xs) solid transparent;
   border-radius: var(--border-radius);
   padding: var(--flow-space);
   transform-origin: center top;
-  will-change: transform;
+  will-change: opacity, transform;
   animation: gradient-shift 2s linear infinite alternate;
   display: grid;
   align-items: start;
@@ -231,6 +239,21 @@ aside {
   grid-template-areas:
     "img text"
     "actions actions";
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation:
+        gradient-shift 2s linear infinite alternate,
+        fadeScaleInUp linear both;
+      animation-timeline:
+        auto,
+        view();
+      animation-range:
+        normal,
+        entry 0% entry 75%;
+      transform-origin: top center;
+    }
+  }
 
   img {
     grid-area: img;
@@ -242,6 +265,7 @@ aside {
     grid-area: text;
     margin-block-start: unset;
   }
+
   .actions {
     grid-area: actions;
     display: flex;
@@ -263,6 +287,18 @@ aside {
         justify-content: flex-start;
       }
     }
+  }
+}
+
+@keyframes fadeScaleInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--gutter)) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
