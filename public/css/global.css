@@ -648,10 +648,6 @@ dialog {
     height: auto;
     padding-inline: var(--space-3xs);
     border-radius: 999px;
-    font: inherit;
-    font-variation-settings: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
     min-inline-size: 1lh;
   }
 }
