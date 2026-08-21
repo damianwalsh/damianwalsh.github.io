@@ -620,15 +620,16 @@ dialog {
 }
 
 .meta {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3xs);
   font-size: var(--text-size--1);
   color: var(--text-colour-2);
   font-variation-settings: "wght" 700;
   text-transform: uppercase;
   letter-spacing: .025em;
-
+  &:has(.counter) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+  }
 }
 
 .pill {
