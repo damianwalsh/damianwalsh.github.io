@@ -3202,7 +3202,9 @@
       "lat": 51.4643,
       "lng": -0.9875
     },
-    "related_releases": [],
+    "related_releases": [
+      11415438
+    ],
     "setlist": [
       {
         "songNames": [
@@ -3227,5 +3229,51 @@
       }
     ],
     "setlistUrl": "https://www.setlist.fm/setlist/the-smashing-pumpkins/2007/little-johns-farm-reading-england-13d61105.html"
+  },
+  "the-cure-wythenshawe-park-2026-08-21": {
+    "name": "The Cure",
+    "location": "Wythenshawe Park",
+    "type": "Concert",
+    "date": "2026-08-21",
+    "setlistfm_id": "1341157d",
+    "coordinates": {
+      "lat": 53.4042,
+      "lng": -2.2746
+    },
+    "related_releases": [],
+    "setlist": [
+      {
+        "songNames": [
+          "Alone",
+          "Pictures of You",
+          "High",
+          "Lovesong",
+          "Burn",
+          "Fascination Street",
+          "alt.end",
+          "Push",
+          "In Between Days",
+          "Just Like Heaven",
+          "Treasure",
+          "Want",
+          "A Night Like This",
+          "Secrets",
+          "Play for Today",
+          "A Forest",
+          "From the Edge of the Deep Green Sea",
+          "Endsong",
+          "Lullaby",
+          "Wrong Number",
+          "The Walk",
+          "Mint Car",
+          "The Lovecats",
+          "Friday I'm in Love",
+          "Close to Me",
+          "Why Can't I Be You?",
+          "Boys Don't Cry"
+        ]
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/the-cure/2026/wythenshawe-park-manchester-england-1341157d.html"
   }
 }

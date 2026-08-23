@@ -1391,5 +1391,17 @@
     "related_releases": [
       11415438
     ]
+  },
+  "the-cure-wythenshawe-park-2026-08-21": {
+    "name": "The Cure",
+    "location": "Wythenshawe Park",
+    "type": "Concert",
+    "date": "2026-08-21",
+    "setlistfm_id": "1341157d",
+    "coordinates": {
+      "lat": 53.4042,
+      "lng": -2.2746
+    },
+    "related_releases": []
   }
 }
