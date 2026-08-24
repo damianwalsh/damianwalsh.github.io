@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 
 <section>
   <header class="row">
-    <h2 class="title">Chapters <button popovertarget="--chapters" class="action action--xsmall tooltip__trigger">
-  <svg width="28" height="28" viewBox="0 0 24 24" class="icon-stroke" aria-label="Info" focusable="false">
+    <h2 class="title">Chapters <button interestfor="chapters" popovertarget="chapters" class="action action--xsmall tooltip__trigger">
+  <svg width="28" height="28" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true" focusable="false">
     <use href="#icon-info"></use>
-  </svg>
+  </svg><span class="visually-hidden">Info</span>
 </button></h2>
-    <div id="--chapters" class="tooltip" popover>Chapters group records in my collection into distinct periods marked by significant life events, linking them to related people, places, and events.</div>
+    <div id="chapters" class="tooltip" popover>Chapters group records in my collection into distinct periods marked by significant life events, linking them to related people, places, and events.</div>
   </header>
   <div class="chapter__wrapper">
     <ul role="list" class="chapter__scroll">
@@ -88,13 +88,13 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
 
 <section>
   <header class="row">
-    <h2 class="title">Liner Notes <button popovertarget="--linerNotes" class="action action--xsmall tooltip__trigger">
-  <svg width="28" height="28" viewBox="0 0 24 24" class="icon-stroke" aria-label="Info" focusable="false">
+    <h2 class="title">Liner Notes <button interestfor="linerNotes" popovertarget="linerNotes" class="action action--xsmall tooltip__trigger">
+  <svg width="28" height="28" viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true" focusable="false">
     <use href="#icon-info"></use>
-  </svg>
+  </svg><span class="visually-hidden">Info</span>
 </button></h2>
     <p class="pill meta"><span class="counter">{{ totalNotes }}</span> note{% if totalNotes != 1 %}s{% endif %}</p>
-    <div id="--linerNotes" class="tooltip" popover>These notes were originally written in response to prompts on Crucial Tracks, reflecting on songs that have personal meaning to me.</div>
+    <div id="linerNotes" class="tooltip" popover>These notes were originally written in response to prompts on Crucial Tracks, reflecting on songs that have personal meaning to me.</div>
   </header>
 
   <div class="liner-notes__container">

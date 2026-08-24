@@ -460,12 +460,11 @@ dialog {
 }
 
 .tooltip__trigger {
-  anchor-name: attr(popovertarget type(<custom-ident>));
- }
+  interest-delay: 150ms 250ms;
+}
 
 .tooltip[popover] {
   position: fixed;
-  position-anchor: attr(id type(<custom-ident>));
   position-area: right;
   position-try: flip-inline;
   anchor-name: --tooltip;
@@ -482,23 +481,44 @@ dialog {
   box-shadow: 0 4px 6px -1px oklch(0 0 0 / 0.1),
     0 2px 4px -2px oklch(0 0 0 / 0.1);
 
-  &:after {
-    content: "";
-    position: fixed;
-    position-anchor: --tooltip;
-    width: 0;
-    height: 0;
-    border-top: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid transparent;
+  opacity: 0;
+  transition:
+    opacity 150ms ease,
+    display 150ms allow-discrete,
+    overlay 150ms allow-discrete;
 
-    @container anchored(fallback: none) {
-      position-area: left;
-      border-right: 0.5rem solid var(--surface-fore);
+  &:popover-open {
+    opacity: 1;
+  }
+
+  @starting-style {
+    &:popover-open {
+      opacity: 0;
     }
+  }
 
-    @container anchored(fallback: flip-inline) {
-      position-area: right;
-      border-left: 0.5rem solid var(--surface-fore);
+  @supports (container-type: anchored) {
+    anchor-name: --tooltip;
+    container-type: anchored;
+
+    &:after {
+      content: "";
+      position: fixed;
+      position-anchor: --tooltip;
+      width: 0;
+      height: 0;
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+
+      @container anchored(fallback: none) {
+        position-area: left;
+        border-right: 0.5rem solid var(--surface-fore);
+      }
+
+      @container anchored(fallback: flip-inline) {
+        position-area: right;
+        border-left: 0.5rem solid var(--surface-fore);
+      }
     }
   }
 }
