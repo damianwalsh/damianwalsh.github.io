@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   padding-left: var(--flow-space);
-  clip-path: inset(0 calc((var(--marker-size) / -2)));
+  clip-path: inset(-4px calc((var(--marker-size) / -2)));
 
   &:before {
     content: "";
