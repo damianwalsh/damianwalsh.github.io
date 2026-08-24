@@ -25,6 +25,55 @@
     background: var(--quaternary-3);
     z-index: var(--back);
   }
+
+  > li {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      left: calc(-1 * var(--flow-space) + (var(--track-size) / 2));
+      top: 50%;
+      width: var(--marker-size);
+      height: var(--marker-size);
+      background: var(--quaternary-4);
+      border: 3px solid var(--surface-back);
+      border-radius: calc(var(--marker-size) / 2);
+      transform: translateY(-50%) translateX(-50%);
+      z-index: var(--fore);
+
+      @media (prefers-reduced-motion: no-preference) {
+        @supports (animation-timeline: view()) {
+          animation: revealMarker linear both;
+          animation-timeline: view();
+          animation-range: entry 20% entry 55%;
+        }
+      }
+    }
+
+    &:after {
+      @media (prefers-reduced-motion: no-preference) {
+        @supports (animation-timeline: view()) {
+          left: calc(-1 * var(--flow-space));
+          top: 50%;
+          width: var(--track-size);
+          height: calc(100% + var(--flow-space));
+          background: var(--quaternary-4);
+          transform-origin: top center;
+          transform: translateX(0) translateY(-50%) scaleY(1);
+          z-index: var(--mid);
+          animation: fillSegment linear both;
+          animation-timeline: view();
+          animation-range: entry 0% entry 75%;
+        }
+      }
+    }
+  }
 }
 
 .post__item {
@@ -44,70 +93,39 @@
     }
   }
 
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-  }
-
-  &:after {
-    @media (prefers-reduced-motion: no-preference) {
-      @supports (animation-timeline: view()) {
-        left: calc(-1 * var(--flow-space));
-        top: 50%;
-        width: var(--track-size);
-        height: calc(100% + var(--flow-space));
-        background: var(--quaternary-4);
-        transform-origin: top center;
-        transform: translateX(0) translateY(-50%) scaleY(1);
-        z-index: var(--mid);
-        animation: fillSegment linear both;
-        animation-timeline: view();
-        animation-range: entry 0% entry 75%;
-      }
-    }
-  }
-
-  &:before {
-    left: calc(-1 * var(--flow-space) + (var(--track-size) / 2));
-    top: 50%;
-    width: var(--marker-size);
-    height: var(--marker-size);
-    background: var(--quaternary-4);
-    border: 3px solid var(--surface-back);
-    border-radius: calc(var(--marker-size) / 2);
-    transform: translateY(-50%) translateX(-50%);
-    z-index: var(--fore);
-  }
-
   .description,
   .meta,
   .title {
-    margin-block-start: 0
+    margin-block-start: 0;
   }
 
   .title {
     color: var(--text-colour-1);
-    font-size: var(--text-size-2)
+    font-size: var(--text-size-2);
   }
 
   .description {
     color: var(--text-colour-2);
     font-size: var(--text-size-1);
     font-variation-settings: "wght" 300, "wdth" 75;
-    line-height: 1.2
+    line-height: 1.2;
   }
 
   &:hover .action {
     background: var(--primary-7);
-    color: var(--primary-3)
+    color: var(--primary-3);
   }
 }
 
 @keyframes revealPost {
   from {
     opacity: 0;
+  }
+}
+
+@keyframes revealMarker {
+  from {
+    transform: translateY(-50%) translateX(-50%) scale(0.5);
   }
 }
 
@@ -179,7 +197,7 @@ header .title {
   picture > img {
     @media (prefers-reduced-motion: no-preference) {
       @supports (animation-timeline: view()) {
-        animation: fadeIn linear both;
+        animation: prose-image-reveal linear both;
         animation-timeline: view();
         animation-range: entry 0% entry 75%;
       }
@@ -187,12 +205,9 @@ header .title {
   }
 }
 
-@keyframes fadeIn {
-  0% {
+@keyframes prose-image-reveal {
+  from {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -259,7 +274,8 @@ aside {
 
 .support-cta {
   container-type: inline-size;
-  background: linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box,
+  background:
+    linear-gradient(var(--surface-fore), var(--surface-fore)) padding-box,
     linear-gradient(
       90deg,
       var(--primary-5),
@@ -274,7 +290,6 @@ aside {
   padding: var(--flow-space);
   transform-origin: center top;
   will-change: opacity, transform;
-  animation: gradient-shift 2s linear infinite alternate;
   display: grid;
   align-items: start;
   grid-template-columns: var(--space-xl-2xl) 1fr;
@@ -284,10 +299,13 @@ aside {
     "actions actions";
 
   @media (prefers-reduced-motion: no-preference) {
+  animation: support-cta-gradient-shift 2s linear infinite alternate;
+
     @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
       animation:
-        gradient-shift 2s linear infinite alternate,
-        fadeScaleInUp linear both;
+        support-cta-gradient-shift 2s linear infinite alternate,
+        support-cta-reveal linear both;
       animation-timeline:
         auto,
         view();
@@ -333,19 +351,14 @@ aside {
   }
 }
 
-@keyframes fadeScaleInUp {
-  0% {
+@keyframes support-cta-reveal {
+  from {
     opacity: 0;
     transform: translateY(var(--gutter)) scale(0.96);
   }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
-@keyframes gradient-shift {
+@keyframes support-cta-gradient-shift {
   0% {
     background-position: 0% 0%;
   }
