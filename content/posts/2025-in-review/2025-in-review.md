@@ -25,6 +25,14 @@ tags:
   padding: var(--flow-space);
 }
 
+.reading {
+  display: none;
+
+  .js & {
+    display: flex;
+  }
+}
+
 .chart__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -94,26 +102,41 @@ tags:
 }
 
 .reveal {
-  --pos: 50%;
-  position: relative;
   display: grid;
-  > * {
-    grid-area: 1 / -1;
-  }
-  .then {
-    mask: linear-gradient(to right, #000 0, var(--pos), transparent 0);
-  }
-  .now {
-    mask: linear-gradient(to right, transparent 0, var(--pos), #000 0);
-  }
+  gap: var(--flow-space);
+
   input[type="range"] {
-    appearance: none;
-    opacity: 0;
-    background: transparent;
-    z-index: 1;
-    cursor: ew-resize;
+    display: none;
+  }
+
+  .js & {
+    --pos: 50%;
+    gap: 0;
+
+    > * {
+      grid-area: 1 / 1;
+    }
+
+    .then {
+      mask: linear-gradient(to right, #000 0 var(--pos), transparent var(--pos));
+    }
+
+    .now {
+      mask: linear-gradient(to right, transparent 0 var(--pos), #000 var(--pos));
+    }
+
+    input[type="range"] {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      appearance: none;
+      opacity: 0;
+      background: transparent;
+      cursor: ew-resize;
+    }
   }
 }
+
 
 .articles__list {
   margin-block: unset;
@@ -726,7 +749,7 @@ function setupResizeObserver() {
   const reveal = document.querySelector('.reveal');
 
   slider.addEventListener('input', () => {
-    reveal.style.setProperty('--pos', slider.value + '%');
+    reveal.style.setProperty('--pos', `${slider.value}%`);
   });
 
 }
