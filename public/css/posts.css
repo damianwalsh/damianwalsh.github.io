@@ -87,7 +87,9 @@
 
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
-      animation: revealPost linear both;
+      will-change: opacity, transform;
+      transform-origin: top center;
+      animation: fade-in-up-scale-up linear both;
       animation-timeline: view();
       animation-range: entry 0% entry 75%;
     }
@@ -114,12 +116,6 @@
   &:hover .action {
     background: var(--primary-7);
     color: var(--primary-3);
-  }
-}
-
-@keyframes revealPost {
-  from {
-    opacity: 0;
   }
 }
 
@@ -197,17 +193,11 @@ header .title {
   picture > img {
     @media (prefers-reduced-motion: no-preference) {
       @supports (animation-timeline: view()) {
-        animation: prose-image-reveal linear both;
+        animation: fade-in linear both;
         animation-timeline: view();
         animation-range: entry 0% entry 75%;
       }
     }
-  }
-}
-
-@keyframes prose-image-reveal {
-  from {
-    opacity: 0;
   }
 }
 
@@ -305,7 +295,7 @@ aside {
       will-change: opacity, transform;
       animation:
         support-cta-gradient-shift 2s linear infinite alternate,
-        support-cta-reveal linear both;
+        fade-in-up-scale-up linear both;
       animation-timeline:
         auto,
         view();
@@ -348,13 +338,6 @@ aside {
         justify-content: flex-start;
       }
     }
-  }
-}
-
-@keyframes support-cta-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(var(--gutter)) scale(0.96);
   }
 }
 

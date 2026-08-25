@@ -23,6 +23,14 @@
   }
   .map__image {
     grid-area: locations;
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation: fade-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 75%;
+      }
+    }
   }
 }
 

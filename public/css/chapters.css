@@ -59,7 +59,17 @@
   flex-direction: column;
   gap: var(--space-2xs);
   background: var(--surface-fore);
-  will-change: transform, opacity;
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      transform-origin: top center;
+      animation: fade-in-up-scale-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   .period {
     display: flex;
     flex-direction: column;

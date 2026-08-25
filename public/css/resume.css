@@ -3,6 +3,17 @@
  */
 
 .resume__item {
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      transform-origin: top center;
+      animation: fade-in-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   header {
     gap: var(--space-3xs);
   }

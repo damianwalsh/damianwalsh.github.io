@@ -154,6 +154,14 @@ details {
   img {
     margin-block-start: var(--flow-space);
     border-radius: var(--border-radius-s);
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation: fade-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 75%;
+      }
+    }
   }
 }
 
@@ -171,6 +179,16 @@ details {
   background: var(--surface-fore);
   border-radius: var(--border-radius);
   padding: var(--flow-space);
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      animation: fade-in-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   figcaption {
     grid-area: caption;
     text-align: left;

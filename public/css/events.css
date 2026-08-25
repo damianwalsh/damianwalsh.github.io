@@ -42,6 +42,16 @@
     "detail"
     "action";
 
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      transform-origin: top center;
+      animation: fade-in-up-scale-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   @media screen and (width >=425px) {
     grid-template-columns: 1fr minmax(auto, 180px);
     grid-template-areas:

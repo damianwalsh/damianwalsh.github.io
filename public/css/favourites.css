@@ -23,6 +23,15 @@
   gap: var(--space-2xs);
   border-radius: var(--border-radius-s);
 
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      animation: fade-in-right linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   &:hover .action {
     background: var(--primary-7);
     color: var(--primary-3);

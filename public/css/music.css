@@ -17,6 +17,15 @@
   display: flex;
   gap: var(--space-2xs);
 
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      will-change: opacity, transform;
+      animation: fade-in-right linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 75%;
+    }
+  }
+
   &::before {
     display: flex;
     flex-shrink: 0;
