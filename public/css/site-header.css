@@ -233,7 +233,7 @@
 
     &.hidden {
       opacity: 0;
-      translate: 0 var(--space-xs);
+      translate: 0 var(--gutter);
     }
 
     &.visible {
@@ -242,7 +242,7 @@
 
       @starting-style {
         opacity: 0;
-        translate: 0 var(--space-xs);
+        translate: 0 var(--gutter);
       }
     }
   }
