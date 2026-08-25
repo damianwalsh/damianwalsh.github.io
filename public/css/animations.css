@@ -1,0 +1,145 @@
+/**
+ * ANIMATIONS
+ */
+
+/* Fade in */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--gutter));
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(var(--gutter));
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(calc(var(--gutter) * -1));
+  }
+}
+
+/* Fade in + scale */
+@keyframes fade-in-scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes fade-in-up-scale-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes fade-in-down-scale-up {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes fade-in-left-scale-up {
+  from {
+    opacity: 0;
+    transform: translateX(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes fade-in-right-scale-up {
+  from {
+    opacity: 0;
+    transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+/* Fade out */
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-up {
+  to {
+    opacity: 0;
+    transform: translateY(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes fade-out-down {
+  to {
+    opacity: 0;
+    transform: translateY(var(--gutter));
+  }
+}
+
+@keyframes fade-out-left {
+  to {
+    opacity: 0;
+    transform: translateX(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes fade-out-right {
+  to {
+    opacity: 0;
+    transform: translateX(var(--gutter));
+  }
+}
+
+/* Fade out + scale */
+@keyframes fade-out-scale-down {
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes fade-out-up-scale-down {
+  to {
+    opacity: 0;
+    transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes fade-out-down-scale-down {
+  to {
+    opacity: 0;
+    transform: translateY(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes fade-out-left-scale-down {
+  to {
+    opacity: 0;
+    transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes fade-out-right-scale-down {
+  to {
+    opacity: 0;
+    transform: translateX(var(--gutter)) scale(0.96);
+  }
+}
