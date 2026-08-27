@@ -620,6 +620,12 @@ export default async function (eleventyConfig) {
       decoding: "async",
       sizes: "100vw",
     },
+    formatOptions: {
+      webp: {
+        quality: 70,
+        effort: 4,
+      },
+    },
     urlPath: "/img/cache/",
     outputDir: ".cache/@11ty/img/", // Change to temporary cache location
   });
