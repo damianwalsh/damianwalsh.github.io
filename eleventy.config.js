@@ -614,7 +614,7 @@ export default async function (eleventyConfig) {
     extensions: "html",
     // Output formats for each image.
     formats: ["webp", "auto"],
-    widths: [160, 320, 640, 1280],
+    widths: [80, 160, 320, 640, 1280],
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
