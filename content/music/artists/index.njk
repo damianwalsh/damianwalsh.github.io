@@ -33,7 +33,6 @@ permalink: "/music/artists/"
         {% if artist.artist | imageExists %}
         <img src="/music/img/artists/{{ artist.artist | slugify }}.jpg"
             alt="{{ artist.artist }}"
-            {{ 'loading=eager' if loop.index <=4 }}
             class="index__image desaturate">
         {% endif %}
         <div class="index__details">

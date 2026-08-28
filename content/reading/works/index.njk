@@ -32,9 +32,7 @@ permalink: "/reading/works/"
       <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}"
         class="index__item surface">
         <img
-          {{ 'loading=eager' if loop.index <= 4 }}
           src="../img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
-          sizes="120px"
           alt="{{ book.title }}"
           class="index__image">
         <div class="index__details">

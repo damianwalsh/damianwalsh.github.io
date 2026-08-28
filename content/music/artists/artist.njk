@@ -34,7 +34,7 @@ excludeFromSitemap: true
       src="/music/img/artists/{{ artistData.artist | slugify }}.jpg"
       alt="{{ artistData.artist }}"
       class="detail__image desaturate"
-      sizes="(min-width: 1720px) 403px, (min-width: 1380px) calc(26.56vw - 49px), (min-width: 780px) calc(30.69vw - 15px), (min-width: 400px) 83.61vw, calc(26.25vw + 220px)"
+      sizes="(min-width: 1720px) 403px, (min-width: 1380px) calc(26.56vw - 49px), (min-width: 780px) calc(30.69vw - 15px), calc(86.09vw - 14px)"
     >
     {% endif %}
     <p class="detail__meta standfirst">{{ artistProfile.profile | cleanProfile }}</p>
@@ -60,9 +60,7 @@ excludeFromSitemap: true
     <li>
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
         <img
-          {{ 'loading=eager' if loop.index <= 4 }}
           src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
-          sizes="(min-width: 1740px) 305px, (min-width: 1380px) calc(18.82vw - 19px), (min-width: 380px) calc(23.27vw - 12px), calc(6.67vw + 47px)"
           alt="{{ release.title }}"
           class="collection__image">
         <div class="collection__details">
@@ -111,7 +109,6 @@ excludeFromSitemap: true
           <li>
             <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="favourites__item">
             <img src="../img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
-                  sizes="80px"
                   alt="{{ relatedRelease.title }}"
                   class="favourites__image">
              <dl class="favourites__detail">

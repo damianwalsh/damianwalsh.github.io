@@ -69,7 +69,7 @@ This method allows deployments to be triggered manually by pushing new content a
 
 <figure>
   <div class="screenshots">
-    <img src="./build-hooks.png" alt="Screenshot of Netlify dashboard showing the interface for creating a new build hook with form fields for hook name and branch selection." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./build-hooks.png" alt="Screenshot of Netlify dashboard showing the interface for creating a new build hook with form fields for hook name and branch selection.">
   </div>
   <figcaption class="meta">Creating a build hook in the Netlify dashboard</figcaption>
 </figure>
@@ -86,7 +86,7 @@ For email notifications, you'll need to securely store your email credentials. Y
 
 <figure>
   <div class="screenshots">
-    <img src="./github-secrets.png" alt="Screenshot of GitHub repository settings showing the interface for adding repository secrets with fields for secret name and value." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./github-secrets.png" alt="Screenshot of GitHub repository settings showing the interface for adding repository secrets with fields for secret name and value.">
   </div>
   <figcaption class="meta">Adding repository secrets in GitHub settings</figcaption>
 </figure>

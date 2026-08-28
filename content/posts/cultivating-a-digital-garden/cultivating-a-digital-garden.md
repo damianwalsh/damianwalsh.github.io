@@ -60,8 +60,8 @@ Looking back at my website from 2023 left me disappointed. Both the content and 
 
 <figure>
   <div class="screenshots">
-    <img src="./damianwalsh.co.uk-homepage.png" alt="Screenshot of homepage" sizes="(min-width: 1720px) 400px, (min-width: 1380px) calc(26.88vw - 57px), (min-width: 820px) calc(32.78vw - 48px), (min-width: 780px) 45vw, 70.87vw">
-    <img src="./damianwalsh.co.uk-case-study.png" alt="Screenshot of case study template" sizes="(min-width: 1720px) 400px, (min-width: 1380px) calc(26.88vw - 57px), (min-width: 820px) calc(32.78vw - 48px), (min-width: 780px) 45vw, 70.87vw">
+    <img src="./damianwalsh.co.uk-homepage.png" alt="Screenshot of homepage">
+    <img src="./damianwalsh.co.uk-case-study.png" alt="Screenshot of case study template">
   </div>
   <figcaption class="meta">Personal website circa 2023</figcaption>
 </figure>
@@ -97,15 +97,15 @@ While all the themes covered in the essay and its references resonated, this par
 
 <div class="screenshots">
   <figure>
-    <img src="./maggieappleton.com.png" alt="Screenshot of Maggie Appleton's homepage" sizes="(min-width: 1600px) 242px, (min-width: 1380px) calc(10.5vw + 80px), (min-width: 1260px) 19vw, (min-width: 820px) calc(6.43vw + 155px), (min-width: 780px) 30vw, 70.87vw">
+    <img src="./maggieappleton.com.png" alt="Screenshot of Maggie Appleton's homepage">
     <figcaption class="meta"><a href="https://maggieappleton.com">Maggie Appleton</a></figcaption>
   </figure>
   <figure>
-    <img src="./nerdy.dev.png" alt="Screenshot of Adam Argyle's homepage" sizes="(min-width: 1600px) 242px, (min-width: 1380px) calc(10.5vw + 80px), (min-width: 1260px) 19vw, (min-width: 820px) calc(6.43vw + 155px), (min-width: 780px) 30vw, 70.87vw">
+    <img src="./nerdy.dev.png" alt="Screenshot of Adam Argyle's homepage">
     <figcaption class="meta"><a href="https://nerdy.dev">Adam Argyle</a></figcaption>
   </figure>
   <figure>
-    <img src="./coryd.dev.png" alt="Screenshot of Cory Dransfeldt's homepage" sizes="(min-width: 1600px) 242px, (min-width: 1380px) calc(10.5vw + 80px), (min-width: 1260px) 19vw, (min-width: 820px) calc(6.43vw + 155px), (min-width: 780px) 30vw, 70.87vw">
+    <img src="./coryd.dev.png" alt="Screenshot of Cory Dransfeldt's homepage">
     <figcaption class="meta"><a href="https://coryd.dev">Cory Dransfeldt</a></figcaption>
   </figure>
 </div>

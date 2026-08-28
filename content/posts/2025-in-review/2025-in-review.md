@@ -304,7 +304,7 @@ The trend of not going to gigs continues. Crippling anxiety and panic attacks in
 <div class="crucial-tracks surface">
   <h3 class="meta">27 Oct 2025: What song best captures your current phase of life?</h3>
   <div class="illustrated-content">
-  <img src="./stanley-road-paul-weller.jpg" alt="Stanley Road by Paul Weller—album artwork by Peter Blake" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
+  <img src="./stanley-road-paul-weller.jpg" alt="Stanley Road by Paul Weller—album artwork by Peter Blake">
   <blockquote>From time to time, <a href="https://damianwalsh.co.uk/music/releases/stanley-road-paul-weller-vinyl/">The Changingman</a> by Paul Weller resonates with me. Thinking about where I am and how I'm feeling right now—in truth, perhaps over the last couple of years—I might need to pay heed to the song's message: when you're stuck in a rut, you need to shake things up.</blockquote>
   </div>
 </div>
@@ -313,7 +313,7 @@ It's been a fruitful exercise, and I hope to maintain the practice and find ways
 
 <div class="illustrated-content">
   <p>The only new music I acquired this year was <a href="https://damianwalsh.co.uk/music/releases/constellations-for-the-lonely-doves-vinyl/">Constellations For The Lonely</a> by Doves—a thoughtful and gratefully received gift. It's lovely, by the way, and so good to hear Jimi Goodwin's melancholy baritone on record again.</p>
-  <img src="./constellations-for-the-lonely.jpg" alt="Outer and inner record sleeve of Constellations For The Lonely by Doves" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
+  <img src="./constellations-for-the-lonely.jpg" alt="Outer and inner record sleeve of Constellations For The Lonely by Doves">
 </div>
 
 ## TV and movies
@@ -328,7 +328,7 @@ I haven't gotten around to building a way to record the TV shows and movies I've
       <span lang="{{ show.lang }}">{{ show.title }}</span>
       {%- if show.titleEn %}<span lang="en"> ({{ show.titleEn }})</span>{% endif -%}
     </h4>
-    <img src="{{ show.title | slugify }}.jpg" alt="" width="200" height="250" sizes="200px">
+    <img src="{{ show.title | slugify }}.jpg" alt="">
     <dl class="meta">
       <dt class="visually-hidden">Language:</dt>
       <dd>{{ show.language }}</dd>
@@ -347,8 +347,8 @@ I turned 49 in September. All things considered, I feel pretty good. I'm not rea
 <div class="now-and-then surface">
   <h3 class="meta">Now and then</h3>
   <div class="reveal">
-    <img src="./then.png" alt="A triptych of portraits taken in 1995" width="863" height="371" class="then">
-    <img src="./now.png" alt="A triptych of portraits taken in 2025" width="863" height="371" class="now">
+    <img src="./then.png" alt="A triptych of portraits taken in 1995" class="then">
+    <img src="./now.png" alt="A triptych of portraits taken in 2025" class="now">
     <input type="range" min="0" max="100" value="50" id="reveal-slider">
   </div>
 </div>
@@ -358,7 +358,7 @@ I turned 49 in September. All things considered, I feel pretty good. I'm not rea
 ## Travel
 <div class="illustrated-content">
   <p>An ageing dog and cost-of-living concerns circumscribed my perambulations this year. I'm not complaining—getting a little dog, looking after him and letting him look after me is the best thing I ever did, and I know that I'm very lucky to live a relatively comfortable life. That said, I hope my horizons expand beyond suburban Manchester in my next—and fiftieth—circuit around the sun.</p>
-  <img src="./ziggy.jpg" alt="A Norfolk Terrier enjoying the sun in a garden" width="292" height="292" sizes="(min-width: 50ch) 292px, 100vw">
+  <img src="./ziggy.jpg" alt="A Norfolk Terrier enjoying the sun in a garden">
 </div>
 
 ## Work and career
@@ -395,7 +395,7 @@ Including this post—which I suspect will be the last I manage to cast off this
 In November, I worked with [Bob Monsour](https://bobmonsour.com/) on a redesign of his wonderful resource, the [11ty Bundle](https://11tybundle.dev/). Working together, we completely rebuilt the website from the ground up. Big thanks to Bob for taking a leap of faith and involving me in the design and front-end work. What a great guy—I had fun collaborating on this project. And it feels good to put something back into the [Eleventy](https://www.11ty.dev/) community, which has been a brilliant experience overall.
 
 <figure class="bundle surface">
-  <img src="11tybundle.png" alt="Montage of screenshots from the redesigned 11ty Bundle website" width="863" height="408">
+  <img src="11tybundle.png" alt="Montage of screenshots from the redesigned 11ty Bundle website">
   <figcaption class="meta">11ty Bundle</figcaption>
 </figure>
 
@@ -415,107 +415,107 @@ In the course of thinking about and writing this post over the holiday period, a
   <li>
     <h3><a href="https://bell.bz/wrapping-up-2025-sort-of">Wrapping up 2025 (sort of)</a></h3>
     <p class="meta">Andy Bell</p>
-    <img src="andy-bell.png" alt="" width="180" height="180">
+    <img src="andy-bell.png" alt="">
   </li>
   <li>
     <h3><a href="https://dbushell.com/2025/12/18/year-in-review">I Survived 2025</a></h3>
     <p class="meta">David Bushell</p>
-    <img src="david-bushell.png" alt="" width="180" height="180">
+    <img src="david-bushell.png" alt="">
   </li>
   <li>
     <h3><a href="https://vale.rocks/pulse/2025">Feeling The Pulse of Twenty Twenty-Five</a></h3>
     <p class="meta">Declan Chidlow</p>
-    <img src="declan-chudlow.png" alt="" width="180" height="180">
+    <img src="declan-chudlow.png" alt="">
   </li>
   <li>
     <h3><a href="https://www.nicchan.me/blog/2025-recap">2025 Recap</a></h3>
     <p class="meta">Nic Chan</p>
-    <img src="nic-chan.png" alt="" width="180" height="180">
+    <img src="nic-chan.png" alt="">
   </li>
   <li>
     <h3><a href="https://colly.com/journal/twenty-twentyfive-in-music">2025 in music</a></h3>
     <p class="meta">Simon Collison</p>
-    <img src="simon-collison.png" alt="" width="180" height="180">
+    <img src="simon-collison.png" alt="">
   </li>
   <li>
     <h3><a href="https://joshcollinsworth.com/blog/2025">2025 Year in Review</a></h3>
     <p class="meta">Josh Collinsworth</p>
-    <img src="josh-collingsworth.png" alt="" width="180" height="180">
+    <img src="josh-collingsworth.png" alt="">
   </li>
   <li>
     <h3><a href="https://www.coryd.dev/posts/2025/2025-in-review">2025 in review</a></h3>
     <p class="meta">Cory Dransfeldt</p>
-    <img src="cory-dransfeldt.png" alt="" width="180" height="180">
+    <img src="cory-dransfeldt.png" alt="">
   </li>
   <li>
     <h3><a href="https://flamedfury.com/posts/books-i-read-in-2025">Books I Read in 2025</a></h3>
     <p class="meta">Flamed Fury</p>
-    <img src="flamed-fury.png" alt="" width="180" height="180">
+    <img src="flamed-fury.png" alt="">
   </li>
   <li>
     <h3><a href="https://pawelgrzybek.com/a-look-back-at-2025">Look Back at 2025</a></h3>
     <p class="meta">Paweł Grzybek</p>
-    <img src="pawel-grzybek.png" alt="" width="180" height="180">
+    <img src="pawel-grzybek.png" alt="">
   </li>
   <li>
     <h3><a href="https://nazhamid.com/journal/music-in-2025">Music In 2025</a></h3>
     <p class="meta">Naz Hamid</p>
-    <img src="naz-hamid.png" alt="" width="180" height="180">
+    <img src="naz-hamid.png" alt="">
   </li>
   <li>
     <h3><a href="https://chriskirknielsen.com/blog/yearnotes-2025">Yearnotes 2025</a></h3>
     <p class="meta">Christopher Kirk-Nielsen</p>
-    <img src="christopher-kirk-nielsen.png" alt="" width="180" height="180">
+    <img src="christopher-kirk-nielsen.png" alt="">
   </li>
   <li>
     <h3><a href="https://axel.leroy.sh/blog/retrospective-2025">Looking back on 2025</a></h3>
     <p class="meta">Axel Leroy</p>
-    <img src="axel-leroy.png" alt="" width="180" height="180">
+    <img src="axel-leroy.png" alt="">
   </li>
   <li>
     <h3><a href="https://cassey.dev/2025-in-review">Looking Back on 2025</a></h3>
     <p class="meta">Cassey Lottman</p>
-    <img src="cassey-lottman.png" alt="" width="180" height="180">
+    <img src="cassey-lottman.png" alt="">
   </li>
   <li>
     <h3><a href="https://loige.co/2025-a-year-in-review">2025 - A year in Review</a></h3>
     <p class="meta">Luciano Mammino</p>
-    <img src="luciano-mammino.png" alt="" width="180" height="180">
+    <img src="luciano-mammino.png" alt="">
   </li>
   <li>
     <h3><a href="https://ethanmarcotte.com/wrote/our-frail-thoughts">Our frail thoughts</a></h3>
     <p class="meta">Ethan Marcotte</p>
-    <img src="ethan-marcotte.png" alt="" width="180" height="180">
+    <img src="ethan-marcotte.png" alt="">
   </li>
   <li>
     <h3><a href="https://melanie-richards.com/blog/2025-highlights">2025 Highlights</a></h3>
     <p class="meta">Melanie Richards</p>
-    <img src="melanie-richards.png" alt="" width="180" height="180">
+    <img src="melanie-richards.png" alt="">
   </li>
   <li>
     <h3><a href="https://ohhelloana.blog/2025-no-sleep">2025 was the year of no sleep and pushing through</a></h3>
     <p class="meta">Ana Rodrigues</p>
-    <img src="ana-rodrigues.png" alt="" width="180" height="180">
+    <img src="ana-rodrigues.png" alt="">
   </li>
   <li>
     <h3><a href="https://daverupert.com/2026/01/twenty-twenty-five">Twenty Twenty-Five</a></h3>
     <p class="meta">Dave Rupert</p>
-    <img src="dave-rupert.png" alt="" width="180" height="180">
+    <img src="dave-rupert.png" alt="">
   </li>
   <li>
     <h3><a href="https://aubreysambor.com/2025-year-in-review">2025 year in review</a></h3>
     <p class="meta">Aubrey Sambor</p>
-    <img src="aubrey-sambor.png" alt="" width="180" height="180">
+    <img src="aubrey-sambor.png" alt="">
   </li>
   <li>
     <h3><a href="https://hidde.blog/2025-review">My 2025 review</a></h3>
     <p class="meta">Hidde de Vries</p>
-    <img src="hidde-de-vries.png" alt="" width="180" height="180">
+    <img src="hidde-de-vries.png" alt="">
   </li>
   <li>
     <h3><a href="https://jasonwhite.us/journal/2025/12/28/favorite-music-2025">Favorite Music of 2025</a></h3>
     <p class="meta">Jason White</p>
-    <img src="jason-white.png" alt="" width="180" height="180">
+    <img src="jason-white.png" alt="">
   </li>
 </ul>
 

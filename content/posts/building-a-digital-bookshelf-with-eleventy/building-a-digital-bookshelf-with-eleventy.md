@@ -205,7 +205,7 @@ The entire workflow is simplified to a single command—`npm run reading` follow
 
 <figure>
   <div class="screenshots">
-    <img src="./command-line-interface.png" alt="A screenshot showing the terminal interface displaying available commands including options to add and edit books." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./command-line-interface.png" alt="A screenshot showing the terminal interface displaying available commands including options to add and edit books.">
   </div>
   <figcaption class="meta">Command-line interface for book collection</figcaption>
 </figure>
@@ -215,7 +215,7 @@ Now I can browse my website to find [books I've read](https://damianwalsh.co.uk/
 
 <figure>
   <div class="screenshots no-pad">
-    <img src="./reading-list.png" alt="A montage of screenshots showcasing the digital reading list optimised for small screens in a grid layout." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./reading-list.png" alt="A montage of screenshots showcasing the digital reading list optimised for small screens in a grid layout.">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
 </figure>

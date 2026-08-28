@@ -51,7 +51,7 @@ Anyway, at first I thought I’d write up and publish the notes I took: a neat s
 When I think about today and cast my mind back over conferences past, the enduring value isn’t a bullet list of findings and actions. It’s something less tangible, harder to pin down and assign worth to. It’s the break from routine and the lift that comes from being around people who are still hopeful and excited about their craft. The chance encounters: meeting new people, sharing ideas and perspectives, small kindnesses and unexpected generosity, and leaving with the kind of memories you can’t download later or create by tapping <span><svg viewBox="0 0 24 24" width="18" height="18" class="icon-stroke" aria-hidden="true"><use xlink:href="#icon-heart"></use></svg>Like</span> or <span><svg viewBox="0 0 24 24" width="18" height="18" class="icon-stroke" aria-hidden="true"><use xlink:href="#icon-repost"></use></svg>Repost</span> before moving swiftly on to the next thing.
 
 <figure class="all-day-hey surface">
-  <img src="all-day-hey.png" alt="Montage of images from All Day Hey!" width="1048" height="878">
+  <img src="all-day-hey.png" alt="Montage of images from All Day Hey!">
   <figcaption class="meta">All Day Hey! 2026 — The Last One</figcaption>
 </figure>
 

@@ -25,12 +25,8 @@ excludeFromSitemap: true
   {% for book in yearData.books %}
     <li>
       <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
-        <img
-          loading="eager"
-          src="../img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg"
-          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(23.46vw - 13px)"
-          alt="{{ book.title }}"
-      class="detail__image">
+        <img src="../img/{{ book.title | slugify }}-{{ book.author | slugify }}.jpg" alt="{{ book.title }}"
+          class="detail__image">
         <div class="collection__details">
           <h2 class="title">{{ book.title }}</h2>
           <p class="meta">{{ book.author }}</p>

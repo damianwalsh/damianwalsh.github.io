@@ -68,8 +68,8 @@ When I set out to design the latest version of this website, I knew selecting co
 
 <figure>
   <div class="screenshots">
-    <img src="./mxb.dev-classic.png" alt="Screenshot of Max Bock's homepage highlighting Classic theme" sizes="(min-width: 1700px) 443px, (min-width: 1380px) calc(43vw - 279px), (min-width: 780px) calc(41.03vw - 117px), 70.87vw">
-    <img src="./mxb.dev-bowsers-castle.png" alt="Screenshot of Max Bock's homepage highlighting Bowser's Castle theme" sizes="(min-width: 1700px) 443px, (min-width: 1380px) calc(43vw - 279px), (min-width: 780px) calc(41.03vw - 117px), 70.87vw">
+    <img src="./mxb.dev-classic.png" alt="Screenshot of Max Bock's homepage highlighting Classic theme">
+    <img src="./mxb.dev-bowsers-castle.png" alt="Screenshot of Max Bock's homepage highlighting Bowser's Castle theme">
   </div>
   <figcaption class="meta">Theme picker on <a href="https://mxb.dev/">Max Böck's website</a></figcaption>
 </figure>
@@ -112,7 +112,7 @@ I really like OKLCH notation for thinking about and declaring colours. For me, a
 
 <figure>
   <div class="screenshots">
-    <img src="./oklch-axes.png" alt="Diagram showing the axes of OKLCH colour space" sizes="(min-width: 1700px) 907px, (min-width: 1380px) calc(85.67vw - 532px), (min-width: 780px) calc(82.59vw - 220px), 70.87vw">
+    <img src="./oklch-axes.png" alt="Diagram showing the axes of OKLCH colour space">
   </div>
   <figcaption class="meta">OKLCH axes</figcaption>
 </figure>

@@ -32,7 +32,7 @@ Back in December 2024, while I was doing the usual end-of-year contemplation, [S
 
 <figure>
   <div class="screenshots">
-    <img src="./always-on-my-mind.jpg" alt="An image from the music video; song lyrics relate to the article's theme." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./always-on-my-mind.jpg" alt="An image from the music video; song lyrics relate to the article's theme.">
   </div>
   <figcaption class="meta"><a href="https://www.youtube.com/watch?v=bDMCwSP5nf0">Always on My Mind</a> by Pet Shop Boys</figcaption>
 </figure>
@@ -41,7 +41,7 @@ At the same time I was thinking about this, I was also feeling generally uninspi
 
 <figure>
   <div class="screenshots">
-    <img src="./memex.png" alt="Illustration of a Memex device, showing a desk with built-in screens, microfilm readers, and a mechanical system for retrieving and linking information." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./memex.png" alt="Illustration of a Memex device, showing a desk with built-in screens, microfilm readers, and a mechanical system for retrieving and linking information.">
   </div>
   <figcaption class="meta">Theoretical Memex (memory index) device</figcaption>
 </figure>
@@ -60,7 +60,7 @@ So, in summary, here's where I stood at the outset: Spotify Wrapped galvanised m
 
 <figure>
   <div class="screenshots">
-    <img src="./music-collection-physical.jpg" alt="A photograph of the authors CDs and vinyl records in storage boxes." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./music-collection-physical.jpg" alt="A photograph of the authors CDs and vinyl records in storage boxes.">
   </div>
   <figcaption class="meta">My music collection</figcaption>
 </figure>
@@ -78,8 +78,8 @@ Libraries employ [classification systems](https://en.wikipedia.org/wiki/Library_
 
 <figure>
   <div class="screenshots">
-    <img src="./card-catalogue.jpg" alt=" A card catalogue in the University of Graz Library. Source: https://www.newworldencyclopedia.org/" sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), 70.87vw">
-    <img src="./record-shop.jpg" alt=" Vinyl records, CDs, and cassette tapes displayed in a record shop. Source: https://unsplash.com/" sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), 70.87vw">
+    <img src="./card-catalogue.jpg" alt=" A card catalogue in the University of Graz Library. Source: https://www.newworldencyclopedia.org/">
+    <img src="./record-shop.jpg" alt=" Vinyl records, CDs, and cassette tapes displayed in a record shop. Source: https://unsplash.com/">
   </div>
   <figcaption class="meta">Library classification systems</figcaption>
 </figure>
@@ -379,8 +379,8 @@ Image quality from community-driven APIs like Discogs varies. What constitutes a
 
 <figure>
   <div class="screenshots">
-    <img src="./another-green-world-brian-eno-discogs.jpg" alt="Cover image of Brian Eno's Another Green World album provided by the Discogs API, showing quality issues including a visible sticker and distracting reflection." sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), (min-width: 740px) 480px, 65.71vw">
-    <img src="./another-green-world-brian-eno-personal.jpg" alt="High-quality cover image of Brian Eno's Another Green World, showing the distinctive abstract artwork without any stickers or reflections." sizes="(min-width: 1700px) 329px, (min-width: 1380px) calc(32vw - 209px), (min-width: 780px) calc(30.69vw - 89px), (min-width: 740px) 480px, 65.71vw">
+    <img src="./another-green-world-brian-eno-discogs.jpg" alt="Cover image of Brian Eno's Another Green World album provided by the Discogs API, showing quality issues including a visible sticker and distracting reflection.">
+    <img src="./another-green-world-brian-eno-personal.jpg" alt="High-quality cover image of Brian Eno's Another Green World, showing the distinctive abstract artwork without any stickers or reflections.">
   </div>
   <figcaption class="meta">Image quality comparison: API vs personal choice</figcaption>
 </figure>
@@ -392,7 +392,7 @@ In Eleventy, data from multiple sources merges through a process called the [Dat
 
 <figure>
   <div class="screenshots">
-    <img src="./music-collection-digital.png" alt="A montage of screenshots showcasing the digital music collection optimised for small screens in a grid layout." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./music-collection-digital.png" alt="A montage of screenshots showcasing the digital music collection optimised for small screens in a grid layout.">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
 </figure>
@@ -416,7 +416,7 @@ Looking back at my original motivation—disenchantment with streaming services 
 
 <figure>
   <div class="screenshots">
-    <img src="./diver.jpg" alt="A photograph of a figure diving into a mirror-like ocean surface, in this context used to symbolise the journey of exploration and discovery." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./diver.jpg" alt="A photograph of a figure diving into a mirror-like ocean surface, in this context used to symbolise the journey of exploration and discovery.">
   </div>
   <figcaption class="meta">Image from inside cover of <a href="https://damianwalsh.co.uk/music/releases/wish-you-were-here-pink-floyd-vinyl">Wish You Were Here</a> <br>© Pink Floyd Music</figcaption>
 </figure>
@@ -428,7 +428,7 @@ After reflecting on ideas generated during the [proof-of-concept](#version-1%3A-
 
 <figure>
   <div class="screenshots">
-    <img src="./photos.jpg" alt="A montage of personal photographs connected to specific times, places, people, and events arranged in a grid." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./photos.jpg" alt="A montage of personal photographs connected to specific times, places, people, and events arranged in a grid.">
   </div>
   <figcaption class="meta">Building connections between music, memory and emotion</figcaption>
 </figure>
@@ -446,7 +446,7 @@ The [Working Memory Model](https://en.wikipedia.org/wiki/Baddeley%27s_model_of_w
 
 <figure>
   <div class="screenshots">
-    <img src="./working-memory-model.png" alt="Flowchart diagram showing how working memory processes information through interconnected components." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./working-memory-model.png" alt="Flowchart diagram showing how working memory processes information through interconnected components.">
   </div>
   <figcaption class="meta">The Working Memory Model. Baddeley and Hitch (1974, 2001)</figcaption>
 </figure>
@@ -456,7 +456,7 @@ One of the concepts I came across while researching how to practically apply thi
 
 <figure>
   <div class="screenshots">
-    <img src="./zettelkasten.png" alt="Schematic diagram illustrating how knowledge can be interconnected in a flexible information management system." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./zettelkasten.png" alt="Schematic diagram illustrating how knowledge can be interconnected in a flexible information management system.">
   </div>
   <figcaption class="meta">Zettelkasten knowledge management system. <br>Image by David B. Clear, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></figcaption>
 </figure>
@@ -645,7 +645,7 @@ Examples of release pages with memory box feature:
 
 <figure>
   <div class="screenshots">
-    <img src="./memory-boxes.png" alt="Screenshots showing memory box layouts at mobile and desktop screen sizes." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./memory-boxes.png" alt="Screenshots showing memory box layouts at mobile and desktop screen sizes.">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
 </figure>
@@ -668,7 +668,7 @@ Things become complicated when records lack this straightforward type of connect
 
 <figure>
   <div class="screenshots">
-    <img src="./carousel-pitch.jpg" alt="A scene from Mad Men where the main character shifts focus away from a product's technical features and instead demonstrates its emotional impact through the power of nostalgia." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./carousel-pitch.jpg" alt="A scene from Mad Men where the main character shifts focus away from a product's technical features and instead demonstrates its emotional impact through the power of nostalgia.">
   </div>
   <figcaption class="meta">Emotional impact vs technical features.<br> <a href="https://m.youtube.com/watch?v=rq3n2sJ43Hg">The Carousel Pitch</a>, Mad Men Season 1, Episode 13</figcaption>
 </figure>
@@ -680,7 +680,7 @@ Listening to records and making these connections not only brought me closer to 
 
 <figure>
   <div class="screenshots">
-    <img src="./memory-data-structure.png" alt="A flow diagram illustrating how chapters act as a bridge between releases and their associated memories across different time periods." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./memory-data-structure.png" alt="A flow diagram illustrating how chapters act as a bridge between releases and their associated memories across different time periods.">
   </div>
   <figcaption class="meta">Chapters as a bridge between music and memory</figcaption>
 </figure>
@@ -694,7 +694,7 @@ This command-line tool built using [Commander](https://www.npmjs.com/package/com
 
 <figure>
   <div class="screenshots">
-    <img src="./command-line-interface.png" alt="A screenshot showing the terminal interface displaying available commands including options to add releases, manage chapters, and create associations between content." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./command-line-interface.png" alt="A screenshot showing the terminal interface displaying available commands including options to add releases, manage chapters, and create associations between content.">
   </div>
   <figcaption class="meta">Command-line interface for music collection</figcaption>
 </figure>
@@ -713,7 +713,7 @@ Instead of my original approach, using global data and Filter functions for memo
 
 <figure>
   <div class="screenshots no-pad">
-    <img src="./chapters.png" alt="A screenshot of chapters linking releases to life periods." sizes="(min-width: 1700px) 680px, (min-width: 1380px) calc(64vw - 395px), (min-width: 780px) calc(62.07vw - 166px), 70.87vw">
+    <img src="./chapters.png" alt="A screenshot of chapters linking releases to life periods.">
   </div>
   <figcaption class="meta">Templates rendered by Eleventy</figcaption>
 </figure>
