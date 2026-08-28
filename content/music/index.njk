@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
           <p class="song">{{ note.song }}</p>
           <p class="artist meta">{{ note.artist }}</p>
         </figcaption>
-        <img src="{{ note.artworkUrl }}" alt="">
+        <img src="{{ note.artworkUrl }}" sizes="auto, (min-width: 1740px) 66px, 51px" alt="">
         <audio-player>
           <audio controls preload="none" src="{{ note.previewUrl }}"></audio>
         </audio-player>
@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
     <li>
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
         class="collection__item surface">
-        <img {{ 'loading=eager' if loop.index <=4 }}
+        <img
           src="img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
-          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          sizes="auto, (min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), 80px"
           alt="{{ release.title }}" class="collection__image">
         <div class="collection__details">
           <h2 class="title">{{ release.title }}</h2>
@@ -184,9 +184,8 @@ document.addEventListener("DOMContentLoaded", setupChapterScrollState);
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}"
         class="collection__item surface">
         <img
-          {{ 'loading=eager' if loop.index <= 4 }}
           src="img/covers/{{ release.title | slugify }}-{{ release.artist | slugify }}.jpg"
-          sizes="(min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), (min-width: 580px) calc(11.67vw - 15px), calc(22.31vw - 7px)"
+          sizes="auto, (min-width: 1740px) 280px, (min-width: 1460px) 16.92vw, (min-width: 1380px) calc(33.33vw - 157px), (min-width: 1180px) calc(22.78vw - 30px), (min-width: 880px) calc(30.36vw - 26px), (min-width: 780px) calc(46.25vw - 27px), 80px"
           alt="{{ release.title }}"
           class="collection__image">
         <div class="collection__details">
