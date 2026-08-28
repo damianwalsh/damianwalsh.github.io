@@ -618,7 +618,7 @@ export default async function (eleventyConfig) {
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
-      sizes: "100vw",
+      sizes: "auto, 100vw",
     },
     formatOptions: {
       webp: {
