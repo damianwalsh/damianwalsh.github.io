@@ -30,32 +30,28 @@
   </script>
 
   <script type="application/ld+json">{{ metadata.schemaorg | stringify | safe }}</script>
-  <link rel="preload" href="/fonts/BricolageGrotesqueVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <style>{% getBundle "css", "critical" %}</style>
   <link rel="icon" href="/img/favicon.ico">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
   <link rel="alternate" href="https://damianwalsh.co.uk/feed.xml" type="application/atom+xml" title="{{ metadata.title | safe }}">
   <link rel="webmention" href="https://webmention.io/damianwalsh.co.uk/webmention" />
   <link rel="pingback" href="https://webmention.io/damianwalsh.co.uk/xmlrpc" />
-  {% css "critical" %}
+  {% css %}
   {% include "public/css/fonts.css" %}
   {% include "public/css/variables.css" %}
-  {% include "public/css/global.css" %}
-  {% include "public/css/main-header.css" %}
-  {% endcss %}
-
-  {% css %}
   {% include "public/css/animations.css" %}
   {% include "public/css/reset.css" %}
   {% include "public/css/utilities.css" %}
+  {% include "public/css/global.css" %}
   {% include "public/css/base.css" %}
   {% include "public/css/icons.css" %}
   {% include "public/css/site-header.css" %}
   {% include "public/css/site-main.css" %}
+  {% include "public/css/main-header.css" %}
   {% include "public/css/pagination.css" %}
   {% include "public/css/site-footer.css" %}
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+  <link rel="preload" href="/fonts/BricolageGrotesqueVariable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
   {% include "partials/site-header.njk" %}
