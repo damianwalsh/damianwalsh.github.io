@@ -349,7 +349,7 @@ I turned 49 in September. All things considered, I feel pretty good. I'm not rea
   <div class="reveal">
     <img src="./then.png" alt="A triptych of portraits taken in 1995" class="then">
     <img src="./now.png" alt="A triptych of portraits taken in 2025" class="now">
-    <input type="range" min="0" max="100" value="50" id="reveal-slider">
+    <input type="range" min="0" max="100" value="50" id="reveal-slider" aria-label="Compare portraits">
   </div>
 </div>
 
