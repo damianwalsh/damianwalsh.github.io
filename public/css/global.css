@@ -449,6 +449,7 @@ dialog {
 
 .tooltip__trigger {
   interest-delay: 150ms 250ms;
+    cursor: help;
 }
 
 .tooltip[popover] {
@@ -468,7 +469,6 @@ dialog {
   padding: var(--space-s);
   box-shadow: 0 4px 6px -1px oklch(0 0 0 / 0.1),
     0 2px 4px -2px oklch(0 0 0 / 0.1);
-
   opacity: 0;
   transition:
     opacity 150ms ease,
