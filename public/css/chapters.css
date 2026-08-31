@@ -59,6 +59,7 @@
   flex-direction: column;
   gap: var(--space-2xs);
   background: var(--surface-fore);
+  isolation: isolate;
 
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
@@ -210,8 +211,6 @@
 
 .chapter__photo,
 .chapter__texture {
-  width: 100%;
-  height: 100%;
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
@@ -220,13 +219,21 @@
 
 .chapter__photo {
   background-blend-mode: multiply;
-  z-index: -2;
+  z-index: var(--back);
 }
 
 .chapter__texture {
   background-blend-mode: overlay;
   opacity: .25;
-  z-index: -1;
+  z-index: var(--mid);
+}
+
+.chapter__header,
+.chapter__main,
+.chapter__footer,
+.chapter__people,
+.map__image {
+  z-index: var(--fore);
 }
 
 .chapter__header {
