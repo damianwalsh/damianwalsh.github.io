@@ -622,7 +622,7 @@ export default async function (eleventyConfig) {
     },
     formatOptions: {
       webp: {
-        quality: 70,
+        quality: 50,
         effort: 4,
       },
     },
