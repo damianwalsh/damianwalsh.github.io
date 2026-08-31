@@ -2,144 +2,262 @@
  * ANIMATIONS
  */
 
-/* Fade in */
-@keyframes fade-in {
+/* Opacity in */
+@keyframes opacity-in {
   from {
     opacity: 0;
   }
 }
 
-@keyframes fade-in-up {
+/* Opacity + translate in */
+@keyframes opacity-translate-in-up {
   from {
     opacity: 0;
     transform: translateY(var(--gutter));
   }
 }
 
-@keyframes fade-in-down {
+@keyframes opacity-translate-in-down {
   from {
     opacity: 0;
     transform: translateY(calc(var(--gutter) * -1));
   }
 }
 
-@keyframes fade-in-left {
+@keyframes opacity-translate-in-left {
   from {
     opacity: 0;
     transform: translateX(var(--gutter));
   }
 }
 
-@keyframes fade-in-right {
+@keyframes opacity-translate-in-right {
   from {
     opacity: 0;
     transform: translateX(calc(var(--gutter) * -1));
   }
 }
 
-/* Fade in + scale */
-@keyframes fade-in-scale-up {
+/* Opacity + scale in */
+@keyframes opacity-scale-in-up {
   from {
     opacity: 0;
     transform: scale(0.96);
   }
 }
 
-@keyframes fade-in-up-scale-up {
+/* Opacity + translate + scale in */
+@keyframes opacity-translate-scale-in-up {
   from {
     opacity: 0;
     transform: translateY(var(--gutter)) scale(0.96);
   }
 }
 
-@keyframes fade-in-down-scale-up {
+@keyframes opacity-translate-scale-in-down {
   from {
     opacity: 0;
     transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
   }
 }
 
-@keyframes fade-in-left-scale-up {
+@keyframes opacity-translate-scale-in-left {
   from {
     opacity: 0;
     transform: translateX(var(--gutter)) scale(0.96);
   }
 }
 
-@keyframes fade-in-right-scale-up {
+@keyframes opacity-translate-scale-in-right {
   from {
     opacity: 0;
     transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
   }
 }
 
-/* Fade out */
-@keyframes fade-out {
+/* Opacity out */
+@keyframes opacity-out {
   to {
     opacity: 0;
   }
 }
 
-@keyframes fade-out-up {
+/* Opacity + translate out */
+@keyframes opacity-translate-out-up {
   to {
     opacity: 0;
     transform: translateY(calc(var(--gutter) * -1));
   }
 }
 
-@keyframes fade-out-down {
+@keyframes opacity-translate-out-down {
   to {
     opacity: 0;
     transform: translateY(var(--gutter));
   }
 }
 
-@keyframes fade-out-left {
+@keyframes opacity-translate-out-left {
   to {
     opacity: 0;
     transform: translateX(calc(var(--gutter) * -1));
   }
 }
 
-@keyframes fade-out-right {
+@keyframes opacity-translate-out-right {
   to {
     opacity: 0;
     transform: translateX(var(--gutter));
   }
 }
 
-/* Fade out + scale */
-@keyframes fade-out-scale-down {
+/* Opacity + scale out */
+@keyframes opacity-scale-out-down {
   to {
     opacity: 0;
     transform: scale(0.96);
   }
 }
 
-@keyframes fade-out-up-scale-down {
+/* Opacity + translate + scale out */
+@keyframes opacity-translate-scale-out-up {
   to {
     opacity: 0;
     transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
   }
 }
 
-@keyframes fade-out-down-scale-down {
+@keyframes opacity-translate-scale-out-down {
   to {
     opacity: 0;
     transform: translateY(var(--gutter)) scale(0.96);
   }
 }
 
-@keyframes fade-out-left-scale-down {
+@keyframes opacity-translate-scale-out-left {
   to {
     opacity: 0;
     transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
   }
 }
 
-@keyframes fade-out-right-scale-down {
+@keyframes opacity-translate-scale-out-right {
   to {
     opacity: 0;
+    transform: translateX(var(--gutter)) scale(0.96);
+  }
+}
+
+/* Translate in — safe for text */
+@keyframes translate-in-up {
+  from {
+    transform: translateY(var(--gutter));
+  }
+}
+
+@keyframes translate-in-down {
+  from {
+    transform: translateY(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes translate-in-left {
+  from {
+    transform: translateX(var(--gutter));
+  }
+}
+
+@keyframes translate-in-right {
+  from {
+    transform: translateX(calc(var(--gutter) * -1));
+  }
+}
+
+/* Translate out — safe for text */
+@keyframes translate-out-up {
+  to {
+    transform: translateY(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes translate-out-down {
+  to {
+    transform: translateY(var(--gutter));
+  }
+}
+
+@keyframes translate-out-left {
+  to {
+    transform: translateX(calc(var(--gutter) * -1));
+  }
+}
+
+@keyframes translate-out-right {
+  to {
+    transform: translateX(var(--gutter));
+  }
+}
+
+/* Scale in — safe for text */
+@keyframes scale-in-up {
+  from {
+    transform: scale(0.96);
+  }
+}
+
+/* Scale out — safe for text */
+@keyframes scale-out-down {
+  to {
+    transform: scale(0.96);
+  }
+}
+
+/* Translate + scale in — safe for text */
+@keyframes translate-scale-in-up {
+  from {
+    transform: translateY(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-in-down {
+  from {
+    transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-in-left {
+  from {
+    transform: translateX(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-in-right {
+  from {
+    transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+/* Translate + scale out — safe for text */
+@keyframes translate-scale-out-up {
+  to {
+    transform: translateY(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-out-down {
+  to {
+    transform: translateY(var(--gutter)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-out-left {
+  to {
+    transform: translateX(calc(var(--gutter) * -1)) scale(0.96);
+  }
+}
+
+@keyframes translate-scale-out-right {
+  to {
     transform: translateX(var(--gutter)) scale(0.96);
   }
 }

@@ -25,8 +25,8 @@
 
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
-      will-change: opacity, transform;
-      animation: fade-in-right linear both;
+      will-change: transform;
+      animation: translate-in-right linear both;
       animation-timeline: view();
       animation-range: entry 0% entry 75%;
     }

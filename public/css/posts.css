@@ -87,9 +87,9 @@
 
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
-      will-change: opacity, transform;
+      will-change: transform;
       transform-origin: top center;
-      animation: fade-in-up-scale-up linear both;
+      animation: translate-scale-in-up linear both;
       animation-timeline: view();
       animation-range: entry 0% entry 75%;
     }
@@ -193,7 +193,8 @@ header .title {
   picture > img {
     @media (prefers-reduced-motion: no-preference) {
       @supports (animation-timeline: view()) {
-        animation: fade-in linear both;
+        will-change: opacity;
+        animation: opacity-in linear both;
         animation-timeline: view();
         animation-range: entry 0% entry 75%;
       }
@@ -278,8 +279,6 @@ aside {
   border: var(--space-3xs) solid transparent;
   border-radius: var(--border-radius);
   padding: var(--flow-space);
-  transform-origin: center top;
-  will-change: opacity, transform;
   display: grid;
   align-items: start;
   grid-template-columns: var(--space-xl-2xl) 1fr;
@@ -292,10 +291,10 @@ aside {
   animation: support-cta-gradient-shift 2s linear infinite alternate;
 
     @supports (animation-timeline: view()) {
-      will-change: opacity, transform;
+      will-change: transform;
       animation:
         support-cta-gradient-shift 2s linear infinite alternate,
-        fade-in-up-scale-up linear both;
+        translate-scale-in-up linear both;
       animation-timeline:
         auto,
         view();
