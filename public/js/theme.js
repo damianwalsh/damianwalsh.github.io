@@ -13,16 +13,8 @@ function applyTheme(mode) {
   }
 }
 
-function setInitialTheme() {
-  const savedTheme = localStorage.getItem('theme') || 'auto';
-  applyTheme(savedTheme);
-}
-
-setInitialTheme();
-
 document.addEventListener('DOMContentLoaded', () => {
   const themeForm = document.getElementById('theme');
-
   if (!themeForm) return;
 
   const themeRadios = themeForm.querySelectorAll('input[type="radio"]');
@@ -37,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!hueSlider) return;
 
     const hueValue = hueSlider.value;
+
     root.style.setProperty('--hue', hueValue);
     localStorage.setItem('hue', hueValue);
     hueSlider.setAttribute('aria-valuenow', hueValue);
@@ -46,7 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function initializeControls() {
     const savedTheme = localStorage.getItem('theme') || 'auto';
     const savedHue = localStorage.getItem('hue');
-    const savedThemeRadio = themeForm.querySelector(`input[value="${savedTheme}"]`);
+    const savedThemeRadio = themeForm.querySelector(
+      `input[value="${savedTheme}"]`
+    );
 
     if (savedThemeRadio) {
       savedThemeRadio.checked = true;
@@ -54,12 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (savedHue && hueSlider) {
       hueSlider.value = savedHue;
-      updateHue();
+      hueSlider.setAttribute('aria-valuenow', savedHue);
+      hueSlider.setAttribute('aria-valuetext', `${savedHue} degrees`);
     }
   }
 
   themeRadios.forEach(radio => {
-    radio.addEventListener('change', (e) => {
+    radio.addEventListener('change', e => {
       updateTheme(e.target.value);
     });
   });
