@@ -8,16 +8,6 @@
   }
 }
 
-body {
-  font-family: var(--font-display);
-  font-size: var(--text-size-0);
-  font-variation-settings: "wght" 300, "wdth" 95;
-  font-optical-sizing: auto;
-  margin: 0;
-  background: var(--surface-back);
-  color: var(--text-colour-1);
-}
-
 h1,
 h2,
 h3,

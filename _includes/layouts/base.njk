@@ -57,9 +57,22 @@
   <link rel="alternate" href="https://damianwalsh.co.uk/feed.xml" type="application/atom+xml" title="{{ metadata.title | safe }}">
   <link rel="webmention" href="https://webmention.io/damianwalsh.co.uk/webmention" />
   <link rel="pingback" href="https://webmention.io/damianwalsh.co.uk/xmlrpc" />
-  {% css %}
+  <link rel="preload" href="/fonts/BricolageGrotesqueVariable.woff2" as="font" type="font/woff2" crossorigin>
+  {% css "critical" %}
   {% include "public/css/fonts.css" %}
   {% include "public/css/variables.css" %}
+  body {
+    font-family: var(--font-display);
+    font-size: var(--text-size-0);
+    font-variation-settings: "wght" 300, "wdth" 95;
+    font-optical-sizing: auto;
+    margin: 0;
+    background: var(--surface-back);
+    color: var(--text-colour-1);
+  }
+  {% endcss %}
+  <style>{% getBundle "css", "critical" %}</style>
+  {% css %}
   {% include "public/css/animations.css" %}
   {% include "public/css/reset.css" %}
   {% include "public/css/utilities.css" %}
@@ -73,7 +86,6 @@
   {% include "public/css/site-footer.css" %}
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-  <link rel="preload" href="/fonts/BricolageGrotesqueVariable.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
   {% include "partials/site-header.njk" %}
