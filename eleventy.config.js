@@ -623,7 +623,7 @@ export default async function (eleventyConfig) {
     formatOptions: {
       webp: {
         quality: 50,
-        effort: 4,
+        effort: 6,
       },
     },
     urlPath: "/img/cache/",
