@@ -1,5 +1,16 @@
 [
   {
+    "artist": "Stevie Wonder",
+    "title": "Songs In The Key Of Life",
+    "release_id": 2321605,
+    "format": "Vinyl",
+    "favourite": false,
+    "first_released": "1976-09-28",
+    "favourite_tracks": [
+      12
+    ]
+  },
+  {
     "artist": "Doves",
     "title": "Constellations For The Lonely",
     "release_id": 33271554,

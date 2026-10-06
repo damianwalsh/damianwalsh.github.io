@@ -1,6 +1,167 @@
 {
   "releases": [
     {
+      "artist": "Stevie Wonder",
+      "title": "Songs In The Key Of Life",
+      "release_id": 2321605,
+      "format": "Vinyl",
+      "favourite": false,
+      "first_released": "1976-09-28",
+      "artist_id": 18956,
+      "label": "Motown",
+      "year": 2009,
+      "notes": "Includes 24-page lyric booklet. Unlike many earlier issues this version in not auto-coupled.",
+      "released": "2009",
+      "genres": [
+        "Funk / Soul"
+      ],
+      "uri": "https://www.discogs.com/release/2321605-Stevie-Wonder-Songs-In-The-Key-Of-Life",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=2O9RZCkj7qY",
+          "title": "STEVIE WONDER - AS (2-48.001/2)",
+          "duration": 429
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=K9KKBvWTdMQ",
+          "title": "Stevie Wonder - Another Star",
+          "duration": 505
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Remastered"
+          ]
+        },
+        {
+          "name": "Vinyl",
+          "descriptions": [
+            "7\""
+          ]
+        }
+      ],
+      "tracklist": [
+        {
+          "position": "LP-A1",
+          "title": "Love's In Need Of Love Today",
+          "duration": "7:05"
+        },
+        {
+          "position": "LP-A2",
+          "title": "Have A Talk With God",
+          "duration": "2:42"
+        },
+        {
+          "position": "LP-A3",
+          "title": "Village Ghetto Land",
+          "duration": "3:25"
+        },
+        {
+          "position": "LP-A4",
+          "title": "Contusion",
+          "duration": "3:45"
+        },
+        {
+          "position": "LP-A5",
+          "title": "Sir Duke",
+          "duration": "3:52"
+        },
+        {
+          "position": "LP-B1",
+          "title": "I Wish",
+          "duration": "4:12"
+        },
+        {
+          "position": "LP-B2",
+          "title": "Knocks Me Off My Feet",
+          "duration": "3:35"
+        },
+        {
+          "position": "LP-B3",
+          "title": "Pastime Paradise",
+          "duration": "3:20"
+        },
+        {
+          "position": "LP-B4",
+          "title": "Summer Soft",
+          "duration": "4:16"
+        },
+        {
+          "position": "LP-B5",
+          "title": "Ordinary Pain",
+          "duration": "6:22"
+        },
+        {
+          "position": "LP-C1",
+          "title": "Isn't She Lovely",
+          "duration": "6:33"
+        },
+        {
+          "position": "LP-C2",
+          "title": "Joy Inside My Tears",
+          "duration": "6:29"
+        },
+        {
+          "position": "LP-C3",
+          "title": "Black Man",
+          "duration": "8:29"
+        },
+        {
+          "position": "LP-D1",
+          "title": "Ngiculela - Es Una Historia - I Am Singing",
+          "duration": "3:48"
+        },
+        {
+          "position": "LP-D2",
+          "title": "If It's Magic",
+          "duration": "3:11"
+        },
+        {
+          "position": "LP-D3",
+          "title": "As",
+          "duration": "7:07"
+        },
+        {
+          "position": "LP-D4",
+          "title": "Another Star",
+          "duration": "8:19"
+        },
+        {
+          "position": "",
+          "title": "A Something Extra For \"Songs In The Key Of Life",
+          "duration": ""
+        },
+        {
+          "position": "7\"-E1",
+          "title": "Saturn",
+          "duration": "4:54"
+        },
+        {
+          "position": "7\"-E2",
+          "title": "Ebony Eyes",
+          "duration": "4:10"
+        },
+        {
+          "position": "7\"-F1",
+          "title": "All Day Sucker",
+          "duration": "5:06"
+        },
+        {
+          "position": "7\"-F2",
+          "title": "Easy Goin' Evening (My Mama's Call)",
+          "duration": "3:58"
+        }
+      ],
+      "favourite_tracks": [
+        12
+      ]
+    },
+    {
       "artist": "Doves",
       "title": "Constellations For The Lonely",
       "release_id": 33271554,
@@ -269,14 +430,69 @@
       "uri": "https://www.discogs.com/release/2109418-Pixies-Surfer-Rosa",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=OJ62RzJkYUo",
-          "title": "Pixies - Where Is My Mind? (Official Lyric Video)",
-          "duration": 230
+          "url": "https://www.youtube.com/watch?v=Jrxxto5dNQo",
+          "title": "Bone Machine (2007 Remaster)",
+          "duration": 184
         },
         {
-          "url": "https://www.youtube.com/watch?v=odqU58i8PM8",
-          "title": "The Creation - If I Stay Too Long (1967)",
-          "duration": 194
+          "url": "https://www.youtube.com/watch?v=Kc4NKz9Ofmk",
+          "title": "Break My Body (2007 Remaster)",
+          "duration": 127
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=52CYmvP1mds",
+          "title": "Something Against You (2007 Remaster)",
+          "duration": 109
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vVoMyR9X-4Q",
+          "title": "Broken Face (2007 Remaster)",
+          "duration": 91
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BdR-XpNNwDM",
+          "title": "Gigantic (2007 Remaster)",
+          "duration": 236
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QYJoc-R2rkU",
+          "title": "River Euphrates (2007 Remaster)",
+          "duration": 153
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6VG6gIvcjU8",
+          "title": "Where Is My Mind? (2007 Remaster)",
+          "duration": 235
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kfnNbKr8EaE",
+          "title": "Cactus (2007 Remaster)",
+          "duration": 137
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=b7U1nxbwZs8",
+          "title": "Tony's Theme (2007 Remaster)",
+          "duration": 113
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PEu4M3eEuOw",
+          "title": "Oh My Golly! (2007 Remaster)",
+          "duration": 154
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=f_iaF4LJ5KY",
+          "title": "Vamos (2007 Remaster)",
+          "duration": 263
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oGTgVVvvDjM",
+          "title": "I'm Amazed (2007 Remaster)",
+          "duration": 104
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Pw7vP42qXO8",
+          "title": "Brick Is Red (2007 Remaster)",
+          "duration": 123
         }
       ],
       "formats": [
@@ -285,7 +501,8 @@
           "descriptions": [
             "LP",
             "Album",
-            "Reissue"
+            "Reissue",
+            "Stereo"
           ]
         }
       ],
@@ -378,7 +595,13 @@
         "Pop"
       ],
       "uri": "https://www.discogs.com/release/879358-The-Rolling-Stones-Hot-Rocks-1964-1971",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZHKz7FBUF1w",
+          "title": "Time Is On My Side (Mono Version)",
+          "duration": 181
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -515,7 +738,18 @@
         "Electronic"
       ],
       "uri": "https://www.discogs.com/release/23052887-Daft-Punk-Alive-1997",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=wZ0910QYB78",
+          "title": "Alive 1997",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3JSQVYhNcRs",
+          "title": "Daft Punk - Alive 1997 (Official Full Album)",
+          "duration": 0
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -563,6 +797,11 @@
         {
           "url": "https://www.youtube.com/watch?v=sQ-q8oz-GTk",
           "title": "Beatles - 1st UK press - Sgt pepper.....- side 1",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CkSH76b4-2o",
+          "title": "Beatles - 1st UK press - Sgt pepper.....- side 2",
           "duration": 0
         }
       ],
@@ -678,7 +917,88 @@
         "Pop"
       ],
       "uri": "https://www.discogs.com/release/12770560-The-Beatles-The-Beatles",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=VV58xa4Rssw",
+          "title": "Beatles - 1st Japan press - White Album - side 1",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QcOryz77uxU",
+          "title": "Beatles - 1st Japan press - White Album - side 2",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xAH1RsgSIbs",
+          "title": "Beatles - 1st Japan press - White Album - side 3",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ria8IyAq6Q4",
+          "title": "Beatles - 1st Japan press - White Album - side 4",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-hffhz6_HdA",
+          "title": "Junk (Esher Demo)",
+          "duration": 157
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lJHSDd7LdKs",
+          "title": "Yer Blues (Esher Demo)",
+          "duration": 212
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OKh6XiFF1J8",
+          "title": "Revolution (Esher Demo)",
+          "duration": 247
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=71owuo5tnEk",
+          "title": "Dear Prudence (Esher Demo)",
+          "duration": 288
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GgsmCW26QA4",
+          "title": "Mean Mr Mustard (Esher Demo)",
+          "duration": 126
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LD9FBUbNnbE",
+          "title": "Honey Pie (Esher Demo)",
+          "duration": 120
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BM7qn7w_QLA",
+          "title": "Julia (Esher Demo)",
+          "duration": 237
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=L1PTHFH2Vog",
+          "title": "I'm So Tired (Esher Demo)",
+          "duration": 191
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M2YwgXZBm98",
+          "title": "Julia (Two Rehearsals)",
+          "duration": 271
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cGAw_k3maXs",
+          "title": "Child Of Nature (Esher Demo)",
+          "duration": 158
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pjz4Xujx8Wg",
+          "title": "Rocky Raccoon (Esher Demo)",
+          "duration": 165
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mImUDiwKTTo",
+          "title": "Good Night (Take 10 With A Guitar Part From Take 5)",
+          "duration": 152
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -906,9 +1226,24 @@
           "duration": 500
         },
         {
-          "url": "https://www.youtube.com/watch?v=uaz3BW_FeZE",
-          "title": "The Beta Band - Los Amigos Del Beta Bandidos E.P. (Official Music Videos)",
-          "duration": 0
+          "url": "https://www.youtube.com/watch?v=hrE-SIdXqQE",
+          "title": "Push It Out (Remaster)",
+          "duration": 325
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_vlanqnLARw",
+          "title": "It's Over (Remaster)",
+          "duration": 235
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sL6JfMuXgyo",
+          "title": "Dr. Baker (Remaster)",
+          "duration": 250
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=28NHYCFd6ho",
+          "title": "Needles In My Eyes (Remaster)",
+          "duration": 272
         }
       ],
       "formats": [
@@ -1516,7 +1851,53 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/26218865-Metallica-Ride-The-Lightning",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=z0WsAGiBEqc",
+          "title": "Metallica - Fight Fire with Fire [Original 1984 Studio Recording]",
+          "duration": 285
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Rr9ogAr9_5M",
+          "title": "Metallica - Ride the Lightning [Original 1984 Studio Recording]",
+          "duration": 398
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cHBCrNZF_Z8",
+          "title": "Metallica - For Whom the Bell Tolls [Original 1984 Studio Recording]",
+          "duration": 312
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jz83q1f88WE",
+          "title": "Metallica - Fade to Black [Original 1984 Studio Recording]",
+          "duration": 416
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VUboSfn3bC4",
+          "title": "Metallica - Trapped Under Ice [Original 1984 Studio Recording]",
+          "duration": 245
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5X_ZEFr4FuQ",
+          "title": "Metallica - Escape [Original 1984 Studio Recording]",
+          "duration": 265
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5iLbc1po1pI",
+          "title": "Metallica - Creeping Death [Original 1984 Studio Recording]",
+          "duration": 397
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7oWwE3APh-U",
+          "title": "Metallica - The Call of Ktulu [Original 1984 Studio Recording]",
+          "duration": 536
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=upRikYBrr5c",
+          "title": "Metallica - Ride The Lightning (1984) Elektra Specialty Pressing Full Vinyl [SIDE A + B]",
+          "duration": 0
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -1584,13 +1965,34 @@
       "artist_id": 18839,
       "label": "Blackened",
       "year": 2022,
-      "notes": "Recorded Jan.-May 1988 at 'One On One,' Los Angeles.\nMixed at Bearsville Studios, New York, June 1988.\nMastered at Masterdisk, New York.\n\n© ℗ 2018 Blackened Recordings. Manufactured by Blackened Recordings.  All Rights Reserved. BLCKND007R-1\n\nPrinted insert included containing lyrics, credits, and band photograph. Download card also included.",
+      "notes": "Recorded Jan.-May 1988 at 'One On One,' Los Angeles.\nMixed at Bearsville Studios, New York, June 1988.\nMastered at Masterdisk, New York.\n\n© ℗ 2018 Blackened Recordings. Manufactured by Blackened Recordings.  All Rights Reserved. BLCKND007R-1\n\nPrinted insert included containing lyrics, credits, and band photograph. Download card also included.\n\nVariant 2 has trailing ... at the end of every runout",
       "released": "2022",
       "genres": [
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/26664548-Metallica-And-Justice-For-All",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=vumrar1k928",
+          "title": "Metallica - ...And Justice for All [Full Album with Bass]",
+          "duration": 3900
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ISrPFoFB4wQ",
+          "title": "Metallica - ...And Justice for All (Remixed & Remastered) | Full Album",
+          "duration": 3908
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-BG1Ng2pU-8",
+          "title": "Metallica - ...And Justice For All [Full Album]",
+          "duration": 3917
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MjBEf0JODU0",
+          "title": "@metallica – ...And Justice For All / CD / 1988",
+          "duration": 77
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -1671,7 +2073,88 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/20138908-Metallica-Metallica",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=CD-E-LDc384",
+          "title": "Metallica: Enter Sandman (Official Music Video)",
+          "duration": 331
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=A8MO7fkZc5o",
+          "title": "Metallica: Sad But True (Official Music Video)",
+          "duration": 328
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ckom3gf57Yw",
+          "title": "Metallica - The Unforgiven (Official Music Video)",
+          "duration": 384
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tAGnKpE4NCI",
+          "title": "Metallica: Nothing Else Matters (Official Music Video)",
+          "duration": 386
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Gfikhqr-M84",
+          "title": "Sad But True",
+          "duration": 325
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=maqMIO6GUOk",
+          "title": "Holier Than Thou",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IKhscaE_9Ks",
+          "title": "The Unforgiven",
+          "duration": 388
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dHUHxTiPFUU",
+          "title": "Metallica: Wherever I May Roam (Official Music Video)",
+          "duration": 368
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EKyA3x_yh9A",
+          "title": "Don't Tread On Me",
+          "duration": 241
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Cdru3Z_F_Sw",
+          "title": "Through The Never",
+          "duration": 245
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pTYIf2pkxzQ",
+          "title": "Nothing Else Matters",
+          "duration": 389
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-3la4-WWCcE",
+          "title": "Of Wolf And Man",
+          "duration": 257
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sC4se0jX1XE",
+          "title": "The God That Failed",
+          "duration": 309
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=S3lcF5NFafg",
+          "title": "My Friend Of Misery",
+          "duration": 410
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GxYw5WmVKU0",
+          "title": "The Struggle Within",
+          "duration": 234
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_W7wqQwa-TU",
+          "title": "Metallica - Enter Sandman Live Moscow 1991 HD",
+          "duration": 371
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -1687,7 +2170,7 @@
         {
           "position": "A1",
           "title": "Enter Sandman",
-          "duration": "5:29"
+          "duration": "5:31"
         },
         {
           "position": "A2",
@@ -1697,52 +2180,52 @@
         {
           "position": "A3",
           "title": "Holier Than Thou",
-          "duration": "3:47"
+          "duration": "3:48"
         },
         {
           "position": "B1",
           "title": "The Unforgiven",
-          "duration": "6:26"
+          "duration": "6:27"
         },
         {
           "position": "B2",
           "title": "Wherever I May Roam",
-          "duration": "6:42"
+          "duration": "6:44"
         },
         {
           "position": "B3",
           "title": "Don't Tread On Me",
-          "duration": "3:59"
+          "duration": "4:01"
         },
         {
           "position": "C1",
           "title": "Through The Never",
-          "duration": "4:01"
+          "duration": "4:04"
         },
         {
           "position": "C2",
           "title": "Nothing Else Matters",
-          "duration": "6:29"
+          "duration": "6:28"
         },
         {
           "position": "C3",
           "title": "Of Wolf And Man",
-          "duration": "4:16"
+          "duration": "4:17"
         },
         {
           "position": "D1",
           "title": "The God That Failed",
-          "duration": "5:05"
+          "duration": "5:08"
         },
         {
           "position": "D2",
           "title": "My Friend Of Misery",
-          "duration": "6:47"
+          "duration": "6:49"
         },
         {
           "position": "D3",
           "title": "The Struggle Within",
-          "duration": "3:51"
+          "duration": "3:54"
         }
       ]
     },
@@ -1767,24 +2250,74 @@
       "uri": "https://www.discogs.com/release/6094405-Metallica-Load",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=F3WIHtOmkBg",
-          "title": "Metallica - Until It Sleeps (Official Music Video)",
-          "duration": 274
+          "url": "https://www.youtube.com/watch?v=4dLNm973lhE",
+          "title": "Metallica: Ain't My Bitch (Lyric Video)",
+          "duration": 305
         },
         {
-          "url": "https://www.youtube.com/watch?v=Xz9DX_VMXdI",
-          "title": "Metallica - King Nothing (Official Music Video)",
-          "duration": 315
+          "url": "https://www.youtube.com/watch?v=VY0YYXywJ0k",
+          "title": "Metallica: 2 x 4 (Lyric Video)",
+          "duration": 329
         },
         {
-          "url": "https://www.youtube.com/watch?v=XkfO8c8MlKU",
-          "title": "Metallica - Hero Of The Day (Official Music Video)",
+          "url": "https://www.youtube.com/watch?v=s3ll3QCJrt0",
+          "title": "Metallica: The House Jack Built (Lyric Video)",
+          "duration": 399
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eRV9uPr4Dz4",
+          "title": "Metallica: Until It Sleeps (Official Music Video)",
+          "duration": 275
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=V5j8lz4oD4Q",
+          "title": "Metallica: King Nothing (Official Music Video)",
+          "duration": 321
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CBJey2dkiAI",
+          "title": "Metallica: Hero of the Day (Official Music Video)",
           "duration": 272
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1z2w5xJ80cQ",
+          "title": "Metallica: Bleeding Me (Lyric Video)",
+          "duration": 498
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fmgkrhA_ObI",
+          "title": "Metallica: Cure (Lyric Video)",
+          "duration": 295
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nXyDagalI3U",
+          "title": "Metallica: Poor Twisted Me (Lyric Video)",
+          "duration": 240
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abuWJOwGWNo",
+          "title": "Metallica: Wasting My Hate (Lyric Video)",
+          "duration": 238
         },
         {
           "url": "https://www.youtube.com/watch?v=4FKYsUEuvIo",
           "title": "Metallica: Mama Said (Official Music Video)",
-          "duration": 295
+          "duration": 293
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=chuCBmiONLg",
+          "title": "Metallica: Thorn Within (Lyric Video)",
+          "duration": 352
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HvvwrdzMwv8",
+          "title": "Metallica: Ronnie (Lyric Video)",
+          "duration": 318
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TiRyJWMnk8o",
+          "title": "Metallica: The Outlaw Torn (Lyric Video)",
+          "duration": 0
         }
       ],
       "formats": [
@@ -1883,13 +2416,89 @@
       "artist_id": 18839,
       "label": "Blackened",
       "year": 2016,
-      "notes": "\"P. USA\" stamped in runouts denotes [l=Pallas USA] pressing. A German-made pressing equipment was used.. Remainder of runouts etched.\n\nCatalog number BLCKND003R-1 appears on jacket and inner sleeve; catalog number BLCKND003R appears on labels.\n\n[r=28637881] is the only other release with identical barcode.\n\nIssued with glossy double-sided insert containing lyrics and credits with band photos on flipside.\n\nIncludes 320kbps Download Card.\n\nRecorded & Mixed At Music America, May 1983.\nRemastered at Howie Weinberg Mastering, Los Angeles, CA\nVinyl Masters at Bernie Grundman Mastering, Los Angeles, CA.\n\nThis album was originally issued as Megaforce #069 (7/25/83).",
+      "notes": "\"P. USA\" stamped in runouts, along with 5 digit cat. number denotes [l=Pallas USA] pressing.  The vinyl is pressed in Diepholz, Germany on Pallas USA's dedicated (Toolex Alpha) pressing equipment. Remainder of runouts are etched.\n\nCatalog number BLCKND003R-1 appears on jacket and inner sleeve; catalog number BLCKND003R appears on labels.\n\n[r=28637881] is the only other release with identical barcode.\n\nIssued with glossy double-sided insert containing lyrics and credits with band photos on flipside.\n\nIncludes 320kbps Download Card.\n\nRecorded & Mixed At Music America, May 1983.\nRemastered at Howie Weinberg Mastering, Los Angeles, CA\nVinyl Masters at Bernie Grundman Mastering, Los Angeles, CA.\n\nThis album was originally issued as Megaforce #069 (7/25/83).",
       "released": "2016-04-15",
       "genres": [
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/8385679-Metallica-Kill-Em-All",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=1bW2DMOeDEM",
+          "title": "Hit The Lights (Remastered)",
+          "duration": 256
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-zKOhVSERS8",
+          "title": "The Four Horsemen (Remastered)",
+          "duration": 433
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=crhU92GKnBk",
+          "title": "Motorbreath (Remastered)",
+          "duration": 188
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9_DSE3FSalM",
+          "title": "Jump In The Fire (Remastered)",
+          "duration": 282
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CJz515hVS_c",
+          "title": "[Anesthesia] --Pulling Teeth (Remastered)",
+          "duration": 255
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=beWvPkYHaic",
+          "title": "Whiplash (Remastered)",
+          "duration": 249
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1u0vJfQfx4E",
+          "title": "Phantom Lord (Remastered)",
+          "duration": 302
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4mB5H5lcymA",
+          "title": "No Remorse (Remastered)",
+          "duration": 387
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FLTchCiC0T0",
+          "title": "Seek & Destroy (Remastered)",
+          "duration": 415
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BDaYBB9DkBg",
+          "title": "Metal Militia (Remastered)",
+          "duration": 312
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fPibrxy3kPc",
+          "title": "Metallica - KILL EM  ALL - Full Album - 1983",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TZQqYVswcZU",
+          "title": "Metallica-Kill `Em All[FULL ALBUM 1983]",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Iu5RT-3Kk08",
+          "title": "METALLICA- Kill 'Em All REMASTER [Full Album] HD",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DDCkBNJQS2s",
+          "title": "Metallica - Kill 'Em All {Remastered} [Full Album] (HQ)",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LD3WL3MaOEI",
+          "title": "Metallica - Kill 'Em All Club Edition Columbia House 1988 Reissue Full Vinyl [SIDE A + B]",
+          "duration": 3761
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -1975,9 +2584,54 @@
       "uri": "https://www.discogs.com/release/11129661-Metallica-Master-Of-Puppets",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=E0ozmU9cJDg",
-          "title": "Master of Puppets (Remastered)",
+          "url": "https://www.youtube.com/watch?v=yq9xqXjnC6k",
+          "title": "Metallica - Battery [Original 1986 Studio Recording]",
+          "duration": 313
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JW7Jp5ltKlw",
+          "title": "Metallica - Master of Puppets [Original 1986 Studio Recording]",
           "duration": 516
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2GPAyDAiu44",
+          "title": "Metallica - The Thing That Should Not Be [Original 1986 Studio Recording]",
+          "duration": 397
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I5KUNLbNZ5Q",
+          "title": "Metallica - Welcome Home (Sanitarium) [Original 1986 Studio Recording]",
+          "duration": 388
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eTxEKhpELaU",
+          "title": "Metallica - Disposable Heroes [Original 1986 Studio Recording]",
+          "duration": 497
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gCmo2m7s5SU",
+          "title": "Metallica - Leper Messiah [Original 1986 Studio Recording]",
+          "duration": 341
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gpbW3ilPUB8",
+          "title": "Metallica - Orion [Original 1986 Studio Recording]",
+          "duration": 508
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QuLwlSGIr6g",
+          "title": "Metallica - Damage, Inc. [Original 1986 Studio Recording]",
+          "duration": 333
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=K6LA7v1PApU",
+          "title": "Metallica - Master Of Puppets [Full Album]",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_NJUsGwtiuo",
+          "title": "Metallica - Master of Puppets Allied First Pressing Full Album Vinyl Rip 60439 [SIDE A + B]",
+          "duration": 0
         }
       ],
       "formats": [
@@ -2063,18 +2717,7 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/10615529-Super-Furry-Animals-Radiator",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=njhQ23ZKjFU",
-          "title": "Super Furry Animals - Hermann Loves Pauline (Video)",
-          "duration": 261
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=BmvwINJeLKU",
-          "title": "Super Furry Animals - Demons (Video)",
-          "duration": 311
-        }
-      ],
+      "videos": [],
       "formats": [
         {
           "name": "Vinyl",
@@ -2310,14 +2953,124 @@
       "uri": "https://www.discogs.com/release/1651542-Beastie-Boys-Pauls-Boutique",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=iySa7HTWgSI",
-          "title": "Beast̲i̲e̲ ̲B̲o̲ys - Paul's Boutique (Full Album)",
+          "url": "https://www.youtube.com/watch?v=VPZp4UqwVEw",
+          "title": "B̲e̲a̲s̲t̲i̲e̲ B̲o̲y̲s̲ | P̲a̲u̲l̲'̲s̲ B̲o̲u̲t̲i̲q̲u̲e̲",
           "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=E6MwsNxnMUM",
-          "title": "Beastie Boys - Paul's Boutique [FULL ALBUM]",
-          "duration": 0
+          "url": "https://www.youtube.com/watch?v=x2TP7tNQPwk",
+          "title": "To All The Girls",
+          "duration": 90
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YxaPrPfATuQ",
+          "title": "Shake Your Rump",
+          "duration": 199
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PaE3JTPVKdc",
+          "title": "Johnny Ryall",
+          "duration": 182
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-OgG0GwT-uY",
+          "title": "Egg Man",
+          "duration": 178
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WVIbke4NTrg",
+          "title": "High Plains Drifter",
+          "duration": 254
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y90N5XsasN0",
+          "title": "The Sounds Of Science",
+          "duration": 192
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=itStM-gwUyU",
+          "title": "3-Minute Rule",
+          "duration": 220
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XTUbZx31_SA",
+          "title": "Hey Ladies",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=D1SLYttJ4wg",
+          "title": "5-Piece Chicken Dinner",
+          "duration": 24
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I39NykopgK0",
+          "title": "Looking Down The Barrel Of A Gun",
+          "duration": 209
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MaUZpqSylkg",
+          "title": "Car Thief",
+          "duration": 220
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=p-gf6KdJVPA",
+          "title": "What Comes Around",
+          "duration": 188
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=H6nrmFdlXc0",
+          "title": "Shadrach",
+          "duration": 249
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jaA9F1PfOpA",
+          "title": "Ask For Janice",
+          "duration": 12
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=a1CwXMGyFFU",
+          "title": "B-Boy Bouillabaisse: 59 Chrystie Street",
+          "duration": 57
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6tHE2riC8Jk",
+          "title": "B-Boy Bouillabaisse: Get On The Mic",
+          "duration": 75
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Dq8rRxIGSnw",
+          "title": "B-Boy Bouillabaisse: Stop That Train",
+          "duration": 119
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7XqWICaNjTs",
+          "title": "B-Boy Bouillabaisse: A Year And A Day",
+          "duration": 142
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JfhgscVs_9g",
+          "title": "B-Boy Bouillabaisse: Hello Brooklyn",
+          "duration": 92
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Bji0w5iGDQ8",
+          "title": "B-Boy Bouillabaisse: Dropping Names",
+          "duration": 63
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gxmgxcEouNg",
+          "title": "B-Boy Bouillabaisse: Lay It On Me",
+          "duration": 54
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tpSLyTwhjr8",
+          "title": "B-Boy Bouillabaisse: Mike On The Mic",
+          "duration": 49
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oXvXcecHg_E",
+          "title": "B-Boy Bouillabaisse: A.W.O.L.",
+          "duration": 106
         }
       ],
       "formats": [
@@ -2594,53 +3347,7 @@
         "Stage & Screen"
       ],
       "uri": "https://www.discogs.com/release/5057482-Simon-Garfunkel-Bookends",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=yS1v5_j450o",
-          "title": "Bookends Theme",
-          "duration": 33
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=MCdNqQN4BCU",
-          "title": "Bookends Theme (Reprise)",
-          "duration": 81
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=-wjs9Y1IEOs",
-          "title": "SIMON & GARFUNKEL - bookends #fullalbum",
-          "duration": 0
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Eo2ZsAOlvEM",
-          "title": "Simon & Garfunkel - America (Audio)",
-          "duration": 217
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=hIoi8EXJaBI",
-          "title": "Simon & Garfunkel - America (Lyrics)",
-          "duration": 217
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=dVA-1iJxRQI",
-          "title": "Simon & Garfunkel - A Hazy Shade of Winter (Audio)",
-          "duration": 139
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=jaG3MMnEF2Y",
-          "title": "Simon & Garfunkel - A Hazy Shade Of Winter (Lyrics)",
-          "duration": 149
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=cDu7eitZrgw",
-          "title": "Simon & Garfunkel - At The Zoo (Audio)",
-          "duration": 144
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=6xKLBne1CoI",
-          "title": "Simon & Garfunkel - At The Zoo",
-          "duration": 153
-        }
-      ],
+      "videos": [],
       "formats": [
         {
           "name": "Vinyl",
@@ -2771,6 +3478,11 @@
           "url": "https://www.youtube.com/watch?v=zQafEQ2oa2w",
           "title": "Hours of Darkness Have Changed My Mind",
           "duration": 287
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yiVBjnCq940",
+          "title": "Felt - Seventeenth Century",
+          "duration": 132
         }
       ],
       "formats": [
@@ -2848,9 +3560,49 @@
       "uri": "https://www.discogs.com/release/7407271-The-Clash-London-Calling",
       "videos": [
         {
+          "url": "https://www.youtube.com/watch?v=i2euERguX9o",
+          "title": "The Clash - Revolution Rock (Official Audio)",
+          "duration": 335
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LC2WpBcdM_A",
+          "title": "London Calling",
+          "duration": 200
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=a3XqMtam1I0",
+          "title": "The Clash - London Calling (Official HD Video)",
+          "duration": 202
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=x1yWR7iZ1wk",
+          "title": "THE CLASH - LONDON CALLING (1979) [FULL ALBUM STREAM]",
+          "duration": 3908
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zqZSONJYNGI",
+          "title": "Train in Vain (Stand by Me)",
+          "duration": 190
+        },
+        {
           "url": "https://www.youtube.com/watch?v=EfK-WX2pa8c",
           "title": "The Clash - London Calling (Official Video)",
           "duration": 202
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RPXUVHQfgWM",
+          "title": "\"Spanish Bombs\" The Clash (1979, vinyl needle drop from UK first pressing \"London Calling\" LP)",
+          "duration": 200
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ugVTfNNQpU8",
+          "title": "\"The Guns of Brixton\" The Clash (1979, vinyl needle drop from UK first pressing \"London Calling\" LP)",
+          "duration": 193
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ae-1RdDI08s",
+          "title": "\"Rudie Can't Fail\" The Clash (1979, vinyl needle drop from UK first pressing \"London Calling\" LP)",
+          "duration": 210
         }
       ],
       "formats": [
@@ -2995,6 +3747,151 @@
           "url": "https://www.youtube.com/watch?v=xwtdhWltSIg",
           "title": "R.E.M. - Losing My Religion (Official HD Music Video)",
           "duration": 294
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZlgOnooY7FA",
+          "title": "Radio Song",
+          "duration": 256
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Efa6BAWPm9o",
+          "title": "Losing My Religion",
+          "duration": 269
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iRO7oryZUnM",
+          "title": "Low",
+          "duration": 297
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dcP7TxLnd9M",
+          "title": "Near Wild Heaven",
+          "duration": 200
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-3coDah-ZQU",
+          "title": "Endgame",
+          "duration": 231
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qk2ippMcttU",
+          "title": "Shiny Happy People",
+          "duration": 226
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UOtcV_6wfxQ",
+          "title": "Belong",
+          "duration": 247
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u3KMOGAm2Rs",
+          "title": "Half A World Away",
+          "duration": 208
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Yadhda29pw8",
+          "title": "Texarkana",
+          "duration": 220
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cDjIByRiiPo",
+          "title": "Country Feedback",
+          "duration": 250
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8z_2fAaDzrM",
+          "title": "Me In Honey",
+          "duration": 249
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5ZAX2YavkO0",
+          "title": "Near Wild Heaven 2 (Demo)",
+          "duration": 217
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DrIhPa6REf8",
+          "title": "Slow Sad Rocker (Endgame) (Demo)",
+          "duration": 270
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TANGxqJZsGY",
+          "title": "Low (Demo)",
+          "duration": 293
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rVY4nRn-JzY",
+          "title": "Blackbirds (Half A World Away) (Demo)",
+          "duration": 205
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hePG20KErAg",
+          "title": "Shiny Happy People 1 (Demo)",
+          "duration": 194
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1yrzKgAxm9w",
+          "title": "Belong (Demo)",
+          "duration": 256
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6UhXxJfHMpg",
+          "title": "Texarkana (Demo)",
+          "duration": 243
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HddSGHQMPnU",
+          "title": "Untitled Demo 2",
+          "duration": 212
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SksO-eMLTx4",
+          "title": "Texarkana 1 (Demo)",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YqS7ZovAQFs",
+          "title": "Losing My Religion 2 (Demo)",
+          "duration": 274
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HOjFW-OH0T0",
+          "title": "Fretless 1 (Demo)",
+          "duration": 292
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=O2lMKMxJ430",
+          "title": "Me On Keyboard (Me In Honey) (Demo)",
+          "duration": 224
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eNGnnURDeG0",
+          "title": "Near Wild Heaven 1 (Demo)",
+          "duration": 245
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xwtdhWltSIg",
+          "title": "R.E.M. - Losing My Religion (Official HD Music Video)",
+          "duration": 294
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YYOKMUTTDdA",
+          "title": "R.E.M. - Shiny Happy People (Official Music Video)",
+          "duration": 238
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0XhYEqz2Hu8",
+          "title": "R.E.M. - Radio Song (Official Music Video) [This Film Is On Video Version]",
+          "duration": 259
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=AWiBIrPMEWk",
+          "title": "R.E.M. - Half A World Away (Official Music Video)",
+          "duration": 219
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6EHBh1FuY1Q",
+          "title": "R.E.M. - Country Feedback (Official Music Video) [This Film Is On Video Version]",
+          "duration": 289
         }
       ],
       "formats": [
@@ -3272,7 +4169,7 @@
       "artist_id": 3928,
       "label": "DGC",
       "year": 2016,
-      "notes": "Gatefold sleeve with white poly-lined inner sleeves.\nComes with a download voucher (mp3 or Hi-Res WAV files) of full album.\n\nProduced, engineered & mixed at Ocean Way Studio except track 8 (C2) and the strings on track 2 (A2) recorded at Record One. © 2002 Geffen Records.\n\nBack cover: \n℗ © 2016 Geffen Records. Made in Germany.\n\nRunouts:\nRunouts are etched except for 'GOLDEN', 'P. USA', '- 41121 -' and '- 41122 -', which are stamped.\n'P. USA', '- 41121 -' and '- 41122 -' have been crossed out.\nThe Optimal Media \"geometric\" marks are mirrored:\n- Variant 1: 1v (side B), 1- (side D), none on sides A & C\n- Variant 2: 1v (side A), 1ʌ (side B), 1△  (side C), 1X (side D)",
+      "notes": "Gatefold sleeve with white poly-lined inner sleeves.\n180 gram heavyweight vinyl.\nSome copies include a download card with the option of mp3 or Hi-Res WAV files of the full album.\n\nTracks listed sequentially on the release.\nLyrics and credits to all the tracks printed on the gatefold inner.\n\nSome copies also have a \"Made in Germany\" sticker on the back of the shrink wrap.\n\n[Gatefold inner:]\nPublished by Youthless/Kobalt Music Publishing (ASCAP) /\nProduced, engineered & mixed  [...] at Ocean Way Studios except track 8 [C8] and the strings on track 2 [A2] - recorded at Record One / [...] / Mastered at Gateway [...] / [...] / © 2002 Geffen Records.\n\n[Back cover:] \n℗ © 2016 Geffen Records. [...]. Universal International Music B.V. [...]. Made in Germany.\n\nAdditional runout information:\n- Runouts are etched except for 'GOLDEN', 'P. USA', '- 41121 -' and '- 41122 -', which are stamped.\n- 'P. USA', '- 41121 -' and '- 41122 -' have been crossed out.\n- The Optimal Media plating symbols (\"geometric\" marks) are mirrored.",
       "released": "2016-11-00",
       "genres": [
         "Rock"
@@ -3280,9 +4177,84 @@
       "uri": "https://www.discogs.com/release/9429675-Beck-Sea-Change",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=QxD6Rb1p--w",
-          "title": "(2002) Sea Change - BECK",
-          "duration": 0
+          "url": "https://www.youtube.com/watch?v=Y6zAT15vaFk",
+          "title": "Beck - The Golden Age (Official Music Video)",
+          "duration": 275
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zWe6bMVvTzk",
+          "title": "Beck - Lonesome Tears (Official Music Video)",
+          "duration": 340
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-iEId2vmb0M",
+          "title": "Beck - Lost Cause (Version 2) (Official Music Video)",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lmeag1rwQgo",
+          "title": "Beck - Round The Bend",
+          "duration": 317
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JB2CvfMY6SM",
+          "title": "The Golden Age",
+          "duration": 275
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EnkaIEfealU",
+          "title": "Paper Tiger",
+          "duration": 276
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2e8fxfvqu6M",
+          "title": "Guess I'm Doing Fine",
+          "duration": 290
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jH2zFSJ95X0",
+          "title": "Lonesome Tears",
+          "duration": 338
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=luTKHZYHTFM",
+          "title": "Lost Cause",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fnUiMIR9Sk8",
+          "title": "End Of The Day",
+          "duration": 304
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=m8QMqNZ1PV8",
+          "title": "It's All In Your Mind",
+          "duration": 186
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=m3PWBQVq8QI",
+          "title": "Round The Bend",
+          "duration": 316
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JA1d_4WmxNQ",
+          "title": "Already Dead",
+          "duration": 179
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SJrLAbz-LEE",
+          "title": "Sunday Sun",
+          "duration": 285
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8ZsTfi9aS3c",
+          "title": "Little One",
+          "duration": 267
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Jn2ppieiR8g",
+          "title": "Side Of The Road",
+          "duration": 204
         }
       ],
       "formats": [
@@ -3313,47 +4285,47 @@
           "duration": "4:49"
         },
         {
-          "position": "B1",
+          "position": "B4",
           "title": "Lonesome Tears",
           "duration": "5:37"
         },
         {
-          "position": "B2",
+          "position": "B5",
           "title": "Lost Cause",
           "duration": "3:47"
         },
         {
-          "position": "B3",
+          "position": "B6",
           "title": "End Of The Day",
           "duration": "5:03"
         },
         {
-          "position": "C1",
+          "position": "C7",
           "title": "It's All In Your Mind",
           "duration": "3:05"
         },
         {
-          "position": "C2",
+          "position": "C8",
           "title": "Round The Bend",
           "duration": "5:15"
         },
         {
-          "position": "C3",
+          "position": "C9",
           "title": "Already Dead",
           "duration": "2:58"
         },
         {
-          "position": "D1",
+          "position": "D10",
           "title": "Sunday Sun",
           "duration": "4:44"
         },
         {
-          "position": "D2",
+          "position": "D11",
           "title": "Little One",
           "duration": "4:26"
         },
         {
-          "position": "D3",
+          "position": "D12",
           "title": "Side Of The Road",
           "duration": "3:23"
         }
@@ -3407,6 +4379,16 @@
           "url": "https://www.youtube.com/watch?v=pkcJEvMcnEg",
           "title": "Nirvana - Lithium (Official Music Video)",
           "duration": 256
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7NXz2sy6h40",
+          "title": "Nirva̲n̲a̲ 1990 |  Nevermind Full Album",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=L3CiI_oJDYk",
+          "title": "Nirvana_Nevermind_1991 Full album",
+          "duration": 0
         }
       ],
       "formats": [
@@ -3504,7 +4486,7 @@
       "artist_id": 194,
       "label": "DOL",
       "year": 2017,
-      "notes": "Issued in a sleeve with a large die cut section to display the disc. Sleeve art continues at the interior section.\nDisc held in a polythene inner bag.\n\nTypo on cover: Robb B. Soxx & The Blue Jeans\n\nManufactured in Europe.",
+      "notes": "Issued in a sleeve with a large die cut section to display the disc. Sleeve art continues at the interior section.\nDisc held in a polythene inner bag.\n\nTracks originally released on [l73859]\n\nTypo on cover: Robb B. Soxx & The Blue Jeans\n\nManufactured in Europe.",
       "released": "2017",
       "genres": [
         "Rock",
@@ -3592,6 +4574,11 @@
           "url": "https://www.youtube.com/watch?v=5y3cbyxN7Do",
           "title": "Silent Night (Official Audio)",
           "duration": 131
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9miRsYzbRBc",
+          "title": "Frosty The Snowman | The Ronettes | A Christmas Gift For You | 1963 Philles LP",
+          "duration": 140
         },
         {
           "url": "https://www.youtube.com/watch?v=6pVon5xDARc",
@@ -3715,9 +4702,9 @@
           "duration": 268
         },
         {
-          "url": "https://www.youtube.com/watch?v=QTTgpTeb0Z8",
-          "title": "Pavement - Cut Your Hair (Official Video)",
-          "duration": 193
+          "url": "https://www.youtube.com/watch?v=89G0ViX_GCM",
+          "title": "Cut Your Hair",
+          "duration": 187
         },
         {
           "url": "https://www.youtube.com/watch?v=ATRP1KZ_z1U",
@@ -3740,9 +4727,9 @@
           "duration": 130
         },
         {
-          "url": "https://www.youtube.com/watch?v=1VVj1zqbWpU",
-          "title": "Pavement - Range Life (Official Video)",
-          "duration": 296
+          "url": "https://www.youtube.com/watch?v=vwC2dqAdq2s",
+          "title": "Range Life",
+          "duration": 295
         },
         {
           "url": "https://www.youtube.com/watch?v=THhDry4Ni6Q",
@@ -3758,6 +4745,181 @@
           "url": "https://www.youtube.com/watch?v=8yG0avGHI1k",
           "title": "Fillmore Jive",
           "duration": 399
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bo824OVKfZ4",
+          "title": "Camera",
+          "duration": 226
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xEqq-EiDbbI",
+          "title": "Stare",
+          "duration": 172
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6E1b-bbB7oM",
+          "title": "Raft",
+          "duration": 215
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3n969PEwcvA",
+          "title": "Coolin' By Sound",
+          "duration": 171
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1bVOM81hITY",
+          "title": "Kneeling Bus",
+          "duration": 94
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X4Qglqn_vGc",
+          "title": "Strings of Nashville",
+          "duration": 227
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nLE3eP0YxSM",
+          "title": "Exit Theory",
+          "duration": 61
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OB2kKppKB5E",
+          "title": "5-4 Vocal",
+          "duration": 129
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fZr5cRsclRA",
+          "title": "Jam Kids",
+          "duration": 295
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wb62rta2gHI",
+          "title": "Haunt You Down",
+          "duration": 292
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4dgJmgR_D3Q",
+          "title": "Unseen Power of the Picket Fence",
+          "duration": 232
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I1KY0A1qE7g",
+          "title": "All My Friends",
+          "duration": 313
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3IVAN0j6lV8",
+          "title": "Soiled Little Filly",
+          "duration": 129
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mo1vDXjWwNo",
+          "title": "Stop Breathing",
+          "duration": 235
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_qa2-T2NI0g",
+          "title": "Ell Ess Two",
+          "duration": 165
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BNS4JlBS7tM",
+          "title": "Flux = Rad",
+          "duration": 132
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MyNisib_OV8",
+          "title": "Bad Version Of War",
+          "duration": 208
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=D0rEPdf6nj8",
+          "title": "Same Way Of Saying",
+          "duration": 276
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oqY2qGRJJHo",
+          "title": "Hands Off The Bayou",
+          "duration": 164
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JO7KoXbpOS0",
+          "title": "Heaven Is A Truck (Egg Shell)",
+          "duration": 141
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SherVtSIcWE",
+          "title": "Grounded",
+          "duration": 216
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iQs1ZsRL8fc",
+          "title": "Kennel District",
+          "duration": 204
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CVdS1b3P4T4",
+          "title": "Pueblo (Beach Boys)",
+          "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=66qIJcPc6EU",
+          "title": "Fucking Righteous",
+          "duration": 168
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G6LbuDEu-Eo",
+          "title": "Colorado",
+          "duration": 74
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gg_SF4LfMz0",
+          "title": "Dark Ages",
+          "duration": 160
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SgiNCcI-_so",
+          "title": "Flood Victim",
+          "duration": 78
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6VGhcXwFdKE",
+          "title": "JMC Retro",
+          "duration": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ng9QA0eCOLY",
+          "title": "Rug Rat",
+          "duration": 186
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Xmysg-SVlDM",
+          "title": "Strings of Nashville (Instrumental)",
+          "duration": 231
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GmzUnHN_nTs",
+          "title": "Instrumental",
+          "duration": 221
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MIf7Phr6IlQ",
+          "title": "Brink Of The Clouds",
+          "duration": 229
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kSkX4J1NsMk",
+          "title": "Tartar Martyr",
+          "duration": 194
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=x_01NjHX500",
+          "title": "Pueblo Domain",
+          "duration": 259
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XfJWtaFFAp0",
+          "title": "The Sutcliffe Catering Song",
+          "duration": 203
         }
       ],
       "formats": [
@@ -4125,7 +5287,7 @@
       "artist_id": 28972,
       "label": "Fiction Records",
       "year": 2018,
-      "notes": "\"Homesick\" & \"Last Dance\" featured here for the first time on LP, 1989 LP releases of this album contained 10 tracks only.\nCatalog number 060075324563 (7) appears on spine only. It is crossed-out on back sleeve (left upper corner) and not printed on labels.\nAlso released in [url=http://www.discogs.com/Cure-Disintegration/release/2323894]the US[/url].\n\nAdditional runout information:\n- Runouts are hand etched except for [MPO logo] and the following 7-digit stamper number, which are machine etched\n- This release has seen a continuous run of represses over the years (e.g. in 2019, 2020, 2021 and 2024), as shown in the different stamper numbers of the variants\n\n[Sticker on front]\nThe Cure • Disintegration\n180grm heavy weight double vinyl\nDigitally remastered from the original master tapes by Robert Smith\nComplete 12 song album on double vinyl for the first time including lyric bags\n532 456-3\n\n[Back cover, labels and inner sleeves:]\n℗ 2010 Fiction Records Ltd. © Fiction Records Ltd.\nThe copyright in this sound recording is owned by Fiction Records Ltd. and licensed exclusively to Polydor Ltd (UK). \nA Universal Music Company. \nMade in the EU.\n\n[Inner sleeve 1:]\nOriginal album credits (album released 1989):\nrecorded at outside studios, berkshire\nmixed at rak studio three, london.\n\nThis music has been mixed to be played loud so turn it up\n\n[Inner sleeve 2:]\nRe-issued album credits (album released 2010):\nDigitally remastered by RS@Home\nFinal master produced [...] at the Soundmasters, London",
+      "notes": "\"Homesick\" & \"Last Dance\" featured here for the first time on LP, 1989 LP releases of this album contained 10 tracks only.\nCatalog number 060075324563 (7) appears on spine only. It is crossed-out on back sleeve (left upper corner) and not printed on labels.\nAlso released in [url=http://www.discogs.com/Cure-Disintegration/release/2323894]the US[/url].\n\nAdditional runout information:\n- Runouts are hand etched except for [MPO logo] and the following 7-digit stamper number, which are machine etched\n- This release has seen a continuous run of represses over the years (at least in 2019, 2020, 2021, 2024 and 2025), as shown in the different stamper numbers of the variants\n\n[Sticker on front:]\nThe Cure • Disintegration\n180grm heavy weight double vinyl\nDigitally remastered from the original master tapes by Robert Smith\nComplete 12 song album on double vinyl for the first time including lyric bags\n532 456-3\n\n[Sticker on back:]\nSome releases may have a white \"Made in France\" sticker on the back \n\n[Back cover, labels and inner sleeves:]\n℗ 2010 Fiction Records Ltd. © Fiction Records Ltd.\nThe copyright in this sound recording is owned by Fiction Records Ltd. and licensed exclusively to Polydor Ltd (UK). \nA Universal Music Company. \nMade in the EU.\n\n[Inner sleeve 1:]\nOriginal album credits (album released 1989):\nrecorded at outside studios, berkshire\nmixed at rak studio three, london.\n\nThis music has been mixed to be played loud so turn it up\n\n[Inner sleeve 2:]\nRe-issued album credits (album released 2010):\nDigitally remastered by RS@Home\nFinal master produced [...] at the Soundmasters, London",
       "released": "2018",
       "genres": [
         "Rock"
@@ -4133,19 +5295,29 @@
       "uri": "https://www.discogs.com/release/13247155-The-Cure-Disintegration",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=7ZsQdLlvuk4",
-          "title": "The Cure - Fascination Street",
-          "duration": 270
+          "url": "https://www.youtube.com/watch?v=__EVr7CF3Hw",
+          "title": "Disintegration (Remastered)",
+          "duration": 500
         },
         {
-          "url": "https://www.youtube.com/watch?v=ks_qOI0lzho",
-          "title": "The Cure - Lovesong",
+          "url": "https://www.youtube.com/watch?v=D88J_57QgxY",
+          "title": "Pictures Of You (Remastered)",
+          "duration": 449
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oGyqB3yC87k",
+          "title": "Lullaby (Remastered)",
+          "duration": 249
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PLV7P31E8Jk",
+          "title": "Closedown (Remastered 2010)",
+          "duration": 259
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kplT6ftFokA",
+          "title": "Lovesong (Remastered)",
           "duration": 209
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=UmFFTkjs-O0",
-          "title": "The Cure - Pictures Of You",
-          "duration": 504
         }
       ],
       "formats": [
@@ -4251,68 +5423,7 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/8640693-Blur-Parklife",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=WDswiT87oo8",
-          "title": "Blur - Girls And Boys (Official Music Video)",
-          "duration": 259
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=rVNCpCy8gLc",
-          "title": "Blur - End Of A Century (Official Music Video)",
-          "duration": 176
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=YSuHrTfcikU",
-          "title": "Blur - Parklife (Official 4K Music Video)",
-          "duration": 194
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=WDswiT87oo8",
-          "title": "Blur - Girls And Boys (Official Music Video)",
-          "duration": 254
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=0DjHKqb365A",
-          "title": "Blur - To The End (Official Music Video)",
-          "duration": 229
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=iZIYAUPo80U",
-          "title": "Blur - This is a Low (Official Audio)",
-          "duration": 307
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=YzSnJ8uePyU",
-          "title": "Blur - Badhead (Official Audio)",
-          "duration": 206
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=N2rF4HcW5yk",
-          "title": "Blur - Tracy Jacks (Official Audio)",
-          "duration": 260
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=7GbhjFplF3w",
-          "title": "Blur - London Loves (Official Audio)",
-          "duration": 256
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=O5Nhul_AV0M",
-          "title": "Blur - Trouble in the Message Centre (Official Audio)",
-          "duration": 250
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=QFaKlPyhclc",
-          "title": "End of a Century (2012 Remaster)",
-          "duration": 166
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=1tBZP_MqVjM",
-          "title": "Blur Recording Parklife in the Studio (1993–1994)",
-          "duration": 413
-        }
-      ],
+      "videos": [],
       "formats": [
         {
           "name": "Vinyl",
@@ -4428,9 +5539,9 @@
       "uri": "https://www.discogs.com/release/12657649-Blur-Modern-Life-Is-Rubbish",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=gghFPavXE7Q",
-          "title": "Blur - For Tomorrow (Official Music Video)",
-          "duration": 263
+          "url": "https://www.youtube.com/watch?v=mc0idORNd10",
+          "title": "Blur - Chemical World (Official Music Video)",
+          "duration": 231
         },
         {
           "url": "https://www.youtube.com/watch?v=qI6YPGdDB1A",
@@ -4438,19 +5549,24 @@
           "duration": 153
         },
         {
-          "url": "https://www.youtube.com/watch?v=mPVjWHFpgLA",
-          "title": "Blur- Sunday Sleep (Sunday Sunday Andy Partridge Version)",
-          "duration": 214
+          "url": "https://www.youtube.com/watch?v=R07atGD2sI4",
+          "title": "Blur - Modern Life Is Rubbish (Full Album)",
+          "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=Fh8GoIxL7dw",
-          "title": "Blur - For Tomorrow (4K Colour Version)",
-          "duration": 259
+          "url": "https://www.youtube.com/watch?v=bkGg4pfm9og",
+          "title": "Blur - Coping (Official Audio)",
+          "duration": 205
         },
         {
-          "url": "https://www.youtube.com/watch?v=mc0idORNd10",
-          "title": "Blur - Chemical World (Official Music Video)",
-          "duration": 231
+          "url": "https://www.youtube.com/watch?v=BW2Qr-cdvIc",
+          "title": "Blur - Oily Water (Official Audio)",
+          "duration": 302
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SgCcvGFEBFk",
+          "title": "Blur - Blue Jeans (Official Audio)",
+          "duration": 235
         },
         {
           "url": "https://www.youtube.com/watch?v=ZZCt92zLmLI",
@@ -4588,14 +5704,34 @@
           "duration": 207
         },
         {
-          "url": "https://www.youtube.com/watch?v=2UafeQIkj5c",
-          "title": "The Chemical Brothers - Dig Your Own Hole (Full Album)",
-          "duration": 3808
-        },
-        {
           "url": "https://www.youtube.com/watch?v=L0dxByaPWhM",
           "title": "The Chemical Brothers - Elektrobank (Official Music Video)",
           "duration": 348
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_91HbYkguwk",
+          "title": "Where Do I Begin",
+          "duration": 417
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eYbSvALbkX4",
+          "title": "Dig Your Own Hole",
+          "duration": 328
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0kMfTYPzSnI",
+          "title": "Block Rockin' Beats",
+          "duration": 314
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OeAZyu2zh0Q",
+          "title": "Elektrobank",
+          "duration": 499
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sSiy0g28pgk",
+          "title": "Piku",
+          "duration": 296
         }
       ],
       "formats": [
@@ -4686,19 +5822,9 @@
       "uri": "https://www.discogs.com/release/3586054-Portishead-Roseland-NYC-Live",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=SLrkE6T_m5Y",
-          "title": "Portishead - Glory box (Roseland NYC) (HQ)",
-          "duration": 406
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=4cIiyfSZfzs",
-          "title": "Portishead - Only you (Roseland NYC) (HQ)",
-          "duration": 336
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=52bAsZI9xm8",
-          "title": "Portishead - Roads - (Roseland NYC HQ Audio)",
-          "duration": 330
+          "url": "https://www.youtube.com/watch?v=YLeCQQjXV1g",
+          "title": "Portishead (Roseland New York) - Humming",
+          "duration": 377
         },
         {
           "url": "https://www.youtube.com/watch?v=SL8lY5372Ec",
@@ -4706,9 +5832,9 @@
           "duration": 294
         },
         {
-          "url": "https://www.youtube.com/watch?v=HbSu2UM8kcQ",
-          "title": "Portishead - Strangers (Roseland NYC) (HQ)",
-          "duration": 354
+          "url": "https://www.youtube.com/watch?v=egzrbZspoCY",
+          "title": "Portishead - All Mine (Live From The Roseland Ballroom NYC)",
+          "duration": 235
         },
         {
           "url": "https://www.youtube.com/watch?v=rRZdai5UPjE",
@@ -4716,9 +5842,24 @@
           "duration": 340
         },
         {
-          "url": "https://www.youtube.com/watch?v=r8Zuek09YYA",
-          "title": "Portishead - Numb (Roseland NYC) (HQ)",
-          "duration": 362
+          "url": "https://www.youtube.com/watch?v=4cIiyfSZfzs",
+          "title": "Portishead - Only you (Roseland NYC) (HQ)",
+          "duration": 336
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KjuhPvWEgtY",
+          "title": "Portishead - Half day closing (Roseland NYC) (HQ)",
+          "duration": 252
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SgAMPDOC8Vw",
+          "title": "Over - Portishead Roseland NYC (proper audio)",
+          "duration": 258
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SLrkE6T_m5Y",
+          "title": "Portishead - Glory box (Roseland NYC) (HQ)",
+          "duration": 406
         },
         {
           "url": "https://www.youtube.com/watch?v=CZ_Z0Zfvsj0",
@@ -4726,9 +5867,44 @@
           "duration": 239
         },
         {
-          "url": "https://www.youtube.com/watch?v=YLeCQQjXV1g",
-          "title": "Portishead (Roseland New York) - Humming",
-          "duration": 377
+          "url": "https://www.youtube.com/watch?v=52bAsZI9xm8",
+          "title": "Portishead - Roads - (Roseland NYC HQ Audio)",
+          "duration": 330
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HbSu2UM8kcQ",
+          "title": "Portishead - Strangers (Roseland NYC) (HQ)",
+          "duration": 354
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=r8Zuek09YYA",
+          "title": "Portishead - Numb (Roseland NYC) (HQ)",
+          "duration": 362
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Uu-JIq4pZ2A",
+          "title": "Portishead - Elysium (Roseland NYC) (HQ)",
+          "duration": 389
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=t5kuBu5q4KY",
+          "title": "Portishead - Seven Months (Roseland NYC Live 1997)",
+          "duration": 267
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=41jpmBCM5-Q",
+          "title": "Portishead - Undenied (Live From The Roseland Ballroom NYC)",
+          "duration": 265
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=h5CVPzv6xes",
+          "title": "Western Eyes - Portishead Roseland NYC (proper audio)",
+          "duration": 151
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4cIiyfSZfzs",
+          "title": "Portishead - Only you (Roseland NYC) (HQ)",
+          "duration": 336
         },
         {
           "url": "https://www.youtube.com/watch?v=KjuhPvWEgtY",
@@ -5178,6 +6354,11 @@
           "duration": 276
         },
         {
+          "url": "https://www.youtube.com/watch?v=ujNeHIo7oTE",
+          "title": "U2 - With Or Without You (Official Music Video)",
+          "duration": 293
+        },
+        {
           "url": "https://www.youtube.com/watch?v=HqwovrZKTm8",
           "title": "Bullet The Blue Sky (Remastered 2007)",
           "duration": 272
@@ -5186,6 +6367,16 @@
           "url": "https://www.youtube.com/watch?v=orfhLLo7XDs",
           "title": "Running To Stand Still (Remastered 2007)",
           "duration": 258
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yLvpZwN9Oko",
+          "title": "U2 - Red Hill Mining Town",
+          "duration": 296
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sERtcG-TUCU",
+          "title": "U2 - In God's Country (Official Music Video)",
+          "duration": 177
         },
         {
           "url": "https://www.youtube.com/watch?v=rD5He3U-te0",
@@ -5473,19 +6664,79 @@
       "uri": "https://www.discogs.com/release/17545360-P-J-Harvey-Stories-From-The-City-Stories-From-The-Sea",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=_m2NyS3IDjE",
-          "title": "PJ Harvey - A Place Called Home",
-          "duration": 220
-        },
-        {
           "url": "https://www.youtube.com/watch?v=gDBZZ3uvimE",
           "title": "PJ Harvey - Good Fortune",
           "duration": 199
         },
         {
+          "url": "https://www.youtube.com/watch?v=_m2NyS3IDjE",
+          "title": "PJ Harvey - A Place Called Home",
+          "duration": 220
+        },
+        {
           "url": "https://www.youtube.com/watch?v=STxXS5lLunE",
           "title": "PJ Harvey - This Is Love",
           "duration": 228
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-gvrA-zyY-0",
+          "title": "Big Exit",
+          "duration": 232
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=p0mXySnvuig",
+          "title": "Good Fortune",
+          "duration": 201
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JqESjqQ-3Ko",
+          "title": "A Place Called Home",
+          "duration": 223
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GJNZvvL_8Yg",
+          "title": "One Line",
+          "duration": 194
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5Sml31O9XBg",
+          "title": "Beautiful Feeling",
+          "duration": 240
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=On2s0-xCXu4",
+          "title": "The Whores Hustle And The Hustlers Whore",
+          "duration": 238
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JqEVESq9eX8",
+          "title": "This Mess We're In",
+          "duration": 236
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X0_5LtiMBpU",
+          "title": "You Said Something",
+          "duration": 199
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=A8fVbKUgUp4",
+          "title": "Kamikaze",
+          "duration": 144
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=70PW1ycIRdk",
+          "title": "This Is Love",
+          "duration": 227
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LZsmgnHZp4w",
+          "title": "Horses In My Dreams",
+          "duration": 336
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pY8n7uYT0mM",
+          "title": "We Float",
+          "duration": 368
         }
       ],
       "formats": [
@@ -5706,44 +6957,64 @@
       "uri": "https://www.discogs.com/release/9748215-Paul-Weller-Stanley-Road",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=tM1rSTOs7Zs",
-          "title": "Paul Weller - You Do Something To Me",
-          "duration": 215
+          "url": "https://www.youtube.com/watch?v=fJ4q8TQ5J9A",
+          "title": "The Changingman",
+          "duration": 243
         },
         {
-          "url": "https://www.youtube.com/watch?v=TRy9R0sjr1Q",
-          "title": "Paul Weller - Stanley Road – TV Reclame (1995)",
-          "duration": 12
+          "url": "https://www.youtube.com/watch?v=L7Y1K_3b5YE",
+          "title": "Porcelain Gods (Part One)",
+          "duration": 292
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cJQ3ElgsPjA",
+          "title": "I Walk On Gilded Splinters",
+          "duration": 325
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ck00n1gIyAY",
+          "title": "You Do Something To Me",
+          "duration": 219
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=N3alxxGPlz8",
+          "title": "Woodcutter's Son",
+          "duration": 284
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UV1u2CcQQUU",
+          "title": "Time Passes",
+          "duration": 297
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LqXzvpPwoks",
+          "title": "Stanley Road",
+          "duration": 259
         },
         {
           "url": "https://www.youtube.com/watch?v=N_M8m4Yr7vc",
-          "title": "Paul Weller - Broken Stones",
+          "title": "Paul Weller - Broken Stones (Official Video)",
           "duration": 202
         },
         {
-          "url": "https://www.youtube.com/watch?v=jQaLHAhBNyo",
-          "title": "PAUL WELLER - STANLEY ROAD [FULL ALBUM] 1995",
-          "duration": 3132
+          "url": "https://www.youtube.com/watch?v=4UeGiWg4y_A",
+          "title": "Out Of The Sinking (Album Version)",
+          "duration": 232
         },
         {
-          "url": "https://www.youtube.com/watch?v=mw6T7vQLULE",
-          "title": "Paul Weller - Stanley Road (Studio Version)",
-          "duration": 262
+          "url": "https://www.youtube.com/watch?v=QPaGAl9rHjk",
+          "title": "Pink On White Walls",
+          "duration": 160
         },
         {
-          "url": "https://www.youtube.com/watch?v=0v9WhRpQw8E",
-          "title": "Paul Weller - The Changingman (Official Video)",
-          "duration": 211
+          "url": "https://www.youtube.com/watch?v=eM-BYgUJ1AE",
+          "title": "Whirlpools' End",
+          "duration": 432
         },
         {
-          "url": "https://www.youtube.com/watch?v=hjB_fvCbenw",
-          "title": "Paul Weller :: Woodcutter's Son :: Jools Holland 03-06-95",
-          "duration": 251
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=tM1rSTOs7Zs",
-          "title": "Paul Weller - You Do Something To Me",
-          "duration": 215
+          "url": "https://www.youtube.com/watch?v=as4aQAIlpPw",
+          "title": "Wings Of Speed",
+          "duration": 194
         }
       ],
       "formats": [
@@ -5850,17 +7121,23 @@
       "artist_id": 6520,
       "label": "Island Records",
       "year": 2018,
-      "notes": "Sticker: Includes digital download.\nIncludes 2 custom inner sleeves.\n\nAn Island Records release. ℗ 2018 Universal Music Operations Limited. © 2018 Universal Music Operations Limited. A Universal Music company.\nMade in Czech Republic. Universal International Music B.V., Gerrit Van Der Veenlaan 4, 3743 Dn Baarn, Netherlands.\n\nOriginal credits:\n\nRecorded in\nHansa Ton Studios Berlin, Dog Town Dublin, STS Dublin, Windmill Lane Studios Dublin.\n\nMastering [...] A&M Mastering Studios, LA\nDigital Editing [...] A&M Mastering Studios, LA\nQuality Control [...] A&M Studios, LA\n\n20th Anniversary edition:\n\nMastering Facility: Bernie Grundman Mastering, Hollywood\n\nAll titles [...] published by Universal Music Publishing B.V. except Blue Mountain Music Ltd (UK), Mother Music (Irl.)\n\n2018 Album Remaster:\n\nRemastering Engineering by Scott Sedillo at Bernie Grundman Mastering",
+      "notes": "Sticker: Includes digital download.\nIncludes 2 custom inner sleeves.\n\nArtwork based on the original, expanded to accommodate 2 LPs, and includes a lyric sheet.\n\nAn Island Records release. ℗ 2018 Universal Music Operations Limited. © 2018 Universal Music Operations Limited. A Universal Music company.\nMade in Czech Republic. Universal International Music B.V., Gerrit Van Der Veenlaan 4, 3743 Dn Baarn, Netherlands.\n\nOriginal credits:\n\nRecorded in\nHansa Ton Studios Berlin, Dog Town Dublin, STS Dublin, Windmill Lane Studios Dublin.\n\nMastering [...] A&M Mastering Studios, LA\nDigital Editing [...] A&M Mastering Studios, LA\nQuality Control [...] A&M Studios, LA\n\n20th Anniversary edition:\n\nMastering Facility: Bernie Grundman Mastering, Hollywood\n\nAll titles [...] published by Universal Music Publishing B.V. except Blue Mountain Music Ltd (UK), Mother Music (Irl.)\n\n2018 Album Remaster:\n\nRemastering Engineering by Scott Sedillo at Bernie Grundman Mastering",
       "released": "2018-07-27",
       "genres": [
-        "Rock"
+        "Rock",
+        "Pop"
       ],
       "uri": "https://www.discogs.com/release/12298689-U2-Achtung-Baby",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=mV7pzrkZwzg",
-          "title": "U2 - 1st press - Achtung Baby - side one - 192 Khz",
-          "duration": 0
+          "url": "https://www.youtube.com/watch?v=5HDPenYIPtg",
+          "title": "U2 - The Fly (Official Music Video)",
+          "duration": 292
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TxcDTUMLQJI",
+          "title": "U2 - Mysterious Ways (Official Music Video)",
+          "duration": 243
         },
         {
           "url": "https://www.youtube.com/watch?v=ftjEcrrf7r0",
@@ -5868,14 +7145,94 @@
           "duration": 274
         },
         {
+          "url": "https://www.youtube.com/watch?v=GpsAy0kSiE8",
+          "title": "U2 - One (Anton Corbijn Version)",
+          "duration": 280
+        },
+        {
           "url": "https://www.youtube.com/watch?v=vTxrgXWToZA",
           "title": "U2 - Even Better Than The Real Thing (Official Music Video)",
           "duration": 221
         },
         {
-          "url": "https://www.youtube.com/watch?v=TxcDTUMLQJI",
-          "title": "U2 - Mysterious Ways (Official Music Video)",
-          "duration": 243
+          "url": "https://www.youtube.com/watch?v=ekEhwwudVRA",
+          "title": "U2 - Until The End Of The World (Official Music Video)",
+          "duration": 277
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tkoEGVAHpZg",
+          "title": "Zoo Station",
+          "duration": 277
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5W9NQb2sGsU",
+          "title": "Even Better Than The Real Thing",
+          "duration": 222
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G2mBRUJDGgM",
+          "title": "One",
+          "duration": 277
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1rMVNsQ-rZQ",
+          "title": "Until The End Of The World",
+          "duration": 279
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cw2N3tjGIP0",
+          "title": "Who's Gonna Ride Your Wild Horses",
+          "duration": 317
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RIMnzutcg8s",
+          "title": "So Cruel",
+          "duration": 350
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qndAsE_9Ovc",
+          "title": "The Fly",
+          "duration": 270
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LZegcL_zQSs",
+          "title": "Mysterious Ways",
+          "duration": 244
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YkbeCWOnJzo",
+          "title": "Tryin' To Throw Your Arms Around The World",
+          "duration": 233
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1-I4oZkduuc",
+          "title": "Ultra Violet (Light My Way)",
+          "duration": 331
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=txjh9hmXnAo",
+          "title": "Acrobat",
+          "duration": 271
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yGdAUja1QlU",
+          "title": "Love Is Blindness",
+          "duration": 264
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fuwq_0xbjqQ",
+          "title": "U2's ACHTUNG BABY 30th ANNIVERSARY DOCUMENTARY",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7EoQKii-Nr8",
+          "title": "U2's \"Achtung Baby\" Documentary",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4ZfdcJPyZZo",
+          "title": "U2 - Achtung Baby [The Videos] 1991 Laserdisc (Remastered)",
+          "duration": 4025
         }
       ],
       "formats": [
@@ -5971,62 +7328,57 @@
       "uri": "https://www.discogs.com/release/2173833-Neutral-Milk-Hotel-In-The-Aeroplane-Over-The-Sea",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=9sqHmCSmx4M",
-          "title": "Gary Come Home (cover)",
-          "duration": 178
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=jsM7XS-2X50",
+          "url": "https://www.youtube.com/watch?v=eUPNdwyVUJs",
           "title": "King of Carrot Flowers Pt. 1",
           "duration": 121
         },
         {
-          "url": "https://www.youtube.com/watch?v=82GmKPbF4XM",
+          "url": "https://www.youtube.com/watch?v=0Tx54PFOotY",
           "title": "King of Carrot Flowers Pts. 2 & 3",
           "duration": 187
         },
         {
-          "url": "https://www.youtube.com/watch?v=1FeD16vu_qQ",
+          "url": "https://www.youtube.com/watch?v=r3DqBk9YNXA",
           "title": "In the Aeroplane Over the Sea",
           "duration": 203
         },
         {
-          "url": "https://www.youtube.com/watch?v=MX9iW7n9qWQ",
+          "url": "https://www.youtube.com/watch?v=Fg32tzKmTv4",
           "title": "Two-Headed Boy",
           "duration": 267
         },
         {
-          "url": "https://www.youtube.com/watch?v=B70a1An-X-s",
+          "url": "https://www.youtube.com/watch?v=qn68h5SvkUU",
           "title": "The Fool",
           "duration": 114
         },
         {
-          "url": "https://www.youtube.com/watch?v=3eNK38nmzw4",
+          "url": "https://www.youtube.com/watch?v=MsnSRFssJWU",
           "title": "Holland, 1945",
           "duration": 193
         },
         {
-          "url": "https://www.youtube.com/watch?v=RAw7k6o03EI",
+          "url": "https://www.youtube.com/watch?v=9HpkkaxpdOw",
           "title": "Communist Daughter",
           "duration": 118
         },
         {
-          "url": "https://www.youtube.com/watch?v=DXSY0aspgKo",
+          "url": "https://www.youtube.com/watch?v=Snq65pSB_lY",
           "title": "Oh Comely",
           "duration": 499
         },
         {
-          "url": "https://www.youtube.com/watch?v=Gkl8WiWFw0M",
+          "url": "https://www.youtube.com/watch?v=F7kjuW8N37Y",
           "title": "Ghost",
           "duration": 249
         },
         {
-          "url": "https://www.youtube.com/watch?v=AJ6Er6AdSvE",
+          "url": "https://www.youtube.com/watch?v=fYUmlU6Sf3A",
           "title": "[untitled]",
           "duration": 137
         },
         {
-          "url": "https://www.youtube.com/watch?v=kq5l0MT_Ivg",
+          "url": "https://www.youtube.com/watch?v=uxtLhlzVuOk",
           "title": "Two-Headed Boy Pt. 2",
           "duration": 314
         }
@@ -6146,9 +7498,19 @@
       "uri": "https://www.discogs.com/release/3377856-Teenage-Fanclub-Bandwagonesque",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=xw49UgKoZnQ",
-          "title": "Teenage Fanclub - Star Sign",
-          "duration": 225
+          "url": "https://www.youtube.com/watch?v=lY5pvZ-9N88",
+          "title": "The Concept",
+          "duration": 368
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5__iCgfnM48",
+          "title": "Satan",
+          "duration": 82
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mO6UJdm1JyQ",
+          "title": "December",
+          "duration": 184
         },
         {
           "url": "https://www.youtube.com/watch?v=SmJ3zOn9RD8",
@@ -6156,9 +7518,44 @@
           "duration": 151
         },
         {
-          "url": "https://www.youtube.com/watch?v=Er_JOsnwzcI",
-          "title": "Teenage Fanclub - The Concept",
-          "duration": 282
+          "url": "https://www.youtube.com/watch?v=iQS75sJ_PjM",
+          "title": "I Don't Know",
+          "duration": 277
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xw49UgKoZnQ",
+          "title": "Teenage Fanclub - Star Sign",
+          "duration": 225
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QBNb3FW5mAc",
+          "title": "Metal Baby",
+          "duration": 220
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M3nHgOajan4",
+          "title": "Pet Rock",
+          "duration": 156
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=coTtMaDGZRM",
+          "title": "Sidewinder",
+          "duration": 184
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-2Z0YzRxRXw",
+          "title": "Alcoholiday",
+          "duration": 327
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DQfTMU55wHo",
+          "title": "Guiding Star",
+          "duration": 169
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3gaxHqjX79w",
+          "title": "Is This Music?",
+          "duration": 196
         }
       ],
       "formats": [
@@ -6256,11 +7653,6 @@
       "uri": "https://www.discogs.com/release/9947433-Depeche-Mode-Violator",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=E8Nbh2LWRls",
-          "title": "Depeche Mode - Violator (full album)",
-          "duration": 0
-        },
-        {
           "url": "https://www.youtube.com/watch?v=aGSKrC7dGcY",
           "title": "Depeche Mode - Enjoy the Silence (Remastered)",
           "duration": 280
@@ -6271,24 +7663,74 @@
           "duration": 354
         },
         {
-          "url": "https://www.youtube.com/watch?v=M2VBmHOYpV8",
-          "title": "Depeche Mode - Policy of Truth (Official Video)",
-          "duration": 249
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=cNd4eocq2K0",
-          "title": "Depeche Mode - Personal Jesus (Official Video)",
-          "duration": 238
-        },
-        {
           "url": "https://www.youtube.com/watch?v=h1mD-_DKHc0",
           "title": "Depeche Mode - Clean (Official Video)",
           "duration": 356
         },
         {
+          "url": "https://www.youtube.com/watch?v=M2VBmHOYpV8",
+          "title": "Depeche Mode - Policy of Truth (Official Video)",
+          "duration": 249
+        },
+        {
           "url": "https://www.youtube.com/watch?v=iEH4eqtK8SU",
           "title": "Depeche Mode - Halo (Official Video)",
           "duration": 270
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u1xrNaTO1bI",
+          "title": "Depeche Mode - Personal Jesus (Official Video)",
+          "duration": 226
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6kecWb9tyng",
+          "title": "DEPECHE MODE - \"VIOLATOR\" - ALBUM - SIDE \"B\" - HQ AUDIO - / 4K VIDEO",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kfS82Gd0h-I",
+          "title": "DEPECHE MODE - \"VIOLATOR\" - ALBUM - SIDE \"A\" - HQ AUDIO - / 4K VIDEO",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TvyuSvMKVCQ",
+          "title": "Sweetest Perfection",
+          "duration": 284
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HVyUqxilaYY",
+          "title": "Waiting for the Night",
+          "duration": 368
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hod_ped-1rM",
+          "title": "Dangerous",
+          "duration": 262
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=A8RmelAYu0k",
+          "title": "Blue Dress",
+          "duration": 339
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oZoBAr8cGHM",
+          "title": "Sweetest Perfection",
+          "duration": 284
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7smG_3QdYtw",
+          "title": "Policy of Truth",
+          "duration": 314
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FQUkaJT8lso",
+          "title": "Sea of Sin (Tonal Mix)",
+          "duration": 285
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u1xrNaTO1bI",
+          "title": "Depeche Mode - Personal Jesus (Official Video)",
+          "duration": 226
         }
       ],
       "formats": [
@@ -6386,6 +7828,11 @@
           "url": "https://www.youtube.com/watch?v=k3M_xjjUMX8",
           "title": "David Bowie - Low Full Album",
           "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yjCM_X3xpRM",
+          "title": "David Bowie - Be My Wife (Official Video)",
+          "duration": 183
         }
       ],
       "formats": [
@@ -6475,20 +7922,15 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/4453244-The-Beatles-Revolver",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=HmZ2tHu-jVg",
-          "title": "The Beatles Revolver- Full Album",
-          "duration": 0
-        }
-      ],
+      "videos": [],
       "formats": [
         {
           "name": "Vinyl",
           "descriptions": [
             "LP",
             "Album",
-            "Reissue"
+            "Reissue",
+            "Stereo"
           ]
         }
       ],
@@ -6596,7 +8038,48 @@
         "Funk / Soul"
       ],
       "uri": "https://www.discogs.com/release/9810399-David-Bowie-Live-Nassau-Coliseum-76",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=FyYZUpDQA6U",
+          "title": "David Bowie Live Nassau Coliseum'76 (HQ)",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EgKoBKr8yNE",
+          "title": "Station to Station (Live Nassau Coliseum '76)",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UhRTCsf1zsU",
+          "title": "Stay (Live Nassau Coliseum '76)",
+          "duration": 445
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SFm6YNK9UoA",
+          "title": "Word on a Wing (Live Nassau Coliseum '76)",
+          "duration": 366
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HdX_txtZz-g",
+          "title": "Five Years (Live Nassau Coliseum '76)",
+          "duration": 305
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Xtx_g8tICiI",
+          "title": "David Bowie - Stay (Live Audio, Nassau Coliseum, Uniondale, New York. 23/3/76",
+          "duration": 426
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XAj2iX9xqCo",
+          "title": "David Bowie | Station to Station | Live 1976",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cOvE-rXYgug",
+          "title": "Diamond Dogs (Live Nassau Coliseum '76)",
+          "duration": 399
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -6664,7 +8147,7 @@
         },
         {
           "position": "C5",
-          "title": "TVC15",
+          "title": "TVC 15",
           "duration": "4:58"
         },
         {
@@ -6725,6 +8208,36 @@
           "url": "https://www.youtube.com/watch?v=ApHM1ct4tdM",
           "title": "Golden Years (2016 Remaster)",
           "duration": 244
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hmtL3RxiVjc",
+          "title": "Word on a Wing (2016 Remaster)",
+          "duration": 365
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Dh8RDktOdnc",
+          "title": "TVC15 (2016 Remaster)",
+          "duration": 336
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eGuu7NiALvo",
+          "title": "Stay (2016 Remaster)",
+          "duration": 377
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YsqlXkkEKxI",
+          "title": "David Bowie - Wild Is The Wind (Official Video) [HD]",
+          "duration": 214
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UAttMoG_mUE",
+          "title": "David Bowie ~ Stay (Dinah Shore Show 1976)",
+          "duration": 307
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RSVjGjz4-8s",
+          "title": "David Bowie - Station to Station Full Album",
+          "duration": 0
         }
       ],
       "formats": [
@@ -6886,7 +8399,7 @@
       "artist_id": 10263,
       "label": "Parlophone",
       "year": 2016,
-      "notes": "The LP is issued in a white poly-lined inner sleeve. Package also includes replica lyric sheet insert and plain white (unlined) paper inner sleeve (presumably replicating original inner sleeve).\nFront of cover laminated, back side non-laminated (replicating original release).\nSome copies have a \"Made in Germany\" sticker on the rear sleeve.\nBarcode is a sticker.\n2015 is printed on centre labels and sleeve, but the LP wasn't released until February 2016.\n\nCatalog number as 0825646289448 (DB69733) on spine.\nCatalog number as DB 69733 on back cover.\nCatalog number as DBXL1 (DB69733) (0825646289448) on labels.\n\nTracks B1/B2 listed as medley on insert, separately on labels and back cover.\nTracks A2/A3 listed as medley on insert and labels, separately on back cover. Track numbering on back cover lists \"Life On Mars?\" as A3, \"Kooks\" as A4, \"Quicksand\" as A5.\nTrack A4 title on insert: Life On Mars\n\nRunouts are etched, Optimal plating symbols (e.g., △=F, △=3, 3, 5, +2, 12, etc.) are mirrored.\n\n[Sticker on front cover:]\nRemastered heavyweight 180g vinyl\n\n[Rear sleeve:]\nThis album was produced by Ken Scott (assisted by the actor)\nRemixed [...] at Trident Studios London\nFront cover artwork by my good friends George Underwood & Terry his partner of Main Artory (London)\nOriginally ℗1971 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd. Digital remaster ℗2015 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd. ©2015 Jones/Tintoretto Entertainment Co., LLC. [...] ©2015 Parlophone Records Ltd. A Warner Music Group Company.\n\n[Insert:]\nA Gem Production\nAll songs published by North America - Tintoretto Music (BMI) administered by RZO Music, Inc., Screen Gems-EMI Music, Inc. (BMI) o/b/o EMI Music Publishing Ltd., Chrysalis Songs (BMI). Rest of World - Tintoretto Music/RZO Music Ltd., EMI Music Publishing Ltd., Chrysalis Music Ltd, except 'Fill Your Heart' published by North America - Irving Music, Inc. (BMI). Rest of World - Rondor Music Ltd.\n\n[Labels:]\n℗ 1971 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd.\nDigital remaster ℗ 2015 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd.\n© 2015 Jones/Tintoretto Entertainment Co., LLC. [...] © 2015 Parlophone Records Ltd. A Warner Music Group Company. [...]\nMade in the EU.",
+      "notes": "The LP is issued in a white poly-lined inner sleeve. Package also includes replica lyric sheet insert and plain white (unlined) paper inner sleeve (presumably replicating original inner sleeve).\nFront of cover laminated, back side non-laminated (replicating original release).\nSome copies have a \"Made in Germany\" sticker on the rear sleeve.\nBarcode is a sticker (for the nearly similar version but with the barcode printed directly on the back cover see [r32175183]).\n2015 is printed on centre labels and sleeve, but the LP wasn't released until February 2016.\n\nCatalog number as 0825646289448 (DB69733) on spine.\nCatalog number as DB 69733 on back cover.\nCatalog number as DBXL1 (DB69733) (0825646289448) on labels.\n\nTracks B1/B2 listed as medley on insert, separately on labels and back cover.\nTracks A2/A3 listed as medley on insert and labels, separately on back cover. Track numbering on back cover lists \"Life On Mars?\" as A3, \"Kooks\" as A4, \"Quicksand\" as A5.\nTrack A4 title on insert: Life On Mars\n\nRunouts are etched, Optimal plating symbols (e.g., △=F, △=3, 3, 5, +2, 12, etc.) are mirrored.\n\n[Sticker on front cover:]\nRemastered heavyweight 180g vinyl\n\n[Rear sleeve:]\nThis album was produced by Ken Scott (assisted by the actor)\nRemixed [...] at Trident Studios London\nFront cover artwork by my good friends George Underwood & Terry his partner of Main Artory (London)\nOriginally ℗1971 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd. Digital remaster ℗2015 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd. ©2015 Jones/Tintoretto Entertainment Co., LLC. [...] ©2015 Parlophone Records Ltd. A Warner Music Group Company.\n\n[Insert:]\nA Gem Production\nAll songs published by North America - Tintoretto Music (BMI) administered by RZO Music, Inc., Screen Gems-EMI Music, Inc. (BMI) o/b/o EMI Music Publishing Ltd., Chrysalis Songs (BMI). Rest of World - Tintoretto Music/RZO Music Ltd., EMI Music Publishing Ltd., Chrysalis Music Ltd, except 'Fill Your Heart' published by North America - Irving Music, Inc. (BMI). Rest of World - Rondor Music Ltd.\n\n[Labels:]\n℗ 1971 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd.\nDigital remaster ℗ 2015 The copyright in this sound recording is owned by Jones/Tintoretto Entertainment Co., LLC under exclusive license to Parlophone Records Ltd.\n© 2015 Jones/Tintoretto Entertainment Co., LLC. [...] © 2015 Parlophone Records Ltd. A Warner Music Group Company. [...]\nMade in the EU.",
       "released": "2016-02-26",
       "genres": [
         "Rock"
@@ -6894,14 +8407,59 @@
       "uri": "https://www.discogs.com/release/8162088-David-Bowie-Hunky-Dory",
       "videos": [
         {
-          "url": "https://www.youtube.com/watch?v=4BgF7Y3q-as",
-          "title": "David Bowie - Changes [Official Lyric Video]",
-          "duration": 220
+          "url": "https://www.youtube.com/watch?v=7fdhI3qUdSs",
+          "title": "Changes (2015 Remaster)",
+          "duration": 218
         },
         {
           "url": "https://www.youtube.com/watch?v=ccMYgiSC_eQ",
           "title": "Oh! You Pretty Things (2015 Remaster)",
           "duration": 194
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aVqNJKQiPCA",
+          "title": "Eight Line Poem (2015 Remaster)",
+          "duration": 176
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Enzxdvo8NOk",
+          "title": "Life on Mars? (2015 Remaster)",
+          "duration": 236
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jCaMwqtwJTc",
+          "title": "Kooks (2015 Remaster)",
+          "duration": 174
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kFN_bEgDE0M",
+          "title": "Quicksand (2015 Remaster)",
+          "duration": 307
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uD1M6XAQELg",
+          "title": "Fill Your Heart (2015 Remaster)",
+          "duration": 191
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=n--Ro4-hNbo",
+          "title": "Andy Warhol (2015 Remaster)",
+          "duration": 235
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=v23YSyH3Fe8",
+          "title": "Song for Bob Dylan (2015 Remaster)",
+          "duration": 254
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2_ayFz62eYE",
+          "title": "Queen Bitch (2015 Remaster)",
+          "duration": 201
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=r8IGkLWmf4E",
+          "title": "The Bewlay Brothers (2015 Remaster)",
+          "duration": 330
         }
       ],
       "formats": [
@@ -6994,6 +8552,11 @@
           "url": "https://www.youtube.com/watch?v=OZjxsGQjghk",
           "title": "Soviet (2013 Remaster)",
           "duration": 121
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=g-tiCXIkGLA",
+          "title": "Some Distant Memory (2013 Remaster)",
+          "duration": 250
         },
         {
           "url": "https://www.youtube.com/watch?v=fJsJSPKbkXs",
@@ -7154,7 +8717,7 @@
       "artist_id": 45467,
       "label": "Pink Floyd Records",
       "year": 2023,
-      "notes": "Gatefold cover with two posters and two stickers.  Different barcode and Record Industry code than [r=28580086].\n\nRunouts are etched except \"37720\" \"xA\" and \"xB\" (x = number) which are stamped. On Variants 3 and 4 of the Runout, the \"LI\" is enclosed in a box.\n",
+      "notes": "Gatefold cover with two posters and two stickers.  Different barcode and Record Industry code than [r=28580086].\n\nRunouts are etched except \"37720\" \"xA\" and \"xB\" (x = number) which are stamped. On Variants 3, 4 and 5  of the Runout, the \"LI\" is enclosed in a box. Variant 5 runout is stamped other than the \"BG LI ▽ 19658720271-X 50th\" part which is etched\n",
       "released": "2023-10-13",
       "genres": [
         "Rock"
@@ -7167,54 +8730,89 @@
           "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=HW-lXjOyUWo",
-          "title": "Speak To Me",
-          "duration": 68
+          "url": "https://www.youtube.com/watch?v=DLOth-BuCNY",
+          "title": "Pink Floyd - Dark Side Of The Moon",
+          "duration": 447
         },
         {
-          "url": "https://www.youtube.com/watch?v=Vddl9TK5RqU",
-          "title": "Breathe (In The Air)",
-          "duration": 170
+          "url": "https://www.youtube.com/watch?v=_6J3jZsWnJo",
+          "title": "Pink Floyd - Dark Side of the Moon",
+          "duration": 250
         },
         {
-          "url": "https://www.youtube.com/watch?v=KrfhWmHxKQI",
-          "title": "On The Run (2023 Remaster)",
-          "duration": 214
+          "url": "https://www.youtube.com/watch?v=n3_5SPQIfQw",
+          "title": "Pink Floyd - Dark side of the moon",
+          "duration": 333
         },
         {
-          "url": "https://www.youtube.com/watch?v=bpnZZ14fGqE",
-          "title": "Time (2023 Remaster)",
-          "duration": 426
+          "url": "https://www.youtube.com/watch?v=49kw-W1uvDk",
+          "title": "Pink Floyd - Dark Side Of The Moon (Live)",
+          "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=2PMnJ_Luk_o",
-          "title": "Pink Floyd - The Great Gig In The Sky (Official 2023 Remaster)",
-          "duration": 285
+          "url": "https://www.youtube.com/watch?v=rHksQr1KF4A",
+          "title": "Pink Floyd - The Dark Side Of The Moon (50th Anniversary) [2023 Remaster] {Full Album}.",
+          "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=2aW7HweAf3o",
-          "title": "Pink Floyd - Money (2023 Remaster)",
-          "duration": 383
+          "url": "https://www.youtube.com/watch?v=ztrYoTn4Sws",
+          "title": "Pink Floyd - The Dark Side Of The Moon [Full Album]",
+          "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=GKiLEgAzFDQ",
-          "title": "Us And Them",
+          "url": "https://www.youtube.com/watch?v=69VMx9Kd3tQ",
+          "title": "P̲ink F̲lo̲yd - The D̲ark S̲ide of the Mo̲o̲n (Full Album 1973)",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OErz0ZONcIQ",
+          "title": "The Dark Side Of The Moon Pink Floyd Immersive Dome Show | Official Trailer | Adler Planetarium",
+          "duration": 132
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iSLJHJSNTAM",
+          "title": "The Story Of The Dark Side Of The Moon",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RMXMkbl_bVc",
+          "title": "P̲ink F̲lo̲yd   The D̲ark S̲ide of the Mo̲o̲n Full Album 1973",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OQqK1klCizU",
+          "title": "Pink Floyd - Dark Side of the Moon - Full Album",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4flP0HGCoio",
+          "title": "Pink Floyd - Dark Side Of The Moon (HD Reissue)",
           "duration": 470
         },
         {
-          "url": "https://www.youtube.com/watch?v=l8pEjmZVx3k",
-          "title": "Pink Floyd - Any Colour You Like (2023 Remaster)",
-          "duration": 206
+          "url": "https://www.youtube.com/watch?v=hA-M2Uu1og8",
+          "title": "Pink Floyd's Roger Waters On 'The Dark Side Of The Moon' and 'The Wall'",
+          "duration": 557
         },
         {
-          "url": "https://www.youtube.com/watch?v=QFdkM40KOhE",
-          "title": "Pink Floyd - Brain Damage (2023 Remaster)",
-          "duration": 231
+          "url": "https://www.youtube.com/watch?v=jUBnS5G34IM",
+          "title": "PINK FLOYD - The Dark Side Of The Moon 2003 Documentary HD",
+          "duration": 0
         },
         {
-          "url": "https://www.youtube.com/watch?v=7-mFsGm1uvQ",
-          "title": "Pink Floyd - Eclipse (2023 Remaster)",
-          "duration": 127
+          "url": "https://www.youtube.com/watch?v=avIChHsvUzk",
+          "title": "Pink Floyd. Dark Side Of The Moon, Live 1994:  \"Time\"",
+          "duration": 429
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LDiDtr3XMRE",
+          "title": "Pink Floyd - The Dark Side of the Moon ~ Quadraphonic Vinyl LP ~ Side 1",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=anF3JMY7jhk",
+          "title": "Pink Floyd - The Dark Side of the Moon ~ Quadraphonic Vinyl LP ~ Side 2",
+          "duration": 0
         }
       ],
       "formats": [
@@ -7312,7 +8910,18 @@
         "Rock"
       ],
       "uri": "https://www.discogs.com/release/9187140-Pink-Floyd-Wish-You-Were-Here",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=fYpB74QF_BA",
+          "title": "Pink Floyd - 1st UK press - Wish You Were Here - side 1",
+          "duration": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RzXaG_WZlTY",
+          "title": "Pink Floyd - 1st UK press - Wish You Were Here - side 2",
+          "duration": 0
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -7789,7 +9398,198 @@
         "Electronic"
       ],
       "uri": "https://www.discogs.com/release/30919365-Daft-Punk-Homework",
-      "videos": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=H9gERrxL78U",
+          "title": "Daftendirekt",
+          "duration": 165
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lKScJ4GIWyE",
+          "title": "WDPK 83.7 FM",
+          "duration": 29
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KKd0eVQ5X_4",
+          "title": "Revolution 909",
+          "duration": 336
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=d7woYjGWs6k",
+          "title": "Da Funk",
+          "duration": 329
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ADdaooPZG50",
+          "title": "Phoenix",
+          "duration": 298
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ep76vmKxtfI",
+          "title": "Fresh",
+          "duration": 245
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Jb6gcoR266U",
+          "title": "Around the World",
+          "duration": 430
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mSVBwwAZKkI",
+          "title": "Rollin' & Scratchin'",
+          "duration": 449
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tuoSS5o4CSI",
+          "title": "Teachers",
+          "duration": 174
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=j4vjxPbdrkM",
+          "title": "High Fidelity",
+          "duration": 363
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FleH0-6wjmM",
+          "title": "Rock'n Roll",
+          "duration": 454
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xDbRd2lvVCg",
+          "title": "Oh Yeah",
+          "duration": 122
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G5yY78vFXvU",
+          "title": "Burnin'",
+          "duration": 415
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DrqkZ0fOYFY",
+          "title": "Indo Silver Club",
+          "duration": 275
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FgILRynkeNg",
+          "title": "Alive",
+          "duration": 317
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-1e_zRK0pE4",
+          "title": "Funk Ad",
+          "duration": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uURB-vo9rZ4",
+          "title": "Daft Punk - Revolution 909 (Official Music Video Remastered)",
+          "duration": 235
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mmi60Bd4jSs",
+          "title": "Daft Punk - Da Funk (Official Music Video Remastered)",
+          "duration": 335
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6TOXw9zQCAc",
+          "title": "Daft Punk - Fresh (Official Music Video Remastered)",
+          "duration": 243
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=K0HSD_i2DvA",
+          "title": "Daft Punk - Around The World (Official Music Video Remastered)",
+          "duration": 242
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XlUutoCywnk",
+          "title": "Daft Punk - Rollin' & Scratchin' (Official Music Video Remastered)",
+          "duration": 518
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DBHipNYuAZk",
+          "title": "Daft Punk - Burnin' (Official Music Video Remastered)",
+          "duration": 226
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yuoghR-5-Xs",
+          "title": "Daft Punk - Daftendirekt (Official Audio)",
+          "duration": 165
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OzZAHvq_UqI",
+          "title": "Daft Punk - Wdpk 83.7 FM (Official Audio)",
+          "duration": 29
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Wtd6DvLoCsU",
+          "title": "Daft Punk - Revolution 909 (Official Audio)",
+          "duration": 335
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PwILkY9gRrc",
+          "title": "Daft Punk - Da Funk (Official Audio)",
+          "duration": 329
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5AJ8yHebaok",
+          "title": "Daft Punk - Phœnix (Official Audio)",
+          "duration": 298
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LMNlm7khYwA",
+          "title": "Daft Punk - Fresh (Official Audio)",
+          "duration": 245
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dwDns8x3Jb4",
+          "title": "Daft Punk - Around the World (Official Audio)",
+          "duration": 430
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q27KtfR1ESA",
+          "title": "Daft Punk - Rollin' & Scratchin' (Official Audio)",
+          "duration": 449
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3yq-NFiEywo",
+          "title": "Daft Punk - Teachers (Official Audio)",
+          "duration": 174
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JXWkKO4eplY",
+          "title": "Daft Punk - High Fidelity (Official Audio)",
+          "duration": 363
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZW7WfdTuth8",
+          "title": "Daft Punk - Rock'n Roll (Official Audio)",
+          "duration": 454
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zr28TRk9vCg",
+          "title": "Daft Punk - Oh Yeah (Official Audio)",
+          "duration": 122
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=E2lGIsrhlGA",
+          "title": "Daft Punk - Burnin' (Official Audio)",
+          "duration": 415
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VubH7FuW6TQ",
+          "title": "Daft Punk - Indo Silver Club (Official Audio)",
+          "duration": 275
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WY8hqzYT_uk",
+          "title": "Daft Punk - Alive (Official Audio)",
+          "duration": 317
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YqUyNvGsM9s",
+          "title": "Daft Punk - Funk Ad (Official Audio)",
+          "duration": 52
+        }
+      ],
       "formats": [
         {
           "name": "Vinyl",
@@ -7797,7 +9597,6 @@
             "LP",
             "Album",
             "Reissue",
-            "Repress",
             "Stereo"
           ]
         }
