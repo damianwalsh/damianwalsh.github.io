@@ -623,7 +623,7 @@ export default async function (eleventyConfig) {
     formatOptions: {
       avif: {
         quality: 25,
-        effort: 5,
+        effort: 2,
       },
     },
     urlPath: "/img/cache/",
