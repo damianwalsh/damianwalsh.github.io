@@ -613,7 +613,7 @@ export default async function (eleventyConfig) {
     // File extensions to process in _site folder
     extensions: "html",
     // Output formats for each image.
-    formats: ["webp", "auto"],
+    formats: ["avif", "auto"],
     widths: [80, 160, 320, 640, 1280],
     defaultAttributes: {
       loading: "lazy",
@@ -621,9 +621,9 @@ export default async function (eleventyConfig) {
       sizes: "auto",
     },
     formatOptions: {
-      webp: {
+      avif: {
         quality: 25,
-        effort: 6,
+        effort: 5,
       },
     },
     urlPath: "/img/cache/",
