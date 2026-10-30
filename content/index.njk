@@ -55,7 +55,7 @@ eleventyNavigation:
     <p class="pill meta"><span class="counter">{{ collections.releases.length }}</span> release{{ 's' if collections.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
-  {% for release in collections.releases | slice(0, 8) %}
+  {% for release in collections.releases | slice(0, 6) %}
     <li>
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
         <img
@@ -89,7 +89,7 @@ eleventyNavigation:
     <p class="pill meta"><span class="counter">{{ collections.books.length }}</span> book{{ 's' if collections.books.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
-  {% for book in collections.books | slice(0, 8) %}
+  {% for book in collections.books | slice(0, 6) %}
     <li>
       <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
         <img
