@@ -22,7 +22,7 @@ eleventyNavigation:
     <p class="pill meta"><span class="counter">{{ collections.posts.length }}</span> post{{ 's' if collections.posts.length !== 1 }}</p>
   </header>
   <ol role="list" class="post__list">
-    {% for post in posts | slice(0, 4) %}
+    {% for post in posts | slice(0, 6) %}
     <li>
       <a href="{{ post.url }}" class="post__item surface">
         <div class="post__details">
@@ -42,7 +42,7 @@ eleventyNavigation:
     </li>
     {% endfor %}
   </ol>
-  {% if collections.posts.length > 4 %}
+  {% if collections.posts.length > 6 %}
   <p><a href="/posts/">View all posts</a></p>
   {% endif %}
 </section>
@@ -55,7 +55,7 @@ eleventyNavigation:
     <p class="pill meta"><span class="counter">{{ collections.releases.length }}</span> release{{ 's' if collections.releases.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
-  {% for release in collections.releases | slice(0, 4) %}
+  {% for release in collections.releases | slice(0, 8) %}
     <li>
       <a href="/music/releases/{{ release.title | slugify }}-{{ release.artist | slugify }}-{{ release.format | slugify }}" class="collection__item surface">
         <img
@@ -89,7 +89,7 @@ eleventyNavigation:
     <p class="pill meta"><span class="counter">{{ collections.books.length }}</span> book{{ 's' if collections.books.length !== 1 }}</p>
   </header>
   <ul role="list" class="collection__grid">
-  {% for book in collections.books | slice(0, 4) %}
+  {% for book in collections.books | slice(0, 8) %}
     <li>
       <a href="/reading/works/{{ book.title | slugify }}-{{ book.author | slugify }}" class="collection__item surface">
         <img
