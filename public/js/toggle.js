@@ -2,12 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.toggle').forEach(button => {
     button.addEventListener('click', () => {
       const target = document.getElementById(button.dataset.target);
-      if (target && target.getAttribute('role') === 'tooltip') {
+      if (!target) return;
+
+      if (target.getAttribute('role') === 'tooltip') {
         // First hide any visible tooltips
         document.querySelectorAll('[role="tooltip"]:not(.hidden)').forEach(tooltip => {
           if (tooltip !== target) {
             tooltip.classList.add('hidden');
             tooltip.classList.remove('visible');
+
             // Find and update the associated toggle button
             const toggleButton = document.querySelector(`[data-target="${tooltip.id}"]`);
             if (toggleButton) {
