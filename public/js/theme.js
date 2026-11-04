@@ -8,8 +8,10 @@ function applyTheme(mode) {
 
   if (shouldUseDark) {
     root.setAttribute('data-theme', 'dark');
+    root.style.colorScheme = 'dark';
   } else {
     root.removeAttribute('data-theme');
+    root.style.colorScheme = 'light';
   }
 }
 
@@ -39,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function initializeControls() {
     const savedTheme = localStorage.getItem('theme') || 'auto';
     const savedHue = localStorage.getItem('hue');
+
+    applyTheme(savedTheme);
+
     const savedThemeRadio = themeForm.querySelector(
       `input[value="${savedTheme}"]`
     );
@@ -49,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (savedHue && hueSlider) {
       hueSlider.value = savedHue;
+      root.style.setProperty('--hue', savedHue);
       hueSlider.setAttribute('aria-valuenow', savedHue);
       hueSlider.setAttribute('aria-valuetext', `${savedHue} degrees`);
     }

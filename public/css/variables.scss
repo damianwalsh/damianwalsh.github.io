@@ -91,6 +91,7 @@
   --white: oklch(1 0 0);
 
   // Default no-JS/light theme
+  color-scheme: light;
   --surface-back: var(--greyscale-1);
   --surface-mid: var(--greyscale-2);
   --surface-fore: var(--white);
@@ -100,6 +101,7 @@
 
   // Dark theme
   &[data-theme=dark] {
+    color-scheme: dark;
     --surface-back: var(--greyscale-9);
     --surface-mid: var(--greyscale-7);
     --surface-fore: var(--greyscale-8);
