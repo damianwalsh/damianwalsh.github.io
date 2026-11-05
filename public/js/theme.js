@@ -3,8 +3,7 @@ const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 function applyTheme(mode) {
   const shouldUseDark =
-    mode === 'dark' ||
-    (mode === 'auto' && themeQuery.matches);
+    mode === 'dark' || (mode === 'auto' && themeQuery.matches);
 
   if (shouldUseDark) {
     root.setAttribute('data-theme', 'dark');
@@ -15,11 +14,16 @@ function applyTheme(mode) {
   }
 }
 
+const initialTheme = localStorage.getItem('theme') || 'auto';
+const initialHue = localStorage.getItem('hue');
+
+applyTheme(initialTheme);
+if (initialHue) {
+  root.style.setProperty('--hue', initialHue);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const themeForm = document.getElementById('theme');
-  if (!themeForm) return;
-
-  const themeRadios = themeForm.querySelectorAll('input[type="radio"]');
   const hueSlider = document.getElementById('hueSlider');
 
   function updateTheme(mode) {
@@ -27,56 +31,61 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(mode);
   }
 
-  function updateHue() {
+  function updateHue(value) {
     if (!hueSlider) return;
-
-    const hueValue = hueSlider.value;
-
-    root.style.setProperty('--hue', hueValue);
-    localStorage.setItem('hue', hueValue);
-    hueSlider.setAttribute('aria-valuenow', hueValue);
-    hueSlider.setAttribute('aria-valuetext', `${hueValue} degrees`);
+    root.style.setProperty('--hue', value);
+    localStorage.setItem('hue', value);
+    hueSlider.setAttribute('aria-valuenow', value);
+    hueSlider.setAttribute('aria-valuetext', `${value} degrees`);
   }
 
-  function initializeControls() {
-    const savedTheme = localStorage.getItem('theme') || 'auto';
-    const savedHue = localStorage.getItem('hue');
+  function syncFormState() {
+    const currentTheme = localStorage.getItem('theme') || 'auto';
+    const currentHue = localStorage.getItem('hue');
 
-    applyTheme(savedTheme);
-
-    const savedThemeRadio = themeForm.querySelector(
-      `input[value="${savedTheme}"]`
-    );
-
-    if (savedThemeRadio) {
-      savedThemeRadio.checked = true;
+    if (themeForm) {
+      const activeRadio = themeForm.querySelector(`input[value="${currentTheme}"]`);
+      if (activeRadio) activeRadio.checked = true;
     }
 
-    if (savedHue && hueSlider) {
-      hueSlider.value = savedHue;
-      root.style.setProperty('--hue', savedHue);
-      hueSlider.setAttribute('aria-valuenow', savedHue);
-      hueSlider.setAttribute('aria-valuetext', `${savedHue} degrees`);
+    if (hueSlider && currentHue) {
+      hueSlider.value = currentHue;
+      hueSlider.setAttribute('aria-valuenow', currentHue);
+      hueSlider.setAttribute('aria-valuetext', `${currentHue} degrees`);
     }
   }
 
-  themeRadios.forEach(radio => {
-    radio.addEventListener('change', e => {
-      updateTheme(e.target.value);
+  if (themeForm) {
+    const themeRadios = themeForm.querySelectorAll('input[type="radio"]');
+    themeRadios.forEach(radio => {
+      radio.addEventListener('change', e => updateTheme(e.target.value));
     });
-  });
+  }
 
   if (hueSlider) {
-    hueSlider.addEventListener('input', updateHue);
+    hueSlider.addEventListener('input', e => updateHue(e.target.value));
   }
 
-  themeQuery.addEventListener('change', () => {
+  const handleSystemThemeChange = () => {
     const savedTheme = localStorage.getItem('theme') || 'auto';
+    if (savedTheme === 'auto') applyTheme('auto');
+  };
 
-    if (savedTheme === 'auto') {
-      applyTheme('auto');
+  if (themeQuery.addEventListener) {
+    themeQuery.addEventListener('change', handleSystemThemeChange);
+  } else {
+    themeQuery.addListener(handleSystemThemeChange);
+  }
+
+  window.addEventListener('storage', (e) => {
+    if (e.key === 'theme') {
+      applyTheme(e.newValue || 'auto');
+      syncFormState();
+    }
+    if (e.key === 'hue' && e.newValue) {
+      updateHue(e.newValue);
     }
   });
 
-  initializeControls();
+  syncFormState();
 });
