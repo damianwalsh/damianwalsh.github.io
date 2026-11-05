@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   padding-left: var(--flow-space);
-  clip-path: inset(-4px calc((var(--marker-size) / -2)));
+  clip-path: inset(-4px calc(var(--marker-size) / -2));
 
   &:before {
     content: "";
@@ -57,16 +57,17 @@
     }
 
     &:after {
+      left: calc(-1 * var(--flow-space));
+      top: 50%;
+      width: var(--track-size);
+      height: calc(100% + var(--flow-space));
+      background: var(--quaternary-4);
+      transform-origin: top center;
+      transform: translateX(0) translateY(-50%) scaleY(1);
+      z-index: var(--mid);
+
       @media (prefers-reduced-motion: no-preference) {
         @supports (animation-timeline: view()) {
-          left: calc(-1 * var(--flow-space));
-          top: 50%;
-          width: var(--track-size);
-          height: calc(100% + var(--flow-space));
-          background: var(--quaternary-4);
-          transform-origin: top center;
-          transform: translateX(0) translateY(-50%) scaleY(1);
-          z-index: var(--mid);
           animation: fillSegment linear both;
           animation-timeline: view();
           animation-range: entry 0% entry 75%;
@@ -147,17 +148,17 @@ article {
   column-gap: var(--gutter);
   row-gap: var(--flow-space);
   grid-template-areas:
-  "header"
-  "toc"
-  "prose"
-  "aside";
+    "header"
+    "toc"
+    "prose"
+    "aside";
+
   @media (width >= 820px) {
     grid-template-columns: 1fr minmax(275px, 325px);
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
-      "header header"
-      "prose  toc"
-      "prose  aside";
+      "header  header"
+      "prose   sidebar";
   }
 }
 
@@ -165,10 +166,28 @@ article {
   grid-area: header;
 }
 
+.sidebar {
+  display: contents;
+
+  @media (width >= 820px) {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow-space);
+    align-self: start;
+    position: sticky;
+    top: var(--flow-space);
+  }
+}
+
 details {
   grid-area: toc;
   padding-block-end: var(--flow-space);
   border-bottom: 1px solid var(--surface-mid);
+
+  @media (width >= 820px) {
+    grid-area: auto;
+  }
 }
 
 summary .title,
@@ -177,16 +196,53 @@ header .title {
 }
 
 [aria-label=toc] {
-  > ul {
+  >ul {
     list-style: none;
     padding-inline-start: 0 !important;
+    scroll-target-group: auto;
+
+    a {
+      display: inline-flex;
+      position: relative;
+      color: var(--text-colour-2);
+      font-size: var(--text-size--1);
+      font-variation-settings: "wght" 700;
+      text-transform: uppercase;
+      letter-spacing: .025em;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--text-colour-1);
+      }
+
+      @media (width >=820px) {
+        &:before {
+          content: '•';
+          color: var(--primary-4);
+          position: absolute;
+          left: 0;
+          opacity: 0;
+          transform: translateX(0);
+          transition: all 0.15s ease-in-out;
+        }
+
+        &:target-current {
+          color: var(--text-colour-1);
+
+          &:before {
+            opacity: 1;
+            transform: translateX(calc(var(--flow-space) * -1));
+          }
+        }
+      }
+    }
   }
 }
 
 .prose {
   grid-area: prose;
   min-width: 0;
-  &> :first-child {
+  & > :first-child {
     margin-block-start: 0;
   }
 
@@ -204,6 +260,10 @@ header .title {
 
 aside {
   grid-area: aside;
+
+  @media (width >= 820px) {
+    grid-area: auto;
+  }
 }
 
 .aside__list {
@@ -288,7 +348,7 @@ aside {
     "actions actions";
 
   @media (prefers-reduced-motion: no-preference) {
-  animation: support-cta-gradient-shift 2s linear infinite alternate;
+    animation: support-cta-gradient-shift 2s linear infinite alternate;
 
     @supports (animation-timeline: view()) {
       will-change: transform;
